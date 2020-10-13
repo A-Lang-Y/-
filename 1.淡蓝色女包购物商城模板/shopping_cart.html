@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Shoping cart</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery-1.7.2.min.js" ></script>
+  <script src="js/html5.js" ></script>
+  <script src="js/jflow.plus.js" ></script>
+  <script src="js/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/radio.js"></script>
+  <script src="js/selectBox.js"></script>
+
+  <script>
+       $(document).ready(function(){
+	      $("#myController").jFlow({
+		     controller: ".control", // must be class, use . sign
+		     slideWrapper : "#jFlowSlider", // must be id, use # sign
+		     slides: "#slider",  // the div where all your sliding divs are nested in
+		     selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		     width: "984px",  // this is the width for the content-slider
+		     height: "480px",  // this is the height for the content-slider
+		     duration: 400,  // time in miliseconds to transition one slide
+		     prev: ".slidprev", // must be class, use . sign
+		     next: ".slidnext", // must be class, use . sign
+		     auto: true
+	      });
+       });
+  </script>
+  <script>
+       $(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+  <script>
+       $(document).ready(function() {
+	      $("select").selectBox();
+       });
+  </script>
+
+</head>
+<body>
+  <div class="container_12">
+    <div id="top">
+      <div class="grid_3">
+        <div class="phone_top">
+          Call Us +777 (100) 1234
+        </div><!-- .phone_top -->
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <div class="welcome">
+          Welcome visitor you can <a href="login.html">login</a> or <a href="login.html">create an account</a>.
+        </div><!-- .welcome -->
+      </div><!-- .grid_6 -->
+
+      <div class="grid_3">
+        <div class="valuta">
+          <ul>
+            <li class="curent"><a href="#">$</a></li>
+            <li><a href="#">&#8364;</a></li>
+            <li><a href="#">&#163;</a></li>
+          </ul>
+        </div><!-- .valuta -->
+
+        <div class="lang">
+          <ul>
+            <li class="curent"><a href="#">EN</a></li>
+            <li><a href="#">FR</a></li>
+            <li><a href="#">GM</a></li>
+          </ul>
+        </div><!-- .lang -->
+      </div><!-- .grid_3 -->
+    </div><!-- #top -->
+
+    <div class="clear"></div>
+
+    <header id="branding">
+      <div class="grid_3">
+        <hgroup>
+          <h1 id="site_logo" ><a href="index.html" title=""><img src="images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+          <h2 id="site_description">Online Store Theme</h2>
+        </hgroup>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_3">
+        <form class="search">
+          <input type="text" name="search" class="entry_form" value="" placeholder="Search entire store here..."/>
+	</form>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <ul id="cart_nav">
+          <li>
+            <a class="cart_li" href="#">Cart <span>$0.00</span></a>
+            <ul class="cart_cont">
+              <li class="no_border"><p>Recently added item(s)</p></li>
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_img.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+              
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/produkt_slid1.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+	      <li class="no_border">
+		<a href="shopping_cart.html" class="view_cart">View shopping cart</a>
+		<a href="checkout.html" class="checkout">Procced to Checkout</a>
+	      </li>
+            </ul>
+          </li>
+        </ul>
+
+        <nav class="private">
+          <ul>
+            <li><a href="#">My Account</a></li>
+		<li class="separator">|</li>
+            <li><a href="#">My Wishlist</a></li>
+		<li class="separator">|</li>
+            <li><a href="login.html">Log In</a></li>
+		<li class="separator">|</li>
+            <li><a href="login.html">Sign Up</a></li>
+          </ul>
+        </nav><!-- .private -->
+      </div><!-- .grid_6 -->
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <div id="block_nav_primary">
+    <div class="container_12">
+      <div class="grid_12">
+        <nav class="primary">
+          <ul>
+            <li class="curent"><a href="index.html">Home</a></li>
+            <li><a href="catalog_grid.html">Solids</a></li>
+            <li><a href="catalog_grid.html">Liquids</a></li>
+            <li>
+              <a href="catalog_grid.html">Spray</a>
+              <ul class="sub">
+                <li><a href="catalog_grid.html">For home</a></li>
+                <li><a href="catalog_grid.html">For Garden</a></li>
+                <li><a href="catalog_grid.html">For Car</a></li>
+                <li><a href="catalog_grid.html">Other spray</a></li>
+              </ul>
+            </li>
+            <li><a href="catalog_grid.html">Electric</a></li>
+            <li><a href="catalog_grid.html">For cars</a></li>
+	    <li>
+              <a href="#">All pages</a>
+              <ul class="sub">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text_page.html">Typography and basic styles</a></li>
+		<li><a href="catalog_grid.html">Catalog (grid view)</a></li>
+		<li><a href="catalog_list.html">Catalog (list type view)</a></li>
+		<li><a href="product_page.html">Product view</a></li>
+		<li><a href="shopping_cart.html">Shoping cart</a></li>
+		<li><a href="checkout.html">Proceed to checkout</a></li>
+		<li><a href="compare.html">Products comparison</a></li>
+		<li><a href="login.html">Login</a></li>
+		<li><a href="contact_us.html">Contact us</a></li>
+		<li><a href="404.html">404</a></li>
+		<li><a href="blog.html">Blog posts</a></li>
+		<li><a href="blog_post.html">Blog post view</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav><!-- .primary -->
+      </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+  </div><!-- .block_nav_primary -->
+
+  <div class="clear"></div>
+
+  <section id="main" class="entire_width">
+    <div class="container_12">
+       <div class="grid_12">
+       <h1 class="page_title">Shopping Cart</h1>
+
+       <table class="cart_product">
+	      <tr>
+		     <th class="images"></th>
+		     <th class="bg name">Product Name</th>
+		     <th class="edit"> </th>
+		     <th class="bg price">Unit Price</th>
+		     <th class="qty">Qty</th>
+		     <th class="bg subtotal">Subtotal</th>
+		     <th class="close"> </th>
+	      </tr>
+	      <tr>
+		     <td class="images"><a href="product_page.html"><img src="images/product_6.png" alt="Product 6"></a></td>
+		     <td class="bg name">Paddywax Fragrance Diffuser Set, Gardenia Tuberose,<br/> Jasmine, 4-Ounces</td>
+		     <td class="edit"><a title="Edit" href="#">Edit</a></td>
+		     <td class="bg price">$75.00</td>
+		     <td class="qty"><input type="text" name="" value="" placeholder="1000" /></td>
+		     <td class="bg subtotal">$750.00</td>
+		     <td class="close"><a title="close" class="close" href="#"></a></td>
+	      </tr>
+	      <tr>
+		     <td class="images"><a href="product_page.html"><img src="images/produkt_slid1.png" alt="Product Slide 1"></a></td>
+		     <td class="bg name">California Scents Spillproof Organic Air Fresheners,<br/> Coronado Cherry, 1.5 Ounce Cannister</td>
+		     <td class="edit"><a title="Edit" href="#">Edit</a></td>
+		     <td class="bg price">$75.00</td>
+		     <td class="qty"><input type="text" name="" value="" placeholder="1000" /></td>
+		     <td class="bg subtotal">$750.00</td>
+		     <td class="close"><a title="close" class="close" href="#"></a></td>
+	      </tr>
+	      <tr>
+		     <td colspan="7" class="cart_but">
+			    <button class="continue"><span>icon</span>Continue Shopping</button>
+			    <button class="update"><span>icon</span>Update Shopping Cart</button>
+		     </td>
+	      </tr>
+       </table>
+       </div><!-- .grid_12 -->
+
+       <div id="content_bottom">
+        <div class="grid_4">
+          <div class="bottom_block estimate">
+            <h3>Estimate Shipping and Tax</h3>
+            <p>Enter your destination to get a shipping estimate.</p>
+	    <form>
+	      <p>
+		     <strong>Country:</strong><sup class="surely">*</sup><br/>
+		     <select>
+			    <option>United States</option>
+			    <option>United States</option>
+		     </select>
+	      </p>
+	      <p>
+		     <strong>State/Province:</strong><br/>
+		     <select>
+			    <option>Please select region, state or province</option>
+			    <option>Please select region, state or province</option>
+		     </select>
+	      </p>
+	      <p>
+		     <strong>Zip/Postal Code</strong><br/>
+		     <input type="text" name="" value="" />
+	      </p>
+	      <input type="submit" id="get_estimate" value="Get a Quote" />
+	    </form>
+
+          </div><!-- .estimate -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_4">
+          <div class="bottom_block discount">
+            <h3>Discount Codes</h3>
+            <p>Enter your coupon code if you have one.</p>
+	    <form>
+	      <p>
+		     <input type="text" name="" value="" placeholder="United States"/>
+	      </p>
+	      <input type="submit" id="apply_coupon" value="Apply Coupon" />
+	    </form>
+          </div><!-- .discount -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_4">
+          <div class="bottom_block total">
+	      <table class="subtotal">
+		     <tr>
+			    <td>Subtotal</td><td class="price">$1, 500.00</td>
+		     </tr>
+		     <tr class="grand_total">
+			    <td>Grand Total</td><td class="price">$1, 500.00</td>
+		     </tr>
+	      </table>
+	    <button class="checkout">PROCEED TO CHECKOUT</button>
+            <a href="#">Checkout with Multiple Addresses</a>
+          </div><!-- .total -->
+        </div><!-- .grid_4 -->
+
+        <div class="clear"></div>
+      </div><!-- #content_bottom -->
+      <div class="clear"></div>
+
+      <div class="clear"></div>
+
+      <div class="carousel" id="following">
+        <div class="c_header">
+          <div class="grid_10">
+            <h5>Based on your selection, you may be interested in the following item:</h5>
+          </div><!-- .grid_10 -->
+
+          <div class="grid_2">
+            <a id="next_c1" class="next arows" href="#"><span>Next</span></a>
+            <a id="prev_c1" class="prev arows" href="#"><span>Prev</span></a>
+           </div><!-- .grid_2 -->
+        </div><!-- .c_header -->
+
+        <div class="list_carousel">
+
+        <ul id="list_product" class="list_product">
+          <li class="">
+            <div class="grid_3 product">
+              <img class="sale" src="images/sale.png" alt="Sale"/>
+              <div class="prev">
+                <a href="product_page.html"><img src="images/product_1.png" alt="" title="" /></a>
+              </div><!-- .prev -->
+              <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
+              <div class="cart">
+                <div class="price">
+                <div class="vert">
+                  <div class="price_new">$550.00</div>
+                  <div class="price_old">$725.00</div>
+                </div>
+                </div>
+                <a href="#" class="obn"></a>
+                <a href="#" class="like"></a>
+                <a href="#" class="bay"></a>
+              </div><!-- .cart -->
+            </div><!-- .grid_3 -->
+          </li>
+
+          <li class="">
+            <div class="grid_3 product">
+              <img class="sale" src="images/sale.png" alt="Sale"/>
+              <div class="prev">
+                <a href="product_page.html"><img src="images/product_2.png" alt="" title="" /></a>
+              </div><!-- .prev -->
+              <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
+              <div class="cart">
+                <div class="price">
+                <div class="vert">
+                  <div class="price_new">$550.00</div>
+                  <div class="price_old">$725.00</div>
+                </div>
+                </div>
+                <a href="#" class="obn"></a>
+                <a href="#" class="like"></a>
+                <a href="#" class="bay"></a>
+              </div><!-- .cart -->
+            </div><!-- .grid_3 -->
+          </li>
+
+          <li class="">
+            <div class="grid_3 product">
+              <div class="prev">
+                <a href="product_page.html"><img src="images/product_3.png" alt="" title="" /></a>
+              </div><!-- .prev -->
+              <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
+              <div class="cart">
+                <div class="price">
+                <div class="vert">
+                  <div class="price_new">$550.00</div>
+                </div>
+                </div>
+                <a href="#" class="obn"></a>
+                <a href="#" class="like"></a>
+                <a href="#" class="bay"></a>
+              </div><!-- .cart -->
+            </div><!-- .grid_3 -->
+          </li>
+
+          <li class="">
+            <div class="grid_3 product">
+              <img class="sale" src="images/sale.png" alt="Sale"/>
+              <div class="prev">
+                <a href="product_page.html"><img src="images/product_4.png" alt="" title="" /></a>
+              </div><!-- .prev -->
+              <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
+              <div class="cart">
+                <div class="price">
+                <div class="vert">
+                  <div class="price_new">$550.00</div>
+                  <div class="price_old">$725.00</div>
+                </div>
+                </div>
+                <a href="#" class="obn"></a>
+                <a href="#" class="like"></a>
+                <a href="#" class="bay"></a>
+              </div><!-- .cart -->
+            </div><!-- .grid_3 -->
+          </li>
+
+          <li class="">
+            <div class="grid_3 product">
+              <div class="prev">
+                <a href="product_page.html"><img src="images/product_5.png" alt="" title="" /></a>
+              </div><!-- .prev -->
+              <h3 class="title">Febreze Air Effects New Zealand Springs</h3>
+              <div class="cart">
+                <div class="price">
+                <div class="vert">
+                  <div class="price_new">$550.00</div>
+                  <div class="price_old">$725.00</div>
+                </div>
+                </div>
+                <a href="#" class="obn"></a>
+                <a href="#" class="like"></a>
+                <a href="#" class="bay"></a>
+              </div><!-- .cart -->
+            </div><!-- .grid_3 -->
+          </li>
+
+        </ul><!-- #list_product -->
+        </div><!-- .list_carousel -->
+      </div><!-- .carousel -->
+
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+
+  <div class="clear"></div>
+
+  <footer>
+    <div class="f_navigation">
+      <div class="container_12">
+        <div class="grid_3">
+          <h3>Contact Us</h3>
+          <ul class="f_contact">
+            <li>49 Archdale, 2B Charlestone</li>
+            <li>+777 (100) 1234</li>
+            <li>mail@example.com</li>
+          </ul><!-- .f_contact -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Information</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">About As</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Secure payment</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Costumer Servise</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="contact_us.html">Contact As</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>My Account</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Order History</a></li>
+              <li><a href="#">Wish List</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+    </div><!-- .f_navigation -->
+
+    <div class="f_info">
+      <div class="container_12">
+        <div class="grid_6">
+          <p class="copyright">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        </div><!-- .grid_6 -->
+
+        <div class="grid_6">
+          <div class="soc">
+            <a class="google" href="#"></a>
+            <a class="twitter" href="#"></a>
+            <a class="facebook" href="#"></a>
+          </div><!-- .soc -->
+        </div><!-- .grid_6 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+    </div><!-- .f_info -->
+  </footer>
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Blog post view</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery-1.7.2.min.js" ></script>
+  <script src="js/html5.js" ></script>
+  <script src="js/jflow.plus.js" ></script>
+  <script src="js/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/radio.js"></script>
+  <script src="js/selectBox.js"></script>
+
+  <script>
+	$(document).ready(function() {
+		$("select").selectBox();
+	});
+  </script>
+
+  <script>
+	$(document).ready(function(){
+		$("#myController").jFlow({
+			controller: ".control", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#slider",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "984px",  // this is the width for the content-slider
+			height: "480px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".slidprev", // must be class, use . sign
+			next: ".slidnext", // must be class, use . sign
+			auto: true
+		});
+	});
+  </script>
+  <script>
+	$(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $('#list_banners').carouFredSel({
+		prev: '#ban_prev',
+		next: '#ban_next',
+		scroll: 1,
+		auto: false
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+
+</head>
+<body>
+  <div class="container_12">
+    <div id="top">
+      <div class="grid_3">
+        <div class="phone_top">
+          Call Us +777 (100) 1234
+        </div><!-- .phone_top -->
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <div class="welcome">
+          Welcome visitor you can <a href="login.html">login</a> or <a href="login.html">create an account</a>.
+        </div><!-- .welcome -->
+      </div><!-- .grid_6 -->
+
+      <div class="grid_3">
+        <div class="valuta">
+          <ul>
+            <li class="curent"><a href="#">$</a></li>
+            <li><a href="#">&#8364;</a></li>
+            <li><a href="#">&#163;</a></li>
+          </ul>
+        </div><!-- .valuta -->
+
+        <div class="lang">
+          <ul>
+            <li class="curent"><a href="#">EN</a></li>
+            <li><a href="#">FR</a></li>
+            <li><a href="#">GM</a></li>
+          </ul>
+        </div><!-- .lang -->
+      </div><!-- .grid_3 -->
+    </div><!-- #top -->
+
+    <div class="clear"></div>
+
+    <header id="branding">
+      <div class="grid_3">
+        <hgroup>
+          <h1 id="site_logo"><a href="index.html" title=""><img src="images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+          <h2 id="site_description">Online Store Theme</h2>
+        </hgroup>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_3">
+        <form class="search">
+          <input type="text" name="search" class="entry_form" value="" placeholder="Search entire store here..."/>
+	</form>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <ul id="cart_nav">
+          <li>
+            <a class="cart_li" href="#">Cart <span>$0.00</span></a>
+            <ul class="cart_cont">
+              <li class="no_border"><p>Recently added item(s)</p></li>
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_img.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+              
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/produkt_slid1.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+	      <li class="no_border">
+		<a href="shopping_cart.html" class="view_cart">View shopping cart</a>
+		<a href="checkout.html" class="checkout">Procced to Checkout</a>
+	      </li>
+            </ul>
+          </li>
+        </ul>
+
+        <nav class="private">
+          <ul>
+            <li><a href="#">My Account</a></li>
+		<li class="separator">|</li>
+            <li><a href="#">My Wishlist</a></li>
+		<li class="separator">|</li>
+            <li><a href="login.html">Log In</a></li>
+		<li class="separator">|</li>
+            <li><a href="login.html">Sign Up</a></li>
+          </ul>
+        </nav><!-- .private -->
+      </div><!-- .grid_6 -->
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <div id="block_nav_primary">
+    <div class="container_12">
+      <div class="grid_12">
+        <nav class="primary">
+          <ul>
+            <li class="curent"><a href="index.html">Home</a></li>
+            <li><a href="catalog_grid.html">Solids</a></li>
+            <li><a href="catalog_grid.html">Liquids</a></li>
+            <li>
+              <a href="catalog_grid.html">Spray</a>
+              <ul class="sub">
+                <li><a href="catalog_grid.html">For home</a></li>
+                <li><a href="catalog_grid.html">For Garden</a></li>
+                <li><a href="catalog_grid.html">For Car</a></li>
+                <li><a href="catalog_grid.html">Other spray</a></li>
+              </ul>
+            </li>
+            <li><a href="catalog_grid.html">Electric</a></li>
+            <li><a href="catalog_grid.html">For cars</a></li>
+	    <li>
+              <a href="#">All pages</a>
+              <ul class="sub">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text_page.html">Typography and basic styles</a></li>
+		<li><a href="catalog_grid.html">Catalog (grid view)</a></li>
+		<li><a href="catalog_list.html">Catalog (list type view)</a></li>
+		<li><a href="product_page.html">Product view</a></li>
+		<li><a href="shopping_cart.html">Shoping cart</a></li>
+		<li><a href="checkout.html">Proceed to checkout</a></li>
+		<li><a href="compare.html">Products comparison</a></li>
+		<li><a href="login.html">Login</a></li>
+		<li><a href="contact_us.html">Contact us</a></li>
+		<li><a href="404.html">404</a></li>
+		<li><a href="blog.html">Blog posts</a></li>
+		<li><a href="blog_post.html">Blog post view</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav><!-- .primary -->
+      </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+  </div><!-- .block_nav_primary -->
+
+  <div class="clear"></div>
+
+  <div class="container_12">
+    <div class="grid_12">
+       <div class="breadcrumbs">
+	      <a href="index.html">Home</a><span>&#8250;</span><a href="#">Category</a><span>&#8250;</span><span class="current">This page</span>
+       </div><!-- .breadcrumbs -->
+    </div><!-- .grid_12 -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <section id="main">
+    <div class="container_12">
+       <div id="sidebar" class="grid_3">
+	      <aside id="categories_nav">
+		     <h3>Blog Categories</h3>
+
+		     <nav class="left_menu">
+			    <ul>
+				   <li><a href="#">Entertainment</a></li>
+				   <li><a href="#">Fashion</a></li>
+				   <li><a href="#">Sports</a></li>
+				   <li><a href="#">Vacation</a></li>
+				   <li><a href="#">Movies</a></li>
+				   <li><a href="#">Relationships</a></li>
+				   <li class="last"><a href="#">Food</a></li>
+			    </ul>
+		     </nav><!-- .left_menu -->
+	      </aside><!-- #categories_nav -->
+
+	      <aside id="manufacturers">
+		     <h3>Archives</h3>
+
+		     <nav class="left_menu">
+			    <ul>
+				   <li><a href="#">August 2012</a></li>
+				   <li><a href="#">September 2012</a></li>
+				   <li><a href="#">October 2012</a></li>
+				   <li><a href="#">November 2012</a></li>
+				   <li class="last"><a href="#">December 2012</a></li>
+			    </ul>
+		     </nav><!-- .left_menu -->
+	      </aside><!-- #categories_nav -->
+
+	      <aside id="tags">
+		     <h3>Tags</h3>
+		     <a class="t1" href="#">california</a>
+		     <a class="t2" href="#">canada</a>
+		     <a class="t3" href="#">canon</a>
+		     <a class="t4" href="#">cat</a>
+		     <a class="t5" href="#">chicago</a>
+		     <a class="t6" href="#">christmas</a>
+		     <a class="t7" href="#">mars</a>
+		     <a class="t8" href="#">church</a>
+		     <a class="t9" href="#">city</a>
+		     <a class="t10" href="#">clouds</a>
+		     <a class="t11" href="#">color</a>
+		     <a class="t12" href="#">concert</a>
+		     <a class="t13" href="#">dance</a>
+		     <a class="t14" href="#">day</a>
+		     <a class="t15" href="#">dog</a>
+		     <a class="t16" href="#">england</a>
+		     <a class="t17" href="#">europe</a>
+	      </aside><!-- #tags -->
+
+       </div><!-- .sidebar -->
+
+       <div id="content" class="grid_9">
+		<article class="post view_post">
+			<h1 class="post_title">Citrus Magic Solid Air Freshener</h1>
+			<div class="content_article">
+				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+				<p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+			</div><!-- .content_article -->
+			<div class="footer_article">
+				<div class="number_c">3</div>
+				<span>Mike Example, <time datetime="2012-11-03">03.11.2012</time></span>  |  <span>Posted in <a href="#">Sports</a>, <a href="#">Movies</a></span>
+			</div>
+		</article>
+		<div class="comments_blog">
+			<h4>Comments</h4>
+			<ul class="comments">
+				<li>
+					<div class="avatar"><img src="images/avatar.png" alt="Avatar"/></div>
+					<div class="autor">Mike Example</div>, <time datetime="2012-11-03">03.11.2012</time>
+					<p>Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.  Many desktop publishing packages and web page editors now use.</p>
+				</li>
+
+				<li>
+					<div class="avatar"><img src="images/avatar.png" alt="Avatar"/></div>
+					<div class="autor">Mike Example</div>, <time datetime="2012-11-03">03.11.2012</time>
+					<p>Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.  Many desktop publishing packages and web page editors now use.</p>
+				</li>
+			</ul><!-- .comments -->
+		</div><!-- .comments_blog -->
+
+		<form class="add_comments">
+			<h4>Leave a Reply</h4>
+
+			<div class="nickname">
+				<strong>Nickname</strong><sup class="surely">*</sup><br/>
+				<input type="text" name="" class="" value="" />
+			</div><!-- .nickname -->
+
+			<div class="your_review">
+				<strong>Email Address</strong><sup class="surely">*</sup><br/>
+				<input type="email" name="" class="" value="" />
+			</div><!-- .your_review -->
+
+			<div class="clear"></div>
+
+			<div class="text_review">
+				<strong>Comment</strong><br/>
+				<textarea name="text"></textarea>
+				<i>Note: HTML is not translated!</i>
+			</div><!-- .text_review -->
+
+			<input type="submit" value="Submit Comment" />
+		</form><!-- .add_comments -->
+
+       </div><!-- #content -->
+
+      <div class="clear"></div>
+
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+
+  <div class="clear"></div>
+
+  <footer>
+    <div class="f_navigation">
+      <div class="container_12">
+        <div class="grid_3">
+          <h3>Contact Us</h3>
+          <ul class="f_contact">
+            <li>49 Archdale, 2B Charlestone</li>
+            <li>+777 (100) 1234</li>
+            <li>mail@example.com</li>
+          </ul><!-- .f_contact -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Information</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">About As</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Secure payment</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Costumer Servise</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="contact_us.html">Contact As</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>My Account</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Order History</a></li>
+              <li><a href="#">Wish List</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+    </div><!-- .f_navigation -->
+
+    <div class="f_info">
+      <div class="container_12">
+        <div class="grid_6">
+          <p class="copyright">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        </div><!-- .grid_6 -->
+
+        <div class="grid_6">
+          <div class="soc">
+            <a class="google" href="#"></a>
+            <a class="twitter" href="#"></a>
+            <a class="facebook" href="#"></a>
+          </div><!-- .soc -->
+        </div><!-- .grid_6 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+    </div><!-- .f_info -->
+  </footer>
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

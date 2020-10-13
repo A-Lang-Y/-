@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+   <div class="header-top">
+       <div class="wrap"> 
+	         <div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+			 </div>
+		     <div class="cssmenu">
+			  <nav id="nav" role="navigation">
+				<a href="#nav" title="Show navigation">Show navigation</a>
+				<a href="#" title="Hide navigation">Hide navigation</a>
+				<ul class="clearfix">
+					<li class="active"><a href="#home" class="scroll">Home</a></li>
+				    <li><a href="#about" class="scroll">About</a></li>
+					<li><a href="#team" class="scroll">Team</a></li>
+					<li><a href="#portfolio" class="scroll">Portfolio</a></li>
+					<li><a href="#other" class="scroll">Other</a></li>
+					<li><a href="#contact" class="scroll">Contact</a></li>
+					<div class="clear"></div>
+				</ul>
+			  </nav>
+		     </div>
+		    <div class="clear"></div>
+	   </div>
+	 </div>
+     <div class="header-bottom" id="home">
+    	 <div class="wmuSlider example1" style="height: 551px;">
+			   <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	<div class="banner-wrap">
+				   		<h1 class="m_1">Welcome to Motion</h1>
+				   		<p class="m_2">Asmart & Creative Single Page Template</p>
+						<img src="images/banner.png" alt=""/>
+					</div>
+				 </article>
+				 <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	<div class="banner-wrap">
+				   		<h1 class="m_1">Lorem ipsum</h1>
+				   		<p class="m_2">consectetuer adipiscing</p>
+						<img src="images/banner1.png" alt=""/>
+					</div>
+				 </article>
+		         <a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a>
+		  </div>
+		  <script src="js/jquery.wmuSlider.js"></script> 
+			<script>
+       		   $('.example1').wmuSlider();         
+   			</script> 	
+	 </div>
+     <div class="content-top" id="about">
+	 		<h2 class="m_3">Smart & Creative</h2>
+	 		<p class="m_4">This is Why You Will Use it :)</p>
+	 		<div class="box1">
+				<div class="col_1_of_3 span_1_of_3">
+					<img src="images/icon1.png" alt=""/>
+				    <div class="desc">
+						<h3>Multi Purpose</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...</p>
+					</div>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<img src="images/icon2.png" alt=""/>
+				    <div class="desc">
+						<h3>Flat UI</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...</p>
+					</div>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<img src="images/icon3.png" alt=""/>
+				    <div class="desc">
+						<h3>Creative Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do...</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+	 	</div>
+	 	<div class="content-middle" id="team"> 
+	 	  <div class="wrap">
+	 	  	<h2 class="m_3">Talented & Experts</h2>
+	 	  	<p class="m_5">This is Our team :)</p>
+	 		<div class="box2">
+	 		   <div class="col_1_of_4 span_1_of_4"><a href="#">
+	 		   	<div class="view view-fifth">
+                    <img src="images/pic.jpg" />
+                    <div class="mask">
+                        <h2>Hover Style #5</h2>
+                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                    <h3>Lorem Ipsum</h3>
+					<h4>Senior UI Designer</h4>
+					<ul class="twt">
+						<li><img src="images/twt.png" alt=""/><span class="follow">Follow</span></li>
+					</ul>
+				  </div>
+				</a></div>
+			   <div class="col_1_of_4 span_1_of_4"><a href="#">
+	 		   	<div class="view view-fifth">
+                    <img src="images/pic1.jpg" />
+                    <div class="mask">
+                        <h2>Hover Style #5</h2>
+                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                    <h3>Lorem Ipsum</h3>
+					<h4>Senior UI Designer</h4>
+					<ul class="twt">
+						<li><img src="images/twt.png" alt=""/><span class="follow">Follow</span></li>
+					</ul>
+				  </div>
+				</a></div>
+				<div class="col_1_of_4 span_1_of_4"><a href="#">
+	 		   	 <div class="view view-fifth">
+                    <img src="images/pic2.jpg" />
+                    <div class="mask">
+                        <h2>Hover Style #5</h2>
+                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                    <h3>Lorem Ipsum</h3>
+					<h4>Senior UI Designer</h4>
+					<ul class="twt">
+						<li><img src="images/twt.png" alt=""/><span class="follow">Follow</span></li>
+					</ul>
+				  </div>
+				</a></div>
+				<div class="col_1_of_4 span_1_of_4"><a href="#">
+	 		   	 <div class="view view-fifth">
+                    <img src="images/pic3.jpg" />
+                    <div class="mask">
+                        <h2>Hover Style #5</h2>
+                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                    <h3>Lorem Ipsum</h3>
+					<h4>Senior UI Designer</h4>
+					<ul class="twt">
+						<li><img src="images/twt.png" alt=""/><span class="follow">Follow</span></li>
+					</ul>
+				  </div>
+				</a></div>
+				<div class="clear"></div>
+		     </div>
+	 	    </div>
+	 	</div>
+	    <div class="middle-bottom" id="portfolio">
+	 	  <div class="wrap">
+	 		<h3 class="m_7">Elegant & Genuine</h3>
+	 	  	<p class="m_8">This is how our Works looks like :)</p>
+			   <ul id="flexiselDemo3">
+				<li><img src="images/pic4.jpg" /><p><a href="#">SMS Clouds</a></p></li>
+				<li><img src="images/pic5.jpg" /><p><a href="#">Blue Apple Soft</a></p></li>
+				<li><img src="images/pic6.jpg" /><p><a href="#">Together Application</a></p></li>
+				<li><img src="images/pic7.jpg" /><p><a href="#">FCBarcelona Club</a></p></li>
+			   </ul>
+		   <script type="text/javascript">
+			$(window).load(function() {
+				$("#flexiselDemo1").flexisel();
+				$("#flexiselDemo2").flexisel({
+					enableResponsiveBreakpoints: true,
+			    	responsiveBreakpoints: { 
+			    		portrait: { 
+			    			changePoint:480,
+			    			visibleItems: 1
+			    		}, 
+			    		landscape: { 
+			    			changePoint:640,
+			    			visibleItems: 2
+			    		},
+			    		tablet: { 
+			    			changePoint:768,
+			    			visibleItems: 3
+			    		}
+			    	}
+			    });
+			
+				$("#flexiselDemo3").flexisel({
+					visibleItems: 4,
+					animationSpeed: 1000,
+					autoPlay: true,
+					autoPlaySpeed: 3000,    		
+					pauseOnHover: true,
+					enableResponsiveBreakpoints: true,
+			    	responsiveBreakpoints: { 
+			    		portrait: { 
+			    			changePoint:480,
+			    			visibleItems: 1
+			    		}, 
+			    		landscape: { 
+			    			changePoint:640,
+			    			visibleItems: 2
+			    		},
+			    		tablet: { 
+			    			changePoint:768,
+			    			visibleItems: 3
+			    		}
+			    	}
+			    });
+			    
+			});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+     </div>
+	<!--/slider -->
+    </div>
+ 	<div class="plans" id="other">
+    <section id="pricePlans">
+    	<div class="wrap">
+			<ul id="plans">
+						<li class="plan">
+							<ul class="planContainer">
+								<li class="title1"><h3>Start Up<br><span class="bg1">For beginners</span></h3></li>
+								<li>
+									<ul class="options">
+										<li><span>Basic Pages</span></li>
+										<li><span>MYSQL Databases</span></li>
+										<li><span>Bandwidth</span></li>
+										<li><span>Storage space</span></li>
+									</ul>
+								</li>
+								<div class="plan1">
+									<h4 class="m_8">$15<small>/mo</small></h4>
+									<div class="btn">Order</div>
+									<div class="clear"> </div>
+								</div>
+							</ul>
+						</li>
+						<li class="plan">
+							<ul class="planContainer">
+								<div class="plan-text">
+								<li class="title"><h2 class="bestPlanTitle">Standard<br><span class="bg2">More than what you have dreamed with</span></h2></li>
+								<li>
+									<ul class="options">
+									    <li><span>Standard Pages</span></li>
+										<li><span>MYSQL Databases</span></li>
+										<li><span>Bandwidth</span></li>
+										<li><span>Storage space</span></li>
+									</ul>
+								</li>
+								<div class="plan2">
+									<h4 class="m_8">$15<small>/mo</small></h4>
+									<div class="btn1">Order</div>
+									<div class="clear"> </div>
+								</div>
+								</div>
+							</ul>
+						</li>
+						<li class="plan">
+							<ul class="planContainer">
+								<li class="title1"><h3>Professional<br><span class="bg1">For Smart People</span></h3></li>
+								<li>
+									<ul class="options">
+									    <li><span>Basic Pages</span></li>
+										<li><span>MYSQL Databases</span></li>
+										<li><span>Bandwidth</span></li>
+										<li><span>Storage space</span></li>
+									</ul>
+								</li>
+								<div class="plan1">
+									<h4 class="m_8">$15<small>/mo</small></h4>
+									<div class="btn">Order</div>
+									<div class="clear"> </div>
+								</div>
+							</ul>
+						</li>
+					</ul> 
+				  <h3 class="plan-text">And more available plans for all nedds .... check here</h3>
+		 </div>
+		 </section>
+       </div>
+	   <div class="footer" >
+	 		<div class="footer-top">
+	 			<div class="wrap">
+	 				<h2 class="m_3">Latest Tweets</h2>
+	 				<p class="m_5">This is how to keep in touch :)</p>
+	 				<img src="images/twt.png" alt=""/>	 				
+	 			</div>
+	 		</div>
+	 		<div class="footer-bottom">
+	 		  <div class="wrap">
+	     	  	<div class="copy">
+				   <p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			    </div>
+			    <div class="social">	
+				   <ul>	
+					  <li class="facebook"><a href="#"><span> </span></a></li>
+					  <li class="twitter"><a href="#"><span> </span></a></li>
+					  <li class="rss"><a href="#"><span> </span></a></li>		
+				   </ul>
+			    </div>
+			    <div class="clear"></div>
+			  </div>
+     	   </div>
+	 	</div>
+        <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+           <a href="#" id="toTop" style="display: block;">Up<span id="toTopHover" style="opacity: 1;"></span></a>
+	      <script src="js/jquery.scrollTo.js"></script>
+	  <script>
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+			begin: function() {
+			console.log('start')
+			},
+			end: function() {
+			console.log('stop')
+			}
+		});
+	});
+	</script>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

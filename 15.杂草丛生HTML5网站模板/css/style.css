@@ -1,0 +1,386 @@
+/*
+	Iridium by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		background: #141414;
+	}
+
+	body,input,textarea,select
+	{
+		font-family: 'Arimo', sans-serif;
+		font-size: 11pt;
+		line-height: 1.75em;
+		color: #4c4c4c;
+	}
+
+	h1,h2,h3,h4,h5,h6
+	{
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+		{
+			color: inherit;
+			text-decoration: none;
+		}
+		
+	/* Change this to whatever font weight/color pairing is most suitable */
+	strong, b
+	{
+		font-weight: bold;
+		color: #000000;
+	}
+	
+	em, i
+	{
+		font-style: italic;
+	}
+
+	/* Don't forget to set this to something that matches the design */
+	a
+	{
+		text-decoration: underline;
+		color: #272727;
+	}
+
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+	sub
+	{
+		position: relative;
+		top: 0.5em;
+		font-size: 0.8em;
+	}
+	
+	sup
+	{
+		position: relative;
+		top: -0.5em;
+		font-size: 0.8em;
+	}
+	
+	hr
+	{
+		border: 0;
+		border-top: solid 1px #ddd;
+	}
+	
+	blockquote
+	{
+		border-left: solid 0.5em #ddd;
+		padding: 1em 0 1em 2em;
+		font-style: italic;
+	}
+	
+	p, ul, ol, dl, table
+	{
+		margin-bottom: 1em;
+	}
+
+	header
+	{
+		margin-bottom: 1em;
+	}
+	
+		header h2
+		{
+		}
+	
+		header .byline
+		{
+			display: block;
+			margin: 0.5em 0 0 0;
+			padding: 0 0 0.5em 0;
+		}
+		
+	footer
+	{
+		margin-top: 1em;
+	}
+
+	br.clear
+	{
+		clear: both;
+	}
+
+	/* Sections/Articles */
+	
+		section,
+		article
+		{
+			margin-bottom: 3em;
+		}
+		
+		section > :last-child,
+		article > :last-child
+		{
+			margin-bottom: 0;
+		}
+
+		section:last-child,
+		article:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		.row > section,
+		.row > article
+		{
+			margin-bottom: 0;
+		}
+
+	/* Images */
+
+		.image
+		{
+			display: inline-block;
+		}
+		
+			.image img
+			{
+				display: block;
+				width: 100%;
+			}
+
+			.image.featured
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+			
+			.image.full
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+			
+			.image.left
+			{
+				float: left;
+				margin: 0 2em 2em 0;
+			}
+			
+			.image.centered
+			{
+				display: block;
+				margin: 0 0 2em 0;
+			}
+
+				.image.centered img
+				{
+					margin: 0 auto;
+					width: auto;
+				}
+
+	/* Lists */
+
+		ul.default
+		{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		
+			ul.default li
+			{
+				padding: 0.60em 0em;
+				border-top: 1px solid;
+				border-color: rgba(255,255,255,.1);
+			}
+			
+			ul.default li:first-child
+			{
+				padding-top: 0;
+				border-top: none;
+			}
+			
+			ul.default a
+			{
+				text-decoration: none;
+				color: rgba(255,255,255,.5);
+			}
+			
+			ul.default a:hover
+			{
+				text-decoration: underline;
+			}
+			
+		ul.style {
+		}
+		
+		ul.style li {
+			margin: 0;
+			padding: 2em 0em 1.5em 0em;
+			border-top: 1px solid #ECECEC;
+		}
+		
+		ul.style li:first-child
+		{
+			padding-top: 0;
+			border-top: none;
+		}
+		
+		ul.style img {
+			float: left;
+			margin-right: 20px;
+		}
+		
+		ul.style p {
+		}
+		
+		ul.style .posted {
+			padding: 0em 0em 1em 0em;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-size: 8pt;
+			color: #A2A2A2;
+		}
+		
+		ul.style .first {
+			padding-top: 0px;
+			border-top: none;
+		}
+							
+
+	/* Buttons */
+		
+		.button
+		{
+			position: relative;
+			display: inline-block;
+			margin-top: 2em;
+			padding: 0.90em 1.5em;
+			background: #e95d3c;
+			border-radius: 40px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.1em;
+			color: #FFF;
+			-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			-webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			-o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			-ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			cursor: pointer;
+		}
+
+			.button:hover
+			{
+				background: #de3d27;
+				color: #FFF !important;
+			}
+			
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		background: #2a2f27 url(../images/banner.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	#logo
+	{
+	}
+	
+	#nav
+	{
+	}
+
+		#nav ul
+		{
+			margin: 0;
+		}
+	
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		position: relative;
+		background: #333;
+		color: #fff;
+	}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		position: relative;
+		background: #fff;
+	}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+	
+	#featured
+	{
+		position: relative;
+		background: #f2f2f2;
+	}
+	
+	#featured h2
+	{
+		display: block;
+		margin-bottom: 2em;
+		font-size: 1.4em;
+	}
+	
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer
+	{
+		position: relative;
+		background: #1d1d1d;
+	}
+	
+	#footer h2
+	{
+		display: block;
+		color: #FFF;
+	}
+	
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+	
+	#copyright
+	{
+		position: relative;
+		padding: 3em 0em;
+		letter-spacing: 1px;
+		text-align: center;
+		color: rgba(255,255,255,.2);
+	}
+	
+	#copyright .container
+	{
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,.3);
+	}	

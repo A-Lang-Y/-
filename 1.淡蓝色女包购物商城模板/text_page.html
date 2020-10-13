@@ -1,0 +1,688 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <title>Typography and basic styles</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery-1.7.2.min.js" ></script>
+  <script src="js/html5.js" ></script>
+  <script src="js/jflow.plus.js" ></script>
+  <script src="js/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="js/radio.js"></script>
+  <script src="js/selectBox.js"></script>
+
+  <script>
+	$(document).ready(function() {
+		$("select").selectBox();
+	});
+  </script>
+
+  <script>
+	$(document).ready(function(){
+		$("#myController").jFlow({
+			controller: ".control", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#slider",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "984px",  // this is the width for the content-slider
+			height: "480px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".slidprev", // must be class, use . sign
+			next: ".slidnext", // must be class, use . sign
+			auto: true
+		});
+	});
+  </script>
+  <script>
+	$(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+          $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $('#list_banners').carouFredSel({
+		prev: '#ban_prev',
+		next: '#ban_next',
+		scroll: 1,
+		auto: false
+	  });
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+
+</head>
+<body>
+  <div class="container_12">
+    <div id="top">
+      <div class="grid_3">
+        <div class="phone_top">
+          Call Us +777 (100) 1234
+        </div><!-- .phone_top -->
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <div class="welcome">
+          Welcome visitor you can <a href="login.html">login</a> or <a href="login.html">create an account</a>.
+        </div><!-- .welcome -->
+      </div><!-- .grid_6 -->
+
+      <div class="grid_3">
+        <div class="valuta">
+          <ul>
+            <li class="curent"><a href="#">$</a></li>
+            <li><a href="#">&#8364;</a></li>
+            <li><a href="#">&#163;</a></li>
+          </ul>
+        </div><!-- .valuta -->
+
+        <div class="lang">
+          <ul>
+            <li class="curent"><a href="#">EN</a></li>
+            <li><a href="#">FR</a></li>
+            <li><a href="#">GM</a></li>
+          </ul>
+        </div><!-- .lang -->
+      </div><!-- .grid_3 -->
+    </div><!-- #top -->
+
+    <div class="clear"></div>
+
+    <header id="branding">
+      <div class="grid_3">
+        <hgroup>
+          <h1 id="site_logo"><a href="index.html" title=""><img src="images/logo.png" alt="Online Store Theme Logo"/></a></h1>
+          <h2 id="site_description">Online Store Theme</h2>
+        </hgroup>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_3">
+        <form class="search">
+          <input type="text" name="search" class="entry_form" value="" placeholder="Search entire store here..."/>
+	</form>
+      </div><!-- .grid_3 -->
+
+      <div class="grid_6">
+        <ul id="cart_nav">
+          <li>
+            <a class="cart_li" href="#">Cart <span>$0.00</span></a>
+            <ul class="cart_cont">
+              <li class="no_border"><p>Recently added item(s)</p></li>
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_img.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+              
+              <li>
+                <a href="product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/produkt_slid1.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+	      <li class="no_border">
+		<a href="shopping_cart.html" class="view_cart">View shopping cart</a>
+		<a href="checkout.html" class="checkout">Procced to Checkout</a>
+	      </li>
+            </ul>
+          </li>
+        </ul>
+
+        <nav class="private">
+          <ul>
+            <li><a href="#">My Account</a></li>
+		<li class="separator">|</li>
+            <li><a href="#">My Wishlist</a></li>
+		<li class="separator">|</li>
+            <li><a href="login.html">Log In</a></li>
+		<li class="separator">|</li>
+            <li><a href="login.html">Sign Up</a></li>
+          </ul>
+        </nav><!-- .private -->
+      </div><!-- .grid_6 -->
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <div id="block_nav_primary">
+    <div class="container_12">
+      <div class="grid_12">
+        <nav class="primary">
+          <ul>
+            <li class="curent"><a href="index.html">Home</a></li>
+            <li><a href="catalog_grid.html">Solids</a></li>
+            <li><a href="catalog_grid.html">Liquids</a></li>
+            <li>
+              <a href="catalog_grid.html">Spray</a>
+              <ul class="sub">
+                <li><a href="catalog_grid.html">For home</a></li>
+                <li><a href="catalog_grid.html">For Garden</a></li>
+                <li><a href="catalog_grid.html">For Car</a></li>
+                <li><a href="catalog_grid.html">Other spray</a></li>
+              </ul>
+            </li>
+            <li><a href="catalog_grid.html">Electric</a></li>
+            <li><a href="catalog_grid.html">For cars</a></li>
+	    <li>
+              <a href="#">All pages</a>
+              <ul class="sub">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text_page.html">Typography and basic styles</a></li>
+		<li><a href="catalog_grid.html">Catalog (grid view)</a></li>
+		<li><a href="catalog_list.html">Catalog (list type view)</a></li>
+		<li><a href="product_page.html">Product view</a></li>
+		<li><a href="shopping_cart.html">Shoping cart</a></li>
+		<li><a href="checkout.html">Proceed to checkout</a></li>
+		<li><a href="compare.html">Products comparison</a></li>
+		<li><a href="login.html">Login</a></li>
+		<li><a href="contact_us.html">Contact us</a></li>
+		<li><a href="404.html">404</a></li>
+		<li><a href="blog.html">Blog posts</a></li>
+		<li><a href="blog_post.html">Blog post view</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav><!-- .primary -->
+      </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+  </div><!-- .block_nav_primary -->
+
+  <div class="clear"></div>
+
+  <div class="container_12">
+    <div class="grid_12">
+       <div class="breadcrumbs">
+	      <a href="index.html">Home</a><span>&#8250;</span><a href="#">Category</a><span>&#8250;</span><span class="current">This page</span>
+       </div><!-- .breadcrumbs -->
+    </div><!-- .grid_12 -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <section id="main">
+    <div class="container_12">
+       <div id="sidebar" class="grid_3">
+	      <aside id="categories_nav">
+		     <h3>Categories</h3>
+
+		     <nav class="left_menu">
+			    <ul>
+				   <li class="current"><a href="#">Solids <span>(21)</span></a></li>
+				   <li><a href="#">Liquids <span> (27)</span></a></li>
+				   <li><a href="#">Spray <span>(33)</span></a></li>
+				   <li><a href="#">Electric <span>(17)</span></a></li>
+				   <li><a href="#">For Cars <span>(23)</span></a></li>
+				   <li><a href="#">For Room <span>(7)</span></a></li>
+				   <li class="last"><a href="#">Other <span>(135)</span></a></li>
+			    </ul>
+		     </nav><!-- .left_menu -->
+	      </aside><!-- #categories_nav -->
+
+	      <aside id="manufacturers">
+		     <h3>Manufacturers</h3>
+
+		     <nav class="left_menu">
+			    <ul>
+				   <li><a href="#">Febreze <span>(205)</span></a></li>
+				   <li><a href="#">Fresh Wave <span>(37)</span></a></li>
+				   <li><a href="#">Damp Rid <span>(83)</span></a></li>
+				   <li><a href="#">Air Wick <span>(21)</span></a></li>
+				   <li class="last"><a href="#">Blue Magic <span>(73)</span></a></li>
+			    </ul>
+		     </nav><!-- .left_menu -->
+	      </aside><!-- #categories_nav -->
+
+	      <aside id="what_new">
+		     <h3>What’s New?</h3>
+		     <div>
+			<a href="#"><img src="images/what.png" alt="" title="" /></a>
+			<a href="#">Freshmatic Ultra Automatic Spray Starter Kit </a>
+			<div class="prise">$177.00</div>
+		     </div>
+	      </aside><!-- #what_new -->
+
+	      <aside id="specials" class="specials">
+		     <h3>Specials</h3>
+
+		     <ul>
+			    <li>
+				   <div class="prev">
+					  <a href="#"><img src="images/special1.png" alt="" title="" /></a>
+				   </div>
+
+				   <div class="cont">
+					<a href="#">Honeysuckle Flameless Luminary Refill</a>
+					<div class="prise"><span class="old">$177.00</span>$75.00</div>
+				   </div>
+			    </li>
+
+			    <li>
+				   <div class="prev">
+					  <a href="#"><img src="images/special2.png" alt="" title="" /></a>
+				   </div>
+
+				   <div class="cont">
+					<a href="#">Honeysuckle Flameless Luminary Refill</a>
+					<div class="prise"><span class="old">$177.00</span>$75.00</div>
+				   </div>
+			    </li>
+		     </ul>
+	      </aside><!-- #specials -->
+
+	      <aside id="reviews" class="specials">
+		     <h3>Reviews</h3>
+
+		     <ul>
+			    <li>
+				   <div class="prev">
+					  <a href="#"><img src="images/product_3.png" alt="" title="" /></a>
+				   </div>
+
+				   <div class="cont">
+					<a href="#">Noticeables Dual Scented Oil Warmer</a>
+					  <div class="prise">$23.00</div>
+				   </div>
+			    </li>
+
+			    <li>
+				   <div class="prev">
+					  <a href="#"><img src="images/product_4.png" alt="" title="" /></a>
+				   </div>
+
+				   <div class="cont">
+					 <a href="#">Collection Honeysuckle Orchid Flameless</a>
+					  <div class="prise">$83.00</div>
+				   </div>
+			    </li>
+		     </ul>
+	      </aside><!-- #reviews -->
+
+	      <aside id="community_poll">
+		     <h3>Community Poll</h3>
+
+		     <h4>How old are you?</h4>
+
+		     <form action="#" class="poll">
+			<ul>
+			    <li><input class="niceRadio" type="radio" name="" value="" /> less than 18 years</li>
+			    <li><input class="niceRadio" type="radio" name="" value="" /> 18-24 years</li>
+			    <li><input class="niceRadio" type="radio" name="" value="" /> 24-30 years(9)</li>
+			    <li><input class="niceRadio" type="radio" name="" value="" /> 30-40 years</li>
+			    <li><input class="niceRadio" type="radio" name="" value="" /> More than 40 years</li>
+			</ul>
+
+			<input class="vote" type="submit" name="" value="Vote" />
+		     </form>
+	      </aside><!-- #community_poll -->
+
+	      <aside id="compare_products">
+			<h3>Compare Products</h3>
+
+			<ul>
+			    <li><a title="close" class="close" href="#"></a>Home Collection Honeysuckle Orchid Flameless</li>
+			    <li><a title="close" class="close" href="#"></a>Caldrea Linen and Room Spray, Ginger Pomelo</li>
+			    <li><a title="close" class="close" href="#"></a>Fresh Wave Travel Size Spray</li>
+			</ul>
+
+			<button class="compare">Compare</button>
+			<a class="clear_all" href="#">Clear All</a>
+
+			<div class="clear"></div>
+	      </aside><!-- #compare_products -->
+
+	      <aside id="newsletter_signup">
+		     <h3>Newsletter Signup</h3>
+		     <p>Phasellus vel ultricies felis. Duis
+		     rhoncus risus eu urna pretium.</p>
+
+		     <form class="newsletter">
+			    <input type="email" name="newsletter" class="your_email" value="" placeholder="Enter your email address..."/>
+			    <input type="submit" id="submit" value="Subscribe" />
+		     </form>
+	      </aside><!-- #newsletter_signup -->
+
+	      <aside id="banners">
+		<a id="ban_next" class="next arows" href="#"><span>Next</span></a>
+		<a id="ban_prev" class="prev arows" href="#"><span>Prev</span></a>
+
+		<h3>Banners</h3>
+
+		<div class="list_carousel">
+			<ul id="list_banners">
+				<li class="banner"><a href="#">
+					<div class="prev">
+						<img src="images/banner.png" alt="" title="" />
+					</div><!-- .prev -->
+
+					<h2>New smells</h2>
+
+					<p>in the next series</p>
+ 			        </a></li>
+
+				<li class="banner"><a href="#">
+					<div class="prev">
+						<img src="images/banner.png" alt="" title="" />
+					</div><!-- .prev -->
+
+					<h2>New smells</h2>
+
+					<p>in the next series</p>
+ 			        </a></li>
+
+				<li class="banner"><a href="#">
+					<div class="prev">
+						<img src="images/banner.png" alt="" title="" />
+					</div><!-- .prev -->
+
+					<h2>New smells</h2>
+
+					<p>in the next series</p>
+ 			        </a></li>
+
+			</ul>
+		</div><!-- .list_carousel -->
+	      </aside><!-- #banners -->
+
+	      <aside id="tags">
+		     <h3>Tags</h3>
+		     <a class="t1" href="#">california</a>
+		     <a class="t2" href="#">canada</a>
+		     <a class="t3" href="#">canon</a>
+		     <a class="t4" href="#">cat</a>
+		     <a class="t5" href="#">chicago</a>
+		     <a class="t6" href="#">christmas</a>
+		     <a class="t7" href="#">mars</a>
+		     <a class="t8" href="#">church</a>
+		     <a class="t9" href="#">city</a>
+		     <a class="t10" href="#">clouds</a>
+		     <a class="t11" href="#">color</a>
+		     <a class="t12" href="#">concert</a>
+		     <a class="t13" href="#">dance</a>
+		     <a class="t14" href="#">day</a>
+		     <a class="t15" href="#">dog</a>
+		     <a class="t16" href="#">england</a>
+		     <a class="t17" href="#">europe</a>
+	      </aside><!-- #community_poll -->
+       </div><!-- .sidebar -->
+
+       <div id="content" class="grid_9">
+		<h1 class="page_title">Typography and Basic Styles</h1>
+		<br/><br/>
+		<p>Proin vel ultrices erat. Etiam et enim libero. Duis sollicitudin auctor faucibus. Duis tristique feugiat velit quis lobortis. Phasellus dignissim lobortis dignissim. Vestibulum aliquet, leo in euismod tempor, lectus erat blandit justo, vitae suscipit leo nibh eu lacus. Duis rhoncus lobortis congue. Vestibulum et purus dui, vel porta lectus. Sed vulputate pulvinar adipiscing. Integer gravida aliquet enim, non ultrices ipsum pretium quis. Ut tempor <a href="#">ultricies dictum</a>. Sed gravida, arcu nec vulputate congue, tellus odio congue elit, in luctus lacus est vitae massa. Duis suscipit mollis massa, sit amet accumsan urna euismod quis. </p>
+		<br/>
+		<h2>Heading 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec molestie purus sem. Suspendisse a neque quam. Etiam mollis volutpat odio, id euismod justo gravida a. Aliquam erat volutpat. Phasellus faucibus venenatis lorem, vitae commodo elit pretium et.</p>
+		<br/>
+		<h3>Heading 3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec molestie purus sem. Suspendisse a neque quam. Etiam mollis volutpat odio, id euismod justo gravida a. Aliquam erat volutpat. Phasellus faucibus venenatis lorem, vitae commodo elit pretium et.</p>
+		<br/>
+		<h4>Heading 4</h4>
+		<p>Etiam mollis volutpat odio, id euismod justo gravida a. Aliquam erat volutpat. Phasellus faucibus venenatis lorem, vitae commodo elit pretium et. Duis rhoncus lobortis congue. Vestibulum et purus dui, vel porta lectus. Sed vulputate pulvinar adipiscing.</p>
+		<br/>
+		<hr>
+		<br/><br/>
+		<h5>Heading 5</h5>
+		<p>Nulla tempus, turpis in eleifend ultricies, dolor neque fermentum eros, non scelerisque velit purus viverra justo. Proin purus felis, tincidunt non ultricies ornare, dignissim et erat. Cras aliquet venenatis orci, laoreet ullamcorper sapien fringilla eu. Morbi ac est eu mauris auctor rutrum quis vitae nulla.</p>
+		<br/>
+		<h6>Heading 6</h6>
+		<p>Cras aliquet venenatis orci, laoreet ullamcorper sapien fringilla eu. Morbi ac est eu mauris auctor rutrum quis vitae nulla. Nulla tempus, turpis in eleifend ultricies, dolor neque fermentum eros, non scelerisque velit purus viverra justo. Proin purus felis, tincidunt non ultricies ornare, dignissim et erat. </p>
+		<br/>
+		<hr>
+		<br/><br/>
+		<h4>Block Quotes</h4>
+		<div class="blockquote">
+			<blockquote>Proin vel ultrices erat. Etiam et enim libero. Duis sollicitudin dignissim. Duis suscipit  faucibus. Duis tristique feugiat velit quis lobortis. Phasellus dignissim mollis massa, sit amet accumsan urna euismod quis.</blockquote>
+		</div><!-- .blockquote -->
+		<br/><br/>
+		<hr>
+		<br/><br/>
+		<h4>Images In Content</h4>
+		<div class="alignleft">
+			<img src="images/img_left.png" alt="" title="" />
+			<div class="img_description">Pellentesque habitant morbi tristique senectus</div>
+		</div><!-- .alignleft -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec molestie purus sem. Suspendisse a neque quam. Etiam mollis volutpat odio, id euismod justo gravidakly. Aliquam erat volutpat. Phasellus faucibus venenatis.</p>
+		<p>Proin vel ultrices erat. Etiam et enim libero. Duis sollicitudin auctor faucibus. Duis tristique feugiat velit quis lobortis. Phasellus dignissim lobortis dignissim. Vestibulum  lectus erat blandit justo, vitae suscipit leo nibh eu lacus.</p>
+		<p>Duis rhoncus lobortis congue. Vestibulum et purus dui, vel porta lectus. Sed vulputate pulvinar adipiscing aliquet, leo in euismod tempor. Aliquam imperdiet tellus at erat tincidunt euismod. </p>
+
+		<div class="clear"></div><br/>
+
+		<div class="alignright">
+			<img src="images/img_right.png" alt="" title="" />
+			<div class="img_description">Pellentesque habitant morbi tristique senectus</div>
+		</div><!-- .alignright -->
+		<p>Maecenas luctus pellentesque vulputate. Pellentesque eu sem nibh, vel scelerisque enim. Morbi vehicula ligula non arcu facilisis consectetur. Praesent euismod, odio id varius consectetur, arcu dolor bibendum ligula, nec ultrices sem lectus volutpat neque.  Tiam mollis volutpat odio, id euismod justo grada tincidunt feugiat ultricies.</p>
+		<p>Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.</p>
+		<p>Sapien nisl tincidunt magna, venenatis facilisis ante lorem nec est. Nam sodales, nisi non convallis aliquet, libero est accumsan sem, et tempus nibh quam cursus purus.</p>
+
+		<div class="clear"></div><br/>
+		<hr>
+		<br/><br/>
+
+		<h4>Lists of Items</h4>
+		<p>Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.</p>
+		<ul>
+			<li>She was walking to the mall.</li>
+			<li>Ted might eat the cake.</li>
+			<li>You must go right now.</li>
+			<li>Words were spoken.</li>
+			<li>The teacher is writing a report.</li>
+		</ul>
+
+		<p>Here are some verb phrase examples where the verb phrase is the predicate of a sentence. In this case, the verb phrase consists of the main verb plus any auxiliary, or helping, verbs. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede.</p>
+		<ol>
+			<li>Shipping & Delivery.</li>
+			<li>Privacy & Security.</li>
+			<li>Returns & Replacements.</li>
+			<li>Payment, Pricing & Promotions.</li>
+			<li>Viewing Orders.</li>
+		</ol>
+
+		<p>Next are some verb phrase examples of verb phrases where the phrase has a single function which means it can act like an adverb or an adjective. The phrase would include the verb and any modifiers, complements, or objects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis.</p>
+		<br/>
+		<hr>
+		<br/><br/>
+		<h4>Tables Style</h4>
+		<p>Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.</p>
+		<br/>
+		<table>
+			<tr>
+				<th class="bg">First Column</th><th>Second Column</th><th class="bg">Third Column</th><th>Fourth Column</th>
+			</tr>
+			<tr>
+				<td class="bg">One</td><td>no</td><td class="bg">yes</td><td>yes, all</td>
+			</tr>
+			<tr>
+				<td class="bg">Two</td><td>0</td><td class="bg">1</td><td>all</td>
+			</tr>
+			<tr>
+				<td class="bg">Three</td><td>$399</td><td class="bg">$599</td><td>$799</td>
+			</tr>
+			<tr>
+				<td class="bg">Four</td><td><a href="#">Call action</a></td><td class="bg"><a href="#">Call action</a></td><td><a href="#">Call action</a></td>
+			</tr>
+		</table>
+
+
+		<br/>
+		<h4>Forms Style</h4>
+		<p>Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+		<form class="form_style">
+			<br/><br/>
+			<div class="grid_3">
+				<strong>Textfield</strong><br/>
+				<input type="text" name="" class="" value="" placeholder="Placeholder..."/>
+			</div>
+
+			<div class="grid_3">
+				<strong>Select</strong><br/>
+				<select>
+					<option>Item of list</option>
+					<option>Item of list</option>
+				</select>
+			</div>
+
+			<div class="clear"></div>
+			<br/>
+			<div class="clear"></div>
+
+
+			<div class="grid_9"><strong>Checkbox set</strong></div>
+			<div class="clear"></div>
+			<div class="grid_2">
+				<input class="niceCheck" type="checkbox" />
+			</div>
+			<div class="grid_2">
+				<input class="niceCheck" type="checkbox" checked />
+			</div>
+			<div class="grid_2">
+				<input class="niceCheck" type="checkbox" disabled />
+			</div>
+
+			<div class="clear"></div>
+			<br/>
+			<div class="clear"></div>
+
+			<div class="grid_9"><strong>Radio set</strong></div>
+			<div class="clear"></div>
+			<div class="grid_2">
+				<input class="niceRadio" type="radio" />
+			</div>
+			<div class="grid_2">
+				<input class="niceRadio" type="radio" checked />
+			</div>
+			<div class="grid_2">
+				<input class="niceRadio" type="radio" disabled />
+			</div>
+
+			<div class="clear"></div>
+			<br/>
+			<div class="clear"></div>
+
+			<div class="grid_9"><strong>Radio set</strong><br/>
+				<textarea name="text"></textarea>
+			</div>
+
+			<div class="clear"></div>
+			<br/>
+			<div class="clear"></div>
+
+			<div class="grid_9"><strong>Radio set</strong><br/>
+				<input type="submit" value="Button" />
+				<input type="submit" value="Button" />
+				<input class="click" type="submit" value="Button" />
+			</div>
+		</form>
+       </div><!-- #content -->
+
+      <div class="clear"></div>
+
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+
+  <div class="clear"></div>
+
+  <footer>
+    <div class="f_navigation">
+      <div class="container_12">
+        <div class="grid_3">
+          <h3>Contact Us</h3>
+          <ul class="f_contact">
+            <li>49 Archdale, 2B Charlestone</li>
+            <li>+777 (100) 1234</li>
+            <li>mail@example.com</li>
+          </ul><!-- .f_contact -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Information</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">About As</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Secure payment</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Costumer Servise</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="contact_us.html">Contact As</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>My Account</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Order History</a></li>
+              <li><a href="#">Wish List</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+    </div><!-- .f_navigation -->
+
+    <div class="f_info">
+      <div class="container_12">
+        <div class="grid_6">
+          <p class="copyright">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+        </div><!-- .grid_6 -->
+
+        <div class="grid_6">
+          <div class="soc">
+            <a class="google" href="#"></a>
+            <a class="twitter" href="#"></a>
+            <a class="facebook" href="#"></a>
+          </div><!-- .soc -->
+        </div><!-- .grid_6 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+    </div><!-- .f_info -->
+  </footer>
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

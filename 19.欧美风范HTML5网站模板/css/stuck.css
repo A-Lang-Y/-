@@ -1,0 +1,49 @@
+#stuck_container {
+	background-color: #040404;
+	z-index: 999;
+	padding: 24px 0 23px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.isStuck {	
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.isStuck .menuBox {
+	margin: 0;
+
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 979px) {
+
+	#stuck_container {
+		position: relative !important;
+		box-shadow: none;
+		
+	}
+	.pseudoStickyBlock {
+		height: 0 !important;
+	}
+
+	.isStuck {
+}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.isStuck {    
+
+}
+}

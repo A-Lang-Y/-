@@ -1,0 +1,186 @@
+/*
+Free Html5 Responsive Templates
+Author: Kimmy
+Author URI: http://www.zerotheme.com/
+*/
+/* -------------------------------------------- */
+/* ------------------Reset--------------------- */
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}table, table td {padding:0;border:none;border-collapse:collapse;}img {vertical-align:top;}embed {vertical-align:top;}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+input, textarea {border:0; padding:0; margin:0; outline: 0;}
+iframe {border:0; margin:0; padding:0;}
+input, textarea, select {margin:0; padding:0px;}
+
+/* -------------------------------------------- */
+/* ------------------Font---------------------- */
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(../font/DroidSans.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(../font/DroidSansBold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(../font/RobotoSlabLight.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(../font/RobotoSlabRegular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(../font/RobotoSlabBold.woff) format('woff');
+}
+
+/* -------------------------------------------- */
+/* ------------------Clear--------------------- */
+.clear{content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+article:after, article:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
+.box:after, .box:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
+
+/* -------------------------------------------- */
+/* ------------------Style--------------------- */
+html, body {width:100%; padding:0; margin:0;}
+body {background: #999999;color: #A5A5A5;font: 16px/25px 'Droid Sans',sans-serif;}
+body .wrap-body{background:#ffffff; margin: 30px auto; padding: 30px;}
+
+a{color: #76D2C5;text-decoration: none;}
+a:hover {color: #474747; text-decoration: none;}
+
+a.button{cursor: pointer;color: #ffffff;line-height: 14px;font-family: Arial, Helvetica, sans-serif;font-size: 14px;font-weight: bold;	background: #3F3F3F;border:1px solid #ffffff; -webkit-border-radius: 4px;-moz-border-radius: 4px;-khtml-border-radius: 4px;border-radius: 4px;}
+a.button {	display: inline-block;	text-decoration: none;	padding: 6px 12px 6px 12px;}
+a.button:hover{}
+
+h1, h2, h3{
+	font-size: 25px;
+	line-height: 35px;
+	font-family: 'Roboto Slab',sans-serif;
+	font-weight: 300;
+	color: #474747;
+}
+
+h1 a, h2 a, h3 a{color: #474747; text-decoration: none;}
+h1 a:hover, h2 a:hover, h3 a:hover{color: #76D2C5; text-decoration: none;}
+
+/* -------------------------------------------- */
+/* ------------------Header-------------------- */
+header {}
+header .wrap-header{}
+
+header #logo {background:#76D2C5; width: 100%; text-align: center; padding: 40px 0px; color : #ffffff; }
+header #logo h1{font-size: 60px; line-height: 80px; color: #ffffff;}
+
+header .top {height: 40px;}
+header .top .socials ul {list-style: none;}
+header .top .socials ul li {position: relative;float: left; margin: 5px 0 5px 5px;}
+
+#search {width: 258px; float: right; position: relative; padding: 5px;}
+.button-search {	position: absolute;	left: 0px;	background: url('../images/button-search.png') center center no-repeat;	width: 30px;	height: 32px;	border-right: 1px solid #EEEEEE;	cursor: pointer;}
+#search input {	background: #FFF;	padding: 1px 1px 1px 33px;	width: 220px;	height: 28px;	border: 1px solid #EEEEEE;}
+
+/* -------------------------------------------- */
+/* ------------------Navigation---------------- */
+nav {}
+nav .wrap-nav{display: inline-block; background: #91DBD1; width: 100%;}
+
+.menu ul {list-style: none;margin: 0;padding: 0;}
+.menu  ul li {position: relative;float: left;padding: 6px 5px 0px 5px;}
+.menu  ul li a {font-size: 18px; color: #ffffff;display: block;padding: 6px 30px;margin-bottom: 5px;z-index: 6;position: relative;}
+.menu  ul li:hover {background-color:#ffffff;}
+.menu  ul li:hover a {color:#000000;}
+
+/* -------------------------------------------- */
+/* ------------------Content------------------- */
+#content {}
+#content .wrap-content{background-color:#FFF; margin-top: 30px;}
+
+.block{}
+
+#main-content{}
+#main-content article{ margin-bottom:40px; padding:20px; border: 1px solid #EEEEEE;}
+#main-content article .heading{text-align: center; border-bottom: 1px solid #EEEEEE; padding: 10px 0 30px 0; margin-bottom: 20px;}
+#main-content article .content{margin: 20px 0;}
+#main-content article h2{font-size:30px;}
+#main-content article img{float:left; margin:0 20px 10px 0; padding:3px; border:1px solid #EEEEEE;}
+#main-content article p{margin-bottom:10px;}
+#main-content article .info{font-style:italic; border-top: 1px solid #EEEEEE; padding: 30px 0 10px 0;}
+
+#sidebar{}
+#sidebar .box {margin-bottom:20px; border: 1px solid #EEEEEE; padding: 20px;}
+#sidebar .box .heading { padding:5px; text-align: center;}
+#sidebar .box .heading h2{display:inline; padding:0 10px;}
+#sidebar .box .content {padding:15px}
+#sidebar .box .content ul{list-style-type:none; text-align: center;}
+#sidebar .box .content ul li{border-bottom: 1px solid #E1E1E1; padding:5px;}
+#sidebar .box .content img{ float:left; padding:3px; border:1px solid #EEEEEE; margin-right:10px;}
+#sidebar .box .content .post {margin-bottom: 20px;}
+#sidebar .box .content .post h4{font-weight:normal;}
+#sidebar .box .content .post p{color:#A3A3A3; font-style:italic;}
+
+/* -------------------------------------------- */
+/* ------------------Form------------------- */
+
+#contact-form {width:580px}
+#contact-form label {
+	display:block; 
+	height:44px;
+}
+#contact-form input {
+	width:548px; 
+	font-size:15px; 
+	line-height:1.2em;
+	color:#a0a0a0; 
+	padding:8px 15px; 
+	margin:0; 
+	font-family:Arial, Helvetica, sans-serif; 
+	border:1px solid #eeeeee; 
+	background: #ffffff;
+	outline:none;
+}
+#contact-form textarea {
+	height:158px; 
+	overflow:auto; 
+	width:548px; 
+	font-size:15px; 
+	line-height:1.2em;
+	color:#a0a0a0; 
+	padding:7px 15px; 
+	margin:0; 
+	font-family:Arial, Helvetica, sans-serif; 
+	border:1px solid #eeeeee; 
+	background: #ffffff;
+	outline:none;
+}
+.buttons {padding-top:17px; text-align:right}
+.buttons a {margin-left:30px}
+
+/* -------------------------------------------- */
+/* ------------------Footer-------------------- */
+footer {background-color:#76D2C5; margin-top:30px;}
+footer .wrap-footer{padding:10px 0px; color:#ffffff;}
+footer .box {}
+footer .box .heading { padding:5px; border-bottom:1px solid #ffffff;}
+footer .box .heading h2{padding:0 10px; color:#ffffff;}
+footer .box .content {padding:15px;}
+footer .box .content a{	color: #ffffff; text-decoration: underline;}
+footer .box .content p{margin-bottom: 10px;}
+footer .box .gallery {}
+footer .box .gallery img{padding:3px; background: #ffffff; margin: 0 5px 5px 0;}
+
+.copyright{text-align:center; margin-top:20px; background:#91DBD1; padding:10px 0px;color:#ffffff; }
+.copyright a{text-decoration:underline; color:#ffffff; }

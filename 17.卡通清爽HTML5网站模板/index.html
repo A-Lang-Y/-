@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+<!----font-Awesome----->
+   	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+</head>
+<body>
+<div class="header_bg" id="home"><!-- start header -->
+<div class="container">
+	<div class="row header text-center specials">
+		<div class="h_logo">
+			<a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a>
+		</div>
+		<nav class="top-nav">
+			<ul class="top-nav nav_list">
+				<li><a href="portfolio.html">portfolio</a></li>
+				<li class="page-scroll"><a href="#about">About</a></li>
+				<li class="logo page-scroll"><a title="hexa" href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a></li>
+			    <li class="page-scroll"><a href="blog.html">blog</a></li>
+				<li class="page-scroll"><a href="#contact">get in touch</a></li>
+			</ul>
+			<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+		</nav>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+<div class="slider_bg"><!-- start slider -->
+<div class="container">
+		<div class="row slider">
+		<div class="wmuSlider example1"><!-- start wmuSlider example1 -->
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				  	 	<div class="slider_img text-center">
+				   			<ul class="list-unstyled list_imgs">
+				   				<li><img src="images/slider.jpg" alt="" class="responsive"/></li>
+				   			</ul>
+			           	</div>
+				   </article>
+				   <article style="position: relative; width: 100%; opacity: 1;"> 
+				  	 	<div class="slider_img text-center">
+				   			<ul class="list-unstyled list_imgs">
+				   				<li><img src="images/slider1.jpg" alt="" class="responsive"/></li>
+				   			</ul>
+			           	</div>
+				   </article>
+				 </div>
+                <ul class="wmuSliderPagination">
+                	<li><a href="#" class="">0</a></li>
+                	<li><a href="#" class="">1</a></li>
+                </ul>
+			<script src="js/jquery.wmuSlider.js"></script> 
+		     <script>
+				 $('.example1').wmuSlider();         
+			</script>
+        </div><!-- end wmuSlider example1 -->
+        <div class="clearfix"></div>
+      </div>
+</div>
+</div>
+<div class="main_bg"  id="about"><!-- start about us -->
+<div class="container">
+	<div class="row about">
+		<div class="col-md-3 about_img">
+			<img src="images/user.png" alt="" class="responsive"/>
+		</div>
+		<div class="col-md-9 about_text">
+			<h3>smith anderson</h3>
+			<h4>illustrator & character designer</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			<div class="soc_icons navbar-right">
+				<ul class="list-unstyled text-center">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="footer_bg" id="contact"><!-- start footer -->
+<div class="container">
+	<div class="row footer">
+		<div class="col-md-8 contact_left">
+			<h3>get in touch</h3>
+			<p>In order to get in touch use the contact form below:</h4>
+			<form method="post" action="contact-post.html">
+				<input type="text" value="Name (Required)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+				<input type="text" value="Email (Required)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+				<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+				<textarea onfocus="if(this.value == 'Your Message here....') this.value='';" onblur="if(this.value == '') this.value='Your Message here....;" >Your Message here....</textarea>
+				<span class="pull-right"><input type="submit" value="submit us"></span>
+			</form>
+		</div>
+		<div class="col-md-4  contact_right">
+			<p><span>Lorem Ipsum is simply dummy text: </span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+			<ul class="list-unstyled address">
+				<li><i class="fa fa-map-marker"></i><span>500 Lorem Ipsum Dolor Sit,</span></li>
+				<li><i class="fa fa-phone"></i><span>(00) 222 666 444</span></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:info@mycompany.com">info(at)mycompany.com</a></li>
+			</ul>
+		</div>		
+	</div>
+</div>
+</div>
+<div class="footer1_bg"><!-- start footer1 -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<p class="link"><span>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></span></p>
+				<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+				$(function() {
+				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+				});
+		</script>
+		<!---- start-smoth-scrolling---->		
+	</div>
+</div>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
