@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Home</title>
+     <meta charset="utf-8">
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/jquery.countdown.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/jquery.countdown.js"></script>
+     <script src="js/script.js"></script>
+     <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+     <script  src="js/jquery.touchSwipe.min.js"></script> 
+     <script>
+
+    $(window).load (
+    function(){$('.carousel1').carouFredSel({auto: false, prev: '.prev',next: '.next', width: 220, items: {
+      visible : {min: 3,
+       max: 3
+},
+height: 'auto',
+ width: 220,
+
+    }, responsive: true, 
+    
+    scroll: 1, 
+    
+    mousewheel: false,
+    
+    swipe: {onMouse: false, onTouch: true}});
+    
+    
+    
+    
+    
+    $('.typo').mouseenter(
+       function(){ 
+          var temp = $(".typo>img").attr("data-href");
+           $(".typo>img").attr(
+           "src", temp
+           );
+        }
+    ); 
+    
+    }); 
+      
+
+     </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+    <![endif]-->
+     </head>
+     <body  class="page1">
+<!--==============================header=================================-->
+ <header> 
+  <div class="container_12">
+   <div class="grid_12"> 
+    <h1><a href="index.html"><img src="images/logo.png" alt="Boo House"></a> </h1>
+    <div id="countdown"></div>
+    <div class="clear"></div>
+    <div class="menu_block">
+
+     <nav  class="" >
+      <ul class="sf-menu">
+         <li class="current"><a href="index.html">Home</a></li>
+         <li><a href="index-1.html">History</a></li>
+         <li><a href="index-2.html">Recipes</a></li>
+         <li><a href="index-3.html">Party Planning</a></li>
+         <li><a href="index-4.html">Decorations</a></li>
+         <li><a href="index-5.html">Contacts</a></li>
+       </ul>
+    </nav>
+     <form id="search" action="search.php" method="GET">
+        <input type="text" name="s">                           
+            <a onClick="document.getElementById('search').submit()"></a>
+        <div class="clear"></div>
+     </form>
+ <div class="clear"></div>
+</div><div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+           
+<div class="clear"></div>
+          </div>
+      </div>
+</header>
+
+<!--==============================Content=================================-->
+
+<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - September 07, 2013!</div>
+  <div class="container_12">
+    <div class="grid_9">
+      <div class="box">
+        <div class="typo">
+        <div class="ind"></div>
+        <img src="images/static.jpg" data-href="images/anim.gif" alt="">
+        
+        </div>
+        <p class="p1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="dofollow">Click here</a> to learn more about this free theme that was created by TemplateMonster.com</p>
+        <p class="p2">Want more templates of this kind? Visit the category of premium <a href="http://www.templatemonster.com/category/holiday-website-templates/" rel="nofollow">Holiday Website Templates</a> to get them. </p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies ylo erat rutrum. Cras facilisis, nulla vel viverra auctor, leo magna sodales felis, quis malesuada nibh odio ut veliteril. Proin pharetra luctus diam, a scelerisque eros convallis accumsan. Maecenas vehicula egestas venenatis. Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. Ut nisi nibh, sagittis ut semper elementum, pellentesque a odio. Phasellus vitae libero vel justo pretium dignissim. Integer semper in est nec congue. In laoreet lacus eros, vel pulvinar urna ultricies ut.
+      </div>
+      <a href="#" class="next"></a><a href="#" class="prev"></a>
+      <h3 class="pl1">Movies</h3>
+      <div class="car_div">
+        <ul class="carousel1">
+          <li><img src="images/page1_img1.jpg" alt=""><a href="#">Young Frankenstein</a></li>
+          <li><img src="images/page1_img2.jpg" alt=""><a href="#">Drag Me to Hell</a></li>
+          <li><img src="images/page1_img3.jpg" alt=""><a href="#">The Monster Squad </a></li>
+          <li><img src="images/page1_img1.jpg" alt=""><a href="#">Young Frankenstein</a></li>
+          <li><img src="images/page1_img2.jpg" alt=""><a href="#">Drag Me to Hell</a></li>
+          <li><img src="images/page1_img3.jpg" alt=""><a href="#">The Monster Squad </a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <div class="grid_3 alpha">
+        <div class="box bx1 blue maxheight">
+          <h4>Pumpkin Carving</h4>
+          <p>Lorem ipsum dolor sit met, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies erat rutrum. </p>
+          Cras facilisis, nulla velerto viverra auctor, lem magny sodales felis, quis dermo malesuada nib.
+          <img src="images/icon1.png" alt="" class="icon">
+        </div>
+      </div>
+      <div class="grid_3">
+        <div class="box bx1 maxheight">
+          <h4>Haunted Places</h4>
+          <p>Derorem ipsum dolor situ met, consectetur dipiscing elit. In mollis erat mattisym neque facilisis, sit ametolo ultricies erat rutrum.</p>Nras facilisis, hynulla velyr viverra auctor, le magnami sodales felis, quis fertolo malesuada  velto. 
+          <img src="images/icon2.png" alt="" class="icon">
+        </div>
+      </div>
+      <div class="grid_3 omega">
+        <div class="box bx1 green maxheight">
+          <h4>Halloween Games</h4>
+          <p>Hoalorem ipsum dolor sity met, consectetur wetoinom adipiscing elit. In mollis fer der erat mattis neque fad facilisis, sit amet ultricies erat rutrum. </p>Gaeras der ho facilisisyloll nulla velhiverra auctor, le magna sodales.
+          <img src="images/icon3.png" alt="" class="icon">
+        </div>
+      </div>
+    </div>
+    <div class="grid_3" >
+      <div class="block1 blue"><img src="images/creep1.png" alt=""><a href="#">Costume Contest</a></div>
+      <div class="block1"><img src="images/creep2.png" alt=""><a href="#">Halloween Festival</a></div>
+      <div class="block1 green"><img src="images/creep3.png" alt=""><a href="#">Legends</a></div>
+    </div>
+  </div>
+</div>
+
+<!--==============================footer=================================-->
+
+<footer>    
+  <div class="container_12">
+    <div class="grid_12">
+    <div class="socials">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </div>
+      <div class="copy">
+      Halloween    &copy; 2013 | <a href="#">Privacy Policy</a> | Website Template Collect from <a href="http://www.cssmoban.com/"  title="网页模板">网页模板</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

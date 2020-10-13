@@ -1,0 +1,189 @@
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active {
+  outline: none;
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* FlexSlider Necessary Styles
+*********************************/.flexslider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+}
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+  max-width: 100%;
+  display: block;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .slides {
+  display: block;
+}
+* html .slides {
+  height: 1%;
+}
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block;
+}
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+  background: #888888;
+  position: relative;
+  zoom: 1;
+}
+.home-slider {
+  width: 620px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flexslider .slides > li {
+  position: relative;
+}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {
+  zoom: 1;
+  position: relative;
+}
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {
+  background: none;
+  zoom: 1;
+}
+.flex-caption {
+  width: 50%;
+  padding: 2%;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 18px;
+}
+/* Direction Nav */
+.flex-direction-nav {
+  position: absolute;
+  top: 38%;
+  right: -21px;
+}
+.flex-direction-nav li a {
+  width: 38px;
+  height: 37px;
+  display: block;
+  background: url(../img/slider-nav.png) no-repeat 0 0;
+  cursor: pointer;
+  text-indent: -9000px;
+}
+.flex-direction-nav li .next {
+  background-position: 0px -37px;
+  height: 32px;
+}
+.flex-direction-nav li .next:hover {
+  background-position: -38px -37px;
+}
+.flex-direction-nav li .prev:hover {
+  background-position: -38px 0px;
+}
+.flex-direction-nav li .disabled {
+  opacity: .3;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+/* Control Nav */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  text-align: right;
+}
+.flex-control-nav li {
+  margin: 0 0 0 5px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-nav li:first-child {
+  margin: 0;
+}
+.flex-control-nav li a {
+  width: 8px;
+  height: 8px;
+  display: block;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: 9999px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.no-boxshadow .flex-control-nav li a {
+  border: 1px solid #ccc;
+}
+.boxshadow .flex-control-nav li a {
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.flex-control-nav li a:hover,
+.flex-control-nav li a.active {
+  background: #cb5432;
+}
+/* Project slider*/
+.project-slider {
+  margin-bottom: 54px;
+  margin-top: 0px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.project-slider .flex-direction-nav {
+  display: none;
+}
+.project-slider .flex-control-nav {
+  right: 15px;
+  bottom: 10px;
+  text-align: right;
+}

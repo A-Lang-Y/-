@@ -1,0 +1,66 @@
+/* root element for tabs  */
+ul.tabs { 
+	list-style:none; 
+	margin:0 !important;
+	background: url(../img/line-divider.png) top left repeat-x; 
+	padding:11px 0px 0px 0px;	
+	height:46px;
+}
+
+/* single tab */
+ul.tabs li { 
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image: none !important; 
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	color: #555149;
+	font-size:14px;
+	display:block;
+	height: 30px;  
+	line-height:30px;
+	text-align:center;	
+	text-decoration:none;
+	padding: 3px 9px;
+	margin:0px;	
+	margin-right: 10px;
+	position:relative;
+	top:1px;
+	background: url(../img/tab-bg.png) no-repeat 0px -100px ;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover { background-position: 0px 0px;  color: #ffffff; }
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current,
+ul.tabs a.current:hover,
+ul.tabs li.current a {	
+	cursor:default !important; 
+	color:#fff !important;
+	background-position: 0px 0px;
+}
+
+
+/* initially all panes are hidden */ 
+.panes .pane {
+	display:none;	
+}
+
+.panes>div {
+   background: url(../img/line-divider.png) top left repeat-x; 
+    display: none;
+    min-height: 200px;
+    padding: 21px 10px;
+}

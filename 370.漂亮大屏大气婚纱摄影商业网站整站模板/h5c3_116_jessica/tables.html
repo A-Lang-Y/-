@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JessicaWhite | professional fashion photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/docs.css" rel="stylesheet">
+<link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->    
+</head>
+<body>
+	<!--header-->
+    <div class="header">
+    	<div class="wrap">
+        	<div class="navbar navbar_ clearfix">
+            	<div class="container">
+                    <div class="row">
+                        <div class="span4">
+                        	<div class="logo"><a href="index.html"><img src="img/logo.png" alt="" /></a></div>                        
+                        </div>
+                        <div class="span8">
+                        	<div class="follow_us">
+                                <ul>
+                                    <li><a href="#" class="facebook">Facebook</a></li>
+                                    <li><a href="#" class="vimeo">Vimeo</a></li>
+                                    <li><a href="#" class="tumbrl">Tumbrl</a></li>
+                                    <li><a href="#" class="twitter">Twitter</a></li>
+                                    <li><a href="#" class="delicious">Delicious</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <nav id="main_menu">
+                                <div class="menu_wrap">
+                                    <ul class="nav sf-menu">
+                                      <li><a href="index.html">Home</a></li>
+                                      <li><a href="about.html">About</a></li>
+                                      <li class="sub-menu current"><a href="javascript:{}">Features</a>
+                                          <ul>
+                                              <li><a href="scaffolding.html"><span>-</span>Scaffolding</a></li>
+                                              <li><a href="typography.html"><span>-</span>Typography</a></li>
+                                              <li><a href="shortcodes.html"><span>-</span>Shortcodes</a></li>
+                                              <li class="current"><a href="tables.html"><span>-</span>Tables</a></li>                                          
+                                          </ul>                                          
+                                      </li>
+                                      <li class="sub-menu"><a href="javascript:{}">Portfolio</a>
+                                           <ul>
+                                              <li><a href="portfolio_2columns.html"><span>-</span>2 Columns</a></li>
+                                              <li><a href="portfolio_3columns.html"><span>-</span>3 Columns</a></li>
+                                              <li><a href="portfolio_4columns.html"><span>-</span>4 Columns</a></li>                                      
+                                          </ul>
+                                      </li>                                  
+                                      <li class="sub-menu"><a href="javascript:{}">Blog</a>
+                                           <ul>
+                                              <li><a href="blog.html"><span>-</span>Blog with right sidebar</a></li>
+                                              <li><a href="blog_post.html"><span>-</span>Blog post</a></li>                                      
+                                          </ul>
+                                      </li>
+                                      <li><a href="contacts.html">Contacts</a></li>
+                                    </ul>
+                                </div>
+                             </nav>                            
+                        </div>
+                    </div>                
+                </div>
+             </div>
+        </div>    
+    </div>
+    <!--//header-->
+        
+    <!--page_container-->
+    <div class="page_container">
+    	<div class="breadcrumb">
+        	<div class="wrap">
+                <div class="container">
+                    <a href="index.html">Home</a><span>/</span>Tables
+                </div>
+            </div> 
+        </div>
+    	<!--MAIN CONTENT AREA-->
+        <div class="wrap">
+            <div class="container inner_content">
+                <!-- Tables -->
+                <section id="tables">
+                  <div class="page-header">
+                    <h2 class="title"><span>Tables <small>For, you guessed it, tabular data</small></span></h2>
+                  </div>
+                
+                  <h3>Table markup</h3>
+                  <div class="row">
+                    <div class="span8">
+                      <table class="table table-bordered table-striped">
+                        <colgroup>
+                          <col class="span1">
+                          <col class="span7">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>Tag</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <code>&lt;table&gt;</code>
+                            </td>
+                            <td>
+                              Wrapping element for displaying data in a tabular format
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <code>&lt;thead&gt;</code>
+                            </td>
+                            <td>
+                              Container element for table header rows (<code>&lt;tr&gt;</code>) to label table columns
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <code>&lt;tbody&gt;</code>
+                            </td>
+                            <td>
+                              Container element for table rows (<code>&lt;tr&gt;</code>) in the body of the table
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <code>&lt;tr&gt;</code>
+                            </td>
+                            <td>
+                              Container element for a set of table cells (<code>&lt;td&gt;</code> or <code>&lt;th&gt;</code>) that appears on a single row
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <code>&lt;td&gt;</code>
+                            </td>
+                            <td>
+                              Default table cell
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <code>&lt;th&gt;</code>
+                            </td>
+                            <td>
+                              Special table cell for column (or row, depending on scope and placement) labels<br>
+                              Must be used within a <code>&lt;thead&gt;</code>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <code>&lt;caption&gt;</code>
+                            </td>
+                            <td>
+                              Description or summary of what the table holds, especially useful for screen readers
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="span4">
+                        <pre class="prettyprint linenums">
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+                    </div>
+                  </div>
+                
+                  <h3>Table options</h3>
+                  <table class="table table-bordered table-striped">
+                  <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Default</td>
+                        <td class="muted">None</td>
+                        <td>No styles, just columns and rows</td>
+                      </tr>
+                      <tr>
+                        <td>Basic</td>
+                        <td>
+                          <code>.table</code>
+                        </td>
+                        <td>Only horizontal lines between rows</td>
+                      </tr>
+                      <tr>
+                        <td>Bordered</td>
+                        <td>
+                          <code>.table-bordered</code>
+                        </td>
+                        <td>Rounds corners and adds outer border</td>
+                      </tr>
+                      <tr>
+                        <td>Zebra-stripe</td>
+                        <td>
+                          <code>.table-striped</code>
+                        </td>
+                        <td>Adds light gray background color to odd rows (1, 3, 5, etc)</td>
+                      </tr>
+                      <tr>
+                        <td>Condensed</td>
+                        <td>
+                          <code>.table-condensed</code>
+                        </td>
+                        <td>Cuts vertical padding in half, from 8px to 4px, within all <code>td</code> and <code>th</code> elements</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+                
+                  <h2 class="title"><span>Example tables</span></h2>
+                
+                  <h3>1. Default table styles</h3>
+                  <div class="row">
+                    <div class="span4">
+                      <p>Tables are automatically styled with only a few borders to ensure readability and maintain structure. With 2.0, the <code>.table</code> class is required.</p>
+                        <pre class="prettyprint linenums">
+&lt;table class="table"&gt;
+  
+&lt;/table&gt;</pre>
+                    </div>
+                    <div class="span8">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                
+                
+                  <h3>2. Striped table</h3>
+                  <div class="row">
+                    <div class="span4">
+                      <p>Get a little fancy with your tables by adding zebra-striping&mdash;just add the <code>.table-striped</code> class.</p>
+                      <p class="muted"><strong>Note:</strong> Striped tables use the <code>:nth-child</code> CSS selector and is not available in IE7-IE8.</p>
+                        <pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-striped"&gt;
+  
+&lt;/table&gt;</pre>
+                    </div>
+                    <div class="span8">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                
+                
+                  <h3>3. Bordered table</h3>
+                  <div class="row">
+                    <div class="span4">
+                      <p>Add borders around the entire table and rounded corners for aesthetic purposes.</p>
+                        <pre class="prettyprint linenums">
+&lt;table class="table table-bordered"&gt;
+  
+&lt;/table&gt;</pre>
+                    </div>
+                    <div class="span8">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="2">1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@TwBootstrap</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                
+                
+                  <h3>4. Condensed table</h3>
+                  <div class="row">
+                    <div class="span4">
+                      <p>Make your tables more compact by adding the <code>.table-condensed</code> class to cut table cell padding in half (from 8px to 4px).</p>
+                        <pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-condensed"&gt;
+  
+&lt;/table&gt;</pre>
+                    </div>
+                    <div class="span8">
+                      <table class="table table-condensed">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                
+                
+                
+                  <h3>5. Combine them all!</h3>
+                  <div class="row">
+                    <div class="span4">
+                      <p>Feel free to combine any of the table classes to achieve different looks by utilizing any of the available classes.</p>
+                        <pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-striped table-bordered table-condensed"&gt;
+  ...
+&lt;/table&gt;</pre>
+                    </div>
+                    <div class="span8">
+                      <table class="table table-striped table-bordered table-condensed">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th colspan="2">Full name</th>
+                            <th></th>
+                          </tr>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+    
+            </div>
+        </div>
+    <!--/MAIN CONTENT AREA-->
+    	
+    </div>
+    <!--//page_container-->
+    
+    <!--footer-->
+    <div id="footer">
+    	<div class="wrap">
+    		<div class="container">
+            	<div class="row">
+                	<div class="span3">
+                    	<h2 class="title">Latest tweets</h2>
+                        <div class="tweet_block"></div>                       
+                    </div>
+                    <div class="span3">
+                    	<h2 class="title">Get in touch!</h2>
+                        <form action="#" method="post">
+                        	<input class="span3" type="text" name="name" id="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+                            <input class="span3" type="text" name="email" id="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
+                            <textarea name="message" id="message" class="span3" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';" >Message</textarea>
+                            <div class="clear"></div>
+                            <input type="reset" class="btn dark_btn" value="Clear form" />
+                            <input type="submit" class="btn send_btn" value="Send!" />
+                            <div class="clear"></div>
+                        </form>
+                    </div> 
+                    <div class="span3">
+                    	<h2 class="title">Testimonials</h2>
+                        <ul>
+                        	<li>
+                            	<span class="testimonials_arrow"></span>Orci nisi, luctus vitae imperdiet a, iquam vel urna. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullamcorper pulvinar, massa libero magna.
+                            	<div class="clear"></div>
+                                <div class="author">Anna Smith, Company inc.</div>
+                            </li>
+                            <li>
+                            	<span class="testimonials_arrow"></span>Luctus vitae imperdiet a, iquamorci nisi lorem. Pellentesque tincidunt laoreet est, in tristique sapien consequat a purus at ullam pulvinar, massa libero consequat egestas mas.
+                            	<div class="clear"></div>
+                                <div class="author">John Doe, Company inc.</div>
+                            </li>
+                        </ul>                     
+                    </div>
+                    <div class="span3">
+                    	<h2 class="title">flickr photostream</h2>
+                        <div class="flickrs">
+                            <div class="FlickrImages">
+                                <ul></ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div> 
+                    </div>         	
+            	</div>
+        	</div>            
+        </div>
+        
+        <div class="footer_bottom">
+            <div class="wrap">
+            	<div class="container">
+                	<div class="row">
+                		<div class="span5">
+                        	<div class="foot_logo"><a href="index.html"><img src="img/foot_logo.png" alt="" /></a></div>    
+                        	<div class="copyright">&copy; 2020 Jessica White. Professional Fashion Photography. All Rights Reserved. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></div>                        
+                        </div>
+                        <div class="span7">
+                        	<div class="foot_right_block">
+                            	<div class="fright">
+                                	<form action="#" method="post">
+                                        <input class="inp_search" name="name" type="text" value="Search the Site" onfocus="if (this.value == 'Search the Site') this.value = '';" onblur="if (this.value == '') this.value = 'Search the Site';" />                                        
+                                    </form>
+                                </div>
+                                <div class="follow_us">
+                                	<ul>
+                                        <li><a rel="tooltip" href="#" title="Facebook" class="facebook">Facebook</a></li>
+                                        <li><a rel="tooltip" href="#" title="Twitter" class="twitter">Twitter</a></li>
+                                        <li><a rel="tooltip" href="#" title="Tumbrl" class="tumbrl">Tumbrl</a></li>
+                                        <li><a rel="tooltip" href="#" title="Vimeo" class="vimeo">Vimeo</a></li>
+                                        <li><a rel="tooltip" href="#" title="Delicious" class="delicious">Delicious</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            
+                            	<div class="clear"></div>
+                            	<div class="foot_menu">
+                            		<ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="scaffolding.html" class="current">features</a></li>
+                                        <li><a href="portfolio_2columns.html">Portfolio</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contacts.html">Contacts</a></li>
+                                    </ul>
+                            	</div>
+                            </div>                            
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//footer-->   
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+    <script src="js/application.js"></script>
+</body>
+</html>

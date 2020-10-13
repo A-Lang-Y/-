@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta charset="utf-8" />
+<title>Artefak</title>
+<link href="styles/reset.css" type="text/css" rel="stylesheet" />
+<link href="styles/style.css" type="text/css" rel="stylesheet" />
+<link href="styles/inner.css" type="text/css" rel="stylesheet" />
+<link href="styles/prettyPhoto.css" rel="stylesheet"  type="text/css" media="screen" title="prettyPhoto" />
+<!--[if IE]> <script src="js/html5.js"></script>
+<![endif]-->
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/fade.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	//=================================== MAIN MENU ===================================//
+	jQuery("ul.sf-menu").supersubs({ 
+	minWidth		: 12,		// requires em unit.
+	maxWidth		: 14,		// requires em unit.
+	extraWidth		: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+						   // due to slight rounding differences and font-family 
+	}).superfish();  // call supersubs first, then superfish, so that subs are 
+					 // not display:none when measuring. Call before initialising 
+					 // containing tabs for same reason.
+	
+	//=================================== SLIDESHOW ===================================//
+	jQuery('#slideshow').cycle({
+		timeout: 5000,  // milliseconds between slide transitions (0 to disable auto advance)
+		fx:      'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...     
+		pager:   '#slidernav',  // selector for element to use as pager container
+		pause:   0,	  // true to enable "pause on hover"
+		cleartype:     !$.support.opacity,  // true if clearType corrections should be applied (for IE)
+		cleartypeNoBg: true, // set to true to disable extra cleartype fixing (leave false to force background color setting on slides)  
+		pauseOnPagerHover: 0 // true to pause when hovering over pager link
+	});
+
+					 
+	//=================================== PRETTYPHOTO ===================================//
+	jQuery('a[data-rel]').each(function() {jQuery(this).attr('rel', jQuery(this).data('rel'));});
+	jQuery("a[rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'facebook',slideshow:2000});
+					 
+});
+</script>
+</head>
+
+<body>
+<div id="bodychild">
+	<div id="outercontainer">
+    	
+        <!-- HEADER -->
+        <div id="outerheader">
+            <header id="top">
+            	<div id="logo"><a href="index-2.html"><img src="images/logo.png" alt=""></a></div>
+                <section id="navigation">
+                    <nav>
+                        <ul id="topnav" class="sf-menu">
+                            <li class="current"><a href="index-2.html">Home</a></li>
+                            <li><a href="about.html">About</a>
+                                <ul>
+                                    <li><a href="about.html">About Page</a></li>
+                                    <li><a href="portfolio2.html">Portfolio Alternate</a></li>
+                                    <li><a href="element.html">Element</a></li>
+                                    <li><a href="single.html">Blog Detail</a></li>
+                                    <li><a href="archive.html">Archives</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul><!-- topnav -->
+                    </nav><!-- nav -->	
+                    <div class="clear"></div>
+                </section>
+                <div class="clear"></div>
+            </header>
+        </div>
+        <!-- END HEADER -->
+        
+        <!-- AFTER HEADER -->
+        <div id="outerafterheader">
+            <div id="afterheader">
+            	<section id="aftertheheader">
+                	“This can be your tagline or something you want...�?
+            	</section>
+            </div>
+        </div>
+        <!-- END AFTER HEADER -->
+        
+        <!-- SLIDER -->
+        <div id="outerslider">
+        	<div id="slidercontainer">
+            	<div id="bgslider"></div>
+            	<section id="slider">
+                    <ul id="slideshow">
+                    	<li>
+                        	<div class="slide-img"><img src="images/content/slide1.jpg" alt=""></div>
+                            <div class="slide-text">
+                            	<hgroup>
+                                    <h1>Welcome to <span class="colortext">Artefak</span> Theme!</h1>
+                                    <h4>Pellentesque at mauris fringilla nunc sollicitudin vehicula. </h4>
+                                </hgroup>
+                                <p>Fusce at sapien sit amet mauris auctor ultricies nec et dui. Donecviverra et tincidunt. Sed ut posuere enim. Suspendisse lacus.</p>
+                                <a href="#" class="buttoncolor"><span class="buttontext">Read More</span><span class="buttonsep"></span></a>
+                            </div>
+                        </li>
+                    	<li>
+                        	<div class="slide-img"><img src="images/content/slide2.jpg" alt=""></div>
+                            <div class="slide-text">
+                            	<hgroup>
+                                    <h1>We will Prove Our <span class="colortext">Efficiency.</span></h1>
+                                    <h4>Morbi bibendum ullamcorper velit nec auctor. </h4>
+                                </hgroup>
+                                <p>Morbi hendrerit porttitor augue, in iaculis nunc vulputate sed. Donec egestas porttitor dolor, sit amet .</p>
+                                <a href="#" class="buttoncolor"><span class="buttontext">Read More</span><span class="buttonsep"></span></a>
+                            </div>
+                        </li>
+                    	<li>
+                        	<div class="slide-img"><img src="images/content/slide3.jpg" alt=""></div>
+                            <div class="slide-text">
+                                <h1>The World can be Yours <br/>with <span class="colortext">Artefak!</span></h1>
+                                <p>Morbi hendrerit porttitor augue, in iaculis nunc vulputate sed. Donec egestas porttitor dolor, sit amet .</p>
+                                <a href="#" class="buttoncolor"><span class="buttontext">Read More</span><span class="buttonsep"></span></a>
+                            </div>
+                        </li>
+                    </ul>
+                   <div id="slidernav"></div>
+                </section>
+            </div>
+        </div>
+        <!-- END SLIDER -->
+        
+        <!-- BEFORE CONTENT -->
+        <div id="outerbeforecontent">
+        	<div id="beforecontent">
+            	<section id="beforethecontent">
+                	<article id="beforethecontent-colleft">
+                    	<h2>About us</h2>
+                        <p>Morbi bibendum ullamcorper velit nec auctor. <span class="colortext">Pellentesque ullamcorper</span> odio vel nunc tincidunt ac posuere sem tempor. Ut lacinia turpis at urna malesuada in dignissim metus venenatis.</p>
+                        <p><span class="colortext">Morbi hendrerit porttitor augue</span>, in iaculis nunc vulputate sed. Donec egestas porttitor dolor, sit amet luctus diam molestie et. </p>
+                    </article>
+                	<article id="beforethecontent-colright">
+                    	<div class="quote">
+                        <p>“Imagination is the beginning of creation. You imagine what you desire, you will what you imagine and at last you create what you will.�?/p>
+                        <span class="qname colortext">~ George Bernard Shaw</span>
+                        </div>
+                    </article>
+                    <div class="clear"></div>
+                </section>
+            </div>
+        </div>
+        <!-- END BEFORE CONTENT -->
+        
+        <!-- MAIN CONTENT -->
+        <div id="outermain">
+        	<section id="maincontent">
+                <h2>Recent Works</h2>
+                <div id="ts-display-portfolio" class="shortcode">
+                    <ul id="ts-display-pf-col-4">
+                        <li>
+                            <div class="ts-display-pf-img">
+                                <a class="image" href="images/content/pf/pf4_1.jpg" data-rel="prettyPhoto[mixed]" >
+                                <span class="rollover"></span>
+                                <img src="images/content/pf/pf4_1.jpg" alt="" /></a>
+                            </div>
+                            <div class="ts-display-pf-text">
+                                <h2 class="posttitle"><a href="#">Web Interface.</a></h2>
+                                <p>Nam volutpat mauris ac posuere elementum et pretium.</p>
+                            </div>
+                            <div class="ts-display-clear"></div>
+                        </li>
+                        <li>
+                            <div class="ts-display-pf-img">
+                                <a class="image" href="images/content/pf/pf4_2.jpg" data-rel="prettyPhoto[mixed]" >
+                                <span class="rollover"></span>
+                                <img src="images/content/pf/pf4_2.jpg" alt="" /></a>
+                            </div>
+                            <div class="ts-display-pf-text">
+                                <h2 class="posttitle"><a href="#">Digital Printing.</a></h2>
+                                <p>Nam volutpat mauris ac posuere elementum et pretium.</p>	
+                            </div>
+                            <div class="ts-display-clear"></div>
+                        </li>
+                        <li>
+                            <div class="ts-display-pf-img">
+                                <a class="image" href="images/content/pf/pf4_3.jpg" data-rel="prettyPhoto[mixed]" >
+                                <span class="rollover"></span>
+                                <img src="images/content/pf/pf4_3.jpg" alt="" /></a>
+                            </div>
+                            <div class="ts-display-pf-text">
+                                <h2 class="posttitle"><a href="#">Web Design.</a></h2>
+                                <p>Nam volutpat mauris ac posuere elementum et pretium.</p>	
+                            </div>
+                            <div class="ts-display-clear"></div>
+                        </li>
+                        <li class="nomargin">
+                            <div class="ts-display-pf-img">
+                                <a class="image" href="images/content/pf/pf4_4.jpg" data-rel="prettyPhoto[mixed]" >
+                                <span class="rollover"></span>
+                                <img src="images/content/pf/pf4_4.jpg" alt="" /></a>
+                            </div>
+                            <div class="ts-display-pf-text">
+                                <h2 class="posttitle"><a href="#">Photography.</a></h2>
+                                <p>Nam volutpat mauris ac posuere elementum et pretium.</p>
+                            </div>
+                            <div class="ts-display-clear"></div>
+                        </li>
+                    </ul>
+                </div><!-- end ts-display-portfolio -->
+                
+                <div class="separator line"><div></div></div>
+                
+                <article id="welcome">
+                    <h1>We’re <span class="colortext">Artefak</span> and we make a great wordpress theme</h1>
+                    <p>Fusce at sapien sit amet mauris auctor ultricies nec et dui. Donec fermentum viverra tincidunt. Sed ut posuere enim. Suspendisse lacus urna, ultrices quis dapibus adipiscing, mattis sed velit. Nunc volutpat dapibus eros at vulputate. Praesent eleifend tincidunt pellentesque.</p>
+                    <a href="#" class="buttoncolor"><span class="buttontext">Subscribe !</span><span class="buttonsep"></span></a> <span class="largetext middletext">Join Our Newsletter</span>
+				</article>
+                <div class="clear"></div>
+            </section>
+        </div>
+        <!-- END MAIN CONTENT -->
+        
+        
+        <!-- FOOTER SIDEBAR -->
+        <div id="outerfootersidebar">
+        	<div id="footersidebarcontainer">
+            	<footer id="footersidebar">
+                
+            	<div id="footcol1" class="footcol">
+				<ul>
+					<li class="widget-container">
+                        <h2 class="widget-title">Text Widget</h2>
+                        <div class="textwidget">
+                        	<p>Pellentesque ac quam mauris, ut imperdiet augue. Pellentesque viverra, lorem eget lacinia luctus.</p>
+                            <span>Lacus magna malesuada dui, nec volutpat felis libero id ante. Fusce id suscipit arcu. </span>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            	<div id="footcol2"  class="footcol">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title">Categories</h2>
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                                <li><a href="#">Pellentesque tempus</a></li>
+                                <li><a href="#">Cras nec lacus sit amet leo</a></li>
+                                <li><a href="#">Donec facilisis lacinia pulvinar</a></li>
+                                <li><a href="#">Lacus magna malesuada volutpat</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            	<div id="footcol3"  class="footcol">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title">Latest Post</h2>
+                            <ul>
+                                <li><a href="#">Aenean nonummy hendrerit</a></li>
+                                <li><a href="#">Cum sociis natoque penatibus</a></li>
+                                <li><a href="#">Magnis dis parturient montes</a></li>
+                                <li><a href="#">Praesent vestibulum molestie</a></li>
+                                <li><a href="#">Fusce id suscipit arcu imperdiet</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            	<div id="footcol4" class="footcol">
+				<ul>
+					<li class="widget-container">
+                        <h2 class="widget-title">Get In Touch</h2>
+                        <p>Calvarey 121 Street # 45<br/>
+                        Telp: +800 123 456<br/>
+                        <a href="http://www.cssmoban.com/" class="colortext">www.cssmoban.com</a><br/>
+                        </p>
+                        <div id="sn">
+                        	<ul>
+                         		<li><a><span class="icon-img" style="background:url(images/social/facebook.png)"></span></a></li>
+                                <li><a><span class="icon-img" style="background:url(images/social/twitter.png)"></span></a></li>
+                                <li><a><span class="icon-img" style="background:url(images/social/linkedin.png)"></span></a></li>
+                                <li><a><span class="icon-img" style="background:url(images/social/youtube.png)"></span></a></li>
+                                <li><a><span class="icon-img" style="background:url(images/social/flickr.png)"></span></a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                </ul>
+                </div>
+                <div class="clear"></div>
+                
+                </footer>
+            </div>
+        </div>
+        <!-- END FOOTER SIDEBAR -->
+        
+        <!-- FOOTER -->
+        <div id="outerfooter">
+        	<div id="footercontainer">
+            	<footer id="footer">Copyright &copy; 2013. All Rights Reserved . More Templates <a href="http://www.cssmoban.com/">模板之家</a></footer>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        
+        
+    </div>
+</div>
+
+
+</body>
+</html>

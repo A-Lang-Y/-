@@ -1,0 +1,351 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.24
+*/
+
+.slider-controls{
+	margin-bottom:-23px;
+}
+
+.third-thumb{
+	width:29%;
+	float:left;
+	margin-left:2%;
+	margin-right:2%;
+}
+
+.half-thumb{
+	width:48%;
+	float:left;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+.next-slider{
+	background-image:url(../images/ui/next.png);
+	background-repeat:no-repeat;
+	width:27px;
+	height:27px;
+	background-size:27px;
+	height:27px;
+	position:absolute;
+	right:20px;
+	margin-top:-45%;
+}
+
+.prev-slider{
+	background-image:url(../images/ui/prev.png);
+	background-repeat:no-repeat;
+	width:27px;
+	height:27px;
+	background-size:27px;
+	height:27px;
+	position:absolute;
+	left:20px;
+	margin-top:-45%;
+}
+
+.prev-quote{
+	z-index:99999;
+	background-image:url(../images/ui/prev1.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	background-size:16px 16px;
+	height:16px;
+	position:absolute;
+	left:20px;
+	margin-top:47%;	
+}
+
+.next-quote{
+	z-index:99999;
+	background-image:url(../images/ui/next1.png);
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	background-size:16px 16px;
+	height:16px;
+	position:absolute;
+	right:20px;
+	margin-top:47%;		
+}
+
+@media screen and (orientation:landscape) {
+	.next-quote{
+		margin-top:25%;
+		right:10px;		
+	}
+	.prev-quote{
+		margin-top:25%;	
+		left:10px;
+	}
+	
+	.quote-item strong{
+		width:150px;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+	.next-quote{
+		margin-top:13.1%;
+		right:10px;		
+	}
+	.prev-quote{
+		margin-top:13.1%;	
+		left:10px;
+	}
+	
+	.quote-item strong{
+		width:150px;
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+	.next-quote{
+		margin-top:18.3%;
+		right:0px;		
+	}
+	.prev-quote{
+		margin-top:18.3%;	
+		left:0px;
+	}
+	
+	.quote-item strong{
+		width:150px;
+	}
+}
+
+
+.small-slider-caption{
+	background-color:rgba(0,0,0,0.5);
+	color:#FFFFFF;
+	margin-top:-54px;
+	padding-top:7px;
+	padding-bottom:7px;
+	text-align:center;
+	text-trasnform:uppercase;
+	font-size:11px;
+	opacity:0.7;
+}
+
+.large-slider-caption{
+	color:#FFFFFF;
+	position:absolute;
+	width:100%;
+	height:50px;
+	text-align:center;
+	font-size:18px;
+	font-family:'Dosis', sans-serif;
+	font-weight:400;
+	z-index:999999;
+	margin-top:-46%;
+	opacity:0.7;
+}
+
+.title-slider-caption{
+	background-color:rgba(0,0,0,0.5);
+	color:#FFFFFF;
+	margin-top:-78px;
+	padding-top:9px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:9px;
+	text-align:left;
+	text-trasnform:uppercase;
+	font-size:11px;
+}
+
+.title-slider-caption strong{
+	font-weight:normal;
+	font-family:'Dosis', sans-serif;
+	font-size:14px;
+	font-weight:400px;
+	display:block;
+}
+
+.title-slider-caption em{
+	font-style:normal;
+	opacity:0.7;
+}
+
+.blog-slider-caption strong{
+	display:block;
+	font-size:14px;
+	font-family:'Lato', sans-serif;
+	font-weight:800;
+	color:#1f1f1f;
+	padding-bottom:5px;
+}
+
+.blog-slider-caption em{
+	font-style:normal;
+	display:block;	
+	padding-bottom:5px;
+}
+
+.blog-slider-caption a{
+	display:block;
+}
+
+.owl-theme .owl-controls{
+	text-align: center;
+}
+
+.owl-pagination{
+	margin-top:-5px;
+	margin-bottom:5px;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+/*Homepage Slider Theme*/
+
+.slider-container div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code, pre{
+	overflow:visible!important;
+}
+
+.slider-container{
+	overflow:visible;
+}
+
+.homepage-sliders .item img{
+  	display: block;
+  	width: 100%;
+  	height: auto;
+}
+#bar{
+  	width: 0%;
+  	max-width: 100%;
+  	height: 3px;
+	background: #e34e47;
+}
+
+#progressBar{
+	position:absolute;
+	bottom:17px;
+	width: 100%;
+	background: #000000;
+}
+
+.homepage-slider-caption{
+	position:absolute;
+	width:100%;
+	bottom:0px;
+	z-index:999999;
+}
+
+.homepage-slider-caption h3{
+	color:#FFFFFF;
+	font-family:'Lato', sans-serif;
+	font-size:14px;
+	text-transform:uppercase;
+	padding-left:20px;
+	margin-bottom:0px;
+}
+
+.homepage-slider-caption p{
+	color:#8f8f8d;
+	padding-left:20px;
+}
+
+.homepage-slider-controls{
+	background-color:rgba(0,0,0,0.3);
+}
+
+.next-home{
+	background-image:url(../images/misc/arrow-right.png);
+	background-size:20px 20px;
+	position:absolute;
+	width:20px;
+	height:20px;
+	right:20px;
+	margin-top:-70px;
+	z-index:99999;
+}
+
+.prev-home{
+	background-image:url(../images/misc/arrow-left.png);
+	background-size:20px 20px;
+	position:absolute;
+	width:20px;
+	height:20px;
+	right:60px;
+	margin-top:-70px;
+	z-index:99999;
+}
+

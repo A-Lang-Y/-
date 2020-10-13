@@ -1,0 +1,226 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Contact | Powerful</title>
+  <meta name="description" content="" />
+
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+
+    <div class="header-notice">
+      <div class="container">
+        <div class="sixteen columns">
+          <p><strong>Notice:</strong> This area is perfect to get the users attention. <a href="http://themeforest.net/item/powerful-responsive-retinaready-html5-template/2942533">Buy this theme »</a></p>
+          <div class="arrow"></div>
+        </div>
+      </div>
+    </div><!-- /header-notice -->
+
+    <div class="container">
+      <div class="five columns">
+        <a href="index.html" id="logo">Powerful.</a>
+      </div>
+
+      <div class="eleven columns">
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a>
+              <ul>
+                <li><a href="index.html">LayerSlider</a></li>
+                <li><a href="index-3.html">LayerSlider - Skin 1</a></li>
+                <li><a href="index-4.html">LayerSlider - Skin 2</a></li>
+                <li><a href="index-5.html">LayerSlider - Skin 3</a></li>
+                <li><a href="index-6.html">LayerSlider - Skin 4</a></li>
+                <li><a href="index-2.html">Nivo slider</a></li>
+              </ul>
+            </li>
+            <li><a href="page.html">Pages</a>
+              <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="page.html">Right sidebar</a></li>
+                <li><a href="page-sidebar-left.html">Left sidebar</a></li>
+                <li><a href="full-width.html">Full-width</a></li>
+              </ul>
+            </li>
+            <li><a href="portfolio.html">Portfolio</a>
+              <ul>
+                <li><a href="portfolio-3.html">3 Columns</a></li>
+                <li><a href="portfolio.html">4 Columns</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="features.html">Features</a>
+              <ul>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="features.html">Elements</a></li>
+              </ul>
+            </li>
+            <li class="current-menu-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav><!-- /menu -->
+      </div>
+    </div>
+    
+  </header>
+  <div role="main">
+
+    <div class="container contact">
+
+
+        <div class="sixteen columns">
+      
+          <div class="sixteen columns alpha content">
+
+            <div id="map_canvas" style="height: 400px;"></div>
+            <script>
+            function initialize() {
+              var pixby = new google.maps.LatLng(59.3169582, 18.0717774);
+              var myLatlng = new google.maps.LatLng(59.32452037738552, 18.06650161743164);
+              var mapOptions = {
+                zoom: 13,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                panControl: false,
+                scrollwheel: false,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.BIG,
+                    position: google.maps.ControlPosition.LEFT_TOP
+                },
+                streetViewControl: false
+              }
+
+              var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+              var contentString = '<div id="content">'+
+                  '<div id="siteNotice">'+
+                  '</div>'+
+                  '<h4 id="firstHeading" class="firstHeading">Powerful.</h4>'+
+                  '<div id="bodyContent">'+
+                  '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>'+
+                  '</div>'+
+                  '</div>';
+
+              var infowindow = new google.maps.InfoWindow({
+                  content: contentString
+              });
+
+              var marker = new google.maps.Marker({
+                  position: pixby,
+                  map: map,
+                  title: 'Powerful.',
+                  zIndex: 99
+              });
+              google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map,marker);
+              });
+              
+            }
+
+            initialize();
+
+          </script>
+
+          <div class="five columns alpha address">
+            <h3>Address</h3>
+
+            <p>
+              1007 Mountain Drive<br />
+              Gotham<br />
+              United States<br /><br />
+
+              Email: <a href="#">example@mail.com</a><br />
+              Phone: <a href="#">001-234-4567</a>
+            </p>
+
+            <h3>Social</h3>
+            <p>
+              Twitter: <a href="#">@powerfulTheme</a><br />
+              Facebook: <a href="#">facebook.com/powerful</a><br />
+            </p>
+
+          </div>
+
+          <div class="eleven columns alpha">
+            <h1>Get in touch</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+            <form />
+              <label for="name">Name:</label>
+              <input type="text" id="name" />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" />
+
+              <label for="message">Message:</label>
+              <textarea id="message" rows="8"></textarea>
+
+
+              <p><br /><input type="submit" class="button branded" value="Send message" /></p>
+            </form>
+          </div>
+
+            
+          </div><!-- /content -->
+
+        </div>
+
+      </div><!-- /container -->
+
+
+  </div><!-- /main -->
+    <footer>
+    <div class="container">
+      <div class="one-third column widget text">
+        <h3>Powerful.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Aenean commodo ligula eget dolor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing eli, consectetuer adipiscing elit.</p>
+      </div>
+
+      <div class="one-third column widget list">
+        <h3>From the blog:</h3>
+        <ul>
+          <li><a href="#">29/8 - Lorem ipsum dolor sit amet, consecte.</a></li>
+          <li><a href="#">15/8 - Aenean massa. Cum sociis natoque.</a></li>
+          <li><a href="#">03/8 - Montes, nascetur ridiculus mus. Donec quam felis.</a></li>
+          <li><a href="#">28/7 - Ultricies nec, pellentesque eu.</a></li>
+        </ul>
+      </div>
+
+      <div class="one-third column twitter">
+        <h3>Tweets:</h3>
+        <ul id="tweets"></ul>
+      </div>
+
+    </div><!-- /container -->
+
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="sixteen columns">
+          <p class="eight columns alpha">Copyright 2012 Powerful | All Rights Reserved.Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a></p>
+          <div class="eight columns omega social-buttons"><a href="#"><i class="icon-twitter-sign"></i></a> <a href="#"><i class="icon-facebook-sign"></i></a> <a href="#"><i class="icon-google-plus-sign"></i></a> <a href="#"><i class="icon-pinterest-sign"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

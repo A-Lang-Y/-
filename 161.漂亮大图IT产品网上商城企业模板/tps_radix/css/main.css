@@ -1,0 +1,124 @@
+/*******************************************************************************************************************
+*  Author: Tomas Lach (www.tomaslach.cz)                                                                           
+*  Date: 23.12.2011                                                                                                
+*******************************************************************************************************************/
+
+/*******************************************************************************************************************
+*  IMPORT OTHER STYLES                                                                                             
+*******************************************************************************************************************/
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Bitter:400italic,400,700|Signika:300);
+@import url(jquery.fancybox-1.3.4.css);
+
+/*******************************************************************************************************************
+*  BASE                                                                                                            
+*******************************************************************************************************************/
+html {background: #fff url('../img/background.png') no-repeat 50% 0;}
+body {color: #575757;font: normal 13px Arial, Helvetica, Tahoma, Verdana;}
+p {line-height: 1.7em;margin-bottom: 15px}
+address {font-style: normal;padding-bottom: 15px;}
+
+/*******************************************************************************************************************
+*  LINKS                                                                                                           
+*******************************************************************************************************************/
+a, a:link, a:focus {color: #77b61e;outline: 0;text-decoration: underline} /* Theme change: link color */
+a:hover {color: #000;text-decoration: none}
+
+/*******************************************************************************************************************
+*  H1 - H4                                                                                                         
+*******************************************************************************************************************/
+h1, h2, h3, h4 {line-height: 1.5em;margin-bottom: 15px;font-weight: 400}
+h1 {font-size: 2.8em;} 
+h2 {font-size: 1.75em;font-weight: normal;font-family: "Bitter", Arial, Helvetica;}
+h3 {font-size: 0.9em;}
+h4 {font-size: 1.0em;color: #77b61e;font-weight: bold;margin-bottom: 10px;} /* Theme change: color */
+
+/*******************************************************************************************************************
+*  HEADER                                                                                                          
+*******************************************************************************************************************/
+#header {height: 110px;position: relative;} 
+#header a#logo {text-decoration: none;font-size: 1.8em;font-weight: normal;display: block;position: absolute;top: 30px;left: 20px;color: #323338;font-family: "Signika", Arial;padding-top: 20px;background: url('../img/logo.png') no-repeat 50% 0}
+#header a#logo:hover {text-decoration: none;color: #000}
+#header nav ul {position: absolute;top: 40px;right: 100px}
+#header nav li {float: left;background: url('../img/nav-sep.png') no-repeat 0 50%}
+#header nav li:first-child {background: none}
+#header nav li a {float: left;color: #5b5d64;display: block;padding: 10px 20px;text-decoration: none;text-shadow: 1px 1px 1px #fff}
+#header nav li.active a,
+#header nav li a:hover {color: #000} 
+#header #icons {position: absolute;top: 47px;right: 20px;}
+#header #icons a {display: block;float: left;width: 20px;height: 20px;text-indent: -9999px;margin-left: 5px;}
+#header #icons a.facebook {background: url('../img/facebook.png') no-repeat}
+#header #icons a.twitter {background: url('../img/twitter.png') no-repeat}
+#header #icons a.rss {background: url('../img/rss.png') no-repeat}
+
+/*******************************************************************************************************************
+*  INTRO                                                                                                          
+*******************************************************************************************************************/
+#intro {color: #fff;background: #222124 url('../img/intro-bg.png') no-repeat;height: 325px;position: relative}
+#intro #image {position: absolute;bottom: 0;right: 0;}
+#intro h1, #intro h2 {font-family: "Bitter", Arial, Helvetica;font-size: 2.7em;text-shadow: 0 0 0;color: #fff;margin-bottom: 20px;font-weight: normal;line-height: 1.2em;}
+#intro p {color: #b8bfc8;margin-bottom: 30px}
+#intro .padding {padding: 50px 460px 0 50px}
+#intro #slider {overflow: hidden;width: 978px;height: 325px;position: relative}
+#intro #slider ul {position: absolute;top: 0;}
+#intro #slider li {width: 978px;height: 325px;float: left;position: relative}
+#intro a.next, #intro a.prev {text-indent: -9999px;display: block;position: absolute;top: 150px;width: 20px;height: 28px;}
+#intro a.prev {left: -35px;background: url('../img/prev.png') no-repeat 0 0}
+#intro a.next{right: -35px;background: url('../img/next.png') no-repeat 0 0}
+#intro a.next:hover, #intro a.prev:hover {background-position: 0 -28px;}
+#subIntro {font-family: "Bitter", Arial, Helvetica;background: #77b61e;border-top: 1px solid #97d93b;position: relative;padding: 25px 50px;position: relative;color: #d5f4a7} /* Theme change: background, border and text color */
+#subIntro p {font-size: 1.4em;margin-bottom: 0;}
+#subIntro a {color: #fff;text-decoration: underline}
+#subIntro a:hover {text-decoration: none;color: #d5f4a7} /* Theme change: link color */
+
+/*******************************************************************************************************************
+*  CONTENT                                                                                                         
+*******************************************************************************************************************/
+#container {padding: 0 0 50px}
+#content {padding: 0 15px}
+.cols {margin-bottom: 30px;height: 190px;padding: 40px 30px 0 30px;background: url('../img/cols-bg.png') no-repeat}
+.cols h2 {font-family: Arial, Helvetica;line-height: normal;}
+.cols .col1-3 {width: 286px;margin-left: 30px;float: left}
+.cols .col1-3 p:last-child, 
+.cols .col2-3 p:last-child {margin-bottom: 0}
+.cols .col1-3:first-child {margin-left: 0}
+.withIcon h2, .withIcon p {padding-left: 65px;}
+.icon1 {background: url('../img/icon1.png') no-repeat 18px 0}
+.icon2 {background: url('../img/icon2.png') no-repeat}
+.icon3 {background: url('../img/icon3.png') no-repeat}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+/*******************************************************************************************************************
+*  TWITTER BAR                                                                                                          
+*******************************************************************************************************************/
+#twitterBar {background: #f7f7f7;border: 1px solid #e0e0e0;padding: 20px 20px 20px 110px;margin-top: 50px;position: relative;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+#twitterBar .icon {position: absolute;bottom: 20px;left: 20px;display: block;width: 58px;height: 62px;background: url('../img/twitter-icon.png') no-repeat}
+#twitterBar p {margin: 0}
+#twitterBar small {color: #acacac;font-size: 12px}
+
+/*******************************************************************************************************************
+*  FOOTER                                                                                                          
+*******************************************************************************************************************/
+#footer {padding: 15px 20px;color: #fff;font-size: 11px;border-top: 1px solid #e0e0e0;}
+#footer p {color: #898989;line-height: 20px;}
+#footer p a.contact {display: inline-block;padding-left: 25px;margin-right: 15px;background: url('../img/contact.png') no-repeat 0 50%}
+#footer p a.twitter {display: inline-block;padding-left: 25px;background: url('../img/twitter2.png') no-repeat 0 50%}
+#footer a {color: #575757;}
+
+/*******************************************************************************************************************
+*  OTHER STYLES                                                                                                    
+*******************************************************************************************************************/
+#wrap {margin: 0 auto;position: relative;width: 978px}
+.mask {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+a.button {display: block;float: left;background: url('../img/button-left.png') no-repeat;height: 35px;text-decoration: none;}
+a.button span {cursor: pointer;position: relative;left: 20px;padding: 0 30px 0 10px;display: block;float: left;background: url('../img/button-right.png') no-repeat 100% 0;height: 35px;line-height: 33px;overflow: hidden;font-size: 1.0em;font-weight: bold;color: #fff;text-shadow: 1px 1px 1px #67921c;text-decoration: none} /* Theme change: text shadow and text color */
+a.button:hover span {color: #d5f4a7}/* Theme change: text color */
+.gallery .photo {margin-left: 20px}
+.gallery .photo:first-child {margin-left: 0}
+a.photo {display: block;float: left;}
+a.photo img, img.photo {display: block;float: left;background: #fff;}
+.col1-2 {width: 453px;;margin-left: 40px;float: left}
+.col1-2:first-child {margin-left: 0}
+.marginBottom30 {margin-bottom: 30px}
+
+

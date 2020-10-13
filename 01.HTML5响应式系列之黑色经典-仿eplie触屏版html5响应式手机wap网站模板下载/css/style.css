@@ -1,0 +1,1326 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*
+Template Name: eplie
+Author: Cosmin Cotor
+Author ThemeForest URL: http://themeforest.net/user/cosmincotor
+Author Website: http://pixek.com/
+Version: 1.1.3
+License: Commercial
+*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Customized Framework CSS Rules Start                                                               */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+body {
+	background: #333 url(../images/bg/bgPat-1.png) 0 0 repeat scroll;
+	color: #999;
+}
+p > a {
+	color: #ffdf50;
+}
+a {
+	color: #ffdf50;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #fff;
+}
+input[type="text"], input[type="password"] {
+	transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	color: #999;
+}
+textarea {
+	transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	color: #999;
+}
+input:focus, textarea:focus {
+	transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+}
+table {
+	background-color: transparent;
+	border-left: 1px solid #393939;
+	border-top: 1px solid #393939;
+}
+thead {
+}
+th {
+	border-bottom: 1px solid #393939;
+	border-right: 1px solid #393939;
+	color: #fff;
+	background-color: #363636;
+}
+tr {
+	line-height: 18px;
+}
+td {
+	border-right: 1px solid #393939;
+	border-bottom: 1px solid #393939;
+	color: #999;
+	background-color: transparent;
+}
+tr:hover > td {
+	background-color: #232323;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Customized Framework CSS Rules End                                                                 */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Structure CSS Rules Start                                                                          */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.websiteWrapper {
+}
+.pageWrapper {
+	padding-top: 36px;
+	margin-bottom: 36px;
+}
+.pageContentWrapper {
+	background-color: #262626;
+	padding-top: 18px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-left: 24px;
+	margin-right: 24px;
+	padding-bottom: 27px;
+}
+.pageWrapper > *:last-child, .pageContentWrapper > *:last-child {
+	margin-bottom: 0px;
+}
+.pageTitle {
+	border-bottom: 1px solid #333;
+	padding-bottom: 22px;
+	margin-top: 2px;
+	margin-bottom: 23px;
+}
+.blockTitle {
+	margin-bottom: 22px;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Structure CSS Rules End                                                                            */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Customized Elements CSS Rules Start                                                                */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.pageBreak, .pageBreakBottom, .pageBreakBoth, .textBreak, .textBreakBoth, .textBreakBottom, .sectionBreak {
+	border-color: #333;
+}
+.quoteWrapper > .quoteAvatar {
+	border-color: #333;
+}
+.quoteWrapper > blockquote {
+	border-color: #333;
+}
+.quoteWrapper > blockquote cite {
+	color: #fff;
+}
+.blockquote cite {
+	color: #fff;
+}
+.buttonWrapper {
+	color: #333;
+}
+.buttonDefault {
+	background-color: #ffdf50;
+}
+.serviceWrapper {
+	border-color: #333;
+}
+.highlight {
+	color: #333;
+}
+.highlightDefault {
+	background-color: #ffdf50;
+}
+.accordionButton {
+	background-color: #333;
+	color: #999;
+}
+.accordionContent {
+	border-color: #333;
+}
+.largeImage {
+	border-color: #333;
+}
+.servicesPageContent {
+	padding-bottom: 0px;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Customized Elements CSS Rules Start                                                                */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Header CSS Rules Start                                                                             */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.headerOuterWrapper {
+	z-index: 9999;
+	height: 54px;
+	overflow: visible;
+}
+.headerWrapper {
+	padding-left: 24px;
+	padding-right: 24px;
+	z-index: 9990;
+	height: 54px;
+	background-color: #ffdf50;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+}
+.mainLogo {
+	float: left;
+	height: 54px;
+}
+.mainLogo > img {
+	height: 54px;
+	width: auto;
+}
+.mainMenuButton {
+	float: right;
+	height: 18px;
+	width: 24px;
+	background: url(../images/common/mainMenuButtonBg.png) 0 0 no-repeat;
+	margin-top: 18px;
+}
+.mainMenuWrapper {
+	clear: both;
+	display: none;
+	background-color: #333;
+	padding-left: 0px;
+	margin: 0px;
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	border-bottom: 3px solid #ffdf50;
+}
+.mainMenuWrapper > li {
+	line-height: 36px;
+	border-bottom: 1px solid #393939;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	list-style: none;
+}
+.mainMenuWrapper > li:last-child {
+	border-bottom: none;
+}
+.mainMenuWrapper > li > a {
+	margin-left: 24px;
+	background: url(../images/skins/default/mainMenuItemBg.png) 0 0 no-repeat;
+	color: #999;
+	padding-left: 16px;
+}
+.mainMenuWrapper > li > a:hover {
+	text-decoration: none;
+}
+.mainMenuWrapper > li:hover > a {
+}
+.mainMenuWrapper > li.currentPage > a {
+	color: #ffdf50;
+	background-position: 0px -36px;
+}
+p.topNotification {
+	display: none;
+	margin: 0px;
+	padding-left: 24px;
+	padding-right: 24px;
+	border-bottom: 3px solid #232323;
+	background-color: #262626;
+	height: 36px;
+	line-height: 36px;
+}
+.topNotification > span {
+	color: #fff;
+	padding-left: 25px;
+	float: left;
+	background: url(../images/common/topNotificationBg.png) left center no-repeat;
+}
+.topNotification > .notificationButton {
+	float: right;
+	height: 36px;
+	width: 24px;
+	margin-top: 0px;
+	background: #232323 url(../images/common/topNotificationButtonBg.png) center center no-repeat;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Header CSS Rules End                                                                               */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Slider CSS Rules Start                                                                             */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.sliderWrapper {
+	margin-bottom: 39px;
+	overflow: visible;
+}
+.nivoSlider {
+	position: relative;
+	overflow: visible;
+}
+.nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important;
+	width: 100% !important;
+}
+.nivoSlider a.nivo-imageLink {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 6;
+	display: none;
+}
+.nivo-slice {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	height: 100%;
+	top: 0;
+}
+.nivo-box {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	overflow: hidden;
+}
+.nivo-box img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.nivoSlider {
+	position: relative;
+	background: #333 url(../images/common/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	width: 100%;
+	height: auto;
+}
+.nivoSlider a {
+	border: 0;
+}
+.nivo-controlNav {
+	text-align: center;
+	position: absolute;
+	bottom: -36px;
+	z-index: 99;
+	height: 36px;
+	line-height: 42px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+}
+.nivo-controlNav a {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #333;
+	text-indent: -9999px;
+	border: 0;
+	margin: 0 6px;
+	cursor: pointer;
+}
+.nivo-controlNav a.active {
+	background-color: #ffdf50;
+}
+.nivo-directionNav {
+	position: absolute;
+	bottom: -39px;
+	z-index: 99;
+	height: 36px;
+	width: 100%;
+	background: #262626;
+	border-bottom: 3px solid #232323;
+}
+.nivo-directionNav a {
+	width: 24px;
+	height: 36px;
+	background: #ffdf50 url(../images/common/sliderArrowsBg.png) no-repeat;
+	text-indent: -9999px;
+	position: absolute;
+	top: 0px;
+	cursor: pointer;
+}
+.mainSlider:hover .nivo-directionNav a {
+	display: block;
+}
+a.nivo-nextNav {
+	background-position: -24px 0px;
+	right: 0px;
+}
+a.nivo-nextNav:hover {
+}
+a.nivo-prevNav {
+	left: 0px;
+}
+a.nivo-prevNav:hover {
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Slider CSS Rules End                                                                               */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// ColorBox CSS Rules Start                                                                           */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#cboxOverlay {
+	background: #000;
+}
+#colorbox {
+}
+#cboxContent {
+}
+.cboxIframe {
+	background: #fff;
+}
+#cboxError {
+	padding: 50px;
+	border: 1px solid #ccc;
+}
+#cboxLoadedContent {
+	border: 6px solid #333;
+	background: #fff;
+}
+#cboxTitle {
+	position: absolute;
+	top: -20px;
+	left: 0;
+	color: #ccc;
+}
+#cboxCurrent {
+	position: absolute;
+	top: -20px;
+	right: 0px;
+	color: #ccc;
+}
+#cboxSlideshow {
+	position: absolute;
+	top: -20px;
+	right: 90px;
+	color: #fff;
+}
+#cboxPrevious {
+	position: absolute;
+	top: 50%;
+	left: 6px;
+	margin-top: -32px;
+	background: url(../images/colorbox/controlsBg.png) no-repeat top left;
+	width: 28px;
+	height: 65px;
+	text-indent: -9999px;
+}
+#cboxPrevious:hover {
+	background-position: bottom left;
+}
+#cboxNext {
+	position: absolute;
+	top: 50%;
+	right: 6px;
+	margin-top: -32px;
+	background: url(../images/colorbox/controlsBg.png) no-repeat top right;
+	width: 28px;
+	height: 65px;
+	text-indent: -9999px;
+}
+#cboxNext:hover {
+	background-position: bottom right;
+}
+#cboxLoadingOverlay {
+	background: #333;
+}
+#cboxLoadingGraphic {
+	background: url(../images/colorbox/loading.gif) no-repeat center center;
+}
+#cboxClose {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	display: block;
+	background: #333 url(../images/colorbox/controlsBg.png) no-repeat top center;
+	width: 24px;
+	height: 24px;
+	text-indent: -9999px;
+}
+#cboxClose:hover {
+	background-position: bottom center;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// ColorBox CSS Rules End                                                                             */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Home Page CSS Rules Start                                                                          */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Home Page CSS Rules End                                                                            */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Filterable Portfolio One CSS Rules Start                                                           */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.portfolioOneFilterablePageWrapper {
+	margin-bottom: 0px;
+}
+.portfolioMenuWrapper {
+	list-style: none;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 23px;
+	margin-bottom: 36px;
+	padding-bottom: 18px;
+	background-color: #262626;
+	margin-left: 24px;
+	margin-right: 24px;
+}
+.portfolioMenuWrapper li {
+	float: left;
+	padding-left: 0px;
+	padding-right: 15px;
+	background: url(../images/common/portfolioFilterableMenuDecoBg.png) right center no-repeat;
+	margin-right: 9px;
+	margin-bottom: 4px;
+}
+.portfolioMenuWrapper > li:last-child {
+	background: none;
+	margin-right: 0px;
+}
+.portfolioMenuWrapper li a {
+	color: #999;
+}
+.portfolioMenuWrapper li a:hover {
+	text-decoration: none;
+}
+.portfolioMenuWrapper .currentPortfolioFilter {
+	color: #ffdf50;
+}
+.portfolioOneFilterableWrapper {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemWrapper {
+	margin-bottom: 36px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemImageWrapper {
+	border-bottom: 3px solid #ffdf50;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemImageWrapper img {
+	width: 100%;
+	height: auto;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemInfoWrapper {
+	background-color: #262626;
+	padding-top: 21px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 22px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemInfoWrapper > *:last-child {
+	margin-bottom: 0px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemTitle {
+	margin-bottom: 16px;
+	height: 18px;
+	padding-bottom: 0px;
+}
+.portfolioFilterableItemButtonsWrapper {
+	height: 36px;
+	line-height: 36px;
+	background-color: #232323;
+}
+.portfolioFilterableExpandButton {
+	height: 36px;
+	line-height: 36px;
+	float: left;
+	padding-left: 40px;
+	color: #666;
+	background: #202020 url(../images/skins/default/portfolioExpandButtonBg.png) left center no-repeat;
+	padding-right: 12px;
+}
+.portfolioFilterableDetailsButton {
+	height: 36px;
+	line-height: 36px;
+	float: right;
+	padding-right: 40px;
+	color: #666;
+	background: #202020 url(../images/skins/default/portfolioDetailsButtonBg.png) right center no-repeat;
+	padding-left: 12px;
+}
+.portfolioFilterableExpandButton:hover, .portfolioFilterableDetailsButton:hover {
+	text-decoration: none;
+}
+.filteredPortfolioItem {
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Filterable Portfolio One CSS Rules End                                                             */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Filterable Portfolio Two CSS Rules Start                                                           */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.portfolioTwoFilterablePageWrapper {
+	margin-bottom: 0px;
+}
+.portfolioTwoFilterableWrapper {
+	margin-left: 24px;
+}
+.portfolioTwoFilterableWrapper .portfolioFilterableItemWrapper {
+	float: left;
+	margin-right: 36px;
+	margin-bottom: 36px;
+}
+.portfolioTwoFilterableWrapper .portfolioFilterableItemImageWrapper {
+	border: 3px solid #262626;
+}
+.portfolioTwoFilterableWrapper .portfolioFilterableItemImageWrapper img {
+	width: 100%;
+	height: auto;
+}
+.portfolioTwoFilterableWrapper .portfolioFilterableItemInfoWrapper {
+	background-color: #262626;
+	padding-top: 0px;
+	padding-left: 12px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	height: 33px;
+}
+.portfolioTwoFilterableWrapper .portfolioFilterableItemInfoWrapper > *:last-child {
+	margin-bottom: 0px;
+}
+.portfolioTwoFilterableWrapper .portfolioFilterableItemTitle {
+	font-size: 12px;
+	margin-bottom: 0px;
+	height: 30px;
+	line-height: 30px;
+	padding-bottom: 3px;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Filterable Portfolio Two CSS Rules End                                                             */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// One Column Portfolio CSS Rules Start                                                               */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.portfolioOnePageWrapper {
+	margin-bottom: 0px;
+}
+.portfolioOneWrapper {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.portfolioOneItemWrapper {
+	margin-bottom: 36px;
+}
+.portfolioOneItemImageWrapper {
+	border-bottom: 3px solid #ffdf50;
+}
+.portfolioOneItemImageWrapper:hover {
+}
+.portfolioOneItemImageWrapper img {
+	width: 100%;
+	height: auto;
+}
+.portfolioOneItemInfoWrapper {
+	background-color: #262626;
+	padding-top: 21px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 22px;
+}
+.portfolioOneItemInfoWrapper > *:last-child {
+	margin-bottom: 0px;
+}
+.portfolioOneItemTitle {
+	margin-bottom: 16px;
+	height: 18px;
+	padding-bottom: 0px;
+}
+.portfolioOneHoverDeco {
+}
+.portfolioOneItemButtonsWrapper {
+	height: 36px;
+	line-height: 36px;
+	background-color: #232323;
+}
+.portfolioOneExpandButton {
+	height: 36px;
+	line-height: 36px;
+	float: left;
+	padding-left: 40px;
+	color: #666;
+	background: #202020 url(../images/skins/default/portfolioExpandButtonBg.png) left center no-repeat;
+	padding-right: 12px;
+}
+.portfolioOneDetailsButton {
+	height: 36px;
+	line-height: 36px;
+	float: right;
+	padding-right: 40px;
+	color: #666;
+	background: #202020 url(../images/skins/default/portfolioDetailsButtonBg.png) right center no-repeat;
+	padding-left: 12px;
+}
+.portfolioOneExpandButton:hover, .portfolioOneDetailsButton:hover {
+	text-decoration: none;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// One Column Portfolio CSS Rules End                                                                 */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Two Columns Portfolio CSS Rules Start                                                              */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.portfolioTwoPageWrapper {
+	margin-bottom: 0px;
+}
+.portfolioTwoWrapper {
+	margin-left: 24px;
+}
+.portfolioTwoItemWrapper {
+	float: left;
+	margin-right: 36px;
+	margin-bottom: 36px;
+}
+.portfolioTwoItemImageWrapper {
+	border: 3px solid #262626;
+}
+.portfolioTwoItemImageWrapper:hover {
+}
+.portfolioTwoItemImageWrapper img {
+	width: 100%;
+	height: auto;
+}
+.portfolioTwoItemInfoWrapper {
+	background-color: #262626;
+	padding-top: 0px;
+	padding-left: 12px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	height: 33px;
+}
+.portfolioTwoItemTitle {
+	font-size: 12px;
+	margin-bottom: 0px;
+	height: 30px;
+	line-height: 30px;
+	padding-bottom: 3px;
+}
+.portfolioTwoHoverDeco {
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Two Columns Portfolio CSS Rules End                                                                */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Single Project Page CSS Rules Start                                                                */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.singleProjectImageWrapper {
+	margin-right: 24px;
+	margin-left: 24px;
+	border: 3px solid #262626;
+	margin-bottom: 36px;
+}
+.singleProjectImage {
+	width: 100%;
+	height: auto;
+}
+.singleProjectItemButtonsWrapper {
+	height: 36px;
+	line-height: 36px;
+	background-color: #232323;
+	margin-left: 24px;
+	margin-right: 24px;
+}
+.singleProjectExpandButton {
+	height: 36px;
+	line-height: 36px;
+	float: left;
+	padding-left: 40px;
+	color: #666;
+	background: #202020 url(../images/skins/default/portfolioExpandButtonBg.png) left center no-repeat;
+	padding-right: 12px;
+}
+.singleProjectDetailsButton {
+	height: 36px;
+	line-height: 36px;
+	float: right;
+	padding-right: 40px;
+	color: #666;
+	background: #202020 url(../images/skins/default/portfolioDetailsButtonBg.png) right center no-repeat;
+	padding-left: 12px;
+}
+.singleProjectExpandButton:hover, .singleProjectDetailsButton:hover {
+	text-decoration: none;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Single Project Page CSS Rules End                                                                  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Blog Page CSS Rules Start                                                                          */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.blogPageWrapper {
+	margin-bottom: 0px;
+}
+.blogPostsWrapper {
+	margin-left: 24px;
+	margin-right: 24px;
+}
+.smallPostWrapper {
+	margin-bottom: 36px;
+}
+.postThumbnailWrapper {
+	border-bottom: 3px solid #ffdf50;
+}
+.postThumbnailWrapper img {
+	width: 100%;
+	height: auto;
+}
+.postThumbnailWrapper:hover {
+}
+.postExcerptWrapper {
+	background-color: #262626;
+	padding-top: 23px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 22px;
+}
+.postExcerptWrapper > *:last-child {
+	margin-bottom: 0px;
+}
+.smallPostTitle {
+	margin-bottom: 19px;
+	height: 18px;
+	padding-bottom: 0px;
+}
+.smallPostInfoWrapper {
+	height: 36px;
+	line-height: 36px;
+	background-color: #232323;
+	padding-left: 12px;
+	color: #666;
+}
+.postInfo {
+	margin-right: 18px;
+}
+.postInfoNoMargin {
+	margin-right: 0px;
+}
+.smallPostMoreButton {
+	height: 36px;
+	line-height: 36px;
+	float: right;
+	padding-right: 40px;
+	color: #666;
+	background: #202020 url(../images/skins/default/smallPostReadMoreButtonBg.png) right center no-repeat;
+	padding-left: 12px;
+}
+.smallPostMoreButton:hover {
+	text-decoration: none;
+}
+.smallPostQuote {
+	padding-left: 28px;
+	background: url(../images/common/quoteBg.png) 0 0 no-repeat;
+	font-style: italic;
+}
+.smallPostQuoteAuthor {
+	font-style: normal;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Blog Page CSS Rules End                                                                            */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Blog Post CSS Rules Start                                                                          */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.singlePostPageWrapper {
+}
+.singlePostContentWrapper {
+	background-color: #262626;
+	padding-top: 18px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-left: 24px;
+	margin-right: 24px;
+	padding-bottom: 27px;
+}
+.singlePostContentWrapper > *:last-child {
+	margin-bottom: 0px;
+}
+.singlePostInfoWrapper {
+	height: 36px;
+	line-height: 36px;
+	background-color: #232323;
+	margin-left: 24px;
+	margin-right: 24px;
+	padding-left: 12px;
+	margin-bottom: 36px;
+}
+.commentsSectionWrapper {
+	background-color: #262626;
+	margin-bottom: 27px;
+	margin-left: 24px;
+	margin-right: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 23px;
+}
+.commentsTitle {
+	padding-top: 0px;
+	margin-bottom: 22px;
+}
+.commentsSectionWrapper > .commentsWrapper {
+	margin-bottom: 23px;
+}
+.commentsSectionWrapper > .commentsWrapper > .commentWrapper {
+	padding-bottom: 21px;
+	border-bottom: 1px solid #333;
+}
+.commentsWrapper > .commentWrapper {
+	margin-bottom: 27px;
+}
+.commentsWrapper > .commentWrapper:last-child {
+	margin-bottom: 0px;
+}
+.commentAvatar {
+	float: left;
+	border: 3px solid #333;
+}
+.commentAvatar > img {
+	width: 100%;
+	height: 100%;
+}
+.commentWrapper > .commentAvatar {
+	width: 36px;
+	height: 36px;
+}
+a.commentAvatar:hover {
+}
+.commentInfoWrapper {
+	float: left;
+	margin-left: 27px;
+	margin-bottom: 0px;
+	margin-top: 11px;
+	padding-bottom: 0px;
+}
+.comment {
+	margin-left: 69px;
+	clear: both;
+	border-top: 1px solid #333;
+	padding-top: 23px;
+	top: -1px;
+}
+.comment > *:last-child {
+	margin-bottom: 0px;
+}
+.commentsFormWrapper {
+	margin-bottom: 27px;
+}
+.commentsForm {
+}
+.commentsFormTitle {
+	margin-bottom: 18px;
+}
+.commentsForm .formFieldWrapper {
+	margin-bottom: 23px;
+}
+.commentsForm .formTextareaWrapper {
+	margin-bottom: 27px;
+}
+.commentsForm label {
+	margin-bottom: 13px;
+	width: 100%;
+}
+.commentsForm .formFieldWrapper input[type="text"], .commentsForm .formTextareaWrapper textarea {
+	margin-bottom: 0px;
+	background-color: #232323;
+	border: 3px solid #333;
+}
+.commentsForm .formFieldWrapper input[type="text"]:focus, .commentsForm .formTextareaWrapper textarea:focus {
+	background-color: #262626;
+}
+.commentsForm .formFieldWrapper input[type="text"] {
+	width: 100%;
+	box-sizing: border-box;
+	height: 36px;
+}
+.commentCommentTextarea {
+	width: 100%;
+	box-sizing: border-box;
+	height: 168px;
+}
+input.commentSubmitButton {
+	height: 36px;
+	line-height: 36px;
+	background-color: #FFDF50;
+	padding-left: 12px;
+	padding-right: 12px;
+	float: right;
+	color: #333;
+	border: none;
+}
+input.commentSubmitButton:hover {
+	height: 36px;
+	line-height: 36px;
+	background-color: #FFDF50;
+	padding-left: 12px;
+	padding-right: 12px;
+	float: right;
+	color: #333;
+	border: none;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Blog Post CSS Rules End                                                                            */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// 404 Page CSS Rules Start                                                                           */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.errorSearchForm {
+	margin-bottom: 27px;
+}
+#errorSearchFormField {
+	width: 100%;
+	height: 36px;
+	box-sizing: border-box;
+	border-right: 0px;
+	margin-bottom: 0px;
+	background-color: #232323;
+	border: 3px solid #333;
+	color: #999;
+}
+input.errorSearchFormSubmitButton {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 36px;
+	line-height: 36px;
+	background-image: none;
+	background-color: #ffdf50;
+	padding-left: 12px;
+	border: none;
+	color: #333;
+}
+input#errorSearchFormField:focus {
+	background-color: #262626;
+}
+input.errorSearchFormSubmitButton:hover {
+	background-color: #ffdf50;
+	color: #333;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// 404 Page CSS Rules End                                                                             */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Contact Page CSS Rules End                                                                         */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contactPageWrapper {
+}
+.contactFormWrapper {
+	margin-left: 24px;
+	margin-right: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	background-color: #262626;
+	padding-top: 23px;
+}
+.contactForm {
+	margin-bottom: 27px;
+}
+.contactTitle {
+	margin-bottom: 18px;
+	padding-top: 0px;
+}
+.contactForm .formFieldWrapper {
+	margin-bottom: 23px;
+}
+.contactForm .formTextareaWrapper {
+	margin-bottom: 36px;
+}
+.contactForm label {
+	margin-bottom: 13px;
+	width: 100%;
+	box-sizing: border-box;
+	height: 18px;
+	line-height: 18px;
+}
+.contactForm .formFieldWrapper input[type="text"], .contactForm .formTextareaWrapper textarea {
+	margin-bottom: 0px;
+	box-sizing: border-box;
+	background-color: #232323;
+	border: 3px solid #333;
+	color: #999;
+}
+.contactForm .formFieldWrapper input[type="text"]:focus, .contactForm .formTextareaWrapper textarea:focus {
+	background-color: #262626;
+}
+.contactForm .formFieldWrapper input[type="text"] {
+	width: 100%;
+	height: 36px;
+}
+.contactTextarea {
+	width: 100%;
+	max-width: 100%;
+	height: 168px;
+	box-sizing: border-box;
+}
+input.contactSubmitButton, input.contactSubmitButton:hover {
+	height: 36px;
+	line-height: 36px;
+	background-color: #ffdf50;
+	padding-left: 12px;
+	padding-right: 12px;
+	float: right;
+	color: #333;
+	border: none;
+}
+.formValidationError {
+	display: none;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 0px;
+	color: #cc0000;
+	float: left;
+}
+input.fieldHasError, textarea.fieldHasError {
+}
+.formSuccessMessageWrapper {
+	display: none;
+	margin-bottom: 4px;
+}
+.formSuccessMessageWrapper > h4 {
+	background: url(../images/icons/smallIcons/16/1/iconCheckmarkBg16.png) 0 center no-repeat;
+	padding-left: 28px;
+}
+.socialIconsWrapper {
+	background-color: #262626;
+	margin-left: 24px;
+	margin-right: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	height: 16px;
+	text-align: center;
+	vertical-align: baseline;
+	margin-bottom: 36px;
+	letter-spacing: -3px;
+}
+.socialIconsWrapper > .socialIcon {
+	display: inline-block;
+	vertical-align: baseline;
+	width: 16px;
+	height: 16px;
+	padding-left: 12px;
+	padding-right: 12px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.contactMapWrapper {
+	background-color: #262626;
+	padding: 3px;
+	padding-top: 23px;
+	margin-bottom: 36px;
+	margin-left: 24px;
+	margin-right: 24px;
+}
+.contactMap {
+	display: block;
+	overflow: hidden;
+	height: 168px;
+	width: 100%;
+	margin: 0px;
+	border: none;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.mapTitle {
+	margin-bottom: 22px;
+	margin-left: 9px;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Contact Page CSS Rules End                                                                         */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Page Numbers CSS Rules End                                                                         */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.pageNumbersWrapper {
+	margin-top: 0px;
+	clear: both;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-bottom: 36px;
+	background-color: #262626;
+	margin-left: 24px;
+	margin-right: 24px;
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+.pageNumber {
+	height: 24px;
+	line-height: 24px;
+	width: 24px;
+	float: left;
+	margin-right: 12px;
+	background-color: #333;
+	color: #999;
+	text-align: center;
+}
+.pageNumber:hover {
+	text-decoration: none;
+	background-color: #393939;
+}
+.currentPageNumber {
+	background-color: #ffdf50;
+	color: #333;
+	font-weight: bold;
+}
+.currentPageNumber:hover {
+	background-color: #ffdf50;
+	color: #333;
+}
+.postLinksWrapper {
+	height: 36px;
+	line-height: 36px;
+	clear: both;
+	margin-right: 24px;
+	margin-left: 24px;
+	margin-bottom: 36px;
+	background-color: #262626;
+}
+.postLink {
+	transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.postLink:hover {
+	text-decoration: none;
+}
+.previousPost {
+	float: left;
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+}
+.nextPost {
+	float: right;
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	text-align: right;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Page Numbers CSS Rules End                                                                         */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Footer CSS Rules Start                                                                             */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.footerWrapper {
+	padding-left: 24px;
+	padding-right: 24px;
+	background-color: #262626;
+	height: 54px;
+	border-top: 3px solid #232323;
+}
+.footerWrapper a {
+	color: #ffdf50;
+}
+.copyrightWrapper {
+	height: 54px;
+	line-height: 54px;
+	clear: both;
+}
+.copyright {
+	color: #999;
+	display: inline;
+	float: left;
+}
+.backToTopButton {
+	height: 54px;
+	width: 24px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: #232323 url(../images/skins/default/backToTopButtonBg.png) center center no-repeat;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Footer CSS Rules End                                                                               */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Reset CSS Rules Start                                                                              */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.noPadding {
+	padding: 0px;
+}
+.noMargin {
+	margin: 0px;
+}
+.noBackground {
+	background: none;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////// Reset CSS Rules End                                                                                */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

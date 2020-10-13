@@ -1,0 +1,1151 @@
+@import "../fonts/font-awesome/css/font-awesome.min.css";
+
+/* Table of Contents
+------------------------------------------------------- *
+
+	0. Bootstrap Fixes
+	1. Less Variables & Mixins
+	2. Top Bar
+	3. Header
+	4. Links
+	5. Navigation Menu
+	6. Slider
+	7. Content
+		7.1. Primary
+		7.2. Secondary
+	8. Pagination
+	9. Footer
+	10. HTML Markup and Formatting
+	11. Widgets Style
+	12. Comments	
+
+/* 0. Bootstrap Fixes
+-------------------------------------------------------	*/
+body {
+	background: #f7f7f7;
+}
+#main {
+}
+.container {
+	margin: auto;
+}
+code {
+	white-space: pre-wrap !important;
+	background: #f7f7f7;
+}
+.navbar-default .navbar-nav>li>a {
+	color: none;
+	&:hover {
+		color: none;
+	}
+}
+
+/* 1. Less Variables & Mixins
+-------------------------------------------------------	*/
+
+@default-background: #FFF;
+@link-color: #00BAC4;
+@link-hover-color: lighten(@link-color, 5%);
+@menu-bar-bg: @default-background;
+@menu-hover: #EEE;
+@header-top-bg: #000;
+@sidebar-link-color: darken(#a3a3a3,4%);
+@menu-link-color: #8B8B8B;
+
+
+.font {
+	font-family: "Open Sans", Times, serif;
+}
+.font-heading {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.font-title {
+	font-family: "Open Sans", Helvetica, sans-serif;
+}
+body { .font }
+#parallax-bg {
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+#page {
+	position: relative;
+	z-index: 888;
+}
+#page ::selection {
+	background: @link-color;
+	color: white;
+}
+/* 2. Header-top
+------------------------------------------------------- */
+#header-top {
+	background: @header-top-bg;
+	padding-top: 10px;
+}
+#masthead {
+
+}
+.site-branding {
+	float: left;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-top: -24px;
+}
+.site-title {
+	.font-heading;
+	position: relative;
+	a {
+		color: @link-color;
+		font-size: 29px;
+		font-weight: 200;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.site-description {
+	.font-title;
+	color: darken(#DADADA,15%);
+	font-size: 16px;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+.main_logo {
+	max-width: 390px;
+}
+@media screen and (max-width: 400px) {
+	.main_logo {
+		max-width: 320px;
+	}
+}
+#social-icons { 
+	float: right;
+	text-align: right;
+	margin-top: 2px;
+	margin-bottom: 5px;
+}
+.social-icon {
+	color: @sidebar-link-color;
+	font-size: 32px;
+	margin-right: 2px;
+	padding: 0px 2px;
+	position: relative;
+		top: 0px;
+		left: 0px;
+	transition: ease 0.4s all;		
+	&:hover {
+		color: @link-hover-color;
+		text-shadow: 3px 3px 1px #818181;
+			top: -1px;
+			left: -1px;
+	}
+}
+a:hover .social-icon {
+	text-decoration: none;
+}
+
+/* 3. header-2
+------------------------------------------------------- */
+#header-2 {
+	padding-top: 15px;
+	width: 100%;
+	background: #FFF;
+}
+#top-search {
+	float: right;
+	position: relative;
+	top: 3px;
+	z-index: 999;
+	margin-bottom: 15px;
+	
+	input[type=text] {
+		background: #fff;
+		outline: none;
+		border: solid 1px #eee;
+		width: 280px;
+		padding-right: 30px;
+		padding-left: 10px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		.font-heading;
+		font-weight: lighter;
+		&:hover,&:focus {
+			background: #ddd;
+		}
+	}
+	::-webkit-input-placeholder {
+			color: darken(@link-color,10%);
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	   color: darken(@link-color,10%); 
+	}
+	
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: darken(@link-color,10%); 
+	}
+	
+	:-ms-input-placeholder {  
+	   color: darken(@link-color,10%);
+	}
+	button {
+		position: relative;
+		padding: 2px 5px;
+		background: none;
+		border: none;
+		-webkit-linear-gradient: none;
+		top: -2px;
+		box-shadow: none;
+		left: -33px;
+		color: darken(@link-color,15%);
+	}
+	.search-form {
+		/* width: inherit; */
+		float: right;
+	}
+}
+
+
+/* 4. Links
+------------------------------------------------------- */
+
+a {
+	color: @link-color;
+}
+a:hover,
+a:focus,
+a:active {
+	color: @link-hover-color;
+}
+
+/* 5. Carousel Wrapper
+------------------------------------------------------- */
+
+#carousel-wrapper {
+	margin-bottom: 55px;
+	.bx-wrapper {
+		 .bx-next {
+			 margin-right: 10px;
+		 }
+		 .bx-viewport {
+			 box-shadow: none;
+			 ul {
+				 margin-left: 0px;
+			}
+		}
+	}
+}
+
+/* 5. Navigation Menu 
+-------------------------------------------------------	*/
+
+/* Default Navigation */
+ .nav-wrapper {
+	   margin-bottom: 25px;
+   }
+#site-navigation {
+	clear: both;
+	display: block;
+	display: inline-block;
+	background: @menu-bar-bg;
+	padding-bottom: 0px;
+	border: none;
+	margin-top: -15px;
+	text-align: center;
+	float: left;
+	.font-heading;
+	font-weight: lighter;
+	text-transform: uppercase;
+	ul {
+		float: right;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		padding-bottom: 0px;
+		> li > a {
+			padding-bottom: 25px;
+			padding-top: 25px;
+		}
+		li:hover > ul { /* Dropdown*/
+				display: block;
+			}
+		ul {
+			display: none;
+			float: left;
+			position: absolute;
+				top: 5.0em;
+				left: 0;
+			z-index: 99999;
+			background: @menu-hover;
+			text-align: left;
+			border: none;
+			border-top: solid 3px #EFEFEF;
+			padding-top: 0px;
+			box-shadow: 0px 5px 4px -4px #4a4a4a;
+			ul {
+				left: 100%;
+				border: none;
+				top: 0;
+			}
+			a {
+				min-width: 200px;
+				max-width: 255px;
+				font-size: 14px;
+				font-weight: normal;
+				color: #555;
+				padding: 8px 20px;
+				&:hover {
+					border-bottom: none;
+					background: #333;
+					color: #eee;
+					padding: 8px 20px;
+				}
+			}
+		}
+	}
+	li {
+		float: right;
+		position: relative;
+		clear: left;
+	}
+	.nav .caret {
+		display: none;
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		color: @menu-link-color;
+		text-decoration: none;
+		padding: 16px 10px;
+		font-weight: normal;
+		font-weight: lighter;
+		&:hover {
+			border-bottom: @link-color solid 2px;
+			background: none;
+			color: @link-color;
+		}
+	}
+	ul ul a {
+		border-bottom: none;
+		&:hover {
+			border-bottom: none;
+			background: none;
+		}
+	}
+	li:hover > a {
+			border-bottom: @link-color solid 2px;
+			padding-bottom: 23px;
+			color: @link-color;
+		}
+	ul ul li:hover > a {
+		background: @menu-bar-bg;
+		border-bottom: none;
+		padding: 8px 20px;
+		color: black;
+		border-top: none;
+	}	
+	
+}
+@media screen and (max-width: 767px) {
+	#site-navigation {
+		width: 100%;
+		.active > a, .current_page_item > a {
+		border-top: solid 4px @default-background;
+		background: none;
+		}
+		ul {
+			margin-left: 0px;
+		}
+		ul ul {
+			display: none;
+		}
+		li {
+			display: block;
+			width: 100%;
+			text-align: left;
+			&:hover > a {
+				border-top: none;
+				padding-top: 20px;
+			}
+		}
+		
+		li:hover {
+			ul {
+				display: none !important;
+			}
+		}
+		.navbar-default .navbar-collapse {
+			border-color: @link-color;
+		}
+	}
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+		padding: 10px;
+		color: @link-color;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 10px;
+		font-size: 20px;
+		padding-bottom: 10px;
+		position: relative;
+			top: -8px;
+		width: 100%;	
+		float: left;
+	}
+	h1.menu-toggle {
+		width: 100%;
+	}
+	.menu-toggle:before {
+		content: "\f0ca";
+		font-family: "FontAwesome";
+		height: 0;
+		width: 0px;
+		margin-right: 20px;
+		position: relative;
+	}
+}
+/* Small menu */
+.menu-toggle {
+	display: none;
+	cursor: pointer;
+	text-align: center;
+}
+@media screen and (max-width:767px) {
+	.menu-toggle {display: block;}
+}
+
+
+/* 6. Slider
+-------------------------------------------------*/
+
+.slider-wrapper {
+	margin: auto;
+	margin-top: 0px;
+	background: fade(white,80%);
+	margin-bottom: 80px;
+	border-top: solid 4px #efefef;
+	padding-top: 0px;
+	border-bottom: none;
+}
+.slide-title {
+	.font-heading;
+	color: #ddd;
+}
+.nivo-caption {
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: none !important;
+  text-align: center;
+  /* max-width: 900px; */
+  color:#fff;
+  a {
+  	
+	  display: inline-block;
+  }
+}
+.nivo-html-caption {
+	display: none;
+}
+.nivocapper { /* Component Responsible for Dropping Caption */
+	display: inline-block;
+	background: red;
+	background: rgba(0,0,0,0.85);
+	padding: 5px 35px;	margin-top: -10px;
+	  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+div.slide-title {
+	font-size: 36px;
+	display: block; 
+}
+div.slide-description {
+	 font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-controlNav {
+	margin-top: -46px;
+	z-index: 99999;
+}
+.nivo-imageLink {
+	z-index: 99999;
+}
+@media screen and (max-width: 768px) {
+	div.slide-title {
+		font-size: 18px;
+	}
+	div.slide-description {
+		font-size: 13px;
+	}
+}
+/* 7. Content 
+------------------------------------------------------- */
+
+#content {
+	background: none;
+	padding: none;
+	padding-top: 15px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+/* 7.1 Primary 
+------------------------------------------------------- */
+
+#primary {
+	padding: 20px 15px;
+	background: #fff;
+	padding-top: 10px;
+	margin-top: 35px;
+	border: solid 1px #eee;		
+}
+.byline {
+		display: inline;
+	}
+.single {
+	.fa-clock-o:before ,.fa-user:before {
+			color: @link-color !important;
+		}
+}
+article.archive {
+	
+.article-rest {
+		 margin: auto;	
+		 }
+}
+
+.featured-thumb {
+	margin: auto;
+	margin-top: 35px;
+	overflow: hidden;
+	width: 95%;
+	padding: 0px; 
+	.img-meta {
+		position: absolute;
+		z-index: 9999;
+		background: fade(@link-hover-color,50%);
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		display: none;
+		text-align: center;
+		.meta-icon {
+			display: inline-block;
+			font-size: 24px;
+			width: 36px;
+			background: darken(@link-hover-color, 25%);
+			border-radius: 4px;
+			margin-top: 150px;
+		}
+		.meta-link {
+			padding: 15px 25px;
+			color: lighten(@link-color, 1%);
+			padding-left: 26px;
+			&:hover {
+				color: lighten(@link-hover-color, 7%);
+				text-decoration: none;
+			}
+			i {
+				position: relative;
+					left: -19px;	
+			}
+			.icon-link {
+				left: -17px;
+			}
+		}
+		.img-meta-img .meta-link {
+			padding-left: 24px;
+		}
+	}
+	&:hover {
+		.img-meta {
+			background: fade(@link-hover-color,65%);
+		}
+		img {
+			-webkit-transform: scale(1.05);
+			opacity: 0.98;
+		}
+	}
+	img {
+		box-shadow: 0px 1px 2px #444;
+		margin-bottom: 0px;
+		transition: 0.4s all ease;
+		min-width: 100%;
+		height: auto; 
+	}
+}
+.archive {
+	.entry-title a {
+		display: block;
+		font-size: 26px;
+		color: darken(@link-color,80%);
+		color: @link-color;
+		.font-heading;
+		&:hover {
+			color: @link-hover-color;
+		}
+	}
+	.entry-meta {
+		font-size: small;
+		color: @link-color;
+		/* border-bottom: solid 6px lighten(@sidebar-link-color,25%); */
+		padding-bottom: 15px;
+		color: @sidebar-link-color;
+		a {
+			color: @sidebar-link-color;
+		}
+		.posted-on {
+			margin-right: 6px;
+		}
+	}
+	.entry-header {
+		padding: 0 15px;
+		margin-bottom: -30px;
+	}
+}
+.blog, .search, body.archive {
+	 .entry-title {
+		.font-heading;
+		padding-bottom: 0px;
+		display: block;	
+	}
+}
+.tag .entry-meta {
+	border-bottom: none;
+}
+.cat-page-title {
+	margin: 20px 0px !important;
+}
+.single, .page {
+	 .entry-h1 {
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		display: block;
+		
+		h1 {font-size: 30px; .font-heading;}
+		&:after {
+			content: "";
+			clear: both;
+			width: 92%;
+			height: 6px;
+			position: absolute;
+			margin-left: 1%;
+			margin-top: 10px;
+			/* border-bottom: double 6px lighten(@sidebar-link-color,25%); */
+		}
+	
+	}
+		.entry-title {
+		color: darken(@sidebar-link-color,20%);
+		line-height: 1.6em;
+	}
+}
+.entry-content {
+	line-height: 1.8em;
+	color: @sidebar-link-color;
+}
+.comments-link {
+	float: right;
+}
+.entry-meta {
+	color: @sidebar-link-color;
+	.posted-on {
+		margin-right: 10px;
+	}
+	.edit-link {
+		float: right;
+	}
+	.fa-tags {
+		margin-left: 10px;
+	}	
+}
+footer.entry-meta {
+	margin-top: 25px;
+}
+.single, .page {
+	article.post {
+		padding-bottom: 20px;
+		border-bottom: 1px solid lighten(@sidebar-link-color,30%);
+		}
+	.entry-meta {
+		border-bottom: solid 1px lighten(@sidebar-link-color,30%);
+		padding-bottom: 15px;
+	}	
+	footer.entry-meta {
+		border-bottom: none;
+		padding-bottom: 0px;
+	}
+}
+#nav-below {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	a {
+		.font-heading;
+	}
+}
+
+.featured-image-single {
+	text-align: center;
+	margin: 30px auto;
+	margin-top: 20px;
+	img {
+		max-width: 98%;
+		box-shadow: 0px 25px 6px -20px #888;
+		margin-bottom: 15px;
+		border-radius: 5px;
+	}
+}
+h1.page-title {
+	text-transform: uppercase;
+	color: @sidebar-link-color;
+	.font;
+	font-weight: bold;
+	display: inline-block;
+	border-bottom: solid 4px @sidebar-link-color;
+	margin-top: -15px;
+}
+.page-header {
+	border-bottom: 0px;
+}
+
+@media screen and (max-width:480px) {
+	.featured-thumb {
+		.img-meta {
+			.meta-icon {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+#primary-home {
+	
+	.row {
+	}
+	article {
+		padding: 0px;
+	}
+	.article-wrapper {
+		border: solid 1px #eee;
+		width: 94%;
+		background: #fff;
+		height: 100%;
+	}
+	.featured-thumb {
+			margin-top: 0px;
+			width: 100%;
+	}
+	.entry-title a {
+		.font-heading;
+		font-size: 15px;
+		font-weight: bold;
+		color: @sidebar-link-color;
+		transition: 0.4s all ease;
+		line-height: 1.5em;
+		&:hover {
+			text-decoration: none;
+			color: @link-color;
+		}
+	}
+	.entry-meta {
+		margin-top: 8px;
+		font-size: 12px;
+		color: @sidebar-link-color;
+		display: block;
+		border-bottom: solid 1px #ccc;
+		padding-bottom: 6px;
+		a {
+			color: @sidebar-link-color;
+		}
+	}
+	.entry-content {
+		line-height: 1.7em;
+	}
+	h1.entry-title {
+		margin-bottom: 0px;
+		&:after {
+			content: none;
+		}
+	}
+	.entry-meta {
+		font-size: small;
+		color: @link-color;
+		border-bottom: solid 1px lighten(@sidebar-link-color,25%);
+		color: @sidebar-link-color;
+		a {
+			color: @sidebar-link-color;
+		}
+		.posted-on {
+			margin-right: 6px;
+		}
+	}
+	.entry-header {
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	
+}
+/* 7.2 Secondary 
+------------------------------------------------------- */
+
+#secondary, #footer-sidebar {
+	padding: 20px 10px;
+	ul {
+		list-style: none;
+		margin-left: 5px;
+		li:before {
+			margin-right: 5px;
+			content:"\f0da";
+			font-family: "FontAwesome";
+			color: @sidebar-link-color;
+		}
+		li {
+			margin-bottom: 8px;
+		}
+		ul {
+			li:before {
+				content: "\f111";
+				font-size: 5px;
+				position: relative;
+				top: -3px;
+			}
+			margin-left: 15px;
+			ul {
+				margin-left: 5px;
+				
+			}
+		}
+	}
+	.widget_recent_entries {
+		li:before {
+			content: "\f0f6";
+		}
+		li {
+			border-bottom: solid 1px @default-background;
+			padding: 5px 0px;
+		}
+	}
+	.widget_recent_comments {
+		li:before {
+			content: "\f075";
+			font-size: 12px;
+			position: relative;
+			top: -2px;
+		}
+	}
+	.widget_calendar {
+		caption {
+			font-weight: bold;
+			margin-bottom: 7px;
+		}
+		table {
+			padding: 5px;
+			text-align:center;
+			background: #fff;
+		}
+		thead {
+			border-bottom: solid 1px @link-hover-color;
+			th {
+				background: #ddd;
+				padding: 5px;
+				text-align: center;
+			}
+		}
+		tr td {
+			padding: 8px !important;
+			background: #eee;
+			margin: 4px;
+			text-align: center;
+		}
+		#prev {
+			text-align: left;
+		}
+		#next {
+			text-align: right;
+		}
+	}
+	h1.widget-title {
+		font-size: 25px;
+		font-weight: normal;
+		border-bottom: solid 4px lighten(@sidebar-link-color,25%);
+		padding: 5px;
+		margin-top: 0px;
+		color: @link-color;
+		.font-heading;
+		font-size: 24px;
+		padding-bottom: 20px;
+	}
+	.widget_search {
+		label {
+			width: 100%;
+		}
+		form {
+			width: 100%;
+			padding: 10px 5px;
+		}
+		input[type=submit] {
+			display: none;
+		}
+		input[type=text] {
+			display: block;
+			min-width: 96%;
+			margin-left: 20px;
+		}
+	}
+	select#cat {
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+	.widget {
+		background: #fff;
+		margin-top: 15px;
+		padding-top: 0px;
+		padding: 10px;
+		border: solid 1px #eee;
+		a {
+			color: @sidebar-link-color;
+		}
+	}
+	.widget > div {
+		padding: 7px;
+	}
+}
+#footer-sidebar {
+	clear: both;
+	padding: 15px 0px;
+	.footer-column {
+		margin: 15px 0;
+		padding: 0 5px;
+	}
+}
+
+/* 8. Pagination
+-----------------------------------------------*/
+.pagination {
+    margin: 20px 0;
+    width: 100%;
+    margin-left: -20px;
+    text-align: center;
+    clear: both;
+    ul {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 0;
+        & > li {
+            display: inline;
+            & > a {
+                color: @menu-hover;
+                transition: all 0.4s ease;
+                .next {
+	                float: right;
+                }
+            }
+            & > a:hover {
+                color: @link-color;
+                background: #eee;
+            }
+        }
+    }
+    .current {
+        background: saturate(@link-hover-color, 5%);
+    }
+}
+.pagination ul &>li &>a, .pagination ul &>li &>span {
+    float: left;
+    padding: 4px 12px;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: lighten(@default-background, 10%);
+    border: solid 1px #f1f1f1;
+    border-left-width: 0;
+    display: inline-block;
+    color: desaturate(@link-color, 40%);
+}
+.pagination ul &>li:first-child &>a, .pagination ul &>li:first-child &>span {
+    border-left-width: 1px;
+}
+
+.pagination ul &>li:last-child &>a, .pagination ul &>li:last-child &>span {
+    border-rigth-width: 1px;
+}
+
+
+/* 9. Footer 
+------------------------------------------------------- */
+
+#colophon {
+	background: @menu-bar-bg;
+	padding: 10px;
+	border-top: solid 1px #ddd;
+	border-bottom: solid 4px #ddd;
+	width: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.sep {
+	font-size: 8px;
+position: relative;
+top: -2px;
+padding: 0 5px;
+	color: @sidebar-link-color;	
+}
+
+/* 9. HTML Markup & Formatting
+--------------------------------------------------- */
+article {
+	table {
+		background: #f7f7f7;
+		td {
+			padding: 5px;
+			border: solid 1px #eee;
+		}
+		th {
+			padding: 5px;
+			background: #ccc;
+			border: solid 1px #ccc;
+		}
+		thead {
+			
+		}
+	}
+	h1,h2,h3,h4,h5,h6 {
+		color: darken(@sidebar-link-color,25%);
+	}
+	blockquote {
+		.font-heading;
+	}
+	code {
+		background: desaturate(@link-color, 20%);
+		color: darken(@link-color,50%);
+	}
+}
+
+/* 11. Widgets Style
+---------------------------------------------------- */
+
+.rp-item {
+	display: block;
+	clear: both;
+	overflow: auto;
+	margin-bottom: 8px;
+	border-bottom: solid 1px @default-background;
+	padding-bottom: 5px;
+}
+.rp-item:before {
+	content: none !important;
+}
+.rp-thumb {
+	float: left;
+	width: 64px;
+	margin-right: -5px;
+	margin-top: 3px;
+	img {
+	width: 48px;
+	border: solid 2px #eee;
+	border-radius: 2px;
+	}
+	rp-title {	
+	clear: none;
+		a {
+		display: block;
+		}
+	}
+}
+
+/* 12. Comments
+---------------------------------------------------------- */
+ 
+ #respond {
+	 input[type=text] {
+		 max-width: 450px;
+	 }
+ }
+ 
+ #comments {
+	 ol.comment-list {
+		 list-style: none;	 
+	 }
+	 li.comment {
+		 border: solid 1px #eee;
+		 padding: 10px;
+		 margin-top: 15px;
+		 list-style: none;
+		 background: #f9f9f9;
+	 }
+	 .vcard img {
+		 border: solid 4px @menu-bar-bg;
+		 border-radius: 5px;
+		 margin: 0 10px 10px 0;
+	 }
+	 .comment-metadata {
+		 font-weight: bold;
+	 }
+ }
+ @media screen and (max-width:480px) {
+	 li.comment {
+		 margin-left: -5%;
+	 }
+ }
+ 
+ /* 13. Header Fixes for Responsive Part
+ -------------------------------------------------------------- */
+ 
+ @media screen and (max-width: 767px) {
+	 #top-search {
+		 text-align: center;
+		 margin-top: 10px;
+	 }
+	 #top-search .search-form {
+		 float: none;
+	 }
+	 h1.site-title, #social-icons {
+		 display: block;
+		 text-align: center;
+		 padding: 5px;
+	 }
+	 #top-bar {
+		 padding-bottom: 5px;
+	 }
+	 div.slide-description {
+		 display: none;
+	 }
+	 div.slide-title {
+		 font-size: 12px;
+	 }
+	 .nivo-caption {
+	 	max-width: 400px;
+		 max-width: 75%;
+		 min-width: 200px;
+	 }
+	 #site-navigation ul.menu, #site--navigation div.menu {
+		 display: none;
+		 li {
+		 	a {
+			 	font-size: 14px;
+			 	padding: 10px;
+		 	}
+			 &:hover a {
+				 border-bottom: none;
+				 padding-bottom: 25px;
+				 padding: 10px;
+			 }
+		 }
+	 }
+ }
+ @media screen and (max-width: 400px) {
+	 #top-search input[type=text] {
+			 width: 250px;
+		 }
+ }
+ @media screen and (min-width: 768px) {
+	 #site-navigation ul.menu {
+		 display: block;
+	 }
+ }

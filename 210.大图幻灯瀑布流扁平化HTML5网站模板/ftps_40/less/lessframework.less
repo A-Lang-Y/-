@@ -1,0 +1,740 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+
+@import "palette.less";
+
+
+
+#comboNav{ display: none; }
+
+.wrapper{
+	width: 940px;
+}
+
+
+/* CAROUSEL Default ----------------------------------------------------*/ 
+	
+#ch-holder{ display: block; }
+#cv-holder{ display: none; }
+	
+	
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	/* GENERAL TABLET ----------------------------------------------------*/ 
+	
+	
+	.wrapper{ width: 712px; }
+	
+
+	/* NAV TABLET ----------------------------------------------------*/ 
+	
+	#nav{ display: block; }
+	#comboNav{ display: none; }
+	
+	/* CAROUSEL TABLET ----------------------------------------------------*/ 
+	
+	#ch-holder{ display: block; }
+	#cv-holder{ display: none; }
+
+	/* SLIDER TABLET ----------------------------------------------------*/ 
+	
+	@slider_w: 712px;
+	
+	.lof-slidecontent,
+	.main-slider-content{
+		width: @slider_w; 
+		height:367px;
+		
+		.sliders-wrapper { width: @slider_w; }
+		
+		.navigator-content {
+			.button-next,
+			.button-previous,
+			.button-control{
+				opacity: 1;
+				bottom: 0px; 
+				left: 0px;
+				z-index: 199;
+			}
+			
+			.button-next{ left: 682px }
+		}		
+		.navigator-wrap-inner { display: none; }
+		
+		.navigator-wrapper{ width: @slider_w; }
+	}
+	
+	/* FILTERED ITEMS TABLET ----------------------------------------------------*/ 
+	
+	
+	#filter-container{
+
+		width: 732px; /* 712 + 20 gap */
+		figure{
+			width: 223px;
+			margin-right: 20px;
+		}
+	}
+	
+	/* CAROUSEL TABLET ----------------------------------------------------*/ 
+
+
+	@holderw: 585px;
+	@holderh: 100px;
+	
+	@width: 195px;
+	@height: @holderh;
+	
+	@nav-w: 63px;
+	
+	.jcarousel-skin-folder {
+		.jcarousel-container-horizontal {
+		    width: @holderw;
+		    padding-top: 0px;
+		    padding-bottom: 0px;
+		    padding-left: @nav-w;
+		    padding-right: @nav-w;
+		}
+		
+		.jcarousel-clip-horizontal {
+		    width:  @holderw;
+		    height: @holderh;
+		}
+		
+		.jcarousel-item {
+		    width: @width;
+		    height: @height;
+		}
+		
+		
+		.jcarousel-prev-horizontal,
+		.jcarousel-next-horizontal {
+		    width: @nav-w;
+		    height: @height;
+		}
+			
+	}
+	
+	
+	/*  PAGE TABLET----------------------------------------------------*/ 
+
+	#page-content-sb{
+		width: 460px;
+		margin-right: 60px;
+	}
+	
+	/*  BLOG TABLET ----------------------------------------------------*/ 
+	
+	#posts-list,
+	body.single #posts-list{
+		width: 460px;
+		margin-right: 60px;
+		
+		article{
+			margin-bottom: 55px;
+			background:  @fgColor ;
+			
+			.box{
+				position: relative;
+				padding-left: 40px;
+				padding-top: 12px;
+				padding-bottom: 18px;
+				
+				padding: 0px 0px 0px 0px;
+				
+				background: none;
+				
+				.excerpt{
+					float: left;
+					width: 400px;
+					margin-left: 40px;
+					margin-bottom: 20px;
+					margin-top: 10px;
+				}
+				
+				.meta{
+					width: 400px;
+					margin-left: 0px;
+					background:  @fgColor url(../img/meta-bg-vertical.png) repeat-x top right;
+					padding: 20px 20px 20px 40px;
+				}
+			}
+			
+			
+		}
+		
+	}
+	
+	/* SIDEBAR TABLET ------------------------------------------------------------*/
+
+	#sidebar{
+		width: 184px; 
+		margin-top: 30px;
+	}
+	
+	
+	/* PORTFOLIO TABLET ----------------------------------------------------*/ 
+
+	#portfolio-content{
+		#project-box{
+			
+			.info{
+				width: 140px;  /* 160 - 20 */
+				padding-left: 20px;
+				margin-right: 24px;
+			}
+			
+			.entry-content{
+				width: 528px; 
+				margin-bottom: 40px;
+				
+				.multicolumn {
+					.column *{ padding-right: 24px; }
+				}
+	
+			}
+		}
+	}
+
+
+
+	/* RELATED PROJECTS TABLET ---------------------------------------------------*/
+
+	.related-projects{
+		figure{
+			margin-right: 24px;
+			width: 160px;
+			
+			.thumb{
+				width: 160px;
+			}
+		}
+	}
+	
+	/* WIDGET COLS TABLET ----------------------------------------------------*/ 
+	
+	.widget-cols{
+		
+		>li{
+			width: 160px;
+			margin-right: 24px;
+		}
+	}
+	
+	
+	
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+	.wrapper{ width: 252px;  }
+	
+	/* LOGO MOBILE ----------------------------------------------------*/ 
+	
+	#logo{ margin-left: 0px;}
+	
+	#logo a{ 
+		display: block ; 
+		width: 252px; 
+	}
+
+	#logo img{ 
+		display: block; 
+		margin: 0 auto;
+	}
+	
+	/* NAV MOBILE ----------------------------------------------------*/ 
+	
+	#nav{ display: none; }
+	#comboNav{ display: block; }
+	
+	/* HEADLINE MOBILE ----------------------------------------------------*/ 
+	
+	#headline{
+		font-size: 36px;
+	}
+	
+	/* CAROUSEL MOBILE ----------------------------------------------------*/ 
+	
+	#ch-holder{ display: none; }
+	#cv-holder{ display: block; }
+	
+	.carousel-holder{
+		.carousel-heading{
+			span{ margin: 0px 0px 22px 0px;  }
+		}
+	}
+
+	/* SLIDER MOBILE ----------------------------------------------------*/ 
+	
+	@slider_w: 252px;
+	
+	.lof-slidecontent,
+	.main-slider-content{
+		width: @slider_w; 
+		height: 367px;
+		
+		.sliders-wrapper { width: @slider_w; }
+		
+		.navigator-content {
+			.button-next,
+			.button-previous,
+			.button-control{
+				opacity: 1;
+				bottom: 0px; 
+				left: 0px;
+				z-index: 199;
+			}
+			
+			.button-next{ left: 222px }
+		}		
+		.navigator-wrap-inner { display: none; }
+		
+		.navigator-wrapper{ width: @slider_w; }
+		
+		.slider-description{
+			top: 0px;
+			left: 0px;
+			width: 232px;
+			height: 100%;
+		}
+	}
+	
+	
+	
+	/* Description MOBILE ----------------------------------------------------*/ 
+	
+	
+	
+	.main-slider-content:hover .slider-description{
+		opacity: 1;
+	}
+	
+	
+	
+	/* FILTERED ITEMS MOBILE ----------------------------------------------------*/ 
+	
+	
+	#filter-container{
+
+		width: 252px; /* 712 + 20 gap */
+		figure{
+			width: 252px;
+			margin-right: 0px;
+			
+			figcaption{
+				.heading{ font-size: 28px; }
+			}
+		}
+	}
+	
+	
+	/*  PAGE MOBILE ----------------------------------------------------*/ 
+
+	#page-content-sb{
+		width: 252px;
+		margin-right: 0px;
+	}
+	
+	
+	/*  BLOG MOBILE ----------------------------------------------------*/ 
+	
+	#posts-list,
+	body.single #posts-list{
+		width: 252px;
+		margin-right: 0px;
+		margin-left: 0px;
+				
+		/* Jplayer MOBILE ----------------------------------------------------*/ 
+			
+		div.jp-audio { 
+		
+			width: 200px; 
+			div.jp-progress-container { width: 80px; }
+			div.jp-type-single div.jp-progress { width: 80px; }
+			div.jp-volume-bar-container { left: 181px; }
+			div.jp-volume-bar-container{ left: 135px; }
+			div.jp-volume-bar-container,
+			div.jp-volume-bar { width: 20px; }
+			div.jp-type-single a.jp-mute,
+			div.jp-type-single a.jp-unmute { left: 144px; }
+		}
+
+		/* ENDS Jplayer MOBILE ----------------------------------------------------*/ 
+
+
+		article{
+			margin-bottom: 55px;
+			background:  @fgColor ;
+			
+			
+			.box{
+				position: relative;
+				padding-left: 40px;
+				padding-top: 12px;
+				padding-bottom: 18px;
+				
+				padding: 0px 0px 0px 0px;
+				
+				background: none;
+				
+				.excerpt{
+					float: left;
+					width: 192px;
+					margin-left: 40px;
+					margin-bottom: 20px;
+					margin-top: 10px;
+					
+					.post-heading{
+						font-size: 28px;
+						line-height: 1.1em;
+					}
+				}
+				
+				.meta{
+					width: 192px;
+					margin-left: 0px;
+					background:  @fgColor url(../img/meta-bg-vertical.png) repeat-x top right;
+					padding: 20px 20px 20px 40px;
+				}
+			}
+		}
+		
+	}
+	
+	
+	
+	/* SIDEBAR MOBILE ------------------------------------------------------------*/
+
+	#sidebar{
+		width: 252px; 
+		margin-top: 30px;
+	}
+	
+	/* PORTFOLIO MOBILE ----------------------------------------------------*/ 
+
+	#portfolio-content{
+		#project-box{
+			
+			.info{
+				width: 212px;
+				padding-left: 20px;
+				margin-right: 24px;
+				margin-bottom: 30px;
+			}
+			
+			.entry-content{
+				width: 252px; 
+				margin-bottom: 40px;
+				margin-left: 20px;
+				
+				.multicolumn {
+					.column *{
+						width: 100px;  
+						padding-right: 0px;
+					}
+					
+					.column.last{ margin-right: 0px; }
+				}
+	
+			}
+		}
+	}
+	
+	
+	/* RELATED PROJECTS MOBILE ---------------------------------------------------*/
+
+	.related-projects{
+		figure{
+			margin-right: 0px;
+			width: 252px;
+			
+			.thumb{
+				width: 252px;
+			}
+		}
+	}
+	
+	/* WIDGET COLS MOBILE ----------------------------------------------------*/ 
+	
+	.widget-cols{
+		>li{
+			width: 252px;
+			margin-right: 0px;
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		}
+		
+		>li:last-child{
+			border-bottom: none;
+			padding-bottom: 0px;
+		}
+	}
+
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	@widemobile-w: 436px;
+	
+	.wrapper{ width: @widemobile-w;  }
+	
+	/* LOGO WIDE MOBILE ----------------------------------------------------*/ 
+	
+	#logo a{ 
+		display: block ; 
+		width: @widemobile-w; 
+	}
+	
+	/* NAV WIDE MOBILE ----------------------------------------------------*/ 
+	
+	#nav{ display: none; }
+	#comboNav{ display: block; }
+	
+	/* CAROUSEL WIDE MOBILE ----------------------------------------------------*/ 
+	
+	#ch-holder{ display: none; }
+	#cv-holder{ display: block; }
+	
+	.carousel-holder{
+		.carousel-heading{
+			span{ margin: 0px 0px 22px 0px;  }
+		}
+	}
+	
+	/* SLIDER WIDE MOBILE ----------------------------------------------------*/ 
+	
+	@slider_w: 436px;
+	
+	.lof-slidecontent,
+	.main-slider-content{
+		width: @slider_w; 
+		height: 367px;
+		
+		.sliders-wrapper { width: @slider_w; }
+		
+		.navigator-content {
+			.button-next,
+			.button-previous,
+			.button-control{
+				opacity: 1;
+				bottom: 0px; 
+				left: 0px;
+				z-index: 199;
+			}
+			
+			.button-next{ left: 406px }
+		}		
+		.navigator-wrap-inner { display: none; }
+		
+		.navigator-wrapper{ width: @slider_w; }
+		
+		.slider-description{
+			top: 0px;
+			left: 0px;
+			width: 232px;
+			height: 100%;
+		}
+	}
+	
+	/* FILTERED ITEMS WIDE MOBILE ----------------------------------------------------*/ 
+	
+	
+	#filter-container{
+
+		width: 460px; 
+		figure{
+			width: 206px;
+			margin-right: 24px;
+			float: left;
+		}
+	}
+
+
+
+	
+	/*  PAGE WIDE MOBILE ----------------------------------------------------*/ 
+
+	#page-content-sb{
+		width: @widemobile-w;
+		margin-right: 0px;
+	}
+
+
+	/*  BLOG WIDE MOBILE ----------------------------------------------------*/ 
+	
+	#posts-list,
+	body.single #posts-list{
+		width: @widemobile-w;
+		margin-right: 0px;
+		margin-left: 0px;
+		
+		/* Jplayer WIDE MOBILE ----------------------------------------------------*/ 
+			
+		div.jp-audio { 
+		
+			width: 360px; 
+			div.jp-progress-container { width: 225px; }
+			div.jp-type-single div.jp-progress { width: 223px; }
+			div.jp-volume-bar-container { left: 181px; }
+			div.jp-volume-bar-container{ left: 281px; }
+			div.jp-volume-bar-container,
+			div.jp-volume-bar { width: 40px; }
+			div.jp-type-single a.jp-mute,
+			div.jp-type-single a.jp-unmute { left: 290px; }
+		}
+
+		/* ENDS Jplayer MOBILE ----------------------------------------------------*/ 
+
+		
+		article{
+			margin-bottom: 55px;
+			background:  @fgColor ;
+			
+			
+			.box{
+				position: relative;
+				padding-left: 40px;
+				padding-top: 12px;
+				padding-bottom: 18px;
+				
+				padding: 0px 0px 0px 0px;
+				
+				background: none;
+				
+				.excerpt{
+					float: left;
+					width: @widemobile-w - 60;
+					margin-left: 40px;
+					margin-bottom: 20px;
+					margin-top: 10px;
+					
+					.post-heading{
+						font-size: 28px;
+						line-height: 1.1em;
+					}
+				}
+				
+				.meta{
+					width: @widemobile-w - 60;
+					margin-left: 0px;
+					background:  @fgColor url(../img/meta-bg-vertical.png) repeat-x top right;
+					padding: 20px 20px 20px 40px;
+				}
+			}
+		}
+		
+	}
+	
+	/* SIDEBAR WIDE MOBILE ------------------------------------------------------------*/
+
+	#sidebar{
+		width: @widemobile-w; 
+		margin-top: 30px;
+	}
+	
+	/* PORTFOLIO WIDE MOBILE ----------------------------------------------------*/ 
+
+	#portfolio-content{
+		#project-box{
+			
+			.info{
+				width: 436px - 40;
+				padding-left: 20px;
+				margin-right: 24px;
+				margin-bottom: 30px;
+			}
+			
+			.entry-content{
+				width: 436px - 20; 
+				margin-bottom: 40px;
+				margin-left: 20px;
+				
+				.multicolumn {
+					.column *{
+						width: 187px;  
+						margin-right: 20px;
+					}
+					
+					.column.last{ margin-right: 0px; }
+				}
+	
+			}
+		}
+	}
+
+	/* RELATED PROJECTS WIDE MOBILE ---------------------------------------------------*/
+
+	.related-projects{
+		figure{
+			margin-right: 0px;
+			width: 436px;
+			
+			.thumb{
+				width: 436px;
+			}
+		}
+	}
+	
+	/* WIDGET COLS WIDE MOBILE ----------------------------------------------------*/ 
+	
+	.widget-cols{
+		>li{
+			width: 436px;
+			margin-right: 0px;
+		}
+	}
+
+}
+
+
+
+
+
+
+

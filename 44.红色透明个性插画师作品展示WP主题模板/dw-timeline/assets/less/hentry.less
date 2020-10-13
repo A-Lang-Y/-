@@ -1,0 +1,342 @@
+/* ==========================================================================
+   Hentry
+   ========================================================================== */
+
+.hentry {
+   .entry-thumbnail {
+      margin: 0 0 15px;
+   }
+
+   .entry-inner {
+      padding: 30px 30px 0;
+      margin: 0 15px 30px;
+      background: #fff;
+      border-radius: @border-radius-small;
+      .box-shadow(0 1px 1px 0 rgba(0,0,0,.15));
+   }
+
+   .entry-format {
+      font-size: @font-size-small;
+      color: #bbb;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+   }
+
+   .entry-title {
+      margin: 0 0 15px;
+   }
+
+   .entry-meta {
+      font-size: @font-size-small;
+      color: #bbb;
+      margin: 0 0 15px;
+
+      a {
+         color: #bbb;
+
+         &:hover {
+            color: @brand-danger; 
+         }
+      }
+
+      .sep {
+         margin: 0 5px;
+      }
+   }
+
+   .entry-content,
+   .entry-summary {
+      padding: 0 0 20px;
+      .clearfix();
+
+      .carousel {
+         margin: 0 0 10px;
+      }
+   }
+
+   .more-link {
+      display: block;
+      clear: both;
+      margin: 10px 0 0;
+   }
+
+   .entry-tags {
+      margin-bottom: 10px;
+
+      .tags-title {
+      }
+
+      a {
+         margin: 15px 0 30px;
+         opacity: .5;
+
+         &:hover {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+.addthis_toolbox {
+   display: none;
+}
+
+
+/* ==========================================================================
+   Single Post
+   ========================================================================== */
+
+.single {
+   .entry-meta {
+      .avatar {
+         border-radius: 50%;
+         margin-right: 5px;
+      }
+   }
+
+   .entry-content {
+      font-family: @headings-font-family;
+      font-weight: 300;
+      font-size: @font-size-content;
+      line-height: @line-height-content; 
+   }
+
+   .no-cover + .wrap {
+      .hentry header {
+         .page-header();
+      }
+
+      .entry-meta {
+         a {
+            color: #999;
+            &:hover {
+               color: @brand-danger;
+            }
+         }
+      }
+   }
+
+   .cover + .wrap {
+      .hentry header {
+         position: absolute;
+         top: -160px;
+         z-index: 1;
+         color: #fff;
+         width: 100%;
+      }
+
+      .entry-title {
+         font-weight: 700;
+         font-size: 48px;
+         position: absolute;
+         bottom: 0;
+         padding-bottom: 50px;
+      }
+
+      .entry-meta {
+         color: #fff;
+         position: relative;
+
+         a {
+            color: #fff;
+
+            &:hover {
+               color: #fff;
+               .opacity(.8);
+            }
+         }
+      }
+   }
+
+   // Add this
+   .entry-content .addthis_toolbox {
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 0;
+      text-align: center;
+   }
+
+   .addthis_default_style .at300b,
+   .addthis_default_style .at300m,
+   .addthis_default_style .addthis_counter {
+      float: none;
+      display: inline-block;
+   }
+
+   .addthis_default_style .addthis_counter .addthis_button_expanded {
+      display: table;
+   }
+}
+
+/* ==========================================================================
+   404
+   ========================================================================== */
+.error404-html {
+   overflow: hidden;
+   height: 100%;
+}
+
+.error404 {
+   overflow: hidden;
+   #gradient > .directional(@start-color: #1c15a3; @end-color: #5c1f73; @deg: -45deg);
+   
+   .banner {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+   }
+
+   .main {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      color: #fff;
+      font-size: 16px;
+
+      a {
+         color: #fff;
+         font-weight: bold;
+         position: relative;
+
+         &:before {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: 0;
+            width: 0;
+            height: 1px;
+            background: #fff;
+            content: '';
+            .transition( .3s );
+         }
+
+         &:hover:before {
+            width: 100%;
+            margin-left: -50%;
+         }
+      }
+
+      img {
+         margin-bottom: 40px;
+         .center-block();
+      }
+   }
+}
+
+
+/* ==========================================================================
+   Comments List
+   ========================================================================== */
+
+#comments {
+   border-top: 1px solid #ddd;
+
+   > h3 {
+      margin: 15px 0 30px;
+      font-family: @font-family-base;
+      font-size: 11px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #999;
+   }
+
+   .comment-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+   .comment {
+      border-top: 1px solid #ddd;
+      padding: 30px 0 30px 70px;
+      position: relative;
+
+      &:first-child {
+         border-top: none;
+         padding-top: 0;
+      }
+
+      h4 {
+         margin: 5px 0;
+         color: @gray-dark;
+      }
+
+      time {
+         display: block;
+         margin: 0 0 15px;
+
+         a {
+            font-size: @font-size-small;
+            color: #999;
+
+            &:hover {
+               color: @brand-danger;
+            }
+         }
+      }
+
+      .avatar {
+         border-radius: 40px;
+         position: absolute;
+         left: 0;
+         top: 35px;
+      }
+
+      &:first-child .avatar {
+         top: 0;
+      }
+
+      .comment-reply-link .glyphicon-share-alt {
+         .rotateY(180deg);
+      }
+
+      .children {
+         border-top: 1px solid #ddd;
+         padding: 30px 0 0;
+         margin: 30px 0 0;
+         list-style: none;
+
+         li:last-child {
+            padding-bottom: 0;
+         }
+      }
+   }
+
+   .comment-action a {
+      margin-right: 5px;
+   }
+}
+
+
+/* ==========================================================================
+   Comment Form
+   ========================================================================== */
+
+#respond {
+   border-top: 1px solid #ddd;
+
+   > h3 {
+      margin: 15px 0 30px;
+      font-family: @font-family-base;
+      font-size: 11px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #999;
+   }
+
+   .comment-reply-title small {
+      font-size: 11px;
+      float: right;
+      letter-spacing: 0;
+      text-transform: none;
+   }
+
+   .form-submit input[type=submit] {
+      .btn();
+      .btn-default();
+   }
+
+   .form-group label {
+      display: none;
+   }
+}

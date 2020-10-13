@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.6.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>  
+<script type="text/javascript" src="js/Josefin_Sans_400.font.js"></script>
+<script type="text/javascript" src="js/Tangerine_700.font.js"></script>
+<script type="text/javascript" src="js/atooltip.jquery.js"></script> 
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+	<style type="text/css">
+		.aToolTip, .box1, .box1 .inner, .button, .button strong {behavior:url(js/PIE.htc)}
+	</style>
+<![endif]-->
+<!--[if lt IE 7]>
+	<div style='clear:both;text-align:center;position:relative'>
+		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" alt="" /></a>
+	</div>
+<![endif]-->
+</head>
+<body id="page6">
+<div class="body1">
+	<div class="main">
+<!-- header -->
+		<header>
+			<div class="wrapper">
+				<ul id="icons">
+					<li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.png" alt=""></a></li>
+					<li><a href="#" class="normaltip" title="Twitter"><img src="images/icon2.png" alt=""></a></li>
+					<li><a href="#" class="normaltip" title="Linkedin"><img src="images/icon3.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="wrapper">
+				<h1><a href="index.html" id="logo"></a></h1>
+				<nav>
+					<ul id="menu">
+						<li class="first"><a href="index.html">Home </a></li>
+						<li><a href="Lisa.html">Lisa</a></li>
+						<li><a href="Tom.html">Tom</a></li>
+						<li><a href="Links.html">Links </a></li>
+						<li><a href="Album.html">Album</a></li>
+						<li id="menu_active"><a href="Contacts.html">Contacts</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header><div class="ic">More Website Templates @ <a href="http://www.cssmoban.com/" >网页模板</a> - August 8th 2011!</div>
+<!-- / header -->
+	</div>
+</div>
+<div class="body3">
+	<div class="main">
+<!-- content -->
+		<article id="content">
+			<div class="wrapper">
+				<div class="pad">
+					<div class="wrapper">
+						<section class="col1">
+							<h2>Contact <span>Form</span></h2>
+							<form id="ContactForm">
+								<div>
+									<div  class="wrapper">
+										<span>Your Name:</span>
+										<input type="text" class="input" >
+									</div>
+									<div  class="wrapper">
+										<span>Your E-mail:</span>
+										<input type="text" class="input" >								
+									</div>
+									<div  class="textarea_box">
+										<span>Your Message:</span>
+										<textarea name="textarea" cols="1" rows="1"></textarea>								
+									</div>
+									<a href="#" class="button" onClick="document.getElementById('ContactForm').submit()"><strong>Send</strong></a>
+									<a href="#" class="button" onClick="document.getElementById('ContactForm').reset()"><strong>Clear</strong></a>
+								</div>
+							</form>
+						</section>
+						<section class="col2 pad_left2">
+							<h2>Our <span>Contacts</span></h2>
+							<p class="pad_bot1">8901 Marmora Road, Glasgow, D04 89GR.</p>
+							<div class="wrapper pad_bot1">
+								<p class="address">
+									Freephone:<br>
+									Telephone:<br>
+									E-mail:
+								</p>
+								<p>
+									+1 800 559 6580<br>
+									+1 959 603 6035<br>
+									<a href="mailto:">LisaandTom@mail.com</a>
+								</p>
+							</div>
+							<h2>Miscellaneous <span>Info</span></h2>
+							<p class="pad_bot1">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</article>
+<!-- content / -->
+	</div>
+</div>
+<div class="body2">
+	<div class="main">
+<!-- footer -->
+		<footer>
+			Website Template Collect from cssmoban.com | <a href="http://www.cssmoban.com">模板之家</a><br>
+		</footer>
+<!-- / footer -->
+	</div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+<script type="text/javascript">
+   $(window).load(function() {
+   $('.slider').nivoSlider({
+        effect:'fold', //Specify sets like: 'fold,fade,sliceDown, sliceDownLeft, sliceUp, sliceUpLeft, sliceUpDown, sliceUpDownLeft' 
+        slices:17,
+        animSpeed:500,
+        pauseTime:8000,
+        startSlide:0, //Set starting Slide (0 index)
+        directionNav:true, //Next & Prev
+        directionNavHide:false, //Only show on hover
+        controlNav:true, //1,2,3...
+        controlNavThumbs:false, //Use thumbnails for Control Nav
+        controlNavThumbsFromRel:false, //Use image rel for thumbs
+        controlNavThumbsSearch: '.jpg', //Replace this with...
+        controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+        keyboardNav:true, //Use left & right arrows
+        pauseOnHover:true, //Stop animation while hovering
+        manualAdvance:false, //Force manual transitions
+        captionOpacity:1, //Universal caption opacity
+        beforeChange: function(){},
+        afterChange: function(){Cufon.refresh();},
+        slideshowEnd: function(){} //Triggers after all slides have been shown
+    });
+});
+</script>
+</body>
+</html>

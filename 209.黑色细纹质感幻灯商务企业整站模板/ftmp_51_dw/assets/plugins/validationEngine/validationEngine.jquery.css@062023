@@ -1,0 +1,38 @@
+/* Z-INDEX */
+ .formError { z-index: 999; }
+    .formError .formErrorContent { z-index: 991; }
+    .formErrorInsideDialog.formError { z-index: 5000; }
+    .formErrorInsideDialog.formError .formErrorContent { z-index: 5001; }
+ 
+.inputContainer {
+	position: relative;
+	float: left;
+}
+
+.formError {
+	position: absolute;
+	top: 300px ;
+	left: 300px ;
+	display: block;
+	cursor: pointer;
+    margin-top:7px !important;
+    
+}
+
+.formError .formErrorContent {
+    cursor: pointer;
+	width: 100%;
+	/*background: #363636;*/
+	position:relative;
+	width: auto;
+	font-size: 12px;
+	/*border: 2px solid #ddd;
+    margin-top:1px;
+	box-shadow: 0 0 6px #000;
+	-moz-box-shadow: 0 0 6px #000;
+	-webkit-box-shadow: 0 0 6px #000;
+	padding: 4px 10px 4px 10px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;*/
+}

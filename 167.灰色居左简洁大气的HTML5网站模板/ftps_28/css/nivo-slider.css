@@ -1,0 +1,149 @@
+/*
+ * jQuery Nivo Slider v2.4
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;
+	display:none;
+}
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	right:0px;
+	top:100px;
+	background: transparent;
+	color: #606060;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:40%;
+	z-index:89;
+	font-size: 18px;
+	line-height: 1.3em;
+	font-style: italic;
+}
+.nivo-caption p {
+	padding:5px 20px 5px 30px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+/* CUSTOM SLIDER ------------------------------------------------------------*/
+
+#slider {
+    position:relative;
+    width:653px; /* Change this to your images width */
+    height:400px; /* Change this to your images height */
+    background:url(images/loading.gif) no-repeat 50% 50%;
+    margin-left: 13px;
+    margin-bottom: 60px;
+}
+
+
+#slider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+
+#slider a {
+    border:0;
+    display:block;
+}
+
+.nivo-controlNav{
+	position: absolute;
+	bottom: -25px;
+	left: 43px;
+	z-index: 1;
+}
+
+.nivo-controlNav a{
+	display: block;
+	float: left;
+	width: 11px;
+	height: 11px;
+	margin-right: 10px;
+	background: url(../img/slider-nav.png) no-repeat;
+	text-indent: -9000px;
+}
+
+.nivo-controlNav a:hover{ background-position: -42px 0px; }
+
+.nivo-controlNav a.active{ background-position: -21px 0px; }
+
+.nivo-directionNav a{
+	display: block;
+	width: 35px;
+	height: 38px;
+	text-indent: -9000px;
+	background: url(../img/nivo-arrows.png) no-repeat;
+}
+
+.nivo-directionNav a.nivo-nextNav{ 
+	background-position: top right;
+	margin-right: 15px;
+}
+
+.nivo-directionNav a.nivo-prevNav{ 
+	margin-left: 15px;
+}

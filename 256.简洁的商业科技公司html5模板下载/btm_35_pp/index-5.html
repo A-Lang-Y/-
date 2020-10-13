@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.responsivemenu.js"></script>
+<script src="js/FF-cash.js"></script>
+<script>
+$(function(){
+	$('#contact-form').forms({ownerEmail:'#'});
+});
+</script>
+<!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body>
+<!-- header -->
+<header class="padheader">
+	<div class="container_24">
+		<div class="grid_24">
+			<h1 class="fleft"><a href="index.html">Glosey</a></h1>
+			<ul class="sf-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index-1.html">Company<span class="arrow"></span></a><ul>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Work Team</a></li>
+						<li><a href="#">Profile</a><ul>
+								<li><a href="#">Mission</a></li>
+								<li><a href="#">Capabilities</a></li>
+								<li><a href="#">Support</a></li>
+								<li><a href="#">Partnership</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Testimonials</a></li>
+					</ul>
+				</li>
+				<li><a href="index-2.html">Services</a></li>
+				<li><a href="index-3.html">Solutions</a></li>
+				<li><a href="index-4.html">Projects</a></li>
+				<li class="current"><a href="index-5.html">Contacts</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</header>
+<!-- content -->
+<section>
+	<div class="bg">
+		<div class="container_24">
+			<div class="wrapper">
+				<div class="grid_24 padtop33">
+					<h4>Contact Form</h4>
+					<form id="contact-form">
+						<div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong></div>
+						<fieldset>
+							<div class="wrapper">
+								<div class="grid_8 suffix_1 alpha">
+									<label class="name">
+										<input type="text" value="Name">
+										<span class="error">*This is not a valid name.</span>
+										<span class="empty">*This field is required.</span>
+										<span class="clear"></span>
+									</label>
+									<label class="email">
+										<input type="text" value="Email">
+										<span class="error">*This is not a valid email address.</span>
+										<span class="empty">*This field is required.</span>
+										<span class="clear"></span>
+									</label>
+									<label class="phone">
+										<input type="text" value="Phone">
+										<span class="error">*This is not a valid phone number.</span>
+										<span class="empty">*This field is required.</span>
+										<span class="clear"></span>
+									</label>
+								</div>
+								<div class="grid_13 suffix_2 omega">
+									<label class="message">
+										<textarea>Message</textarea>
+										<span class="error">*The message is too short.</span>
+										<span class="empty">*This field is required.</span>
+										<span class="clear"></span>
+									</label>
+									<div class="buttons"><span><a class="button" data-type="reset">Clear</a></span><span><a class="button" data-type="submit">Submit</a></span></div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container_24">
+		<div class="">
+			<div class="grid_6 padtop22">
+				<h4 class="padbot2">Address</h4>
+				<address class="contacts">
+					<p>The Company Name Inc.<br>
+					8901 Marmora Road,<br>
+					Glasgow, D04 89GR.</p>
+					<p><span>Freephone:</span>+1 800 559 6580<br>
+					<span>Telephone:</span>+1 800 603 6035<br>
+					<span>FAX:</span>+1 800 889 9898</p>
+					<p>E-mail: <a href="#"><strong>mail@demolink.org</strong></a></p>
+				</address>
+			</div>
+			<div class="grid_10 suffix_1 padtop22">
+				<h4 class="padbot2">Map</h4>
+				<div class="box-img map"><iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe></div>
+			</div>
+			<div class="grid_7 padtop22">
+				<h4 class="padbot2">Find Us Elsewhere</h4>
+				<ul class="icons icons2">
+					<li><a href="#"><img src="images/icon2-1.png" alt=""></a></li>
+					<li><a href="#"><img src="images/icon2-2.png" alt=""></a></li>
+					<li><a href="#"><img src="images/icon2-3.png" alt=""></a></li>
+					<li><a href="#"><img src="images/icon2-4.png" alt=""></a></li>
+					<li><a href="#"><img src="images/icon2-5.png" alt=""></a></li>
+				</ul>
+				<ul class="list4">
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Forrst</a></li>
+					<li><a href="#">Linkedln</a></li>
+					<li><a href="#">Skype</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">YourVersion</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</section>
+<!-- footer -->
+<footer class="">
+	<div class="container_24">
+		<div class="wrapper">
+			<div class="grid_24"><a href="index.html" class="link"><img src="images/logo-footer.png" alt=""></a> &copy; 2012 | <a href="index-6.html">Privacy Policy</a></div>
+		</div>
+	</div>
+</footer>  
+</body>
+</html>

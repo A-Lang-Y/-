@@ -1,0 +1,169 @@
+<!DOCTYPE html><!-- The new doctype -->
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Art HTML5&amp;CSS3 single page layout | Script tutorials demo</title>
+    <meta charset="utf-8">
+
+    <!-- Linking styles -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen">
+
+    <!-- Linking scripts -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>   
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div class="container">
+    <header><!-- Defining the header section of the page -->
+
+        <div class="logo"><!-- Defining the logo element -->
+            <a href="#/">
+                <img src="images/logo.png" title="Art template" alt="Art template" />
+            </a>
+            <p>Art template</p>
+        </div>
+
+        <nav><!-- Defining the navigation menu -->
+            <ul>
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/category/html-css/">Tutorials</a></li>
+                <li><a href="#/about/">About</a></li>
+                <li><a href="#/creating-new-html5css3-single-page-layout-art-theme/">Go Back To The Tutorial</a></li>
+            </ul>
+        </nav>
+
+    </header>
+	<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
+    <div id="main">
+        <section id="social"><!-- Search form and social icons -->
+
+            <form action="#" onSubmit="return false;" method="get">
+                <input type="text" onFocus="if (this.value =='Search..' ) this.value=''" onBlur="if (this.value=='') this.value='Search..'" value="Search.." name="q">
+                <input type="submit" value="">
+            </form>
+
+            <ul>
+                <li><a href="#" title="facebook" rel="external nofollow"><img alt="" src="images/facebook.png"></a></li>
+                <li><a href="#" title="twitter" rel="external nofollow"><img alt="" src="images/twitter.png"></a></li>
+                <li><a href="#" title="linkedin" rel="external nofollow"><img alt="" src="images/linkedin.png"></a></li>
+                <li><a href="#" title="rss" rel="external nofollow"><img alt="" src="images/rss.png"></a></li>
+            </ul>
+
+        </section>
+
+        <section id="slider-wrapper"><!-- Promo slider -->
+            <div id="slider" class="nivoSlider">
+                <img style="display: none;" src="images/promo1.jpg" alt="" title="#htmlcaption-1">
+                <img style="display: none;" src="images/promo2.jpg" alt="" title="#htmlcaption-2">
+                <img style="display: none;" src="images/promo3.jpg" alt="" title="#htmlcaption-3">
+            </div>
+            <div id="htmlcaption-1" class="nivo-html-caption">
+                <h5 class="p2">Your promo text 1</h5>
+                <p>Promo text description here</p> 
+            </div>
+            <div id="htmlcaption-1" class="nivo-html-caption">
+                <h5 class="p2">Your promo text 2</h5>
+                <p>Promo text description here</p> 
+            </div>
+            <div id="htmlcaption-2" class="nivo-html-caption">
+                <h5 class="p2">Your promo text 3</h5>
+                <p>Promo text description here</p> 
+            </div>
+            <div id="htmlcaption-3" class="nivo-html-caption">
+                <h5 class="p2">Your promo text 4</h5>
+                <p>Promo text description here</p> 
+            </div>
+        </section>
+
+        <section id="content"><!-- Defining the content section -->
+            <ul>
+                <li>
+                    <img src="images/post.jpg" alt="">
+                    <div class="desc"><p>Creating A CSS3 Animated Menu</p>
+                        <a class="more" href="#/creating-css3-animated-menu/">Continue</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/post.jpg" alt="">
+                    <div class="desc"><p>Animated jQuery Progressbar Plugin</p>
+                        <a class="more" href="#/animated-jquery-progressbar/">Continue</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/post.jpg" alt="">
+                    <div class="desc">
+                        <p>Fresh collection of Original Captchas</p>
+                        <a class="more" href="#/fresh-collection-of-original-captchas/">Continue</a>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+    </div>
+
+    <div id="submain">
+        <section id="subcontent"><!-- Defining the content section #2 -->
+            <div id="left">
+                <ul>
+                    <li>
+                        <div>
+                            <h3>Post #1</h3>
+                            <p>Post 1 description</p>
+                            <a class="more" href="#">Continue</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>Post #2</h3>
+                            <p>Post 1 description</p>
+                            <a class="more" href="#">Continue</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>Post #3</h3>
+                            <p>Post 1 description</p>
+                            <a class="more" href="#">Continue</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="right">
+                <ul>
+                    <li>
+                        <div>
+                            <h3>Attractive Presentation with HTML5</h3>
+                            <p>Today we will prepare something new – presentation. And we will using all interesting what can give us HTML5. Presentation itself will contain 5 easy slides. We will able to use navigation arrow keys for sliding, spacebar, display notes, sidebar with some custom content. Here are new html5 tags which we going to use: nav, menu, section, aside, header and hgroup. Sure, that now is time to check our demo.</p>
+                            <a class="more" href="#/creating-an-attractive-presentation-with-html5/">Continue</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>Creating Advance Level Login system with Logic captcha</h3>
+                            <p>Long ago, I talked about a simple easy login system. And today, I decided to improve the system. The new version will use the methods SHA1 + MD5 (with salt) to encode passwords. We also do not use cookies to store information, and will use the sessions. And, in this version I will implement an interesting logic captcha (where we will need to choose the correct answer in order to prove that we are human, not machine).</p>
+                            <a class="more" href="#/creating-advance-level-login-system-with-logic-captcha/">Continue</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+
+        </section>
+
+    </div>
+
+    <footer><!-- Defining the footer section of the page -->
+            Art template © 2011 <a class="link" href="#/">Privacy Policy</a><br />
+            More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a>
+    </footer>
+</div>
+
+</body></html>

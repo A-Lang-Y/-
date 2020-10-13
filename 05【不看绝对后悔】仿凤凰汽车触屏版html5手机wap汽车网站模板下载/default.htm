@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="no" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="keywords" content="汽车,汽车网,汽车报价,汽车图片,汽车新闻，凤凰汽车触屏版，凤凰汽车" />
+	<meta name="description" content="凤凰汽车网以服务全球华人汽车用户为己任，提供最新汽车报价、清晰汽车图片，最及时的汽车资讯、汽车行业信息，最精华的新车、购车、用车、汽车文化，是面向人群最广泛的门户汽车网站。" />
+
+<title>仿凤凰汽车触屏版html5手机wap汽车网站模板下载-懒人模板【http://www.lanrenmb.com/shenghuofuwu/qiche/】</title>
+<link rel="stylesheet" type="text/css" href="css/m336.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://img.ifeng.com/tres/auto/9/2013/0415/372_4952679231_20130415174638.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://img.ifeng.com/tres/auto/9/2013/0415/372_4952679229_20130415174638.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://img.ifeng.com/tres/auto/9/2013/0415/372_4952679230_20130415174638.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://img.ifeng.com/tres/auto/9/2013/0415/372_4952679228_20130415174638.png" />
+
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+
+<script type="text/javascript" src="js/98.js" ></script>
+<script type="text/javascript" src="js/brand.js" ></script>
+<script src="js/area.js"></script>
+<script src="http://m3.ifengimg.com/auto/js/2014/0314/area_data.js" type="text/javascript" language="javascript" charset="UTF-8"></script>
+<script src="js/json2.js"></script>
+<script src="js/ifengjs.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function(){
+	$("img").each(function(){
+		if($(this).offset().top<$(window).height()){
+			var ifengsrc=$(this).attr("ifengsrc");
+			var src=$(this).attr("src");
+			if(ifengsrc!=src){
+				$(this).hide();
+				$(this).attr("src",ifengsrc);
+				$(this).fadeIn(600);
+			}
+		}
+	});
+
+	$(window).scroll(function(){
+		
+		$("img").each(function(){
+			var settop=$(this).offset().top;
+			if($(window).scrollTop()+$(window).height()>settop){
+			var ifengsrc=$(this).attr("ifengsrc");
+			var src=$(this).attr("src");
+			if(ifengsrc!=undefined && ifengsrc!="" && ifengsrc && ifengsrc!=src){
+				$(this).hide();
+				$(this).attr("src",ifengsrc);
+				$(this).fadeIn(600);
+			}
+			}
+		});
+	});
+});
+</script>
+
+
+
+<style type="text/css">
+  #topFixedAd11981{
+    min-width:320px; max-width:640px; 
+    margin: 0 auto;
+  }
+  #topFixedAd11981 .btnClose{
+	display: block; position:relative; cursor:pointer;z-index: 11;display: none;
+  }
+   #topFixedAd11981 .btnClose img{z-index: 11;position:absolute;top:1px;right:1px;width:3.6%;max-width:28px; min-width:18px;border: 1px solid #666;}
+  #topFixedAd11981 .wrapper{
+    height: 0px;
+    /**width: 320px;
+    background: url(http://img.ifeng.com/tres/auto/9/2013/0822/372_4956235228_20130822115359.jpg) no-repeat ;**/
+  }  
+  #topFixedAd11981.small .wrapper{
+    height: 0;
+    width: 0;
+  }
+  #topFixedAd11981.active{
+    min-width:320px; max-width:640px;
+	background: url(http://img.ifeng.com/tres/auto/9/2013/0822/372_4956235228_20130822115359.jpg)  #868686 no-repeat;
+	background-size:100% 100%;color:#FFF;
+  }  
+  #topFixedAd11981.active .wrapper{
+    height: 150px;
+    width: 100%;
+  }
+  #topFixedAd11981 .linkTxt{
+    border: solid 1px #B4D5E7;
+    display: none;
+    height: 28px;
+    color: #007CBC;
+    padding: 3px;
+    text-align: center;
+    background: #fff;
+  }
+
+
+</style>
+
+</head>
+
+<a href="../i.auto.ifeng.com/index.php@c=down">  <div id="topFixedAd11981">
+    <span class="btnClose"><img src='http://s0.mimg.ifeng.com/upload/day_130801/201308011536474596_iifeng.png' alt='X' /></span>
+    <div class="wrapper"  href="../i.auto.ifeng.com/index.php@c=down">
+    </div>
+    <div class="linkTxt"><a href="../i.auto.ifeng.com/index.php@c=down" >凤凰新车手机客户端下载</a></div>   
+  </div></a>
+<script type="text/javascript">  
+function setCookie(c_name,value,expiredays){
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate()+expiredays);
+	document.cookie=c_name+ "=" +escape(value)+	((expiredays==null) ? "" : ";expires="+exdate.toGMTString()+";domain:\"auto.ifeng.com\";path:\"default.htm\"");
+}
+
+function getCookie(c_name){
+	if (document.cookie.length>0){
+	  	c_start=document.cookie.indexOf(c_name + "=");
+	  	if (c_start!=-1){ 
+			c_start=c_start + c_name.length+1 ;
+			c_end=document.cookie.indexOf(";",c_start);
+			if (c_end==-1) c_end=document.cookie.length;
+			return unescape(document.cookie.substring(c_start,c_end))
+		} 
+	}
+	return ""
+}
+
+(function(){ var widget = require('widget'),util = require('util'),d=document,
+ORIENTATION_CHANGE = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+     window.addEventListener('load',function(){
+		 if(getCookie("topad")!="") return;
+		 
+          setTimeout(function(){
+            /*顶部随屏浮动位*/
+            var topFixedAd = new widget.AdBlock({
+              id: 'topFixedAd11981',
+              isFixed: false,
+              isAutoPlay: true,
+              activedStopTime: 10000,
+              animateDuation: 700,
+              useTransition:true,
+              onScroll: function(){
+              },
+              onWrapperClk: function(e){
+                document.location.href = e.target.getAttribute('href');
+              },
+              onClose: function(){
+                    this.getWrapper().style.display = 'none';
+                    this.getCloseBtn().style.display = 'none';
+                    this.getEl().style.display = 'block';            
+                    this.getEl().getElementsByClassName('linkTxt')[0].style.display='block';
+              },
+              onActive:function(){
+                var self = this;
+                setTimeout(function(){
+                    self.getWrapper().style.display = 'none';
+                    self.getCloseBtn().style.display = 'none';            
+                    self.getEl().getElementsByClassName('linkTxt')[0].style.display='block';
+                },this.activedStopTime);  
+              },
+              onPassive:function(){
+              },
+              onStart:function(){
+                this.getCloseBtn().style.display = 'block';
+              }
+            }); }, 0);
+			setCookie("topad","1");   
+          },false);})();
+
+  </script><script>
+jQuery(document).ready(function(){
+	
+	showBrand1("brand", "serial");
+});
+
+function onload_car(){
+    var s = document.getElementById("serial");
+    var car = document.getElementById("car");
+    if (s.value == "" || s.value == "-1") {
+        car.options.length = 0;
+        var selectedValue = "-1";
+        var selectedText = "\u8bf7\u9009\u62e9\u8f66\u578b";
+        var newItem = new Option(selectedText, selectedValue);
+        newItem.selected = "selected";
+        car.options.add(newItem);
+        return;
+    }
+    var data;
+    jQuery.ajax({
+        type : "get",
+        async:false,
+        url: "../car.auto.ifeng.com/series/serial/ajaxCar.do@serialId=" + escape(s.value) + "&" + new Date(),
+        dataType : "jsonp",
+        jsonp: "callbackparam",
+        jsonpCallback: "success_jsonpCallback",
+        contentType:"application/x-www-form-urlencoded; charset=UTF-8",
+        success : function(json){
+            data=json.msg;
+            if (data.indexOf(",") >= 0) {
+                var arr = new Array();
+                var arr = data.split(",");
+                car.options.length = 0;
+                var selectedValue = "-1";
+                var selectedText = "请选择车型（可选填）";
+                var newItem = new Option(selectedText, selectedValue);
+                car.options.add(newItem);
+                for (var i = 0; i < arr.length; ) {
+                    if (arr[i] == "") {
+                        break;
+                    }
+                    var selectedValue = arr[i];
+                    var selectedText = arr[i + 1];
+                    var newItem = new Option(selectedText, selectedValue);
+                   
+                    car.options.add(newItem);
+                    i = i + 2;
+                } //获取选择的值
+            } else {
+                car.options.length = 0;
+                var selectedValue = "-1";
+                var selectedText = "请选择车型（可选填）";
+                var newItem = new Option(selectedText, selectedValue);
+                newItem.selected = "selected";
+                car.options.add(newItem);
+                return;
+            }
+        
+        },
+        error : function(){}
+
+    });
+}
+</script>
+<body>
+    <header>
+        <span class="logo"><img src="http://img.ifeng.com/tres/auto/9/2013/0318/372_4951820235_20130318151128.png" ></span>
+      <nav class="top-l">
+      	<ul>
+        	<li class="on"><a href="default.htm" class="home">首页</a></li>
+            <li><a href="news/default.htm" class="news">资讯</a></li>
+            <li><a href="city/beijing.html" class="price">行情</a></li>
+            <li><a href="photo/default.htm" class="pic">图片</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+        <div id="DivFocusPicture" class="focus_box">
+            <div class="pic" id="picqh">
+                <ul id="picContainer">
+                                <li><a href="news/1012959.shtml"><img src="http://y2.ifengimg.com/auto/image/2014/0420/125227136.jpg" width="640px" height="430px"  /></a>
+                	<a href="news/1012959.shtml" class="sp-t">马3昂克赛拉参数配置曝光 共推11款车型</a>
+                </li>
+                                <li><a href="news/1012876.shtml"><img src="http://y2.ifengimg.com/auto/image/2014/0421/103506104.jpg" width="640px" height="430px"  /></a>
+                	<a href="news/1012876.shtml" class="sp-t">路虎发现车系发展策略首曝 将多用途化</a>
+                </li>
+                                <li><a href="news/1012409.shtml"><img src="http://y1.ifengimg.com/auto/image/2014/0417/053841495.jpg" width="640px" height="430px"  /></a>
+                	<a href="news/1012409.shtml" class="sp-t">试驾本田全新飞度1.5L CVT 极致生活化</a>
+                </li>
+                                <li><a href="news/1012932.shtml"><img src="http://y0.ifengimg.com/auto/image/2014/0422/050724862.jpg" width="640px" height="430px"  /></a>
+                	<a href="news/1012932.shtml" class="sp-t">2014北京车展：宝骏610全面对比启辰R50</a>
+                </li>
+                                <li><a href="news/1012917.shtml"><img src="http://y1.ifengimg.com/auto/image/2014/0421/085625799.jpg" width="640px" height="430px"  /></a>
+                	<a href="news/1012917.shtml" class="sp-t">全球6台全部售罄 对话科尼赛克销售总监</a>
+                </li>
+                				</ul>
+            </div>
+            <div class="turn">
+                <a class="up" href="javascript:void(0)" id="prevpic" onClick="picLzPrev()">&nbsp;</a>
+                <a class="down" href="javascript:void(0)" id="nexpic" onClick="picLzNext()">&nbsp;</a>
+                <span id="dotpic" class="dot"><em class="cur">1</em><em>2</em><em>3</em><em>4</em><em>5</em></span>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="m-nav">
+            <h3>i询价-咨询底价</h3>
+    </div>
+    <form action="xunjia/index.php" id="xunjia-form" method="post">
+    <div class="m-adv">
+   	  <div class="m-adv-item">
+          <label>选择品牌</label>
+          <select onChange="showCorp('brand', 'serial')" id="brand" name="brand_id">
+          </select><em>*</em>
+      </div>
+      <div class="m-adv-item">
+          <label>选择车系</label>
+          <select id="serial" name="serialId" onChange="onload_car()">
+          </select><em>*</em>
+      </div>
+      <div class="m-adv-item">
+          <label>选择车型</label>
+          <select name="carId" id="car" >
+          <option value="0">请选择车型（可选填）</option>
+          </select>
+      </div>
+      <input type="hidden" name="sname" id="sname">
+      <input type="hidden" name="bname" id="bname">
+      <input type="hidden" name="cname" id="cname">
+      <div class="m-adv-item">
+          <span class="m-adv-tip"><em>*</em>为必选项</span>
+          <span class="m-adv-btn"><input type="reset" value="清空" class="cl" ><input type="button" onClick="xunjia_submit()" value="询最低价" class="nt"></span>
+      </div>
+    </div>
+    </form>
+    
+    
+
+
+
+<div class="m-nav">
+		<h3>&nbsp;&nbsp;新车&nbsp;&nbsp;</h3><a href="category/category.php" class="city-menu m-pic-more">●●●</a>
+    </div>
+    <nav class="m-lv2">
+    	<a href="news/guonei.shtml"><s style=" background-color:#8d3b8c;"></s>国内新车</a>
+        <a href="news/haiwai.shtml"><s style=" background-color:#ff009a;"></s>海外新车</a>
+        <a href="news/diezhao.shtml"><s style=" background-color:#e6006c;"></s>谍照</a>
+        <a href="news/tujie.shtml"><s style=" background-color:#cb0001;"></s>新车图解</a>
+    </nav>
+    <div class="m-tb">
+        <menu class="m-n-list block"  id="test3_1" >
+                  			      <li><a href="news/1012625.shtml">宝骏610市场前景分析 8万元预算新选择</a></li>
+				  			      <li><a href="news/1012959.shtml">马3昂克赛拉参数配置曝光 共推11款车型</a></li>
+				  			      <li><a href="news/1012962.shtml">德媒吐槽车展上最不想见车型 不忍直视</a></li>
+				  			      <li><a href="news/1012960.shtml">福特Everest由江铃国产 预售25万元起</a></li>
+				  			      <li><a href="news/1012820.shtml">北京车展上市SUV盘点 款款价格有惊喜</a></li>
+				  			      <li><a href="news/1012926.shtml">北京车展首发概念SUV 未来发展趋势蓝本</a></li>
+				  			      <li><a href="news/1012924.shtml">2014北京车展新车图解：江淮瑞风S3</a></li>
+				  			      <li><a href="news/1012923.shtml">2014北京车展新车图解：大众NMC概念车</a></li>
+				        </menu>
+
+    </div>
+	
+<div class="m-nav">
+		<h3>&nbsp;&nbsp;购车&nbsp;&nbsp;</h3><a href="news/default.htm" class="city-menu m-pic-more">●●●</a>
+    </div>
+    <nav class="m-lv2">
+    	<a href="news/shijia.shtml"><s style=" background-color:#2037E7;"></s>试驾</a>
+        <a href="news/daogou.shtml"><s style=" background-color:#0185D8;"></s>导购</a>
+        <a href="city/default.htm"><s style=" background-color:#009FEB;"></s>降价</a>
+        <a href="news/shouce.shtml"><s style=" background-color:#00C8EC;"></s>用车手册</a>
+    </nav>
+    <div class="m-tb">
+        <menu class="m-n-list block"  id="test3_1" >
+                  			      <li><a href="news/1012932.shtml">2014北京车展：宝骏610全面对比启辰R50</a></li>
+				  			      <li><a href="news/1012925.shtml">2014北京车展新车静态评价：全新宝马X4</a></li>
+				  			      <li><a href="news/1012928.shtml">Jeep自由侠vs奥迪Q3 30TFSI 个性与颠覆</a></li>
+				  			      <li><a href="news/1012931.shtml">奥迪A3对比奔驰CLA 豪华紧凑型小车之战</a></li>
+				  			      <li><a href="news/1012930.shtml">汽车达人秀(19) 标致空气混合动力技术</a></li>
+				  			      <li><a href="news/1012927.shtml">福特福睿斯对比雪铁龙爱丽舍 入门之争</a></li>
+				  			      <li><a href="news/1012834.shtml">2014北京车展新车静态评价:斯柯达明锐</a></li>
+				  			      <li><a href="news/1012833.shtml">2014北京车展新车静态评价:宝骏730</a></li>
+				        </menu>
+    </div>
+    
+    
+<div class="m-nav">
+		<h3>优惠促销</h3><span class="local_city">北京行情</span>
+        	<a href="city/default.htm" class="city-menu m-pic-more">●●●</a>
+    </div>
+    <menu class="m-n-list ">
+            	<li><a href="city/beijing-14134.shtml">2014北京车展 奥德赛购车优惠2.8万  </a></li>
+	        	<li><a href="city/beijing-14128.shtml">2014北京车展 现代ix35最高优惠2.53万</a></li>
+	        	<li><a href="city/beijing-14001.shtml">2014北京车展 奥迪A6L最高优惠8.9万</a></li>
+	        	<li><a href="city/beijing-13963.shtml">丰田锐志购车优惠4.7万 店内有现车在售</a></li>
+	        	<li><a href="city/beijing-13988.shtml">中华H530购车优惠1万 目前店内现车充足</a></li>
+	        	<li><a href="city/beijing-14132.shtml">2014北京车展 马自达5购车优惠0.7万</a></li>
+	        	<li><a href="city/beijing-14006.shtml">大众CC最高降2.95万 目前最低售22.33万</a></li>
+	        	<li><a href="city/beijing-14124.shtml">2014北京车展 科帕奇最高优惠3.5万</a></li>
+	    </menu>
+<div class="m-nav">
+  <h3><a id="images"></a>高清实拍</h3>
+  <a href="photo/default.htm" class="city-menu m-pic-more">●●●</a>
+    </div>
+    <menu class="m-p-list">
+            	<a href="photo/album-33857.shtml"><span class="img">
+            <img src="../res2.auto.ifeng.com/2012/home/images/autoifeng100.jpg" ifengsrc=
+                "http://a3.ifengimg.com/autoimg/90/66/2006690_9.jpg" width="270" height="179" ></span><span class="txt">2014款 i3</span></a>
+             	<a href="photo/album-33708.shtml"><span class="img">
+            <img src="../res2.auto.ifeng.com/2012/home/images/autoifeng100.jpg" ifengsrc=
+                "http://a2.ifengimg.com/autoimg/57/52/2005257_9.jpg" width="270" height="179" ></span><span class="txt">2014款 马自达6 Atenza</span></a>
+             	<a href="photo/album-33734.shtml"><span class="img">
+            <img src="../res2.auto.ifeng.com/2012/home/images/autoifeng100.jpg" ifengsrc=
+                "http://a2.ifengimg.com/autoimg/41/50/2005041_9.jpg" width="270" height="179" ></span><span class="txt">2014款 CS75</span></a>
+             	<a href="photo/album-33771.shtml"><span class="img">
+            <img src="../res2.auto.ifeng.com/2012/home/images/autoifeng100.jpg" ifengsrc=
+                "http://a1.ifengimg.com/autoimg/88/48/2004888_9.jpg" width="270" height="179" ></span><span class="txt">2014款 GL8</span></a>
+             	<a href="photo/album-32912.shtml"><span class="img">
+            <img src="../res2.auto.ifeng.com/2012/home/images/autoifeng100.jpg" ifengsrc=
+                "http://a0.ifengimg.com/autoimg/12/48/2004812_9.jpg" width="270" height="179" ></span><span class="txt">2014款 昂科拉</span></a>
+             	<a href="photo/album-33643.shtml"><span class="img">
+            <img src="../res2.auto.ifeng.com/2012/home/images/autoifeng100.jpg" ifengsrc=
+                "http://a0.ifengimg.com/autoimg/70/46/2004670_9.jpg" width="270" height="179" ></span><span class="txt">2014款 K3S</span></a>
+             	<a href="photo/album-33763.shtml"><span class="img">
+            <img src="../res2.auto.ifeng.com/2012/home/images/autoifeng100.jpg" ifengsrc=
+                "http://a2.ifengimg.com/autoimg/59/45/2004559_9.jpg" width="270" height="179" ></span><span class="txt">2014款 610</span></a>
+             	<a href="photo/album-33274.shtml"><span class="img">
+            <img src="../res2.auto.ifeng.com/2012/home/images/autoifeng100.jpg" ifengsrc=
+                "http://a0.ifengimg.com/autoimg/16/45/2004516_9.jpg" width="270" height="179" ></span><span class="txt">2014款 350</span></a>
+         </menu>
+   <div class="m-nav">
+		<h3>&nbsp;&nbsp;文化&nbsp;&nbsp;</h3><a href="category/category.php" class="city-menu m-pic-more">●●●</a>
+    </div>
+    <nav class="m-lv2">
+    	<a href="news/renwen.shtml"><s style=" background-color:#FFC001;"></s>文化</a>
+        <a href="news/kuche.shtml"><s style=" background-color:#FEB101;"></s>酷车</a>
+        <a href="news/saishi.shtml"><s style=" background-color:#FF8E01;"></s>赛事驾驶</a>
+        <a href="news/youji.shtml"><s style=" background-color:#FF6D00;"></s>游记</a>
+    </nav>
+    <div class="m-tb">
+        <menu class="m-n-list block"  id="test3_1" >
+                  			      <li><a href="news/1012965.shtml">《美女4S电》布加迪威速“Blank Bess”</a></li>
+				  			      <li><a href="news/1012917.shtml">全球6台全部售罄 对话科尼赛克销售总监</a></li>
+				  			      <li><a href="news/1012872.shtml">视频：《美女4S电》科尼塞克“One：1”</a></li>
+				  			      <li><a href="news/1012827.shtml">2014北京车展新车图解：雷诺Captur SUV</a></li>
+				  			      <li><a href="news/1012803.shtml">Huracán亚洲首秀 对话兰博基尼全球CEO</a></li>
+				  			      <li><a href="news/1012738.shtml">纽约车展游记 记一个中国人眼中的纽约</a></li>
+				  			      <li><a href="news/1012602.shtml">听何歌特先生浅谈观致3五门版设计亮点</a></li>
+				  			      <li><a href="news/1012530.shtml">2014北京车展探馆：5.9秒破百标致RCZ R</a></li>
+				        </menu>
+    </div>
+    
+<div class="m-nav">
+		<h3>&nbsp;&nbsp;行业&nbsp;&nbsp;</h3><a href="category/category.php" class="city-menu m-pic-more">●●●</a>
+    </div>
+    <nav class="m-lv2">
+    	<a href="news/xinwen.shtml"><s style=" background-color:#08C1BB;"></s>业内新闻</a>
+        <a href="news/pinglun.shtml"><s style=" background-color:#7DDA0C;"></s>产业评论</a>
+        <a href="news/fangtan.shtml"><s style=" background-color:#E6E30C;"></s>访谈</a>
+        <a href="news/baogao.shtml"><s style=" background-color:#E6E30C;"></s>调研报告</a>
+    </nav>
+    <div class="m-tb">
+        <menu class="m-n-list block"  id="test3_1" >
+                  			      <li><a href="news/1012963.shtml">J.D. Power在北京举行客户满意度颁奖</a></li>
+				  			      <li><a href="news/1012958.shtml">黄嘉刚：入门级紧凑车角逐带来市场洗牌</a></li>
+				  			      <li><a href="news/1012957.shtml">MiVo：A级北京车展已变成“A级车”的展</a></li>
+				  			      <li><a href="news/1012954.shtml">凌然：车展大餐如何让市场更好地消化？</a></li>
+				  			      <li><a href="news/1012933.shtml">赵福全对话邬学斌：同为海归惺惺相惜</a></li>
+				  			      <li><a href="news/1012929.shtml">昌河导入北汽6款车 2020产能达100万辆</a></li>
+				  			      <li><a href="news/1012951.shtml">比亚迪发布首款插电式SUV 百公里油耗2L</a></li>
+				  			      <li><a href="news/1012950.shtml">宝骏全新MPV年内上市 搭2款引擎/配6AT</a></li>
+				        </menu>
+    </div>        
+
+<div class="return_top view_more"><a href="#/default.htm">返回首页</a></div>
+<footer class="ft">
+	<p>凤凰新媒体 版权所有</p>
+</footer>
+	<div class="wap_version"><li><a href="default.htm">触屏版</a></li><li><a href="../auto.ifeng.com/default.htm">PC版</a></li></div>
+
+<!--返回顶部-->
+<script>
+$("body").append('<a id="top_btn" href="#" style="width:119px; height:140px; background:url(http://img.ifeng.com/tres/auto/9/2013/0403/279_4952367228_20130403171033.png) no-repeat 0 18px; display:none; position:fixed; bottom:0; right:0;"></a>');
+$(window).scroll(function(){
+if($(window).scrollTop()>10	){
+	$("#top_btn").show();
+}
+else{
+	$("#top_btn").hide();
+}
+});
+</script>
+<!-- START WRating v1.0 -->
+<script type="text/javascript" src="http://y2.ifengimg.com/e01ed39fc2da5d4a/2014/0113/wrating.js">
+</script>
+<script type="text/javascript">
+var vjAcc="860010-2063990101";
+var wrUrl="../ifeng.wrating.com/";
+vjTrack("");
+</script>
+<noscript><img src="../ifeng.wrating.com/a.gif@a=&c=860010-2063990101" width="1" height="1"/></noscript>
+<!-- END WRating v1.0 -->
+<script  type="text/javascript">
+//焦点图
+
+	function xunjia_submit(){
+		if(jQuery("#brand").val()<0||jQuery("#serial").val()<0){
+			alert('请选择品牌车系');  
+			}else{
+				jQuery('#sname').val(jQuery('#serial').find('option:selected').text().replace(/(^\s*)|(\s*$)/g, ""));
+				jQuery('#bname').val(jQuery('#brand').find('option:selected').text());
+				jQuery('#cname').val(jQuery('#car').find('option:selected').text());
+				jQuery("#xunjia-form").submit();
+		}
+	}
+
+
+
+        function clearErrorImg(obj) {
+            obj.src = obj.getAttribute("src2");
+        }
+       
+        var Auto = {};
+        Auto["animate"] = function (arg, speed, callback) {
+            this.elem = "string" == typeof arg.elem ? document.getElementById(arg.elem) : arg.elem;
+            if (this.elem == null) return;
+            this.timers = [];
+            this.prop = "left" in arg ? "left" : "top" in arg ? "top" : "";
+            var from = eval(this.elem.style[this.prop].replace("px", ""));
+            var to = "left" in arg ? arg["left"] : "top" in arg ? arg["top"] : 0;
+            this.options = { duration: speed ? speed : 300 };
+            this.callback = function () { };
+            if (typeof callback == "function") this.callback = callback;
+            if (speed == 0) {
+                this.step(true);
+            }
+            else {
+                this.custom(from, to);
+            }
+            return this;
+        }
+        Auto["animate"].prototype = {
+            easing: {
+                linear: function (p, n, firstNum, diff) {
+                    return firstNum + diff * p;
+                },
+                swing: function (p, n, firstNum, diff) {
+                    return ((-Math.cos(p * Math.PI) / 2) + 0.5) * diff + firstNum;
+                }
+            },
+            tick: function () {
+                var timers = this.timers;
+                for (var i = 0; i < timers.length; i++) {
+                    if (!timers[i]()) {
+                        timers.splice(i--, 1);
+                    }
+                }
+                if (!timers.length) {
+                    this.stop();
+                }
+            },
+            stop: function () {
+                clearInterval(this.timerId);
+                this.timerId = null;
+                this.callback(this);
+            },
+            move: function (fx) {
+                if (fx.elem.style && fx.elem.style[fx.prop] != null) {
+
+                    fx.elem.style[fx.prop] = (fx.prop === "top" || fx.prop === "width" || fx.prop === "height" ? Math.max(0, fx.now) : fx.now) + fx.unit;
+                } else {
+
+                    fx.elem[fx.prop] = fx.now;
+                }
+            },
+            update: function () {
+                this.move(this);
+            },
+            custom: function (from, to, unit) {
+                this.startTime = (new Date).getTime();
+                this.start = from;
+                this.end = to;
+                this.unit = unit || this.unit || "px";
+                this.now = this.start;
+                this.pos = this.state = 0;
+                var self = this;
+                function t(gotoEnd) {
+                    return self.step(gotoEnd);
+                }
+                t.elem = this.elem;
+                if (t() && this.timers.push(t) && !this.timerId) {
+                    this.timerId = setInterval(function () { return self.tick.apply(self, []); }, 13);
+                }
+            },
+            step: function (gotoEnd) {
+                var t = (new Date).getTime(), done = true;
+                if (gotoEnd || t >= this.options.duration + this.startTime) {
+                    this.now = this.end;
+                    this.pos = this.state = 1;
+                    this.update();
+
+                    return false;
+                } else {
+                    var n = t - this.startTime;
+                    this.state = n / this.options.duration;
+                    this.pos = this.easing.swing(this.state, n, 0, 1, this.options.duration);
+                    this.now = this.start + ((this.end - this.start) * this.pos);
+                    this.update();
+                }
+                return true;
+            }
+        }
+
+        Function.prototype.bind = function (bindObj, args) { var _self = this; return function () { return _self.apply(bindObj, [].concat(args)) } };
+        window.onerror = function (e) {
+        }
+        function ipadscrollable(arg) {
+            var c = this.extend(this.extend({}, this.getConfig), arg || {});
+            this.c = c;
+            var a = this;
+            this.obj = a.$(c.id); //body对象;
+            this.num = 0;
+            this.index = 1;
+            this.L = 0;
+            var item = [];
+            this.movingElement = false;
+            this.ItemWidth = 0;
+            a.extend(a, {
+                addItem: function () {
+                    var li_first = a.clone(item[0]);
+                    var li_last = a.clone(item[item.length - 1]);
+                    a.obj.appendChild(li_first);
+                    a.obj.insertBefore(li_last, item[0]);
+                },
+                getChildNodes: function (o) {
+                    var x = [];
+                    for (var i = 0; i < o.childNodes.length; i++) {
+                        if (o.childNodes[i].nodeType != 3)
+                            x.push(o.childNodes[i]);
+                    }
+                    return x;
+                },
+                clone: function (obj) {
+                    return obj.cloneNode(true); ;
+                },
+                getLeft: function (obj) {
+                    return obj.offsetLeft;
+                },
+                getWidth: function (obj) {
+                    return obj.offsetWidth;
+                },
+                touchStart: function (e) {
+                    e = e ? e : event;
+                    if (!c.isEnd) {
+                        return;
+                    }
+                    c.isBegin = true;
+                    if (e.targetTouches) {
+                        c.isTouch = true;
+                        c.startX = e.targetTouches[0].clientX;
+                        c.startY = e.targetTouches[0].clientY;
+                    } else {
+                        c.startX = e.clientX;
+                        c.startY = e.clientY;
+                    }
+                },
+                touchEnd: function (e) {
+                    e = e ? e : event;
+                    var movePos = {
+                        x: 0
+                    };
+
+                    if (!c.isBegin || !c.isMove) {
+                        c.isBegin = false;
+                        c.isMove = false;
+                        c.isEnd = true;
+                        delete c.horizontal;
+                        return;
+                    }
+                    c.isEnd = true;
+                    c.isBegin = false;
+                    c.isMove = false;
+                    delete c.horizontal;
+                    c.dx < 0 ? a.index++ : a.index--;
+                    a.moveTo(a.index);
+
+                },
+                touchMove: function (e) {
+                    e = e ? e : event;
+                    var movePos = {
+                        x: 0
+                    };
+                    if (!c.isBegin) {
+                        return;
+                    }
+                    c.isMove = true;
+                    var tempX, tempY;
+                    if (c.isTouch) {
+                        tempX = e.targetTouches[0].clientX;
+                        tempY = e.targetTouches[0].clientY;
+                    } else {
+                        tempX = e.clientX;
+                        tempY = e.clientY;
+                    }
+                    c.dx = tempX - c.startX;
+                    c.dy = tempY - c.startY;
+                    c.startX = tempX;
+                    c.startY = tempY;
+                    c.x += c.dx;
+                    c.y += c.dy;
+
+                    if (c.horizontal === undefined) {
+                        if (Math.abs(c.dx) > Math.abs(c.dy)) {
+                            c.horizontal = true;
+                        } else {
+                            c.horizontal = false;
+                        }
+                    }
+                    if (c.horizontal) {
+                        e.preventDefault();
+                        movePos.x = c.x;
+                        a.moveCSS3(a.obj, movePos);
+
+                    } else {
+                        c.isBegin = false;
+                        c.isMove = false;
+                        c.isEnd = true;
+                        delete c.horizontal;
+                        return;
+                    }
+                },
+                moveNext: function () {
+                    a.moveTo(a.index + 1);
+                },
+                movePrev: function () {
+                    a.moveTo(a.index - 1);
+                },
+                moveTo: function (i) {
+                    var movePos = {
+                        x: 0
+                    };
+                    var ismove = false;
+                    if (c.Carousel == true) { //循环滚动
+                        movePos.x = a.ItemWidth * i * -1
+                        if (a.L < i) {//最后一个了，不能再向右了
+                            a.index = 1;
+                            a.moveCSS3(a.obj, movePos, c.time, function () {
+                                movePos.x = a.ItemWidth * -1
+                                c.x = movePos.x;
+                                a.moveCSS3(a.obj, movePos, 0);
+                            });
+                            ismove = true;
+                        }
+                        if (i == 0) {//最后一个了，不能再向左了
+                            a.index = a.L;
+                            a.moveCSS3(a.obj, movePos, c.time, function () {
+                                movePos.x = a.ItemWidth * a.L * -1
+                                a.c.x = movePos.x;
+                                a.moveCSS3(a.obj, movePos, 0);
+                            });
+                            ismove = true;
+                        }
+                    }
+                    if (c.Carousel == false) {
+                        if (i > a.L) {
+                            a.index = a.L;
+                            movePos.x = a.ItemWidth * (a.L - 1) * -1;
+                            c.x = movePos.x;
+                            a.moveCSS3(a.obj, movePos, c.time);
+                            ismove = true;
+                        }
+                        if (i == 0) {
+                            a.index = 1;
+                            movePos.x = 0;
+                            c.x = movePos.x;
+                            a.moveCSS3(a.obj, movePos, c.time);
+                            ismove = true;
+                        }
+                    }
+                    if (ismove == false) {
+                        var index = c.Carousel == true ? i : i - 1;
+                        movePos.x = a.ItemWidth * index * -1
+                        c.x = movePos.x;
+                        a.index = i;
+                        a.moveCSS3(a.obj, movePos, c.time);
+                    }
+
+                    a.changeNav();
+                },
+                changeNav: function () {
+                    var ar = a.getChildNodes(document.getElementById(c.navId));
+                    for (var i = 0; i < ar.length; i++) {
+                        ar[i].className = i == a.index - 1 ? c.navSelectClass : c.navClass;
+                    }
+                },
+
+
+                moveCSS3: function (el, distanceToMove, time, callback) {
+                    if (!time) time = 0;
+                    else time = parseInt(time);
+                    if (time == 0) {
+                        el.style.left = distanceToMove.x + "px";
+                    } else {
+                        new Auto["animate"]({ elem: el, left: distanceToMove.x }, time, callback);
+                    }
+
+                },
+                init: function () {
+                    item = a.getChildNodes(a.obj);
+                    a.ItemWidth = a.getWidth(item[0]);
+                    a.obj.addEventListener('touchmove', a.touchMove.bind(a, []), false);
+                    a.obj.addEventListener('touchend', a.touchEnd.bind(a, []), false);
+                    a.obj.addEventListener('touchstart', a.touchStart.bind(a, []), false);
+                    if (c.Carousel) a.addItem();
+                    var ar = a.getChildNodes(document.getElementById(c.navId));
+                    for (var i = 0; i < ar.length; i++) {
+                        ar[i].addEventListener('touchstart', a.moveTo.bind(a, [i + 1]), false);
+                    }
+
+                    var i = c.Carousel == true ? a.index : a.index - 1;
+                    a.obj.style.left = a.ItemWidth * i * -1 + "px";
+                    c.x = a.ItemWidth * i * -1;
+                }
+
+            });
+
+            a.init();
+
+            this.L = item.length;
+        };
+        ipadscrollable.prototype = {
+            extend: function (destination, source) { for (var property in source) { destination[property] = source[property]; } return destination; },
+            $: function (id) { return typeof (id) == 'string' ? document.getElementById(id) : id },
+
+            getConfig: {
+                id: null,
+                obj: null,
+                startX: 0, //没有移动的时候的左边
+                startY: 0, //
+                isBegin: false,
+                isTouch: false,
+                isMove: false,
+                isEnd: true,
+                x: 0,
+                y: 0,
+                dx: 0, //move后的坐标
+                dy: 0,
+                cssMoveS: 0,
+                cssMoveStart: 0,
+                time: 150,
+                offset: 0,
+                Carousel: false, //是否轮播
+                navId: "dotpic",
+                navClass: "",
+                navSelectClass: "cur"
+            }
+
+        };
+
+        var picLz = new ipadscrollable({ id: "picContainer", Carousel: true });
+        function picLzNext() {
+            picLz.moveNext();
+        }
+        function picLzPrev() {
+            picLz.movePrev();
+        }
+
+        try { window.scrollTo(0, 1); } catch (e) { };
+        //切换tab页签
+        
+        //焦点图片
+        //****************Lazyload --Begin****************************//
+        var Autohome = Autohome || {};
+        Autohome.dom = Autohome.dom || {};
+        window.Autohome.win = window.Autohome.win || {};
+        window.Autohome.UI = window.Autohome.UI || {};
+        Autohome.events = Autohome.events || {};
+        Autohome.dom.getXY = function (element) {
+            var x = 0;
+            var y = 0;
+            var el = typeof element == "string" ? document.getElementById(element) : element;
+            while (el.offsetParent) {
+                x += el.offsetLeft;
+                y += el.offsetTop;
+                el = el.offsetParent
+            }
+            return { "Left": x, "Top": y };
+        };
+
+
+        Autohome.win.getSize = function () {
+            var a = document.documentElement.clientWidth || document.body.clientWidth, b = document.documentElement.clientHeight || document.body.clientHeight;
+            return { width: a, height: b }
+        }
+
+
+        var Class = {
+            create: function () {
+                return function () {
+                    this.initialize.apply(this, arguments);
+                }
+            }
+        }
+        Object.extend = function (destination, source) {
+            for (var property in source) {
+                destination[property] = source[property];
+            }
+            return destination;
+        }
+
+//tab切换
+function tab(o, s, cb, ev){ //tab切换类
+var $ = function(o){return document.getElementById(o)};
+var css = o.split((s||'_'));
+if(css.length!=4)return;
+this.event = ev || 'onclick';
+o = $(o);
+if(o){
+this.ITEM = [];
+o.id = css[0];
+var item = o.getElementsByTagName(css[1]);
+var j=1;
+for(var i=0;i<item.length;i++){
+if(item[i].className.indexOf(css[2])>=0 || item[i].className.indexOf(css[3])>=0){
+if(item[i].className == css[2])o['cur'] = item[i];
+item[i].callBack = cb||function(){};
+item[i]['css'] = css;
+item[i]['link'] = o;
+this.ITEM[j] = item[i];
+item[i]['Index'] = j++;
+item[i][this.event] = this.ACTIVE;
+}
+}
+return o;
+}
+}
+tab.prototype = {
+ACTIVE:function(){
+var $ = function(o){return document.getElementById(o)};
+this['link']['cur'].className = this['css'][3];
+this.className = this['css'][2];
+try{
+$(this['link']['id']+'_'+this['link']['cur']['Index']).style.display = 'none';
+$(this['link']['id']+'_'+this['Index']).style.display = 'block';
+}catch(e){}
+this.callBack.call(this);
+this['link']['cur'] = this;
+}
+}
+//调用方法
+window.onload = function(){
+new tab('test3_li_on_', '_', function(){
+
+});
+new tab('test4-input-input_tab1-input_tab2', '-');
+}
+
+</script> 
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* =Responsive Structure
+----------------------------------------------- */
+@media (max-width: 1200px) {
+	/* Disable fixed navigation buttons */
+	#nav-single-fixed,
+	#nav-fixed {
+		display: none;
+	}
+}
+
+@media (max-width: 1140px) {
+	body {
+		padding: 40px;
+	}
+	#page {
+		margin: 0 auto;
+	}
+	/* Disable triange */
+	.triangle-l {
+		display: none;
+	}
+	.triangle-r {
+		display: none;
+	}
+	#access .menu {
+		margin-bottom: 31px;
+	}
+	#access .menu ul {
+		margin: 0 -1px;
+	}
+	/* Gallery thumbnails will be 4 columns from now on */
+	.gallery-items li.item {
+		width: 25%;
+	}
+}
+
+@media (max-width: 800px) {
+	/* Disable body padding */
+	body {
+		padding: 0;
+	}
+	/* And a full-width comment form */
+	#respond {
+		width: auto;
+	}
+}
+@media (max-width: 650px) {
+	/* Disable menu */
+	#access .menu ul#tiny {
+		display: none;
+	}
+	/* Enable dropdown menu */
+	.selectnav {
+		display: block;
+	}
+	/* Reorganize header elements */
+	#branding #site-title {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	#branding #site-title img {
+		display: inline;
+	}	
+	.social {
+		position: relative;
+		text-align: center;
+		min-width: inherit;
+		top: auto;
+		right: auto;
+		margin-bottom: 30px;
+	}
+	.social ul {
+		float: none;
+		text-align: center;
+	}	
+	.social ul li {
+		float: none;
+		display: inline;
+		margin: 0;
+		padding: 0 2px;
+	}	
+	.social ul li img {
+		display: inherit;
+		vertical-align: bottom;
+	}
+	.social .widget_search {
+	    width: 185px;
+	    margin: 0 auto 30px auto;
+	    position: relative;
+	}
+	.social .widget_search  .search-text-box {
+		float: none;
+	    width: 174px;
+	    display: block;
+	}	
+	.social .widget_search .search-text-box:focus {
+	    width: 174px;
+	}	
+	.social input.search-submit-button {
+		float: none;
+		position: absolute;
+		right: 0;
+		top:0;
+	}	
+	/* Floated content doesn't work well at this size */
+	.alignleft,
+	.alignright {
+		float: none;
+	}
+	.one-half, .one-third, .two-third, .three-fourth, .one-fourth, .one-fifth, .one-sixth {
+		float: none;
+		margin: 0 0 40px 0;
+		width: 100%;
+	}
+	/* Use the available space in the smaller comment form */
+	#respond input[type="text"] {
+		width: 95%;
+	}
+	#respond .comment-form-author .required,
+	#respond .comment-form-email .required {
+		left: 95%;
+	}
+	/* Gallery thumbnails will be 2 columns from now on */
+	.gallery-items li.item {
+		width: 50%;
+	}
+	/* No need to float footer widgets at this size */
+	#colophon #supplementary .widget-area {
+		float: none;
+		margin-right: 0;
+		width: auto;
+	}
+	ul.tabs li {
+		float: none;
+		margin: 0;
+		display: block;
+	}
+
+	ul.tabs li a {
+		text-align: center;
+	}
+
+}
+@media (max-width: 480px) {
+	
+	/* Dropdown menu size */
+	.selectnav {
+		width: 75%;
+	}
+	/* Related posts one column */
+	.related-list{
+		width: 100%;
+		margin: 0 0 -40px 0;
+		overflow: hidden;
+	}
+	.related-list li {
+		width:100%;
+		margin: 0 0 40px 0;
+		float: none;
+	}
+	/* Disable avatars */
+	.commentlist li.comment .avatar {
+		display: none;
+		float: none;
+	}
+	.commentlist li.comment .comment-content {
+		margin: 0;
+	}
+	.commentlist .children li.comment {
+		margin: 20px 0 0 20px;
+	}
+}
+
+@media (max-width: 320px) {
+	#content {
+		margin: 0 29px;
+		width: auto;
+	}
+	#site-title {
+		padding: 29px 0 0;
+	}
+	#supplementary {
+		padding: 30px 29px 0;
+		overflow: hidden;
+	}
+	#branding #site-title {
+		margin: 0 29px 29px 29px;
+	}
+	.format-video .media {
+		margin: 0 -30px 20px;
+	}
+	.format-image .full-size {
+		margin: 0 -30px 20px;
+	}
+	.gallery-items {
+		margin: 0 -30px 20px;
+		
+	}
+	.map.full {
+		margin: 0 -29px;
+	}
+}
+
+
+

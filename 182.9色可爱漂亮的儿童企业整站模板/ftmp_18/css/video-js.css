@@ -1,0 +1,55 @@
+/* 
+VideoJS Default Styles (http://videojs.com)
+Version 2.0.2
+
+REQUIRED STYLES (be careful overriding)
+================================================================================ */
+/* Box containing video, controls, and download links.
+   Will be set to the width of the video element through JS
+   If you want to add some kind of frame or special positioning, use another containing element, not video-js-box. */
+.video-js-box {
+    text-align: left;
+    position: relative;
+    line-height: 0 !important;
+    margin: 0;
+    padding: 2px!important;
+    background-color: #fff;
+}
+
+/* Video Element */
+video.video-js {
+    background-color: #000;
+    position: relative;
+    padding: 0;
+}
+
+.vjs-flash-fallback { display: block; }
+
+/* Poster Overlay Style */
+.video-js-box img.vjs-poster {
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+/* Subtiles Style */
+.video-js-box .vjs-subtitles { color: #fff; font-size: 20px; text-align: center; position: absolute; bottom: 40px; left: 0; right: 0; }
+
+/* Fullscreen styles for main elements */
+.video-js-box.vjs-fullscreen { position: fixed; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: 9990; }
+.video-js-box.vjs-fullscreen video.video-js,
+.video-js-box.vjs-fullscreen .vjs-flash-fallback { position: relative; top: 0; left: 0; width: 100%; height: 100%; z-index: 9990; }
+.video-js-box.vjs-fullscreen img.vjs-poster { z-index: 9991; }
+.video-js-box.vjs-fullscreen .vjs-spinner { z-index: 9991; }
+.video-js-box.vjs-fullscreen .vjs-controls { z-index: 9993; }
+.video-js-box.vjs-fullscreen .vjs-big-play-button { z-index: 9994; }
+.video-js-box.vjs-fullscreen .vjs-subtitles { z-index: 9994; }
+
+/* Styles Loaded Check */
+.vjs-styles-check { height: 5px; position: absolute; }
+/* Controls Below Video */
+.video-js-box.vjs-controls-below .vjs-controls { position: relative; opacity: 1; background-color: #000; }
+.video-js-box.vjs-controls-below .vjs-subtitles { bottom: 75px; } /* Account for height of controls below video */

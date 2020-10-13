@@ -1,0 +1,749 @@
+@import url('normalize.css');
+
+@import url('main.css');
+
+@import url('superfish.css');
+
+@import url('social.css');
+
+@import url('widgets.css');
+
+@import url('forms.css');
+
+@import url('comments.css');
+
+@import url('entry-content.css');
+
+@import url('shortcodes.css');
+/* ==========================================================================
+   Palette colors and some mixings
+   ========================================================================== */
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* ==========================================================================
+   Import other CSS files
+   ========================================================================== */
+/* ==========================================================================
+   General Styles
+   ========================================================================== */
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  background: #a0aca1 url(../img/bg.png);
+  color: #694e41;
+}
+body a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+body p {
+  margin-bottom: 21px;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  line-height: 1.3em;
+  margin: 0 0;
+  font-weight: 400;
+}
+body h1 {
+  font-size: 48px;
+}
+body h2 {
+  font-size: 36px;
+}
+body h3 {
+  font-size: 30px;
+}
+body h4 {
+  font-size: 24px;
+}
+body h5 {
+  font-size: 18px;
+}
+body h6 {
+  font-size: 14px;
+}
+body .action-button {
+  display: inline-block;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 15px;
+  color: #694e41;
+  background: url(../img/button.png) no-repeat top right;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 16px;
+}
+body .action-button:hover {
+  margin-left: 5px;
+}
+/* ==========================================================================
+   Top Page
+   ========================================================================== */
+#top-page {
+  margin: 7px auto -15px auto;
+  width: 980px;
+  position: relative;
+  z-index: 10;
+  /* overlap  menu bar */
+
+}
+/* SEARCH ------------------------------------------------------------*/
+#searchform {
+  position: relative;
+  width: 300px;
+  height: 34px;
+  display: block;
+  float: right;
+  margin: 10px 0px 0px 0px;
+}
+#searchform #s {
+  display: inline-block;
+  color: #694e41;
+  font-size: 13px;
+  width: 70px;
+  height: 34px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 7px 0px 7px;
+  border: none;
+  background: #e5d3b7;
+  float: right;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#searchform #s:focus {
+  width: 180px;
+}
+#searchform #searchsubmit {
+  display: inline-block;
+  width: 42px;
+  height: 35px;
+  border: 0px;
+  background: url(../img/search.png) no-repeat;
+  float: right;
+}
+#searchform #searchsubmit:hover {
+  background-position: 0px 0px;
+}
+#searchform ::-webkit-input-placeholder,
+#searchform ::-moz-placeholder {
+  color: #b3a185;
+}
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header {
+  margin: 0px auto 0px auto;
+  width: 1000px;
+  height: 117px;
+  position: relative;
+  text-align: center;
+  z-index: 5;
+  /* overlap main content (modified the z index of nivo-slider.css also) */
+
+  /* Navigation ----------------------------------------------------*/
+}
+header #logo {
+  /*position: relative;
+		display: inline-block;
+		text-align: left;*/
+
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -79px;
+  /* Not anymore: (this centers using jquery function "center" at the "js/custom.js" file) */
+
+}
+header nav {
+  background: url(../img/nav.png) no-repeat center top;
+  height: 61px;
+  line-height: 61px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 27px;
+}
+header nav .sf-menu {
+  width: 400px;
+  display: block;
+  position: absolute;
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: color 0 ease-in;
+  transition: none;
+}
+header nav .sf-menu > li {
+  display: block;
+  float: left;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  /* sub navigation -----------------------------------------------------*/
+
+}
+header nav .sf-menu > li a {
+  color: #eddbc1;
+}
+header nav .sf-menu > li a:hover {
+  color: #f8a835;
+}
+header nav .sf-menu > li:hover,
+header nav .sf-menu > li.current-menu-item,
+header nav .sf-menu > li.current_page_item {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: color 0 ease-in;
+  transition: none;
+  background: url(../img/current.png) no-repeat center 6px;
+}
+header nav .sf-menu > li ul {
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: color 0 ease-in;
+  transition: none;
+  font-size: 14px;
+  font-family: Tahoma, Geneva, Kalimati, sans-serif;
+  text-align: left;
+  margin-top: 34px;
+  background: url(../img/subnav.png) no-repeat top center;
+  padding-top: 21px;
+}
+header nav .sf-menu > li ul li {
+  border-top: 1px solid #ffb23f;
+  border-bottom: 1px solid #ee9e2b;
+}
+header nav .sf-menu > li ul li:first-child {
+  border-top: none;
+  border-bottom: none;
+}
+header nav .sf-menu > li ul li a {
+  height: auto;
+  padding: 8px 16px;
+  line-height: 1.5em;
+  color: #694e41;
+}
+header nav .sf-menu > li ul li a:hover {
+  color: #694e41;
+  background: #ffb340;
+}
+header nav #right-nav {
+  right: 0px;
+  top: 0px;
+}
+header nav #left-nav {
+  left: 0px;
+  top: 0px;
+}
+header nav #left-nav > li {
+  float: right;
+}
+/* ==========================================================================
+   Main
+   ========================================================================== */
+#main {
+  margin: -30px auto 0 auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 980px;
+  min-height: 500px;
+  position: relative;
+  background: #f0e4cb url(../img/fg.png);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
+}
+#main .tagline {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  line-height: 1.3em;
+  font-size: 60px;
+  color: #694e41;
+  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/* FEATURED & WORK LIST ------------------------------------------------------------*/
+.nav-categories {
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 7px;
+  border-bottom: 1px dashed #694e41;
+}
+.nav-categories li {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+.nav-categories li a {
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #694e41;
+}
+.nav-categories li a:hover {
+  color: #f8a835;
+}
+.nav-categories li.current a {
+  color: #f8a835;
+  font-weight: bold;
+}
+.feature,
+.work-list {
+  display: block;
+  margin-bottom: 0px;
+}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+.feature li,
+.work-list li {
+  display: block;
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+.feature li .thumb,
+.work-list li .thumb {
+  display: block;
+  line-height: 0em;
+  position: relative;
+  color: #f0e4cb;
+  margin-bottom: 15px;
+  background: #694e41;
+}
+.feature li .thumb:hover .img-overlay,
+.work-list li .thumb:hover .img-overlay {
+  display: block;
+}
+.feature li .thumb:hover img,
+.work-list li .thumb:hover img {
+  opacity: 0.1;
+}
+.feature li .thumb img,
+.work-list li .thumb img {
+  max-width: 100%;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.feature li .thumb .img-overlay,
+.work-list li .thumb .img-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 119px;
+  height: 38px;
+  margin-left: -59.5px;
+  margin-top: -19px;
+  color: #694e41;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background: url(../img/img-overlay.png) no-repeat center center;
+}
+.feature li .title,
+.work-list li .title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  line-height: 1.1em;
+  font-size: 36px;
+  color: #694e41;
+  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.9);
+}
+.feature li .categories,
+.work-list li .categories {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.9);
+}
+.feature li .categories a,
+.work-list li .categories a {
+  color: #bb7e26;
+}
+.feature li .categories a:hover,
+.work-list li .categories a:hover {
+  text-decoration: underline;
+}
+.feature li .excerpt,
+.work-list li .excerpt {
+  display: block;
+  font-size: 16px;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 2px solid #694e41;
+  margin-bottom: 15px;
+  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.9);
+}
+.work-list li .title {
+  font-size: 24px;
+}
+.work-list li .categories {
+  font-size: 16px;
+}
+.work-list li .excerpt {
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.feature {
+  background: url(../img/feature-line.png) top center no-repeat;
+  padding-top: 30px;
+}
+/* PAGER ------------------------------------------------------------*/
+.pager {
+  overflow: hidden;
+  display: block;
+  font-size: 12px;
+  margin: 0px 20px 0px 20px;
+  padding-bottom: 50px;
+}
+.pager li {
+  display: block;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  float: left;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
+}
+.pager li a:hover,
+.pager li.active a {
+  background: #f8a835;
+  color: #fff;
+}
+.pager li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  width: 20px;
+  line-height: 20px;
+  color: #694e41;
+  background: #f1f1f1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.pager .paged {
+  float: right;
+  font-style: italic;
+  background: none;
+  box-shadow: none;
+  color: #694e41;
+}
+/* ==========================================================================
+   Blog
+   ========================================================================== */
+#posts-list {
+  position: relative;
+  width: 580px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  float: left;
+}
+#posts-list article {
+  position: relative;
+  margin-bottom: 60px;
+}
+#posts-list article .feature-image {
+  line-height: 0em;
+  margin-bottom: 20px;
+}
+#posts-list article .feature-image img {
+  max-width: 100%;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
+}
+#posts-list article .entry-title {
+  position: relative;
+  border-bottom: 2px solid #694e41;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+#posts-list article .entry-title .post-heading {
+  color: #694e41;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 36px;
+  line-height: 1.1em;
+  margin-right: 60px;
+  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.9);
+  display: block;
+}
+#posts-list article .entry-title .entry-date {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #bb7e26;
+  font-size: 18px;
+  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.9);
+}
+#posts-list article .entry-title .comments {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-decoration: none;
+  width: 52px;
+  height: 46px;
+  background: url(../img/comments.png) no-repeat;
+  color: #f0e4cb;
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+}
+#posts-list article .excerpt {
+  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.9);
+  margin-bottom: 21px;
+}
+/* SIDEBAR ------------------------------------------------------------*/
+#sidebar {
+  position: relative;
+  width: 320px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  float: right;
+  font-size: 14px;
+  color: #694e41;
+}
+#sidebar .block {
+  position: relative;
+  background: #fffded;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+#sidebar .block .sidebar-content {
+  background: url(../img/sidebar.png) repeat-y;
+  width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+#sidebar .block:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 100px;
+  background: url(../img/tape.png) no-repeat;
+  width: 118px;
+  height: 30px;
+}
+#sidebar .block:after {
+  content: '';
+  background: url(../img/block-shadow.png) no-repeat 0 0;
+  position: absolute;
+  bottom: -16px;
+  left: 0px;
+  width: 320px;
+  height: 16px;
+}
+#sidebar .heading {
+  border-bottom: 1px dashed #694e41;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+#sidebar li {
+  display: block;
+}
+#sidebar a {
+  color: #f8a835;
+}
+/* PAGE NAVIGATION ------------------------------------------------------------*/
+#main .page-navigation {
+  position: relative;
+  left: 50%;
+  display: block;
+  margin-bottom: 100px;
+  float: left;
+}
+#main .page-navigation div {
+  position: relative;
+  right: 50%;
+}
+#main .page-navigation div span {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+#main .page-navigation div:hover a {
+  color: #fff;
+}
+#main .page-navigation a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #f8a835;
+  display: block;
+  line-height: 30px;
+}
+#main .page-navigation .nav-next {
+  float: left;
+  margin-right: 20px;
+  background: url(../img/left-button.png) no-repeat top left;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+#main .page-navigation .nav-previous {
+  float: right;
+  background: url(../img/right-button.png) no-repeat top right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+/* ==========================================================================
+   Project page
+   ========================================================================== */
+#project-title {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 48px;
+  line-height: 1.2em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #694e41;
+  text-shadow: 0px 1px 0 rgba(255, 255, 255, 0.9);
+}
+#project-gallery {
+  width: 620px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+#project-gallery .thumb {
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
+  line-height: 0em;
+  margin-bottom: 20px;
+}
+#project-gallery .thumb img {
+  max-width: 100%;
+}
+#project-info {
+  width: 290px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+#project-info .excerpt {
+  font-weight: bold;
+  font-size: 18px;
+}
+#project-info #project-sheet {
+  border-top: 1px solid #694e41;
+  padding-top: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+#project-info #project-sheet strong {
+  font-weight: bold;
+}
+#project-info #project-sheet p {
+  line-height: 1.3em;
+}
+/* RELATED PROJECTS ------------------------------------------------------------*/
+.related-projects {
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+.related-projects .related-heading {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 3px solid #694e41;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+}
+.related-projects a {
+  color: #694e41;
+}
+.related-projects .related-list li {
+  float: left;
+  width: 300px;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 21px;
+}
+.related-projects .related-list li .thumb {
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
+  display: block;
+  line-height: 0em;
+  margin-bottom: 15px;
+}
+.related-projects .related-list li .thumb img {
+  max-width: 100%;
+}
+/* ==========================================================================
+   Page Content
+   ========================================================================== */
+.page-content {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 80px;
+}
+.page-content .heading {
+  margin-top: 0;
+}
+.page-content #map {
+  /* Google map */
+
+  height: 350px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  margin: 0 auto;
+  width: 940px;
+  background: #694e41 url(../img/footer-bg.png) repeat-x;
+  padding: 20px 20px 20px 20px;
+}
+footer #bottom-left {
+  float: left;
+  width: 620px;
+  color: #f0e4cb;
+}
+footer #bottom-left .chirp {
+  font-size: 14px;
+  color: #f8a835;
+}
+footer #bottom-left .chirp p {
+  margin-bottom: 0px;
+}
+footer #bottom-left .chirp p a {
+  color: #f0e4cb;
+  border-bottom: 1px dotted #f0e4cb;
+  text-decoration: none;
+}
+footer #bottom-left .chirp .meta {
+  display: block;
+  font-size: 12px;
+  color: #b7720f;
+  margin-bottom: 21px;
+}
+footer #bottom-left .chirp .meta a {
+  color: #b7720f;
+}
+footer #bottom-right {
+  font-size: 12px;
+  color: #f8a835;
+  width: 300px;
+  float: right;
+  text-align: right;
+}
+footer #bottom-right a {
+  text-decoration: none;
+  color: #f0e4cb;
+  border-bottom: 1px dotted #f0e4cb;
+}

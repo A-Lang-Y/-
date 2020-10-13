@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> </html><![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> </html><![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> </html><![endif]--> 
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+      
+	<!-- Meta information -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>www.cssmoban.com</title>
+	<!-- Webfonts -->
+    <link type="text/css" rel="stylesheet" href='http://fonts.googleapis.com/css?family=Ubuntu:300italic,300,700' />
+    <!-- CSS Stylesheet-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      body {
+        padding-top: 45px; /* 45px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="css/styles-responsive.css" />
+   <!-- Styleswitch-->
+	<link type="text/css" rel="alternate stylesheet" media="screen" title="style1" href="css/style1.css" />
+    <link type="text/css" rel="alternate stylesheet" media="screen" title="style2" href="css/style2.css" />
+    <link type="text/css" rel="alternate stylesheet" media="screen" title="style3" href="css/style3.css" />
+	
+    
+    <!-- Java Library -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="components/twitter/jquery.twitter.js"></script>
+    <script type="text/javascript" src="components/BlackAndWhite/jquery.BlackAndWhite.min.js"></script>
+    <script type="text/javascript" src="components/simpleWeather/jquery.simpleWeather.js"></script>
+    <script type="application/javascript" src="components/iscroll/iscroll.js"></script>
+	<script type="text/javascript" src="components/vticker/jquery.vticker-min.js"></script>
+	<script type="text/javascript" src="components/flexslider/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="components/touchTouch/touchTouch.jquery.js"></script>
+	<script type="text/javascript" src="components/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="components/scrolltop/scrolltopcontrol.js"></script>
+
+	<script type="text/javascript" src="components/flickr/flickr.js"></script>
+	
+	<!-- Jqury UI Library -->
+	<script type="text/javascript" src="components/ui/ui.custom.min.js"></script>
+	
+	<!-- selectBox -->
+	<script type="text/javascript" src="components/selectbox/jquery.selectBox.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="components/selectbox/jquery.selectBox.css" />
+	
+	<!-- ValidationEngine -->
+	<script type="text/javascript" src="components/validationEngine/jquery.validationEngine.js"></script>
+	<script type="text/javascript" src="components/validationEngine/jquery.validationEngine-en.js"></script>
+    <link href="components/validationEngine/validationEngine.jquery.css" rel="stylesheet" type="text/css" />
+	
+    <!-- Styleswitch-->
+    <script type="text/javascript" src="js/styleswitch.js"></script>
+
+    
+    <!-- Library bootstrap 2.04-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- //End Library bootstrap 2.04 -->
+
+	<script type="text/javascript" src="js/custom.js"></script> 
+	<script type="text/javascript">
+	$(document).ready(function() {
+			$( "#datepicker" ).datepicker();
+				
+				var prefix = "selectBox_"
+				jQuery("#bookform").validationEngine({
+					prettySelect : true, usePrefix: prefix,ajaxFormValidation: true,
+					onBeforeAjaxFormValidation: add_form
+				});
+				$("select").selectBox();
+				$('select').each(function(){ 
+					$(this).next('a.selectBox')
+					.attr("id", prefix + this.id )
+					.removeClass("validate[required]");		
+			  })
+	});
+
+	function add_form(){
+		alert("Thank You");
+	}
+	</script>
+
+<script type="text/javascript">
+	var myScroll;
+	function loaded() {
+		myScroll = new iScroll('weatherMore', { hScrollbar: false });
+	}
+	document.addEventListener('DOMContentLoaded', loaded, false);
+	</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <body>     
+      <div class="bg-blacklight"></div>
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand logo" href="index.html"><span> Inception </span>theme<small>html Responsive theme</small></a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="portfolio.php.html">portfolio</a></li>
+                <li><a href="galleryall.php.html">gallery</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">style <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                        <li><a href="index.html">Home style 1</a></li>
+                        <li><a href="index2.php.html">Home style 2</a></li>
+                        <li><a href="index3.php.html">Home style 3</a></li>
+					<li class="nav-header">Menu level </li>
+                    <li class="divider"></li>
+                        <li><a href="index.html">Level Two<b class="caret-right"></b></a>
+							<ul class="dropdown-menu sub-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Level Three<b class="caret-right"></b></a>
+										<ul class="dropdown-menu sub2-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+										</ul>
+								</li>
+							</ul>
+						</li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">pages <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                        <li><a href="about.php.html">about me </a></li>
+                        <li><a href="service.php.html">service</a></li>
+                        <li><a href="faq.php.html">FAQ</a></li>
+                    <li class="divider"></li>
+                        <li><a>Other<b class="caret-right"></b></a>
+							<ul class="dropdown-menu sub-menu">
+								<li><a href="element.php.html"> Element </a></li>
+								<li><a href="price.php.html"> Pricing Table</a></li>
+								<li><a href="view.php.html"> News Preview</a></li>
+							</ul>
+						</li>
+                    <li class="divider"></li>
+                        <li><a>blog<b class="caret-right"></b></a>
+							<ul class="dropdown-menu sub-menu">
+								<li><a href="blog.php.html"> blog </a></li>
+								<li><a href="oneblog.php.html"> blog & comment</a></li>
+							</ul>
+						</li>
+                    <li class="divider"></li>
+                        <li><a href="index-left.php.html">slide left</a></li>
+                        <li><a href="index.html">slide rigth</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact2.php.html">contact</a></li>
+              </ul>
+              <form class="navbar-search pull-right" action="" />
+                <input type="text" class="search-query span2" placeholder="Search" />
+              </form>
+            </div><!-- /.nav-collapse -->
+          </div>
+        </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->
+    
+    
+    <div class="container">
+    <section class="topspace blackshadow bg-white">   
+     
+		<!-- banner-->
+		<div class="banner"><span>Portfolio <small> Recent Your  Portfolio Items </small></span></div>
+
+      <div class="row bg-main">
+      
+           <!-- breadcrumb-->
+            <div class="breadcrumbline"></div>
+			
+            <div class="span8 bg-white">
+			<div class="inner  unright">
+				
+					<h2><span>Recent</span> Your  Items <small>This CSS3 no Javascript.</small></h2>
+					<div class="heading_border"></div>
+					
+			<section class="packages-container  row-fluid  "> 
+				
+				<input id="select-type-all" name="radio-set-1" type="radio" class="selector-type-all" checked="checked" />
+				<label for="select-type-all" class="label-type-all">All</label>
+				
+				<input id="select-type-1" name="radio-set-1" type="radio" class="selector-type-1" />
+				<label for="select-type-1" class="label-type-1">Designs</label>
+				
+				<input id="select-type-2" name="radio-set-1" type="radio" class="selector-type-2" />
+				<label for="select-type-2" class="label-type-2">Photos</label>
+				
+				<input id="select-type-3" name="radio-set-1" type="radio" class="selector-type-3" />
+				<label for="select-type-3" class="label-type-3">Video</label>
+				
+				<input id="select-type-4" name="radio-set-1" type="radio" class="selector-type-4" />
+				<label for="select-type-4" class="label-type-4">Popular</label>
+				
+				<br />
+				<div class="clearfix"></div>
+				
+				<div class="packages-items">
+					<div class="item-type-1 item-type-4 item-type-3 span4">
+						<div class="ribbon-wrapper right"><div class="ribbon">Popular</div></div>
+						<a href="exampic/04.jpg" class="zoom img"><img src="exampic/04.jpg" /></a>				
+						<h6 class="carousel_header">Packages & Plan</h6>
+						<p><img src="images/icon-geo.png" class="locality" /> <a class="locality"> City, Locality</a></p>
+						<i class="rating threestar"></i>
+					</div>
+					<div class="item-type-2 item-type-4 item-type-3 span4">
+						<a href="http://player.vimeo.com/video/9532951" class="zoom  video iframe "><img src="exampic/05.jpg" /></a>		
+						<h6 class="carousel_header">Packages & Plan</h6>
+						<p><img src="images/icon-geo.png" class="locality" /> <a class="locality"> City, Locality</a></p>
+						<i class="rating fourstar"></i>
+					</div>
+					<div class=" item-type-3 item-type-2 item-type-1 span4">
+						<a href="exampic/06.jpg" class="zoom img" rel="zoom"><img src="exampic/06.jpg" /></a>			
+						<h6 class="carousel_header">Packages & Plan</h6>
+						<p><img src="images/icon-geo.png" class="locality" /><a class="locality"> City, Locality</a></p>
+						<i class="rating twostar"></i>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				
+				<div class="packages-items">
+					<div class="item-type-2 item-type-1  item-type-4 span4">
+						<a href="exampic/01.jpg" class="zoom img"><img src="exampic/01.jpg" /></a>
+						<h6 class="carousel_header">Packages & Plan</h6>
+						<p><img src="images/icon-geo.png" class="locality" /> <a class="locality"> City, Locality</a></p>
+						<i class="rating onestar"></i>
+					</div>
+					<div class="item-type-3 span4">
+						<a href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1" class="zoom video iframe"><img src="exampic/02.jpg" /></a>			
+						<h6 class="carousel_header">Packages & Plan</h6>
+						<p><img src="images/icon-geo.png" class="locality" /> <a class="locality"> City, Locality</a></p>
+						<i class="rating fivestar"></i>
+					</div>
+					<div class="item-type-1 item-type-3  item-type-4 span4">
+						<a href="exampic/03.jpg" class="zoom"><img src="exampic/03.jpg" class="zoom" /></a>			
+						<h6 class="carousel_header">Packages & Plan</h6>
+						<p><img src="images/icon-geo.png" class="locality" /> <a class="locality"> City, Locality</a></p>
+						<i class="rating nostar"></i>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				
+				<div class="packages-items">
+					<div class="item-type-3 span4">
+						<a href="exampic/07.jpg" class="zoom video"><img src="exampic/07.jpg" /></a>		
+						<h6 class="carousel_header">Packages & Plan</h6>
+						<p><img src="images/icon-geo.png" class="locality" /> <a class="locality"> City, Locality</a></p>
+						<i class="rating fourstar"></i>
+					</div>
+					<div class="item-type-4 item-type-1 span4">
+						<a href="exampic/08.jpg" class="zoom img"><img src="exampic/08.jpg" /></a>				
+						<h6 class="carousel_header">Packages & Plan</h6>
+						<p><img src="images/icon-geo.png" class="locality" /> <a class="locality"> City, Locality</a></p>
+						<i class="rating fivestar"></i>
+					</div>
+					<div class="item-type-2 item-type-3 span4">
+						<div class="ribbon-wrapper right"><div class="ribbon">From $169</div></div>
+						<a href="exampic/09.jpg" class="zoom "><img src="exampic/09.jpg" /></a>			
+						<h6 class="carousel_header">Packages & Plan</h6>
+						<p><img src="images/icon-geo.png" class="locality" /> <a class="locality"> City, Locality</a></p>
+						<i class="rating fivestar"></i>
+					</div>
+				</div>
+			</section>
+            <div class="clearfix"></div>
+
+				<div class="pagination pagination-centered">
+					<ul>
+					  <li><a href="#">1</a></li>
+					  <li><a href="#">2</a></li>
+					  <li class="active"><a href="#">3</a></li>
+					  <li><a href="#">4</a></li>
+					  <li><a href="#">5</a></li>
+					</ul>
+				</div>
+
+			
+			</div>	<!-- /inner -->
+			</div>	<!-- /span8-->
+						
+            <div class="span4 bg-black">
+				<!--Header Title-->
+				<div class="headerTitle">
+				  <div class="inner">
+					  <h2>Customer Booking </h2>
+					  <small>Example Form Validate </small>
+				  </div>
+				</div><!-- End Class headerTitle  --> 
+				<div class="clearfix"></div>
+				
+				<form id="bookform" class="form-horizontal dark" />
+					<div class="control-group">
+					<label class="control-label">Package </label>
+						<div class="controls">
+							 <select name="Package" id="Package" class="validate[required]">
+								  <option value="" />Chose me
+								  <option />Package
+								  <option />Package 1
+								  <option />Package /
+							 </select>
+						</div>
+					</div>
+					<div class="control-group">
+					<label class="control-label">Person</label>
+						<div class="controls">
+							 <select class="small">
+								  <option />1
+								  <option />2
+								  <option />3
+								  <option />4
+								  <option />4+
+							 </select>
+						</div>
+					</div>
+					<div class="control-group">
+					<label class="control-label">Type tour</label>
+						<div class="controls">
+							 <select>
+								  <option />Private
+								  <option />Join in 
+								  <option />Group 
+								  <option />Custom
+							 </select>
+						</div>
+					</div>
+					<div class="control-group">
+					<label class="control-label">Date </label>
+						<div class="controls">
+							<input type="text" name="date" id="datepicker" class="span2" />
+						</div>
+					</div>
+				  <div class="control-group last">
+					<div class="controls">
+					  <button type="submit" class="btn btn-danger btn-large">Book Now!</button>
+					</div>
+				  </div>
+				</form>
+					<!--Header Title-->
+					<div class="headerTitle " style="margin:0; position:relative;">
+						<div class="inner">
+						  <h2>Featured Items</h2>
+						  <small>Exclusive and unique</small>
+						</div>
+					</div><!-- End Class headerTitle  --> 
+					<!--FeatuedBox -->
+					<div>
+					  <div class="featuedBox">
+						  <div class="imgShow">
+						  <div class="ribbon-wrapper right"><div class="ribbon">From $99</div></div>
+							  <a href="#" class="zoom">
+								  <img src="images/thumbnail-2.jpg" alt="thumbnail" width="100%" class="zoom" />
+							  </a>
+						  </div>
+						  <div class="inner unbottom untop">
+								<h3>Sunset in the Park </h3>
+								<img src="images/icon-geo.png" class="locality" /><a class="locality"> Hamburg, Germany</a>
+								<i class="rating fivestar" style="margin-left:0"></i>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							  <div class="bottom_link tip"><a href="#" class="more" title="More Detail"></a></div>
+						  </div>
+					  </div><!-- End Class featuedBox  --> 
+					  </div>
+			    <div class="clearfix"></div>
+					  
+					<div class="socialmedia">
+						<a class="social-item googleplus" href="#" title="find us googleplus">g</a>
+						<a class="social-item facebook" href="#" title="find us facebook">f</a>
+						<a class="social-item twitter" href="#" title="find us twitter">t</a>
+						<a class="social-item youtube" href="#" title="find us youtube">x</a>
+					</div>
+	
+					  <div class="clearfix"></div>
+					  
+			</div>	<!-- /span8-->
+      
+    </div><!-- /row  bg-main -->
+	  
+		<div class="columnBottom inner">
+		<div class="row-fluid">
+			<div class="span3">
+			<h4>Contact Us</h4>
+				<ul class="listcontact">
+		 			<li class="cont-phone">(123) 456-7890</li>
+		 			<li class="cont-email"><a href="mailto:info@website.com">info@website.com</a></li>
+		 			<li class="cont-adress"><strong>ZICEINCLUDE &trade;</strong><small><i> by zicedemo</i></small><br />
+									25 M4 Banyang  Nakronthai <br />
+									Phitsanulok, TH 65120</li>
+				</ul>
+			</div>
+			<div class="span3">
+				<h4>Our service</h4>
+					<ul class="liststar">
+						<li>Duis aute irure dolor </li>
+						<li>Sunt in culpa qui officia deserunt  </li>
+						<li>Ut enim ad minim veniam</li>
+						<li>Aute irure dolor </li>
+						<li>Excepteur sint occaecat </li>
+					</ul>
+			</div>
+			<div class="span3">
+				<h4>About Us</h4>
+					<p>Consectetur adipiscing elit aeneane lorem lipsum, condimentum ultrices consequat eu, vehicula mauris lipsum adipiscing lipsum aenean orci lorem.</p>
+					<p>Asequat lorem ipsum dolor lorem sit amet, consectetur adipiscing dolor elit.</p>
+			</div>
+			<div class="span3">
+			<h4>Photo stream</h4>
+				<ul id="flickr-badge" class="clearfix"></ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		</div><!-- End Class groupBottom  -->
+      
+	</section><!-- /topspace blackshadow bg-white -->
+    </div> <!-- /container -->
+	    
+	<footer>
+            <div class=" copyright">&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></div>
+    </footer><!-- End  footer  -->
+
+<!-- Style switcher -->
+<div class="theme-changer-wrap">
+  <div class="theme-changer">
+			<div class="changer-inner">
+				<span>Color schemes</span>
+				<div id="stylesw">
+				<a rel="style1" class="color-themes col1"></a>
+				<a rel="style2" class="color-themes col2"></a>
+				<a rel="style3" class="color-themes col3"></a>
+				<a rel="none" class="color-themes col4"></a>
+				</div>
+                <div class="clear"></div>
+				<span style="margin-top:15px">Patterns</span>
+                        <a href="#" class="pat" id="pat1" style="background-image:url('images/bg.jpg')"></a>
+                        <a href="#" class="pat" id="pat2" style="background-image:url('images/switcher/2.jpg')"></a>
+                        <a href="#" class="pat" id="pat3" style="background-image:url('images/switcher/3.jpg')"></a>
+                        <a href="#" class="pat" id="pat4" style="background-image:url('images/switcher/4.jpg')"></a>
+                        <a href="#" class="pat" id="pat5" style="background-image:url('images/switcher/5.jpg')"></a>
+                        <a href="#" class="pat" id="pat6" style="background-image:url('images/switcher/6.jpg')"></a>
+                        <a href="#" class="pat" id="pat7" style="background-image:url('images/switcher/7.jpg')"></a>
+                        <a href="#" class="pat" id="pat8" style="background-image:url('images/switcher/8.jpg')"></a>
+				<div class="clearfix"></div>
+				<span style="margin-top:15px">Background image</span>
+				<a href="#" id="backgr-image" class="pat-bg"></a>
+                <a href="#" id="backgr-image2" class="pat-bg"></a>
+				<a href="#" id="backgr-image3" class="pat-bg"></a>
+				<a href="#" id="backgr-image4" class="pat-bg"></a>
+				<div class="clearfix"></div>
+                <label>Alpha</label>
+				<div class="slideTwo">	
+					<input type="checkbox" id="alpha-style" />
+					<label for="alpha-style"></label>
+				</div>
+                <div class="clear"></div>
+				<span style="margin-top:15px">Theme schemes</span>
+				<div id="stylesw">
+				<a class="themes drak-theme">Dark</a>
+				</div>
+			</div>
+	</div>
+	<div class="open-close-demo"><img src="images/sett.png" class="gear" /></div>
+  </div><!--End Style switcher -->
+  
+
+</body>
+</html>

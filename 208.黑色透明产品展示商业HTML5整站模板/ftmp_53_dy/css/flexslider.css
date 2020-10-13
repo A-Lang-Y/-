@@ -1,0 +1,111 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {width: 100%;  margin:0px 0; padding: 0;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {position: relative;zoom: 1;float:left;padding-bottom:20px;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative; }
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {background:none; zoom: 1;background:url("http://web-vogue.com/themes/CreativeSpace/images/caption-bg.png") repeat; }
+.flex-caption {width: auto;height:40px; padding:25px 15px 5px 15px;position: absolute; left: 0px; bottom: 0;   color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); }
+.flex-caption p{margin:0;color:#FFF;font-size:14px;}
+ 
+.flexslider .slides > li   { z-index: 1 ; }
+.flex-direction-nav    { z-index: 3 }
+.flex-direction-nav li a { z-index: 3 !important; color: #fff; font-size: 20px;display: block; background-color: rgba(0,0,0,0.3);-webkit-transition: background-color .2s linear; -moz-transition: background-color .2s linear; -o-transition: background-color .2s linear; transition: background-color .2s linear;
+	}
+ 
+  
+#flex-slider-wrapper                          {width: 100%;height: auto; float:left;}
+#flex-slider-wrapper  ul.slides > li             {  margin:0 auto;}
+ 
+
+.slide-caption p{font-family:"Arial", Verdana;color:#767676; font-size:14px;line-height:22px;text-align:left;}
+.slide-caption h1{text-shadow:0px 1px #272727;line-height:48px;color:#FFF;font-weight:600}
+.flexslider .slides > li                  {
+                                            display: none;
+                                            -webkit-backface-visibility: hidden;
+                                        }
+.flex-direction-nav                     { z-index: 3 }
+.flex-direction-nav li a                                       {
+                                            z-index: 3 !important;
+                                            color: #fff;
+                                            font-size: 24px;
+                                            display: block;
+                                            background-color: rgba(0,0,0,0.15);
+                                            -webkit-transition: background-color .2s linear;
+                                            -moz-transition: background-color .2s linear;
+                                            -o-transition: background-color .2s linear;
+                                            transition: background-color .2s linear;
+                                        }
+.flex-direction-nav li a:hover          {
+                                             
+											background:#ef4135 url("../images/slider-next-prev.png") left no-repeat;
+                                            border-bottom: none;
+                                        }
+.flex-direction-nav li a.next,
+.flex-direction-nav li a.prev                                  { padding: 10px 5px 0px 5px; width:34px;height:34px;text-align:center;}
+.flex-direction-nav li
+.next                                   {
+                                            position: absolute;
+                                            top: 50%;
+                                            right: 0;
+                                            margin-top: -30px;	 
+                                        }
+.flex-direction-nav li .prev                                   {
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 0;
+                                            margin-top: -30px;
+                                        }
+
+										
+.shadow-img{
+	 -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.flex-control-nav {width: 100%; position: absolute; margin-top: 0px; display:block;z-index:1000;text-align:center;  }
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;text-indent:-9999px;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 16px; height: 16px; display: block; background: url("../images/pagination.png") right  no-repeat; cursor: pointer; text-indent: -999em;}
+.flex-control-nav li a.active { background: url("../images/pagination.png") no-repeat; cursor: default;}
+
+
+/* PORTFOLIO DETAILS SLIDER */
+.flexslider.portfolio-detials {position: relative;zoom: 1;float:left;padding-bottom:40px;}
+.flexslider.blog-slider .flex-control-nav {display:none;}
+.flexslider.blog-slider {margin:0;padding:0;}
+.portfolio-detials .flex-control-nav {margin-top: 15px;}
+.portfolio-detials .flex-direction-nav li a ,.blog-slider .flex-direction-nav li a    { background-color: rgba(239,65,53,0.75);}
+.portfolio-detials .flex-direction-nav li a:hover,.blog-slider .flex-direction-nav li a:hover    { background-color: rgba(239,65,53,1);}
+

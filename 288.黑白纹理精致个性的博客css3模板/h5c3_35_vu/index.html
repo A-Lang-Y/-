@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html crossriderapp2258="true" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" dir="ltr" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Busby Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/handheld.css">
+  <script src="js/jquery_003.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+  <script src="js/modernizr-1.js"></script>
+  <script src="js/easing.js" type="text/javascript"></script>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+	  			containerID: 'moccaUItoTop', // fading element id
+				containerHoverClass: 'moccaUIhover', // fading element hover class
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+	 		};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+  </script> 
+</head>
+
+<body class="home blog"><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object data="img/storage.swf" id="_GPL_e6a00_swf" type="application/x-shockwave-flash" height="1" width="1"><param value="transparent" name="wmode"><param value="always" name="allowscriptaccess"><param value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl" name="flashvars"></object></div>
+
+<div id="container">
+<header id="top">
+	<ul id="social">
+	<li class="twitter"><a href="#">Twitter</a></li><li class="rss"><a href="#">RSS</a></li><li class="facebook"><a href="#">Facebook</a></li>	</ul>
+	<p class="subscribers">Subscribers <span class="subscribersno">2175</span></p>	<p>	
+	<a href="#" rel="home">
+	<img src="img/logo.png" class="logo" alt="logo" height="69" width="299">	</a></p>
+</header>
+
+<nav>
+<div id="access" role="navigation">
+		<div class="menu"><ul><li class="current_page_item"><a href="#">Home</a></li><li><a href="#">About The Tests</a></li><li><a href="#">Clearing Floats</a></li><li><a href="#">Level 1</a><ul class="children"><li><a href="#">Level 2</a><ul class="children"><li><a href="#">Level 3</a></li></ul></li></ul></li><li><a href="#">Lorem Ipsum</a></li><li><a href="#">Parent page</a><ul class="children"><li><a href="#">Child page 1</a></li><li><a href="#">Child page 2</a></li></ul></li></ul></div>
+</div><!-- #access -->
+
+<form id="navsearchform" role="search" method="get" action="#">
+	<input value="Search Here" onFocus="if (this.value == 'Search Here') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Search Here';}" name="s" id="navs" type="text">
+	<input id="navsearchsubmit" value="" type="submit">
+</form>
+</nav>
+
+
+
+<div id="main" role="main" class="clearfix"><div id="left">
+<div id="sliderwrap"><script type="text/javascript" src="js/jquery_002.js"></script>
+<script type="text/javascript">
+	jQuery('#featured_slider ul').cycle({ 
+		fx: 'fade',
+		prev: '.feat_prev',
+		next: '.feat_next',
+		speed:  3000, 
+		timeout: 2000, 
+		pager:  null
+	});
+</script>
+
+<style>
+
+#featured_slider {
+	float: left;
+	margin: 0px 0px;
+	position: relative;
+	border: 0px solid;
+	width: 575px;
+	height:266px;
+	overflow:hidden;
+}
+
+#featured_slider ul, #featured_slider ul li {
+	list-style: none !important;
+	border: none !important;
+	float: left;
+	margin: 0px;
+	width: 575px;
+	height: 266px;
+}
+
+
+
+#featured_slider h2{
+	position:absolute; bottom:0px; left:0px;
+	width:575px;
+	background-color:#000000;
+	color:white;
+	height:50px;
+	line-height:47px;
+	padding-left:10px;
+}
+
+#featured_slider a{
+	color:#FFFFFF;
+	font-weight:normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: -0.5px;
+	width:575px;
+}
+
+#featured_slider .feat_prev {
+	background: transparent url(./img/sprite.png) no-repeat;
+	background-position: 0px 0px;
+	width: 17px;
+	z-index: 10;
+	height: 16px;
+	position: absolute;
+	left: 20px;
+	cursor: pointer;
+	top: 30px;
+	float: left;
+}
+
+#featured_slider .feat_prev:hover {
+	background-position: 0px -16px;
+}
+
+#featured_slider .feat_next {
+	background: transparent url(./img/sprite.png) no-repeat;
+	background-position: -17px 0px;
+	width: 17px;
+	z-index: 10;
+	height: 16px;
+	position: absolute;
+	left: 40px;
+	top: 30px;
+	cursor: pointer;
+}
+
+#featured_slider .feat_next:hover {
+	background-position: -18px -16px;
+}
+
+.feat_link {
+	float: right;
+	position: relative;
+	top: -5px;
+}
+
+.feat_link a {
+	float: left;
+	font-size: 20px;
+	color: #CCC;
+}
+
+</style>
+
+<div id="featured_slider">
+	<ul style="position: relative;" id="slider">							
+		<li><h2><a href="#">Welcome to Busby – This is the Layout Test</a></h2><a href="#"><img src="img/skater.jpg"></a></li>
+							
+		<li><h2><a href="#">Look here for a Readability Test</a></h2><a href="#"><img src="img/skater-in-air.jpg"></a></li>
+							
+		<li><h2><a href="#">How about an Images Test ?</a></h2><a href="#"><img src="img/skaters.jpg"></a></li>
+							
+		<li><h2><a href="#">Comment Test</a></h2><a href="#"><img src="img/south-bank-graffiti.jpg"></a></li>
+							
+		<li><h2><a href="#">Many Tags Many Tags Many Tags</a></h2><a href="#"><img src="img/spray-paint.jpg"></a></li>
+					</ul>
+	<div class="feat_next"></div>
+	<div class="feat_prev"></div>
+</div></div>
+<article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">Welcome to Busby – This is the Layout Test</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">4</span><br>September</p></div>
+<div class="postcontent">
+<p>This is a sticky post!!! Make sure it sticks! This should then split 
+into other pages with layout, images, HTML tags, and other things. ( I 
+have removed the page breaks so everything on the same page ) Paragraph 
+Alignment Tests Default Paragraph Lorem Ipsum is simply dummy text of 
+the printing and typesetting industry. [...]</p>
+
+</div>
+
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2008-09-04T23:02:20+00:00" pubdate="">September 4, 2008</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/chip-bennett">Chip Bennett</a></span></p><p class="postcomments"><span>Comments Off</span></p></div>
+</div>
+
+</article><!-- #post-188 --><article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">Hello world!</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">2</span><br>August</p></div>
+<div class="postcontent">
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!</p>
+
+</div>
+
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2011-08-02T13:54:15+00:00" pubdate="">August 2, 2011</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/admin">admin</a></span></p><p class="postcomments"><a href="#">3 Comments</a></p></div>
+</div>
+
+</article><!-- #post-1 --><article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">Look here for a Readability Test</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">5</span><br>September</p></div>
+<div class="postcontent">
+<p>All children, except one, grow up. They soon know that they will grow
+ up, and the way Wendy knew was this. One day when she was two years old
+ she was playing in a garden, and she plucked another flower and ran 
+with it to her mother. I suppose she must have looked rather delightful,
+ [...]</p>
+
+</div>
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2008-09-05T00:27:25+00:00" pubdate="">September 5, 2008</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/chip-bennett">Chip Bennett</a></span></p><p class="postcomments"><span>Comments Off</span></p></div>
+</div>
+
+</article><!-- #post-358 --><article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">How about an Images Test ?</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">3</span><br>September</p></div>
+<div class="postcontent">
+<p>Image Alignment Tests: Un-Captioned Images Center-align, no caption 
+Center-aligned image with no caption, and text before and after. ALorem 
+ipsum dolor sit amet, consectetuer adipiscing elit. Sed odio nibh, 
+tincidunt adipiscing, pretium nec, tincidunt id, enim. Fusce scelerisque
+ nunc vitae nisl. Quisque quis urna in velit dictum pellentesque. 
+Vivamus a quam. Curabitur eu tortor id [...]</p>
+
+</div>
+
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2008-09-03T09:35:23+00:00" pubdate="">September 3, 2008</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/chip-bennett">Chip Bennett</a></span></p><p class="postcomments"><span>Comments Off</span></p></div>
+</div>
+
+</article><!-- #post-128 --><article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">Post Format Test: Gallery</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">10</span><br>June</p></div>
+<div class="postcontent">
+
+</div>
+
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2008-06-10T07:24:14+00:00" pubdate="">June 10, 2008</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/chip-bennett">Chip Bennett</a></span></p><p class="postcomments"><span>Comments Off</span></p></div>
+</div>
+
+</article><!-- #post-555 --><article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">Post Format Test: Aside</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">9</span><br>June</p></div>
+<div class="postcontent">
+<p>“I never tried to prove nothing, just wanted to give a good show. My 
+life has always been my music, it’s always come first, but the music 
+ain’t worth nothing if you can’t lay it on the public. The main thing is
+ to live for that audience, ’cause what you’re there for is to please 
+[...]</p>
+
+</div>
+
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2008-06-09T07:51:54+00:00" pubdate="">June 9, 2008</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/chip-bennett">Chip Bennett</a></span></p><p class="postcomments"><span>Comments Off</span></p></div>
+</div>
+
+</article><!-- #post-559 --><article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">Post Format Test: Chat</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">8</span><br>June</p></div>
+<div class="postcontent">
+<p>John: foo Mary: bar John: foo 2</p>
+
+</div>
+
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2008-06-08T07:59:31+00:00" pubdate="">June 8, 2008</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/chip-bennett">Chip Bennett</a></span></p><p class="postcomments"><span>Comments Off</span></p></div>
+</div>
+
+</article><!-- #post-562 --><article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">Post Format Test: Link</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">7</span><br>June</p></div>
+<div class="postcontent">
+<p>The WordPress Theme Review Team Website</p>
+
+</div>
+
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2008-06-07T08:06:53+00:00" pubdate="">June 7, 2008</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/chip-bennett">Chip Bennett</a></span></p><p class="postcomments"><span>Comments Off</span></p></div>
+</div>
+
+</article><!-- #post-565 --><article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">Post Format Test: Image (Attached)</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">6</span><br>June</p></div>
+<div class="postcontent">
+
+</div>
+
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2008-06-06T09:42:19+00:00" pubdate="">June 6, 2008</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/chip-bennett">Chip Bennett</a></span></p><p class="postcomments"><span>Comments Off</span></p></div>
+</div>
+
+</article><!-- #post-674 --><article>
+
+<div class="post">
+<header>
+<h2 class="posttitle"><a href="#" rel="bookmark">Post Format Test: Image (Linked)</a></h2>
+</header>
+
+<div class="postdate"><p><span class="postdateno">6</span><br>June</p></div>
+<div class="postcontent">
+
+</div>
+
+<div class="postdetails">
+<p class="postedby"><span class="sep">Posted on </span><a href="#" rel="bookmark"><time class="entry-date" datetime="2008-06-06T08:09:39+00:00" pubdate="">June 6, 2008</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="#author/chip-bennett">Chip Bennett</a></span></p><p class="postcomments"><span>Comments Off</span></p></div>
+</div>
+
+</article><!-- #post-568 -->
+<div class="pagination"><span class="current">1</span><a href="#" class="inactive">2</a><a href="#" class="inactive">3</a></div>
+
+</div>
+
+
+
+
+<div id="right">
+			<h3 class="widgettitle">Archives</h3><div class="widget">		<ul>
+			<li><a href="#">August 2011</a>&nbsp;(1)</li>
+	<li><a href="#">September 2008</a>&nbsp;(3)</li>
+	<li><a href="#">June 2008</a>&nbsp;(10)</li>
+	<li><a href="#">May 2008</a>&nbsp;(5)</li>
+	<li><a href="#">April 2008</a>&nbsp;(1)</li>
+	<li><a href="#">March 2008</a>&nbsp;(3)</li>
+		</ul>
+</div>				<h3 class="widgettitle">Recent Posts</h3><div class="widget">		<ul>
+				<li><a href="#">Hello world!</a></li>
+				<li><a href="#">Look here for a Readability Test</a></li>
+				<li><a href="#">Welcome to Busby – This is the Layout Test</a></li>
+				<li><a href="#">How about an Images Test ?</a></li>
+				<li><a href="#">Post Format Test: Gallery</a></li>
+				</ul>
+		</div><h3 class="widgettitle">Calendar</h3><div class="widget"><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>July 2012</caption>
+	<thead>
+	<tr>
+		<th scope="col">M</th>
+		<th scope="col">T</th>
+		<th scope="col">W</th>
+		<th scope="col">T</th>
+		<th scope="col">F</th>
+		<th scope="col">S</th>
+		<th scope="col">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="#">« Aug</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="6" class="pad">&nbsp;</td><td>1</td>
+	</tr>
+	<tr>
+		<td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+	</tr>
+	<tr>
+		<td>9</td><td>10</td><td>11</td><td>12</td><td id="today">13</td><td>14</td><td>15</td>
+	</tr>
+	<tr>
+		<td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+	</tr>
+	<tr>
+		<td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+	</tr>
+	<tr>
+		<td>30</td><td>31</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></div><h3 class="widgettitle">Meta</h3><div class="widget">			<ul>
+						<li><a href="#">Log in</a></li>
+			<li><a href="#">Entries <abbr>RSS</abbr></a></li>
+			<li><a href="#">Comments <abbr>RSS</abbr></a></li>
+			<li><a href="#">WordPress.org</a></li>
+						</ul>
+</div>		</div>
+
+		
+</div><footer>
+
+<div id="footer">
+<div class="footercol"><h3 class="footertitle">Archives</h3><div class="widget">		<ul>
+			<li><a href="#">August 2011</a>&nbsp;(1)</li>
+	<li><a href="#">September 2008</a>&nbsp;(3)</li>
+	<li><a href="#">June 2008</a>&nbsp;(10)</li>
+	<li><a href="#">May 2008</a>&nbsp;(5)</li>
+	<li><a href="#">April 2008</a>&nbsp;(1)</li>
+	<li><a href="#">March 2008</a>&nbsp;(3)</li>
+		</ul>
+</div></div><div class="footercol"><h3 class="footertitle">Recent Comments</h3><div class="widget"><ul id="recentcomments"><li class="recentcomments">admin on <a href="#">Hello world!</a></li><li class="recentcomments">admin on <a href="#">Hello world!</a></li><li class="recentcomments"><a href="#" rel="external nofollow" class="url">Mr WordPress</a> on <a href="#">Hello world!</a></li><li class="recentcomments">admin on <a href="#">Comment Test</a></li><li class="recentcomments">Test Contributor on <a href="#">Comment Test</a></li></ul></div></div><div class="footercol"><h3 class="footertitle">Tags</h3><div class="widget"><div class="tagcloud"><a href="#k"  style="font-size: 11.4054pt;">chattels</a>
+<a href="#k"  style="font-size: 8pt;">cienaga</a>
+<a href="#k"  style="font-size: 8pt;">claycold</a>
+<a href="#k"  style="font-size: 8pt;">crushing</a>
+<a href="#k"  style="font-size: 8pt;">dinarchy</a>
+<a href="#k"  style="font-size: 8pt;">doolie</a>
+<a href="#k"  style="font-size: 8pt;">energumen</a>
+<a href="#k"  style="font-size: 8pt;">ephialtes</a>
+<a href="#k"  style="font-size: 8pt;">eudiometer</a>
+<a href="#k"  style="font-size: 8pt;">figuriste</a>
+<a href="#k"  style="font-size: 8pt;">habergeon</a>
+<a href="#k"  style="font-size: 8pt;">hapless</a>
+<a href="#k"  style="font-size: 8pt;">hartshorn</a>
+<a href="#k"  style="font-size: 8pt;">hostility impregnability</a>
+<a href="#k"  style="font-size: 8pt;">impropriation</a>
+<a href="#k"  style="font-size: 8pt;">knave</a>
+<a href="#k"  style="font-size: 8pt;">misinformed</a>
+<a href="#k"  style="font-size: 8pt;">moil</a>
+<a href="#k"  style="font-size: 8pt;">mornful</a>
+<a href="#k"  style="font-size: 8pt;">outlaw</a>
+<a href="#k"  style="font-size: 8pt;">pamphjlet</a>
+<a href="#k"  style="font-size: 8pt;">pneumatics</a>
+<a href="#k"  style="font-size: 8pt;">portly portreeve</a>
+<a href="#k"  style="font-size: 22pt;">Post Formats</a>
+<a href="#k"  style="font-size: 8pt;">precipitancy</a>
+<a href="#k"  style="font-size: 11.4054pt;">privation</a>
+<a href="#k"  style="font-size: 8pt;">programme</a>
+<a href="#k"  style="font-size: 8pt;">psychological</a>
+<a href="#k"  style="font-size: 8pt;">puncher</a>
+<a href="#k"  style="font-size: 8pt;">ramose</a>
+<a href="#k"  style="font-size: 8pt;">renegade</a>
+<a href="#k"  style="font-size: 8pt;">retrocede</a>
+<a href="#k"  style="font-size: 8pt;">stagnation unhorsed</a>
+<a href="#k"  style="font-size: 8pt;">tag1</a>
+<a href="#k"  style="font-size: 8pt;">tag2</a>
+<a href="#k"  style="font-size: 8pt;">tag3</a>
+<a href="#k"  style="font-size: 8pt;">thunderheaded</a>
+<a href="#k"  style="font-size: 8pt;">unculpable</a>
+<a href="#k"  style="font-size: 8pt;">withered brandnew</a>
+<a href="#k"  style="font-size: 8pt;">xanthopsia</a></div>
+</div></div><div class="footercol"><h3 class="footertitle">Meta</h3><div class="widget">			<ul>
+						<li><a href="#">Log in</a></li>
+			<li><a href="#">Entries <abbr>RSS</abbr></a></li>
+			<li><a href="#">Comments <abbr>RSS</abbr></a></li>
+			<li><a href="#">WordPress.org</a></li>
+						</ul>
+</div></div>
+<div id="copyright">
+<p>Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+</p>
+ 
+</div>
+
+</div>
+</footer>
+</div> <!--! end of #container -->
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+<script src="img/si.htm" type="text/javascript"></script><a style="display: none;" href="#" id="toTop"><span id="toTopHover"></span>To Top</a></body></html>

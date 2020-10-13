@@ -1,0 +1,1321 @@
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Getting the new tags to behave */
+/*--------------------------------------------------------------------------------------*/
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+    display:block;
+}
+
+mark, rp, rt, ruby, summary, time {
+    display:inline;
+}
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Global */
+/*--------------------------------------------------------------------------------------*/
+
+html {
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+html, body {
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-size:13px;
+    line-height:150%;
+    color:#888;
+}
+
+section {
+    padding-top:0;
+}
+
+p {
+    font-size:13px;
+    line-height:150%;
+    margin-bottom:20px;
+}
+
+li {
+    line-height:150%;
+    font-size:13px;
+}
+
+h1, h2, h3, h4, h5, h6, .page-stats li span.stat-title {
+    font-family: 'Questrial', sans-serif;
+    color:#444;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    /*font-weight: normal;*/
+}
+
+.exclamation h1, 
+.exclamation h2, 
+.exclamation h3, 
+.exclamation h4, 
+.exclamation h5, 
+.exclamation h6,
+.filter.btn-group .btn {
+    color:#555;
+    text-shadow: 1px 1px 0 #F2F2F2, 1px 2px 0 #B1B1B2;
+}
+
+.exclamation h1 {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.exclamation h1 small, 
+.exclamation h2 small, 
+.exclamation h3 small, 
+.exclamation h4 small, 
+.exclamation h5 small, 
+.exclamation h6 small {
+    text-shadow: none;
+    font-size: 13px;
+}
+
+/*h2 .label, h3 .label {
+    border-radius: 0 0 0 0 !important;
+    font-size: inherit;
+}*/
+
+h3 a:hover{
+    color:#787878;
+    text-decoration:underline;
+}
+
+h4 {
+    font-weight:normal;
+    color:#232428;
+}
+
+h5 {
+    color:#47484b;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  text-transform: none;
+  font-size: 15px
+}
+
+.aside-sidebar h2,
+.aside-sidebar h3,
+.aside-sidebar h4 {
+    font-size: 90%;
+}
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:none;
+    color: #000000;
+}
+
+.center {
+    text-align: center;
+}
+
+.mainslider a:hover {
+    text-decoration:none;
+    color: #ffffff;
+}
+
+a.link {
+    text-decoration:none;
+    cursor:pointer;
+    color:#181818;
+    font-size:13px;
+    line-height:22px;
+}
+
+a.link:hover {
+    color:#f94a49;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    list-style-image:none;
+    list-style:none outside none;
+}
+
+blockquote p {
+  font-size: 13px;
+}
+
+em {
+    font-size: 12px;
+}
+
+.clear {
+    clear:both;
+    line-height:0;
+    font-size:0;
+    width:100%;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+.thumbnail {
+  border: 1px solid #FFFFFF;
+  padding: 0;
+
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+
+}
+
+figure img {
+    border: 8px solid #ffffff;
+}
+
+.img-shadow{
+    box-shadow:2px 2px 2px #d2d5d5;
+}
+
+img.pull-left, figure.pull-left {
+    margin-right: 15px !important;
+    margin-top: 7px !important;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.underline a {
+    color: inherit;
+}
+
+.underline a:hover {
+    text-decoration:none;
+}
+
+.dashed {
+    border-style: dashed !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+::selection {
+    color: #fff;
+    background-color: #555555;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #555555;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.margin-top-bottom {
+    margin-top:45px;
+    margin-bottom:45px;
+}
+
+.margin-top {
+    margin-top:45px;
+}
+
+.margin-bottom {
+    margin-bottom:45px;
+}
+
+header {
+    width:100%;
+    z-index:101;
+    position:relative;
+}
+
+hr {
+    height: 1px;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*       Nav */
+/*--------------------------------------------------------------------------------------*/
+
+.outer-nav {
+    z-index:999;
+    margin-bottom:0;
+}
+
+ul.menu {
+    display: inline-block;
+    width: 100%
+}
+
+ul.menu i {
+    margin-bottom: -2px;
+}
+
+ul.menu li a {
+    display:block;
+    font-size:12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform:uppercase;
+    padding:15px 0;
+    width: 100%;
+    margin-bottom:-2px; /*Have no Idea Why it just works*/
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+}
+
+
+.nav-btn {
+  background: url("img/icons/mobile-nav-icon.png") no-repeat scroll 0 13px transparent;
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
+  text-indent: -9999em;
+  width: 40px;
+  cursor: pointer;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Content */
+/*--------------------------------------------------------------------------------------*/
+
+#content {
+    width:100%;
+    background-color:#ffffff;
+}
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/* exclamation */
+/*--------------------------------------------------------------------------------------*/
+
+.exclamation {
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #EFEFEF;
+    border-top: 1px solid #EFEFEF;
+    font-size:13px;
+    line-height:110%;
+}
+
+.exclamation p {
+    font-size:11px;
+    margin-top:10px;
+    /*line-height:110%;*/
+}
+
+.exclamation .span2,
+.exclamation .span4,
+.exclamation .span6,
+.exclamation .span12 {
+    margin-top: 25px;
+}
+
+.exclamation.title .span12 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.exclamation.title .span12 small {
+    font-size: 13px;
+    line-height: 200%;
+    letter-spacing: 1px;
+}
+
+.exclamation-icon {
+    display: block;
+    height:60px;
+    width:80px;
+    margin-top:40px;
+    margin-right:15px;
+}
+
+.exclamation-icon [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-size:80px;
+    display: block;
+    color: #444444;
+}
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Aside */
+/*--------------------------------------------------------------------------------------*/
+
+.aside-bg {
+    width:100%;
+}
+
+.aside h3 {
+    margin:0 0 20px 0;
+}
+
+.aside figure img {
+    border-color: #DDDDDD;
+}
+
+.right {
+    background:url(img/bg_notes.png) 45px 65px no-repeat;
+}
+
+.demo-logo img {
+    width:100%;
+    margin:0 auto;
+    display: block;
+}
+
+.exclamation.aside {
+    font-size:13px;
+    line-height:150%;
+}
+
+.exclamation.aside .span12  {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.exclamation.aside p {
+    font-size:13px;
+    margin-top:0;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Footer */
+/*--------------------------------------------------------------------------------------*/
+
+footer {
+    font-size:11px;
+    color:#f5f8f9;
+    text-transform:uppercase;
+    padding: 10px 0 8px;
+}
+
+.footer { /*reset docs*/
+  border-top: none;
+  margin-top: 0;
+}
+
+footer ul {
+    float:right;
+}
+
+footer ul li{
+    display: inline-block;
+    padding:2px 4px 0 5px;
+    font-size:12px;
+}
+
+.footer a {
+    color:#FFFFFF;
+}
+
+.footer .copyright a {
+    text-decoration: underline;
+}
+
+.footer ul li.active a,
+.footer a:hover {
+    color:#444444;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Flex Slider */
+/*--------------------------------------------------------------------------------------*/
+
+.flexslider li {
+    width:100%;
+    display: none;
+}
+
+.flexslider img {
+    width:1200px;
+    margin:0 auto;
+}
+
+.flexslider .slides img {
+    max-width: 100%; 
+    max-height:100%; 
+    display: block;
+}
+
+.flexslider {
+    background: #FFFFFF;
+    position: relative;
+    zoom: 1;
+    width:100%;
+    display:none;
+}
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {
+    zoom: 1;
+    position: relative;
+}
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {
+    background:none;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+    zoom: 1;
+}
+
+.flex-caption {
+    width: 96%;
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 350;
+    background: rgba(0,0,0,255);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom:0px !important;
+}
+
+.slider-title {
+    padding:10px;
+    background:#000;
+    color:#FFF !important;
+}
+
+.slider-title h3 {
+    text-transform:uppercase;
+    color:#FFF !important;
+}
+
+.portfolio-slider .flex-control-nav {
+    display:none;
+}
+
+.flex-control-nav li a{
+    -webkit-transition:all 0.1s ease-in-out;
+    -moz-transition:all 0.1s ease-in-out;
+    -o-transition:all 0.1s ease-in-out;
+    transition:all 0.1s ease-in-out;
+}
+
+/**
+*
+*    Main Slider Directional Nav
+*
+*/
+
+.main ul.flex-direction-nav {
+    width: auto;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    width: 100px;
+    left:50%;
+    margin-left:-50px;
+}
+
+.main ul.flex-direction-nav li {
+    width: auto;
+    display: inline-block;
+}
+
+.main .flex-direction-nav li a {
+    cursor: pointer;
+    font-size:30px;
+}
+
+.slides:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.access {
+    display:block;
+}
+
+.no-access {
+    display:none;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Forms */
+/*--------------------------------------------------------------------------------------*/
+
+form.contact {
+  background-color: #F8F8F8;
+  border: 1px solid #EFEFEF;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+form.contact input.span5, 
+form.contact textarea.span5, 
+form.contact .uneditable-input.span5 {
+    width: 98%;
+}
+
+label {
+  font-size: 13px;
+  line-height: 150%;
+}
+
+.docs-input-sizes select, .docs-input-sizes input[type="text"] {
+  display: block;
+  margin-bottom: 9px;
+}
+
+input,
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  font-size: 13px;
+  color: #555555;
+  border: 1px solid #EEEEEE;
+  height: 24px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  padding: 6px;
+
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+textarea {
+  height: 150px;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Sidebar */
+/*--------------------------------------------------------------------------------------*/
+
+.sidebar {
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #EFEFEF;
+  border-top: 1px solid #EFEFEF;
+  padding: 20px 20px;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Social */
+/*--------------------------------------------------------------------------------------*/
+
+.header-social ul.sociallinks {
+    display:inline-block;
+}
+ul.sociallinks {
+    display:block;
+    padding:10px 0 0;
+    overflow:hidden;
+    text-align:center;
+}
+.header-social  ul.sociallinks {
+    float: right;
+}
+ul.sociallinks li {
+    float:left;
+    margin:0px 6px 6px 0;
+    padding:0 !important;
+    list-style:none;
+}
+.header-social ul.sociallinks li { 
+    float:right;
+    margin:0px 0 6px 6px;
+    list-style:none;
+}
+ul.sociallinks li a {
+    width:33px;
+    height:33px;
+    display:block;
+    padding:0;
+    margin:0;
+    background-color:#909090;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+ul.sociallinks li a:hover {
+    background-color:#555555 !important;
+}
+ul.sociallinks li a.twitter {
+    background:#DDDDDD url(img/icons/socialicons.png) -2px -2px no-repeat;
+}
+ul.sociallinks li a.facebook {
+    background:#DDDDDD url(img/icons/socialicons.png) -40px -2px no-repeat;
+}
+ul.sociallinks li a.googleplus {
+    background:#DDDDDD url(img/icons/socialicons.png) -77px -2px no-repeat;
+}
+ul.sociallinks li a.flickr {
+    background:#DDDDDD url(img/icons/socialicons.png) -114px -2px no-repeat;
+}
+ul.sociallinks li a.instagram {
+    background:#DDDDDD url(img/icons/socialicons.png) -151px -2px no-repeat;
+}
+ul.sociallinks li a.picasa {
+    background:#DDDDDD url(img/icons/socialicons.png) -187px -2px no-repeat;
+}
+ul.sociallinks li a.fivehundredpx {
+    background:#DDDDDD url(img/icons/socialicons.png) -224px -2px no-repeat;
+}
+ul.sociallinks li a.youtube {
+    background:#DDDDDD url(img/icons/socialicons.png) -261px -2px no-repeat;
+}
+ul.sociallinks li a.vimeo {
+    background:#DDDDDD url(img/icons/socialicons.png) -299px -2px no-repeat;
+}
+ul.sociallinks li a.dribbble {
+    background:#DDDDDD url(img/icons/socialicons.png) -335px -2px no-repeat;
+}
+ul.sociallinks li a.ffffound {
+    background:#DDDDDD url(img/icons/socialicons.png) -372px -2px no-repeat;
+}
+ul.sociallinks li a.pinterest {
+    background:#DDDDDD url(img/icons/socialicons.png) -409px -2px no-repeat;
+}
+ul.sociallinks li a.zootool {
+    background:#DDDDDD url(img/icons/socialicons.png) -446px -2px no-repeat;
+}
+ul.sociallinks li a.behance {
+    background:#DDDDDD url(img/icons/socialicons.png) -483px -2px no-repeat;
+}
+ul.sociallinks li a.deviantart {
+    background:#DDDDDD url(img/icons/socialicons.png) -521px -2px no-repeat;
+}
+ul.sociallinks li a.squidoo {
+    background:#DDDDDD url(img/icons/socialicons.png) -557px -2px no-repeat;
+}
+ul.sociallinks li a.slideshare {
+    background:#DDDDDD url(img/icons/socialicons.png) -594px -2px no-repeat;
+}
+ul.sociallinks li a.lastfm {
+    background:#DDDDDD url(img/icons/socialicons.png) -631px -2px no-repeat;
+}
+ul.sociallinks li a.grooveshark {
+    background:#DDDDDD url(img/icons/socialicons.png) -668px -2px no-repeat;
+}
+ul.sociallinks li a.soundcloud {
+    background:#DDDDDD url(img/icons/socialicons.png) -705px -2px no-repeat;
+}
+ul.sociallinks li a.foursquare {
+    background:#DDDDDD url(img/icons/socialicons.png) -742px -2px no-repeat;
+}
+ul.sociallinks li a.github {
+    background:#DDDDDD url(img/icons/socialicons.png) -779px -2px no-repeat;
+}
+ul.sociallinks li a.linkedin {
+    background:#DDDDDD url(img/icons/socialicons.png) -815px -2px no-repeat;
+}
+ul.sociallinks li a.xing {
+    background:#DDDDDD url(img/icons/socialicons.png) -853px -2px no-repeat;
+}
+ul.sociallinks li a.wordpress {
+    background:#DDDDDD url(img/icons/socialicons.png) -890px -2px no-repeat;
+}
+ul.sociallinks li a.tumblr {
+    background:#DDDDDD url(img/icons/socialicons.png) -927px -2px no-repeat;
+}
+ul.sociallinks li a.rss {
+    background:#DDDDDD url(img/icons/socialicons.png) -964px -2px no-repeat;
+}
+ul.sociallinks li a.rsscomments {
+    background:#DDDDDD url(img/icons/socialicons.png) -1001px -2px no-repeat;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Portfolio & Gallery  */
+/*--------------------------------------------------------------------------------------*/
+
+/**
+*
+*    Sorter Buttons
+*
+*/
+
+.filter .btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px!important;
+  letter-spacing: 1px;
+  padding:7px 25px 5px 25px;
+  box-shadow:none;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.05) rgba(0, 0, 0, 0.05) rgba(0, 0, 0, 0.15);
+}
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*  Sorter Portfolio 
+/*--------------------------------------------------------------------------------------*/
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Single Item ( Image ) */
+/*--------------------------------------------------------------------------------------*/
+
+.single-item {
+    position: relative;
+}
+
+#portfolio .single-item {
+    margin-bottom:45px;
+}
+
+.single-item .desc {
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #EFEFEF;
+  font-size: 12px;
+  line-height: 120%;
+  padding: 0 10px 10px;
+  text-align: center;
+}
+
+.img-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.single-item .desc p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.single-item a {
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+  color: #444444;
+}
+
+.single-item h5 {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+    
+.single-navigation {
+    top:50%;
+    left:50%;
+    width:104px;
+    height: 60px;
+    position:absolute;
+    margin-left: -51px;
+    margin-top: -30px;
+    z-index: 2;
+    display: none;
+    background:transparent url('img/icons/preview_overlay.png') no-repeat 0 0;
+}
+
+div.img-box:hover > div.single-navigation {
+    display: block;
+}
+
+.single-navigation .full-image {
+    width: 40px;
+    height: 40px;
+    background:transparent url('img/icons/preview-icons-full.jpg') no-repeat 0 0;
+    margin: 10px 0 0 10px;
+    display: inline-block;
+}
+
+.single-navigation .full-image:hover {
+    background:transparent url('img/icons/preview-icons-full.jpg') no-repeat 0 -40px;
+}
+
+.single-navigation .page-link {
+    width: 40px;
+    height: 40px;
+    float: right;
+    background:transparent url('img/icons/preview-icons-more.jpg') no-repeat 0 0;
+     margin: 10px 10px 0 0;
+    display: inline-block;
+}
+
+.single-navigation .page-link:hover {
+    background:transparent url('img/icons/preview-icons-more.jpg') no-repeat 0 -40px;
+}
+
+    .single-item span.date {
+        display:block;
+        position:absolute;
+        top:0px; left:0px;
+        width:40px; 
+        height:40px;
+        padding-top:4px;
+        text-align:center;
+        /*font-family: 'Oswald', sans-serif;*/
+        font-size:9px; 
+        line-height:16px;
+        color:#FFFFFF;
+        text-transform:uppercase; 
+    }
+    .single-item span.date span{ 
+        font-size:18px; 
+        line-height:18px; 
+        display:block; 
+    }
+
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Blog Image & Slider*/
+/*--------------------------------------------------------------------------------------*/
+
+.minislider {
+  position: relative;
+}
+    .minislider .post-img-container {
+        margin-bottom:0; 
+        overflow:hidden; 
+        text-align: center; 
+    }
+    .minislider .post-img-container {
+        display: none; 
+        position: relative;
+    }
+
+    .post-img-container {
+        margin-bottom:40px; 
+        overflow:hidden; 
+        text-align: center; 
+    }
+    .post-img-info {
+        display:block;
+        position:relative;
+        width: 100%; 
+        background-color:#444444; 
+    }
+    .post-img-date {
+        float:left;
+        width: 10%;
+        height:45px;
+        padding-top:4px;
+        text-align:center;
+        font: 10px/12px 'Questrial', sans-serif;
+        text-transform:uppercase;
+        color:#FFFFFF; 
+        display: inline-block;
+    }
+    .post-img-date span { 
+        font-size:16px; 
+        line-height:20px; 
+        display:block;
+        padding-top: 2px; 
+    }
+    .post-img-title { 
+        float:left;
+        color:#FFFFFF;
+        font: 14px/15px 'Questrial', sans-serif;
+        text-transform:uppercase;
+        padding:16px 1%;
+        width: 88%;
+        display: block;
+    }
+    .post-img-title a { color:#FFFFFF; }
+
+
+/**
+*
+*    Mini Slider Directional Nav
+*
+*/
+
+
+.minislider ul.flex-direction-nav {
+    width: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background:transparent url('img/icons/preview_overlay.png') no-repeat 0 0;
+}
+.minislider ul.flex-direction-nav li {
+    width: 30px;
+    display: inline-block;
+}
+.minislider ul.flex-direction-nav li .icon-chevron-left {
+    text-align: left;
+}
+.minislider ul.flex-direction-nav li .icon-chevron-right {
+  text-align: right;
+}
+
+/* Direction Nav */
+.minislider .flex-direction-nav li a {
+    top: 0;
+    font-size:20px;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        Single Page with Desc */
+/*--------------------------------------------------------------------------------------*/
+
+
+    .page-stats li {
+        border-bottom:1px dashed #EFEFEF;
+        padding:15px; 
+    }
+    .page-stats li:last-child { 
+        border-bottom:none; 
+    }
+    .page-stats li span.stat-title {
+        text-transform:uppercase;
+        display:inline-block;
+        margin-right:10px; 
+        font-weight: bold;
+    }    
+    .page-stats li a.back-link {
+        display:inline-block;
+        padding-top:5px;
+        float:right; 
+    }
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        MISC */
+/*--------------------------------------------------------------------------------------*/
+
+.well-first {
+    margin-right: 10px;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*        testimonial */
+/*--------------------------------------------------------------------------------------*/
+
+.testimonial {
+    margin-top:20px;
+}
+
+.testimonial li {
+    display: none;
+}
+
+
+/*----------------------------------------YDCOZA----------------------------------------*/
+/*Media Queries */
+/*--------------------------------------------------------------------------------------*/
+
+/*@media (min-width: 979px) and (max-width: 1199px) {
+
+}*/
+
+@media (max-width: 979px) {
+    #main_slider .access {
+    display: none ;
+    }
+}
+
+/*@media (min-width: 768px) and (max-width: 979px) {
+
+}*/
+
+@media (min-width: 980px) {
+    #combined-nav  {
+      display: block !important;
+      overflow: visible;
+      padding: 0;
+      position: relative;
+    }
+    ul.menu ul.sub-menu {
+        width:auto;
+        display: none;
+        position:absolute;
+        top:69px;
+    }
+    ul.menu ul.sub-menu li a {
+        width:100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 10px!important;
+    }
+    ul.menu li a {
+        width:auto;
+        display: inline-block;
+        float: left;
+        padding:25px;
+    }
+    ul.menu li {
+      background: transparent;
+      display: inline-block;
+      float: left;
+      padding: 0;
+      position: relative;
+    }
+    ul.menu ul.sub-menu li {
+      float: left;
+      padding: 0;
+      position: relative;
+      display: block;
+      float: none;
+      position: relative;
+      min-width: 160px;
+    }
+    ul.menu a {
+      padding: 15px 15px;
+      width: 100%;
+    }
+    /*Show DropDown*/
+    ul.menu li:hover > ul {
+        display: block;
+    }
+
+}
+
+@media (max-width: 979px) {
+    .flex-direction-nav li a {
+    width: 32px;
+    height: 30px;
+    font-size:20px;
+    line-height:31px!important;
+    }
+    .footer {
+        text-align:center;
+    }
+    .footer ul {
+        float:none;
+    }
+    .footer hr {
+        margin:1px 0 5px 0;
+    }
+    .well-first {
+        margin-right: 0;
+    }
+    #portfolio .YDCOZA { 
+        margin-top:15px !important; 
+        margin-bottom:15px !important;
+    }
+    #portfolio img{ 
+        width:100%;
+    }
+    .filter .btn {
+      padding:7px 10px 5px 10px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .mainslider {
+        padding: 20px 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .form-search input {
+        width: 94%;
+    }
+
+}
+
+@media (max-width:767px) {
+    .logo{
+    padding:0 0 20px 0;
+    text-align:center;
+    }
+    .exclamation .welcome {
+      text-align: center;
+    }
+    .exclamation.aside {
+      text-align: left;
+    }
+    .exclamation small {
+      width: 100%;
+      display: block;
+    }
+    .exclamation h1 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .thumbnails > li {
+      float: none;
+      margin-bottom: 18px;
+      margin-left: 0;
+    }
+    .header-social {
+        text-align: center;
+    }
+    .header-social ul.sociallinks {
+      float: none;
+    }
+    .input-large,.input-xlarge,.input-xxlarge,input[class*="span"],select[class*="span"],textarea[class*="span"],.uneditable-input {
+      min-height: 38px;
+    }
+    #similar-work .single-item {
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width:767px) {
+    .container {
+    width:432px;
+    }
+}
+
+/*Landscape phones and down */
+@media (max-width: 480px) {
+    .container {
+    width:auto;
+    }
+    /* YDCOZA reset */
+    .big-font {
+        font-size: 100%;
+    }
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    h1 small {
+      font-size: 13px;
+    }
+    h2 {
+      font-size: 19px;
+      line-height: 29px;
+    }
+    h2 small {
+      font-size: 13px;
+    }
+    h3 {
+      line-height: 21px;
+      font-size: 13px;
+    }
+    h3 small {
+      font-size: 12px;
+    }
+    .exclamation h1 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+     #main_slider {
+        height:1px;
+        margin-bottom:40px;
+    }
+     div.flexslider {
+        display: none !important;
+    }
+    .post-img-title { 
+        font: 12px/13px 'Questrial', sans-serif;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .post-img-date {
+        width: 15%;
+    }
+    .post-img-title { 
+        width: 83%;
+    }
+
+}

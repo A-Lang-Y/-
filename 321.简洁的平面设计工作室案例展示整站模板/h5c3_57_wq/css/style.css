@@ -1,0 +1,223 @@
+/* Left & Right alignment */
+.left { float:left; }
+.right { float:right; }
+.wrapper {width:100%; overflow:hidden; }
+/* Global properties ======================================================== */
+.glob{width:100%; height:100%; position:absolute; overflow:hidden; }
+body{ font-family:Arial, Helvetica, sans-serif; color:#000; background: url(../images/bgPart.png); line-height:20px; min-width:980px; min-height:100%; position:absolute; width:100%; height:100%; overflow:hidden; }
+.ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+/* Global Structure ========================================================= */
+.main {margin:0px auto 0 auto; 	width: 940px; z-index:2; height:100%; }
+.page_spinner{ position:fixed; background:url(../images/loader.gif) 50% 50% no-repeat #fbf9f3; z-index:99; width:100%; height:100%; top:0; left:0}
+#glob{position:relative; overflow:hidden; z-index:1; }
+/* ============================= main layout ===========font-family: 'Open Sans', sans-serif;===================== */
+a{ color:#fff; text-decoration:none; outline:none; font-size: 10px; }
+a:hover{ text-decoration:underline}
+h1{float:left; }
+h2{font-family: 'Open Sans', sans-serif; color:#fff; font-size:42px; line-height:30px; width:100%; text-transform:uppercase; padding-bottom: 28px; font-weight: 300; letter-spacing: -2px;}
+h3{color: #fff; font-size:15px; line-height:26px; width:100%; padding-bottom: 0px; font-weight:400;}
+p{font-family:Arial, sans-serif; padding-bottom: 0px; font-size: 15px; color: #808080; line-height: 26px; }
+.undLineOff{text-decoration:none; }
+.textLowerCase{text-transform:lowercase}
+.textUpperCase{text-transform:uppercase}
+.center{ padding:0 0; width:100%; position: relative; }
+.alignLeft{text-align:left; }
+.alignCenter{text-align:center; }
+.alignRight{text-align:right; }
+/* ============================= header ===================================== */
+header{position:relative;  z-index:1; display: inline-block; }
+#logo{text-indent:-9999px; background: url(../images/logo.png) 0 0 no-repeat; display:inline-block; width: 210px; height: 100px; }
+#logo:hover{text-decoration:none; }
+.logoHolder{ display:inline-block; position: relative; }
+.headerHolder{position: relative; width: 940px; height: 135px; z-index: 10; margin: 0 auto; }
+.slogan{font-size:14px; line-height:20px; letter-spacing:-1px; }
+.menu{position:relative; z-index:1; display:inline-block; float: right; margin-top: 70px;}
+.menuHolder{ float: left; z-index: 2; display:inline-block; position: relative; width: 220px; height: 540px;}
+#menu {z-index:3; position:relative; }
+#menu > li{float:left; position:relative; display:inline-block; margin: 0 1px; }
+#menu > li > a{ font-family: 'Open Sans', sans-serif; display: inline-block; text-transform:uppercase;   position:relative;  }
+#menu > li > a:hover{text-decoration:none; }
+#menu > li.active > a{text-decoration:none; }
+.submenu_1{position: relative; z-index:2;  left: 0;  width: 100%; }
+.submenu_1 li{position:relative; display:inline-block; margin: 4px 15px; }
+.submenu_1 a{font-family: 'Open Sans', sans-serif; font-size: 26px; color:#313131;  display:inline-block; text-transform:uppercase; text-align:left; line-height: 26px; font-weight: 300;}
+.submenu_1 li:hover > a, .submenu_1 li.sfHover > a{text-decoration:none;  }
+#menu .magTop1{margin-top: 15px; }
+#menu .magBot1{margin-bottom:15px; }
+.mText{position:relative; line-height: 44px;display: inline-block;font-size: 42px;font-weight: 300;letter-spacing: -2px;}
+.overPlane{ position: absolute; left: 0; bottom: 0px; width: 100%;  }
+.textHolder{position:absolute; top:0; left:0; display:inline-block; height:50px; overflow:hidden; z-index:1; }
+.leftHolder{position:relative; width:400px; float:left; height:620px; }
+/* ============================= content ====================== */
+#content{position:relative; height: 540px; z-index: 1; width: 720px;  float: left;display: inline-block;overflow: hidden;}
+#content > ul{width:100%; height: 540px; z-index: 1;position: relative;}
+#content > ul > li{width: 100%; display:block; position:absolute;  overflow: hidden;}
+.box{height: 480px; width: 660px; background:url(../images/extra1.png);margin: 30px 30px;position: relative;}
+.underline{text-decoration:underline; }
+.space1{display:inline-block; width: 80px; }
+.padBot1{padding-bottom: 35px;}
+.padBot2{padding-bottom: 16px;}
+.padBot3{padding-bottom: 17px;}
+.padBot4{padding-bottom: 15px;}
+.padBot5{padding-bottom: 15px;}
+.magRight1{margin-right: 21px;}
+.magRight2{margin-right: 36px;}
+.magRight3{margin-right: 46px;}
+.color1{color: #414141;}
+.color2{color: #000;}
+.color3{color: #c2472f;}
+.color4{color: #ff6c00;}
+._link1{color: #fff; font-size: 15px;}
+._link1:hover{color: #fff; font-size: 15px; text-decoration: underline;}
+._link2{color: #414141; font-size: 21px;}
+._link2:hover{color: #ff6c00; text-decoration: underline;}
+._link3{color: #fff; font-size: 15px;}
+._link3:hover{color: #ff6c00; text-decoration: underline;}
+._list1 > li{background:url(../images/marker.png) 0 50% no-repeat; position: relative; display: inline-block;margin-bottom: 10px;}
+._list1 > li >a{font-size: 15px; color: #fff;margin-left: 15px;}
+._list1 > li >a:hover{text-decoration: none;}
+.bord1{border-right: 1px solid #262626;}
+._fig1{display: inline-block; float: left;margin-right: 30px;}
+.moreButton{font-size: 15px; color: #000; bottom: 0; position: relative; padding: 5px 15px; background: url(../images/sprite_1.png);}
+.moreButton:hover{text-decoration:none; }
+.zoomSp{display:block; position:absolute; left:0; top:0; width: 240px; height: 180px; z-index:3; background:#000 url(../images/magnify.png) 50% 50% no-repeat; }
+.scroll1{width: 530px; height: 332px; margin-bottom: 0px;}
+.scroll2{width: 530px; height: 332px; margin-bottom: 0px;}
+.track {position:absolute; top: 18px; left: 567px; width:19px; height:295px; background:#4d4d4d; }
+.shuttle{position:relative; width: 19px; height:100px; background:#fff;}
+.shuttle:hover{ background:#ff6c00;}
+._up-btn{display: none;}
+._down-btn{display: none;}
+.Btns1{position: absolute; width: 19px; height: 332px;top: 0;right: 0px;z-index: 2;}
+.Btns2{position: absolute; width: 19px; height: 331px;top: 0;right: 0px;z-index: 2;}
+.upBtn{background:url(../images/upBtn.png) 0 0 no-repeat; width: 19px; height: 19px; display: block; position: absolute; top: 0;}
+.upBtn:hover{background:url(../images/upBtn.png) 0 100% no-repeat;}
+.downBtn{background:url(../images/downBtn.png) 0 0 no-repeat; width: 19px; height: 19px; display: block; bottom: 0; position: absolute;}
+.downBtn:hover{background:url(../images/downBtn.png) 0 100% no-repeat;}
+.closePlane{width: 30px; height: 30px;  position: absolute;   z-index: 2;right: 6px;top: 6px;}
+.closeButton{ margin: 8px; }
+.iconHolder{position: absolute;  z-index: 2; left: 0; display: inline-block;width: 720px;height: 540px;}
+#img_slider{position: absolute; z-index: 1; }
+#img_slider > ul{white-space: nowrap; }
+#img_slider > ul >li{width: 240px; white-space: normal; display: inline-block; float: left; position: absolute; }
+#next{position: absolute; z-index: 2; right: 20px; top: 194px; }
+#prev{position: absolute; z-index: 2; left: 20px; top: 194px; }
+.leftPlane{background: url(../images/blackPlane.png); width: 830px; height: 522px; position: absolute; z-index: 2; right: 470px; }
+.rightPlane{background: url(../images/blackPlane.png); width: 1300px; height: 522px; position: absolute; z-index: 2; left: 470px; }
+.picHold{ position: relative; cursor: pointer;}
+.followHolder{position: relative;display: inline-block;float: right;margin-top: 30px;width: 300px;}
+.followHolder span{font-family: 'Open Sans', sans-serif; position: relative; display: inline-block; color: #313131; font-size: 21px; line-height: 24px;width: 100%;text-align: right;}
+.followHolder > ul{display: inline-block;float: right;margin-top: 20px;}
+.followHolder > ul > li{display: inline-block; float: left;margin-left: 6px;}
+.followHolder > ul > li > a{}
+/*----------------------------------------*/
+/* ============================= footer ====================== */
+footer{position: relative; width: 720px; z-index:1;  margin: 0 auto; display: block;height: 86px;float: right;text-align: center;}
+.mainFooter {display: inline-block; z-index:2; margin: 0 auto;  }
+.privHold{ position:relative; margin-top: 34px;}
+.textPrivacy{font-family: 'Open Sans', sans-serif; color: #313131; font-size: 21px; color: #414141; position:relative; display:inline-block;font-weight: 300;line-height: 25px;}
+/*===================================Map=====================================*/
+.google_map{
+	margin:0; 
+	width:270px; 
+	height:210px; 
+	background:#fff; 
+}
+/* ============================= forms ============================= */
+#ContactForm {
+	padding:0; 
+}
+
+#ContactForm .title1{
+    display: inline-block;
+    width: 75px;
+    color: #808080;
+    float: left;
+    position: relative;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+#ContactForm .bg{
+	padding:0; 
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+#ContactForm .wrapper {
+	overflow:inherit; 
+	min-height:40px; 
+}
+#ContactForm .success {
+	padding-bottom: 10px; 
+    text-transform:uppercase; 
+	font-size:10px; 
+    position:relative; 
+    float:left; 
+	color: #fff; 
+	width: 100%; 
+	line-height: 11px;
+}
+#ContactForm label {
+	position:relative; 
+	display:inline-block;  
+	float: left; 
+	width: 100%;
+	padding-bottom: 4px;
+}
+#ContactForm span {
+	display:block
+}
+#ContactForm .error,#ContactForm .empty {
+	font-size:9px; 
+	color: #fff; 
+	line-height:9px; 
+	display:none; 
+	width: 200px; 
+	top:0px; 
+	position:relative; 
+    text-transform:uppercase; 
+	float: right;
+}
+#ContactForm a {
+	position:relative; 
+	z-index:1; 
+}
+#ContactForm a:hover {text-decoration:underline; }
+#ContactForm .input {
+	width: 185px; 
+	padding: 3px 4px; 
+	color: #808080; 
+	outline:none; 
+	font-size: 12px; 
+	font-family:Arial; 
+	background: #000; 
+	border: 1px solid #4C4C4C;
+}
+#ContactForm textarea {
+	overflow:auto; 
+	margin:0; 
+	width: 185px; 
+	height: 176px; 
+	background: #000; 
+	padding: 2px 4px; 
+	color: #808080; 
+	resize:none; 
+	outline:none; 
+	font-size: 15px; 
+	font-family:Arial; 
+	border: 1px solid #4C4C4C;
+}
+#ContactForm .block {
+	display:inline-block; 
+	position:relative; 
+	width: 100%; 
+	float: left; 
+}
+#ContactForm .magRight1{margin-right:16px; }
+.w2{
+ width:560px; 
+}
+.formButtons{position:relative; float: right; margin-top: 14px; display: inline-block;margin-right: 60px;}
+.formBtn{display:inline-block;  position:relative;  }
+/* ============================= end forms ============================= */

@@ -1,0 +1,99 @@
+/*
+ * jQuery Nivo Slider v2.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2010, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ 
+
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	
+}
+.nivoSlider img {
+	position:absolute;
+	
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0;
+	left:0px;
+	width:530px;
+	height:380px;
+	border:0;
+	padding:0;
+	margin:0;
+	display:none;
+}
+
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:-280px;
+	top:20px;
+	width:240px;
+	z-index:89;
+}
+.nivo-caption h1 { font-size:40px; line-height:48px; margin-bottom:10px; }
+.nivo-caption p{margin:0 0 30px 0}
+.nivo-caption a.link {}
+.nivo-caption a.link:hover {}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav { display:none;}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	position:absolute;
+	left:-280px;
+	bottom:120px;
+	z-index:89;
+}
+.nivo-controlNav a {
+	position:relative;
+	z-index:99;
+	cursor:pointer;
+	display:inline-block !important;
+	height:0;
+	width:17px;
+	text-indent:-9999px;
+	height:17px;
+	background:url(../images/button-slider.png) no-repeat;
+	overflow:hidden;
+	margin:0 4px;
+}
+.nivo-controlNav a:hover { background-position:0 -17px;}
+.nivo-controlNav a.active { background-position:0 -17px;}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+.nivo-controlNav a{ text-indent:-9999px; } /* chrome, safari */
+}
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0)
+ {
+.nivo-controlNav a{ text-indent:-9999px; } /* opera */
+ }
+
+.nivo-directionNav {}
+.nivo-directionNav a {}
+
+#slider .nivo-controlNav img {}

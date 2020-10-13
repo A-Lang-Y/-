@@ -1,0 +1,197 @@
+/* -- Theme controll panel --> Begin -- */
+
+#control_panel {
+	position: fixed;
+    top: 50px;
+    left: -185px;
+    z-index: 999;
+    padding: 15px 20px;
+    width: 145px;
+    color: #b5b7b5;
+}
+
+.light #control_panel {background-color: rgba(31,34,30, .85);}
+.dark #control_panel {background-color: rgba(235,238,235, .9);}
+
+.ie8 .light #control_panel {background-color: #1f221e;}
+.ie8 .dark #control_panel {background-color: #ebeeeb;}
+
+#control_panel .control_panel_title {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-left: 20px;
+	padding-bottom: .48em;
+	padding-top: .6em;
+	width: 165px;
+	background-repeat: no-repeat;
+	background-position: 8px 0;
+	font-family: 'Droid Serif';
+}
+
+.light #control_panel .control_panel_title {color: #b5b7b5;}
+.dark #control_panel .control_panel_title {color: #121412;}
+
+.light .control_panel_title {background-color: rgba(31,34,30, .4);}
+.dark .control_panel_title {background-color: rgba(235,238,235, .9);}
+
+#control_panel > div > span {
+    display: block;
+	margin-bottom: .5em;
+	color: #b5b7b5;
+	font-size: 1em;
+	font-family: 'Droid Serif';
+}
+
+.light #control_panel > div > span {color: #bgb7b5;}
+.dark #control_panel > div > span {color: #121412;}
+
+#control_panel .layout {
+	margin-top: 2em;
+	margin-bottom: .9em;
+}
+
+#control_panel .skin {
+	margin-bottom: .9em;
+}
+
+#control_panel label:first-child {
+	margin: 0 15px 0 0;
+	text-align: left;
+}
+
+#control_panel label {
+	color: #888c87;
+}
+
+.light #control_panel label {color: #888c87;}
+.dark #control_panel label {color: #50554e;}
+
+#control_panel > div input[type="radio"] {
+	margin: 0 4px 3px;
+}
+
+#control_panel ul {
+    overflow: hidden;
+	padding-bottom: 5px;
+}
+
+#control_panel li {
+    float:left;
+    margin: 0 7px 7px 0;
+}
+
+#control_panel li:nth-child(4n) {margin-right: 0;}
+
+#control_panel li a {
+    display: block;
+    width: 28px;
+    height: 28px;
+	border: 1px solid #c7cfc8;
+}
+
+#control_panel li.active a {
+    border-color: #000;
+}
+
+#patterns_liquid li a,
+#patterns_fixed li a {
+	background-image: url(../images/patterns_sprite.png);
+	background-repeat: no-repeat;
+}
+
+/* Patterns Liquid --> Begin */
+
+.l-pattern-1 {background-position: 0 0;}
+.l-pattern-2 {background-position: -29px 0;}
+.l-pattern-3 {background-position: -58px 0;}
+.l-pattern-4 {background-position: -87px 0;}
+.l-pattern-5 {background-position: 0 -29px;}
+.l-pattern-6 {background-position: -29px -29px;}
+.l-pattern-7 {background-position: -58px -29px;}
+.l-pattern-8 {background-position: -87px -29px;}
+
+
+/* Patterns Liquid --> End */
+
+/* Patterns Fixed --> Begin */
+
+.f-pattern-1 {background-position: 0 -58px;}
+.f-pattern-2 {background-position: -29px -58px;}
+.f-pattern-3 {background-position: -58px -58px;}
+.f-pattern-4 {background-position: -87px -58px;}
+.f-pattern-5 {background-position: 0 -87px;}
+.f-pattern-6 {background-position: -29px -87px;}
+.f-pattern-7 {background-position: -58px -87px;}
+.f-pattern-8 {background-position: -87px -87px;}
+.f-pattern-9 {background-position: 0 -116px;}
+.f-pattern-10 {background-position: -29px -116px;}
+.f-pattern-11 {background-position: -58px -116px;}
+.f-pattern-12 {background-position: -87px -116px;}
+
+/* Patterns Fixed --> End */
+
+#control_panel .restore_button_wrapper {
+	clear: both;
+    padding: 10px 0 0 0;
+	text-align: center;
+}
+
+#control_panel .restore_button_wrapper a {margin-bottom: 0;}
+
+#control_label {
+    position: absolute;
+	z-index: 3;
+    right: -35px;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background-image: url('../images/theme_control_bg.png');
+	background-repeat: no-repeat;
+	background-color: rgba(31,34,30, .91);
+	-webkit-transition: background-color .25s linear;
+	   -moz-transition: background-color .25s linear;
+	    -ms-transition: background-color .25s linear;
+		 -o-transition: background-color .25s linear;
+			transition: background-color .25s linear;
+}
+
+.ie8 #control_label {background-color: #1f221e;}
+
+#control_label:hover {
+	background-position: bottom;
+	background-color: #a6412b;
+}
+
+.links_color_wrapper,
+.bg_color_wrapper {
+	margin-bottom: 1.4em;
+}
+
+.links_color_wrapper .link_hex_color,
+.bg_color_wrapper .bg_hex_color {
+	float: left;
+	margin-right: 5px;
+	padding: 0 10px 0 5px;
+	width: 60px;
+	height: 24px;
+	border: none;
+	color: #50554e;
+	background-color: #c7cfc8;
+	line-height: 24px;
+	font: italic 1em 'Droid Serif';
+}
+
+.links_color_wrapper .colorPicker,
+.bg_color_wrapper .bgPicker {
+    position: relative;
+	float: left;
+    height: 24px;
+    width: 24px;
+	background: url(../images/colorpicker_mask.png) no-repeat;
+	cursor: pointer;
+}
+
+
+
+/* -- Theme controll panel --> End -- */

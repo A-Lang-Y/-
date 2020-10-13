@@ -1,0 +1,92 @@
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.color_range-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.color_range-header
+{
+   z-index: 1;
+}
+
+.color_range-hmenu>li, .color_range-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.color_range-hmenu, ul.color_range-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+ul.color_range-hmenu>li:first-child {
+   padding-right:10px;
+}
+
+ul.color_range-hmenu ul, .desktop-nav ul.color_range-hmenu>li.ext:hover>a{
+   background-color: #DEDEDE !important;
+}
+
+.color_range-content-layout, .color_range-content-layout-row, .color_range-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.color_range-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.color_range-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.color_range-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.color_range-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.color_range-postheadericons span{
+   zoom: 1;
+}
+.color_range-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.color_range-content 
+{
+   width: auto;
+   float:none;
+}
+

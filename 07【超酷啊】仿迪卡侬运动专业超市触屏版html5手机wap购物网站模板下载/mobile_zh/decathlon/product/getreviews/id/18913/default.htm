@@ -1,0 +1,62 @@
+<div class="d-rate">
+    <h3>用户好评度</h3>
+    <div class="rating-box">
+        <div class="rating" style="width:0%;"></div>
+    </div>
+    <div class="review-num">
+        <span class="review-fraction">0分</span>
+        <span class="review-count">(共0位用户评论)</span>
+    </div>
+    <div class="review-recommend">0 out of 0 recommend this product</div>
+</div>
+<div class="btn-review-box">
+    <a class="button btn-product-review" href="#review-popup" id="btn-product-review"><span>发表评论</span></a>
+</div>
+<script type="text/javascript">
+jQuery(function($){
+    if ($("#review-list li").length>5){
+        $(".seemore").addClass("li-enable");
+        $(".seemore").nextAll().addClass("li-disable");
+        $("#customer-reviews .pager").css("display","none");
+        $("#review-list .seemore").click(function(){
+            $("#customer-reviews .pager").css("display","block");
+            $(this).nextAll().removeClass("li-disable").addClass("li-enable");
+            $(this).addClass("li-disable");
+        });
+    } else {
+        $(".seemore").addClass("li-disable");
+        $("#customer-reviews .pager").css("display","block");
+    }
+
+
+        // Post the vote value via ajax
+
+    $('.v-answer span').click(function() {
+      
+        var voteID =$(this).attr("id");
+        var reviewID = voteID.match(/\d+/)[0];
+        var value =$(this).attr("value");
+        var voteData = {"reviewID": reviewID,"value": value};
+        $(this).parent().parent().hide();
+
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            async: false,
+            url: '../../../../../newreview/index/voteForAReview/default.htm',
+            data: voteData,
+            success: function(msg){
+
+                var nbUsefulVote = msg.result.VoteForAReviewResult.result.data[0]._;
+                var nbTotalVote = msg.result.VoteForAReviewResult.result.data[1]._;
+                var Currentid = "#msg-"+reviewID;
+                    //Change vote value
+                $(Currentid).find(".truevoter").html(nbUsefulVote);
+                $(Currentid).find(".allvoter").html(nbTotalVote);
+                
+            }
+        });
+
+    });
+});
+</script>

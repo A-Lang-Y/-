@@ -1,0 +1,126 @@
+#TMGPrototype2{
+	position: relative;
+	left: 0px;
+	display: block; 
+}
+
+#TMGPrototype2 #descrHolder{
+    position: relative;
+    width: 460px;
+    left: 50%;
+    margin-left: -470px;
+    margin-top: 60px;
+    height: 500px;
+    margin-bottom: 218px;
+    display: block;
+    overflow: hidden;
+}
+#TMGPrototype2 #descrHolder > .descrList{
+	display: block;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#TMGPrototype2 #descrHolder > .descrList > li{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#TMGPrototype2 #categoryList{
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	margin-left: -470px;
+	padding: 0;
+	width: 460px;
+}
+#TMGPrototype2 #categoryList > li{
+	display: block;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+#TMGPrototype2 #categoryList > li > img{
+	display: inline-block;
+	position: relative;
+}
+#TMGPrototype2 #categoryList > li > .setName{
+	position: relative;
+	cursor: pointer;
+	color: #767171;
+	padding: 4px 15px 6px;
+	font: 18px/25px 'Pathway Gothic One', sans-serif;
+	background: #edecec;
+	border: 1px solid #ac2135;
+	top: 0px;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+#TMGPrototype2 #categoryList > li > .setName:hover , #TMGPrototype2 #categoryList > li.currSet > .setName {
+	background: #ac2135;
+	color: #fff;
+}
+#TMGPrototype2 #categoryList > li > .setName > span{
+	display: block;
+}
+
+#TMGPrototype2 #controlHolder{
+	position: absolute;
+	left: 50%;
+	margin-left: -52px;
+	width: 115px;
+	z-index: 999;
+	display: inline-block;
+}
+#TMGPrototype2 #controlHolder > ._prevButton{
+	width: 53px;
+	height: 35px;
+	background: url(../images/prevnext.png) -1px -1px no-repeat #edecec;
+	float: left;
+	border: 1px solid #ac2135;
+	cursor: pointer;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+#TMGPrototype2 #controlHolder > ._nextButton{
+	width: 53px;
+	height: 35px;
+	background: url(../images/prevnext.png) -61px -1px no-repeat #edecec;
+	float: left;
+	margin-left: 5px;
+	cursor: pointer;
+	border: 1px solid #ac2135;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+#TMGPrototype2 #controlHolder > ._prevButton:hover, #TMGPrototype2 #controlHolder > ._nextButton:hover {
+	background-color: #ac2135 !important;
+} 
+#previewHolder{
+	background: #000;
+	top: 0;
+}
+#previewHolder img{
+	max-width: inherit;
+}
+#previewSpiner{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	display: none;
+}
+#previewSpiner > span{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}

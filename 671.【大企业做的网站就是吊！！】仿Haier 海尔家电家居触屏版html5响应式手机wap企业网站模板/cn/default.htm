@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+        <meta content="telephone=no" name="format-detection" />
+        <title>仿Haier 海尔家电家居触屏版html5响应式手机wap企业网站模板-懒人模板【http://www.lanrenmb.com/shenghuofuwu/qiye/】</title>
+		<!-- 公用样式 begin -->
+		<link rel="apple-touch-icon" href="../uk/images/favicon.ico" />
+<link rel="shortcut icon" href="../uk/images/favicon.ico" />
+<link rel="Bookmark" href="../uk/images/favicon.ico" />
+<script type="text/javascript">var ROOT_PATH = "./"</script>
+        <link rel="stylesheet" href="../image.haier.com/cnmobile/images/base.css">
+        <link rel="stylesheet" href="../image.haier.com/cnmobile/images/style.css">
+        <link rel="stylesheet" href="../image.haier.com/cnmobile/images/header-footer.css">
+        <!-- jQuery库 -->
+        <script src="../image.haier.com/cnmobile/images/jquery-1.7.1.min.js"></script>
+        <script src="../image.haier.com/cnmobile/images/hammer.js"></script>
+        
+        <!-- 公用函数库 -->
+        <script src="../image.haier.com/cnmobile/images/common.js"></script>
+        <!-- 公用静态分页 -->
+        
+        <!-- 头部js文件 -->
+        <script src="../image.haier.com/cnmobile/images/header.js"></script>
+         <!-- 公用js文件 -->
+        <script src="../image.haier.com/cnmobile/images/mobile_core.js"></script>
+        <!-- jQuery操作cookie，加入收藏、判断是否登录 -->
+        <script type="text/javascript" src="../image.haier.com/cnmobile/images/jQueryDoCookie.js"></script>
+
+	<!-- 日期控件 -->
+		<link rel="stylesheet" href="../image.haier.com/cnmobile/images/mobiscroll.custom-2.4.4.min.css">
+		<script src="../image.haier.com/cnmobile/images/dateinput.js"></script>
+		<!-- 公用样式 end -->
+    </head>
+    <body>
+	<!--header-->
+	<div id="header">
+            <div class="whole-bg">
+                <!--非首页时添加类back，返回按钮-->
+                <a href="javascript:history.go(-1)" class="location back js_goBack">
+                  <img src="../image.haier.com/cnmobile/images/icon_home640.png" alt class="icon-home hidden" />
+                  <img src="../image.haier.com/cnmobile/images/icon-back640.png" alt class="icon-back" />
+                </a>
+                <span class="logo js_dropHaierMenu"><img src="../image.haier.com/cnmobile/images/logo.png" alt /></span>
+                <a href="services_supports/service_shop/default.htm" class="nav-map"><span><img src="../image.haier.com/cnmobile/images/icon-map1640.png" alt /></span></a>
+                <a href="javascript:void(0);" class="nav-search js_showSearchBtn"><span>
+                    <img src="../image.haier.com/cnmobile/images/icon-search640.png" alt class="icon-nav-search" />
+                    <img src="../image.haier.com/cnmobile/images/icon-search2640.png" alt class="icon-nav-searchon hidden" />
+                </span></a>
+            </div>
+            <!--没有下拉按钮，添加类hidden-->
+            <span class="btn-dropdown js_dropMenuBar"></span>
+            <!-- 非首页的header,请再添加类  main-nav-box1 -->
+            <div class="main-nav-box  main-nav-box1">
+                <ul class="main-nav clearfix">
+				 
+                    <li><a href="consumer/cooling/default.htm"><img src="../image.haier.com/cnmobile/navigation/201212/P020131114599407342820.png" /></a><span>产品中心</span></li>
+				 
+                    <li><a href="services_supports/default.htm"><img src="../image.haier.com/cnmobile/navigation/201212/P020131114599517116037.png" /></a><span>服务中心</span></li>
+				 
+                    <li><a href="promotion/default.htm"><img src="../image.haier.com/cnmobile/navigation/201212/P020131114599605713020.png" /></a><span>优惠活动</span></li>
+				 
+                    <li><a href="application/default.htm"><img src="../image.haier.com/cnmobile/navigation/201212/P020131114599684253573.png" /></a><span>应用广场</span></li>
+				
+				 
+                    <li class="nomargin"><a href="services_supports/myhaier/default.htm"><img src="../image.haier.com/cnmobile/navigation/201212/P020131114599774418824.png" /></a><span>个人中心</span></li>
+				
+				</ul>
+            </div>
+        </div>
+        <!--start;搜索框-->
+        <div class="search-bg  hidden js_searchForm">
+          <!-- 套模板请定义表单提交地址 -->
+          <form class="search clearfix" method="get" action="http://m.haier.com/cn/services_supports/search_results/" id="headerSearchForm">
+            <!-- 首页下拉搜索类型，值暂定为1-产品，2-服务，默认是产品。套页面是可根据需要修改 -->
+            <input type="hidden" name="search_type" value="1" id="js_topSearchVal" />
+            <div class="search-select left"><span class="js_topSearchTypeSpan">产品</span><i class="search-img js_topSearchTypeBtn"></i>
+                <ul class="search-list js_topSearchTypeList" style="display:none;">
+                     <li data-value="1" ><a href="javascript:void(0);" >产品</a></li>
+                     <li data-value="2" ><a href="javascript:void(0);" >常见问题</a></li>
+                </ul>
+            </div>
+            <!-- value可配置默认的搜索提示文字 -->
+            <span class="search-text left"><input type="text" class="js_searchInput" value="输入您要查找的产品" name="keyword" /></span>
+            <button type="button" class="search-smt left js_searchSubmit" value=""><img src="../image.haier.com/cnmobile/images/icon-search3.png" /></button>
+          </form>
+          <div class="search-box"></div>
+        </div>
+        <script>
+            $(function(){
+              // 默认的搜索框的文字，可在search-text中自定义
+              var defaultSearchText = $('.js_searchInput').val();
+              // 表单提交
+              $('.js_searchSubmit').click(function(e){
+                  e.preventDefault();
+                  //验证：
+                  var keyword = $.trim($('.js_searchInput').val());
+                  var type = $('#js_topSearchVal').val();
+                  if (!keyword || keyword == defaultSearchText ) {
+                      var notice = new customDialog({ 'content':'请输入搜索关键字', 'type':'error' });
+                      notice.init().show();
+                      return false;
+                  }
+                  if (!type) {
+                      var notice = new customDialog({ 'content':'请选择搜索类型', 'type':'error' });
+                      notice.init().show();
+                      return false;
+                  }
+      
+                  var url = $('#headerSearchForm').attr('action');
+                  window.location.href = url + '@search_type=' +type+ '&' + 'keyword=' + keyword;
+              });
+            });
+        </script>
+        <!--end:搜索框-->
+	<!-- end header -->
+<!--中间内容-->
+<div id="container">
+    <!--banner 优惠活动-->
+    <div class="banner">
+        <a href="#" class="banner-title deals"><span class="center-words">优惠活动</span></a>
+        <div id="slideshow" class="slide-show">
+            <ul class="clearfix">
+			
+                <li><a href="../bbs" title=""><img src="../image.haier.com/cnmobile/homepage/bannerwh/201403/P020140313447250983609.jpg" alt /></a></li>
+			
+                <li><a href="../cnmobile/promotion/2013/201402/t20140213_206809.shtml" title=""><img src="../image.haier.com/cnmobile/homepage/bannerwh/201402/P020140311415423089091.jpg" alt /></a></li>
+			
+                <li><a href="promotion/2013/201309/t20130925_185872.shtml" title=""><img src="../image.haier.com/cnmobile/homepage/bannerwh/201310/P020131011417193488498.jpg" alt /></a></li>
+			
+                <li><a href="consumer/water_heater/electric_water_heater/201307/t20130701_174257.shtml" title=""><img src="../image.haier.com/cnmobile/homepage/bannerwh/201309/P020130929625808271046.jpg" alt /></a></li>
+			
+            </ul>
+        </div>
+        <div id="overview" class="over-view">
+            <ul class="clearfix">
+                 <li class='active'>1</li> 
+				<li><script type="text/javascript">document.write(1+1);</script></li> <li><script type="text/javascript">document.write(2+1);</script></li> <li><script type="text/javascript">document.write(3+1);</script></li> 
+            </ul>
+        </div>
+       <!-- <div id="show_event">null</div>-->
+    </div>
+    <!--end  banner优惠活动-->
+    <div class="pro-liked">
+        <a href="#" class="banner-title liked"><span class="center-words">用户喜爱的产品</span></a>
+        <ul class="liked-list clearfix">
+		
+            <li class="pic-big"><a href="../cnmobile/consumer/air_conditioners/cabinet_conditioners/201301/t20130109_158856.shtml"><img src="../image.haier.com/cnmobile/homepage/banner/201301/P020130111627928616628.jpg" alt /></a></li>
+		
+            <li class="pic-big"><a href="../cnmobile/consumer/laundry/drum_laundry/201212/t20121203_156865.shtml"><img src="../image.haier.com/cnmobile/homepage/banner/201301/P020130111627638959864.jpg" alt /></a></li>
+		 
+		
+            <li class="pic-small"><a href="../cnmobile/consumer/televisions/led_tv/201211/t20121128_156704.shtml"><img src="../image.haier.com/cnmobile/homepage/banner1/201301/P020130111628897938983.jpg" alt /></a></li>
+		
+            <li class="pic-small"><a href="../cnmobile/consumer/cooling/relative_door_refrigrator/201212/t20121219_157436.shtml"><img src="../image.haier.com/cnmobile/homepage/banner1/201301/P020130111628383551256.jpg" alt /></a></li>
+		
+        </ul>
+    </div>
+    <!--产品分类-->
+    <div class="pro-sorted">
+        <h3>产品分类</h3>
+        <ul class="clearfix">
+		 
+			<li class="cat1"><a href="consumer/cooling/default.htm"><img src="../image.haier.com/cnmobile/consumer/cooling/ico/201212/P020121217641457530707.png" alt /><span>冰箱冷柜</span></a></li>
+		 
+			<li class="cat1"><a href="consumer/laundry/default.htm"><img src="../image.haier.com/cnmobile/consumer/laundry/ico/201212/P020121217642092621487.png" alt /><span>洗衣机</span></a></li>
+		 
+			<li class="cat1"><a href="consumer/air_conditioners/default.htm"><img src="../image.haier.com/cnmobile/consumer/air_conditioners/ico/201212/P020121217643547838031.png" alt /><span>空调</span></a></li>
+		 
+			<li class="cat1"><a href="consumer/televisions/default.htm"><img src="../image.haier.com/cnmobile/consumer/televisions/ico/201212/P020121217643954216602.png" alt /><span>彩电</span></a></li>
+		
+		
+		 
+			<li class="cat2"><a href="consumer/kitchen_appliances/default.htm"><img src="../image.haier.com/cnmobile/consumer/kitchen_appliances/ico/201212/P020121217645074536099.png" alt /><span>厨房电器</span></a></li>
+		 
+			<li class="cat2"><a href="consumer/the_whole_kitchen/default.htm"><img src="../image.haier.com/cnmobile/consumer/the_whole_kitchen/ico/201212/P020131115375121779006.png" alt /><span>整体厨房</span></a></li>
+		 
+			<li class="cat2"><a href="consumer/water_heater/default.htm"><img src="../image.haier.com/cnmobile/consumer/water_heater/ico/201212/P020121217645908225632.png" alt /><span>热水器</span></a></li>
+		 
+			<li class="cat2"><a href="consumer/small_applications/default.htm"><img src="../image.haier.com/cnmobile/consumer/small_applications/ico/201212/P020121217646287596996.png" alt /><span>生活家电</span></a></li>
+		
+		
+		 
+			<li class="cat1"><a href="consumer/computers/default.htm"><img src="../image.haier.com/cnmobile/consumer/computers/ico/201212/P020121217646649472396.png" alt /><span>电脑</span></a></li>
+		 
+			<li class="cat1"><a href="consumer/digital/default.htm"><img src="../image.haier.com/cnmobile/consumer/digital/ico/201212/P020121217647121957973.png" alt /><span>手机数码</span></a></li>
+		
+            
+			<li class="cat1"><a href="#"><!-- <img src alt /> --><span>&nbsp;</span></a></li>
+			<li class="cat1"><a href="#"><!-- <img src alt /> --><span>&nbsp;</span></a></li>
+        </ul>
+		<script>
+			jQuery(".pro-sorted .clearfix .cat1:even").addClass("light-bule"); 
+			jQuery(".pro-sorted .clearfix .cat1:odd").addClass("roseo"); 
+			jQuery(".pro-sorted .clearfix .cat2:even").addClass("roseo"); 
+			jQuery(".pro-sorted .clearfix .cat2:odd").addClass("light-bule"); 
+		</script>
+    </div>
+    <!--end   产品分类-->
+    <div class="serve-box">
+        <h3>服务与支持</h3>
+        <ul class="clearfix">
+		 
+            <li><a href="services_supports/product_service/default.htm">服务预约</a></li>
+		 
+            <li><a href="services_supports/service_seq/default.htm">状态查询</a></li>
+		 
+            <li><a href="services_supports/product_reg/default.htm">产品注册</a></li>
+		 
+            <li><a href="services_supports/charging_standard/default.htm">收费标准</a></li>
+		 
+            <li><a href="services_supports/after_sales_services/default.htm">三包服务</a></li>
+			
+            <li class="nomargin"><a href="services_supports/default.htm" class="more">更多服务&nbsp;<span>&gt;</span></a></li>
+        </ul>
+    </div>
+</div>
+<!--end 中间内容-->
+<script>
+  (function(){
+      // reset header.shtml
+      $('.js_goBack').removeClass('back');
+      $('.js_goBack img.icon-back').addClass('hidden');
+      $('.js_goBack img.icon-home').removeClass('hidden');
+      $(".js_goBack").attr("href","./");
+      $('.js_dropMenuBar').addClass('hidden');
+      $('.main-nav-box').removeClass('main-nav-box1').show();
+  })();
+  $(function(){
+      var configIndex = {
+              "hammerOption":{ drag_vertical:false }, //hammer.js的配置参数
+              "container":"#slideshow ul" ,//所有的li对象
+              "overView":"#overview li", //左右点击的按钮
+              "div":"#slideshow", //整个滑动的div
+              "defineLiNum":1,//显示的li的数目
+              "liOtherWidth":2, //li除了width以外的宽度
+              "setInterval":5,
+              "overviewClick":function(overviewHandle, clickDom){
+                  overviewHandle.overview.removeClass("active");
+                  $(clickDom).addClass("active");
+                  var toCurrent = $(clickDom).prevAll().length;
+                  overviewHandle.slideTo(toCurrent-overviewHandle.current);
+              },
+              "updateOveriew":function(overviewHandle){
+                  overviewHandle.overview.removeClass("active");
+                  $(overviewHandle.overview.get( overviewHandle.current )).addClass('active');
+              }
+          };
+      var IndexSlide = new Zslides(configIndex);
+    });
+</script>
+<!--登录按钮-->
+    <!--未登录状态可用下面注释的dom替换span-->
+    <a href="../ids/mobile/login.jsp" class="btn-login no-login js_noLogin"><img src="../image.haier.com/cnmobile/images/icon_btnlogin.png" width="54" height="54" /></a>
+    <span  style="display:none;" class="btn-login logedin js_logedin"><img src="../image.haier.com/cnmobile/images/icon_btnuser.png" width="54" height="54" /></span>
+    <!--end 登录按钮-->
+    <!--环形导航菜单-->
+    <div class="ring-nav js_menuCenter hidden">
+	
+        <a href="services_supports/myhaier/my_product.shtml" class="my-pro">我的产品</a>
+	
+	
+        <a href="services_supports/service_seq" class="serve-state">服务状态</a>
+	
+	
+        <a href="services_supports/myhaier/my_favorite.shtml" class="my-collection">我的收藏</a>
+	
+	
+        <a href="services_supports/myhaier/default.htm" class="pre-center">个人中心</a>
+	
+    </div>
+    <!--footer-->
+    <div id="footer">
+        <div class="nav-bottom-box clearfix">
+            <ul class="nav-bottom clearfix left">
+			
+                <li><a href="footer/about_haier/default.htm">关于海尔</a></li>
+			
+                <li><a href="footer/contact/default.htm">联系我们</a></li>
+			
+                <li><a href="footer/terms_conditions/default.htm">法律声明</a></li>
+			
+                <li><a href="footer/common_questions/default.htm">常见问题</a></li>
+			
+            </ul>
+            <a href="javascript:void(0);" class="back-top left js_backTop">Top</a>
+        </div>
+<div class="version"><a href="../default.htm">手机版</a>&nbsp;|&nbsp;<a href="../../www.haier.com/cn/@hides=1" class="curr">网页版</a></div>
+        <p class="copyright">Copyright©2014海尔集团版权所有</p>
+    </div>
+    <!-- 底部js部分 -->
+    <script>
+    
+      $(function(){
+		//是否登录
+        if(istrsidssdssotoken()){
+			userLogin(true);
+		}else{
+			userLogin(false);
+			$('.js_noLogin').attr("href","../ids/mobile/login.jsp@returnUrl="+window.location.href);
+		}
+      });
+    </script>
+    <!--end footer-->
+
+<!-- code begin. -->
+<!--ipt>
+$(".largepic-words-part .price").hide();
+$(".pro-cont-list").hide();
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5554256-17']);
+  _gaq.push(['_setDomainName', 'haier.com']);
+  _gaq.push(['_setAllowHash', 'false']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? ' https://ssl' : ' http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</scri-->
+
+
+<!--code end. -->
+
+
+
+
+
+<!-- code begin. -->
+<script type='text/javascript'>
+    (function () {
+		var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = (location.protocol == 'https:' ? '../../https@ssl./' : '../../static./') + 'gridsumdissector.com/js/Clients/GWD-000678-332B0F/gs.js';
+		var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(s, firstScript);
+    })();
+</script>
+<!--code end. -->
+<script src="../image.haier.com/cnmobile/images/mobile_statistics.js"></script>
+</body>
+</html>

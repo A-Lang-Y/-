@@ -1,0 +1,57 @@
+
+@import "palette.less";
+
+/* RECENT POSTS -----------------------------------------------*/
+
+.recent-post{
+	margin-bottom: 21px;
+	
+	.thumb{
+		display: block;
+		float: left;
+		background: #f1f1f1;
+		line-height: 0em;
+		padding: 3px;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		.box-shadow(.3);
+	}
+	
+	.post-head{}
+	
+	span{
+		display: block;
+	}
+
+}
+
+
+/* CAT ITEMS -----------------------------------------------*/
+
+.widget-cols{
+
+	.cat-item,
+	.page_item {
+		a{
+			display: block;
+			border-bottom: 1px solid rgba(255, 255, 255, .1);
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+			background: url(../img/arrow-right.png) no-repeat 0px 0px;
+			padding-left: 17px;
+			
+			.post-counter{
+				color: #f1f1f1;
+			}
+		}
+	}
+	
+	
+	.cat-item:last-child,
+	.page_item:last-child{
+		a{
+			border-bottom: none;
+		}
+	}
+		
+}

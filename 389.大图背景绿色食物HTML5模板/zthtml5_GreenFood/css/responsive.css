@@ -1,0 +1,74 @@
+html {
+   -webkit-text-size-adjust: none;
+}
+.video embed,
+.video object,
+.video iframe {
+   width: 100%;
+   height: auto;
+}
+img{
+	max-width:100%;
+	height: auto;
+   	width: auto\9; /* ie8 */
+}
+
+/***********************/
+.menu{}
+.minimenu{display:none;}
+
+.minimenu{
+	position: relative;
+	z-index: 30;
+	margin: 0px 10px 20px 10px;
+	padding-top:10px;
+}
+.minimenu div{
+	padding: 0px 16px;
+	overflow: hidden;
+	position: relative;
+	font: 18px/40px 'PT Sans Narrow';
+	color: #fff;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+.minimenu select{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	header, #content, footer, nav{width:768px;}
+	#sidebar{width:184px;}
+	#main-content{width:504px;}
+}
+
+@media only screen and (max-width: 767px) {
+	header, #content, footer, nav, #main-content, #sidebar{width:100%; margin:0px; padding:0px;}
+	header {margin-top: 0px;height:150px;}
+	header #logo{top:50px;}
+	header #search {top: 5px;left: 5px;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 479px) {
+	.menu{display:none;}
+	.minimenu{display:block;}
+	header{height: 170px;}
+	header #logo{top: 80px; left:10px;}
+	#main-content img{width:95%;}
+}

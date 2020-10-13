@@ -1,0 +1,118 @@
+nav {
+	width:1000px;
+	margin:0px auto;
+}
+
+.jqueryslidemenu{
+z-index:999;
+text-align:center;
+}
+
+.jqueryslidemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.jqueryslidemenu select{
+display:none;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display:inline-block;
+z-index:44;
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+display: block;
+font-size:13px;
+/*background: #111111; background of tabs (default state)*/
+color: #fff;
+padding:26px;
+color: #fff;
+text-decoration: none;
+}
+
+
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.jqueryslidemenu ul li a:hover{
+color: #fff;
+}
+	
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+position: absolute;
+left: 0;
+display: block;
+visibility: hidden;
+
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul{
+background-color:#fe7360; 
+}
+
+.jqueryslidemenu ul li ul li a{
+font-size:13px;
+width:150px; /*width of sub menus*/
+padding:10px 10px 10px 25px;
+margin: 0;
+text-align:left;
+border-bottom:1px solid #fe9182;
+}
+
+.jqueryslidemenu ul li:hover > a{
+	color:#fff;
+	background-color:#fe7360;
+}
+
+.jqueryslidemenu ul ul li:hover > a{
+	color:#000;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+
+.jqueryslidemenu ul li:hover > a.active{
+	color:#fff;
+}
+
+
+.jqueryslidemenuz ul li ul li a:hover{ /*sub menus hover style*/
+
+}
+
+
+.jqueryslidemenu a.active{
+color:#fff;
+background-color:#fe7360;
+}
+.jqueryslidemenu a.active:hover{
+color:#fff;
+}
+
+
+
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+.jqueryslidemenu ul li ul li a.sub_active{
+background-color:#343434;
+color:#F57627;
+}

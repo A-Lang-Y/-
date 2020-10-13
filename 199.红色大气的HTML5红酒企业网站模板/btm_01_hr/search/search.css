@@ -1,0 +1,96 @@
+@import url(//fonts.googleapis.com/css?family=Pathway+Gothic+One);
+@import "../css/reset.css";
+@import "../css/superfish.css";
+html, body {
+	height:auto;
+	
+}
+
+body {
+	min-width: 300px;
+
+}
+#search-results{
+	padding:0px 10px 0px 5px;
+	overflow:hidden;
+		font: 12px/18px  Arial, Helvetica, sans-serif;
+	color:#767171;
+
+}
+
+#search-results iframe html{
+	border:none;
+}
+#search-results iframe {
+	min-width:300px;
+}
+h3 {
+
+padding-top:10px;
+font-weight: normal;
+text-shadow: none;
+margin-top: 0 !important;
+text-transform: uppercase;
+}
+
+.search_link {
+	display: inline-block;padding-top: 5px;
+padding-left: 5px;
+font-size: 18px;
+	font-weight: normal !important;
+	line-height: 18px;	
+	font-family:  'Pathway Gothic One', sans-serif;
+
+	text-shadow: none;
+	color: #000;
+
+}
+
+.search_link:hover {
+	color: #ff4a4a;
+}
+
+h4 {
+margin-left: 0px;	
+font-weight: normal;
+}
+
+
+ol.search_list {
+	list-style-type:none;
+	counter-reset: ol;
+	padding-left: 0;
+	margin-left: 15px;
+}
+ol.search_list li:before {
+content: counter(ol) ".";
+counter-increment: ol;
+float:left;
+display:block;
+width:20px;
+text-align:right;	
+padding-right:10px;
+margin:8px 0px 0 -40px
+}
+ol.search_list li {
+	padding-bottom:20px;
+	margin-left:15px;
+	background-color: transparent !important;
+}
+span.match {
+	color:#ff4a4a;
+	font-size:11px;
+	display:block;
+	
+	
+}
+span.search {
+	color:#ff4a4a;
+
+}
+.search_link{
+	text-decoration: none;
+}
+.search_link:hover{
+	text-decoration: underline;
+}

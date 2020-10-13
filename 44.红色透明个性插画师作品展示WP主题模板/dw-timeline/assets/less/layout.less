@@ -1,0 +1,345 @@
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+.main {
+   margin-top: 60px;
+   margin-bottom: 60px; 
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner {
+   color: #fff;
+   position: relative;
+   text-align: center;
+
+   &.cover {
+      background: url(../img/bg.jpg) no-repeat top center; 
+      background-size: cover;
+      min-height: 660px;
+
+      &:before {
+         content: "";
+         display: block;
+         top: 0;
+         right: 0;
+         left: 0;
+         bottom: 0;
+         position: absolute;
+         background: #a83279;
+         #gradient > .directional(@start-color: #a83279; @end-color: #d38312; @deg: -45deg);
+         .opacity(.8);
+      }
+   }
+
+   .container {
+      position: relative;
+   }
+
+   hgroup {
+      position: relative;
+
+      &:after {
+         content: "";
+         display: block;
+         background: #f2664f;
+         width: 280px;
+         height: 280px;
+         position: absolute;
+         top: 205px;
+         left: 50%;
+         margin-left: -140px;
+         z-index: 0;
+         .rotate(45deg);
+         .opacity(.5);
+      }
+   }
+
+   .page-title {
+      position: relative;
+      font-family: @headings-font-family;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 255px;
+      padding: 13px 20px 15px;
+      font-size: 60px;
+      line-height: 60px;
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,.25);
+      z-index: 1;
+
+      a {
+         color: #fff;
+         text-decoration: none;
+      }
+   }
+
+   .page-description {
+      font-family: @headings-font-family;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 100;
+      margin: 0;
+      z-index: 1;
+      position: relative;
+      .opacity(.5);
+   } 
+
+   #get-started {
+      position: relative;
+      z-index: 1;
+      display: block;
+      overflow: hidden;
+      margin: 20px auto 0;
+      padding-right: 30px;
+      padding-left: 30px;
+      outline: none !important;
+      border: none;
+      border: 2px solid transparent;
+      background: #fff;
+      color: #f2664f;
+      .box-shadow(none) !important;
+      .transition( .3s );
+
+      &:hover {
+         background: transparent;
+         border-color: #fff;
+         color: transparent;
+      }
+
+      &:before {
+         content: '\e094';
+         font-family: 'Glyphicons Halflings';
+         position: absolute;
+         left: 0;
+         top: -100%;
+         color: #fff;
+         .square(100%);
+         .transition( .3s );
+      }
+
+      &:hover:before {
+         top: 5px;
+      }
+   }
+}
+
+.nav-main {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   z-index: @zindex-navbar;
+   border-botoom: 1px solid #fff;
+   border-bottom: 1px solid rgba(255,255,255,.15);
+
+   // Depth 1
+   .navbar-nav {
+      display: inline-block;
+      float: none;
+      padding: 0;
+      font-size: 0;
+
+      > li {
+         display: inline-block;
+         float: none;
+         font-size: @font-size-base;
+      }
+
+      > .active {
+         margin-bottom: -1px;
+         border-bottom: 1px solid #fff;
+      }
+   }
+
+   a {
+      color: #fff;
+      color: rgba(255,255,255,.7);
+      .transition(.3s);
+   }
+
+   .glyphicon {
+      position: relative;
+      right: -10px;
+      font-size: 12px;
+   }
+
+   li a:hover,
+   li a:active,
+   .active > a {
+      background: none;
+      color: #fff;
+   }
+
+   // Depth 2
+   .navbar-nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      position: absolute;
+      width: 150px;
+      
+      li {
+         position: relative;
+         background: #fff;
+         margin-top: -1px;
+
+         &:first-child {
+            margin-top: 0;
+         }
+      }
+
+      a {
+         padding: 10px 15px;
+         display: block;
+         color: @gray-dark;
+
+         &:hover {
+            color: @brand-danger;
+         }
+      }
+
+      .active a {
+         color: @brand-danger;
+      }
+
+      .has-submenu a {
+         padding-right: 25px;
+      }
+
+      .glyphicon {
+         position: absolute;
+         top: 15px;
+         right: 10px;
+      }
+   }
+
+   .navbar-nav > li > ul > li:first-child {
+      margin-top: 0px;
+      border-top: none;
+
+      // &:before,
+      // &:after {
+      //    content: '';
+      //    position: absolute;
+      //    border-left: 6px dashed transparent;
+      //    border-right: 6px solid transparent; 
+      //    left: 50%;
+      //    margin-left: -6px;
+      // }
+
+      // &:before {
+      //    border-bottom: 6px solid #e5e5e5;
+      //    top: -6px;
+      // }
+
+      // &:after {
+      //    border-bottom: 6px solid #fff;
+      //    top: -5px;  
+      // }
+   }
+
+   // Depth 3
+   .navbar-nav ul ul {
+      left: 150px;
+      padding-left: 5px;
+      top: 0;
+
+      ul {
+         left: 145px;
+      }
+   }
+
+   // show / hide sub menu
+   .navbar-nav  ul {
+      clip: rect(0, 0, 0, 0);
+      margin-top: 30px;
+      .opacity(0);
+      .transition( .3s );
+   }
+
+   .navbar-nav li:hover > ul {
+      clip: rect(0, 1500px, 1500px, 0);  
+      margin-top: 0;
+      .opacity(1);
+   }
+   
+   // No Cover
+   .no-cover & {
+      border-bottom-color: #e5e5e5;
+      background: #fff;
+      
+      .navbar-nav > .active {
+         border-bottom-color: @brand-danger;
+      }
+
+      .navbar-nav ul li {
+         border: 1px solid #e5e5e5;
+      }
+
+      a {
+         color: #333;
+      }
+
+      a:hover,
+      a:active,
+      .active > a {
+         color: @brand-danger;
+      }
+   }
+}
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar {
+   .widget {
+      background: #fff;
+      .box-shadow(0 1px 1px 0 rgba(0,0,0,.15));
+      padding: 30px;
+      margin-top: 30px;
+
+      &:first-child {
+         margin-top: 0;
+      }
+   }
+
+   .widget-inner > h3 {
+      margin: 0 0 15px;
+      font-family: @font-family-base;
+      font-size: 11px;
+      text-transform: uppercase;
+   }
+
+   .widget-inner ul,
+   .widget-inner ol {
+      margin: 0;
+      padding: 0 0 0 15px;
+   }
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info {
+   background: #fff;
+   border-top: 1px solid @gray-lighter;
+   text-align: center;
+   font-size: @font-size-small;
+   padding: 60px 0;
+}

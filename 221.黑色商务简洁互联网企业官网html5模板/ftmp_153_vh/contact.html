@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta charset="utf-8" />
+<title>Artefak</title>
+<link href="styles/reset.css" type="text/css" rel="stylesheet" />
+<link href="styles/style.css" type="text/css" rel="stylesheet" />
+<link href="styles/inner.css" rel="stylesheet" type="text/css" />
+<!--[if IE]> <script src="js/html5.js"></script>
+<![endif]-->
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	//=================================== MAIN MENU ===================================//
+	jQuery("ul.sf-menu").supersubs({ 
+	minWidth		: 12,		// requires em unit.
+	maxWidth		: 14,		// requires em unit.
+	extraWidth		: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+						   // due to slight rounding differences and font-family 
+	}).superfish();  // call supersubs first, then superfish, so that subs are 
+					 // not display:none when measuring. Call before initialising 
+					 // containing tabs for same reason.
+					 
+});
+</script>
+</head>
+
+<body>
+<div id="bodychild">
+	<div id="outercontainer">
+    	
+        <!-- HEADER -->
+        <div id="outerheader">
+            <header id="top">
+            	<div id="logo"><a href="index-2.html"><img src="images/logo.png" alt=""></a></div>
+                <section id="navigation">
+                    <nav>
+                        <ul id="topnav" class="sf-menu">
+                            <li><a href="index-2.html">Home</a></li>
+                            <li><a href="about.html">About</a>
+                                <ul>
+                                    <li><a href="about.html">About Page</a></li>
+                                    <li><a href="portfolio2.html">Portfolio Alternate</a></li>
+                                    <li><a href="element.html">Element</a></li>
+                                    <li><a href="single.html">Blog Detail</a></li>
+                                    <li><a href="archive.html">Archives</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li class="current"><a href="contact.html">Contact</a></li>
+                        </ul><!-- topnav -->
+                    </nav><!-- nav -->	
+                    <div class="clear"></div>
+                </section>
+                <div class="clear"></div>
+            </header>
+        </div>
+        <!-- END HEADER -->
+        
+        <!-- AFTER HEADER -->
+        <div id="outerafterheader">
+            <div id="afterheader">
+            	<section id="aftertheheader">
+                	“This can be your tagline or something you want...�?
+            	</section>
+            </div>
+        </div>
+        <!-- END AFTER HEADER -->
+        
+        <!-- BEFORE CONTENT -->
+        <div id="outerbeforecontent" class="inner">
+        	<div id="beforecontent">
+            	<section id="beforethecontent">
+                	<h1 class="pagetitle">Wanna Ask Something? <span class="colortext">Contact Us.</span></h1>
+                    <div class="pagedesc">Fusce at sapien sit amet mauris auctor ultricies nec et dui. Donec fermentum viverra tincidunt. Sed ut posuere enim. Suspendisse lacus urna, ultrices quis dapibus adipiscing, mattis sed velit. Nunc volutpat dapibus eros at vulputate. Praesent eleifend tincidunt pellentesque.</div>
+                </section>
+            </div>
+        </div>
+        <!-- END BEFORE CONTENT -->
+        
+        <!-- MAIN CONTENT -->
+        <div id="outermain">
+        	<section id="maincontent">
+               	<section id="content" class="positionleft">
+                	
+                   <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Jalan+Kemanggisan+Utama,+Jakarta,+Indonesia&amp;sll=37.0625,-95.677068&amp;sspn=46.092115,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Jalan+Kemanggisan+Utama,+Jakarta+Barat,+Jakarta,+Indonesia&amp;ll=-6.189793,106.7908&amp;spn=0.016639,0.034246&amp;z=14&amp;iwloc=A&amp;output=embed" style="width:640px; height:285px; border:0; margin:0 0 20px 0"></iframe>
+                    
+                     <div class="separator line"><div></div></div>
+                     
+                    <div id="contactform">
+                      <form id="contact" action="#">
+                        <fieldset>
+                          
+                          <div class="one_half firstcols">
+                              <label for="name" id="name_label">Name <span class="required">(required)</span></label>
+                              <input type="text" name="name" id="name"  value="" class="text-input" size="40" />
+                          </div>
+                          
+                          <div class="one_half lastcols">
+                              <label for="email" id="email_label">E-mail <span class="required">(required)</span></label>
+                              <input type="text" name="email" id="email"  value="" class="text-input" size="40" />
+                           </div>
+                           
+                          <div class="one_half firstcols">
+                              <label for="website" id="website_label">Website</label>
+                              <input type="text" name="website" id="website"  value="" class="text-input" size="40" />
+                          </div>
+                          
+                          <div class="one_half lastcols">
+                              <label for="subject" id="subject_label">Subject</label>
+                              <input type="text" name="subject" id="subject"  value="" class="text-input" size="40" />
+                          </div>
+                           
+                           <div class="clear"></div>
+                          
+                          <label for="msg" id="msg_label">Message <span class="required">(required)</span></label>
+                         <textarea cols="60" rows="15" name="msg" id="msg" ></textarea> <br class="clear" />
+                          <input type="submit" name="submit" class="butcontact" id="submit_btn" value="Send Message"/>
+                        </fieldset>
+                      </form>
+                      <br class="clear" />
+                      <span class="error" id="name_error">Please enter name !</span>
+                      <span class="error" id="email_error">Please enter email address !</span>
+                      <span class="error" id="email_error2">Please enter valid email address !</span>
+                      <span class="error" id="msg_error">Please enter message !</span>
+                    </div><!-- end contactform -->
+                     
+                    
+				</section>
+                <aside id="sidebar" class="positionright">
+                <ul>
+                    <li id="widget-search" class="widget-container">
+                        <form action="#" method="post" id="searchform">
+                        	<div><input type="text" id="s" value="Type search and hit enter..." onFocus="if (this.value == 'Type search and hit enter...')this.value = '';" onBlur="if (this.value == '')this.value = 'Type search and hit enter...';" /></div>
+                        </form>
+                    </li>
+                    <li class="widget-container">
+                        <h2 class="widget-title">Text Widget</h2>
+                        <div class="textwidget">
+                            <p>Flamboyan streets no. 39<br/>
+                            Building A Suite #501 - Northren Daam<br/>
+                            Your City name, your country 1111</p>
+                            
+                            <p>Telp: +800 123 456<br/>
+                            Fax: +800 234 567<br/>
+                            Website: <a href="http://www.cssmoban.com/">模板之家</a></p>
+                        </div>
+                    </li>
+                    <li class="widget-container">
+                        <h2 class="widget-title">Blog Categories</h2>
+                        <ul>
+                        	<li><a href="#">Photograhy Design</a></li>
+                            <li><a href="#">Wordpress Templates</a></li>
+                            <li><a href="#">Great Support</a></li>
+                        </ul>
+                    </li>
+                    <li id="widget-ads" class="widget-container">
+                       <div class="ads">
+                       	<a href="#"><img src="images/content/ads1.jpg" alt="" /></a>
+                        <a href="#"><img src="images/content/ads2.jpg" alt="" class="nomargin" /></a>
+                        <a href="#"><img src="images/content/ads3.jpg" alt="" /></a>
+                        <a href="#"><img src="images/content/ads4.jpg" alt="" class="nomargin" /></a>
+                       </div>
+                    </li>
+                </ul>
+				</aside>
+                <div class="clear"></div>
+            </section>
+        </div>
+        <!-- END MAIN CONTENT -->
+        
+        
+        <!-- FOOTER SIDEBAR -->
+        <div id="outerfootersidebar">
+        	<div id="footersidebarcontainer">
+            	<footer id="footersidebar">
+                
+            	<div id="footcol1" class="footcol">
+				<ul>
+					<li class="widget-container">
+                        <h2 class="widget-title">Text Widget</h2>
+                        <div class="textwidget">
+                        	<p>Pellentesque ac quam mauris, ut imperdiet augue. Pellentesque viverra, lorem eget lacinia luctus.</p>
+                            <span>Lacus magna malesuada dui, nec volutpat felis libero id ante. Fusce id suscipit arcu. </span>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            	<div id="footcol2"  class="footcol">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title">Categories</h2>
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                                <li><a href="#">Pellentesque tempus</a></li>
+                                <li><a href="#">Cras nec lacus sit amet leo</a></li>
+                                <li><a href="#">Donec facilisis lacinia pulvinar</a></li>
+                                <li><a href="#">Lacus magna malesuada volutpat</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            	<div id="footcol3"  class="footcol">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title">Latest Post</h2>
+                            <ul>
+                                <li><a href="#">Aenean nonummy hendrerit</a></li>
+                                <li><a href="#">Cum sociis natoque penatibus</a></li>
+                                <li><a href="#">Magnis dis parturient montes</a></li>
+                                <li><a href="#">Praesent vestibulum molestie</a></li>
+                                <li><a href="#">Fusce id suscipit arcu imperdiet</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            	<div id="footcol4" class="footcol">
+				<ul>
+					<li class="widget-container">
+                        <h2 class="widget-title">Get In Touch</h2>
+                        <p>Calvarey 121 Street # 45<br/>
+                        Telp: +800 123 456<br/>
+                        <a href="http://www.cssmoban.com/" class="colortext">www.cssmoban.com</a><br/>
+                        </p>
+                        <div id="sn">
+                        	<ul>
+                         		<li><a><span class="icon-img" style="background:url(images/social/facebook.png)"></span></a></li>
+                                <li><a><span class="icon-img" style="background:url(images/social/twitter.png)"></span></a></li>
+                                <li><a><span class="icon-img" style="background:url(images/social/linkedin.png)"></span></a></li>
+                                <li><a><span class="icon-img" style="background:url(images/social/youtube.png)"></span></a></li>
+                                <li><a><span class="icon-img" style="background:url(images/social/flickr.png)"></span></a></li>
+                            </ul>
+                        </div> 
+                    </li>
+                </ul>
+                </div>
+                <div class="clear"></div>
+                
+                </footer>
+            </div>
+        </div>
+        <!-- END FOOTER SIDEBAR -->
+        
+        <!-- FOOTER -->
+        <div id="outerfooter">
+        	<div id="footercontainer">
+            	<footer id="footer">Copyright &copy; 2013. All Rights Reserved . More Templates <a href="http://www.cssmoban.com/">模板之家</a></footer>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        
+        
+    </div>
+</div>
+
+
+</body>
+</html>

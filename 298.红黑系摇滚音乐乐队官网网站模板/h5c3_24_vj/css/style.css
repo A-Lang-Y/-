@@ -1,0 +1,305 @@
+/* base styles */
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background:none repeat scroll 0 0 #222;
+    color:#333;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-style:normal;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+img {
+    border:0 none;
+    margin:0;
+    vertical-align:top;
+}
+h3 {
+    color:#222;
+    font-size:34px;
+    font-weight:400;
+    letter-spacing:-1px;
+    line-height:1.2em;
+    margin:0;
+    padding:0 0 21px;
+    text-transform:uppercase;
+}
+h4 {
+    color:#FFF;
+    font-size:14px;
+    font-weight:400;
+    line-height:1.2em;
+    margin:0;
+    text-transform:uppercase;
+}
+h5 {
+    color: #be2a2f;
+    font-size: 15px;
+    line-height: 16px;
+    margin: 0 0 -2px;
+    padding: 0 0 16px;
+    text-transform: uppercase;
+}
+
+/* header section */
+header {
+    height:353px;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+    width:940px;
+
+    background: -moz-linear-gradient(#c3c3c3, #ffffff); /* FF 3.6+ */  
+    background: -ms-linear-gradient(#c3c3c3, #ffffff); /* IE10 */  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c3c3c3), color-stop(100%, #ffffff)); /* Safari 4+, Chrome 2+ */  
+    background: -webkit-linear-gradient(#c3c3c3, #ffffff); /* Safari 5.1+, Chrome 10+ */  
+    background: -o-linear-gradient(#c3c3c3, #ffffff); /* Opera 11.10 */  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c3c3c3', endColorstr='#ffffff'); /* IE6 & IE7 */  
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#c3c3c3', endColorstr='#ffffff')"; /* IE8+ */  
+    background: linear-gradient(#c3c3c3, #ffffff); /* the standard */ 
+}
+.header_img {
+    left:20px;
+    position:absolute;
+    top:19px;
+}
+.header_title {
+    background:none repeat scroll 0 0 #222;
+    color:#FFF;
+    font-size:17px;
+    font-weight:400;
+    height:35px;
+    left:20px;
+    line-height:38px;
+    padding:0 6px 0 8px;
+    position:absolute;
+    text-transform:uppercase;
+    top:139px;
+}
+.logo {
+    left:17px;
+    position:absolute;
+    top:192px;
+}
+
+/*navigation menu*/
+nav {
+    left:333px;
+    position:absolute;
+    top:0;
+    z-index:99;
+}
+nav ul,nav ul * {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+nav ul {
+    float:left;
+    line-height:1.0;
+    max-width:607px;
+}
+nav ul li {
+    background:url("../images/menu-divider.gif") no-repeat scroll 0 25px transparent;
+    float:left;
+    position:relative;
+}
+nav ul li:first-child {
+    background-color:transparent;
+}
+nav ul li a {
+    color:#222;
+    display:block;
+    font-size:19px;
+    font-weight:400;
+    height:70px;
+    line-height:70px;
+    margin:0 -2px 0 0;
+    overflow:hidden;
+    padding:0 11px 0 13px;
+    position:relative;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+nav ul li a:hover, nav ul li.active a {
+    background:#be2a2f;
+    color:#fff;
+    outline:0;
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/* main section */
+.wrap {
+    background-color:#E7E7E7;
+    margin:0 auto;
+    overflow:hidden;
+    width:940px;
+}
+#sidebar {
+    background-color:#FFF;
+    float:left;
+    padding:47px 12px 20px 20px;
+    width:301px;
+}
+#content {
+    float:left;
+    padding:42px 20px;
+    width:565px;
+}
+.widget {
+    margin-bottom:30px;
+    overflow:hidden;
+    width:100%;
+}
+.extra_menu {
+    overflow:hidden;
+    padding:0 0 15px;
+}
+.extra_menu li {
+    background:none;
+    margin:0 0 1px;
+    overflow:hidden;
+    padding:0;
+    vertical-align:top;
+    width:100%;
+}
+.extra_menu li a {
+    background:#222;
+    color:#fff;
+    display:block;
+    font-size:17px;
+    font-weight:700;
+    height:33px;
+    line-height:34px;
+    overflow:hidden;
+    padding:0 0 0 15px;
+    text-decoration:none;
+}
+.extra_menu li a:hover {
+    background:#be2a2f;
+}
+ul.artists {
+    list-style:none outside none;
+    margin:0;
+    overflow:hidden;
+    padding:0 0 10px;
+    width:100%;
+}
+ul.artists li {
+    background:none repeat scroll 0 0 transparent;
+    color:#be2a2f;
+    float:left;
+    font-size:13px;
+    line-height:18px;
+    padding:0 10px 20px 0;
+    width:140px;
+}
+ul.artists li .name a {
+    color:#be2a2f;
+    display:block;
+    font-size:15px;
+    font-weight:700;
+    text-align:center;
+    text-decoration:none;
+}
+.friends div a {
+    color:#be2a2f;
+    font-size:16px;
+    line-height:25px;
+    text-decoration:none;
+}
+ul.posts li {
+    background:none repeat scroll 0 0 transparent;
+    color:#222;
+    font-size:13px;
+    line-height:18px;
+    overflow:hidden;
+    padding:0 0 29px;
+    vertical-align:top;
+    width:100%;
+}
+ul.posts li img {
+    float:left;
+    margin:0 19px 0 0;
+}
+ul.posts li .date {
+    color:#222;
+    font-size:14px;
+    line-height:1.2em;
+    padding:8px 0 5px;
+    text-transform:uppercase;
+}
+ul.posts li h5 {
+    padding:0 0 12px;
+}
+ul.posts li h5 a {
+    color:#be2a2f;
+    text-decoration:none;
+}
+ul.posts li .description {
+    color:#222;
+    font-size:13px;
+    line-height:18px;
+    padding:0 0 8px;
+}
+ul.posts li .post-data {
+    color:#be2a2f;
+    font-size:11px;
+    line-height:18px;
+}
+.post-data a {
+    color:#be2a2f;
+    float:left;
+    padding:0 8px 0 0;
+    text-decoration:none;
+}
+ul.artists li .name a:hover,.friends div a:hover,.post-data a:hover {
+    text-decoration:underline;
+}
+
+/* footer section */
+footer {
+    margin:0 auto;
+    padding:33px 0 33px 20px;
+    position:relative;
+    width:940px;
+}
+.footer {
+    background:#222;
+    float:right;
+    height:31px;
+    overflow:hidden;
+    padding:9px 10px 0 18px;
+    width:auto !important;
+}
+.footer h4 {
+    float:left;
+    padding:5px 0 0;
+}
+.footer .social {
+    border:none;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0 0 0 9px;
+}
+.footer .social li {
+    float:left;
+    padding:0 0 0 2px;
+}
+footer p {
+    color:#FFF;
+    font-size:12px;
+    line-height:18px;
+    padding:11px 0 0;
+}
+footer p i a {
+    font-style:normal;
+    text-decoration:none;
+}
+footer p a {
+    color:#FFF;
+}

@@ -1,0 +1,343 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+   background: #f8f8f8;
+   overflow-x: hidden;
+   .hyphens();
+}
+
+a {
+   outline: none !important;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+figure {
+   max-width: 100%;
+}
+
+iframe,
+embed {
+   max-width: 100%;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+blockquote {
+   background: @brand-danger;
+   border: none;
+   padding: 30px;
+   margin: 0 0 10px;
+   color: #fff;
+   font-family: @headings-font-family;
+   border-radius: @border-radius-small;
+
+   p {
+      line-height: @line-height-base;
+      font-weight: 500;
+   }
+
+   a {
+      color: #fff;
+
+      &:hover {
+         color: #fff;
+      }
+   }
+
+   cite {
+      font-family: @font-family-base;
+      font-size: @font-size-base;
+      font-weight: normal;
+      display: block;
+
+      &:before {
+         content: "—";
+         margin-right: 10px;
+      }
+   }
+}
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter,
+.alignleft,
+.alignright,
+.alignnone {
+   margin-bottom: 10px; 
+   max-width: 100%;
+}
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; margin-right: 20px;}
+.alignright { float: right; margin-left: 20px;}
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+.wp-caption {
+   margin-bottom: 10px;
+}
+
+.wp-caption-text {
+   font-size: 12px;
+}
+
+.wp-caption,
+.sticky,
+.gallery-caption,
+.bypostauthor {
+   content: '';
+}
+
+/* ==========================================================================
+   Button
+   ========================================================================== */
+.btn {
+   outline: none !important;
+   font-size: 10px;
+   text-transform: uppercase;
+}
+
+.btn-link {
+   &:hover,
+   &:focus {
+      text-decoration: none;
+   }
+}
+
+.btn-coner {
+   border-radius: 30px;
+}
+
+/* ==========================================================================
+   Form
+   ========================================================================== */
+.form-control {
+   .box-shadow(none) !important;
+
+   &:focus {
+      border-color: #ccc;
+   }
+}
+
+.input-group-btn>.btn {
+   padding-top: 9px;
+   padding-bottom: 9px;
+}
+
+
+/* ==========================================================================
+   carousel
+   ========================================================================== */
+.carousel-control {
+   .opacity(0);
+   .square(40px);
+   .transition( all .5s );
+   top: 50%;
+   margin: -20px 50px 0;
+   border-radius: 50%;
+   background: #000;
+   background-image: none !important;
+   line-height: 40px;
+
+   .icon-next,
+   .icon-prev {
+      .square(auto);
+      position: static;
+      margin: 0;
+      font-size: 18px;
+      font-family: 'Glyphicons Halflings';
+   }
+
+   .icon-next {
+      &:before {
+         content: '\e080';
+      }
+   }
+
+   .icon-prev {
+      &:before {
+         content: '\e079';
+      }
+   }
+
+   .carousel:hover & {
+      .opacity(.5);
+      margin: -20px 15px 0;
+
+      &:hover {
+         .opacity(.9);
+      }
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .carousel-indicators {
+      bottom: 10px;
+   }
+}
+
+.carousel-indicators {
+   .text-overflow();
+
+   li {
+      .transition( all .5s );
+      margin: 1px 2px !important;
+   }
+
+   .active {
+      .square(10px);
+   }
+}
+
+.carousel-comments-link,
+.carousel-comments-link + p {
+   display: none;
+}
+
+.carousel-post-title {
+   .text-overflow();
+   margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Nivo lightbox
+   ========================================================================== */
+.nivo-lightbox-overlay {
+   .transition(.5s);
+   
+   &:before {
+      content: "";
+      background: #000;
+      position: fixed;
+      top: 0;
+      .square(100%);
+      opacity: .6;
+   }
+}
+
+.nivo-lightbox-wrap {
+   bottom: auto;
+   top: 50%;
+   left: 50%;
+   width: 85%;
+   .translate(-50%,-50%);
+
+   @media(min-width: @screen-lg) {
+      width: ~'calc(70%)';
+   }
+}
+
+.nivo-lightbox-content.nivo-lightbox-loading { 
+   background: url(../img/gallery-loading.gif) no-repeat 50% 50%; 
+}
+
+.nivo-lightbox-nav {
+   position: absolute;
+   top: 50% !important;
+   width: 85px;
+   height: 60px;
+   margin-top: -30px;
+   line-height: 0;
+   color: transparent !important; 
+   .opacity(.5);
+
+   &:before {
+      font-family: 'Glyphicons Halflings';
+      color: #fff !important;
+      font-size: 60px; 
+      position: absolute;
+      color: transparent;
+      top: 50%;
+
+      @media(max-width: @screen-xs-max) {
+         font-size: 30px;
+      }
+   }
+
+   &:hover {
+      opacity: 1;      
+   }
+}
+
+.nivo-lightbox-prev {
+   &:before { 
+      content: '\e079';
+      left: 50%;
+      margin-left: -30px;
+   }
+}
+
+.nivo-lightbox-next {
+   right: 0;
+   &:before {
+      content: '\e080';
+      right: 50%; 
+      margin-right: -30px;
+   }
+}
+
+.nivo-lightbox-close {
+   color: transparent !important;
+   right: 0;
+   opacity: .5;
+
+   .admin-bar & {
+      margin-top: 32px;
+   }
+
+   &:before {
+      font-size: 30px;
+      color: #fff !important;
+      font-family: 'Glyphicons Halflings';
+      content: '\e014';
+   }
+
+   &:hover {
+      opacity: 1;
+   }
+}
+
+.nivo-lightbox-title-wrap {
+   bottom: -1px;
+}
+
+.nivo-lightbox-title {
+   font: 14px/20px @font-family-sans-serif;
+   color: #fff;
+   padding: 7px 15px;
+   border-radius: @border-radius-base;
+   display: inline-block;
+   background: rgba(0, 0, 0, 0.5);
+}
+
+.nivo-lightbox-image {
+   height: auto !important;
+   line-height: auto !important;
+ 
+   img {
+      border-radius: @border-radius-base;
+   }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.3),
+       (-o-min-device-pixel-ratio: 2.6/2),
+       (min--moz-device-pixel-ratio: 1.3),
+       (min-device-pixel-ratio: 1.3),
+       (min-resolution: 1.3dppx) {
+
+   .nivo-lightbox-content.nivo-lightbox-loading { 
+      background-image: url(~'../img/gallery-loading@2x.gif'); 
+      background-size: 32px 32px;
+   }
+}

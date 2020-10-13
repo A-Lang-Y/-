@@ -1,0 +1,8 @@
+<?php
+
+$scheme[ cloudfw_id_for_sequence( $scheme, $number ) ] = array(
+    'type'          =>  'section',
+    'check_empty'   =>  true,
+    'title'         =>  __('Widgets','cloudfw'),
+    'data'          =>  array() 
+);

@@ -1,0 +1,111 @@
+* { margin: 0; padding: 0; outline: 0; }
+
+body, html { height: 100%; }
+
+body {
+    font-size: 12px;
+    line-height: 20px;
+    font-family: arial, sans-serif;
+    color: #9c9c9c;
+    background: url(images/body.png) repeat 0 0; 
+    min-width: 920px;
+}
+
+a { color: #0252aa; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+article, aside, details, footer, header, menu, nav, section { display: block; }
+input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
+textarea { overflow: auto; }
+
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+.left, .alignleft { float: left; display: inline; }
+.right, .alignright { float: right; display: inline; }
+
+h2 { font-size: 26px; line-height: 34px; color: #fff; font-family: georgia, arial, helvetica, serif; font-style: italic; }
+h3 { font-size: 22px; line-height: 32px; color: #747474; font-family: georgia, arial, helvetica, serif; font-weight: normal; font-style: italic; }
+h4 { font-size: 19px; line-height: 20px; color: #fff; font-family: georgia, arial, helvetica, serif; font-weight: normal; }
+.shell { width: 920px; margin: 0 auto; }
+
+header { background-color: #141414; border-bottom: 1px solid #006e86; height: 90px; }
+header .shell { position: relative; }
+#logo { width: 324px; position: absolute; top: 36px; left: 0; font-size: 0; line-height: 0; }
+#logo a { height: 64px; display: block; background: url(images/logo.png) no-repeat 0 0; text-indent: -4000px; }
+
+/* navigation */
+#navigation { text-align: right; padding-top: 34px; font-size: 16px; font-family: georgia, arial, helvetica, serif; padding-right: 16px; }
+#navigation a { margin-left: 38px; color: #fff; }
+#navigation a:hover,
+#navigation a.active  { text-decoration: none; color: #006e86; }
+/* end of navigation */
+
+/* slider */
+.slider-section { background: #009bb9 url(images/slider-section.png) repeat-x center 0; min-height: 399px; }
+.slider-holder { background: url(images/slider-holder.png) repeat 0 0; border-top: 1px solid #568993; width: 900px; height: 380px; padding: 9px; position: relative; bottom: -30px; }
+.slider-holder span.slider-shadow { background: url(images/slider-shadow.png) no-repeat 0 0; width: 920px; height: 37px; position: absolute; bottom: -37px; left: 0; font-size: 0; line-height: 0; text-indent: -4000px; }
+
+.flexslider { width: 900px; height: 380px; overflow: hidden: }
+.flexslider ul.slides { list-style: none; list-style-position: outside; position: relative; }
+.flexslider ul.slides li { width: 900px; height: 380px; float: left; position: relative; }
+.flexslider ul.slides li img { width: 900px; height: 380px; }
+.flexslider ul.slides li .slide-cnt { width: 336px; padding: 30px 26px 20px 26px; background: url(images/slide-cnt.png) repeat 0 0; position: absolute; top: 41px; right: 47px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px;}
+.flexslider ul.slides li .slide-cnt h3 { color: #eae8de; font-weight: normal; line-height: 22px; padding-bottom: 14px;  }
+.flexslider ul.slides li .slide-cnt p { color: #39daf5; font-size: 14px; line-height: 22px; padding-bottom: 16px; }
+.flexslider ul.slides li .slide-cnt a.slider-btn { width: 115px; height: 33px; line-height: 33px; text-align: center; padding: 0 44px 0 22px; font-size: 17px; color: #0d0d0d; display: block; font-weight: bold; 
+text-shadow: rgba(255,255,255,0.4) 1px 1px 2px; background: url(images/slider-btn.png) no-repeat 0 0; }
+.flexslider ul.slides li .slide-cnt a.slider-btn:hover { color: #fff; text-decoration: none; text-shadow: rgba(0,0,0,0.4) 1px 1px 2px; }
+/* end of slider */
+
+.main { padding-top: 68px; padding-bottom: 40px; }
+/* heading */
+.heading { position: relative; padding-left: 135px; padding-top: 39px; padding-bottom: 51px; }
+.heading span.ico { width: 108px; height: 136px; background: url(images/ico.png) no-repeat 0 0; position: absolute; left: 10px; top: 0; }
+.heading h3 { padding-bottom: 16px; }
+/* end heading */
+
+/* cols */
+.cols { padding-bottom: 36px; }
+.cols .col { width: 215px; float: left; }
+.cols .col + .col { padding-left: 20px; }
+.cols .col a img { background: url(images/bg-img.png) repeat 0 0; padding: 9px 0 10px; border-top: 1px solid #6e6e6e; margin-bottom: 8px; }
+.cols .col h4 { line-height: 19px; padding-bottom: 14px; }
+.cols .col h4 a { color: #fff; }
+.cols .col p { line-height: 18px; }
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/* end of cols */
+
+/* content */
+.content { width: 678px; float: left; padding-left: 3px;  }
+.content h4 { padding-bottom: 15px; }
+.content p { padding-bottom: 20px; }
+.content p:last-child { padding-bottom: 0; }
+.content .box { background: url(images/box.png) repeat 0 0; padding: 20px 30px 20px 27px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; }
+/* end of content */
+
+/* aside */
+aside { width: 211px; float: right; }
+aside .widget h4 { padding-bottom: 18px; }
+aside .widget ul { list-style: none; list-style-position: outside; }
+aside .widget ul li { background: url(images/plus-ico.png) no-repeat 0 7px; padding-left: 14px; line-height: 22px; }
+aside .widget ul li a { color: #39daf5; }
+/* end of aside */
+
+/* footer */
+html, body { height: 100%; }
+#wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -106px; }
+#footer, #footer-push { height: 106px; }
+
+#footer { background: url(images/footer.png) repeat-x 0 0; }
+.footer-top  { height: 70px; line-height: 68px; position: relative; }
+.footer-top .footer-nav { font-size: 16px; font-family: georgia, arial, helvetica, serif; }
+.footer-top .footer-nav a { color: #fff; margin-right: 39px; }
+.footer-top .footer-nav a:hover { color: #0090af; text-decoration: none; }
+.footer-top .footer-logo { width: 192px; position: absolute; top: 14px; right: 8px; font-size: 0; line-height: 0; }
+.footer-top .footer-logo a { height: 48px; background: url(images/footer-logo.png) no-repeat 0 0; display: block; text-indent: -4000px; }
+#footer .copy { height: 20px; padding: 12px 0 4px 0; }
+#footer .copy p { color: #010101; font-size: 11px; }
+#footer .copy p a { color: #013e4b; text-decoration: underline; }
+#footer .copy p a:hover { text-decoration: none; }
+/* end of footer */

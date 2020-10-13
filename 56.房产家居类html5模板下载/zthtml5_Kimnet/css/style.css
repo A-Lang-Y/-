@@ -1,0 +1,102 @@
+/*
+Free Basic Html5 Responsive Templates
+Author: Kimmy
+Author URI: http://www.cssmoban.com/
+*/
+/* ---------------------Reset----------------------- */
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}table, table td {padding:0;border:none;border-collapse:collapse;}img {vertical-align:top;}embed {vertical-align:top;}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+input, textarea {border:0; padding:0; margin:0; outline: 0;}
+iframe {border:0; margin:0; padding:0;}
+input, textarea, select {margin:0; padding:0px;}
+
+/* -------------------------------------------- */
+/* ------------------Font---------------------- */
+/* -------------------------------------------- */
+@font-face {
+font-family: 'BebasNeueRegular';
+src: url('../font/BebasNeue-webfont.eot');
+src: url('../font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font/BebasNeue-webfont.woff') format('woff'),
+url('../font/BebasNeue-webfont.ttf') format('truetype'),
+url('../font/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+/* -------------------------------------------- */
+/* ------------------Style---------------------- */
+/* -------------------------------------------- */
+html, body {width:100%; padding:0; margin:0;}
+body {background: #23120B url(../images/bg.jpg) no-repeat top center;color: #555555;font: 14px/25px Arial,Tahoma,Century gothic, sans-serif;}
+
+/*-------------------------*/
+a{color: #392E2B;text-decoration: none;}
+a:hover {text-decoration: none;}
+
+a.button, input.button {	cursor: pointer;	color: #808080;	line-height: 12px;	font-family: Arial, Helvetica, sans-serif;	font-size: 12px;	font-weight: bold;	background: #E4E4E4;	border:1px solid #DFDFDF;}
+a.button {	display: inline-block;	text-decoration: none;	padding: 6px 12px 6px 12px;}
+input.button {	margin: 0;	border: 0;	height: 24px;	padding: 0px 12px 0px 12px;}
+a.button:hover, input.button:hover {background: #392E2B;color:#ffffff;}
+
+/*-------------header */
+header {height: 90px;width:100%; background-color:#201A1A;}
+
+header #logo {margin-top:10px;}
+
+header #search-box {position: relative;width: 300px;margin-top:30px;}
+header #search-form {height: 25px;border:3px solid #423531;;background-color: #fff;overflow: hidden;}
+header #search-text {font-size: 14px;color: #ddd;background: transparent;}
+header #search-box input[type="text"] {width: 80%;padding: 5px 0 5px 1em;color: #333;outline: none;}
+header #search-button {position: absolute;top: 0;right: 0;height: 30px;width: 80px;font-size: 14px;color: #fff;text-align: center;line-height: 26px;background-color: #423531;cursor: pointer;border:0px;}
+
+/*------------menu */
+nav {width:100%;height: 37px;margin-bottom: 50px;padding: 0px 10px;background-color:#392E2B;border:1px solid #423531;}
+nav ul { width:960px; list-style: none;margin: 0 auto;padding: 0;}
+nav ul li {position: relative;float: left;padding: 6px 5px 0px 5px}
+nav ul li:hover {}
+nav ul li a {font-size: 13px; line-height:14px;color: #C9B5AF;display: block;padding: 6px 10px 6px 10px;margin-bottom: 5px;z-index: 6;position: relative;}
+nav ul li:hover a{color:#ffffff;}
+
+/*-------------content */
+#content {}
+
+.block {padding: 5px 0px;background:#ffffff;}
+
+.main-content{}
+.main-content article{margin: 20px 0;overflow:hidden; position:relative; background-color:#FAFAFA;padding:10px;border:1px solid #DDDDDD;}
+.main-content .heading h2{font-family: 'BebasNeueRegular'; font-size:25px; line-height:25px; text-transform:uppercase; font-weight:normal;}
+.main-content .heading .info{font-size:12px; padding:0px 10px; border-top:1px solid #DDDDDD;border-bottom:1px solid #DDDDDD;}
+.main-content .content{}
+.main-content .content img{float:left; margin:3px 30px 0px 0; border:#BDBDBD 5px solid;}
+.main-content .footer{}
+.main-content .footer .more{float:right;}
+.main-content .footer .more a{ text-decoration:none;}
+
+.sidebar section{margin-bottom: 20px;}
+.sidebar .heading{font-family: 'BebasNeueRegular';color:#ffffff; background:#392E2B; font-size:22px; text-transform:uppercase; padding: 12px 20px 9px 20px;}
+.sidebar .content{padding:15px;background-color:#FAFAFA; border:1px solid #DDDDDD;}
+.sidebar .content img{float:left; margin:5px; border:#BDBDBD 5px solid;}
+
+.featured{width:100%; margin-bottom: 20px;}
+
+ul {margin:0; padding:0;list-style-image:none;}
+ul.list li {padding:0px 0 5px 12px; line-height:25px; background:url(../images/marker-1.gif) 0 11px no-repeat;}
+ul.list li a { font-size:14px; color:#555555; line-height:25px;}
+ul.list li a:hover {color:#C9B5AF; text-decoration:none;}
+
+/*------------footer */ 
+footer {padding: 20px 10px; background:#392E2B;margin-top:50px;border:1px solid #423531;}
+footer .heading{font-family: 'BebasNeueRegular';color:#ffffff; padding-bottom:5px;font-size:25px; font-weight:normal; text-transform:uppercase;}
+footer .content{color:#ffffff;}
+footer .content img{float:left; margin:5px; border:#ffffff 5px solid;}
+footer a{color:#C9B5AF;text-decoration:underline;}
+footer ul {margin:0; padding:0;list-style-image:none;}
+footer ul li { list-style:circle;margin-left:20px;}
+footer ul li a { font-size:14px; color:#ffffff;text-decoration:none;}
+footer ul li a:hover {color:#C9B5AF; text-decoration:none; cursor:pointer;}
+
+/*-------------copyright*/
+#copyright{display:inline-block; width:100%; text-align: center; background:#201A1A;padding:8px 0px;color:#ffffff;}
+#copyright a{color:#C9B5AF; text-decoration:underline;}
+#copyright a:hover{text-decoration:none;}

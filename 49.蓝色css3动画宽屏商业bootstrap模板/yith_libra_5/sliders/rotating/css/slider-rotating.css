@@ -1,0 +1,161 @@
+.rm_wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+.rm_container {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.rm_container h2 {
+    background: url("../images/lines.png") repeat scroll left top transparent;
+    bottom: 10%;
+    color: #000000;
+    font-size: 36px;
+    padding: 20px 30px;
+    position: absolute;
+    right: 0;
+    text-shadow: 1px 0 1px #FFFFFF;
+    text-transform: uppercase;
+}
+.rm_container ul {
+    height:100%;
+    width:100%;
+    margin:0;
+}
+.rm_container ul li {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-right:2.5641025641025641025641025641026%;
+}
+.rm_container ul li img {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.rm_container ul li a { display: block }
+
+.rm_mask_right, .rm_mask_left {
+    -moz-transform: rotate(-3deg);
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: -30px;
+    height: 110px;
+    left: 0;
+    position: absolute;
+    width: 530px;
+}
+.rm_mask_right {
+    -moz-transform: rotate(3deg);
+    left: auto;
+    right: 0;
+}
+.rm_corner_right, .rm_corner_left {
+    -moz-transform: rotate(45deg);
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: 0;
+    height: 100px;
+    left: -65px;
+    position: absolute;
+    width: 200px;
+}
+.rm_corner_right {
+    -moz-transform: rotate(-45deg);
+    left: auto;
+    right: -65px;
+}
+.rm_nav a {
+    cursor: pointer;
+    height: 87px;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    margin-top: -43px;
+    width: 38px;
+}
+.rm_nav a:hover {
+    opacity: 1;
+}
+.rm_nav a.rm_next {
+    background: url("../images/next.png") no-repeat scroll left top transparent;
+    right: 0px;
+}
+.rm_nav a.rm_prev {
+    background: url("../images/prev.png") no-repeat scroll left top transparent;
+    left: 0px;
+}
+.rm_controls {
+    bottom: 0px;
+    height: 22px;
+    position: absolute;
+    right: 70px;
+    z-index:10;
+}
+.rm_controls a {
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    height: 22px;
+    line-height: 20px;
+    opacity: 0.7;
+    padding-left: 24px;
+    text-transform: uppercase;
+    text-indent: -9999px;
+}
+.rm_controls a:hover {
+    opacity: 1;
+}
+.rm_controls a.rm_play {
+    background: url("../images/small_play.png") no-repeat scroll left center transparent;
+    display: none;
+}
+.rm_controls a.rm_pause {
+    background: url("../images/small_pause.png") no-repeat scroll left center transparent;
+}
+.footer {
+    background: none repeat scroll 0 0 #000000;
+    bottom: 0;
+    font-size: 13px;
+    height: 20px;
+    left: 0;
+    opacity: 0.9;
+    padding-bottom: 5px;
+    position: fixed;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 4;
+}
+.footer a {
+    color: #DDDDDD;
+    float: right;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    text-shadow: 1px 1px 1px #000000;
+}
+.footer a:hover {
+    color: #FFFFFF;
+}
+.footer a span {
+    font-weight: bold;
+}
+.footer a.left {
+    float: left;
+}
+#primary .slider.rotating {
+    float: none;
+    margin-right: 0 !important;
+    display: block;
+}
+#primary .slider.rotating.aligncenter {
+    margin:0 auto !important;
+}
+#primary .slider.rotating.alignright {
+    float:right !important;
+}
+#primary .slider.rotating.alignleft {
+    float:left !important;
+}
+
+#header .slider.rotating { margin-top: 20px; border-top: 1px solid #223d5a; padding-top: 40px; padding-bottom: 30px; }
+#header .rm_wrapper.back-color .slider.rotating { border: none; }

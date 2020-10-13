@@ -1,0 +1,258 @@
+/*
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+*/ 
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Belgrano', serif;
+	font-size:14px;
+	background: #dedede;
+	margin: 0;
+	padding: 0;
+	color: #656565;
+	text-shadow:0 0px, 1px 1px #FFFFFF;
+}
+a img { 
+	border: none;
+}
+a:link {
+	color: #a88800;
+	text-decoration: underline; 
+}
+a:visited {
+	color: #a88800;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	color: #a88800;
+	text-decoration: none;
+}
+h1 {
+	font-size:30px;
+	color:#363636;
+	font-family: 'Lobster', sans-serif;
+	padding: 0 0 10px 0;
+	text-shadow: 0px 0px, 1px 2px #ffffff;
+}
+h2 {
+	font-size:30px;
+	color:#363636;
+	font-family: 'Lobster', sans-serif;
+	padding: 0 0 10px 0;
+	text-shadow: 0px 0px, 1px 2px #ffffff;
+}
+p {
+	line-height:130%;
+}
+header {
+	height:424px;
+	background:url(../images/headerBackground.jpg) repeat-x;
+}
+.headerWrapper {
+	width:960px;
+	margin:0 auto;
+}
+.logo {
+	position:relative;
+	top:86px;
+	float:left;
+}
+.logo2 {
+	display:none;
+}
+.headerPic {
+	float:right;
+	padding:20px 0 0 0;
+}
+section {
+	width:960px;
+	margin:0 auto;
+	padding-bottom:20px;
+}
+.mainContent {
+	float: right; 
+	width: 589px;
+	padding:20px 0 20px 0;
+}
+.mainContent img {
+	margin:20px 0;
+}
+.sidebar1 { 
+	margin: 0 690px 0 0;
+	padding:20px 0 20px 0;
+}
+.sidebar1 li {
+	border-bottom: 1px dotted #656565;
+    box-shadow: 0 1px #ffffff;
+	background:url(../images/p.png) no-repeat left 13px;
+	list-style-type:none;
+	padding:10px 0;
+}
+.sidebar1 li a {
+	color:#656565;
+	padding-left:20px;
+	text-decoration:none;
+}
+footer {
+	text-align: center;
+	background:#363636;
+}
+footer p {
+	padding:40px 0;
+	text-shadow:none;
+	color:#878787;
+}
+.picStyle {
+	border-radius:10px;
+	box-shadow: 3px 3px 2px 2px #696969;
+	border:1px solid #ece7d3;
+}
+.horSeparator {
+	border-bottom: 1px dotted #656565;
+    box-shadow: 0 1px #ffffff;
+	margin:20px 0;
+}
+button {
+	border-radius:10px;
+	padding:5px 20px;
+	background:#363636;
+	color:#e5c02d;
+	text-transform:uppercase;
+	font-style:italic;
+	border:0px;
+	cursor:pointer;
+	margin:10px 0;
+	font-size:18px;
+	box-shadow: 2px 2px 0px 0px #ffffff;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+/**************************/
+/*********************************Begin main menu****************************************/
+/**************************/
+nav {
+	position:relative;
+	top:-37px;
+}
+#navlist {
+	padding: 3px 0;
+	margin-left: 0;
+	font-family: 'Lobster', sans-serif;
+}
+#navlist li {
+	list-style: none;
+	margin: 0;
+	display: inline;
+}
+#navlist li a {
+	padding: 4px 10px;
+	margin-left: 3px;
+	border-bottom: none;
+	background: #363636;
+	text-decoration: none;
+	text-shadow: none;
+	font-size:24px;
+	border-radius:5px 5px 0 0;
+}
+#navlist li a:link { 
+	color: #e8c637; 
+}
+#navlist li a:hover {
+	color: #363636;
+	background: #dedede;
+	border-color: #227;
+}
+#navlist li a#current {
+	background: #dedede;
+	color:#363636;
+}
+/**************************/
+/*********************************End main menu****************************************/
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	section {
+		width: 95%;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	header {
+		height:132px;
+		background:url(../images/headerBackground2.jpg) repeat-x;
+	}
+	.headerWrapper {
+		width:auto;
+		margin:0 auto;
+	}
+	.logo {
+		position:relative;
+		top:-13px;
+		float:none;
+	}
+	.headerPic {
+		display:none;
+	}
+	.mainContent {
+		float: none; 
+		width: auto;
+		padding:50px 0 20px 0;
+	}
+	.sidebar1 { 
+		margin: 0 0 0 0;
+		padding:20px 0 20px 0;
+	}
+	nav {
+		position:relative;
+		top:-37px;
+		padding-left:170px;
+	}	
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	.logo {
+		display:none;
+	}
+	.logo2 {
+		display:block;
+		position:relative;
+		top:10px;
+		float:none;
+	}
+	nav {
+		position:relative;
+		top:-30px;
+		padding-left:0px;
+	}	
+	#navlist li a {
+		padding: 2px 5px;
+		margin-left: 3px;
+		border-bottom: none;
+		background: #363636;
+		text-decoration: none;
+		text-shadow: none;
+		font-size:20px;
+		border-radius:5px 5px 0 0;
+	}
+	.mainContent {
+		padding:0px 0 20px 0;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/

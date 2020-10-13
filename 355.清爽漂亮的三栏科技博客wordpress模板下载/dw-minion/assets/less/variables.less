@@ -1,0 +1,213 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+@black:                 #000;
+@gray1:                 #111;  
+@gray2:                 #222;
+@gray3:                 #333;
+@gray4:                 #444;
+@gray5:                 #666;
+@gray6:                 #999;
+@gray7:                 #aaa;
+@gray8:                 #ddd;
+@gray9:                 #e5e5e5;
+@gray10:                #f5f5f5;
+@white:                 #fff;
+
+// Accent colors
+// -------------------------
+@primary-color:         #7cc576;
+
+
+// Layout values
+// --------------------------------------------------
+
+// layout gutter 
+@layoutGutterWidth:                 40px;
+@layoutGutterWidth767:              20px;
+
+// side header
+@sideHeaderHeightTouch:             50px;
+@sideHeaderHeightNoTouch:           40px;
+
+// secondary
+@siteNavWidth:                    200px;
+ 
+// side content
+@secondaryWidth:                  300px;
+
+
+// Scaffolding 
+// -------------------------
+@bodyBackground:        #fff;
+@pageInnerBackground:   @white;
+@textColor:             @gray5;
+
+
+// Links
+// -------------------------
+@linkColor:             @gray3;
+@linkColorHover:        @primary-color;
+
+
+// Typography
+// -------------------------
+@sansFontFamily:        'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+@baseFontSize:          15px;
+@baseFontFamily:        @sansFontFamily;
+@baseLineHeight:        25px;
+
+@headingsFontFamily:    'Roboto Slab', serif; 
+@headingsFontWeight:    700;
+@headingsColor:         @gray3;
+
+
+// Component sizing 
+// -------------------------
+
+@fontSizeLarge:         18px;
+@fontSizeSmall:         12px;
+
+@lineHeightSmall:       20px;
+
+@paddingLarge:          10px 25px; 
+@paddingSmall:          2px 10px;
+
+@baseBorderRadius:      2px;
+@borderRadiusLarge:     4px;
+@borderRadiusSmall:     1px;
+
+// Buttons 
+// -------------------------
+@btnBackground:                     @linkColor;
+@btnBackgroundHover:                @linkColorHover;
+
+@btnPrimaryBackground:              #1abc9c;
+
+@btnInfoBackground:                 #3498db;
+
+@btnSuccessBackground:              @primary-color;   
+
+@btnWarningBackground:              #f1c40f;
+
+@btnDangerBackground:               #e74c3c;
+
+@btnInverseBackground:              #34495e;
+
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Z-index master list
+// -------------------------
+@zindex0:               1000;
+@zindex1:               1010;
+@zindex2:               1020;
+@zindex3:               1030;
+@zindex4:               1040;
+@zindex5:               1050;
+
+
+// Font awesome
+// -------------------------
+@FontAwesomePath:    "../inc/font-awesome/font";
+
+
+// Input placeholder text color
+// -------------------------
+@placeholderText:         @gray6;
+
+
+// Hr border color
+// -------------------------
+@hrBorder:                @gray9;
+
+
+// Horizontal forms & lists
+// -------------------------
+@horizontalComponentOffset:       180px;
+
+
+// Tables
+// -------------------------
+@tableBackground:                   transparent; // overall background-color
+@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackgroundHover:              #f5f5f5; // for hover
+@tableBorder:                       @gray9; // table and cell border
+
+
+// Forms
+// -------------------------
+@inputBackground:               @white;
+@inputBorder:                   @gray9;
+@inputBorderRadius:             @baseBorderRadius;
+@inputDisabledBackground:       @gray9;
+@formActionsBackground:         @gray10;
+@inputHeight:                   @baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+
+
+// Form states and alerts
+// -------------------------
+@warningText:             #c09853;
+@warningBackground:       #fcf8e3;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #b94a48;
+@errorBackground:         #f2dede;
+@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+
+@successText:             #468847;
+@successBackground:       #dff0d8;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                #3a87ad;
+@infoBackground:          #d9edf7;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+
+// GRID
+// --------------------------------------------------
+
+// Default 940px grid
+// -------------------------
+@gridColumns:             12;
+@gridColumnWidth:         60px;
+@gridGutterWidth:         20px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+// 1200px min
+@gridColumnWidth1200:     70px;
+@gridGutterWidth1200:     30px;
+@gridRowWidth1200:        (@gridColumns * @gridColumnWidth1200) + (@gridGutterWidth1200 * (@gridColumns - 1));
+
+// 768px-979px
+@gridColumnWidth768:      42px;
+@gridGutterWidth768:      20px;
+@gridRowWidth768:         (@gridColumns * @gridColumnWidth768) + (@gridGutterWidth768 * (@gridColumns - 1));
+
+
+// Fluid grid
+// -------------------------
+@fluidGridColumnWidth:    percentage(@gridColumnWidth/@gridRowWidth);
+@fluidGridGutterWidth:    percentage(@gridGutterWidth/@gridRowWidth);
+
+// 1200px min
+@fluidGridColumnWidth1200:     percentage(@gridColumnWidth1200/@gridRowWidth1200);
+@fluidGridGutterWidth1200:     percentage(@gridGutterWidth1200/@gridRowWidth1200);
+
+// 768px-979px
+@fluidGridColumnWidth768:      percentage(@gridColumnWidth768/@gridRowWidth768);
+@fluidGridGutterWidth768:      percentage(@gridGutterWidth768/@gridRowWidth768);
+

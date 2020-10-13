@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="eng">  
+	
+	<head>
+	<title>婚庆企业html5网站模板 - </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<!-- GOOGLE FONTS: Oswald and Arimo -->
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic|Oswald:400,300,700|Pinyon+Script' rel='stylesheet' type='text/css' />
+
+	<!-- INCLUDE jQuery -->	
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<!-- INCLUDE pretty photo plugin -->
+		<script src="js/jquery.prettyPhoto.js"></script>
+	
+	<!-- Include the contact form script-->
+		<script type="text/javascript" src="js/jquery.contact.js"></script>
+
+	<!-- The STYLESHEET Link-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<!-- The PrettyPhoto Link-->
+		<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+
+	</head>
+
+	<!-- The HTML5 SHIV - make the HTML5 recognizable by older versions of Internet Explorer -->
+		<!--[if lt IE 9]>
+			<script src="dist/html5shiv.js"></script>
+		<![endif]-->
+
+	<!-- prettyphoto plugin-->	
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+		    /* calling the pretty photo plugin */
+		    $("a[rel^='prettyPhoto']").prettyPhoto({
+		    	social_tools:''
+		    });
+		});
+		</script>
+
+	<!-- Initialize the ToolTip plugin -->
+		<script src="js/miniTip.js"></script>
+		<script>
+		  $(function() {
+			  $('.tip').miniTip({
+			  	'contentAttribute'      : 'data-tip',
+			    'className'             : 'gray',
+			    'offset'                : 20,
+			    'showAnimateProperties' : {'top': '+=20'},
+			    'hideAnimateProperties' : {'top': '-=20'},
+			    'offset'				: 35,
+			    
+			    'onLoad'                : function(element, tooltip) {
+			                                $(element).animate({'opacity': 1}, '350');
+
+			                            },
+			    'onHide'                : function(element, tooltip) {
+			                                $(element).animate({'opacity': 1}, '250');
+
+			                            }
+		 	});  
+	 	});
+		</script>
+
+<!--[if lte IE 9]> <body class="ie"> <![endif]-->
+<!--[if !(IE)]><!--> 
+<body> 
+<!--<![endif]-->
+	<div class="main-bg"><!-- the div that holds the main background -->
+
+<!--========================================================================================================================
+    ========================================================================================================================
+	=======================================================THE HEADER ======================================================
+	======================================================================================================================== -->
+
+		<header> <!-- the header -->
+
+			<!-- THE LOGO -->
+			<a class="logo">Dave&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		Kate <span>are getting married</span></a><!-- /.logo -->
+			
+			<!-- THE NAVIGATION -->
+			<nav> <!-- the navigation -->
+				
+				<!-- LEFT HAND SIDE NAVIGATION -->
+				<ul class="fl-left mainnav"> <!-- the left menu -->
+					<li><a href="index.html">Home</a>
+						<ul>
+                            <li><a href="index.html">Home Page 1 - half width 
+							slider</a></li>
+                            <li><a href="index_2.html">Home Page 2 - Full Width 
+							Slider</a></li>
+                            <li><a href="index_3.html">Home Page 3 - Full Page 
+							Slider</a></li>
+                        </ul>
+					</li>
+					<li><a href="single.html" class="current">Templates</a>
+						<ul>
+                            <li><a href="full-width.html">Full Width Page</a></li>
+                            <li><a href="single.html">Page With Right Sidebar</a></li>
+                            <li><a href="single-left.html">Page With Left 
+							Sidebar</a></li>
+                            <li><a href="weddingpage.html">Wedding Page</a></li>
+                            <li><a href="blogpage_1.html">Blog Version 1</a></li>
+                            <li><a href="blogpage_2.html">Blog Version 2</a></li>
+                            <li><a href="gallerypage_1.html">Gallery Version 1</a></li>
+                            <li><a href="gallerypage_2.html">Gallery Version 2</a></li>
+                            <li><a href="registrypage.html">Registry Page</a></li>
+                        </ul>
+					</li>
+					<li><a href="single.html">Our Story</a></li>
+					<li><a href="weddingpage.html">The Wedding</a></li>
+				</ul> <!-- END OF the left menu -->
+
+				<!-- RIGHT HAND SIDE NAVIGATION -->
+				<ul class="fl-right mainnav"><!-- the right menu -->
+					<li><a href="blogpage_1.html">Our Blog</a>
+						<ul>
+                            <li><a href="blogpage_1.html">Blog Page 1</a></li>
+                            <li><a href="blogpage_2.html">Blog Page 2</a></li>
+                            <li><a href="single.html">Single Post Page </a></li>
+                        </ul>
+					</li>
+					<li><a href="gallerypage_1.html">Photo Album</a>
+						<ul>
+                            <li><a href="gallerypage_1.html">Gallery Page 1</a></li>
+                            <li><a href="gallerypage_2.html">Gallery Page 2</a></li>
+                        </ul>
+					</li>
+					<li><a href="registrypage.html">Registry</a></li>
+					<li><a href="findus.html">Find Us</a></li>
+				</ul><!-- END OF the right menu -->
+			
+			</nav> <!-- END OF the navigation -->
+
+			<div class="clear">　</div>
+		
+		</header><!-- END OF the header -->
+
+<!--========================================================================================================================
+    ========================================================================================================================
+	=====================================================WELCOME AREA ======================================================
+	======================================================================================================================== -->
+		
+		<div class="inner-welcome-area">
+
+			<!-- THE COUPLE PHOTOS -->
+			<div class="fl-left">
+				<div class="round-frame her"><img src="images/bxslider-half/slide1_her.jpg" alt="the bride" /></div><!-- /.slider-round-her -->
+				<div class="round-frame him"><img src="images/bxslider-half/slide1_him.jpg" alt="the groom" /></div><!-- /.slider-round-him -->
+			</div><!-- /.fl-left -->
+
+			<!-- THE WELCOME TEXT -->
+			<p class="fl-right">Thank you for being part of our special day! 
+			Don芒鈧劉t forget to sign the <a href="#">RSVP List</a>, or to check 
+			out the <a href="#">Story Of How We Met</a>. Also if you are 
+			thinking about giving us a little something but don芒鈧劉t know what 
+			we芒鈧劉d like, please visit the <a href="#">Registry Page</a>, where 
+			items in all price ranges are listed.</p>
+		</div><!-- /.welcome-area -->
+
+<!--========================================================================================================================
+    ========================================================================================================================
+	=====================================================THE CONTENT AREA ==================================================
+	======================================================================================================================== -->
+
+		<div class="clear">　</div>
+
+		<div class="content-wrapper">
+			<div class="content-top">　</div>
+			<div class="content inner-page">
+
+				<div class="inner-header">
+
+					<!--  THE PAGE TITLE -->
+					<div class="fl-left"><h1>Full Width and Elements</h1></div><!-- /.fl-left -->
+
+					<!--  THE PAGE BREADCRUMBS -->
+					<div class="fl-right"><p id="breadcrumbs"><a href="index.html">
+						Wedding Home</a>&nbsp;&nbsp; Full Width </p></div><!-- /.fl-right -->
+				</div> <!-- /.inner-header-->
+
+				<div class="full-col">
+
+					<div class="single">
+						
+						<h1> This is a table example (H1) </h1>
+						<table class="fl-left">
+							<colgroup><col /></colgroup>
+
+							<thead>
+								<tr>
+									<th>Participant</th>
+									<th>Mary</th>
+									<th>Johanna</th>
+									<th>Kate</th>
+									<th>Lisa</th>
+								</tr>
+							</thead>
+							
+							<tbody>
+								<tr>
+									<td>Napkins</td>
+									<td>20.3</td>
+									<td>30.5</td>
+									<td>23.5</td>
+									<td>40.3</td>
+								</tr>
+								<tr>
+									<td>Forks</td>
+									<td>50.2</td>
+									<td>40.63</td>
+									<td>45.23</td>
+									<td>39.3</td>
+								</tr>
+								<tr>
+									<td>Plates</td>
+									<td>25.4</td>
+									<td>30.2</td>
+									<td>33.3</td>
+									<td>36.7</td>
+								</tr>
+								<tr>
+									<td>Something Else</td>
+									<td>20.4</td>
+									<td>15.6</td>
+									<td>22.3</td>
+									<td>29.3</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<!-- /. SIMPLE CONTENT, FULL WIDTH -->
+						<p>Sed ut perspiciatis unde omnis iste natus error sit 
+						voluptatem accusantium doloremque laudantium, totam rem 
+						aperiam, eaque ipsa quae ab illo inventore veritatis et 
+						quasi architecto beatae vitae dicta sunt explicabo. Nemo 
+						enim ipsam voluptatem quia voluptas sit aspernatur aut 
+						odit aut fugit, sed quia consequuntur magni dolores eos 
+						qui ratione voluptatem sequi nesciunt. Neque porro 
+						quisquam est, qui dolorem ipsum quia dolor sit amet, 
+						consectetur, adipisci velit, sed quia non numquam eius 
+						modi tempora incidunt ut labore et dolore magnam aliquam 
+						quaerat voluptatem. Ut enim ad minima veniam, quis 
+						nostrum exercitationem ullam corporis suscipit 
+						laboriosam, nisi ut aliquid ex ea commodi consequatur? 
+						Quis autem vel eum iure reprehenderit qui in ea 
+						voluptate velit esse quam nihil molestiae consequatur, 
+						vel illum qui dolorem eum fugiat quo voluptas nulla 
+						pariatur?</p>
+						<div class="clear"></div>
+
+						<!-- /. CONTENT SPREAD ON 2 COLUMNS -->
+						<div class="onehalf firstcol">
+							<h2>One Half Column (H2)</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur 
+							adipiscing elit. Suspendisse id leo sem. In non eros 
+							viverra orci consequat sagittis sed sed lectus. 
+							Mauris tempus eleifend elit, ut fringilla nunc 
+							commodo sed. Nunc quam nunc, auctor id fringilla ut, 
+							faucibus euismod felis. Phasellus in est diam. Ut 
+							dolor neque, luctus ut laoreet non, dictum non diam. 
+							Donec lectus tortor, facilisis et dignissim vel, 
+							fringilla nec magna.</p>
+						</div><!-- /.onehalf -->
+
+						<div class="onehalf lastcol">
+							<h2>One Half Column (H2)</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur 
+							adipiscing elit. Suspendisse id leo sem. In non eros 
+							viverra orci consequat sagittis sed sed lectus. 
+							Mauris tempus eleifend elit, ut fringilla nunc 
+							commodo sed. Nunc quam nunc, auctor id fringilla ut, 
+							faucibus euismod felis. Phasellus in est diam. Ut 
+							dolor neque, luctus ut laoreet non, dictum non diam. 
+							Donec lectus tortor, facilisis et dignissim vel, 
+							fringilla nec magna.</p>
+						</div><!-- /.onehalf -->
+
+						<!-- /. CONTENT SPREAD ON 3 COLUMNS -->
+						<div class="onethird firstcol">
+							<h3>One Third Column (H3)</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur 
+							adipiscing elit. Suspendisse id leo sem. In non eros 
+							viverra orci consequat sagittis sed sed lectus. 
+							Mauris tempus eleifend elit, ut fringilla nunc 
+							commodo sed. Nunc quam nunc, auctor id fringilla ut, 
+							faucibus euismod felis. Phasellus in est diam. Ut 
+							dolor neque, luctus ut laoreet non, dictum non diam. 
+							Donec lectus tortor, facilisis et dignissim vel, 
+							fringilla nec magna.</p>
+						</div><!-- /.onehalf -->
+
+						<div class="onethird secondcol">
+							<h4>One Third Column (H4)</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur 
+							adipiscing elit. Suspendisse id leo sem. In non eros 
+							viverra orci consequat sagittis sed sed lectus. 
+							Mauris tempus eleifend elit, ut fringilla nunc 
+							commodo sed. Nunc quam nunc, auctor id fringilla ut, 
+							faucibus euismod felis. Phasellus in est diam. Ut 
+							dolor neque, luctus ut laoreet non, dictum non diam. 
+							Donec lectus tortor, facilisis et dignissim vel, 
+							fringilla nec magna.</p>
+						</div><!-- /.onehalf -->
+
+						<div class="onethird lastcol">
+							<h5>One Third Column (H5)</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur 
+							adipiscing elit. Suspendisse id leo sem. In non eros 
+							viverra orci consequat sagittis sed sed lectus. 
+							Mauris tempus eleifend elit, ut fringilla nunc 
+							commodo sed. Nunc quam nunc, auctor id fringilla ut, 
+							faucibus euismod felis. Phasellus in est diam. Ut 
+							dolor neque, luctus ut laoreet non, dictum non diam. 
+							Donec lectus tortor, facilisis et dignissim vel, 
+							fringilla nec magna.</p>
+						</div><!-- /.onehalf -->
+
+						<div class="clear"></div>
+
+						<!-- /. CONTENT SPREAD ON 4 COLUMNS -->
+						<div class="onefourth firstcol">
+							<h4>One Fourth Column</h4>
+							<p><span class="dropcap1">L</span>orem ipsum dolor 
+							sit amet, consectetur adipiscing elit. Suspendisse 
+							id leo sem. In non eros viverra orci consequat 
+							sagittis sed sed lectus. Mauris tempus eleifend 
+							elit, ut fringilla nunc commodo sed. </p>
+						</div><!-- /.onehalf -->
+
+						<div class="onefourth secondcol">
+							<h4>One Fourth Column</h4>
+							<p><span class="dropcap2">L</span>orem ipsum dolor 
+							sit amet, consectetur adipiscing elit. Suspendisse 
+							id leo sem. In non eros viverra orci consequat 
+							sagittis sed sed lectus. Mauris tempus eleifend 
+							elit, ut fringilla nunc commodo sed. </p>
+						</div><!-- /.onehalf -->
+
+						<div class="onefourth thirdcol">
+							<h4>One Fourth Column</h4>
+							<p><span class="dropcap3">L</span>orem ipsum dolor 
+							sit amet, consectetur adipiscing elit. Suspendisse 
+							id leo sem. In non eros viverra orci consequat 
+							sagittis sed sed lectus. Mauris tempus eleifend 
+							elit, ut fringilla nunc commodo sed. </p>
+						</div><!-- /.onehalf -->
+
+						<div class="onefourth lastcol">
+							<h4>One Fourth Column</h4>
+							<p><span class="dropcap4">L</span>orem ipsum dolor 
+							sit amet, consectetur adipiscing elit. Suspendisse 
+							id leo sem. In non eros viverra orci consequat 
+							sagittis sed sed lectus. Mauris tempus eleifend 
+							elit, ut fringilla nunc commodo sed. </p>
+						</div><!-- /.onehalf -->
+
+						<div class="clear"></div>
+
+						<h3>A PrettyPhoto jQuery Lightbox</h3>
+
+						<a href="images/gallery/content-example-photo.jpg" rel="prettyPhoto[pp_gal]" class="fl-left prettyphoto" title="A Photo Tile Goes Here"><img src="images/gallery/content-example-photo-small.jpg" alt="gallery image 3" /></a>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+						elit, sed do eiusmod tempor incididunt ut labore et 
+						dolore magna aliqua. Ut enim ad minim veniam, quis 
+						nostrud exercitation ullamco laboris nisi ut aliquip ex 
+						ea commodo consequat. Duis aute irure dolor in 
+						reprehenderit in voluptate velit esse cillum dolore eu 
+						fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+						non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum</p>
+
+						<a href="images/gallery/content-example-photo.jpg" rel="prettyPhoto[pp_gal]" class="fl-right prettyphoto" title="A Photo Tile Goes Here"><img src="images/gallery/content-example-photo-small.jpg" alt="gallery image 3" /></a>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+						elit, sed do eiusmod tempor incididunt ut labore et 
+						dolore magna aliqua. Ut enim ad minim veniam, quis 
+						nostrud exercitation ullamco laboris nisi ut aliquip ex 
+						ea commodo consequat. Duis aute irure dolor in 
+						reprehenderit in voluptate velit esse cillum dolore eu 
+						fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+						non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+						elit, sed do eiusmod tempor incididunt ut labore et 
+						dolore magna aliqua. Ut enim ad minim veniam, quis 
+						nostrud exercitation ullamco laboris nisi ut aliquip ex 
+						ea commodo consequat. Duis aute irure dolor in 
+						reprehenderit in voluptate velit esse cillum dolore eu 
+						fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+						non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+						elit, sed do eiusmod tempor incididunt ut labore et 
+						dolore magna aliqua. Ut enim ad minim veniam, quis 
+						nostrud exercitation ullamco laboris nisi ut aliquip ex 
+						ea commodo consequat. Duis aute irure dolor in 
+						reprehenderit in voluptate velit esse cillum dolore eu 
+						fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+						non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum</p>
+
+						<div class="clear"></div>
+
+						<h3>Ordered and Unordered Lists (nested)</h3>
+						<ol>
+							<li><p>Sed ut perspiciatis unde omnis iste natus 
+							error sit voluptatem accusantium</p> </li>
+							<li><p>Doloremque laudantium, totam rem aperiam </p>
+								<ul>
+									<li><p>Sed ut perspiciatis unde omnis iste 
+									natus error sit voluptatem accusantium</p> </li>
+									<li><p>Doloremque laudantium, totam rem 
+									aperiam, </p></li>
+									<li><p>Laque ipsa quae ab illo inventore</p></li>
+									<li><p>Veritatis et quasi architecto beatae 
+									vitae dicta sunt explicabo</p></li>
+								</ul>
+							</li>
+							<li><p>Laque ipsa quae ab illo inventore</p></li>
+							<li><p>Veritatis et quasi architecto beatae vitae 
+							dicta sunt explicabo</p></li>
+							<li><p>Nemo enim ipsam voluptatem quia voluptas sit 
+							aspernatur</p></li>
+							<li><p>Aut odit aut fugit, sed quia consequuntur 
+							magni dolores eos qui ratione voluptatem</p></li>
+						</ol>
+
+						<h3>Quotes</h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+						elit, sed do eiusmod tempor incididunt ut labore et 
+						dolore magna aliqua. Ut enim ad minim veniam, quis 
+						nostrud exercitation ullamco laboris nisi ut aliquip ex 
+						ea commodo consequat. Duis aute irure dolor in 
+						reprehenderit in voluptate velit esse cillum dolore eu 
+						fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+						non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum</p>
+
+						<blockquote class="onehalf firstcol">Sed ut perspiciatis 
+							unde omnis iste natus error sit voluptatem 
+							accusantium doloremque laudantium, totam rem 
+							aperiam, eaque ipsa quae ab illo inventore veritatis 
+							et quasi architecto beatae vitae dicta sunt 
+							explicabo. Nemo enim ipsam voluptatem </blockquote>
+						
+					</div><!-- /.single -->
+
+					<div class="clear">　</div>
+
+				</div><!-- /.fullcol -->
+
+			</div><!-- /.content -->
+
+
+<!--========================================================================================================================
+    ========================================================================================================================
+	=====================================================THE FOOTER AREA ==================================================
+	======================================================================================================================== -->
+
+			<footer>
+
+				<!-- THE FOOTER CONTACT/RSVP FORM -->
+				<div class="footer-left fl-left" id="contact">
+					<h3>Contact Us/Rsvp</h3>
+					
+					<form action='send_mail.php' method='post' id='contact_form' />
+
+						<div class="contact-left fl-left">
+							<input type='text' name='name' id='name' placeholder="Name..." class="textbox" /><!-- /. NAME -->
+							<input type='text' name='email' id='email' placeholder="Email..." class="textbox" /><!-- /. EMAIL -->
+							<input type="radio" name="attend" value="i will attend" /><span class="radiobutton">I 
+							Will Attend </span><!-- /. RADIO BUTTON -->
+							<input type="radio" name="notattend" value="i will not attend" /> <span class="radiobutton">
+							I Will Not Attend</span><!-- /. RADIO BUTTON -->
+						</div><!-- /.contact-left -->	
+
+						<textarea name='message' id='message' placeholder="Your message must be greater than 20 characters" required data-minlength="20"></textarea><!-- /. MAIN MESSAGE -->
+
+
+						<p id='cf_submit_p' class="submit-button">
+							<input type='submit' id='send_message' value='Send Message' /><!-- /. THE SUBMIT BUTTON -->
+						</p><!-- /. SUBMIT-BUTTON -->
+
+						<div class="clear"></div>
+						<div id='mail_success' class='success'><img src='images/success.png' alt="success" /> 
+							Thank you. Your message has been sent.</div><!-- /. SUCCESS MESSAGE -->
+						<div id='mail_fail' class='error'><img src='images/error.png' alt="error" /> 
+							Sorry, don&#39;t know what happened. Try later.</div><!-- /. ERROR MESSAGE -->
+						<div class="clear"></div>
+
+					</form>
+					
+				</div><!-- /.contact -->
+
+				<!-- THE FOOTER RIGHT CONTENT - 'THE CEREMONY' -->
+				<div class="footer-right fl-right">
+					<h3 class="fl-left">The Ceremony</h3>						
+
+					<ul class="footer-icons fl-right"><!-- THE LITTLE ICONS -->
+
+						<li><span class="tip" data-tip="Get Directions"><img src="images/questionmark.png" alt="get directions" /></span></li>
+						<li><span class="tip" data-tip="Info About The Food That Will Be Served"><img src="images/food.png" alt="the food" /></span></li>
+						<li><span class="tip" data-tip="Info About The Drinks That Will Be Served"><img src="images/drinks.png" alt="the drinks" /></span></li>
+						<li><span class="tip" data-tip="Smoking Is Allowed Inside The Location"><img src="images/smoking.png" alt="smoking" /></span></li>
+						<li><span class="tip" data-tip="The Location Is Baby Friendly"><img src="images/babies.png" alt="babies" /></span></li>
+					</ul><!-- /. FOOTER-ICONS -->
+
+					<div class="clear">　</div>
+
+					<img src="images/footer-map.jpg" alt="map" class="alignleft" /><!-- THE FOOTER MAP -->
+
+					<p>The Wedding Party is located just in the left of the Oak 
+					Tree Park (Exit A201 from the high way). Lorem ipsum dolor 
+					sit amet, consectetur adipisicing elit, sed do eiusmod ea 
+					commodo consequat. cupidatat non</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore magna 
+					aliqua. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>
+
+				</div><!-- /.contact-us -->
+
+				<div class="clear">　</div>
+			
+			</footer><!--/. end of footer -->
+
+		</div><!-- /.content-wrapper -->
+	
+	</div><!-- /.main-bg -->
+	
+
+</body>
+</html>

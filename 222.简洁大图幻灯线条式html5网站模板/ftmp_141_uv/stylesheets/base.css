@@ -1,0 +1,141 @@
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/* #ICON FONT
+================================================== */
+
+
+@font-face {
+	font-family: 'WebSymbolsRegular';
+	src: url('../fonts/websymbols-regular-webfont.eot');
+	src: url('../fonts/websymbols-regular-webfont.eot@#iefix') format('embedded-opentype'), url('../fonts/websymbols-regular-webfont.woff') format('woff'), url('../fonts/websymbols-regular-webfont.ttf') format('truetype'), url('../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+	font-family: 'WebSymbolsRegular';
+	font-size: 12px;
+	line-height: 1px;
+}
+
+/* #Basic Styles
+================================================== */
+	body {
+		background:#ffffff;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+		font-family:'Arial', Helvetica, sans-serif;
+ }
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		color:#322e39;
+		font-family:'Open Sans', serif;
+		font-weight:normal; 
+		}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 18px;}
+	h2 { font-size: 16px;}
+	h3 { font-size: 14px;}
+	h4 { font-size: 13px;}
+	h5 { font-size: 12px;}
+	h6 { font-size: 11px;}
+	.subheader { color: #868686; }
+
+	p { 
+	margin:0px; 
+	color:#868686; 
+	font-size:12px;
+	line-height:22px;
+	}
+	
+	p img { margin: 0; }
+	p.lead { font-size: 21px; line-height: 27px; color: #868686;  }
+
+	em { font-style: italic; }
+	strong { font-weight: bold; }
+	small { font-size: 9px; }
+	b { font-weight:bold;}
+	i {font-style:italic;}
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+	blockquote { margin: 0px 0px 20px 0px; padding:0px 20px 0px 60px; background:url(../images/main/quotes.png) no-repeat left 5px; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+	hr { border: solid #f4f4f4; border-width: 1px 0 0; clear: both; margin: 10px 0 10px; height: 0; }
+	
+	a {
+		text-decoration:none;
+		outline:none;
+		color:#fe8a02;
+	}
+	
+	a:hover {
+		color:#322e39;
+	}
+	span {
+		color:#fe8a02;
+	}
+
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+
+/* #Buttons
+================================================== */
+
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+	}
+
+
+/* #Forms
+================================================== */
+
+	form {
+		margin-bottom: 20px; }
+
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+	.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+

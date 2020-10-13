@@ -1,0 +1,89 @@
+/* TWEET STYLES ------------------------------------------------------------*/
+
+
+/* TWEET BOX ------------------------------------------------------------*/
+
+.tweet,
+.query {
+	font-family: Tahoma, arial;
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #f4f2ea;
+	margin-left: 15px;
+	margin-right: 36px;
+	padding-top: 25px;
+	margin-bottom: 8px;
+}
+
+#sidebar .tweet h6,
+#sidebar .query h6{
+	margin-bottom: 5px;
+}
+  
+  
+.tweet .tweet_list,
+.query .tweet_list {
+    -webkit-border-radius: .5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.tweet .tweet_list .awesome, .tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic {
+      text-transform: uppercase;
+}
+      
+      
+.tweet .tweet_list li,
+.query .tweet_list li {
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 15px .5em;
+	
+	border-top: 1px solid #615e57;
+	border-bottom: 1px solid #1c1c1c;
+}
+
+.tweet .tweet_list li:first-child,
+.query .tweet_list li:first-child {
+	border-top: none;
+}
+
+.tweet .tweet_list li:last-child,
+.query .tweet_list li:last-child {
+	border-bottom: none;
+}
+
+/* TWEET LINKS ------------------------------------------------------------*/
+
+
+#sidebar .tweet .tweet_list li a,
+#sidebar .query .tweet_list li a {
+	color: #ecc731;
+}
+
+#sidebar .tweet .tweet_list li .tweet_time  a{
+	color: #7f7e78;
+}
+
+/* EVENT TWEET ------------------------------------------------------------*/
+
+
+.tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even {
+	
+}
+
+/* TWEET AVATAR ------------------------------------------------------------*/
+
+.tweet .tweet_list .tweet_avatar,
+.query .tweet_list .tweet_avatar {
+	padding-right: .5em;
+	float: left;
+}
+
+.tweet .tweet_list .tweet_avatar img,
+.query .tweet_list .tweet_avatar img {
+	vertical-align: middle;
+	border: 1px solid #7f7e78;
+}

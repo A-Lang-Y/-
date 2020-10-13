@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Functional Slider</title>
+  	<meta charset="utf-8">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body id="propage">
+<!--==============================header=================================-->
+    <header>    
+    	<div class="main">
+        	<div class="head-box1">
+            <h1><a class="logo" href="index.html">kitesurfing</a></h1>
+            <nav>
+                <ul class="sf-menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="index-1.html">about us</a></li>
+                    <li><a href="index-2.html">gallery</a></li>
+                    <li><a href="index-3.html">store</a>
+                    	<ul>
+                            <li><a href="more.html">Kites</a></li>
+                            <li><a href="more.html">Bars</a></li>
+                            <li><a href="more.html">Boards</a></li>
+                            <li><a href="more.html">Accessories</a></li>
+                            <li><a href="more.html">Harnesses</a></li>
+                            <li><a href="more.html">Clothing</a>
+                            	<ul>
+                                    <li><a href="more.html">men</a></li>
+                                    <li><a href="more.html">Women</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="index-4.html">contacts</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+            </div>                   
+        </div>  
+         <div class="slider-bg1">
+            <figure class="page2-img1"><img src="images/page2-img2.png" alt=""></figure>
+        </div>          
+    </header>
+    
+	<!--==============================content================================-->
+    <section id="content">
+        <div class="main">
+	<div class="container_24">
+		<div class="">
+			<div class="grid_24">
+			<h2 class="pro_title3">Functional Slider</h2>
+				<div class="pro_funct_slider">
+					<div class="fleft">
+						<h6 class="pro_choose">Choose an effect</h6>
+						<ul id="pro_choices">
+							<li class="pro_btn">blindX</li>
+							<li class="pro_btn">blindY</li>
+							<li class="pro_btn">blindZ</li>
+							<li class="pro_btn">cover</li>
+							<li class="pro_btn">curtainX</li>
+							<li class="pro_btn">curtainY</li>
+							<li class="pro_btn">fade</li>
+							<li class="pro_btn">fadeZoom</li>
+							<li class="pro_btn">growX</li>
+							<li class="pro_btn">growY</li>
+							<li class="pro_btn">none</li>
+							<li class="pro_btn">scrollUp</li>
+							<li class="pro_btn">scrollDown</li>
+							<li class="pro_btn">scrollLeft</li>
+							<li class="pro_btn">scrollRight</li>
+							<li class="pro_btn">scrollHorz</li>
+							<li class="pro_btn">scrollVert</li>
+							<li class="pro_btn">shuffle</li>
+							<li class="pro_btn">slideX</li>
+							<li class="pro_btn">slideY</li>
+							<li class="pro_btn">toss</li>
+							<li class="pro_btn">turnUp</li>
+							<li class="pro_btn">turnDown</li>
+							<li class="pro_btn">turnLeft</li>
+							<li class="pro_btn">turnRight</li>
+							<li class="pro_btn">uncover</li>
+							<li class="pro_btn">wipe</li>
+							<li class="pro_btn">zoom</li>
+						</ul>
+						<div class="hidden">Toggle the sync option to see how some effects behave differently (such as blind, curtain, and zoom).
+						<input type="checkbox" checked="checked" /> sync: true</div>
+					</div>
+					<div class="pro_funct_box">
+						<h6 id="pro_effect">Slideshow with default effect</h6>
+						<div id="pro_show1"><div id="pro_slideshow1">
+							<img src="images/stock_images/700x430_4.jpg" alt=""><img src="images/stock_images/700x430_2.jpg" alt=""><img src="images/stock_images/700x430_3.jpg" alt="">
+						</div></div>
+						<div id="pro_show"></div>
+					</div>
+				</div>
+				<div class="pro_clear"></div>
+				<dl class="pro_description-box pro_description-box-pad">
+					<dt><a class="pro_description-dark">Description<span></span></a></dt>
+					<dd>
+						<div class="pro_inner">
+						<p>To make the slider work <strong>jquery.cycle.all.min.js</strong> file is used</p>
+						<p class="pro_descr_title">The HTML Slideshow Structure:</p>
+<pre class="pro_htmlCode">&lt;div id="YourSlideshowID"&gt;
+	&lt;img src="YourImage.jpg" alt=""&gt;
+	&lt;img src="YourImage.jpg" alt=""&gt;
+	&lt;img src="YourImage.jpg" alt=""&gt;
+	...
+&lt;/div&gt;</pre>
+						<p>To add more images to the slider duplicate the following code:</p>
+						<pre class="pro_htmlCode">&lt;img src="YourImage.jpg" alt=""&gt;</pre>
+						<p>Using the src attribute define the path to the image file.</p>
+						<p class="pro_descr_title">Basic initialization:</p>
+<pre class="pro_jsCode">$('#YourSlideshowID').cycle({ fx:'TheEffectYouChoosed'});</pre>
+						<p>To initialize the slider input the slider block ID(<strong>$('#YourSlideshowID')</strong>) and animation effect you want to use (<strong>fx:'TheEffectYouChoosed'</strong>).</p>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="pro_clear"></div>
+		</div>
+	</div>
+</div>
+    </section>
+    
+	<!--==============================footer=================================-->
+    <footer>
+        <div class="main">
+            <div class="container_24">
+            	<div class="wrapper">
+                	<article class="grid_10">
+                    	<h6 class="p11">Navigation menu</h6>
+                       <article class="grid_4 alpha">
+                        <ul class="list1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index-1.html">About us</a></li>
+                            <li><a href="index-2.html">Gallery</a></li>
+                            <li class="last1"><a href="index-3.html">Store</a></li>
+                        </ul>
+                        </article>
+                        <article class="grid_4 push_1">
+                        	<ul class="list1">
+                            <li><a href="#">Events</a></li>
+                            <li class="last1"><a href="index-4.html">Contacts</a></li>
+                        </ul>
+                        </article>
+                    </article>
+                    <article class="grid_9">
+                    	<h6 class="p11">Kitesurfing tips</h6>
+                       <article class="grid_4 alpha"> 
+                       <ul class="list1">
+                            <li><a href="#">Praesent vestibulum</a></li>
+                            <li><a href="#">Molestie lacus</a></li>
+                            <li><a href="#">Aenean nonummy</a></li>
+
+                            <li class="last1"><a href="#">Hendrerit mauris</a></li>
+                        </ul>
+                        </article>
+                        <article class="grid_4 omega push_1">
+                        	<ul class="list1">
+                                <li><a href="#">Phasellus porta</a></li>
+                                <li><a href="#">Fusce suscipit varius mi </a></li>
+                                <li><a href="#">Cum sociis natoque </a></li>
+                                <li class="last1"><a href="#">Penatibus magnis</a></li>
+                            </ul>
+                        </article>
+                    </article>
+                    <article class="grid_4 push_1">
+                    	<h6 class="p11">Help Info</h6>
+                        <ul class="list1">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Work for us</a></li>
+                            <li class="last1"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="foot-page"> 
+        <div class="fleft">&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></div>
+        <div class="clear"></div>
+        </div>
+    </footer>
+
+</body>
+</html>

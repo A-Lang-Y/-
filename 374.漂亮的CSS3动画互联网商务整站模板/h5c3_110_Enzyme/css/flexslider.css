@@ -1,0 +1,74 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexWrapper {position:relative;top:-6px;margin:0 0 -8px 0;}
+.flex.hide {display:none;} 
+.flex-crop {
+	background:url(../images/flex/assets/crop.png) left top no-repeat transparent;
+	width:100%;
+	top:0px;
+	min-height:4px;
+	z-index:40;
+	display:block;
+	position:absolute;
+	margin:0;
+	padding:0;
+}
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none;-webkit-backface-visibility:hidden;margin:0; padding: 0;padding-bottom:7px;border-bottom:1px solid #e2e1e1;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;margin:0; padding: 0;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin:0; position: relative; zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.flexslider .slides {zoom: 1;}
+.carousel li {margin-right: 5px}
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {display: block; background: url(../images/flex/assets/direction-nav.png) no-repeat 0 0;position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;width:61px;height:46px;}
+.flex-direction-nav .flex-next {right: -35px; }
+.flex-direction-nav .flex-prev {background-position:0 bottom;left: -28px;}
+.flexslider:hover .flex-next {opacity: 1;}
+.flexslider:hover .flex-prev {opacity: 1;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {display:none;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1;}
+  .flex-direction-nav .flex-next {opacity: 1;}
+}

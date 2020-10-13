@@ -1,0 +1,681 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	
+	<!-- mobile meta tag -->		
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Sympathique</title> 
+	
+	<!-- main style -->
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	
+	<!-- color scheme -->
+	<link rel="stylesheet" type="text/css" href="color-schemes/red/red.css" media="screen" title="red" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/yellow/yellow.css" media="screen" title="yellow" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/orange/orange.css" media="screen" title="orange" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/blue/blue.css" media="screen" title="blue" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/green/green.css" media="screen" title="green" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/purple/purple.css" media="screen" title="purple" />
+	
+	<!--miscellaneous-->
+	<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/audioplayer.css" media="screen" />	
+	
+	<!-- revolution slider settings -->
+	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />		
+
+	<!-- setting mobile environment -->		
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen" />	
+	
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css">
+	<![endif]-->
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="js/jquery.tweet.js"></script>
+	<script type="text/javascript" src="js/jflickrfeed.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+	<script type="text/javascript" src="js/jquery.contact.js"></script>
+	<script type="text/javascript" src="js/jquery.preloadify.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.pagescroller.js"></script>
+	
+	<!-- jQuery Revolution Slider -->
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="template-changer.css" media="screen"/>		
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>	
+	<script type="text/javascript" src="js/styleswitch.js"></script>	
+	
+	<!-- Google Web Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- script for one-page scroll effect -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#wrapper').pageScroller({ 
+			navigation: '#navigation',
+			animationType: 'easeInOutExpo',
+			 scrollOffset: -86 //value equal with header height
+		});		
+		
+	});
+	</script>	
+
+
+<script type="text/javascript">
+	$(function()
+		{
+			// Call stylesheet init so that all stylesheet changing functions 
+			// will work.
+			$.stylesheetInit();
+			
+			// This code loops through the stylesheets when you click the link with 
+			// an ID of "toggler" below.
+			$('#toggler').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetToggle();
+					return false;
+				}
+			);
+			
+			// When one of the styleswitch links is clicked then switch the stylesheet to
+			// the one matching the value of that links rel attribute.
+			$('.styleswitch').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetSwitch(this.getAttribute('rel'));
+					return false;
+				}
+			);
+		}
+	);
+</script>	
+	
+</head> 
+
+<body class="home one-page"> 
+
+<!-- setting a fullscreen image as background:
+<img id="bg" src="images/apple.jpg" alt="apple-background" />
+-->
+
+
+	<div class="theme-changer-wrap">
+		<div class="theme-changer">
+			<div class="changer-inner">				
+				<span> COLOR SCHEME </span>
+					<ul id="colors">
+						<li><a href="?style=yellow" rel="yellow" class="styleswitch color-yellow">yellow</a></li>
+						<li><a href="?style=orange" rel="orange" class="styleswitch color-orange">orange</a></li>
+						<li><a href="?style=blue" rel="blue" class="styleswitch color-blue">blue</a></li>
+						<li><a href="?style=green" rel="green" class="styleswitch color-green">blue</a></li>
+						<li><a href="?style=red" rel="red" class="styleswitch color-red">blue</a></li>
+						<li><a href="?style=purple" rel="purple" class="styleswitch color-purple">blue</a></li>
+					
+					</ul>
+					<div style="clear:both; height:10px; width:100%"></div>				
+			</div>
+		</div>
+		<div class="open-close"></div>
+	</div> 	
+
+<div id="wrapper">
+	<header id="header">
+		<div class="centered-wrapper">
+			<div class="one-third">
+				<div class="logo"><a href="index.html"></a></div>
+			</div><!--end one-third-->
+			
+			<div class="two-third column-last">	
+				<div id="onepage-nav" class="pageScrollerNav">
+					<nav id="navigation">
+						<ul id="mainnav">
+							<li><a href="#"><span>HOME</span></a></li>
+							<li><a href="#"><span>ABOUT US</span></a></li>				
+							<li><a href="#"><span>PORTFOLIO</span></a></li>				
+							<li><a href="#"><span>BLOG</span></a></li>				
+							<li><a href="#"><span>CONTACT</span></a></li>				
+
+						</ul>
+					</nav><!--end navigation-->
+				</div>
+			</div><!--end two-third-->
+		<div class="clear"></div>			
+		</div><!--end centered-wrapper-->
+
+		<div class="top-shadow"></div>		
+	</header>	
+	
+	<div class="onepage-content">
+		<div class="fullwidthbanner-container homeblock">
+			<div class="fullwidthbanner">
+				<ul>
+					<!-- THE FIRST SLIDE -->
+					<li data-transition="slidedown" data-slotamount="15" data-masterspeed="300">
+						<img src="images/slides/slide5.jpg" alt="" />
+										
+						<div class="caption box-slide1 lfl ltl"  
+							 data-x="0" 
+							 data-y="150" 
+							 data-speed="300" 
+							 data-start="1000" 
+							 data-easing="easeOutExpo"><h2>HEY THERE! WE ARE SYMPATHIQUE</h2><p>This fullwidth slider is a very flexible one, and works with text, images, videos, or all of them in the same slide. Cool!</p></div>
+					</li>
+					
+					<!-- THE SECOND SLIDE -->
+					<li data-transition="fade" data-slotamount="15" data-masterspeed="300">
+						<!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+						<img src="images/slides/slide3.jpg" alt="" />
+																
+						<!-- THE CAPTIONS IN THIS SLDIE -->
+						<div class="caption box-slide2 lft ltt"  
+							 data-x="770" 
+							 data-y="110" 
+							 data-speed="300" 
+							 data-start="500" 
+							 data-easing="easeOutExpo"><h2>JJ ROYAL PROJECT</h2><p>Describing projects it`s so easy. Define a caption, style it as you want and drop in it some content, not any type of content but only awesome content! You can also add HTML code, like buttons:</p><a class="button red" href="#">Find Out More</a></div>
+					</li>				
+					
+					<!-- THE THIRD SLIDE -->
+					<li data-transition="papercut" data-slotamount="15" data-masterspeed="300" data-link="portfolio-single.html" data-thumb="images/thumbs/thumb2.jpg">
+						<img src="images/slides/slide2.jpg" alt="" />
+					</li>
+
+					<!-- THE FIFTH SLIDE -->
+					<li data-transition="slideright" data-slotamount="15" data-masterspeed="300">
+						<img src="images/slides/slide1.jpg" alt="" />
+										
+						<div class="caption title_text lfl stl"  
+							 data-x="0" 
+							 data-y="250" 
+							 data-speed="300" 
+							 data-start="1000" 
+							 data-easing="easeOutExpo">CREATE UNLIMITED CAPTIONS</div>
+										
+						<div class="caption description_text lfl stl"  
+							 data-x="0" 
+							 data-y="292" 
+							 data-speed="300" 
+							 data-start="1300" 
+							 data-easing="easeOutExpo">AND STYLE AND ANIMATE THEM INDIVIDUALLY</div>
+					</li>	
+					<!-- THE SIX SLIDE -->
+					<li data-transition="fade" data-slotamount="15" data-masterspeed="300">
+						<img src="images/slides/slide6.jpg" alt="" />
+										
+						<div class="caption lfl fadeout"  
+							 data-x="0" 
+							 data-y="40" 
+							 data-speed="300" 
+							 data-start="500" 
+							 data-easing="easeOutExpo"><img src="images/slides/layer1.jpg" alt=""></div>
+										
+						<div class="caption lfl fadeout"  
+							 data-x="15" 
+							 data-y="260" 
+							 data-speed="300" 
+							 data-start="800" 
+							 data-easing="easeOutExpo"><img src="images/slides/layer2.jpg" alt=""></div>
+						<div class="caption lfr fadeout"  
+							 data-x="855" 
+							 data-y="60" 
+							 data-speed="300" 
+							 data-start="1100" 
+							 data-easing="easeOutExpo"><img src="images/slides/layer4.jpg" alt=""></div>
+										
+						<div class="caption lfr fadeout"  
+							 data-x="880" 
+							 data-y="290" 
+							 data-speed="300" 
+							 data-start="1400" 
+							 data-easing="easeOutExpo"><img src="images/slides/layer5.jpg" alt=""></div>						 
+					</li>					
+				</ul>
+				<!--enable slider timer 
+					<div class="tp-bannertimer"></div>
+				-->
+			</div>
+			<div class="bottom-shadow"></div>	
+		</div><!--end slider-->
+		
+		
+		<div class="centered-wrapper">	
+		
+			<section class="intro">
+				<h2>We`re an award winning digital studio specialised in web design.</h2>
+				<h5>Our projects stand out from the crowd so if you want to collaborate, <a href="#">get in touch with us</a> to see how we can help you!</h5>
+			</section>	
+		
+			<section class="homeblock">
+				<div class="half-space"></div>
+				<h1 class="onepage-title">About Us</h1>
+				<div class="two-third">
+						<h6>OUR HISTORY</H6>				
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent volutpat nisl fringilla felis sodales elementum. Ut commodo arcu massa.</p>
+
+						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus..</p>
+					</div>
+					
+					<div class="one-third column-last">
+						<h6>OUR SKILLS</H6>
+						<div id="skills"></div>
+					</div>
+					
+					<div class="separator"></div>
+					<div class="clear"></div>
+					
+					<h6>MEET THE TEAM</H6>
+					<div class="team">
+						<div class="one-fourth">
+							<div class="team-member">
+								<a href="images/member1.jpg" rel="prettyPhoto" title="Patrick Smith">
+									<span class="item-on-hover"><span class="hover-image"></span></span>
+									<img class="team-avatar" src="images/member1.jpg" alt=" " />
+								</a>
+								<div class="team-text">
+									<h3>JOHN DOE</h3>
+									<h6>Web Developer</h6>
+								</div>				
+							</div><!--end team-member-->	
+						</div><!--end one-fourth-->
+							
+						<div class="one-fourth">
+							<div class="team-member">
+								<a href="images/member2.jpg" rel="prettyPhoto" title="Jane Doe">
+									<span class="item-on-hover"><span class="hover-image"></span></span>
+									<img class="team-avatar" src="images/member2.jpg" alt=" " />
+								</a>
+								<div class="team-text">
+									<h3>ANDREW CLARK</h3>
+									<h6>Marketing Manager</h6>
+								</div>				
+							</div><!--end team-member-->	
+						</div><!--end one-fourth-->
+						
+						<div class="one-fourth">
+							<div class="team-member">
+								<a href="images/member3.jpg" rel="prettyPhoto" title="Jane Doe">
+									<span class="item-on-hover"><span class="hover-image"></span></span>
+									<img class="team-avatar" src="images/member3.jpg" alt=" " />
+								</a>
+								<div class="team-text">
+									<h3>PATRICK SMITH</h3>
+									<h6>CEO</h6>
+								</div>				
+							</div><!--end team-member-->	
+						</div><!--end one-fourth-->				
+							
+						<div class="one-fourth column-last">
+							<div class="team-member">
+								<a href="images/member4.jpg" rel="prettyPhoto" title="Dan Whiteman">
+									<span class="item-on-hover"><span class="hover-image"></span></span>
+									<img class="team-avatar" src="images/member4.jpg" alt=" " />
+								</a>
+								<div class="team-text">
+									<h3>GLEN JOHNSON</h3>
+									<h6>HR Manager</h6>
+								</div>					
+							</div><!--end team-member-->	
+						</div><!--end one-fourth-->
+					</div><!--end team-->
+			</section>
+			
+			<div class="clear"></div>
+			<div class="space"></div>
+		
+			<section class="homeblock">
+				<div class="half-space"></div>
+				<h1 class="onepage-title">Portfolio</h1>			
+				<section class="homepage-grid">
+					<div class="bgtitle"><h2>Selected Works</h2></div>
+					<section id="options">
+						<ul id="home-filters" class="option-set clearfix" data-option-key="filter">
+							<li><a href="#filter" data-option-value="*" class="selected active">All</a></li>
+							<li><a href="#filter" data-option-value=".marketing">Marketing</a></li>
+							<li><a href="#filter" data-option-value=".photography">Photography</a></li>
+							<li><a href="#filter" data-option-value=".branding">Branding</a></li>
+							<li><a href="#filter" data-option-value=".print">Print</a></li>
+							<li><a href="#filter" data-option-value=".webdesign">Web Design</a></li>
+						</ul>			
+					</section>	
+				
+					<section id="portfolio-wrapper">
+						<ul class="portfolio grid ">
+							<li data-category="marketing" class="print photography item-wide">
+								<a href="http://vimeo.com/7449107" rel="prettyPhoto">
+									<div class="grid-item-on-hover">
+										<div class="grid-text">
+											<h1>Lorem Ipsum Dolor Sit Amet Consectetur</h1>
+										</div>
+										<span>photography, printing identity</span>
+										
+									</div>
+									<img src="images/portfolio/image5-small.jpg" alt=" " />
+								</a>
+							</li>			
+							<li data-category="branding" class="branding print item-small">
+								<a href="images/portfolio/image1.jpg" rel="prettyPhoto">
+									<div class="grid-item-on-hover">
+										<div class="grid-text">
+											<h1>Cervejaria Republica Project</h1>
+										</div>
+										<span>printing identity, branding</span>
+									</div>
+									<img src="images/portfolio/image1-small.jpg" alt=" " />
+								</a>
+							</li>				
+							<li data-category="marketing" class="marketing webdesign item-high">
+								<a href="images/portfolio/image3.jpg" rel="prettyPhoto">
+									<div class="grid-item-on-hover">
+										<div class="grid-text">
+											<h1>Lorem Ipsum Dolor Sit Amet</h1>
+										</div>
+										<span>business cards</span>
+									</div>
+									<img src="images/portfolio/image3-small-high.jpg" alt=" " />
+								</a>
+							</li>					
+							<li data-category="media" class="marketing branding item-small">
+								<a href="images/portfolio/image8.jpg" rel="prettyPhoto">
+									<div class="grid-item-on-hover">
+										<div class="grid-text">
+											<h1>Adidas Store</h1>
+										</div>
+										<span>retail, marketing</span>
+									</div>
+									<img src="images/portfolio/image8-small.jpg" alt=" " />
+								</a>
+							</li>				
+							<li data-category="retail" class="webdesign marketing print item-small">
+								<a href="portfolio-single.html">
+									<div class="grid-item-on-hover">
+										<div class="grid-text">
+											<h1>Website Redesign</h1>
+										</div>
+										<span>web design</span>
+									</div>
+									<img src="images/portfolio/image2-small.jpg" alt=" " />
+								</a>
+							</li>
+							<li data-category="retail" class="photography item-small">
+								<a href="images/portfolio/image6.jpg" rel="prettyPhoto">
+									<div class="grid-item-on-hover">
+										<div class="grid-text">
+											<h1>Grayscale Shooting Session </h1>
+										</div>
+										<span>photography</span>
+									</div>
+									<img src="images/portfolio/image6-small.jpg" alt=" " />
+								</a>
+							</li>
+							<li data-category="marketing" class="marketing print branding item-long">
+								<a href="images/portfolio/image7.jpg" rel="prettyPhoto">
+									<div class="grid-item-on-hover">
+										<div class="grid-text">
+											<h1>Carlito`s Bar </h1>
+										</div>
+										<span>branding, business cards</span>
+									</div>
+									<img src="images/portfolio/image7-small-long.jpg" alt=" " />
+								</a>
+							</li>
+						</ul>	
+					</section>	
+				</section><!--end home-grid-->
+			</section>		
+			
+			<div class="space"></div>
+			<div class="space"></div>
+			
+			<section class="homeblock">
+				<div class="half-space"></div>			
+				<h1 class="onepage-title">Blogging isn`t just writing...</h1>	
+				<div class="half-space"></div>
+				<div id="masonry-blog" class="columns-three infinite-scrolling">
+					<div class="masonry-post regular-article">
+						<div class="masonry-thumbnail">
+							<a href="#">
+								<span class="item-on-hover"><span class="hover-link"></span></span>
+								<img src="images/blog/blog-image1.jpg" alt="" />
+							</a>
+						</div>
+						<div class="masonry-page-content">
+							<span class="masonry-post-meta">
+								7 Jan 2012 / <a href="#">Articles</a> / <a href="#">3 Comments</a>
+							</span>
+							<i class="icon-pencil"></i>
+							<h1 class="masonry-title"><a href="#">The Secrets Behind Identity Branding</a></h1>
+							<p class="masonry-excerpt">Nullam adipiscing sapien ut mi elementum sit amet dictum magna luctus. Donec id ligula ut tellus ultricies ornare quis vel nunc. In id purus vel magna porta laoreet at a dolor. Aliquam aliquam mollis feugiat.</p>
+							<a class="button red" href="#">Read More</a>
+						</div>
+					</div>
+
+					<div class="masonry-post quote-article">
+						<div class="masonry-page-content">
+							<span class="masonry-post-meta">
+								7 Jan 2012 / <a href="#">Wise Words</a> / <a href="#">3 Comments</a>
+							</span>
+							<i class="icon-quote-left"></i>
+							<blockquote class="masonry-excerpt">Good design is all about making other designers feel like idiots because that idea wasn�t theirs.</blockquote>
+							<h4 class="quote-author">- Frank Chimero</h4>
+						</div>
+					</div>	
+
+					<div class="masonry-post vimeo-article">
+						<div class="masonry-thumbnail">
+							<iframe src="http://player.vimeo.com/video/56974716?badge=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						</div>
+						<div class="masonry-page-content">
+							<span class="masonry-post-meta">
+								7 Jan 2012 / <a href="#">Articles</a> / <a href="#">3 Comments</a>
+							</span>
+							<i class="icon-facetime-video"></i>
+							<h1 class="masonry-title"><a href="#">The Secrets Behind Identity Branding</a></h1>
+							<p class="masonry-excerpt">Nullam adipiscing sapien ut mi elementum sit amet dictum magna luctus. Donec id ligula ut tellus ultricies ornare quis vel nunc. In id purus vel magna porta laoreet at a dolor. Aliquam aliquam mollis feugiat.</p>
+							<a class="button red" href="#">Read More</a>
+						</div>
+					</div>	
+					
+					<div class="masonry-post gallery-article">
+						<div class="masonry-thumbnail">
+
+							<div class="blog-slides">
+								<div class="slides_container">
+									<div class="slide">
+										<a href="images/blog/image-gallery1.jpg" rel="prettyPhoto[pp_gal]" title="Gallery Image 1"><img src="images/blog/image-gallery1.jpg" width="695" height="400" alt="Slide 1"></a>
+									</div>
+									<div class="slide">
+										<a href="images/blog/image-gallery2.jpg" rel="prettyPhoto[pp_gal]" title="Gallery Image 2"><img src="images/blog/image-gallery2.jpg" alt="Slide 2"></a>
+									</div>	
+									<div class="slide">
+										<a href="images/blog/image-gallery3.jpg" rel="prettyPhoto[pp_gal]" title="Gallery Image 3"><img src="images/blog/image-gallery3.jpg" alt="Slide 3"></a>
+									</div>								
+								</div>
+								<a href="#" class="prev"><img src="images/blog-arrow-prev.png" width="27" height="43" alt="Arrow Prev"></a>
+								<a href="#" class="next"><img src="images/blog-arrow-next.png" width="27" height="43" alt="Arrow Next"></a>
+							</div><!--end slides-->
+
+						</div>
+						<div class="masonry-page-content">
+							<span class="masonry-post-meta">
+								7 Jan 2012 / <a href="#">Articles</a> / <a href="#">3 Comments</a>
+							</span>
+							<i class="icon-camera-retro"></i>
+							<h1 class="masonry-title"><a href="#">Case Study: Warner Bros Website Redesign</a></h1>
+							<p class="masonry-excerpt">Nullam adipiscing sapien ut mi elementum sit amet dictum magna luctus. Donec id ligula ut tellus ultricies ornare quis vel nunc. In id purus vel magna porta laoreet at a dolor. Aliquam aliquam mollis feugiat. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+							<a class="button red" href="#">Read More</a>
+						</div>
+					</div>	
+
+					<div class="masonry-post music-article">
+						<div class="masonry-page-content">
+							<span class="masonry-post-meta">
+								7 Jan 2012
+							</span>
+							<i class="icon-music"></i>
+							<div id="audio_jplayer" class="jp-jplayer"></div>
+							<div id="jp_container_1" class="jp-audio">
+								<div class="jp-type-single">
+									<div class="jp-gui jp-interface">
+										<div class="jp-controls">
+											<a href="javascript:;" class="jp-play" tabindex="1">play</a>
+											<a href="javascript:;" class="jp-pause" tabindex="1">pause</a>
+											<div class="jp-current-time"></div>
+											<div class="jp-progress">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar"></div>
+												</div>
+											</div>
+											<div class="jp-volume-bar">
+												<div class="jp-volume-bar-value"></div>
+											</div>																
+
+											<a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a>
+											<a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a>
+											<div class="jp-duration"></div>								
+										</div>
+									</div>
+									<div class="jp-no-solution">
+										<span>Update Required</span>
+										To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+									</div>
+								</div>
+								</div>			
+
+							<h1 class="masonry-title"><a href="#">Audio Post</a></h1>
+						</div>
+					</div>
+
+
+					<div class="masonry-post link-article">
+						<div class="masonry-page-content">
+							<span class="masonry-post-meta">
+								7 Jan 2012
+							</span>
+							<i class="icon-link"></i>
+							<h1 class="masonry-title"><a href="#">New post on WpTuts: How Compatible Is Your Theme With WordPress?</a></h1>
+						</div>
+					</div>			
+					
+				</div>	
+			</section>	
+		</div><!--end centered-wrapper-->			
+
+		<section class="homeblock">
+			<div class="centered-wrapper">
+				<div class="half-space"></div>			
+				<h1 class="onepage-title">Contact Us</h1>	
+			</div>
+			<div class="fullwidth-map">
+				<iframe width="1920" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Google+Inc,+1600+Amphitheatre+Parkway,+Mountain+View,+California+94043,+United+States&amp;aq=0&amp;oq=google+headquarte&amp;sll=44.437711,26.097367&amp;sspn=0.266217,0.676346&amp;ie=UTF8&amp;hq=Google+Inc,+1600+Amphitheatre+Parkway,+Mountain+View,+California+94043,+United+States&amp;t=m&amp;ll=37.422117,-122.083855&amp;spn=0.013633,0.018797&amp;z=14&amp;iwloc=&amp;output=embed"></iframe>			
+			</div>
+			
+			<div class="centered-wrapper">			
+				<div class="space"></div>
+					<div class="one-fourth">
+						<aside>
+							<h6>OUR OFFICE:</h6>
+							<p>1600 Amphitheatre Parkway,<br />
+								Mountain View, CA 94043<br />
+								(650) 253-0000<br />
+								<a href="#">www.google.com</a><br />
+							</p>
+							
+							<div class="contact-info">
+							<h6>CONTACT INFO:</h6>
+								<p><span>Phone:</span> + (0) 000-1234-5678</p>
+								<p><span>Fax:</span> + (0) 000-1234-5678</p>
+								<p><span>Email:</span> <a href="mailto:youremail@yoursite.com">yourmail@yoursite.com</a> </p>
+							</div>
+						</aside><!--end aside-->		
+					</div><!--end one-fourth-->
+					
+					<div class="three-fourth column-last">
+						<h6>KEEP IN TOUCH WITH US:</h6>
+						<div id="contactform">
+							<div id="message"></div>
+							<form method="post" action="php/contact.php" name="cform" id="cform">
+								<fieldset class="percent-one-third">
+									<label>Name <span>*</span></label>
+									<input id="name" type="text" name="name"/>
+								</fieldset>
+								<fieldset class="percent-one-third">
+									<label>Email <span>*</span></label>
+									<input type="text" name="email" id="email"/>
+								</fieldset>
+								<fieldset class="percent-one-third column-last">
+									<label>Subject <span>*</span></label>
+									<input type="text" name="subject" id="subject" />
+								</fieldset>
+								<fieldset class="clear">
+									<label>Your Message <span>*</span></label>
+									<textarea name="comments" id="comments"></textarea>
+								</fieldset>
+								<fieldset>
+									<input type="submit" name="send" value="Send Message" id="submit" class="button red"/>
+								</fieldset>
+							</form>		
+						</div><!--end contactform-->
+					</div><!--three-fourth-->				
+					
+					<div class="clear"></div>	
+			</div>
+		</section>
+
+	</div><!--end onepage-content-->
+	
+	<div class="half-space"></div>
+
+	<div id="bottomfooter">		
+		<div class="centered-wrapper">		
+			<div class="one-half">
+				<p>COPYRIGHT &copy; 2013 - SYMPATHIQUE | ALL RIGHTS RESERVED. - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+			</div><!--end one-half-->
+
+			<div class="one-half column-last">
+				<ul id="social">
+					<li><a class="rss" href="#">RSS Feed</a></li>
+					<li><a class="facebook" href="#">Facebook</a></li>
+					<li><a class="twitter" href="#">Twitter</a></li>
+					<li><a class="flickr" href="#">Flickr</a></li>
+					<li><a class="google" href="#">Google</a></li>
+					
+				<!-- You can add social icons for forrst, dribbble, vimeo, linkedin and skype. Take the ones you need from the list and paste them above
+				
+					<li><a class="forrst" href="#">Forrst</a></li>
+					<li><a class="dribbble" href="#">Dribbble</a></li>
+					<li><a class="vimeo" href="#">Vimeo</a></li>
+					<li><a class="linkedin" href="#">LinkedIn</a></li>
+					<li><a class="skype" href="#">Skype</a></li> 
+				-->	
+				</ul>					
+			</div><!--end one-half-->
+		</div><!--end centered-wrapper-->				
+	</div><!--end bottomfooter-->
+	
+</div><!--end wrapper-->
+
+	<script type="text/javascript" src="js/custom.js"></script>
+
+</body> 
+</html>

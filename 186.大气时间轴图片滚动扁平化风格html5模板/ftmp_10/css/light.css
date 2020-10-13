@@ -1,0 +1,324 @@
+/* fixed line holder */
+.timelineLight .timeline_line {
+	margin-top:10px;
+	margin-bottom:10px;
+	width:900px;
+}
+
+/* full (including months that are not shown) line holder */
+.timelineLight .t_line_holder {
+	height:80px;
+	background:url('../images/timeline/light/line.jpg') repeat-x 0px 39px;
+}
+
+/* 2 months are stored in one view */
+.timelineLight .t_line_view {
+	height:20px;
+	width:900px;
+}
+
+/* holder for year number */
+.timelineLight h3.t_line_year {
+	margin:0;
+	color:#545454;
+}
+
+/* holder for 1 month (constist of nodes and month caption) - we use borders to separate months thats why it has width 2px less then 50% */
+.timelineLight .t_line_m {
+	margin-top:35px;
+	height:10px;
+	border-left:1px solid #545454;
+	border-right:1px solid #545454;
+	width:448px;
+}
+
+/* month on the right side - has left set at 459 so border would overlap border from first element (to evade duplicated borders) */
+.timelineLight .t_line_m.right {
+	left:449px;
+	width:449px;
+}
+
+/* month caption */
+.timelineLight h4.t_line_month {
+	margin:-30px 0 0;
+	color:#545454;
+}
+
+/* used in responsive layout when only one month is shown (it is span containing year) */
+.t_line_month_year {
+	display:none;
+}
+
+/* node on the timeline */
+.timelineLight a.t_line_node {
+	text-decoration:none;
+	padding:38px 0 4px;
+	height:10px;
+	font-size:12px;
+	top:-25px;
+	background:url('../images/timeline/light/dot.png') no-repeat center 24px;
+	color:#141817;
+}
+.timelineLight a.t_line_node:hover {
+	background:url('../images/timeline/light/dot-rollover.png') no-repeat center 24px;
+}
+.timelineLight a.t_line_node.active {
+	background:url('../images/timeline/light/dot-selected.png') no-repeat center 24px;
+}
+
+/* node description */
+.timelineLight .t_node_desc {
+	background: rgba(26,134,172,0.9);
+	top:0;
+	color:#fff;
+	padding:1px 5px;
+}
+
+/* descriptions on right side go from right to left */
+.timelineLight .t_node_desc.pos_right {
+	right:0;
+}
+
+/* line arrow left */
+.timelineLight #t_line_left {
+	cursor:pointer;
+	left:-30px;
+	top:30px;
+	width:14px;
+	height:19px;
+	background:url('../images/timeline/light/arrow.png') no-repeat left top;
+}
+
+.timelineLight #t_line_left:hover {
+	background:url('../images/timeline/light/arrow.png') no-repeat left bottom;
+}
+
+/* line arrow right */
+.timelineLight #t_line_right {
+	cursor:pointer;
+	right:-30px;
+	top:30px;
+	width:14px;
+	height:19px;
+	background:url('../images/timeline/light/arrow.png') no-repeat right top;
+}
+
+.timelineLight #t_line_right:hover {
+	background:url('../images/timeline/light/arrow.png') no-repeat right bottom;
+}
+.timelineLight {
+	display:none;
+}
+
+/* items container */
+.timelineLight .timeline_items {
+	padding:10px 0;
+}
+
+/* single item (margines set from javascript) */
+.timelineLight .item {
+	height:380px;
+	text-align:center;
+	background:url('../images/timeline/light/background-white.jpg') repeat; 
+	color:#545454;
+	-moz-box-shadow: -3px 1px 6px rgba(0,0,0,0.4);
+	-webkit-box-shadow: -3px 1px 6px rgba(0,0,0,0.4);
+	box-shadow: -3px 1px 6px rgba(0,0,0,0.4);
+	width:200px;
+}
+
+/* ----- content - non-plugin elements ----- */
+.timelineLight .item img {
+	margin-top:0;
+	width:200px;
+}
+
+.timelineLight .item span{
+	display:block;
+	margin:0px 20px 10px;
+	height:150px;
+}
+.timelineLight .item .read_more {
+	padding:2px 8px 2px 10px;
+	font-family: 'BebasNeueRegular';
+	font-size:20px;
+	float:right;
+	color:#ffffff;
+	background: rgba(0,0,0,0.35);
+	cursor:pointer;
+}
+.timelineLight .item .read_more:hover {
+	background:rgb(26,134,172);
+}
+/* ----------------------------------------- */
+
+/* item details (margines set from javascript) */
+.timelineLight .item_open {
+	height:380px;
+	background:url('../images/timeline/light/background.jpg') repeat;
+	position:relative;
+	color:#545454;
+	z-index:2; 
+	-moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.4);
+	width:490px;
+	
+}
+
+/* item details content wrapper (used for animation - shuld have same width as .item_open) */
+.timelineLight .item_open_cwrapper {
+	width:490px;
+}
+
+/* ----- content - non-plugin elements ----- */
+.timelineLight .timeline_open_content {
+	padding:20px;
+}
+
+.timelineLight .item_open h2 {
+	margin-top:10px;
+	padding-top:0;
+	font-size:28px;
+}
+.timelineLight .item_open .t_close {
+	position:absolute;
+	top:10px;
+	right:10px;
+	padding:2px 8px 2px 10px;
+	font-family: 'BebasNeueRegular';
+	font-size:20px;
+	color:#ffffff;
+	background: rgba(0,0,0,0.25);
+	cursor:pointer;
+}
+.timelineLight .item_open .t_close:hover {
+	background:rgb(26,134,172);
+}
+/* ----------------------------------------- */
+
+/* left/right controles */
+.timelineLight .t_controles {
+	margin:10px auto;
+	text-align:center;
+}
+.timelineLight .t_left,
+.timelineLight .t_right {
+	display:inline-block;
+	height:50px;
+	width:29px;
+	margin:10px;
+	cursor:pointer;
+}
+.timelineLight .t_left,  
+.timelineLight .t_left:hover:active {
+	background: url('../images/timeline/light/big-arrow.png') no-repeat left top;
+}
+.timelineLight .t_left:hover {
+	background: url('../images/timeline/light/big-arrow.png') no-repeat left bottom;
+}
+
+.timelineLight .t_right, 
+.timelineLight .t_right:hover:active{
+	background: url('../images/timeline/light/big-arrow.png') no-repeat right top;
+}
+
+.timelineLight .t_right:hover {
+	background: url('../images/timeline/light/big-arrow.png') no-repeat right bottom;
+}
+
+/* -----------------------------------------------------------------------*/
+/* ------------------------------ RESPONSIVE -----------------------------*/
+/* -----------------------------------------------------------------------*/
+
+
+
+/* --- 768px --- */
+@media screen and (max-width:980px) {
+	
+	.timelineLight .timeline_line {
+		width:680px;
+	}
+	
+	.timelineLight .t_line_view {
+		width:680px;
+	}
+	
+	.timelineLight .t_line_m {
+		width: 338px;
+	}
+	.timelineLight .t_line_m.right {
+		left: 339px;
+		width: 339px;
+	}
+}
+
+
+/* --- 610px --- */
+@media screen and (max-width:767px) {
+	
+	.timelineLight .timeline_line {
+		width:530px;
+	}
+	
+	.timelineLight .t_line_view {
+		width:1060px;
+	}
+	
+	.timelineLight .t_line_m {
+		width: 528px;
+	}
+	.timelineLight .t_line_m.right {
+		left: 530px;
+		width: 528px;
+	}
+	.timelineLight .t_line_year {
+		opacity:0;
+		filter:alpha(opacity=0)
+	}
+	.timelineLight .t_line_month_year {
+		display:inline;
+	}
+	
+	.timelineLight .t_line_node span {
+		
+	}
+	.timelineLight .t_node_desc {
+		font-size:8px;
+	}
+	.timelineLight .t_node_desc.pos_right {
+		right:auto;
+		left:0;
+	}
+}
+
+
+/* --- 300px --- */
+@media screen and (max-width:609px) {
+	.timelineLight .timeline_line {
+		width:240px;
+	}
+	
+	.timelineLight .t_line_view {
+		width:480px;
+	}
+	
+	.timelineLight .t_line_m {
+		width: 238px;
+	}
+	.timelineLight .t_line_m.right {
+		left: 240px;
+		width: 238px;
+	}
+	
+	.timelineLight .item_open {
+		width:280px;
+		height:390px;
+	}
+	.timelineLight .item_open_cwrapper {
+		width:280px;
+	}
+}
+
+
+

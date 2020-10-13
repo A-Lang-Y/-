@@ -1,0 +1,161 @@
+/*
+HTML 5 Template Name: Prosperous
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.cssmoban.com/
+Licence: <a href="#">Website Template Licence</a>
+*/
+
+@import url(navi.css);
+@import url(forms.css);
+@import url(tables.css);
+@import url(slider.css);
+@import url(homepage.css);
+@import url(gallery.css);
+@import url(portfolio.css);
+
+html{overflow-y:scroll;}
+
+body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#919191; background-color:#232323;}
+
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{margin:0; padding:0; list-style:none;}
+.hidden{display:none;}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:block; clear:both;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgholder, .imgl, .imgr{padding:4px; border:1px solid #D6D6D6; text-align:center;}
+.imgl{float:left; margin:0 15px 15px 0; clear:left;}
+.imgr{float:right; margin:0 0 15px 15px; clear:right;}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
+address, article, aside, figcaption, figure, footer, header, hgroup, nav, section{display:block; margin:0; padding:0;}
+
+q{display:block; padding:0 10px 8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+q:before{content:'?'; font-size:26px;}
+q:after{content:' ?; font-size:26px; line-height:0;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
+
+.row1, .row1 a{color:#C0BAB6; background-color:#333333;}
+.row2{color:#979797; background-color:#FFFFFF;}
+.row2 a{color:#FF9900; background-color:#FFFFFF;}
+.row3{color:#989898; background-color:#333333;}
+.row3 a{color:#FF9900; background-color:#333333;}
+.row4, .row4 a{color:#919191; background-color:#232323;}
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+#header, #container, #footer, #copyright{display:block; width:960px; margin:0 auto;}
+
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:20px; font-weight:normal; line-height:normal;}
+
+address{font-style:normal;}
+
+blockquote, q{display:block; padding:8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+blockquote:before, q:before{content:'?'; font-size:26px;}
+blockquote:after, q:after{content:' ?; font-size:26px; line-height:0;}
+
+.one_quarter, .two_quarter, .three_quarter, .four_quarter{display:block; float:left; margin:0 20px 0 0;}
+.one_quarter{width:225px;}
+.two_quarter{width:470px;}
+.three_quarter{width:715px;}
+.four_quarter{width:960px; float:none; margin-right:0; clear:both;}
+
+.one_third, .two_third, .three_third{display:block; float:left; margin:0 30px 0 0;}
+.one_third{width:300px;}
+.two_third{width:630px;}
+.three_third{width:960px; float:none; margin-right:0; clear:both;}
+
+.one_fifth, .two_fifth, .three_fifth, .four_fifth, .five_fifth{display:block; float:left; margin:0 20px 0 0; text-align:justify;}
+.one_fifth{width:176px;}
+.two_fifth{width:372px;}
+.three_fifth{width:568px;}
+.four_fifth{width:764px;}
+.five_fifth{width:960px; float:none; margin-right:0; clear:both;}
+
+.lastbox{margin-right:0;}
+
+.more{text-align:right; clear:both;}
+
+/*----------------------------------------------Header-------------------------------------*/
+
+#header{padding:20px 0;}
+
+#header hgroup{float:left; margin:0 0 20px 0;}
+#header hgroup h1, #header hgroup h2{font-weight:normal; font-style:normal; text-transform:none;}
+#header hgroup h1{font-size:36px;}
+#header hgroup h2{font-size:13px;}
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+#container{padding:30px 0;}
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6{margin-bottom:20px;}
+#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+#container .last{margin:0;}
+
+/* ------Content-----*/
+
+#container #content{float:left; width:630px; margin-bottom:0;}
+
+/* ------Comments-----*/
+
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li.comment_odd, #comments li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+#comments li.comment_odd{color:#666666; background-color:#F7F7F7;}
+#comments li.comment_odd a{color:#FF9900; background-color:#F7F7F7;}
+#comments li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments li.comment_even a{color:#FF9900; background-color:#E8E8E8;}
+#comments article, #comments header{display:block; width:100%;}
+#comments figure{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid #DEDACB; text-align:center;}
+#comments figure img{float:inherit;}
+#comments header address{font-weight:bold;}
+#comments header time{font-size:smaller;}
+#comments article section{margin:0; padding:0;}
+#comments article section p{margin:10px 5px 10px 0; padding:0;}
+
+/* ------Right Column-----*/
+
+#container #right_column{float:right; width:300px;}
+
+aside h2{padding-bottom:8px; font-size:16px; text-transform:uppercase; border-bottom:5px solid #CCCCCC; text-align:right;}
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{padding:30px 0; font-size:12px; line-height:1.4em;}
+
+#footer section{margin-bottom:0;}
+#footer section h2.title{margin:0 0 25px 0; padding:0; color:#FFFFFF; background-color:#333333; font-size:12px; font-weight:bold; text-transform:uppercase;}
+#footer section footer{clear:both; text-align:right;}
+
+/* ------Blogposts-----*/
+
+#footer section article header h2{font-size:13px; font-weight:bold;}
+#footer section article address, #footer section article time{font-size:10px; font-style:normal;}
+#footer section article footer{text-align:left;}
+
+/* ------Quick Links-----*/
+
+#footer section nav li{margin:0 0 8px 0; padding:0 0 5px 0; border-bottom:1px solid #555555;}
+#footer section nav li.last{margin:0;}
+#footer section nav a{padding:0 0 0 10px; background:url("../images/arrow.gif") left center no-repeat;}
+
+/*----------------------------------------------Copyright-------------------------------------*/
+
+#copyright{padding:20px 0;}
+#copyright p{margin:0; padding: 0;}

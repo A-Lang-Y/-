@@ -1,0 +1,109 @@
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.ishu-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.ishu-header
+{
+   z-index: 1;
+}
+
+.ishu-hmenu>li, .ishu-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.ishu-hmenu, ul.ishu-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+ul.ishu-hmenu>li:first-child {
+   padding-right:11px;
+}
+ul.ishu-hmenu>li{
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('span'),firstChild).className='ishu-hmenu-separator');
+}
+ul.ishu-hmenu>li>span.ishu-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -11px;
+   width: 11px;
+   height: 46px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+ul.ishu-hmenu>li:first-child>span.ishu-hmenu-separator
+{
+   display:none;
+}
+
+ul.ishu-hmenu ul, .desktop-nav ul.ishu-hmenu>li.ext:hover>a{
+   background-color: #EFF2F5 !important;
+}
+
+.ishu-content-layout, .ishu-content-layout-row, .ishu-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.ishu-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.ishu-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.ishu-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.ishu-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.ishu-postheadericons span{
+   zoom: 1;
+}
+.ishu-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.ishu-content 
+{
+   width: auto;
+   float:none;
+}
+

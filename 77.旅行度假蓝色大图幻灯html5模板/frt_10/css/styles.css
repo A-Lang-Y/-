@@ -1,0 +1,334 @@
+/*
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+*/ 
+* {
+	margin:0;
+	padding:0;
+}
+body  {
+	font-family: 'Belgrano', serif;
+	font-size: 14px;
+	background: #FFF;
+	color: #677a83;
+}
+a {
+	color:#00adff;
+	text-decoration:underline;
+}
+p {
+	line-height:140%;	
+}
+h1 {
+	font-size:30px;
+	color:#00adff;
+	font-family: 'Lobster', sans-serif;
+	padding:10px 0 0 0;
+}
+h2 {
+	font-size:24px;
+	color:#00adff;
+	font-family: 'Lobster', sans-serif;
+}
+.container { 
+	width: 960px;
+	margin: 0 auto;
+}
+header {
+	background:url(../images/siteBackground.jpg) repeat;
+	border-bottom:1px solid #c0dffb;
+	padding-bottom:30px;
+}
+.headerContainer {
+	width:960px;
+	margin:0 auto;
+} 
+header h1 {
+	float:left;
+	padding:20px 0 0 0;
+}
+header h1 a {
+	font-family: 'Lobster', sans-serif;
+	font-size: 42px;
+	color:#00adff;
+	text-decoration:none;
+}
+.boxes {
+	padding:30px 0;
+}
+.boxes li {
+	background: #e2f6ff;
+	width:455px;
+	float:left;
+	margin:0 10px;
+	list-style:none;	
+}
+.boxes li .boxPic {
+	margin:20px 20px 10px 20px;
+}
+.boxes li h2, .boxes li p {
+	padding:20px 20px 0 20px;
+}
+.boxes li .button {
+	padding:10px 20px;
+}
+.rightList {
+	float: right; 
+	width: 500px;
+	padding:20px;
+	margin:20px 0;
+	background: #e2f6ff;
+}
+.leftList h2, .rightList h2 {
+	padding:0 0 20px 0;
+}
+.leftList { 
+	margin: 0 570px 0 0;
+	padding:20px 0 20px 0;
+}
+.leftList li {
+	list-style:none;
+	padding:5px 0 15px 35px;	
+	background:url(../images/star.png) no-repeat left top;
+}
+.leftList li a {
+	text-decoration:none;
+	color:#f68f0d;
+}
+.leftList li a:hover {
+	text-decoration:underline;
+	color:#00adff;
+}
+.floatPic {
+	float:right;
+	margin:0 0 10px 15px;
+}
+footer {
+	background:url(../images/footerBackground.jpg) repeat-x;
+}
+footer p {
+	text-align:center;
+	padding:30px 10px;
+}
+.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.shadowStyle {
+	border-radius:10px;
+	box-shadow: 0px 5px 4px 0px #30baff;
+}
+/*--------------------------------------------------------------------------------------------*/
+/********* begin MAIN NAV ********/
+/*--------------------------------------------------------------------------------------------*/
+#navcontainer {
+	float:right;
+	padding:30px 0 0 0;
+}
+ul#navlist {
+	margin-left: 0;
+	padding-left: 0;
+	white-space: nowrap;
+}
+#navlist li {
+	display: inline;
+	list-style-type: none;
+}
+#navlist a { 
+	padding: 10px 20px;
+	font-size:24px;
+	font-family: 'Lobster', sans-serif;
+	text-decoration:none;
+	color:#677a83;	
+	text-shadow: 0px 0px, 1px 1px #ffffff;
+}
+#navlist a:hover {
+	color: #fff;
+	text-decoration: none;
+	text-shadow:none;
+	background:#00adff;
+	border-radius:10px;
+}
+#navlist #active a {
+	color: #fff;
+	text-decoration: none;
+	text-shadow:none;
+	background:#00adff;
+	border-radius:10px;
+}
+/*--------------------------------------------------------------------------------------------*/
+/********* end MAIN NAV ********/
+/*--------------------------------------------------------------------------------------------*/
+/********* begin SLIDER ********/
+/*--------------------------------------------------------------------------------------------*/
+.slider { 
+	width:956px;
+	position:relative; 
+	z-index:1; 
+	margin:20px 0 80px 0;
+}
+.flexslider {
+	margin: 0;
+}
+.flexslider .slides > li {
+	display: none; 
+	list-style:none;
+} 
+.flexslider .slides img {
+	max-width: 100%; 
+	display: block; 
+}
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+/* Clearfix for the .slides element */
+.slides:after {
+	content: "."; 
+	clear: both; 
+	visibility: hidden; 
+	line-height: 0; 
+	height: 0;
+} 
+/* control Nav */
+.flex-control-nav {
+	position:relative;
+	left:7px;
+}
+.flex-control-nav li { 
+	display: block;
+	padding:0 0 2px 0; 
+	margin-right:1px;
+}
+.flex-control-nav li a {
+	display:block;
+	background:url(../images/pagination.png) 0 0 no-repeat; 
+	width:40px; 
+	height:35px; 
+	text-indent:-5000px;
+}
+.flex-control-nav li a:hover,.flex-control-nav li a.active { 
+	background-position:0 -34px;
+	width:40px;
+	cursor:pointer;
+}
+/*--------------------------------------------------------------------------------------------*/
+/********* end SLIDER ********/
+/*--------------------------------------------------------------------------------------------*/
+/********* begin MEDIA QUERIES ********/
+/*--------------------------------------------------------------------------------------------*/
+/* for 980px or less */
+@media screen and (max-width: 960px) {
+	.container {
+		width: 98%;
+	}
+	.leftList {
+		width: 70%;
+	}
+	.rightList {
+		width: 29%;
+	}
+	.slider {
+		width:99.6%;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	header h1 {
+    	float: left;
+		padding: 45px 0 0 10px;
+	}
+	header h1 a {
+
+	}
+	.rightList {
+		width: auto;
+		float:none;
+	}
+	.leftList {
+		margin:0;
+		width: auto;
+	}
+	.slider {
+		margin-top:10px;
+		margin:20px 0 80px 0;
+	}
+	.flex-control-nav { 
+		position:absolute; 
+	}
+	#navcontainer {
+		float:right;
+		padding:60px 10px 0 0;
+	}
+	#navlist li {
+		display: inline;
+		list-style-type: none;
+	}
+	.boxes li {
+		width:auto;
+		float:none;
+		margin:0 0 20px 0;
+	}
+	.footerContent {
+		width:auto;
+	}
+	header .headerContainer {
+		width: auto;
+	}
+	.boxes li img {
+		text-align:center;
+	}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	header h1 {
+    	float: none;
+		padding: 5px 0 10px 0;
+		text-align:center;
+	}
+	.slider {
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+	.rightList {
+		width: auto;
+		float:none;
+	}
+	.leftList {
+		margin:0;
+		width: auto;
+	}
+	.flex-control-nav { 
+		position:absolute; 
+	}
+	#navcontainer {
+		float:none;
+		padding:0;
+	}
+	#navlist li {
+		display: block;
+		text-align:center;
+	}
+	#navlist a { 
+		padding: 0 10px;
+	}
+	.floatPic {
+		display:none;
+	}
+	.boxes li .boxPic {
+		margin:5px;
+		width:70%;
+		margin:10px 20px;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+/********* end MEDIA QUERIES ********/
+/*--------------------------------------------------------------------------------------------*/

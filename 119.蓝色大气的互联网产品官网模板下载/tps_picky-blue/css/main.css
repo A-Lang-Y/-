@@ -1,0 +1,170 @@
+/*******************************************************************************************************************
+*  Author: Tomas Lach (www.tomaslach.cz)                                                                           
+*  Date: 25.02.2012                                                                                                
+*******************************************************************************************************************/
+
+/*******************************************************************************************************************
+*  IMPORT OTHER STYLES                                                                                             
+*******************************************************************************************************************/
+@import url(reset.css);
+
+/*******************************************************************************************************************
+*  BASE                                                                                                            
+*******************************************************************************************************************/
+html {background: #fff;}
+body {color: #71777d;font: normal 12px "Helvetica Neue", Arial, Tahoma, Verdana;}
+p {line-height: 1.7em;margin-bottom: 15px}
+address {font-style: normal;padding-bottom: 15px;}
+
+/*******************************************************************************************************************
+*  LINKS                                                                                                           
+*******************************************************************************************************************/
+a, a:link, a:focus {color: #1294d8;outline: 0;text-decoration: underline} /* color */
+a:hover {color: #000;text-decoration: none}
+
+/*******************************************************************************************************************
+*  H1 - H4                                                                                                         
+*******************************************************************************************************************/
+h1, h2, h3, h4 {line-height: 1.5em;margin-bottom: 15px;font-weight: 700}
+h1 {font-size: 3.0em;color: #fff;} 
+h2 {font-size: 2.1em;color: #666666;font-weight: 200}
+h3 {font-size: 0.9em;color: #000;text-shadow: 1px 1px 1px #fff;margin-bottom: 8px}
+h4 {font-size: 1.0em;}
+
+/*******************************************************************************************************************
+*  HEADER                                                                                                          
+*******************************************************************************************************************/
+#header {height: 125px;position: relative;} 
+#header a#logo {font-size: 1.8em;text-decoration: none;background: url('../img/logo.png') no-repeat 0 50%;padding-left: 40px;font-weight: 300;display: block;line-height: 125px;position: absolute;top: 0;left: 0;color: #2b3031;}
+#header a#logo:hover {text-decoration: none;color: #000}
+#header nav ul {position: absolute;top: 45px;right: 0}
+#header nav li {float: left;margin-left: 5px;}
+#header nav li a {float: left;border: 1px solid #fff;color: #818181;display: block;height: 33px;line-height: 33px;padding: 0 0;text-decoration: none;}
+#header nav li a span {display: block;border-top: 1px solid #fff;height: 33px;float: left;padding: 0 15px;}
+#header nav li.active a, #header nav li a:hover {border-color: #1294d8;background: #1294d8;color: #fff !important;} 
+#header nav li.active a span , #header nav li a:hover span {border-top: 1px solid #32ffff;}
+
+/*******************************************************************************************************************
+*  INTRO                                                                                                          
+*******************************************************************************************************************/
+#intro {color: #fff;padding-top: 20px;text-align: center;background-color: #19bee7;}
+#intro h1 {margin-bottom: 0;font-weight: 100;}
+#intro h1 strong {font-weight: 500}
+#intro p {font-size: 1.3em;font-weight: 200;color: #fff;margin-bottom: 30px;opacity: 0.8}
+#intro p a {color: #fff;text-decoration: underline;}
+#intro p a:hover {color: #fff;text-decoration: none}
+#intro img {float: left}
+
+/*******************************************************************************************************************
+*  TWITTER                                                                                                          
+*******************************************************************************************************************/
+#twitterBar {background: #fff;padding: 20px 0;font-family: Georgia, Arial, Verdana, Tahoma;font-style: Italic;position: relative;}
+#twitterBar .remove {position: absolute;top: 50%;right: 0;display: block;border: 1px solid #fff;width: 20px;height: 20px;margin-top: -10px;;background: url('../img/remove.png') no-repeat 50%;text-indent: -9999px;}
+#twitterBar .remove:hover {background-color: #f7f7f7;border-color: #ccc;}
+#twitterBar p {margin: 0;font-size: 1.4em;text-align: center;}
+
+/*******************************************************************************************************************
+*  CONTENT                                                                                                         
+*******************************************************************************************************************/
+#container {background: #ededed;border-top: 1px solid #e0e0e0;border-bottom: 1px solid #e0e0e0;padding: 40px 0 50px}
+#content .withIcon h2 {padding-left: 60px;font-size: 1.6em}
+#content .withIcon p {padding-left: 60px}
+#content .icon1 {background: url('../img/icon-fast.png') no-repeat 0 5px}
+#content .icon2 {background: url('../img/icon-lovely.png') no-repeat 0 5px}
+#content .icon3 {background: url('../img/icon-tasty.png') no-repeat 0 5px}
+
+/*******************************************************************************************************************
+*  FOOTER                                                                                                          
+*******************************************************************************************************************/
+#footer {padding: 40px 0;color: #8b8b8b;font-size: 0.9em;}
+#footer a.facebook {color: #286bb5}
+#footer a.twitter {color: #33bae6}
+
+/*******************************************************************************************************************
+*  OTHER STYLES                                                                                                    
+*******************************************************************************************************************/
+.wrap {margin: 0 auto;position: relative;width: 980px}
+.buttonWrapper {margin-bottom: 30px;text-align: center;background: url('../img/double-border.png') repeat-x 0 50%}
+.buttonWrap {background: #ededed;padding: 0 20px;display: inline-block;}
+a.button {display: inline-block;border: 1px solid #1294d8;background: #19bee7;color: #fff;text-decoration: none;height: 45px;line-height: 45px;text-decoration: none;}
+a.button span {display: inline-block;padding: 0 40px;font-size: 1.2em;font-weight: 400;height: 45px;border-top: 1px solid #32ffff;}
+a.button:hover {background: #666;border-color: #666;}
+a.button:hover span {border-color: #999}
+.gallery .photo {margin-left: 20px}
+.gallery .photo:first-child {margin-left: 0}
+a.photo {display: block;float: left;}
+a.photo img, img.photo {display: block;float: left;border: 1px solid #d3d3d3;background: #fff;}
+a.photo:hover img {border-color: #999}
+.col1-3 {width: 308px;margin-left: 26px;float: left}
+.col1-3 p:last-child, 
+.col2-3 p:last-child {margin-bottom: 0}
+.col1-3:first-child {margin-left: 0}
+.col1-2 {width: 470px;margin-left: 40px;float: left}
+.col1-2:first-child {margin: 0;}
+.marginBottom30 {margin-bottom: 30px}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+/*******************************************************************************************************************
+*  CSS3                                                                                                    
+*******************************************************************************************************************/
+#header nav li.active a, #header nav li a:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #19bee7), color-stop(100%, #1295d8));
+    background-image: -webkit-linear-gradient(top, #19bee7, #1295d8);
+    background-image: -moz-linear-gradient(top, #19bee7, #1295d8);
+    background-image: -ms-linear-gradient(top, #19bee7, #1295d8);
+    background-image: -o-linear-gradient(top, #19bee7, #1295d8);
+    background-image: linear-gradient(top, #19bee7, #1295d8);
+} 
+
+#header nav li a, #header nav li a span {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#intro {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #19bee7), color-stop(100%, #0b6bc9));
+    background-image: -webkit-linear-gradient(top, #19bee7, #0b6bc9);
+    background-image: -moz-linear-gradient(top, #19bee7, #0b6bc9);
+    background-image: -ms-linear-gradient(top, #19bee7, #0b6bc9);
+    background-image: -o-linear-gradient(top, #19bee7, #0b6bc9);
+    background-image: linear-gradient(top, #19bee7, #0b6bc9);
+}
+
+a.button {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #19bee7), color-stop(100%, #1295d8));
+    background-image: -webkit-linear-gradient(top, #19bee7, #1295d8);
+    background-image: -moz-linear-gradient(top, #19bee7, #1295d8);
+    background-image: -ms-linear-gradient(top, #19bee7, #1295d8);
+    background-image: -o-linear-gradient(top, #19bee7, #1295d8);
+    background-image: linear-gradient(top, #19bee7, #1295d8);
+
+    -webkit-box-shadow: 0 8px 6px -6px #000;
+    -moz-box-shadow: 0 8px 6px -6px #000;
+    -ms-box-shadow: 0 8px 6px -6px #000;
+    -o-box-shadow: 0 8px 6px -6px #000;
+    box-shadow: 0 4px 4px -4px #000;
+}
+a.button span {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+a.button:hover {background: #666;border-color: #666;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, #000000));
+    background-image: -webkit-linear-gradient(top, #333333, #000000);
+    background-image: -moz-linear-gradient(top, #333333, #000000);
+    background-image: -ms-linear-gradient(top, #333333, #000000);
+    background-image: -o-linear-gradient(top, #333333, #000000);
+    background-image: linear-gradient(top, #333333, #000000);
+}
+
+#twitterBar .remove:hover {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}

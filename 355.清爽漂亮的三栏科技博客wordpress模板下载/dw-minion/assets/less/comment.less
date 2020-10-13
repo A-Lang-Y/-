@@ -1,0 +1,289 @@
+//
+// Comments
+// --------------------------------------------------
+.comments-area {
+  border-top: 5px solid @gray3;
+}
+
+
+// Content title
+// ------------------
+.comments-title {
+  font-size: @fontSizeSmall;
+  line-height: @lineHeightSmall;
+  text-transform: uppercase;
+  color: @gray4;
+  font-family: @sansFontFamily;
+}
+
+// Content list
+// ------------------
+.comment-list {
+  list-style: none;
+  margin: 0;
+
+  li.comment {
+    border-top: 1px solid @gray9;
+  }
+
+  > li.comment:first-child {
+    border-top: none;
+  }
+
+  .comment-body {
+    position: relative;
+  }
+
+  .avatar {
+    .border-radius(500px);
+  }
+
+  .fn {
+    display: block;
+    font-family: @headingsFontFamily;
+    font-weight: 700;
+    color: @linkColor;
+    margin-bottom: 5px;
+  }
+
+  .comment-datetime,
+  .sep,
+  .comment-reply-link,
+  .comment-edit-link {
+    font-size: @fontSizeSmall;
+    line-height: @lineHeightSmall;
+    text-decoration: none;
+  }
+
+  .comment-datetime {
+    color: @gray7; 
+
+    i {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: @linkColorHover;
+    }
+  }
+
+  .comment-reply-link i {
+    margin-right: 5px;
+  }
+
+  .comment-edit-link {
+    color: @gray7;
+    margin-left: 10px;
+
+    &:hover {
+      color: @linkColorHover;
+    }
+  }
+
+  .comment-content {
+    margin-top: 10px;
+  }
+
+  .children {
+    list-style: none;
+    margin: 0;    
+  }
+}
+
+// Repond
+// ------------------
+#respond {
+  position: relative;
+}
+
+.comment-list + #respond,
+.comment #respond {
+  border-top: 1px solid @gray9;
+}
+
+#reply-title {
+  font-size: @fontSizeSmall;
+  line-height: @lineHeightSmall;
+  text-transform: uppercase;
+  color: @gray4;
+  font-family: @sansFontFamily;
+  margin: @layoutGutterWidth 0 @layoutGutterWidth/2;
+}
+
+#cancel-comment-reply-link {
+    position: absolute;
+    left: 0;    
+    padding: 5px 12px;
+    font-size: @fontSizeSmall;
+    line-height: 22px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: @white;
+    border: none;
+    background-color: @btnBackground;
+    text-transform: none;
+    .border-radius(@baseBorderRadius);
+    .transition(background-color .2s);
+
+    // Hover/focus state
+    &:hover {
+      background-color: @btnBackgroundHover;
+      text-decoration: none;
+    }
+  }
+
+#commentform {
+  p {
+    margin-bottom: 0;
+  }
+
+  .logged-in-as {
+    float: right;
+    font-size: @fontSizeSmall;
+  }
+
+  label {
+    font-size: @fontSizeSmall;
+    font-weight: bold;
+    color: @gray3;
+  }
+
+  .required {
+    color: #ed1c24;
+  }
+
+  #comment {
+    min-width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 20px;
+    .box-sizing(border-box);
+  }
+
+  .form-submit {
+    overflow: hidden;
+  }
+
+  #submit {
+    float: right;
+    padding: 5px 12px;
+    font-size: @fontSizeSmall;
+    font-family: @sansFontFamily;
+    cursor: pointer;
+    color: @white;
+    border: none;
+    background-color: @btnBackgroundHover;
+    height: 30px;
+    .border-radius(@baseBorderRadius);
+    .transition(background-color .2s);
+
+    // Hover/focus state
+    &:hover {
+      background-color: @btnBackground;
+    }
+  }
+}
+
+//
+// Responsive and fix ie 8
+// --------------------------------------------------
+.comments-768-lt-ie9() {
+  // Content title
+  .comments-title {
+    margin-top: @layoutGutterWidth;
+  }
+  
+  // Content list
+  .comment-list {
+    .comment-body {
+      padding: @layoutGutterWidth 0 @layoutGutterWidth 80px;  
+    }
+
+    > li:first-child > .comment-body {
+      padding-top: 20px;
+    }
+
+    .avatar {
+      position: absolute;
+      left: 0;
+    }
+
+    .depth .comment-body {
+      margin-left: 40px; 
+    }
+
+    .comment-depth(10); 
+  }
+
+  // Repond
+  #reply-title {
+    margin: @layoutGutterWidth 0 @layoutGutterWidth/2;
+  }
+
+  #cancel-comment-reply-link {
+    bottom: 0;
+  }
+
+  #commentform {
+    margin-bottom: @layoutGutterWidth;
+
+    input[type="text"] {
+      width: 50%;
+    }
+  }
+}
+
+.lt-ie9 {
+  .comments-768-lt-ie9();
+}
+
+@media ( min-width: 768px) {
+  .comments-768-lt-ie9();
+}
+
+@media ( max-width: 767px ) { 
+  // Content title
+  .comments-title {
+    margin-top: @layoutGutterWidth767; 
+  }
+
+  // Content list
+  .comment-list {
+    .comment-body {
+      padding: @layoutGutterWidth767 0;
+    }
+
+    > li:first-child > .comment-body {
+      padding-top: 10px;
+    }
+
+    .commnet-meta {
+      overflow: hidden;
+    }
+
+    .avatar {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+
+  // Repond
+  #reply-title {
+    margin: @layoutGutterWidth767 0 @layoutGutterWidth767/2;
+  }
+
+  #cancel-comment-reply-link {
+    bottom: @layoutGutterWidth767;
+  }
+
+  #commentform {
+    margin-bottom: @layoutGutterWidth767;
+
+    input[type="text"] {
+      width: 100%;
+      height: 35px;
+      .box-sizing(border-box);
+    }
+  }
+}

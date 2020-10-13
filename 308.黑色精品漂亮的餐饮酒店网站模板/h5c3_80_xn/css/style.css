@@ -1,0 +1,118 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline }
+/* Left & Right alignment */
+.left {float:left}
+.right {float:right}
+.wrapper {width:100%;overflow:hidden}
+/* Global properties ======================================================== */
+body {background:#000;border:0;font:12px Arial, Helvetica, sans-serif;color:#72716f;line-height:20px;min-width:980px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3 {border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure ============================================================= */
+.main {margin:0 auto;width:960px;padding:0 6px}
+.bg1 {background:url(../images/bg.gif) top center repeat}
+.bg2 {background:url(../images/bg_top.png) top center no-repeat}
+.box {background:#12110f;box-shadow:0 0 6px #000;-moz-box-shadow:0 0 6px #000;-webkit-box-shadow:0 0 6px #000;position:relative}
+/* ============================= main layout ====================== */
+a {color:#72716f;text-decoration:underline;outline:none}
+a:hover {text-decoration:none}
+h1 {padding:40px 0 0 38px;float:left}
+h2 {font-size:21px;line-height:1.2em;padding:6px 0 15px 0;color:#fff;letter-spacing:-1px}
+h2 img {margin-right:15px;float:left}
+p {padding-bottom:20px}
+/* ============================= header ====================== */
+header {height:116px}
+#logo {display:block;text-indent:-9999px;background:url(../images/logo.png) 0 0 no-repeat;width:240px;height:46px}
+.department {float:right;padding:37px 35px 0 0;color:#72716f;text-align:right}
+.department span {color:#fff}
+#menu {background:#fff;padding:10px 2px;height:39px;margin-bottom:10px}
+#menu > li {border-right:1px solid #f2f2f2;float:left}
+#menu .last {border:0}
+#menu > li > a {display:block;padding:0 62px;font-size:16px;color:#12110f;text-decoration:none;line-height:39px}
+#menu > li > a:hover, #menu > .active > a {color:#f3b21d}
+/* ============================= content ====================== */
+#content {}
+.box1 {background:#fff;padding:10px}
+.box1 h2 {color:#12110f;padding:7px 0 14px 0}
+.button1, .button2 {display:inline-block;background:#fff;padding:0 25px;color:#12110f;line-height:29px;position:relative;border-radius:1px;-moz-border-radius:1px;-webkit-border-radius:1px;text-decoration:none}
+.button2 {background:#12110f;color:#fff;padding:0 22px}
+.button1:hover {background:#2a2824;color:#72716f}
+.button2:hover {background:#f3b21d}
+/* =========== kwiks slider ========= */
+.kwicks-wrapper {width:640px;overflow:hidden}
+	.kwicks {/* recommended styles for kwicks ul container */list-style:none;position:relative;margin:0;padding:0 !important;overflow:hidden;height:414px;background:none}
+	.kwicks li {/* these are required, but the values are up to you (must be pixel) */width:160px;height:414px;/*do not change these */display:block;overflow:hidden;padding:0 !important; /* if you need padding, do so with an inner div (or implement your own box-model hack) */cursor:pointer;background:none !important;}
+	.kwicks.horizontal li {/* This is optional and will be disregarded by the script. However, it should be provided for non-JS enabled browsers. */margin-right:0;/*Set to same as spacing option. */	float:left}
+.pad_bot1 {padding-bottom:10px}
+.pad_bot2 {padding-bottom:24px}
+.pad_bot3 {padding-bottom:14px}
+.pad_left1 {padding-left:70px}
+.pad_left2 {padding-left:80px}
+.pad {padding:20px 0 39px 40px}
+.box1 .pad {padding:20px 0 15px 30px}
+.marg_right1 {margin-right:20px}
+.line1 {background:url(../images/line_vert1.gif) 280px 0 repeat-y}
+.line2 {background:url(../images/line_vert1.gif) 600px 0 repeat-y;padding-bottom:7px}
+.line3 {background:url(../images/line_vert2.gif) 600px 0 repeat-y;padding-bottom:11px}
+.color1 {color:#f3b21d}
+.color2 {color:#fff}
+.color3 {color:#000}
+figure {padding-top:4px}
+.list1 {}
+.list1 li {line-height:24px}
+.list1 a {color:#f3b21d;padding-left:15px;background:url(../images/marker_1.gif) 0 5px no-repeat}
+.list2 {border-top:1px solid #f2f2f2;margin-top:-2px;padding-bottom:21px}
+.list2 li {line-height:23px;border-bottom:1px solid #f2f2f2;padding:0 6px;color:#000}
+.list2 span {float:right}
+/* ============================= footer ====================== */
+footer {padding:47px 30px 47px 40px;height:44px}
+footer a {}
+footer a:hover {}
+#icons {padding-top:5px}
+#icons li {float:left;padding-right:11px}
+#footer_menu {padding-top:4px}
+#footer_menu li {padding-right:26px;background:url(../images/footer_menu_line.gif) right 5px no-repeat;margin-right:25px;float:left}
+#footer_menu .last {padding-right:0;margin-right:0;background:none}
+#footer_menu .active a {text-decoration:none}
+/* Tooltips */
+.aToolTip {background:#2a2824;margin:0;padding:2px 10px 3px;font-size:11px;line-height:1.2em;position:absolute}
+.aToolTip .aToolTipContent {position:relative;margin:0;padding:0}
+/* ============================= forms ============================= */
+#ContactForm {padding:0 10px 0 0;margin-top:-2px}
+#ContactForm .wrapper {overflow:inherit;min-height:30px;line-height:24px}
+#ContactForm .textarea_box {min-height:216px}
+#ContactForm a {margin-left:10px;float:right;padding:0 20px}
+#ContactForm .input {margin:0;float:right;width:482px;height:16px;background:#fff;border:1px solid #f2f2f2;padding:3px 5px;color:#72716f;font:12px Arial, Helvetica, sans-serif}
+#ContactForm textarea {overflow:auto;margin:0;float:right;width:482px;height:198px;background:#fff;border:1px solid #f2f2f2;padding:3px 5px;color:#72716f;font:12px Arial, Helvetica, sans-serif}
+#form1 {width:240px;float:right;padding:30px;background:#12110f}
+#form1 h2 {padding:0 0 22px 0;margin-top:-4px;color:#fff}
+#form1 .right {width:140px}
+#form1 .row {height:30px;line-height:22px}
+#form1 .row_textarea {height:102px;line-height:22px}
+#form1 .input {font:12px Arial, Helvetica, sans-serif;color:#72716f;background:none;height:15px;padding:3px 5px;width:128px;margin:0}
+#form1 textarea {font:12px Arial, Helvetica, sans-serif;color:#72716f;background:none;height:54px;padding:3px 5px;width:222px;margin:0;overflow:auto}
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {display:none}
+/* -------------
+ * Inputs
+ * ------------- */
+.jqTransformInputWrapper {border:1px solid #2a2824;position:relative;border-radius:1px;-moz-border-radius:1px;-webkit-border-radius:1px;float:right;height:21px;width:138px !important}
+.jqTransformTextarea {border:1px solid #2a2824;position:relative;border-radius:1px;-moz-border-radius:1px;-webkit-border-radius:1px;height:64px;width:100%;margin-top:4px}
+/* -------------
+ * Selects
+ * ------------- */
+.jqTransformSelectWrapper {position:relative;float:right}
+.jqTransformSelectWrapper div {font:12px Arial, Helvetica, sans-serif;color:#72716f;display:block;position:relative;height:21px;line-height:21px;overflow:hidden;cursor:pointer;border:1px solid #2a2824;background:none;border-radius:1px;-moz-border-radius:1px;-webkit-border-radius:1px}
+.jqTransformSelectWrapper div span {padding:0 0 0 5px;display:block}
+a.jqTransformSelectOpen {display:block;position:absolute;top:1px;right:1px;width:19px;height:19px;background:url(../images/select.gif) no-repeat}
+.jqTransformSelectWrapper ul {position:absolute;top:24px;left:0;background:#12110f;border:1px solid #2a2824;border-radius:1px;-moz-border-radius:1px;-webkit-border-radius:1px;display:none;z-index:10; padding:5px 0;height:50px;overflow:auto}
+.jqTransformSelectWrapper ul a {display:block;padding:0 5px;text-decoration:none;line-height:20px}
+.jqTransformSelectWrapper ul a.selected {color:#fff}
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {color:#fff;background:#2a2824}
+#form1 .select1 .jqTransformSelectWrapper div, #form1 .select1 .jqTransformSelectWrapper ul {width:138px !important}
+#form1 .select2 .jqTransformSelectWrapper div, #form1 .select2 .jqTransformSelectWrapper ul {width:42px !important}
+#form1 .select2 {float:right;width:44px;margin-left:4px}
+#form1 .button1 {float:right;margin-left:4px;padding:0 19px}

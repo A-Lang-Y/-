@@ -1,0 +1,114 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline }
+/* Left & Right alignment */
+.left {float:left}
+.right {float:right}
+.center {text-align:center}
+.wrapper {width:100%;overflow:hidden}
+/* Global properties */
+body {background:#eceded;border:0;font:14px Arial, Helvetica, sans-serif;color:#000;line-height:20px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure */
+.main {margin:0 auto;width:900px}
+.body1 {background:url(../images/bg_top.gif) top repeat-x #eceded;position:fixed;z-index:2;top:0;left:0;width:100%}
+.body2 {background:url(../images/bg_top_img.jpg) top center no-repeat}
+.body3 {background:#eceded;padding-bottom:20px}
+.body4 {background:#1a1a1a;height:142px}
+/* main layout */
+a {color:#f77007;text-decoration:underline;outline:none}
+a:hover {text-decoration:none}
+h1 {float:left;padding:59px 0 0 0}
+h2 {font-size:33px;line-height:1.2em;color:#1e1e1e;padding:13px 0 13px 30px;letter-spacing:-1px}
+h3 {font-size:24px;color:#000;line-height:1.2em;padding:0 0 8px 0;text-transform:uppercase;letter-spacing:-1px}
+h3 a {text-decoration:none;color:#000}
+h3 a:hover {color:#f77007}
+p {padding-bottom:20px}
+/* header */
+header {width:100%;overflow:hidden;height:248px}
+#top_nav {float:right;padding:9px 0 0 0}
+#top_nav li {float:left;background:url(../images/line_top.gif) 0 0 no-repeat;padding:1px 2px 2px 21px;margin-left:16px}
+#top_nav a {display:block;width:16px;height:14px;position:relative}
+#top_nav .icon1 {background:url(../images/icon1.png) no-repeat}
+#top_nav .icon1:hover {background:url(../images/icon1_active.png) no-repeat}
+#top_nav .icon2 {background:url(../images/icon2.png) no-repeat}
+#top_nav .icon2:hover {background:url(../images/icon2_active.png) no-repeat}
+#top_nav .icon3 {background:url(../images/icon3.png) no-repeat}
+#top_nav .icon3:hover {background:url(../images/icon3_active.png) no-repeat}
+#top_nav .bg_none {background:none}
+#logo {display:block;background:url(../images/logo.png) no-repeat;width:437px;height:59px;text-indent:-9999px}
+#icons {float:right;padding:54px 9px 0 0}
+#icons li {float:left;padding-left:14px}
+/* Tooltips */
+.aToolTip {border:1px solid #fff;background:url(../images/opacity_50_black.png) repeat;color:#fff;margin:0;padding:2px 10px;font-size:11px;}
+.aToolTip .aToolTipContent {position:relative;margin:0;padding:0}
+a.aToolTipCloseBtn {display:block;height:20px;width:20px;overflow:hidden;background:url(../images/loading/close.gif) no-repeat;text-indent:-9999px;outline:none;position:absolute;top:-15px;right:-20px}
+#menu {position:fixed;z-index:2;top:240px;padding-left:4px}
+#menu li {margin-top:-4px;font-size:40px;line-height:1.2em}
+#menu li a {text-transform:uppercase;color:#1e1e1e;text-decoration:none;letter-spacing:-1px}
+#menu li a:hover, #menu .menu_active a {color:#f77007}
+#menu .nav1 a:hover, #menu .nav1.menu_active a {color:#f77007}
+#menu .nav2 a:hover, #menu .nav2.menu_active a {color:#a63eb0}
+#menu .nav3 a:hover, #menu .nav3.menu_active a {color:#077ef7}
+#menu .nav4 a:hover, #menu .nav4.menu_active a {color:#0aa868}
+#menu .nav5 a:hover, #menu .nav5.menu_active a {color:#e40016}
+#menu .nav6 a:hover, #menu .nav6.menu_active a {color:#f77007}
+/* content */
+#content {padding:248px 0 0 243px;width:649px;position:relative;z-index:1;padding-bottom:56px}
+/* The Nivo Slider styles */
+#slider {position:relative;width:100%;height:396px;z-index:88;overflow:hidden}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {position:absolute;top:0px;left:0px;width:100%;height:100%;border:0;padding:0;margin:0;z-index:60;display:none}
+/* The slices in the Slider */
+.nivo-slice {display:block;position:absolute;z-index:50;height:100%}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {position:absolute;z-index:99;right:40px;bottom:20px}
+.nivo-controlNav a {position:relative;z-index:99;cursor:pointer;text-indent:-5000px;width:22px;height:22px;float:left;margin-left:8px;background:url(../images/buttons.png) right 0 no-repeat}
+.nivo-controlNav a.active, .nivo-controlNav a:hover {background-position:left}
+#slider_shadow {background:url(../images/slider_shadow.png) no-repeat;width:100%;height:19px;overflow:hidden;font-size:0;line-height:0}
+.banners {padding-top:21px;width:100%;overflow:hidden;color:#eceded}
+.ban1, .ban2, .ban3 {min-height:323px}
+.ban1 {background:url(../images/banner1_bg.jpg) 0 0 no-repeat #9833a3}
+.ban2 {background:url(../images/banner2_bg.jpg) 0 0 no-repeat #089b59}
+.ban3 {background:url(../images/banner3_bg.jpg) 0 0 no-repeat #f56005}
+.banners h2 {font-size:33px;color:#eceded;line-height:1.2em;padding:19px 0 17px 0;letter-spacing:-1px}
+.banners h2 strong {font-weight:normal;font-size:35px}
+.banners h2 span {display:block;margin-top:-13px}
+.banners a {color:#eceded;text-decoration:none}
+.banners a:hover {text-decoration:underline}
+.banners .button1 {display:inline-block;width:125px;font-size:19px;text-transform:uppercase;text-decoration:none;line-height:42px;text-align:center;letter-spacing:-1px;height:45px;background:url(../images/button1_bg.gif) top repeat-x #eceded;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;position:relative}
+.banners .button1:hover {color:#1e1e1e;background:#fff;text-decoration:none}
+.banner_shadow {background:url(../images/banner_shadow.jpg) no-repeat;width:100%;height:17px;overflow:hidden;font-size:0;line-height:0}
+.ban1 .button1 {color:#a63eb0}
+.ban2 .button1 {color:#1eae7c}
+.ban3 .button1 {color:#ff7000}
+.button1_shadow {background:url(../images/button1_shadow.png) center center no-repeat;width:100%;height:16px;overflow:hidden;font-size:0;line-height:0}
+.ban3 .button1_shadow {background:url(../images/button1_shadow2.png) center center no-repeat}
+.pad_left1 {padding-left:9px}
+.pad {padding:0 22px 0 30px}
+.pad_bot1 {padding-bottom:5px}
+.pad_bot2 {padding-bottom:23px}
+.pad_top1 {padding-top:13px}
+.marg_right1 {margin-right:30px}
+.marg_right2 {margin-right:16px}
+.marg_top1 {margin-top:-5px}
+.box1_bot {border:1px solid #d4d5d5;border-bottom:none;background:url(../images/box1_bot.gif) bottom repeat-x}
+.box1_left {background:url(../images/box1_left.gif) bottom left no-repeat;margin-left:-1px;padding-left:1px}
+.box1_right {background:url(../images/box1_right.gif) bottom right no-repeat;padding-bottom:15px;margin-right:-1px;padding-right:1px}
+.box1 {background:url(../images/bg_box1.gif) top repeat-x #f6f7f7;border:1px solid #fff}
+/* footer */
+footer {color:#fff;text-align:center;padding-top:43px}
+footer div {float:left;padding:18px 0 0 38px;width:650px}
+footer a:hover{}
+#footer_logo {display:block;background:url(../images/footer_logo.jpg) no-repeat;width:206px;height:55px;text-indent:-9999px;float:left}
+/* forms */
+#ContactForm {width:367px;height:245px}
+#ContactForm span {float:left;width:103px}
+#ContactForm .wrapper {height:30px}
+#ContactForm .textarea_box {height:113px;padding-bottom:10px}
+#ContactForm a:hover {background:url(../images/button2_bg_active.gif) top repeat-x #f77107}
+#ContactForm a {margin-left:10px;float:right;width:85px;height:34px;font-size:15px;line-height:32px;color:#fff;text-align:center;text-transform:uppercase;text-decoration:none;background:url(../images/button2_bg.gif) top repeat-x #4f4f4f;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;position:relative}
+#ContactForm .shadow {display:block;position:absolute;background:url(../images/button2_shadow.gif) no-repeat;height:9px;font-size:0;line-height:0;bottom:-9px;left:0}
+#ContactForm .input {width:252px;height:18px;border:1px solid #d7d8d8;background:url(../images/bg_input.gif) top repeat-x #edeeee;padding:2px 5px;color:#000;font:14px Arial, Helvetica, sans-serif}
+#ContactForm textarea {overflow:auto;margin:0;width:252px;height:107px;border:1px solid #d7d8d8;background:url(../images/bg_textarea.gif) top repeat-x #edeeee;padding:2px 5px;color:#000;font:14px Arial, Helvetica, sans-serif}

@@ -1,0 +1,332 @@
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* DIVIDER -------------------------------------------------*/
+.hr {
+  border-bottom: 5px solid #694e41;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.block-divider {
+  background: url(../img/feature-line.png) no-repeat center center;
+  height: 150px;
+}
+/* PRE ------------------------------------------------------------*/
+pre {
+  white-space: pre;
+  background: #fff;
+  font-size: 14px;
+  padding: 10px;
+  border: 2px dotted #694e41;
+  font-family: Consolas,monospace;
+  word-break: break-word;
+}
+/* COLUMNS LAYOUT----------------------------------------------------------*/
+.one-half,
+.one-third,
+.one-fourth {
+  float: left;
+  margin-right: 2.1276%;
+  position: relative;
+}
+.one-half {
+  width: 48.9361%;
+}
+.one-third {
+  width: 31.9148%;
+}
+.one-fourth {
+  width: 23.4042%;
+}
+.last {
+  clear: right;
+  margin-right: 0 !important;
+}
+/* VIDEOS ------------------------------------------------------------*/
+.video-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* DROPCAP ------------------------------------------------------------*/
+.dropcap:first-letter {
+  font-size: 3.571em;
+  line-height: 0.76em;
+  padding: 0.2em 0.2em 0 0;
+  float: left;
+  display: block;
+  color: #694e41;
+}
+.dropcap.dark:first-letter {
+  display: block;
+  float: left;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 8px 0 0;
+  padding: 10px 10px;
+  background: #694e41;
+  color: #eddbc1;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+/* INFOBOXES ------------------------------------------------------------*/
+.infobox-info,
+.infobox-warning,
+.infobox-success,
+.infobox-error {
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.infobox-info {
+  color: #00529B;
+  background-color: #BDE5F8;
+  background-image: url('../img/info-blue.png');
+}
+.infobox-warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+  background-image: url('../img/info-yellow.png');
+}
+.infobox-success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  background-image: url('../img/info-green.png');
+}
+.infobox-error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('../img/info-red.png');
+}
+/* PULLQUOTES ------------------------------------------------------------*/
+.pullquote-right,
+.pullquote-left {
+  border-left: #555555 2px solid;
+  float: right;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 20px 0px 20px 20px;
+  width: 33%;
+  font-style: italic;
+}
+.pullquote-left {
+  float: left;
+  margin: 20px 20px 20px 0px;
+  padding: 0 0 0 20px;
+}
+.pullquote-right {
+  border-left: none;
+  border-right: #555555 2px solid;
+  padding: 0 20px 0 0px;
+}
+/* HIGHLIGHT ------------------------------------------------------------*/
+.highlight {
+  background: #fbe471;
+}
+/* Link buttons ------------------------------------------------*/
+.entry-content .link-button {
+  color: #fff;
+}
+.link-button {
+  display: inline-block;
+  background-color: #f8a835;
+  border: 1px solid #ffda67;
+  border-bottom: 1px solid #e49421;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  padding: 8px 10px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.link-button:hover {
+  background-color: #ffbe4b;
+}
+.link-button.red {
+  background: #e65151;
+  border: 1px solid #ff8d8d;
+  border-bottom: 1px solid #d23d3d;
+}
+.link-button.red:hover {
+  background: #fb6666;
+}
+.link-button.green {
+  background: #86ae53;
+  border: 1px solid #b8e085;
+  border-bottom: 1px solid #729a3f;
+}
+.link-button.green:hover {
+  background: #9cc469;
+}
+.link-button.blue {
+  background: #53a4ae;
+  border: 1px solid #85d6e0;
+  border-bottom: 1px solid #3f909a;
+}
+.link-button.blue:hover {
+  background: #69bac4;
+}
+/* ACCORDION -------------------------------------------------*/
+.accordion-trigger,
+.toggle-trigger {
+  line-height: 30px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.accordion-trigger a,
+.toggle-trigger a {
+  color: #f0e4cb;
+}
+.accordion-trigger {
+  text-decoration: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: #f1f1f1;
+  font-size: 14px;
+}
+.accordion-trigger.active {
+  border-bottom: 1px solid #ccc;
+}
+.accordion-trigger:hover {
+  background: #fff;
+}
+.accordion-container {
+  margin-bottom: 0px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+/* TOGGLE -------------------------------------------------*/
+.toggle-trigger {
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 5px 5px 5px 10px;
+  font-size: 14px;
+}
+.toggle-trigger i {
+  display: block;
+  float: left;
+  width: 31px;
+  height: 31px;
+  margin-right: 10px;
+  background: url(../img/toggle.png) no-repeat 0px 0px;
+}
+.toggle-trigger.active {
+  border-bottom: 1px solid #ccc;
+}
+.toggle-trigger.active i {
+  background-position: 0px -31px;
+}
+.toggle-trigger:hover {
+  background-color: #fff;
+}
+.toggle-container {
+  margin-bottom: 0px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+/* TABS -------------------------------------------------*/
+/* root element for tabs  */
+.tabs {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0px;
+  height: 33px;
+}
+body.home .tabs {
+  padding: 0px 30px;
+}
+/* single tab */
+ul.tabs li {
+  display: block;
+  float: left;
+  text-indent: 0;
+  padding: 0;
+  margin: 2px 5px 0px 0px !important;
+  list-style-image: none !important;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+/* link inside the tab. uses a background image */
+ul.tabs a {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 0px 0px 10px;
+  position: relative;
+  top: 0px;
+}
+ul.tabs a span {
+  display: block;
+  height: 100%;
+  padding-right: 10px;
+}
+ul.tabs a {
+  text-decoration: none;
+  color: #694e41;
+  background: #ececec;
+}
+ul.tabs a:active {
+  outline: none;
+}
+/* when mouse enters the tab move the background image */
+ul.tabs li:hover a,
+ul.tabs a.current {
+  background: #f3f3f3;
+  color: #444;
+  border-bottom: 1px solid #f1f1f1;
+}
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current,
+ul.tabs a.current:hover,
+ul.tabs li.current a {
+  cursor: default !important;
+  color: #444 !important;
+  display: block;
+  text-decoration: none;
+}
+/* initially all panes are hidden */.panes .pane {
+  display: none;
+}
+.panes > div {
+  display: none;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background: #f1f1f1;
+}

@@ -1,0 +1,45 @@
+/* -------------------------------------------------------------------------------- /
+	Granth | Modern Business Template - style switcher
+/ -------------------------------------------------------------------------------- */
+
+#gw-switcher {
+	background:none !important;
+	position:fixed;
+	top:182px;
+	z-index:999;
+	left:0;
+}
+#gw-switcher a.openclose {
+	background:url(open_close.png) 0 0 no-repeat;
+	display:block;
+	left:29px;
+	line-height:200px;
+	height:18px;
+	overflow:hidden;
+	padding:4px;
+	padding-left:4px;
+	position:absolute;
+	top:11px;
+	width:21px;
+}
+#gw-switcher a.openclose:hover { background:url(open_close.png) 0 -26px no-repeat; }
+#gw-switcher a.openclose.current { background:url(open_close.png) 0 -52px no-repeat; }
+#gw-switcher a.openclose.current:hover { background:url(open_close.png) 0 -78px no-repeat; }
+#gw-switcher a.v1, #gw-switcher a.v2 {
+	display:block;
+	height:37px;
+	line-height:200px;
+	overflow:hidden;
+	padding-right:4px;
+	width:29px;
+}
+#gw-switcher a.v1 {
+	background:url(a.png) 0 0px no-repeat;
+	padding-top:4px;
+}
+#gw-switcher a.v2 {
+	background:url(b.png) 0 0 no-repeat;
+	padding-bottom:4px;
+}
+#gw-switcher a.v1:hover, #gw-switcher a.v2:hover, #gw-switcher a.v1.current, #gw-switcher a.v2.current { background-position:0 -41px; }
+

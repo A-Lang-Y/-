@@ -1,0 +1,1529 @@
+/*
+Theme Name: Yoko
+Theme URI: http://www.elmastudio.de/wordpress-themes/yoko/
+Description: Yoko is a modern three-column blog theme. A responsive layout optimizes the theme for mobile devices like tablet pcs and modern smartphones (the layout switches to a two- or one-column layout depending on the screen size the theme is viewed on). To make your blog post more flexible you can use different kinds of post formats such as gallery, image, video, aside, link or quotes. To customize the theme you can choose your own background, link color, logo and header image. Yoko also comes with a custom social links widget and shortcodes for text columns, info boxes and highlighted text.
+
+Author: Elmastudio
+Author URI: http://www.elmastudio.de/wordpress-themes/
+Version: 1.0.5
+Tags: light, three-columns, right-sidebar, flexible-width, custom-colors, custom-header, custom-background, custom-menu, theme-options, threaded-comments, sticky-post, translation-ready
+
+License: GNU/GPL Version 2 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+/* Google Fonts Import
+--------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold|Droid+Serif:regular,italic,bold,bolditalic&subset=latin);
+
+/* Reset
+--------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, img, strong, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+#content address {
+	padding: 0 0 20px 0;
+}
+#content abbr, acronym {
+	border-bottom: .1em dotted;
+}
+#content pre, code, tt {
+	font-size: 1.1em;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* General Structure and Styles
+--------------------------------------------- */
+body {
+	background-color:#ececec;
+	font-family:'Droid Sans', arial, sans-serif;
+	color: #777;
+}
+#page {
+	max-width: 1102px;
+	margin: 12px auto;
+	padding:0 30px 30px;
+	background-color:#fff;
+	z-index: 0;
+}
+#wrap {
+	margin:4px 0 0;
+	padding:40px 0;
+	overflow: hidden;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+#main {
+	width: 74.59%;
+	float: left;
+	overflow: hidden;
+}
+#content {
+	width: 75.669%;
+	float: left;
+}
+#secondary {
+	width: 17.275%;
+	margin-left:7.054%;
+	float: left;
+}
+#tertiary {
+	width: 23.775%;
+	float: right;
+	overflow: hidden;
+}
+#colophon {
+	width: 70%;
+	float: left;
+	padding:30px 0 0;
+	overflow: hidden;
+	font-size: 0.8em;
+}
+.aligncenter, div.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+/* Headlines
+--------------------------------------------- */
+#content h1 {
+	margin:26px 0 12px;
+	font: bold 1.4em/1.4 'Droid Sans', arial, sans-serif;
+}
+#content h2 {
+	margin:26px 0 12px;
+	font: bold 1.3em/1.4 'Droid Sans', arial, sans-serif;
+}
+#content h3 {
+	margin: 26px 0 12px;
+	font: bold 1.2em/ 1.4 'Droid Sans', arial, sans-serif;
+}
+#content h4 {
+	margin: 22px 0 12px;
+	font: bold 1.1em/1.4 'Droid Sans', arial, sans-serif;
+}
+#content h5 {
+	margin: 22px 0 10px;
+	font: bold 1em/1.3 'Droid Sans', arial, sans-serif;
+}
+#content h6 {
+	margin: 20px 0 10px;
+	font: bold .9em/1.3 'Droid Sans', arial, sans-serif;
+}
+/* Links
+--------------------------------------------- */
+a {
+	color: #009BC2;
+	text-decoration: none;
+} 
+a:hover {
+	color: #777!important;
+	text-decoration: underline;
+}
+/* Lists
+--------------------------------------------- */
+#content .post ul, #content .page ul, .commentlist ul  {
+	padding:7px 0 7px 30px;
+	line-height: 1.3;
+}
+#content .post ul li, #content .page ul li, .commentlist ul li {
+	padding:0 0 12px;
+	list-style: square;
+}
+#content .post ol, #content .page ol, .commentlist ol  {
+	padding:7px 0 7px 30px !important;
+	line-height: 1.3;
+}
+#content .post ol li, #content .page ol li, .commentlist ol li {
+	padding:0 0 12px;
+	list-style: decimal;
+}
+#content .post ol ol li, #content .page ol ol li,  .commentlist ol ol li {
+	list-style: upper-alpha;
+}
+#content .post ol ol ol li, #content .page ol ol ol li, .commentlist ol ol ol li {
+	list-style: lower-roman;
+}
+#content dl {
+	margin:0 ;
+	padding: 0;
+}
+#content dt {
+	font-weight: bold;
+	margin: 0;
+	padding: 10px 5px 5px;
+}
+#content dd {
+	margin: 0;
+	padding: 0 0 10px 15px;
+}
+/* Header
+--------------------------------------------- */
+#site-title {
+	padding: 21px 0 15px;
+}
+#site-title h1 {
+	margin: 0 10px 0 0;
+	font-size: 2.1em;
+	line-height:1.2;
+	font-weight: bold;
+	text-transform:uppercase;
+	display: block;
+	float: left;
+}
+#site-title h1 a:hover {
+	text-decoration:none;
+}
+#site-title h2 {
+	font:italic .9em 'Droid Serif',  Times, serif;
+	color: #777;
+	margin: 17px 0 0 0;
+}
+header#branding img.headerimage {
+	width: 100%;
+	height: auto;
+	margin-top: 12px;
+}
+header#branding img.attachment-headerimage.wp-post-image {
+	width: 100%;
+	height: auto;
+}
+hgroup#site-title img {
+	max-width: 100%;
+}
+
+/* Navigations
+--------------------------------------------- */
+/* --- Main Nav --- */
+#branding #mainnav {
+	margin: 30px 0 0;
+	max-width: 70%;
+	float:right;
+}
+#branding #mainnav ul li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+#branding #mainnav ul li a {
+	margin:0;
+	padding:9px 14px;
+	display: block;
+	font-size: .8em;
+	text-transform: uppercase;
+}
+#branding #mainnav ul li:first-child {
+	margin: 0px;
+}
+#branding #mainnav ul li a:hover {
+	background:#F0F0F0;
+	color: #999;
+	text-decoration: none;
+}
+#branding #mainnav ul ul {
+	display: none;
+	float: left;
+	position: absolute;
+	top: 2em;
+	left: 0;
+	z-index: 99999;
+}
+#branding #mainnav ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#branding #mainnav ul ul a {
+	background: #F9F9F9;
+	padding: 9px 14px;
+	width: 11em;
+	height: auto;
+	text-transform: none;
+}
+#branding #mainnav li:hover > a,
+#branding #mainnav ul ul :hover > a {
+	background: #F0F0F0;
+}
+#branding #mainnav ul ul a:hover {
+	background: #F0F0F0;
+}
+#branding #mainnav ul li:hover > ul {
+	display: block;
+}
+/* --- Sub Nav --- */
+nav#subnav {
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+nav#subnav ul.menu {
+	margin: 5px 0 0 0;
+	padding:16px 0 30px;
+	border-top: 1px solid #ddd;
+	overflow: hidden;
+}
+nav#subnav ul.menu li.menu-item {
+	width: 14.2468%;
+	margin:0px;
+	float: left;
+	list-style: none;
+}
+nav#subnav ul.menu li.menu-item a {
+	font-size: .8em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+nav#subnav ul.menu li.menu-item ul.sub-menu {
+	margin: 0;
+	padding: 6px 0 0;
+	overflow: hidden;
+}
+nav#subnav ul.menu li.menu-item ul.sub-menu li.menu-item {
+	width: 100%;
+	letter-spacing: 0;
+}
+nav#subnav ul.menu li.menu-item ul.sub-menu li.menu-item a {
+	font-size: .8em;
+	font-weight: normal;
+	line-height:2;
+	text-transform: none;
+}
+/* Posts
+--------------------------------------------- */
+#content .post {
+	margin: 0 0 40px;
+	padding: 0 0 40px;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	font-size: .95em;
+	line-height: 1.6;
+}
+#content .entry-header h2.entry-title {
+	margin: 0 0 12px;
+	font: bold 1.3em/1.4 'Droid Sans', arial, sans-serif;
+}
+#content .entry-header h2.entry-title a:hover {
+	color: #777;
+	text-decoration: none;
+}
+#content .post p {
+	padding: 0 0 20px;
+}
+#content .entry-details {
+	width: 22.507%;
+	padding: 2px 18px 0 0;
+	float: left;
+	font: italic .8em/1.6 'Droid Serif',  Times, serif;
+}
+#content .entry-details p span.entry-date, #content .entry-details p a {
+	width: 100%;
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-style: normal;
+}
+#content .entry-content {
+	width: 74.5%;
+	margin: 0;
+	float: right;
+}
+#content .post img.wp-post-image {
+	width: 140px;
+	height: auto;
+	margin: 5px 0 8px;
+	padding: 0;
+}
+#content .entry-meta p {
+	padding: 15px 0 0;
+	font: italic .8em/1.5 'Droid Serif', Times, serif;
+}
+#content .entry-meta a {
+	padding: 15px 0 0;
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-style: normal;
+}
+.page-link {
+	background-color: #f0f0f0;
+	border-top: 1px solid #ddd;
+	padding: 5px 20px;
+	overflow: hidden;
+	font-size: .9em;
+}
+.page-link a {
+	font-weight: bold;
+	margin: 0 1px;
+}
+.page-link a:hover {
+	text-decoration: none;
+}
+/* --- Sticky Post --- */
+#content .sticky {
+	border-top: 1px solid #ddd;
+	background-color: #F0F0F0;
+	padding: 15px 10px;
+	overflow: hidden;
+}
+/* --- Post Typography --- */
+#content strong {
+	font-weight: bold;
+}
+#content p em {
+	font-family:'Droid Serif',  Times, serif;
+	font-style: italic;
+}
+#content em {
+	font-family:'Droid Serif',  Times, serif;
+	font-style: italic;
+	font-size: .9em;
+}
+#content p small {
+	font-size: .8em;
+}
+#content .post blockquote, #content .page blockquote {
+	margin: 0 20px 10px 0;
+	overflow: hidden;
+	font: italic 1.1em/1.6 'Droid Serif', Times, serif;
+}
+#content .single-entry-content blockquote {
+	margin: 20px 20px 10px 20px;
+	background: none;
+}
+#content blockquote cite {
+	margin: 10px 0 0 0;
+	padding: 0 25px 15px 0;
+	float: right;
+	font: normal .8em 'Droid Sans', arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+#content pre {
+	background-color: #f0f0f0;
+	font-family: monospace;
+	font-size: 1.2em;
+	line-height: 1.3;
+	margin: 0 0 20px 0;
+	padding: 10px;
+}
+#content p.nocomments {
+	font-size: .8em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/* --- Post Images and Video --- */
+#content img {
+	max-width:100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+#content img.aligncenter {
+	margin: 20px auto;
+}
+#content img.alignleft ,#content .wp-caption.alignleft {
+	margin: 10px 20px 0 0;
+}
+#content img.alignright,#content .wp-caption.alignright {
+	margin: 10px 0 0 20px;
+}
+#content img.alignnone {
+	margin: 20px 0;
+}
+#content .wp-caption.alignnone {
+	margin: 0 0 20px 0;
+}
+#content .wp-caption.aligncenter{
+	margin-bottom: 10px;
+}
+#content .post .wp-caption {
+	max-width: 100%;
+	text-align: center;
+}
+#content .single-entry-content .wp-caption {
+	max-width: 100%;
+	text-align: center;
+}
+#content .post p.wp-caption-text {
+	font: normal .8em/1.4 'Droid Sans', arial, sans-serif;
+	margin: 0;
+	padding: 7px 0 10px 0;
+	color: #999;
+}
+#content object,
+#content embed,
+#content iframe {
+	max-width: 100%;
+	margin: 3px 0 10px;
+	display: block;
+}
+/* --- Post Columns Shortcodes --- */
+.two-columns-one{
+	width:48%;
+}
+.three-columns-one{
+	width:30.66%;
+}
+.three-columns-two{
+	width:65.33%;
+}
+.four-columns-one {
+	width: 22%;
+}
+.four-columns-two {
+	width:48%;
+}
+.four-columns-three {
+	width:74%;
+}
+.two-columns-one,.three-columns-one,.three-columns-two, .four-columns-one, .four-columns-two, .four-columns-three {
+	float:left;
+	margin-right:4%;
+	position:relative;
+}
+.last{
+	clear:right;
+	margin-right:0 !important;
+}
+.divider { 
+	clear:both; 
+	display:block; 
+	margin-bottom:20px;
+	width:100%; 
+}
+#content span.highlight {
+	padding: 2px;
+	background-color: #FFFBCC;
+}
+.yellow-box {
+	margin: 10px 0;
+	background: #FFFBCC;
+	border: 1px solid #E6DB55;
+	padding: 20px;
+	overflow:hidden;
+}
+.red-box {
+	margin: 10px 0;
+	background: #FFD9C8;
+	border: 1px solid #F37C72;
+	padding: 20px;
+	overflow:hidden;
+}
+.green-box {
+	margin: 10px 0;
+	background: #D5FFCA;
+	border: 1px solid #BDDC7F;
+	padding: 20px;
+	overflow:hidden;
+}
+
+/* --- Post Tables --- */
+#content table {
+	margin:10px 0px 30px 0px;
+}
+#content table thead {
+	border-top:1px solid #ddd;
+}
+#content table tr {
+	border-bottom:1px solid #ddd;
+}
+#content table tr th {
+	padding: 10px 20px 10px 20px;
+	border-top:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+#content table tr td {
+	padding: 10px 20px 10px 20px;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+
+/* Single Posts
+--------------------------------------------- */
+#content .post .single-entry-header {
+	margin: 0;
+}
+#content .single-entry-header h1.entry-title {
+	margin: 0 0 5px;
+	font: bold 1.3em/1.4 'Droid Sans', arial, sans-serif;
+	color: #009BC2;
+}
+#content .single-entry-header p {
+	padding: 0 0 5px;
+	font-size: .8em;
+}
+#content .single-entry-header p span.entry-date, #content .single-entry-header p span.entry-author {
+	font: italic 1em/1.5 'Droid Serif', Times, serif;
+}
+#content .single-entry-details {
+	width: 22.507%;
+	padding: 0 18px 0 0;
+	float: left;
+}
+#content .single-entry-content {
+	width: 100%;
+	margin: 15px 0 0;
+	padding: 0;
+	float: left;
+}
+#content .post .single-entry-meta p {
+	padding: 15px 0 0;
+	font: italic .8em/1.5 'Droid Serif',  Times, serif;
+}
+#content .post .single-entry-meta p a {
+	font-family:'Droid Sans', arial, sans-serif;
+	font-style: normal;
+}
+#content .post .author-info {
+	margin: 40px 0 0;
+	padding: 15px 20px 15px;
+	background: #F0F0F0;
+	overflow: hidden;
+	border-top: 1px solid #ddd;
+}
+#content .post .author-info h3 {
+	margin: 0 0 4px;
+	font: bold .9em/1.5 'Droid Sans', arial, sans-serif;
+}
+#content .post .author-info .avatar {
+	max-width: 100%;
+	width: 70px;
+	margin: 0 15px 0 0;
+	float: left;
+}
+#content .post .author-description {
+	overflow: hidden;
+}
+#content .post .author-description p {
+	padding: 0;
+	font-size: .9em;
+	line-height: 1.5;
+}
+#content .post .author-description a:hover {
+	text-decoration: underline;
+}
+/* --- Post Nav Below --- */
+#content #image-nav {
+	margin: 30px 0 3px 0;
+	overflow: hidden;
+}
+#comment-nav-below {
+	margin:40px 0;
+	overflow: hidden;
+}
+#content #nav-below .nav-previous a, #content #image-nav span.previous-image a, #comment-nav-below .nav-previous a {
+	width: 40%;
+	display: block;
+	float: left;
+	font-size: .9em;
+	font-weight: bold;
+}
+#content #nav-below .nav-next a, #content #image-nav span.next-image a, #comment-nav-below .nav-next a {
+	display: block;
+	float: right;
+	font-size: .9em;
+	font-weight: bold;
+}
+#content #nav-below .nav-previous a:hover, #content #nav-below .nav-next a:hover, #content #image-nav span.previous-image a:hover, #content #image-nav span.next-image a:hover {
+	text-decoration: none;
+}
+
+/* --- Comments --- */
+#comments {
+	font-size: .9em;
+	padding: 0 0 30px 0;
+}
+#comments h3#comments-title {
+	padding:30px 0 10px;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+#comments p.write-comment-link {
+	padding:0 0 20px;
+}
+#comments .comment-body p {
+	padding:0 0 10px;
+}
+#comments p.moderation {
+	font-family:'Droid Serif',  Times, serif;
+	font-style:italic;
+}
+#content #comments ol {
+	padding:0;
+}
+#content #comments ol li ul.children {
+	padding:0;
+}
+#content #comments ol li.depth-1 {
+	padding:0;
+	border-bottom:1px solid #ddd;
+	overflow:hidden;
+}
+#content #comments ol li.depth-2, #content #comments ol li.depth-3, #content #comments ol li.depth-4, #content #comments ol li.depth-5 {
+	margin:0 0 0 35px;
+	padding:0;
+	border-top:1px solid #ddd;
+	border-bottom:none;
+	overflow:hidden;
+}
+.comment-meta {
+	padding:0 0 12px;
+	font-size: .8em;
+}
+.comment-meta cite.fn {
+	font-size: 1.3em;
+	font-weight: bold;
+	font-style: normal;
+}
+#comments .comment-body {
+	padding:20px 0px;
+	overflow:hidden;
+	line-height: 1.5;
+}
+.reply {
+	margin:0;
+	float:left;
+}
+a.comment-reply-link {
+	font-size:.9em;
+}
+#comments ol li.post.pingback {
+	margin:0;
+	padding: 20px 0 0;
+	list-style:none;
+	font-weight: bold;
+}
+#comments ol li.post.pingback a {
+	font-weight: normal;
+}
+#comments ol li img.avatar {
+	max-width: 100%;
+	width: 65px;
+	height: 65px;
+	margin:22px 15px 0 0;
+	float:left;
+}
+#comments .bypostauthor {
+}
+/* --- Comment Reply --- */
+#content #comments #respond {
+	margin:30px 0 0;
+	padding:20px;
+	background-color: #F0F0F0;
+}
+a#cancel-comment-reply-link {
+	padding:3px 0 0;
+	float:right;
+	font-size: .8em;
+	font-weight: normal;
+}
+#content #comments #respond h3#reply-title {
+	margin:0 0 3px 0;
+	font-size: 1.2em;
+}
+form#commentform p.comment-notes, p.logged-in-as {
+	padding:0 0 15px 0;
+	font-size: .8em;
+}
+form#commentform span.required {
+	color: #E75428;
+}
+form#commentform p.comment-form-author, form#commentform p.comment-form-email, form#commentform p.comment-form-url, form#commentform p.comment-form-comment {
+	padding:15px 0 0;
+}
+input#submit, input.wpcf7-submit {
+	margin: 10px 0 0;
+	padding: 8px 10px 7px;
+	display: inline-block;
+	vertical-align: baseline;
+	outline: none;
+	background-color: #777;
+	border: none;
+	font-size: .75em;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+input#submit:hover, input.wpcf7-submit:hover {
+	background-color: #009BC2;
+	color: #fff;
+}
+form#commentform input#author, form#commentform input#email, form#commentform input#url {
+	width: 60%;
+	margin: 5px 0 0;
+	padding: 9px 5px 9px;
+	display: block;
+	background-color:#fff;
+	border: 1px solid #ddd;
+	font-size:1em;
+}
+form#commentform textarea#comment {
+	width:95%;
+	margin: 5px 0 0;
+	padding: 9px 5px;
+	background-color:#fff;
+	border: 1px solid #ddd;
+	font: 1em 'Droid Sans', arial, sans-serif;
+}
+form#commentform p.subscribe-to-doi-comments {
+	padding: 20px 0 0;
+	font-size: .8em;
+	color: #666;
+	letter-spacing: 1px;
+}
+/* Post Formats
+--------------------------------------------- */
+#content .entry-link, #content .entry-gallery, #content .entry-video {
+	width: 100%;
+	margin: 0;
+	float: left;
+}
+/* --- Link Post Format --- */
+#content .entry-link a {
+	font-size: 1.1em;
+	color: #009BC2;
+	font-weight: bold;
+}
+#content .entry-link .entry-meta a {
+	font-size: 1em;
+	font-weight: normal;
+}
+/* --- Image Post Format --- */
+#content .entry-header h2.entry-title-image {
+	margin-top: 0;
+	font-size: 1.1em;
+}
+/* --- Video, Image and Gallery Post Format --- */
+#content .entry-post-format .entry-header h2.entry-title {
+	margin: 0 0 5px;
+}
+#content .entry-post-format .entry-header p {
+	font: italic .8em/1.5 'Droid Serif', Times, serif;
+}
+#content .entry-post-format .entry-header p a {
+	font-family: 'Droid Sans', arial, sans-serif;
+	font-style: normal;
+}
+#content .entry-post-format .entry-content-gallery {
+	width: 54%;
+	float: left;
+}
+#content .entry-post-format .gallery-thumb {
+	width: 42.258%;
+	float: left;
+	margin: 5px 15px 0 0;
+}
+#content .post img.attachment-medium {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+/* WordPress Image Gallery
+--------------------------------------------- */
+#content .gallery {
+	margin: auto;
+	padding:0;
+	clear: both;
+}
+#content .gallery-item {
+	width:19%;
+	float: left;
+	margin-top: 10px;
+	margin-right: 3px;
+	text-align: center;
+	vertical-align: top;
+	overflow: hidden;
+}
+#content .gallery-icon {
+	width: 100%;
+}
+#content .gallery-caption {
+	margin-left: 0;
+	padding: 0;
+	font-size: .8em;
+	line-height: 1.25;
+	color: #999;
+	display: block;
+}
+
+/* Pages 
+--------------------------------------------- */
+#content .page {
+	margin: 0 0 40px;
+	padding: 0 0 30px;
+	overflow: hidden;
+	clear: both;
+	font-size: .95em;
+	line-height: 1.6;
+	border-bottom: 1px solid #ddd;
+}
+#content .page-entry-header {
+	margin: 0;
+}
+#content .page-entry-header h1.entry-title {
+	margin: 0;
+	font: bold 1.5em/1.5 'Droid Sans', arial, sans-serif;
+	color: #009BC2;
+}
+#content .page p {
+	padding: 0 0 20px 0;
+}
+/* --- Fullwidth Page --- */
+#content.full-width {
+	width:100% !important;
+}
+#content.full-width .page {
+	margin: 0;
+	padding: 0 0 20px;
+	border-bottom: none;
+}
+/* --- Archive, 404, Search Results --- */
+#content .page-header h1.page-title {
+	padding: 0 0 15px 0;
+	font-size: .8em;
+	color: #777;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+/* --- Contact Page --- */
+#content .wpcf7 {
+	overflow: hidden;
+	margin: 0;
+	padding:20px;
+	background: #F0F0F0;
+}
+#content .wpcf7 h3#form-title {
+	margin:0 0 3px 0;
+	font-size: 1.2em;
+}
+#content .wpcf7 p.form-info {
+	padding:0 0 15px 0;
+	font-size: .8em;
+}
+#content .wpcf7 p span.required {
+	color: #E75428;
+}
+#content .wpcf7 input.wpcf7-text {
+	width: 60%;
+	margin: 5px 0 15px;
+	padding: 9px 5px;
+	background-color:#fff;
+	border: 1px solid #ddd;
+	font-size:1em;
+}
+#content .wpcf7 textarea {
+	width:95%;
+	margin: 5px 0 0;
+	padding: 9px 5px;
+	font: 1em 'Droid Sans', arial, sans-serif;
+	background-color:#fff;
+	border: 1px solid #ddd;
+}
+#content .wpcf7-form p {
+	padding:0;
+}
+
+/* Sidebars
+--------------------------------------------- */
+aside.widget {
+	margin: 0 0 30px 0;
+	padding:  0 0 30px 0;
+	font-size: .8em;
+	border-bottom: 1px solid #ddd;
+}
+aside.widget ul li {
+	padding: 0 0 7px 0;
+	line-height: 1.4em;
+}
+aside.widget ul li:last-child {
+	padding: 0;
+}
+.widget h3.widget-title, .widget_get_recent_comments h1.widget-title {
+	padding: 0 0 15px 0;
+	color: #777;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+.textwidget {
+	line-height: 1.6;
+}
+/* --- Standard Widgets --- */
+.widget_categories ul li ul.children, .widget_nav_menu ul li ul.sub-menu, .widget_pages ul li ul.children {
+	margin: 5px 0 0 0;
+}
+.widget_categories ul li ul.children li, .widget_nav_menu ul li ul.sub-menu li, .widget_pages ul li ul.children li {
+	margin: 0 0 0 20px;
+}
+.widget_recent_entries ul, .widget_recent_comments ul {
+	padding: 0 0 0 15px;
+}
+.widget_recent_entries ul li, .widget_recent_comments ul li {
+	list-style: square;
+}
+.widget_calendar #wp-calendar caption {
+	font-family:'Droid Serif', Times, serif;
+	font-style: italic;
+	text-align: left;
+	padding: 0 0 5px 0;
+}
+.widget_calendar table#wp-calendar th, .widget_calendar table#wp-calendar td {
+	padding: 0 6px 6px 0;
+}
+.widget_calendar table#wp-calendar tbody tr td#today {
+	font-weight: bold;
+}
+/* --- Search Widget --- */
+.widget_search {
+	overflow: hidden;
+}
+.searchform {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+#secondary .searchform .search-input {
+	width: 90%;
+	margin: 0 0 5px 0;
+}
+#tertiary .searchform .search-input {
+	width: 62%;
+	margin: 0 2px 5px 0;
+}
+.searchform .search-input {
+	width: 40%;
+	margin: 0 2px 5px 0;
+	padding: 6px 5px;
+	background-color:#F0F0F0;
+	border: 1px solid #ddd;
+}
+.searchform .search-input:hover, #searchform .search-input:focus, #searchform .search-input:active {
+	background-color:#fff;
+}
+.searchsubmit {
+	margin: 0;
+	padding: 8px 10px 7px;
+	display: inline-block;
+	vertical-align: baseline;
+	outline: none;
+	background-color: #777;
+	border: none;
+	font-size: 11px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.searchsubmit:hover {
+	color: #fff;
+	background-color: #009BC2;
+}
+/* --- Social Links Custom Widget --- */
+.widget_sociallinks a {
+	padding:0 20px;
+}
+.widget_sociallinks a.rss {
+	background:url(images/rss-icon.png) 0 0 no-repeat;
+}
+.widget_sociallinks a.twitter {
+	background:url(images/twitter-icon.png) 0 0 no-repeat;
+}
+.widget_sociallinks a.facebook {
+	background:url(images/fb-icon.png) 0 0 no-repeat;
+}
+.widget_sociallinks a.flickr {
+	background:url(images/flickr-icon.png) 0 0 no-repeat;
+}
+.widget_sociallinks a.vimeo {
+	background:url(images/vimeo-icon.png) 0 0 no-repeat;
+}
+.widget_sociallinks a.linkedin {
+	background:url(images/linkedin-icon.png) 0 0 no-repeat;
+}
+.widget_sociallinks a.delicious {
+	background:url(images/delicious-icon.png) 0 0 no-repeat;
+}
+.widget_sociallinks a.googleplus {
+	background:url(images/googleplus-icon.png) 0 0 no-repeat;
+}
+/* --- Recent Comments Widget --- */
+.widget_get_recent_comments li.sidebar-comment {
+	margin:10px 0;
+	overflow:hidden;
+}
+.widget_get_recent_comments li.sidebar-comment:first-child {
+	margin:3px 0 10px;
+}
+.widget_get_recent_comments li.sidebar-comment .comment-content {
+	padding:0 0 0 6px;
+	overflow:hidden;
+}
+.widget_get_recent_comments li.sidebar-comment p {
+	line-height: 1.4;
+}
+.widget_get_recent_comments .kjgrcGravatar {
+	margin:0;
+	float:left;
+	display:block;
+}
+.widget_get_recent_comments span.sidebar-comment-autor a {
+	padding: 0 0 3px;
+}
+/* --- Flickr Fotostream Widget --- */
+#flickr_badge_wrapper {
+	margin:3px 0 0;
+}
+.flickr_badge_image {
+	max-width:80px;
+	height:60px;
+	margin:0 6px 6px 0;
+	float:left;
+}
+.flickr_badge_image img {
+	width:80px;
+	height:60px;
+}
+
+/* Footer
+--------------------------------------------- */
+#colophon p {
+	line-height: 1.5;
+}
+a.top {
+	margin: 3px 0 0 0;
+	font-weight: bold;
+	display: block;
+}
+a.top:hover {
+	text-decoration: none;
+}
+
+/* Clearing Floats
+--------------------------------------------- */
+.clear {
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0;
+}
+.clearfix:after {
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	line-height:0;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+/* Media queries for responsive design
+--------------------------------------------- */
+/* --- iPad Landscape --- */
+@media screen and (max-width: 1024px) {
+/* --- General --- */
+#page {
+	margin: 0 auto;
+	padding: 0 30px 30px;
+	background-color:#fff;
+	z-index: 0;
+}
+#wrap {
+	margin: 4px 0 0;
+	padding: 45px 0 0 0;
+	overflow: hidden;
+}
+#main {
+	width: 72%;
+	float: left;
+	overflow: hidden;
+}
+#content {
+	width:92.2%;
+	float: left;
+}
+#secondary {
+	width: 142px;
+	margin:40px 0 0;
+	float: none;
+}
+#tertiary {
+	width: 28%;
+	float: right;
+}
+#content .entry-content {
+	width: 76.5%;
+}
+#content .entry-details {
+	width: 20%;
+}
+/* --- Header --- */
+#site-title h1 {
+	margin: 0 10px 3px 0;
+	float: none;
+}
+#site-title h2 {
+	margin: 0;
+}
+/* --- Sub Nav --- */
+nav#subnav ul.menu li.menu-item {
+	width: 14.2468%;
+	margin:0;
+	float: left;
+	list-style: none;
+}
+nav#subnav ul.menu li.menu-item a {
+	font-size: .72em;
+}
+nav#subnav ul.menu li.menu-item ul.sub-menu li.menu-item {
+	width: 100%;
+}
+/* --- Sidebars --- */
+#secondary {
+	width: 92.2%;
+	margin-left:0;
+	padding: 30px 0 0;
+	float: left;
+	border-top: 1px solid #ddd;
+}
+#secondary aside:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+#secondary aside, #tertiary aside {
+	float: none;
+	overflow: hidden;
+}
+.widget .sidebar-theme {
+	margin: 0 20px 8px 0;
+	float: left;
+}
+
+.widget .rss-widget ul li, .widget_archive ul li, .widget_categories ul li, .widget_social_links ul li, .widget_meta ul li, .widget_links ul li {
+	margin: 0 20px 0 0;
+	float: left;
+}
+.widget_categories ul li ul.children, .widget_nav_menu ul li ul.sub-menu, .widget_pages ul li ul.children {
+	margin: 5px 0 0 0;
+}
+}
+
+/* --- iPad Portrait --- */
+@media screen and (max-width: 880px) {
+#page {
+	padding: 0 50px 30px 50px;
+	background-color:#fff;
+}
+#wrap {
+	margin-top: 0;
+}
+#main {
+	width: 100%;
+	float: none;
+	overflow: hidden;
+}
+#content {
+	width: 100%;
+	float: none;
+}
+#secondary {
+	width: 100%;
+}
+#tertiary {
+	width: 100%;
+	float: none;
+}
+/* --- Header --- */
+#site-title {
+	width: 100%;
+	padding: 20px 0 30px;
+}
+#site-title h1 a {
+	margin: 0 auto;
+}
+/* --- Main Nav --- */
+#branding #mainnav {
+	margin: 30px 0 0;
+	max-width: 100%;
+}
+#branding #mainnav ul li a {
+	font-size: .75em;
+}
+/* --- Sub Nav --- */
+nav#subnav {
+	padding: 0;
+	margin: 5px 0 0 0;
+}
+nav#subnav ul.menu {
+	padding:0;
+}
+nav#subnav ul.menu li.menu-item {
+	width: 100%;
+	margin:6px 0 0;
+	float: none;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+nav#subnav ul.menu li.menu-item:last-child {
+	border-bottom: none;
+}
+nav#subnav ul.menu li.menu-item a {
+	float: left;
+	margin: 6px 20px 10px 10px;
+}
+nav#subnav ul.menu li.menu-item ul.sub-menu {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+nav#subnav ul.menu li.menu-item ul.sub-menu li.menu-item {
+	width: auto;
+	margin:0;
+	float: left;
+	border-bottom:none;
+	letter-spacing: 0;
+}
+nav#subnav ul.menu li.menu-item ul.sub-menu li.menu-item a {
+	margin: 0 20px 0 0;
+	font-size: .8em;
+	font-weight: normal;
+	line-height:2;
+	text-transform: none;
+}
+
+/* --- Post Content --- */
+#content .entry-content {
+	float: left;
+}
+#content .entry-details {
+	width: 20%;
+}
+/* --- Sidebars --- */
+#secondary aside:last-child {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ddd;
+}
+#tertiary aside:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+}
+/* --- Smartphones and small Tablet PCs --- */
+@media screen and (max-width : 620px) {
+#page {
+	padding: 0 20px 20px;
+	background-color:#fff;
+}
+/* --- Header --- */
+#site-title {
+	float: left;
+	padding: 10px 0 5px;
+}
+#site-title h1 {
+	margin: 0;
+	text-align: center;
+	float: none;
+}
+#site-title h2 {
+	margin: 0;
+	text-align: center;
+}
+/* --- Main Nav --- */
+#branding #mainnav {
+	margin: 15px 0 0;
+}
+#branding #mainnav ul li a {
+	margin:0;
+	padding:8px 7px;
+	display: block;
+	font-size: .7em;
+}
+#branding #mainnav ul ul {
+	display: none;
+}
+#branding #mainnav ul ul ul {
+	display: none;
+}
+#branding #mainnav ul ul a {
+	display: none;
+}
+/* --- Sub Nav --- */
+nav#subnav ul.menu {
+	border-bottom: none;
+}
+nav#subnav ul.menu li.menu-item {
+	width: 100%;
+	margin:0;
+	float: none;
+	overflow: hidden;
+	background-color: #F0F0F0;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+nav#subnav ul.menu li.menu-item a {
+	width: 100%;
+	margin: 0;
+	padding: 12px 0 11px;
+	float: left;
+	display: block;
+	background-color: #F0F0F0;
+}
+nav#subnav ul.menu li.menu-item a:hover, nav#subnav ul.menu li.menu-item a:active, nav#subnav ul.menu li.menu-item a:focus {
+	background: #D4D4D4;
+	text-decoration: none;
+}
+nav#subnav ul.menu li.menu-item ul.sub-menu li.menu-item {
+	display: none;
+}
+/* --- Post Content --- */
+#content .post {
+	margin: 0 0 30px;
+	padding: 0 0 30px;
+}
+#content .post .entry-header h2.entry-title {
+	font-size: 1.2em;
+}
+#content .entry-content {
+	width: 100%;
+}
+#content .entry-details {
+	display: none;
+}
+#content .post img.wp-post-image {
+	display: none;
+}
+#content .sticky {
+	padding: 10px;
+}
+/* --- Post Columns Shortcodes --- */
+.two-columns-one{
+	width:100%;
+}
+.three-columns-one{
+	width:100%;
+}
+.three-columns-two{
+	width:100%;
+}
+.four-columns-one {
+	width: 100%;
+}
+.four-columns-two {
+	width:100%;
+}
+.four-columns-three {
+	width:100%;
+}
+.three-columns-one,.three-columns-two, .four-columns-one, .four-columns-two, .four-columns-three {
+	float:none;
+}
+/* --- Single Posts ---- */
+#content .single-entry-details {
+	display: none;
+}
+#content .single-entry-header .social-btn-top {
+	display: none;
+}
+#content .post .author-description p {
+	font-size: .8em;
+	line-height: 1.4;
+}
+#content .post .author-info .avatar {
+	display: none;
+}
+/* --- Comments ---- */
+form#commentform input#author, form#commentform input#email, form#commentform input#url {
+	width: 95%;
+}
+#content #comments ol li.depth-2, #content #comments ol li.depth-3, #content #comments ol li.depth-4, #content #comments ol li.depth-5 {
+	margin:0;
+}
+#comments img.avatar {
+	display: none;
+}
+a#cancel-comment-reply-link {
+	width: 100%;
+	margin:5px 0 15px;
+	display: block;
+}
+/* --- Post Nav Below --- */
+#content #nav-below .nav-previous a {
+	width: 100%;
+	display: block;
+	float: none;
+	margin: 0 0 10px;
+}
+#content #nav-below .nav-next a {
+	width: 100%;
+	display: block;
+	text-align: right;
+}
+#content #nav-below .nav-previous a:hover, #content #nav-below .nav-next a:hover {
+	text-decoration: none;
+}
+/* --- Post Formats ---- */
+#content .entry-post-format .entry-content-gallery {
+	width: 100%;
+	float: none;
+}
+#content .entry-post-format .gallery-thumb {
+	width: 100%;
+	float: none;
+	margin: 5px 15px 15px 0;
+}
+/* --- Pages ---- */
+#content .page .wpcf7 input.textfield {
+	width: 95%;
+}
+/* --- Footer ---- */
+#colophon {
+	width: 100%;
+	float: none;
+}
+}

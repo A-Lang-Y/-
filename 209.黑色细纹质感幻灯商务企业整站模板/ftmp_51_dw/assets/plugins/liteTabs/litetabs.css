@@ -1,0 +1,34 @@
+/*************************************************
+*
+*	project:  	liteTabs - Lightweight jQuery tabs plugin
+*	author:   	Nicola Hibbert
+*	url:	  	http://nicolahibbert.com/lightweight-jquery-tab-plugin/
+*	demo:	  	http://www.nicolahibbert.com/demo/liteTabs/
+*
+/*************************************************/
+/****************************************** Core */
+.liteTabs { position: relative; margin: 0; padding: 0; overflow: hidden; font:normal 13px Arial; }
+.liteTabs ul { margin: 0; padding: 0; overflow: hidden;}
+.liteTabs li { float: left; list-style-type: none; display:inline-table; width:auto;}
+.liteTabs li a { display: block; text-decoration: none; outline: 0; padding: 18px 7px; margin-right: 0px;}
+.liteTabs a:hover {}
+.liteTabs a:focus { text-decoration: underline }
+.liteTabs a.selected, .liteTabs a.selected:hover {}
+.liteTabs div { float: left; padding: 0px; line-height:20px; }
+.liteTabs div.selected { position: static !important }
+
+/**************************************** Borders */
+.borders ul { position: relative; top: 1px }
+.borders li a { border-right:0px;  }
+.borders li:last-child a{}
+.borders div {}
+
+/****************************************** Boxed */
+.boxed { padding: 2px; background: #ddd; border: 1px solid #666 }
+.boxed ul {	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(204,204,204)), color-stop(1, rgb(238,238,238)));
+	background: -moz-linear-gradient(center bottom, rgb(204,204,204) 0%, rgb(238,238,238) 100%) }
+	
+/*************************************** Rounded */
+.rounded ul { -moz-border-radius: 8px 8px 0 0; border-radius: 8px 8px 0 0 }
+.rounded li a { -moz-border-radius: 8px 8px 0 0; border-radius: 8px 8px 0 0 }
+.rounded div { -moz-border-radius: 0 8px 8px 8px; border-radius: 0 8px 8px 8px }    

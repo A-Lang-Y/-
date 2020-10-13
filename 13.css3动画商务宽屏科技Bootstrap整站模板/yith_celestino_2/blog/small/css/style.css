@@ -1,0 +1,126 @@
+.blog-small { margin-bottom: 50px; }
+
+.blog-small .post-title:hover,
+.blog-small .post-title a:hover { color: #B77A2B; }
+
+/* === THUMBNAIL */
+.blog-small .thumbnail {
+    border-color: #e5e7e7;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 3px 5px 0px #f7f7f7;
+    -moz-box-shadow: 3px 5px 0px #f7f7f7;
+    box-shadow: 3px 5px 0px #f7f7f7;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+#ie8 .blog-small .thumbnail .image-wrap + div { width: 370px; }
+
+@media (min-width: 979px) and (max-width: 1199px) {
+    .blog-small .thumbnail .image-wrap + div {
+        width: 370px;
+    }
+}
+
+@media (min-width:1200px) {
+    .blog-small .thumbnail .image-wrap + div {
+        width: 460px;
+    }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+    .blog-small .thumbnail .image-wrap + div {
+        width: 280px;
+    }   
+}
+
+/* === META */
+.blog-small .meta {
+    background: #fff;
+    margin-left: 0px;
+    padding-left: 11px;
+    position: absolute;
+    bottom: 12px;
+    left: 0px;
+}
+
+.blog-small .without.thumbnail .meta {
+    margin-left: 30px;
+    position: static;
+}
+
+@media (max-width: 767px) {
+    .blog-small .meta {
+        position: static;
+    }
+}
+
+.blog-small .meta div { margin-top: 17px; }
+.blog-small .meta div p.author,
+.blog-small .meta div p.author i { margin-top: 0px; }
+.blog-small .meta div p.comments { margin-bottom: 0px; }
+.blog-small .meta div p { margin-bottom: -6px; }
+
+.blog-small .meta div p i {
+    font-size: 15px;
+    margin-right: 14px;
+}
+
+.blog-small .meta div p img { margin-right: 6px; }
+.blog-small .meta div p, .blog-small .meta div p a { color: #5f5e5e; }
+
+.blog-small .meta div p span,
+.blog-small .meta div p a:hover span,
+.blog-small .meta div p a:hover { color: #000; }
+
+.blog-small .meta div p a span { cursor: text; }
+
+.blog-small .meta div p,
+.blog-small .meta div p span,
+.blog-small .meta div p a span,
+.blog-small .meta div p a,
+.blog-small .meta div p a:hover span,
+.blog-small .meta div p a:hover { font-size: 13px; }
+
+/* === POST FORMATS */
+.blog-small .post-format {
+    background: url(../../../images/post-formats.png);
+    display: block;
+    margin: 0px;
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    text-indent: -9999px;
+    width: 33px;
+    height: 33px;
+}
+
+.blog-small .without.thumbnail .post-format { left: 95.5%; }
+
+.blog-small .post-format.gallery { background-position: left top; }
+.blog-small .post-format.audio { background-position: center top; }
+.blog-small .post-format.video { background-position: right top; }
+
+.blog-small.format-quote .post-title {
+    background-position: 15px 25px;
+    border-left: 5px solid #cad0d1;
+    font-size: 19px;
+    margin-top: 15px;
+    padding-left: 50px;
+    padding-bottom: 12px;
+}
+
+.blog-small.format-quote .post-title cite {
+    color: #a96605;
+    display: block;
+    font-size: 16px;
+}
+
+.blog-small.format-quote .post-title cite:before { content: "- "; }
+
+.blog-small.format-quote .meta {
+    float: none;
+    position: static;
+}

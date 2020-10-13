@@ -1,0 +1,480 @@
+@font-face { 
+  font-family: Yanone Kaffeesatz; 
+    src: url('../fonts/YanoneKaffeesatz-Regular.eot'); 
+    src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf'); 
+} 
+
+html { 
+  height: 100%;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+body { 
+  font: normal .80em arial, sans-serif;
+  background: #4A4E44 url(../images/pattern.png) repeat fixed;
+  color: #403838;
+}
+
+p { 
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+img { 
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  font: normal 170% arial, sans-serif;
+  color: #FFF;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+}
+
+h1 { 
+  color: #333;
+  font: 200% 'Yanone Kaffeesatz', arial, sans-serif;
+}
+
+h2 { 
+  font: normal 130% arial, sans-serif;
+  color: #A50303;  
+  margin: 0;
+  padding: 8px 0 8px 0;
+}
+
+h3 { 
+  font: normal 125% 'lucida sans unicode', arial, sans-serif;}
+
+h4, h5, h6 { 
+  margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 110% arial, sans-serif;
+  color: #B60000;
+  line-height: 1.5em;
+}
+
+h5, h6 { 
+  font: italic 95% arial, sans-serif;
+  color: #888;
+  padding-bottom: 15px;
+}
+
+h6 { 
+  color: #362C20;
+}
+
+a, a:hover { 
+  background: transparent;
+  outline: none;
+  text-decoration: underline;
+  color: #ACB200;
+}
+
+a:hover { 
+  text-decoration: none;
+  color: #403838;
+}
+
+blockquote { 
+  margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul { 
+  margin: 2px 0 22px 17px;
+}
+
+ul li { 
+  list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+}
+
+ol { 
+  margin: 8px 0 22px 20px;
+}
+
+ol li { 
+  margin: 0 0 11px 0;
+}
+
+.left { 
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right { 
+  float: right; 
+  width: auto;
+  margin-left: 10px;
+}
+
+.center { 
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+#main, header, #logo, nav, #site_content, footer { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#main { 
+  width: 950px;
+  margin: 20px auto;
+}
+
+#header { 
+  width: 950px;
+  height: 150px;
+}
+
+#logo { 
+  width: 900px;
+  position: relative;
+  height: 50px;
+  background: transparent;
+  padding: 35px 25px;
+}
+
+#logo h1 {
+  float: left;
+  width: 50%;
+  font: normal 355% 'Yanone Kaffeesatz', arial, sans-serif;
+}
+
+#logo h1 a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#logo h1 a .logo_colour { 
+  color: #ACB200;
+}
+
+#logo a:hover .logo_colour { 
+  color: #FFF;
+  text-decoration: none;
+}
+
+nav { 
+  float: left;
+  height: 50px;
+  width: 950px;
+  margin: 1px auto 0 auto;
+  border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border: 10px 10px 0 0;
+  background: url(../images/menubar.png);
+} 
+
+#site_content { 
+  width: 950px;
+  overflow: hidden;
+  margin: 44px auto 0 auto;
+  padding: 0px 0px 0px 0px;
+  background: #FFF url(../images/site_content.png) repeat-y;
+  border-top: 0;
+  border-bottom: 0;
+} 
+
+#sidebar_container { 
+  float: right;
+  width: 224px;
+  padding: 10px 10px 20px 10px;
+  background: #F8FBEB;
+}
+
+.sidebar { 
+  float: right;
+  padding: 0 15px;
+  width: 192px;
+  margin: 0 0 20px 0;
+}
+
+.sidebar h1 { 
+  padding: 5px 0 0 0;
+  margin: 0;
+}
+
+#content { 
+  text-align: justify;
+  width: 706px;
+  padding: 0;
+  margin: 0;
+  background: #EBEDD3;
+}
+
+#content_item { 
+  width: 654px;
+  padding: 10px 0 10px 25px;
+}
+
+/* styling for the slideshow on the homepage */
+ul.slideshow {
+  width: 706px;
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;}
+  
+ul.slideshow li {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  list-style: none;}
+ 
+ul.slideshow li.show {
+  z-index: 500;}
+ 
+ul img {
+  border: none;}
+ 
+footer { 
+  width: 950px;
+  font: normal 100% arial, sans-serif;
+  height: 85px;
+  padding: 27px 0 5px 0;
+  text-align: center; 
+  color: #FFF;
+  line-height: 14px;
+  border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border: 0 0 10px 10px;
+  background: transparent url(../images/footer.png) repeat;
+}
+
+footer a, footer a:hover { 
+  color: #FFF;
+  text-decoration: underline;
+}
+
+footer a:hover { 
+  color: #FFF;
+  text-decoration: none;
+}
+
+.form_settings { 
+  margin: 15px 0 0 0;
+}
+
+.form_settings p { 
+  padding: 0 0 4px 0;
+}
+
+.form_settings span { 
+  float: left; 
+  width: 200px; 
+  text-align: left;
+}
+  
+.form_settings input, .form_settings textarea { 
+  padding: 5px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;  
+}
+  
+.form_settings .submit { 
+  font: 100% arial; 
+  border: 0; 
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #3B3B3B; 
+  color: #FFF;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;  
+}
+
+.form_settings textarea, .form_settings select { 
+  font: 100% arial; 
+  width: 299px;
+}
+
+.form_settings select { 
+  width: 310px;
+}
+
+.form_settings .checkbox { 
+  margin: 4px 0; 
+  padding: 0; 
+  width: 14px;
+  border: 0;
+  background: none;
+}
+
+.separator { 
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;
+}
+  
+table { 
+  margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td { 
+  background: #3B3B3B;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;
+}
+  
+table tr td { 
+  background: #FFF;
+  color: #47433F;
+  border-top: 1px solid #ddd;
+}
+
+
+
+/**
+Stylesheet for SooperFish by www.SooperThemes.com
+Author: Jurriaan Roelofs
+**/
+
+/* Configuration of menu width */
+html body ul.sf-menu ul,html body ul.sf-menu ul li { 
+  width: 220px;
+}
+
+html body ul.sf-menu ul ul 
+{ margin: 0 0 0 220px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu,ul.sf-menu * { 
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+  
+ul.sf-menu li:hover { visibility: inherit; /* fixes IE7 'sticky bug' */ }
+
+ul.sf-menu a { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu ul { 
+  position: absolute;
+  left: 0;
+  width: 150px; 
+  top: auto;
+  left: -999999px;
+}
+  
+ul.sf-menu ul a { 
+  zoom: 1; /* IE6/7 fix */ 
+}
+
+ul.sf-menu ul li { 
+  float: left; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+  width: 150px;
+}
+  
+ul.sf-menu ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul, 
+ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul,
+ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul,
+ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul { 
+  left: auto;
+}
+  
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul,
+ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul,
+ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul,
+ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul { 
+  left: -999999px;
+}
+
+/* autoArrows CSS */
+span.sf-arrow { 
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 23px;
+  right: 5px;
+  display: block;
+  background: url(../images/arrows-white.png) no-repeat 0 0;
+  overflow: hidden; /* making sure IE6 doesn't overflow and expand the box */
+  font-size: 1px;
+}
+
+ul ul span.sf-arrow { 
+  right: 10;
+  top: 17px;
+  background-position: 0 100%;
+}
+
+/* theming the menu */
+ul#nav { 
+  float: left;
+}
+
+ul#nav ul { 
+  background: url(../images/menu_hover.png) repeat;
+  padding-bottom: 15px;
+}
+
+ul#nav li a { 
+  padding:15px 25px 15px 25px;
+  font: 130% arial,verdana,sans;
+  text-shadow:1px 1px #000;
+  text-decoration:none;
+  color:#FFF;
+  margin-right: 2px;
+}
+
+ul#nav ul li a { 
+  padding:10px 25px 10px 25px;
+}
+
+ul#nav li a:hover,ul#nav li a:focus { 
+  color:#C2C406;
+}

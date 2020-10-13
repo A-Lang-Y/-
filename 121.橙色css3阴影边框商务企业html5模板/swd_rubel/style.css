@@ -1,0 +1,2035 @@
+#rubel-main
+{
+   background: #FFFFFF url('images/page.png') fixed;
+   margin:0 auto;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+}
+table, ul.rubel-hmenu
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags. 
+ * border-collapse should be separate for shadow in IE. 
+ */
+.rubel-button
+{
+   border-collapse: separate;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #FF811A;
+   background: linear-gradient(top, #FF943D 0, #FF7300 86%, #F56E00 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FF943D 0, #FF7300 86%, #F56E00 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FF943D 0, #FF7300 86%, #F56E00 100%) no-repeat;
+   background: -o-linear-gradient(top, #FF943D 0, #FF7300 86%, #F56E00 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FF943D 0, #FF7300 86%, #F56E00 100%) no-repeat;
+   background: linear-gradient(top, #FF943D 0, #FF7300 86%, #F56E00 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FF943D 0, #FF7300 86%, #F56E00 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   -webkit-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+   box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+   border:1px solid #A6A6A6;
+   padding:0 20px;
+   margin:0 auto;
+   height:40px;
+}
+
+.rubel-postcontent,
+.rubel-postheadericons,
+.rubel-postfootericons,
+.rubel-blockcontent,
+ul.rubel-vmenu a 
+{
+   text-align: left;
+}
+
+.rubel-postcontent,
+.rubel-postcontent li,
+.rubel-postcontent table,
+.rubel-postcontent a,
+.rubel-postcontent a:link,
+.rubel-postcontent a:visited,
+.rubel-postcontent a.visited,
+.rubel-postcontent a:hover,
+.rubel-postcontent a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent p
+{
+   margin: 12px 0;
+}
+
+.rubel-postcontent h1, .rubel-postcontent h1 a, .rubel-postcontent h1 a:link, .rubel-postcontent h1 a:visited, .rubel-postcontent h1 a:hover,
+.rubel-postcontent h2, .rubel-postcontent h2 a, .rubel-postcontent h2 a:link, .rubel-postcontent h2 a:visited, .rubel-postcontent h2 a:hover,
+.rubel-postcontent h3, .rubel-postcontent h3 a, .rubel-postcontent h3 a:link, .rubel-postcontent h3 a:visited, .rubel-postcontent h3 a:hover,
+.rubel-postcontent h4, .rubel-postcontent h4 a, .rubel-postcontent h4 a:link, .rubel-postcontent h4 a:visited, .rubel-postcontent h4 a:hover,
+.rubel-postcontent h5, .rubel-postcontent h5 a, .rubel-postcontent h5 a:link, .rubel-postcontent h5 a:visited, .rubel-postcontent h5 a:hover,
+.rubel-postcontent h6, .rubel-postcontent h6 a, .rubel-postcontent h6 a:link, .rubel-postcontent h6 a:visited, .rubel-postcontent h6 a:hover,
+.rubel-blockheader .t, .rubel-blockheader .t a, .rubel-blockheader .t a:link, .rubel-blockheader .t a:visited, .rubel-blockheader .t a:hover,
+.rubel-vmenublockheader .t, .rubel-vmenublockheader .t a, .rubel-vmenublockheader .t a:link, .rubel-vmenublockheader .t a:visited, .rubel-vmenublockheader .t a:hover,
+.rubel-headline, .rubel-headline a, .rubel-headline a:link, .rubel-headline a:visited, .rubel-headline a:hover,
+.rubel-slogan, .rubel-slogan a, .rubel-slogan a:link, .rubel-slogan a:visited, .rubel-slogan a:hover,
+.rubel-postheader, .rubel-postheader a, .rubel-postheader a:link, .rubel-postheader a:visited, .rubel-postheader a:hover
+{
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+
+.rubel-postcontent a, .rubel-postcontent a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FF7300;
+}
+
+.rubel-postcontent a:visited, .rubel-postcontent a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #808080;
+}
+
+.rubel-postcontent  a:hover, .rubel-postcontent a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #FF9238;
+}
+
+.rubel-postcontent h1
+{
+   color: #FF7300;
+   margin-top: 21px;
+   margin-bottom: 21px;
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-blockcontent h1
+{
+   margin-top: 21px;
+   margin-bottom: 21px;
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent h1 a, .rubel-postcontent h1 a:link, .rubel-postcontent h1 a:hover, .rubel-postcontent h1 a:visited, .rubel-blockcontent h1 a, .rubel-blockcontent h1 a:link, .rubel-blockcontent h1 a:hover, .rubel-blockcontent h1 a:visited 
+{
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent h2
+{
+   color: #FF7300;
+   margin: 19px 0;
+   font-size: 28px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-blockcontent h2
+{
+   margin: 19px 0;
+   font-size: 28px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent h2 a, .rubel-postcontent h2 a:link, .rubel-postcontent h2 a:hover, .rubel-postcontent h2 a:visited, .rubel-blockcontent h2 a, .rubel-blockcontent h2 a:link, .rubel-blockcontent h2 a:hover, .rubel-blockcontent h2 a:visited 
+{
+   font-size: 28px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent h3
+{
+   color: #808080;
+   margin: 10px 0 0;
+   font-size: 19px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-blockcontent h3
+{
+   margin: 10px 0 0;
+   font-size: 19px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent h3 a, .rubel-postcontent h3 a:link, .rubel-postcontent h3 a:hover, .rubel-postcontent h3 a:visited, .rubel-blockcontent h3 a, .rubel-blockcontent h3 a:link, .rubel-blockcontent h3 a:hover, .rubel-blockcontent h3 a:visited 
+{
+   font-size: 19px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent h4
+{
+   color: #512E01;
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.rubel-blockcontent h4
+{
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.rubel-postcontent h4 a, .rubel-postcontent h4 a:link, .rubel-postcontent h4 a:hover, .rubel-postcontent h4 a:visited, .rubel-blockcontent h4 a, .rubel-blockcontent h4 a:link, .rubel-blockcontent h4 a:hover, .rubel-blockcontent h4 a:visited 
+{
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.rubel-postcontent h5
+{
+   color: #512E01;
+   margin-top: 26px;
+   margin-bottom: 26px;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-blockcontent h5
+{
+   margin-top: 26px;
+   margin-bottom: 26px;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent h5 a, .rubel-postcontent h5 a:link, .rubel-postcontent h5 a:hover, .rubel-postcontent h5 a:visited, .rubel-blockcontent h5 a, .rubel-blockcontent h5 a:link, .rubel-blockcontent h5 a:hover, .rubel-blockcontent h5 a:visited 
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent h6
+{
+   color: #C06E02;
+   margin-top: 35px;
+   margin-bottom: 35px;
+   font-size: 11px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-blockcontent h6
+{
+   margin-top: 35px;
+   margin-bottom: 35px;
+   font-size: 11px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postcontent h6 a, .rubel-postcontent h6 a:link, .rubel-postcontent h6 a:hover, .rubel-postcontent h6 a:visited, .rubel-blockcontent h6 a, .rubel-blockcontent h6 a:link, .rubel-blockcontent h6 a:hover, .rubel-blockcontent h6 a:visited 
+{
+   font-size: 11px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+header, footer, article, nav, #rubel-hmenu-bg, .rubel-sheet, .rubel-hmenu a, .rubel-vmenu a, .rubel-slidenavigator > a, .rubel-checkbox:before, .rubel-radiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #rubel-hmenu-bg, .rubel-sheet, .rubel-slidenavigator > a, .rubel-checkbox:before, .rubel-radiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 1000px;
+   color: #292929;
+}
+
+.clearfix:before, .clearfix:after {
+   content: "";
+   display: table;
+}
+
+.clearfix:after {
+   clear: both;
+}
+
+.cleared {
+   font: 0/0 serif;
+   clear: both;
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+li h1, .rubel-postcontent li h1, .rubel-blockcontent li h1 
+{
+   margin:1px;
+} 
+li h2, .rubel-postcontent li h2, .rubel-blockcontent li h2 
+{
+   margin:1px;
+} 
+li h3, .rubel-postcontent li h3, .rubel-blockcontent li h3 
+{
+   margin:1px;
+} 
+li h4, .rubel-postcontent li h4, .rubel-blockcontent li h4 
+{
+   margin:1px;
+} 
+li h5, .rubel-postcontent li h5, .rubel-blockcontent li h5 
+{
+   margin:1px;
+} 
+li h6, .rubel-postcontent li h6, .rubel-blockcontent li h6 
+{
+   margin:1px;
+} 
+li p, .rubel-postcontent li p, .rubel-blockcontent li p 
+{
+   margin:1px;
+}
+
+
+.rubel-shapes
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.rubel-slider-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.rubel-slidenavigator > a {
+   display: inline-block;
+   vertical-align: middle;
+   outline-style: none;
+   font-size: 1px;
+}
+
+.rubel-slidenavigator > a:last-child {
+   margin-right: 0 !important;
+}
+
+.rubel-headline
+{
+  display: inline-block;
+  position: absolute;
+  min-width: 50px;
+  top: 29px;
+  left: 3.69%;
+  line-height: 100%;
+  margin-left: -3px !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 99;
+}
+
+.rubel-headline, 
+.rubel-headline a, 
+.rubel-headline a:link, 
+.rubel-headline a:visited, 
+.rubel-headline a:hover
+{
+font-size: 36px;
+font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+font-weight: normal;
+font-style: normal;
+text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #B16502 !important;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+.rubel-sheet
+{
+   background: #FFFFFF;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   border:1px solid #C7C7C7;
+   padding:10px;
+   margin:50px auto 0;
+   position:relative;
+   cursor:auto;
+   width: 1000px;
+   z-index: auto !important;
+}
+
+.rubel-header
+{
+   margin:0 auto;
+   height: 100px;
+   background-image: url('images/header.jpg');
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   position: relative;
+   z-index: auto !important;
+}
+
+.responsive .rubel-header 
+{
+   background-image: url('images/header.jpg');
+   background-position: center center;
+}
+
+.rubel-header>.widget 
+{
+   position:absolute;
+   z-index:101;
+}
+
+.rubel-nav
+{
+   background: #FF811A url('images/nav.png') bottom left repeat-x scroll;
+   padding:6px;
+   margin:0 auto;
+   position: relative;
+   z-index: 100;
+   font-size: 0;
+   text-align: left;
+}
+
+ul.rubel-hmenu a, ul.rubel-hmenu a:link, ul.rubel-hmenu a:visited, ul.rubel-hmenu a:hover 
+{
+   outline: none;
+   position: relative;
+   z-index: 11;
+}
+
+ul.rubel-hmenu, ul.rubel-hmenu ul
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   list-style-type: none;
+}
+
+ul.rubel-hmenu li
+{
+   position: relative;
+   z-index: 5;
+   display: block;
+   float: left;
+   background: none;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+ul.rubel-hmenu li:hover
+{
+   z-index: 10000;
+   white-space: normal;
+}
+
+ul.rubel-hmenu:after, ul.rubel-hmenu ul:after
+{
+   content: ".";
+   height: 0;
+   display: block;
+   visibility: hidden;
+   overflow: hidden;
+   clear: both;
+}
+
+ul.rubel-hmenu, ul.rubel-hmenu ul 
+{
+   min-height: 0;
+}
+
+ul.rubel-hmenu 
+{
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.rubel-nav:before 
+{
+   content:' ';
+}
+
+.rubel-hmenu-extra1
+{
+   position: relative;
+   display: block;
+   float: left;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.rubel-hmenu-extra2
+{
+   position: relative;
+   display: block;
+   float: right;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.rubel-hmenu
+{
+   float: left;
+}
+
+.rubel-menuitemcontainer
+{
+   margin:0 auto;
+}
+ul.rubel-hmenu>li {
+   margin-left: 9px;
+}
+ul.rubel-hmenu>li:first-child {
+   margin-left: 4px;
+}
+ul.rubel-hmenu>li:last-child, ul.rubel-hmenu>li.last-child {
+   margin-right: 4px;
+}
+
+ul.rubel-hmenu>li>a
+{
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   padding:0 30px;
+   margin:0 auto;
+   position: relative;
+   display: block;
+   height: 43px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #1A1A1A;
+   line-height: 43px;
+   text-align: center;
+}
+
+.rubel-hmenu a, 
+.rubel-hmenu a:link, 
+.rubel-hmenu a:visited, 
+.rubel-hmenu a.active, 
+.rubel-hmenu a:hover
+{
+   font-size: 14px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   text-align: left;
+}
+
+ul.rubel-hmenu>li>a.active
+{
+   background: #FECE90;
+   background: linear-gradient(top, #FEE0B8 0, #FDBC68 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FEE0B8 0, #FDBC68 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FEE0B8 0, #FDBC68 100%) no-repeat;
+   background: -o-linear-gradient(top, #FEE0B8 0, #FDBC68 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FEE0B8 0, #FDBC68 100%) no-repeat;
+   background: linear-gradient(top, #FEE0B8 0, #FDBC68 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FEE0B8 0, #FDBC68 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   padding:0 30px;
+   margin:0 auto;
+   color: #363636;
+   text-decoration: none;
+}
+
+ul.rubel-hmenu>li>a:visited, 
+ul.rubel-hmenu>li>a:hover, 
+ul.rubel-hmenu>li:hover>a {
+   text-decoration: none;
+}
+
+ul.rubel-hmenu>li>a:hover, .desktop ul.rubel-hmenu>li:hover>a
+{
+   background: #FDB453;
+   background: linear-gradient(top, #FEC57C 0, #FDA430 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FEC57C 0, #FDA430 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FEC57C 0, #FDA430 100%) no-repeat;
+   background: -o-linear-gradient(top, #FEC57C 0, #FDA430 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FEC57C 0, #FDA430 100%) no-repeat;
+   background: linear-gradient(top, #FEC57C 0, #FDA430 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FEC57C 0, #FDA430 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   padding:0 30px;
+   margin:0 auto;
+}
+ul.rubel-hmenu>li>a:hover, 
+.desktop-nav ul.rubel-hmenu>li:hover>a {
+   color: #000000;
+   text-decoration: none;
+}
+
+ul.rubel-hmenu>li:before
+{
+   position:absolute;
+   display: block;
+   content:' ';
+   top:0;
+   left:  -9px;
+   width:9px;
+   height: 43px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+ul.rubel-hmenu>li:first-child:before{
+   display:none;
+}
+
+ul.rubel-hmenu li li a
+{
+   background: #C7C7C7;
+   border:1px solid #B5B5B5;
+   padding:0 22px;
+   margin:0 auto;
+}
+ul.rubel-hmenu li li 
+{
+   float: none;
+   width: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.desktop-nav ul.rubel-hmenu li li ul>li:first-child 
+{
+   margin-top: 0;
+}
+
+ul.rubel-hmenu li li ul>li:last-child 
+{
+   margin-bottom: 0;
+}
+
+.rubel-hmenu ul a
+{
+   display: block;
+   white-space: nowrap;
+   height: 23px;
+   min-width: 7em;
+   border: 1px solid transparent;
+   text-align: left;
+   line-height: 23px;
+   color: #292929;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   margin:0;
+}
+
+.rubel-hmenu li li a 
+{
+   border-top-width: 0 !important;
+}
+.rubel-hmenu li li:hover a 
+{
+   border-top-width: 1px !important;
+}
+.rubel-hmenu ul>li:first-child>a 
+{
+   border-top-width: 1px !important;
+}
+
+.rubel-hmenu ul a:link, 
+.rubel-hmenu ul a:visited, 
+.rubel-hmenu ul a.active, 
+.rubel-hmenu ul a:hover
+{
+   text-align: left;
+   line-height: 23px;
+   color: #292929;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   margin:0;
+}
+
+ul.rubel-hmenu ul li a:hover, .desktop ul.rubel-hmenu ul li:hover>a
+{
+   background: #B5B5B5;
+   border:1px solid #B5B5B5;
+   margin:0 auto;
+}
+
+.rubel-hmenu ul li a:hover
+{
+   color: #000000;
+}
+
+.rubel-hmenu ul li a.rubel-hmenu-before-hovered 
+{
+   border-bottom-width: 0 !important;
+}
+
+.desktop-nav .rubel-hmenu ul li:hover>a
+{
+   color: #000000;
+}
+
+ul.rubel-hmenu ul:before
+{
+   background: #E0E0E0;
+   margin:0 auto;
+   display: block;
+   position: absolute;
+   content: ' ';
+   z-index: 1;
+}
+.desktop-nav ul.rubel-hmenu li:hover>ul {
+   visibility: visible;
+   top: 100%;
+}
+.desktop-nav ul.rubel-hmenu li li:hover>ul {
+   top: 0;
+   left: 100%;
+}
+
+ul.rubel-hmenu ul
+{
+   visibility: hidden;
+   position: absolute;
+   z-index: 10;
+   left: 0;
+   top: 0;
+   background-image: url('images/spacer.gif');
+}
+
+.desktop-nav ul.rubel-hmenu>li>ul
+{
+   padding: 10px 30px 30px 30px;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop-nav ul.rubel-hmenu ul ul
+{
+   padding: 30px 30px 30px 10px;
+   margin: -30px 0 0 -10px;
+}
+
+.desktop-nav ul.rubel-hmenu ul.rubel-hmenu-left-to-right 
+{
+   right: auto;
+   left: 0;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop-nav ul.rubel-hmenu ul.rubel-hmenu-right-to-left 
+{
+   left: auto;
+   right: 0;
+   margin: -10px -30px 0 0;
+}
+
+.desktop-nav ul.rubel-hmenu li li:hover>ul.rubel-hmenu-left-to-right {
+   right: auto;
+   left: 100%;
+}
+.desktop-nav ul.rubel-hmenu li li:hover>ul.rubel-hmenu-right-to-left {
+   left: auto;
+   right: 100%;
+}
+
+.desktop-nav ul.rubel-hmenu ul ul.rubel-hmenu-left-to-right
+{
+   right: auto;
+   left: 0;
+   padding: 30px 30px 30px 10px;
+   margin: -30px 0 0 -10px;
+}
+
+.desktop-nav ul.rubel-hmenu ul ul.rubel-hmenu-right-to-left
+{
+   left: auto;
+   right: 0;
+   padding: 30px 10px 30px 30px;
+   margin: -30px -10px 0 0;
+}
+
+.desktop-nav ul.rubel-hmenu li ul>li:first-child {
+   margin-top: 0;
+}
+.desktop-nav ul.rubel-hmenu li ul>li:last-child {
+   margin-bottom: 0;
+}
+
+.desktop-nav ul.rubel-hmenu ul ul:before
+{
+   border-radius: 0;
+   top: 30px;
+   bottom: 30px;
+   right: 30px;
+   left: 10px;
+}
+
+.desktop-nav ul.rubel-hmenu>li>ul:before
+{
+   top: 10px;
+   right: 30px;
+   bottom: 30px;
+   left: 30px;
+}
+
+.desktop-nav ul.rubel-hmenu>li>ul.rubel-hmenu-left-to-right:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop-nav ul.rubel-hmenu>li>ul.rubel-hmenu-right-to-left:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop-nav ul.rubel-hmenu ul ul.rubel-hmenu-left-to-right:before {
+   right: 30px;
+   left: 10px;
+}
+.desktop-nav ul.rubel-hmenu ul ul.rubel-hmenu-right-to-left:before {
+   right: 10px;
+   left: 30px;
+}
+
+.rubel-layout-wrapper
+{
+   position: relative;
+   margin: 10px auto 0 auto;
+   z-index: auto !important;
+}
+
+.rubel-content-layout
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+   border-collapse: collapse;
+}
+
+.rubel-content-layout-row 
+{
+   display: table-row;
+}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+.rubel-layout-cell
+{
+   display: table-cell;
+   vertical-align: top;
+}
+
+.rubel-block
+{
+   margin:10px;
+}
+div.rubel-block img
+{
+   border: none;
+   margin: 0;
+}
+
+.rubel-blockheader
+{
+   padding:6px 5px;
+   margin:0 auto;
+}
+.rubel-blockheader .t,
+.rubel-blockheader .t a,
+.rubel-blockheader .t a:link,
+.rubel-blockheader .t a:visited, 
+.rubel-blockheader .t a:hover
+{
+   color: #000000;
+   font-size: 14px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   margin: 0 10px 0 5px;
+}
+
+.rubel-blockcontent
+{
+   padding:5px;
+   margin:0 auto;
+   color: #404040;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+.rubel-blockcontent table,
+.rubel-blockcontent li, 
+.rubel-blockcontent a,
+.rubel-blockcontent a:link,
+.rubel-blockcontent a:visited,
+.rubel-blockcontent a:hover
+{
+   color: #404040;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-blockcontent p
+{
+   margin: 6px 0;
+}
+
+.rubel-blockcontent a, .rubel-blockcontent a:link
+{
+   color: #FF7300;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.rubel-blockcontent a:visited, .rubel-blockcontent a.visited
+{
+   color: #B8B8B8;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.rubel-blockcontent a:hover, .rubel-blockcontent a.hover
+{
+   color: #FF9238;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+.rubel-block ul>li:before
+{
+   content:url('images/blockbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -12px;
+}
+.opera .rubel-block ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rubel-block li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 125%;
+   color: #545454;
+}
+
+.rubel-block ul>li, .rubel-block ol
+{
+   padding: 0;
+}
+
+.rubel-block ul>li
+{
+   padding-left: 12px;
+}
+
+.rubel-breadcrumbs
+{
+   margin:0 auto;
+}
+
+a.rubel-button,
+a.rubel-button:link,
+a:link.rubel-button:link,
+body a.rubel-button:link,
+a.rubel-button:visited,
+body a.rubel-button:visited,
+input.rubel-button,
+button.rubel-button
+{
+   text-decoration: none;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position:relative;
+   display: inline-block;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-align: center;
+   color: #000000;
+   margin: 0 !important;
+   overflow: visible;
+   cursor: pointer;
+   text-indent: 0;
+   line-height: 40px;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.rubel-button img
+{
+   margin: 0;
+   vertical-align: middle;
+}
+
+.firefox2 .rubel-button
+{
+   display: block;
+   float: left;
+}
+
+input, select, textarea
+{
+   vertical-align: middle;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.rubel-block select 
+{
+   width:96%;
+}
+
+input.rubel-button
+{
+   float: none !important;
+}
+
+.rubel-button.active, .rubel-button.active:hover
+{
+   background: #828282;
+   background: linear-gradient(top, #949494 0, #808080 57%, #707070 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #949494 0, #808080 57%, #707070 100%) no-repeat;
+   background: -moz-linear-gradient(top, #949494 0, #808080 57%, #707070 100%) no-repeat;
+   background: -o-linear-gradient(top, #949494 0, #808080 57%, #707070 100%) no-repeat;
+   background: -ms-linear-gradient(top, #949494 0, #808080 57%, #707070 100%) no-repeat;
+   background: linear-gradient(top, #949494 0, #808080 57%, #707070 100%) no-repeat;
+   -svg-background: linear-gradient(top, #949494 0, #808080 57%, #707070 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   -webkit-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+   box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+   border:1px solid #828282;
+   padding:0 20px;
+   margin:0 auto;
+}
+.rubel-button.active, .rubel-button.active:hover {
+   color: #1C1C1C !important;
+}
+
+.rubel-button.hover, .rubel-button:hover
+{
+   background: #B5B5B5;
+   background: linear-gradient(top, #C9C9C9 0, #A1A1A1 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #C9C9C9 0, #A1A1A1 100%) no-repeat;
+   background: -moz-linear-gradient(top, #C9C9C9 0, #A1A1A1 100%) no-repeat;
+   background: -o-linear-gradient(top, #C9C9C9 0, #A1A1A1 100%) no-repeat;
+   background: -ms-linear-gradient(top, #C9C9C9 0, #A1A1A1 100%) no-repeat;
+   background: linear-gradient(top, #C9C9C9 0, #A1A1A1 100%) no-repeat;
+   -svg-background: linear-gradient(top, #C9C9C9 0, #A1A1A1 100%) no-repeat;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   -webkit-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+   box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.15);
+   border:1px solid #828282;
+   padding:0 20px;
+   margin:0 auto;
+}
+.rubel-button.hover, .rubel-button:hover {
+   color: #000000 !important;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   background: #FFFFFF;
+   margin:0 auto;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   width: 100%;
+   padding: 8px 0;
+   color: #404040 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+input.rubel-error, textarea.rubel-error
+{
+   background: #FFFFFF;
+   border:1px solid #E2341D;
+   margin:0 auto;
+}
+input.rubel-error, textarea.rubel-error {
+   color: #404040 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.rubel-search input[type="text"]
+{
+   background: #FFFFFF;
+   border-radius: 0;
+   margin:0 auto;
+   width: 100%;
+   padding: 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #404040 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.rubel-search 
+{
+   background-image: none;
+   border: 0;
+   display:block;
+   position:relative;
+   top:0;
+   padding:0;
+   margin:5px;
+   left:0;
+   line-height: 0;
+}
+
+form.rubel-search input
+{
+   top:0;
+   right:0;
+}
+
+form.rubel-search>input {
+   bottom:0;
+   left:0;
+   vertical-align: middle;
+}
+ 
+form.rubel-search input[type="submit"]
+{
+   background: #FF811A;
+   margin:0 auto;
+   color: #000000 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position:absolute;
+   display:block;
+   left: auto;
+   border: 0;
+   top: 0;
+   bottom: 0;
+   right: 	0;
+}
+
+label.rubel-checkbox:before
+{
+   background: #FFFFFF;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.rubel-checkbox
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+}
+
+.rubel-checkbox>input[type="checkbox"]
+{
+   margin: 0 5px 0 0;
+}
+
+label.rubel-checkbox.active:before
+{
+   background: #FDB453;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.rubel-checkbox.hovered:before
+{
+   background: #FECE90;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.rubel-radiobutton:before
+{
+   background: #FFFFFF;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+}
+label.rubel-radiobutton
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 12px;
+   display: inline-block;
+}
+
+.rubel-radiobutton>input[type="radio"]
+{
+   vertical-align: baseline;
+   margin: 0 5px 0 0;
+}
+
+label.rubel-radiobutton.active:before
+{
+   background: #FDB453;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+label.rubel-radiobutton.hovered:before
+{
+   background: #FECE90;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+a img
+{
+   border: 0;
+}
+
+.rubel-article img, img.rubel-article, .rubel-block img, .rubel-footer img
+{
+   margin: 0 0 0 0;
+}
+
+.rubel-metadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.rubel-article table, table.rubel-article
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+.rubel-post .rubel-content-layout-br
+{
+   height: 0;
+}
+
+.rubel-article th, .rubel-article td
+{
+   padding: 2px;
+   border: solid 1px #B5B5B5;
+   vertical-align: top;
+   text-align: left;
+}
+
+.rubel-article th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+.preview-cms-logo
+{
+   border: 0;
+   margin: 1em 1em 0 0;
+   float: left;
+}
+
+.image-caption-wrapper
+{
+   padding: 0 0 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper div.rubel-collage
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+   font-size: 80%;
+   text-align: right;
+   margin: 0;
+}
+
+.rubel-postheader
+{
+   color: #803900;
+   margin: 5px 0 5px 10px;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postheader a, 
+.rubel-postheader a:link, 
+.rubel-postheader a:visited,
+.rubel-postheader a.visited,
+.rubel-postheader a:hover,
+.rubel-postheader a.hovered
+{
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-postheader a, .rubel-postheader a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #E56700;
+}
+
+.rubel-postheader a:visited, .rubel-postheader a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #9E9E9E;
+}
+
+.rubel-postheader a:hover,  .rubel-postheader a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #FF9238;
+}
+
+.rubel-postheadericons,
+.rubel-postheadericons a,
+.rubel-postheadericons a:link,
+.rubel-postheadericons a:visited,
+.rubel-postheadericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #878787;
+}
+
+.rubel-postheadericons
+{
+   display:inline-block;
+   padding: 1px;
+}
+
+.rubel-postheadericons a, .rubel-postheadericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #B25000;
+}
+
+.rubel-postheadericons a:visited, .rubel-postheadericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: none;
+   color: #B25000;
+}
+
+.rubel-postheadericons a:hover, .rubel-postheadericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: underline;
+   color: #E88502;
+}
+
+.rubel-postpdficon:before
+{
+   content:url('images/postpdficon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .rubel-postpdficon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rubel-postprinticon:before
+{
+   content:url('images/postprinticon.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .rubel-postprinticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rubel-postemailicon:before
+{
+   content:url('images/postemailicon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .rubel-postemailicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rubel-postcontent ul>li:before,  .rubel-post ul>li:before,  .rubel-textblock ul>li:before
+{
+   content:url('images/postbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .rubel-postcontent ul>li:before, .opera   .rubel-post ul>li:before, .opera   .rubel-textblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rubel-postcontent li, .rubel-post li, .rubel-textblock li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   word-spacing: 0;
+   line-height: 200%;
+   color: #404040;
+   margin: 9px 0 0 6px;
+}
+
+.rubel-postcontent ul>li, .rubel-post ul>li, .rubel-textblock ul>li, .rubel-postcontent ol, .rubel-post ol, .rubel-textblock ol
+{
+   padding: 0;
+}
+
+.rubel-postcontent ul>li, .rubel-post ul>li, .rubel-textblock ul>li
+{
+   padding-left: 11px;
+}
+
+.rubel-postcontent ul>li:before,  .rubel-post ul>li:before,  .rubel-textblock ul>li:before
+{
+   margin-left: -11px;
+}
+
+.rubel-postcontent ol, .rubel-post ol, .rubel-textblock ol, .rubel-postcontent ul, .rubel-post ul, .rubel-textblock ul
+{
+   margin: 1em 0 1em 6px;
+}
+
+.rubel-postcontent li ol, .rubel-post li ol, .rubel-textblock li ol, .rubel-postcontent li ul, .rubel-post li ul, .rubel-textblock li ul
+{
+   margin: 0.5em 0 0.5em 6px;
+}
+
+.rubel-postcontent li, .rubel-post li, .rubel-textblock li
+{
+   margin: 9px 0 0 0;
+}
+
+.rubel-postcontent ol>li, .rubel-post ol>li, .rubel-textblock ol>li
+{
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.rubel-postcontent ul>li, .rubel-post ul>li, .rubel-textblock ul>li
+{
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+blockquote
+{
+   background: #FECE90 url('images/postquote.png') no-repeat scroll;
+   padding:2px 2px 2px 26px;
+   margin:10px 10px 10px 50px;
+   color: #292929;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+blockquote a, .rubel-postcontent blockquote a, .rubel-blockcontent blockquote a, .rubel-footer blockquote a,
+blockquote a:link, .rubel-postcontent blockquote a:link, .rubel-blockcontent blockquote a:link, .rubel-footer blockquote a:link,
+blockquote a:visited, .rubel-postcontent blockquote a:visited, .rubel-blockcontent blockquote a:visited, .rubel-footer blockquote a:visited,
+blockquote a:hover, .rubel-postcontent blockquote a:hover, .rubel-blockcontent blockquote a:hover, .rubel-footer blockquote a:hover
+{
+   color: #292929;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+}
+
+/* Override native 'p' margins*/
+blockquote p,
+.rubel-postcontent blockquote p,
+.rubel-blockcontent blockquote p,
+.rubel-footer blockquote p
+{
+   margin: 0;
+   margin: 2px 0 2px 15px;
+}
+
+.rubel-postfootericons,
+.rubel-postfootericons a,
+.rubel-postfootericons a:link,
+.rubel-postfootericons a:visited,
+.rubel-postfootericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #878787;
+}
+
+.rubel-postfootericons
+{
+   display:inline-block;
+   padding: 1px;
+}
+
+.rubel-postfootericons a, .rubel-postfootericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #B25000;
+}
+
+.rubel-postfootericons a:visited, .rubel-postfootericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #B25000;
+}
+
+.rubel-postfootericons a:hover, .rubel-postfootericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #E88502;
+}
+
+.Navigator .rubel-ccs-navigator img, .Navigator img
+{
+   border: 0;
+   margin: 0;
+   vertical-align: middle;
+}
+tr.Navigator td, td span.Navigator
+{
+   text-align: center;
+   vertical-align: middle;
+}
+
+.Sorter img
+{
+   border:0;
+   vertical-align:middle;
+   padding:0;
+   margin:0;
+   position:static;
+   z-index:1;
+   width: 12px;
+   height: 6px;
+}
+
+.Sorter a
+{
+   position:relative;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #EB6A00;
+}
+
+.Sorter a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #EB6A00;
+}
+
+.Sorter a:visited, .Sorter a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #EB6A00;
+}
+
+.Sorter a:hover, .Sorter a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #B25000;
+}
+
+.Sorter
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color:#803900;
+}
+
+.rubel-footer
+{
+   background: #FFA257;
+   background: rgba(255, 162, 87, 0.5);
+   margin:20px auto 0;
+   position: relative;
+   color: #3D1C00;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-align: left;
+   padding: 0;
+}
+
+.rubel-footer a,
+.rubel-footer a:link,
+.rubel-footer a:visited,
+.rubel-footer a:hover,
+.rubel-footer td, 
+.rubel-footer th,
+.rubel-footer caption
+{
+   color: #3D1C00;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rubel-footer p 
+{
+   padding:0;
+   text-align: left;
+}
+
+.rubel-footer a,
+.rubel-footer a:link
+{
+   color: #A84C00;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.rubel-footer a:visited
+{
+   color: #545454;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.rubel-footer a:hover
+{
+   color: #3B3B3B;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.rubel-footer img
+{
+   border: none;
+   margin: 0;
+}
+
+.rubel-footer-inner
+{
+   margin: 0 auto;
+   width:1000px;
+   padding:5px;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+.rubel-footer li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 125%;
+   color: #3D3D3D;
+}
+
+.rubel-page-footer, 
+.rubel-page-footer a,
+.rubel-page-footer a:link,
+.rubel-page-footer a:visited,
+.rubel-page-footer a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #8F4000;
+}
+
+.rubel-page-footer
+{
+   position: relative;
+   z-index: auto !important;
+   padding: 1em;
+   text-align: center !important;
+   text-decoration: none;
+   color: #474747;
+}
+
+img.rubel-lightbox
+{
+   cursor: pointer;
+}
+
+#rubel-lightbox-bg *
+{
+   padding: 0;
+   margin: 0;
+}
+
+div#rubel-lightbox-bg
+{
+   top: 0;
+   left: 0;
+   width: 100%;
+   position: absolute;
+   height: 100%;
+   background-color: #000;
+   opacity: 0.8;
+   filter: alpha(opacity=80);
+   z-index: 9999;
+}
+
+img.rubel-lightbox-image
+{
+   -webkit-transition: opacity 350ms ease-in-out;
+   -moz-transition: opacity 350ms ease-in-out;
+   -o-transition: opacity 350ms ease-in-out;
+   -ms-transition: opacity 350ms ease-in-out;
+   transition: opacity 350ms ease-in-out;
+   cursor: pointer;
+   z-index: 10000;
+   position: fixed;
+   border: 6px solid #fff;
+   border-radius: 3px;
+   opacity: 0;
+   filter: alpha(opacity=0);
+}
+
+img.rubel-lightbox-image.active
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.lightbox-error
+{
+   position: fixed;
+   background: #fff;
+   z-index: 100;
+   opacity: 0.95;
+   padding: 20px;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   width: 300px;
+   height: 80px;
+}
+
+.loading
+{
+   position: fixed;
+   background: #fff url('images/preloader-01.gif') center center no-repeat;
+   width: 32px;
+   height: 32px;
+   z-index: 10100;
+   opacity: 0.5;
+   padding: 10px;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+}
+
+.arrow
+{
+   height: 100px;
+   width: 82px;
+   z-index: 10003;
+   position: fixed;
+   cursor: pointer;
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+}
+
+.arrow.left
+{
+   left: 9px;
+}
+.arrow.right
+{
+   right: 9px;
+}
+
+.arrow:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.arrow.disabled 
+{
+   display: none;
+}
+
+.arrow-t, .arrow-b
+{
+   height: 6px;
+   width: 30px;
+   left: 26px;
+   background-color: #fff;
+   position: relative;
+   border-radius: 3px;
+}
+
+.arrow-t
+{
+   top: 38px;
+}
+
+.arrow-b
+{
+   top: 50px;
+}
+
+.close
+{
+   width: 22px;
+   height: 22px;
+   position: fixed;
+   top: 30px;
+   right: 39px;
+   cursor: pointer;
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+}
+
+.close:hover 
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.close .cw, .close .ccw
+{
+   position: absolute;
+   top: 8px;
+   left: -4px;
+   width: 30px;
+   height: 6px;
+   background-color: #fff;
+   border-radius: 3px;
+}
+
+.cw
+{
+   transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(45deg);
+   /* Opera */
+    -moz-transform: rotate(45deg);
+/* Firefox */}
+
+.ccw
+{
+   transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(-45deg);
+   /* Opera */
+    -moz-transform: rotate(-45deg);
+/* Firefox */}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt 
+{
+   display: none;
+   color: #fff;
+   font-size: 2.5em;
+}
+
+.ie8 .close-alt, .ie8 .arrow-right-alt, .ie8 .arrow-left-alt {
+   display: block;
+}
+.ie8 .cw, .ie8 .ccw {
+   display: none;
+}
+
+.rubel-content-layout .rubel-content
+{
+   margin:0 auto;
+}
+
+/* Begin Additional CSS Styles */
+.rubel-blockheader .t, .rubel-vmenublockheader .t {white-space: nowrap;}
+/* End Additional CSS Styles */

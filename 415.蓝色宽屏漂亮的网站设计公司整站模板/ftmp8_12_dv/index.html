@@ -1,0 +1,688 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		 <script src="js/jquery.min.js"></script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!---- start-smoth-scrolling---->
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----font-Awesome----->
+   		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+   		<!----font-Awesome----->
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----start-container------>
+		<!----start-header---->
+		<div id="home" class="header scroll">
+			<div class="container">
+				<!---- start-logo---->
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" title="Blue agency" /></a>
+				</div>
+				<!---- //End-logo---->
+				<!----start-top-nav---->
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">Hello!</a></li>
+						<li class="page-scroll"><a href="#about" class="scroll">About</a></li>
+						<li class="page-scroll"><a href="#services" class="scroll">Services</a></li>
+						<li class="page-scroll"><a href="#port" class="scroll">Protfolio</a></li>
+						<li class="page-scroll"><a href="#blog" class="scroll">Blog</a></li>
+						<li class="page-scroll"><a href="#team" class="scroll">Team</a></li>
+						<li class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"> </div>
+				<!----//End-top-nav---->
+			</div>
+		</div>
+		<!----//End-header---->
+		<!-----start-slider---->
+		<div class="slider">
+			<script src="js/responsiveslides.min.js"></script>
+			  <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 3
+			      $("#slider3").responsiveSlides({
+			        manualControls: '#slider3-pager',
+			      });
+			    });
+			  </script>
+			  	<!-- Slideshow -->
+			    <ul class="rslides" id="slider3">
+			      <li>
+			      	<img src="images/slider-img1.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>Creative Solutions</h1>
+			      		<p>Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
+			      		<a class="slid-btn" href="#">Read More</a>
+			      	</div>
+			      </li>
+			      <li><img src="images/slider-img2.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>Creative Blue agency</h1>
+			      		<p>Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
+			      		<a class="slid-btn" href="#">Read More</a>
+			      	</div>
+			      </li>
+			      <li><img src="images/slider-img1.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>Creative Solutions</h1>
+			      		<p>Good that Lesser . Starts heaven over set May Gathering , is all land Cant You're after light our darkness, thing isnet.</p>
+			      		<a class="slid-btn" href="#">Read More</a>
+			      	</div>
+			      </li>
+			    </ul>
+			    <!-- Slideshow -->
+			    <ul id="slider3-pager">
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			    </ul>
+		   </div>
+		<!-----//End-slider---->
+		<!----start-about----->
+		<div id="about" class="about">
+			<div class="container">
+				<h2>About</h2>
+				<p class="wellcome-note-head"><label>We are a full Services Digital Agency. </label>We Design and develop <span>Websites,</span><span>Applications,</span><span>Mobile Solutions,</span> and more</p>
+				<p class="wellcome-note-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus velit quis risus eleifend bibendum. Aenean dictum felis in eros ultrices eleifend. Phasellus ultrices congue feugiat. Vestibulum sed pretium sem, sed venenatis nibh. Phasellus nec tincidunt neque. Proin accumsan sagittis lacus ut lobortis.Proin molestie cursus tortor in eleifend. Suspendisse potenti.</p>
+			<!----start-about-grids----->
+			<div class="about-grids">
+				<div class="col-md-3 about-grid">
+					<span class="about-icon"> </span>
+					<h3><a href="#"><label>Reflexion</label> idea</a></h3>
+					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon1"> </span>
+					<h3><a href="#"><label>Conception</label> Design</a></h3>
+					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon2"> </span>
+					<h3><a href="#"><label>Codage</label> Develop</a></h3>
+					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon3"> </span>
+					<h3><a href="#"><label>Efficacite</label> Rapidite</a></h3>
+					<p>velit est, tempus in nulla sed, convallis porttitor lacus. Curabitur sed egestas eros. Donec convallis ligula eu diam elementum, quis tempor sem tincidunt.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+			<!----//End-about-grids----->
+		</div>
+		<!----//End-about----->
+		<!----start-services---->
+		<div id="services" class="services">
+			<div class="container">
+				<h3>Services<label> </label></h3>
+			<!----start-servicves-list---->
+			<div class="services-list text-center">
+				<ul class="list-unstyled list-inline">
+					<li>
+						<a href="#"><span class="service-icon"> </span><label>Mobile</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon1"> </span><label>Design</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon2"> </span><label>Social</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon3"> </span><label>E-commerce</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon4"> </span><label>Database</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon5"> </span><label>Communications</label></a>
+					</li>
+					<li>
+						<a href="#"><span class="service-icon6"> </span><label>Technology</label></a>
+					</li>
+				</ul>
+			</div>
+			<!----//End-servicves-list---->
+			</div>
+		</div>
+        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="ÍøÕ¾Ä£°å">ÍøÕ¾Ä£°å</a></div>
+		<!----//End-services---->
+		<!----start-portfolio----->
+		<div id="port" class="portfolio portfolio-box">
+			<div class="container">
+				<h3>Portfolio<label> </label></h3>
+			<!----start-portfolio---->
+         <div id="port" class="container portfolio-main">
+	        	<!---- start-portfolio-script----->
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+								
+									// MixItUp plugin
+									// http://mixitup.io
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										// call the hover effect
+										onMixEnd: filterList.hoverEffect()
+									});				
+								
+								},
+								hoverEffect: function () {
+									// Simple parallax effect
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+										}		
+									);				
+								
+								}
+					
+							};
+							// Run the show!
+							filterList.init();
+						});	
+					</script>
+					<!----//End-portfolio-script----->
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">All</span> /</li>
+						<li><span class="filter" data-filter="app">DESIGN</span> /</li>
+						<li><span class="filter" data-filter="card">PHOTOGRAPHY</span> /</li>
+						<li><span class="filter" data-filter="icon">VIDEO</span> /</li>
+						<li><span class="filter" data-filter="app">PRINT</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                <div class="port-info">
+		                	<h4><a href="#"> Flat Pixel</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">radoslav holan</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>		
+					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                <div class="port-info">
+		                	<h4><a href="#">Apemanboards</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> Flat Pixel</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> radoslav holan</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">Apemanboards</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> Flat Pixel</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">radoslav holan</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> Apemanboards</a></h4>
+		                	<span>Website</span>
+		                </div>
+					</div>
+					<div class="clearfix"> </div>	
+					<a class="more-ports text-center" href="#"><span> </span></a>																																				
+				</div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+         <!----//End-portfolio---->
+         <!-----start-testmonials---->
+         <div class="testmonials">
+         	<div class="container">
+	         	<div class="client-pic col-md-4">
+	         		<img src="images/client.jpg" title="name" />
+	         	</div>
+	         	<div class="client-sys col-md-8">
+	         		<!----start-testmonial-slider---->
+	         		<link rel="stylesheet" href="css/testmonial.css">
+  					<script src="js/prefixfree.min.js"></script>
+	         		<!----//End-testmonial-slider---->
+	         		<div class="gallery autoplay items-3">
+					    <div id="item-1" class="control-operator"></div>
+					    <div id="item-2" class="control-operator"></div>
+					    <div id="item-3" class="control-operator"></div>
+					    <figure class="item">
+					      <h3>WHAT CLIENTS SAY :</h3>
+					      <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <figure class="item">
+					      <h3>WHAT CLIENTS SAY :</h3>
+					     <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <figure class="item">
+					      <h3>WHAT CLIENTS SAY :</h3>
+					      <p class="client-says"><span class="left-quit"> &#8220;</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum feugiat justo, quis ultrices orci. Fusce semper turpis blandit, feugiat diam vitae, lobortis sapien. In nec quam purus. Curabitur malesuada, nisi eu facilisis fringilla, lorem quam fermentum arcu, eu vestibulum orci ligula non erat. Quisque mi justo, ornare quis nunc vitae, semper consectetur augue. Integer mollis ipsum a dui tincidunt varius. Proin laoreet mattis magna <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <div class="clearfix"> </div>
+					    <div class="controls">
+					      <a href="#item-1" class="control-button"><span> </span></a>
+					      <a href="#item-2" class="control-button"><span> </span></a>
+					      <a href="#item-3" class="control-button"><span> </span></a>
+					    </div>
+					    <div class="clearfix"> </div>
+				  </div>
+	         	</div>
+	         	<div class="clearfix"> </div>
+         	 </div>
+         </div>
+          <!-----//End-testmonials---->
+		<!----//End-portfolio----->
+		<!-----start-team----->
+		<div id="team" class="team">
+			<div class="container">
+				<div class="team-members text-center">
+					<div class="col-md-4 team-member">
+						<a class="member-pic" href="#"><img src="images/t1.jpg" title="member-name" /></a>
+						<h3><a href="#">Bruce Wayne</a></h3>
+						<span>Designer</span>
+						<p>vel egestas diam dui nec mauris. Sed tincidunt felis at feugiat euismod. Praesent lacinia posuere massa. Proin quis purus in neque aliquam .</p>
+						<ul class="list-unstyled list-inline social-icons">
+							<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"> </i> </a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 team-member">
+						<a class="member-pic" href="#"><img src="images/t2.jpg" title="member-name" /></a>
+						<h3><a href="#">Bruce Wayne</a></h3>
+						<span>Designer</span>
+						<p>vel egestas diam dui nec mauris. Sed tincidunt felis at feugiat euismod. Praesent lacinia posuere massa. Proin quis purus in neque aliquam .</p>
+						<ul class="list-unstyled list-inline social-icons">
+							<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"> </i> </a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 team-member">
+						<a class="member-pic" href="#"><img src="images/t3.jpg" title="member-name" /></a>
+						<h3><a href="#">Bruce Wayne</a></h3>
+						<span>Designer</span>
+						<p>vel egestas diam dui nec mauris. Sed tincidunt felis at feugiat euismod. Praesent lacinia posuere massa. Proin quis purus in neque aliquam .</p>
+						<ul class="list-unstyled list-inline social-icons">
+							<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"> </i> </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-----//End-team----->
+		<!-----start-brand-carsuals------>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		<div class="brand-carsuals">
+			<ul id="flexiselDemo3">
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>
+			    <li><img src="images/b-logo.png" /></li>                                                 
+			</ul>   
+			<script type="text/javascript">
+				$(window).load(function() {
+				    $("#flexiselDemo3").flexisel({
+				        visibleItems: 5,
+				        animationSpeed: 1000,
+				        autoPlay: true,
+				        autoPlaySpeed: 3000,            
+				        pauseOnHover: true,
+				        enableResponsiveBreakpoints: true,
+				        responsiveBreakpoints: { 
+				            portrait: { 
+				                changePoint:480,
+				                visibleItems: 1
+				            }, 
+				            landscape: { 
+				                changePoint:640,
+				                visibleItems: 2
+				            },
+				            tablet: { 
+				                changePoint:768,
+				                visibleItems: 3
+				            }
+				        }
+				    });
+				    
+				});
+			</script>
+		</div>
+		<!-----//End-brand-carsuals------>
+		<!----start-blog---->
+		<div id="blog" class="blog">
+			<div class="container">
+				<h3>Blog<label> </label></h3>
+				<div class="blog-grids">
+					<div class="col-md-4 blog-grid-row frist-row">
+						<a class="post-pic" href="#"><img src="images/post-pic.jpg" title="pic-name" /></a>
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head">
+								<div class="post-head-left">
+									<h4><a href="#">This is blog post title</a></h4>
+									<p class="author">By <a href="#"> Amine Fessi</a></p>
+								</div>
+								<div class="post-head-right">
+									<span>17</span><label>April 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">10 Comments</a> | <i class="fa fa-heart"> </i> 151</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn" href="#">Read More</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+					</div>
+					<!---->
+					<div class="col-md-4 artical-row2">
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">This is blog post title</a></h4>
+									<p class="author">By <a href="#"> Amine Fessi</a></p>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>20</span><label>April 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">10 Comments</a> | <i class="fa fa-heart"> </i> 151</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn artbtn1" href="#">Read More</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">This is blog post title</a></h4>
+									<p class="author">By <a href="#"> Amine Fessi</a></p>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>23</span><label>April 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">10 Comments</a> | <i class="fa fa-heart"> </i> 151</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn artbtn1" href="#">Read More</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+					</div>
+					<!---->
+					<div class="col-md-4 artical-row2">
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">This is blog post title</a></h4>
+									<p class="author">By <a href="#"> Amine Fessi</a></p>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>28</span><label>April 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">10 Comments</a> | <i class="fa fa-heart"> </i> 151</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn artbtn1" href="#">Read More</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">This is blog post title</a></h4>
+									<p class="author">By <a href="#"> Amine Fessi</a></p>
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>30</span><label>April 2013</label>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia. Praesent facilisis diam eget velit tristique, a commodo elit porttitor. Mauris ac pretium ligula. Nam ultricies metus eu semper rutrum. Pellentesque tortor nulla, scelerisque sit amet felis sit amet, ornare euismod nunc.</p>
+							<div class="post-bottom">
+								<div class="post-bottom-left">
+									<p><a href="#">10 Comments</a> | <i class="fa fa-heart"> </i> 151</p>
+								</div>
+								<div class="post-bottom-right">
+									<a class="artbtn artbtn1" href="#">Read More</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!----//End-blog---->
+		<!----start-contact---->
+		<div id="contact" class="contact">
+			<div class="container">
+				 <h3>Contact<label> </label></h3>
+				<div class="contact-grids">
+					<div class="col-md-6 contact-grid-left">
+						<form method="post" action="contact-post.html">
+							<input type="text" value="Name " onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name';}">
+							<input type="text" value="Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email';}">
+							<input type="text" value="Subject" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Subject';}">
+							<textarea onFocus="if(this.value == 'Your Message here....') this.value='';" onBlur="if(this.value == '') this.value='Your Message here....;">Your Message here....</textarea>
+							<p class="conditions"> <span>*</span>scelerisque sit amet felis sit nunc.</p>
+							<span class="submit-btn"><input type="submit" value="Send"></span>
+						</form>
+					</div>
+					<!----->
+					<div class="col-md-6 contact-grid-right">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3146627.8634626623!2d-96.59883788421166!3d39.629933318909686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1399976101005" > </iframe>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet turpis a nibh feugiat, nec viverra arcu lacinia.</p>
+						<div class="col-md-4">
+							<h5>Phone</h5>
+							<span>[81]123456789</span>
+						</div>
+						<div class="col-md-4">
+							<h5>Address</h5>
+							<span>2014 Street,</span>
+							<span>San francisco California,</span>
+							<span>United States,</span>
+						</div>
+						<div class="col-md-4">
+							<h5>Email</h5>
+							<span><a href="#">Hello@Blueagency.com</a></span>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!-----start-contact-social---->
+				<ul class="list-unstyled list-inline contact-social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-skype"></i></a></li>
+				</ul>
+				<!-----//End-contact-social---->
+		</div>
+		</div>
+		<!----//End-contact---->
+		<!----start-copy-right--->
+		<div class="copy-right">
+			<div class="container">
+				<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+					<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<!----//End-copy-right--->
+		<!----//End-container------>
+
+</body>
+</html>

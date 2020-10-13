@@ -1,0 +1,95 @@
+/*-----------------------------------------------*/
+/* POLAROID SLIDE
+/*-----------------------------------------------*/
+
+.polaroid {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+#header .polaroid {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	margin-top:30px;
+}
+
+.polaroid .slide1, .polaroid .slide2 {
+	height: 100%;         
+	width: 100%;
+	background-repeat: no-repeat;  
+	background-position: top center; 
+	position: absolute;
+	top: 0;            
+    z-index:1;
+}
+
+.polaroid .slide .slide-content {
+    height:100%;                  
+	padding-top:40px;
+	border-top: 1px solid rgba(255, 255, 255, 0.045);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.polaroid .slide .slide-content.align-left  { background-position: bottom right;  }
+.polaroid .slide .slide-content.align-right { background-position: bottom left; }
+
+.polaroid .slide .slide-content.full {
+    width:100%;       
+    background-position: top center;    
+}
+
+.polaroid .slide.current {
+    z-index:2;
+}
+
+.polaroid .slide .slide-content div.text {
+    padding-top: 50px;
+}
+
+.polaroid .slide .slide-content.align-left div.text { padding-right: 60%; }
+.polaroid .slide .slide-content.align-right div.text { padding-left: 60%; }
+
+
+.polaroid .thumbs {
+	display: none;
+	position: absolute;
+	left:50%;
+	bottom: 60px;
+	z-index: 100;
+}
+
+.polaroid .thumbs .thumb {
+	position: absolute;
+	height: 170px;
+	cursor: pointer;
+}
+
+.polaroid .thumbs img {
+	margin-bottom: 100px;
+	
+	border:5px solid #fff;
+    -moz-box-shadow:1px 1px 7px rgba(0, 0, 0, 0.50);
+    -webkit-box-shadow:1px 1px 7px rgba(0, 0, 0, 0.50);
+    box-shadow:1px 1px 7px rgba(0, 0, 0, 0.50);
+}
+
+.polaroid .goto {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.text-polaroid { display: none; text-align: left; padding: 10px }
+.text-polaroid h2 { line-height: 25px }

@@ -1,0 +1,162 @@
+<!doctype html>
+<!--
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+Coder: lsa, free.responsive.templates@gmail.com
+Created: 13 September 2012 
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Responsive Template #28 - Responsive Point-模板之家cssMoban.com</title>
+<link href='http://fonts.googleapis.com/css?family=Emblema+One' rel='stylesheet' type='text/css'>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+	 // DOM ready
+	 $(function() {
+	   
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Select a page"
+      }).appendTo("nav select");
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+	   // To make dropdown actually work
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 
+	 });
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+    	<div class="logo">
+            <h1><a href="">Responsive <span>Point</span></a></h1>
+            <div class="slogan">Your website will work good on PC, Tablet, Mobile</div>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Company</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        <div class="clearfloat"></div>
+        <hr>
+    </header>
+    <div class="contentBody">
+    	<div class="welcome">
+            <h2>Welcome</h2>
+            <div class="floatLeft"><img src="images/pic1.jpg" alt="pic1"></div>
+            <div class="description">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of <a href="#">type and scrambled</a> it to make a type specimen book.  It has survived not only five centuries, but also the leap into electronic typesetting, <strong>remaining essentially</strong> unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br><br>
+                    Letraset sheets containing <strong>Lorem Ipsum passages</strong>, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <a href="#">been the industry's standard</a> dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  It has survived not only five centuries, but also the leap into electronic typesetting, 
+                </p>
+                <p class="button"><a href="">Read more...</a></p>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+        <hr>
+        <div class="boxes">
+            <div class="box">
+                <img src="images/pic2.jpg" alt="pic2">
+                <h3>Lorem Ipsum is simply dummy text</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                </p>
+                <p class="button"><a href="">Details</a></p>
+            </div>
+            <div class="box">
+                <img src="images/pic3.jpg" alt="pic3">
+                <h3>Lorem Ipsum is simply dummy text</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                </p>
+                <p class="button"><a href="">Details</a></p>
+            </div>
+            <div class="box lastBox">
+                <img src="images/pic4.jpg" alt="pic4">
+                <h3>Lorem Ipsum is simply dummy text</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                </p>
+                <p class="button"><a href="">Details</a></p>
+            </div>
+            <div class="clearfloat"></div>
+        </div>
+    </div>
+    <div class="sidebar">
+    	<div class="sidebarBox">
+        	<h2>Free HTML5 Templates</h2>
+            <ul>
+            	<li><a href="">Lorem Ipsum is simply</a></li>
+                <li><a href="">Of the printing  typesetting</a></li>
+                <li><a href="">Industry Lorem Ipsum</a></li>
+                <li><a href="">The industry's standard</a></li>
+                <li><a href="">Dummy text ever since</a></li>
+                <li><a href="">The 1500s, when an</a></li>
+            </ul>
+        </div>
+        <div class="sidebarBox">
+        	<h2>Free CSS Templates</h2>
+            <ul>
+            	<li><a href="">Lorem Ipsum is simply</a></li>
+                <li><a href="">Of the printing  typesetting</a></li>
+                <li><a href="">Industry Lorem Ipsum</a></li>
+                <li><a href="">The industry's standard</a></li>
+                <li><a href="">Dummy text ever since</a></li>
+                <li><a href="">The 1500s, when an</a></li>
+            </ul>
+        </div>
+        <div class="sidebarBox lastSidebarBox">
+        	<h2>Free FLASH Templates</h2>
+            <ul>
+            	<li><a href="">Lorem Ipsum is simply</a></li>
+                <li><a href="">Of the printing  typesetting</a></li>
+                <li><a href="">Industry Lorem Ipsum</a></li>
+                <li><a href="">The industry's standard</a></li>
+                <li><a href="">Dummy text ever since</a></li>
+                <li><a href="">The 1500s, when an</a></li>
+            </ul>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+    <div class="clearfloat"></div>
+    <footer>
+        <div class="icons">
+            <ul>
+                <li><a href=""><img src="images/facebook.png" alt="facebook icon"></a></li>
+                <li><a href=""><img src="images/twitter.png" alt="twitter icon"></a></li>
+                <li><a href=""><img src="images/googleplus.png" alt="google plus icon"></a></li>
+                <li><a href=""><img src="images/dribbble.png" alt="dribble icon"></a></li>
+            </ul> 
+        </div>
+  <p>
+            Copyright &copy; <a href="#">Your Site Name</a> | Collect Form <a href="http://www.cssmoban.com/" title="网页模板">网页模板</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>

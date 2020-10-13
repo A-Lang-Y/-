@@ -1,0 +1,115 @@
+/*******************************************************************************************************************
+*  Author: Tomas Lach (www.tomaslach.cz)                                                                           *
+*  Date: 10.04.2011                                                                                                *
+*******************************************************************************************************************/
+@import url("../css/font.css");
+
+html {}
+body {background: url('../img/background.png') repeat-x;color: #6b6b6b;font: normal 12px Arial,sans-serif;padding-top: 131px}
+#homepage {background-color: #f5f5f5}
+p {font-size: 1.0em;line-height: 1.8em;margin-bottom: 15px}
+address {font-style: normal;padding-bottom: 15px}
+
+/*******************************************************************************************************************
+*  LINKS                                                                                                           *
+*******************************************************************************************************************/
+a, a:link, a:focus {color: #849900;outline: 0}
+a:visited {color: #849900}
+a:hover {color: #000;text-decoration: none}
+a.more {padding-right: 12px;background: url('../img/more.gif') no-repeat 100% 50%}
+
+/*******************************************************************************************************************
+*  TITLES                                                                                                          *
+*******************************************************************************************************************/
+h1, h2, h3, h4, h5 {margin: 0 0 10px 0}
+h1 {font-size: 4.0em;color: #a0b41f;font-family: "MyriadPro-BoldCond";}
+h2 {font-size: 1.2em;border-bottom: 1px solid #e8e7e7;padding-bottom: 10px;color: #6b6b6b;text-transform: uppercase}
+h3 {font-size: 1.2em;color: #6b6b6b;margin-bottom: 20px;text-transform: uppercase}
+h4 {font-size: 1.2em;color: #6b6b6b;}
+h5 {font-size: 1.1em}
+
+
+/*******************************************************************************************************************
+*  HEADER                                                                                                          *
+*******************************************************************************************************************/
+#header {position: absolute;top: 0;left: 0;height: 111px;width: 100%;}
+#header #logo {background: url('../img/logo.png') no-repeat;display: block;height: 111px;left: 0;z-index: 10;text-indent: -9999px;position: absolute;top: 35px;width: 170px;color: #000}                
+/* navigation */
+#header #navigation {position: absolute;right: 0;top: 29px;}
+#header #navigation li {display: inline-block;margin-left: 5px;}
+#header #navigation li a {display: inline-block;font-size: 11px;color: #7a7a7a;text-decoration: none;}
+#header #navigation li a span {display: inline-block;height: 33px;line-height: 33px;padding: 0 10px;}
+#header #navigation li.active a {color: #fff;font-weight: bold;background: #000 url('../img/nav-active-left.png') no-repeat}
+#header #navigation li.active a span {background: url('../img/nav-active-right.png') no-repeat 100% 0}
+#header #navigation li a:hover {color: #fff}
+
+/*******************************************************************************************************************
+*  INTRO                                                                                                           *
+*******************************************************************************************************************/
+#intro {min-height: 200px;;margin-bottom: 30px}
+
+/*******************************************************************************************************************
+*  SLIDER                                                                                                          *
+*******************************************************************************************************************/
+#jCarousel {padding: 0 0 0;min-height: 330px}
+#jCarousel li h1,
+#jCarousel li h2 {border: 0;padding: 0;margin-bottom: 5px;text-transform: none;font-family: "MyriadPro-BoldCond";color: #7e9100;font-size: 4.0em}
+#jCarousel li {text-shadow: 1px 1px 1px #d6e570;position: relative;background: #a6b82d url('../img/header.png') repeat-x;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+#jCarousel a.image {display: block;background: url('../img/monitor.png') no-repeat;width: 382px;height: 286px;text-align: center;position: absolute;left: 33px;top: 29px;}
+#jCarousel a.image img {position: relative;top: 17px}
+#jCarousel .content {width: 470px;float: right;color: #5c6a00;font-weight: bold;font-size: 1.2em;padding: 30px 0}
+#jCarousel li a {color: #5c6a00}
+#jCarousel li a.more {font-weight: bold;display: inline-block;padding:5px 38px 5px 0;background: url('../img/more.png') no-repeat 100% 50%}
+
+/*******************************************************************************************************************
+*  CONTENT                                                                                                         *
+*******************************************************************************************************************/
+#container {padding-bottom: 40px}
+#homepage #container {background: #fff;}
+#container .cols {margin-bottom: 40px;padding: 0}
+#container .cols li {width: 312px;float: left;padding: 0;background: none;}
+#container .cols li.first .inner {padding: 0 20px 0 0}
+#container .cols li.center {width: 314px;}
+#container .cols li.center .inner {padding: 0 20px}
+#container .cols li.last .inner {padding: 0 0 0 20px}
+#container .gallery img {margin: 0 20px 20px 0;float: left}
+
+#container ul {padding: 5px 10px 25px}
+#container ul li {padding: 3px 0 3px 15px;background: url('../img/more.gif') no-repeat 0 50%}
+
+#container table {width: 100%;border-collapse: collapse;border: 1px solid #efefef}
+#container table th {text-align: left;padding: 10px;border: 1px solid #819017;border-bottom: 3px solid #819017;background: #a0b31e;color: #fff}
+#container table td {padding: 7px 10px;border: 1px solid #efefef}
+#container table .dark td {background: #f7f7f7}
+
+#container form {margin-bottom: 20px}
+#container form fieldset {background: #f7f7f7;padding: 10px 15px;border: 1px solid #efefef}
+#container form table {width: 100%;border: 0}
+#container form th {padding: 10px 0 10px 0;border: 0;background: none;color: #000;text-align: left;width: 30%;vertical-align: top}
+#container form td {padding: 5px 20px 5px 0;width: 70%;border: 0}
+#container form .text {padding: 5px;width: 199px;}
+#container form .textarea {padding: 5px;width:338px;height:158px;}
+#container form .checkbox {width: 20px;height: 20px;float: left;position: relative;top: -4px;margin-right: 2px}
+#container form .radio {width: 20px;height: 20px;float: left;position: relative;top: -5px;margin-right: 2px}
+#container form tfoot td {padding-top: 10px}
+#container form .submit {cursor: pointer;padding: 5px 10px;font-weight: bold;text-transform: uppercase;font-family: Arial;font-size: 1.0em;}
+    
+/*******************************************************************************************************************
+*  FOOTER                                                                                                          *
+*******************************************************************************************************************/
+#footer {background: #f5f5f5;height: 160px;}
+#footer p {color: #8e8e8e;font-size: 11px;padding-top: 25px}
+#footer p a {color: #8e8e8e;}
+
+/*******************************************************************************************************************
+*  OTHER STYLES                                                                                                    *
+*******************************************************************************************************************/
+.high {font-weight: bold;color: #2d7bac}
+.inner {padding: 15px 20px}
+.middle {margin: 0 auto;position: relative;}
+.w940 {width: 940px}
+.w560 {width: 560px}
+.w220 {width: 250px}
+a.thumb img {border: 1px solid #e4e4e4}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+

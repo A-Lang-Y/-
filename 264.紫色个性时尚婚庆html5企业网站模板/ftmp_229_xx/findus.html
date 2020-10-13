@@ -1,0 +1,314 @@
+
+<!doctype html>
+<html lang="eng">  
+	
+	<head>
+	<title>婚庆企业html5网站模板 - </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<!-- GOOGLE FONTS: Oswald and Arimo -->
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic|Oswald:400,300,700|Pinyon+Script' rel='stylesheet' type='text/css' />
+
+	<!-- INCLUDE jQuery -->	
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<!-- INCLUDE pretty photo plugin -->
+		<script src="js/jquery.prettyPhoto.js"></script>
+	
+	<!-- Include the contact form script-->
+		<script type="text/javascript" src="js/jquery.contact.js"></script>
+
+	<!-- The STYLESHEET Link-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<!-- The PrettyPhoto Link-->
+		<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+
+	</head>
+
+	<!-- The HTML5 SHIV - make the HTML5 recognizable by older versions of Internet Explorer -->
+		<!--[if lt IE 9]>
+			<script src="dist/html5shiv.js"></script>
+		<![endif]-->
+
+	<!-- prettyphoto plugin-->	
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+		    /* calling the pretty photo plugin */
+		    $("a[rel^='prettyPhoto']").prettyPhoto({
+		    	social_tools:''
+		    });
+		});
+		</script>
+
+	<!-- Initialize the ToolTip plugin -->
+		<script src="js/miniTip.js"></script>
+		<script>
+		  $(function() {
+			  $('.tip').miniTip({
+			  	'contentAttribute'      : 'data-tip',
+			    'className'             : 'gray',
+			    'offset'                : 20,
+			    'showAnimateProperties' : {'top': '+=20'},
+			    'hideAnimateProperties' : {'top': '-=20'},
+			    'offset'				: 35,
+			    
+			    'onLoad'                : function(element, tooltip) {
+			                                $(element).animate({'opacity': 1}, '350');
+
+			                            },
+			    'onHide'                : function(element, tooltip) {
+			                                $(element).animate({'opacity': 1}, '250');
+
+			                            }
+		 	});  
+	 	});
+		</script>
+
+<!--[if lte IE 9]> <body class="ie"> <![endif]-->
+<!--[if !(IE)]><!--> 
+<body> 
+<!--<![endif]-->
+	<div class="main-bg"><!-- the div that holds the main background -->
+
+<!--========================================================================================================================
+    ========================================================================================================================
+	=======================================================THE HEADER ======================================================
+	======================================================================================================================== -->
+
+		<header> <!-- the header -->
+
+			<!-- THE LOGO -->
+			<a class="logo">Dave&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		Kate <span>are getting married</span></a><!-- /.logo -->
+			
+			<!-- THE NAVIGATION -->
+			<nav> <!-- the navigation -->
+				
+				<!-- LEFT HAND SIDE NAVIGATION -->
+				<ul class="fl-left mainnav"> <!-- the left menu -->
+					<li><a href="index.html">Home</a>
+						<ul>
+                            <li><a href="index.html">Home Page 1 - half width 
+							slider</a></li>
+                            <li><a href="index_2.html">Home Page 2 - Full Width 
+							Slider</a></li>
+                            <li><a href="index_3.html">Home Page 3 - Full Page 
+							Slider</a></li>
+                        </ul>
+					</li>
+					<li><a href="single.html">Templates</a>
+						<ul>
+                            <li><a href="full-width.html">Full Width Page</a></li>
+                            <li><a href="single.html">Page With Right Sidebar</a></li>
+                            <li><a href="single-left.html">Page With Left 
+							Sidebar</a></li>
+                            <li><a href="weddingpage.html">Wedding Page</a></li>
+                            <li><a href="blogpage_1.html">Blog Version 1</a></li>
+                            <li><a href="blogpage_2.html">Blog Version 2</a></li>
+                            <li><a href="gallerypage_1.html">Gallery Version 1</a></li>
+                            <li><a href="gallerypage_2.html">Gallery Version 2</a></li>
+                            <li><a href="registrypage.html">Registry Page</a></li>
+                        </ul>
+					</li>
+					<li><a href="single.html">Our Story</a></li>
+					<li><a href="weddingpage.html">The Wedding</a></li>
+				</ul> <!-- END OF the left menu -->
+
+				<!-- RIGHT HAND SIDE NAVIGATION -->
+				<ul class="fl-right mainnav"><!-- the right menu -->
+					<li><a href="blogpage_1.html">Our Blog</a>
+						<ul>
+                            <li><a href="blogpage_1.html">Blog Page 1</a></li>
+                            <li><a href="blogpage_2.html">Blog Page 2</a></li>
+                            <li><a href="single.html">Single Post Page </a></li>
+                        </ul>
+					</li>
+					<li><a href="gallerypage_1.html">Photo Album</a>
+						<ul>
+                            <li><a href="gallerypage_1.html">Gallery Page 1</a></li>
+                            <li><a href="gallerypage_2.html">Gallery Page 2</a></li>
+                        </ul>
+					</li>
+					<li><a href="registrypage.html">Registry</a></li>
+					<li><a href="findus.html" class="current">Find Us</a></li>
+				</ul><!-- END OF the right menu -->
+			
+			</nav> <!-- END OF the navigation -->
+
+			<div class="clear">　</div>
+		
+		</header><!-- END OF the header -->
+
+<!--========================================================================================================================
+    ========================================================================================================================
+	=====================================================WELCOME AREA ======================================================
+	======================================================================================================================== -->
+		
+		<div class="inner-welcome-area">
+
+			<!-- THE COUPLE PHOTOS -->
+			<div class="fl-left">
+				<div class="round-frame her"><img src="images/bxslider-half/slide1_her.jpg" alt="the bride" /></div><!-- /.slider-round-her -->
+				<div class="round-frame him"><img src="images/bxslider-half/slide1_him.jpg" alt="the groom" /></div><!-- /.slider-round-him -->
+			</div><!-- /.fl-left -->
+
+			<!-- THE WELCOME TEXT -->
+			<p class="fl-right">Thank you for being part of our special day! 
+			Don芒鈧劉t forget to sign the <a href="#">RSVP List</a>, or to check 
+			out the <a href="#">Story Of How We Met</a>. Also if you are 
+			thinking about giving us a little something but don芒鈧劉t know what 
+			we芒鈧劉d like, please visit the <a href="#">Registry Page</a>, where 
+			items in all price ranges are listed.</p>
+		</div><!-- /.welcome-area -->
+
+<!--========================================================================================================================
+    ========================================================================================================================
+	=====================================================THE CONTENT AREA ==================================================
+	======================================================================================================================== -->
+
+		<div class="clear">　</div>
+
+		<div class="content-wrapper">
+			<div class="content-top">　</div>
+			<div class="content inner-page">
+
+				<div class="inner-header">
+
+					<!--  THE PAGE TITLE -->
+					<div class="fl-left"><h1>Find Us</h1></div><!-- /.fl-left -->
+
+					<!--  THE PAGE BREADCRUMBS -->
+					<div class="fl-right"><p id="breadcrumbs"><a href="index.html">
+						Wedding Home</a> &nbsp;Find Us</p></div><!-- /.fl-right -->
+				</div> <!-- /.inner-header-->
+
+				<!-- THE LEFT COLUMN - THE COLUMN CONTAINING ALL THE BLOG POSTS -->
+				<div class="fl-left content-col">
+
+					<!--  BEGINNING OF THE SINGLE BLOG POST -->
+					<div class="single">
+
+						<!--  THE POST TITLE -->
+						<h2>More Details About How To Get In Contact With Us</h2>
+
+						<!--  THE POST CONTENT -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+						elit, sed do eiusmod tempor incididunt ut labore et 
+						dolore magna aliqua. Ut enim ad minim veniam, quis 
+						nostrud exercitation ullamco laboris nisi ut aliquip ex 
+						ea commodo consequat. Duis aute irure dolor in 
+						reprehenderit in voluptate velit esse cillum dolore eu 
+						fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+						non proident</p>
+						
+						<iframe width="650" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=209406717138850077058.0004c6e7a48635c3cfbe5&amp;ie=UTF8&amp;t=m&amp;ll=40.803114,-73.958244&amp;spn=0.002842,0.006974&amp;z=17&amp;output=embed"></iframe><br /><small>
+						View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=209406717138850077058.0004c6e7a48635c3cfbe5&amp;ie=UTF8&amp;t=m&amp;ll=40.803114,-73.958244&amp;spn=0.002842,0.006974&amp;z=17&amp;source=embed" style="color:#0000FF;text-align:left">
+						W 113th St</a> in a larger map</small>
+					</div><!-- /.post2 -->
+
+
+				</div><!-- /.fl-left-->
+
+				<!-- THE RIGHT COLUMN - THE COLUMN CONTAINING THE BLOG SIDEBAR -->
+				<div class="fl-right sidebar-col">
+					
+					
+					<!-- THE contact details WIDGET  -->
+					<div class="widget">
+						<h3>Contact Details</h3>
+
+						<div class="textwidget">
+						    Phone: +123 4567 890<br />
+        					Fax: +987 6543 210<br />
+       						Email: us@weddingday.com<br />
+       					</div><!--/. textwidget -->
+
+       				</div><!--/. widget -->
+
+				</div><!-- /.fl-right-->
+
+				<div class="clear">　</div>
+
+			</div><!-- /.content -->
+
+
+<!--========================================================================================================================
+    ========================================================================================================================
+	=====================================================THE FOOTER AREA ==================================================
+	======================================================================================================================== -->
+
+			<footer>
+
+				<!-- THE FOOTER CONTACT/RSVP FORM -->
+				<div class="footer-left fl-left" id="contact">
+					<h3>Contact Us/Rsvp</h3>
+					
+					<form action='send_mail.php' method='post' id='contact_form' />
+
+						<div class="contact-left fl-left">
+							<input type='text' name='name' id='name' placeholder="Name..." class="textbox" /><!-- /. NAME -->
+							<input type='text' name='email' id='email' placeholder="Email..." class="textbox" /><!-- /. EMAIL -->
+							<input type="radio" name="attend" value="i will attend" /><span class="radiobutton">I 
+							Will Attend </span><!-- /. RADIO BUTTON -->
+							<input type="radio" name="notattend" value="i will not attend" /> <span class="radiobutton">
+							I Will Not Attend</span><!-- /. RADIO BUTTON -->
+						</div><!-- /.contact-left -->	
+
+						<textarea name='message' id='message' placeholder="Your message must be greater than 20 characters" required data-minlength="20"></textarea><!-- /. MAIN MESSAGE -->
+
+
+						<p id='cf_submit_p' class="submit-button">
+							<input type='submit' id='send_message' value='Send Message' /><!-- /. THE SUBMIT BUTTON -->
+						</p><!-- /. SUBMIT-BUTTON -->
+
+						<div class="clear"></div>
+						<div id='mail_success' class='success'><img src='images/success.png' alt="success" /> 
+							Thank you. Your message has been sent.</div><!-- /. SUCCESS MESSAGE -->
+						<div id='mail_fail' class='error'><img src='images/error.png' alt="error" /> 
+							Sorry, don&#39;t know what happened. Try later.</div><!-- /. ERROR MESSAGE -->
+						<div class="clear"></div>
+
+					</form>
+					
+				</div><!-- /.contact -->
+
+				<!-- THE FOOTER RIGHT CONTENT - 'THE CEREMONY' -->
+				<div class="footer-right fl-right">
+					<h3 class="fl-left">The Ceremony</h3>						
+
+					<ul class="footer-icons fl-right"><!-- THE LITTLE ICONS -->
+						<li><span class="tip" data-tip="Get Directions"><img src="images/questionmark.png" alt="get directions" /></span></li>
+						<li><span class="tip" data-tip="Info About The Food That Will Be Served"><img src="images/food.png" alt="the food" /></span></li>
+						<li><span class="tip" data-tip="Info About The Drinks That Will Be Served"><img src="images/drinks.png" alt="the drinks" /></span></li>
+						<li><span class="tip" data-tip="Smoking Is Allowed Inside The Location"><img src="images/smoking.png" alt="smoking" /></span></li>
+						<li><span class="tip" data-tip="The Location Is Baby Friendly"><img src="images/babies.png" alt="babies" /></span></li>
+					</ul><!-- /. FOOTER-ICONS -->
+
+					<div class="clear">　</div>
+
+					<img src="images/footer-map.jpg" alt="map" class="alignleft" /><!-- THE FOOTER MAP -->
+
+					<p>The Wedding Party is located just in the left of the Oak 
+					Tree Park (Exit A201 from the high way). Lorem ipsum dolor 
+					sit amet, consectetur adipisicing elit, sed do eiusmod ea 
+					commodo consequat. cupidatat non</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore magna 
+					aliqua. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>
+
+				</div><!-- /.contact-us -->
+
+				<div class="clear">　</div>
+			
+			</footer><!--/. end of footer -->
+
+		</div><!-- /.content-wrapper -->
+	
+	</div><!-- /.main-bg -->
+	
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* ===== COMMENTS ===== */
+h3#comments-title, h3#trackbacks, h3#reply-title {
+    margin:30px 0;
+    padding-left:8px;
+    border-left:5px solid #d7dadb;
+}
+
+.content .commentlist,
+.content .commentlist .children {
+    margin: 0px;
+}
+
+li.comment { list-style: none; }
+
+.comment .comment-container { margin-bottom: 26px; }
+
+/* === AVATAR & METAS */
+.comment .comment-author.vcard img {
+    border: 1px solid #d6dadc;
+    padding: 2px;
+}
+
+.comment .comment-meta a { color: #585555; }
+.comment .comment-meta a:hover { color: #B77A2B; }
+
+.comment .comment-meta .fn,
+.comment .comment-meta .fn + a { display: block; }
+
+.comment .comment-meta .fn + a {
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.comment .comment-meta img.comment-plus {
+    border: 0px;
+    margin-right: 10px;
+    padding: 0px;
+    vertical-align: 0px;
+}
+
+/* === TEXT */
+.comment .comment-content {
+    position: relative;
+}
+
+.comment .comment-content .arrow-left-comments {
+    position: absolute;
+    left: -7px;
+    top: 12px;
+}
+
+.comment .comment-content > div {
+    border-left: 1px solid #d6dadc;
+    padding-left: 17px;
+    padding-bottom: 40px;
+}
+
+.comment .comment-body { border-right: 0px; }
+.comment .comment-body p:first-child { margin-top: 0px; }
+
+
+/* === AUTHOR COMMENTS */
+.bypostauthor .comment-container .vcard img, .bypostauthor .comment-container .children .vcard img,.bypostauthor .children .bypostauthor .comment-container .vcard img,
+.bypostauthor .children .bypostauthor .children .comment-container .vcard img,.bypostauthor .children .bypostauthor .children .bypostauthor .comment-container .vcard img,
+.bypostauthor .children .bypostauthor .children .bypostauthor .children .bypostauthor .comment-container .vcard img,
+.bypostauthor .children .bypostauthor .children .bypostauthor .children .bypostauthor .children .bypostauthor .comment-container .vcard img {
+    background: #e8a038;
+    border-color: #e8a038 !important;
+}
+
+/* === GUEST COMMENTS */
+.comment-container .children .vcard img, .bypostauthor .children .comment-container .vcard img,.bypostauthor .children .bypostauthor .children .comment-container .vcard img,
+.bypostauthor .children .bypostauthor .children .bypostauthor .children .comment-container .vcard img,
+.bypostauthor .children .bypostauthor .children .bypostauthor .children .bypostauthor .children .comment-container .vcard img {
+    background:#fff;
+}
+
+/* === TRACKBACKS */
+#trackbacks { font-weight: normal; }
+ol.trackbacklist {margin:20px 35px;}
+ol.trackbacklist li {padding:10px 0;}             
+
+/* ===== RESPOND FORM ===== */   
+#respond { margin:2em 0 1em; }
+     
+h3#reply-title {
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+#respond input[type="text"],
+#respond textarea {
+    background-color: #eff1f2;
+    border: 0px;
+    border-left: 5px solid #cad0d1;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    max-width: 100%;
+    /*width: 252px;*/
+}
+
+#respond .span4 input[type="text"] { width: 95.5%; }
+
+/*#respond .comment-form-comment.span9 textarea { width: 852px; }*/
+/*#respond .comment-form-comment.span12 textarea { width: 98.5%; }*/
+
+/*@media (max-width: 767px) {
+    #respond textarea { width: 306px; }   
+}*/
+
+#respond input[type="text"] { height: 34px; }
+
+#respond p { position: relative; }
+
+#respond p label {
+    position: absolute;
+    left: 11px;
+    top: 10px;    
+}
+
+#respond p i {
+    font-size: 15px;
+    position: absolute;
+    right: 11px;
+    top: 13px;
+}
+
+#respond p.comment-form-comment label { top: 3px; }
+#respond p.comment-form-comment i { top: 7px; }
+
+#respond #submit {
+    background-color: #cad0d1;
+    border: 1px solid #bcc1c2;
+    height: 42px;
+    float: right;
+}
+
+#respond #submit:hover { background-color: #f2f4f5; }
+
+/* width with columns */
+.content .contact-form li.span4 input[type="text"] { width: 95%; }
+.content .contact-form li select { width: 99%; }
+
+@media (min-width: 1200px) {
+	#respond .span3 input[type="text"] { width: 92% !important; }
+	#respond .comment-form-comment.span9 textarea { width: 97.5% !important; }
+	#respond .span4 input[type="text"] { width: 95.5% !important; }
+	#respond .comment-form-comment.span12 textarea { width: 98.5% !important; }
+    #respond #submit { margin-right: 0%; }
+}
+
+@media (max-width: 1199px) and (min-width: 980px) {
+    #respond .span3 input[type="text"] { width: 92% !important; }
+    #respond .comment-form-comment.span9 textarea { width: 97.5% !important; }
+    #respond .span4 input[type="text"] { width: 94.5% !important; }
+    #respond .comment-form-comment.span12 textarea { width: 98% !important; }
+	#respond #submit { margin-right: 0%; }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+    #respond .span3 input[type="text"] { width: 88.5% !important; }
+    #respond .comment-form-comment.span9 textarea { width: 96.5% !important; }
+    #respond .span4 input[type="text"] { width: 92.5% !important; }
+    #respond .comment-form-comment.span12 textarea { width: 97.5% !important; }
+	#respond #submit { margin-right: 0.2%; }
+}
+
+@media (max-width: 767px) {
+    #respond .span3 input[type="text"] { width: 97.5% !important; }
+    #respond .comment-form-comment.span9 textarea { width: 97.5% !important; }
+	#respond .span4 input[type="text"] { width: 97.5% !important; }
+    #respond .comment-form-comment.span12 textarea { width: 97.5% !important; }
+	#respond #submit { margin-right: 0.2%; }
+}
+
+@media (max-width: 480px) {
+    #respond .span3 input[type="text"] { width: 95.5% !important; }
+    #respond .comment-form-comment.span9 textarea { width: 95.5% !important; }
+	#respond #submit { margin-right: -0.2%; }
+	
+}

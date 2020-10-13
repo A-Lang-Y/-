@@ -1,0 +1,212 @@
+/*
+AUTHOR
+Design and code by: http://www.free-responsive-templates.com
+Free stock photos by: http://free-responsive-templates.com/category/free-stock-photos/
+Created: 17 September 2012
+
+LICENSE
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+http://creativecommons.org/licenses/by/3.0/
+License: http://free-responsive-templates.com/license/
+
+SUPPORT
+E-mail: free.responsive.templates@gmail.com
+Contact: http://free-responsive-templates.com/contact/
+*/
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Oranienbaum', serif;
+	font-size:100%;
+	background:#232323 url(../images/siteBackground.jpg) no-repeat fixed center top;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	position:relative;
+	text-shadow:0 0px, 1px 1px #2c2c2c;
+}
+h1 {
+	margin:50px 0;
+}
+h1 a {
+	font-family: 'Amarante', cursive;
+	font-size:1.5em; 
+	text-decoration:none;
+	color:#ffffff;
+	font-weight: bold;
+}
+h1 a:hover {
+	text-decoration:none;
+}
+h2 {
+	font-family: 'Coda', cursive;
+	font-size:1.7em;
+	font-weight:inherit;
+	margin:0 0 10px 0;
+	color:#69b0ff;
+}
+a img { 
+	border: none;
+}
+a {
+	color: #6ab0ff;
+	text-decoration: underline; 
+}
+a:hover { 
+	color: #1a86ff;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;	
+}
+p {
+	line-height:140%;
+}
+header {
+	background:#2c2c2c;
+}
+.wrapper { 
+	width:93.75%; /* 960px/1024px  */
+	margin:0 auto;
+}
+.contentBody {
+	width:72.916666666666666666666666666667%;
+	float:left;
+	background:none repeat scroll 0 0 rgba(44, 44, 44, 0.4);
+}
+.post {
+	position:relative;
+}
+.post img {
+	margin:20px 0 10px 0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.post span {
+	background:none repeat scroll 0 0 rgba(44, 44, 44, 0.4);
+	padding:4px 10px;
+	position:absolute;
+	right:4%;
+	top:9%;
+	font-size:0.8em;
+	font-style:italic;
+}
+.post {
+	padding:4%;
+}
+.sidebar {
+	width:22.916666666666666666666666666667%;
+	float:right;
+	background:none repeat scroll 0 0 rgba(44, 44, 44, 0.7);
+}
+.sBlock {
+	padding:12%;
+}
+.sBlock li {
+	list-style:none;
+	width:100%;
+}
+.sBlock li a {
+	display:block;
+	border-bottom:1px solid #6c6c6c;
+	color:#ffffff;
+	padding:10px 5px 10px 20px;
+	background:url(../images/p.png) no-repeat 6px 14px;
+	text-decoration:none;
+}
+.sBlock li a:hover {
+	padding:10px 5px 10px 20px;
+	background:rgba(44, 44, 44, 0.6) url(../images/p.png) no-repeat 6px 14px;
+	color:#6ab0ff;
+}
+footer {
+	background:#2c2c2c;
+	margin-top:30px;
+	text-align:center;
+	padding:20px 10px;
+}
+footer p {
+	font-size:0.8571428571428571em; /* 12px/14px */
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	line-height: 0px;
+}
+/**************************/
+/*********************************Begin main menu****************************************/
+/**************************/
+nav {
+	text-align: right;
+	padding:20px 0;
+	margin-bottom:20px;
+	margin-right:4%;
+}
+nav li {
+	list-style:none;
+	display:inline;
+}
+nav li a {
+	font-family: 'Coda', cursive;
+	text-shadow: none;
+	text-decoration: none;
+	padding:20px 10px;
+	font-weight:bold;
+	color:#696969;
+	text-transform:uppercase;
+}
+nav li a:hover {
+	color:#ffffff;
+	text-decoration:none;
+}
+nav .active a {
+	color:#ffffff;
+	background:#696969;
+}
+nav select {
+      display: none;
+    }
+select {
+	width:200px;
+}
+/**************************/
+/*********************************End main menu****************************************/
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 960px or less */
+@media screen and (max-width: 980px) {
+	.wrapper{
+		width:93.75%; /* 960px/1024px  */
+		margin:0 auto;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	.contentBody, .sidebar {
+		float:none;
+		width:auto;
+	}
+	.contentBody {
+		margin-bottom:30px;
+		padding-bottom:30px;
+	}
+	h1 {
+		margin:50px 0 50px 0;
+	}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	nav ul { display: none; }
+	nav select { display: inline-block; }
+	.post span { position: inherit; margin:0 4%;}
+	h1 { text-align:center; margin:20px 0;}
+	nav { text-align:center;}
+	
+}
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/

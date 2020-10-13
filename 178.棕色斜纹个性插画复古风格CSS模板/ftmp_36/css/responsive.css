@@ -1,0 +1,401 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+/*	
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* Default General  ----------------------------------------------------*//* Defaul tNav   ----------------------------------------------------*/#comboNav {
+  display: none;
+}
+#nav {
+  display: block;
+}
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* TABLET GENERAL  ----------------------------------------------------*/#top-page,
+  header,
+  #main {
+    width: 712px;
+  }
+  .widget-holder {
+    width: 712px;
+  }
+  footer {
+    width: 672px;
+  }
+  /* TABLET NAV  ----------------------------------------------------*/#nav {
+    display: block;
+  }
+  #comboNav {
+    display: none;
+  }
+  header nav .sf-menu {
+    width: 270px;
+  }
+  header nav .sf-menu > li {
+    font-size: 18px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  #main .tagline {
+    font-size: 48px;
+  }
+  /* TABLET FEATURED----------------------------------------------------*/.feature li,
+  .work-list li {
+    width: 210px;
+  }
+  /* TABLET BLOG  ----------------------------------------------------*/#posts-list {
+    width: 330px;
+  }
+  #posts-list article {
+    font-size: 14px;
+  }
+  #posts-list article .entry-title .post-heading {
+    font-size: 30px;
+  }
+  /* TABLET PROJECT ------------------------------------------------------------*/
+  #project-title {
+    font-size: 48px;
+  }
+  #project-gallery {
+    width: 362px;
+  }
+  #project-info {
+    width: 290px;
+  }
+  /* TABLET RELATED PROJECTS ------------------------------------------------------------*/
+  .related-projects {
+    margin-bottom: 80px;
+  }
+  .related-projects .related-heading {
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .related-projects .related-list li {
+    float: left;
+    width: 210px;
+  }
+  /* TABLET FORMS  ----------------------------------------------------*/.wpcf7-form input,
+  .wpcf7-form textarea,
+  #contactForm input,
+  #contactForm textarea,
+  #commentform input,
+  #commentform textarea,
+  .wpcf7-form textarea,
+  #contactForm textarea,
+  #commentform textarea {
+    padding: 10px 15px;
+    width: 642px;
+  }
+  #commentform input,
+  #commentform textarea {
+    width: 100%;
+  }
+  /* TABLET WIDGETS  ----------------------------------------------------*/.widget-cols > li {
+    width: 153px;
+    margin-left: 20px;
+  }
+  /* TABLET FOOTER ----------------------------------------------------*/footer #bottom-left {
+    width: 440px;
+  }
+  footer #bottom-right {
+    width: 210px;
+  }
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+@media only screen and (max-width: 767px) {
+  #top-page,
+  header,
+  #main {
+    width: 252px;
+  }
+  .widget-holder {
+    width: 252px;
+  }
+  footer {
+    width: 212px;
+  }
+  #main,
+  .feature li .excerpt {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  /* MOBILE Top page ----------------------------------------------------*/#top-page {
+    width: 252px;
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+  }
+  /* MOBILE Search ----------------------------------------------------*/#searchform {
+    position: relative;
+    width: 300px;
+    height: 34px;
+    display: block;
+    float: right;
+    margin: 0px 0px 0px 0px;
+  }
+  /* Mobile Social ----------------------------------------------------*/#social-bar {
+    /* center the icons using floats and positions */
+  
+    clear: left;
+    display: block;
+    float: right;
+    position: relative;
+    right: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #social-bar li {
+    display: block;
+    left: 50%;
+  }
+  /* MOBILE NAV  ----------------------------------------------------*/header nav .sf-menu {
+    display: none;
+  }
+  #comboNav {
+    display: block;
+    width: 212px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  #main .tagline {
+    font-size: 24px;
+  }
+  /* MOBILE FEATURE----------------------------------------------------*/.feature,
+  .work-list {
+    width: 212px;
+    margin-left: 20px;
+  }
+  .feature li,
+  .work-list li {
+    width: 212px;
+    margin-left: 0px;
+  }
+  .feature li .title,
+  .work-list li .title {
+    font-size: 24px;
+  }
+  /* MOBILE COLUMNS ----------------------------------------------------*/.entry-content .one-half,
+  .entry-content .one-third,
+  .entry-content .one-fourth {
+    width: auto;
+    margin-right: 0px;
+  }
+  /* MOBILE BLOG  ----------------------------------------------------*/#posts-list {
+    width: 212px;
+  }
+  #posts-list article {
+    font-size: 14px;
+  }
+  #posts-list article .entry-title .post-heading {
+    font-size: 24px;
+  }
+  /* MOBILE SIDEBAR ----------------------------------------------------*/#sidebar {
+    clear: both;
+    float: none;
+    margin: 0 auto 40px auto;
+    width: 252px;
+  }
+  #sidebar .block {
+    margin-bottom: 20px;
+  }
+  #sidebar .block:before {
+    left: 66px;
+  }
+  #sidebar .block:after {
+    display: none;
+  }
+  /* MOBILE PROJECT ------------------------------------------------------------*/
+  #project-title {
+    font-size: 24px;
+  }
+  #project-gallery {
+    width: 212px;
+  }
+  #project-info {
+    width: 212px;
+  }
+  #project-info .excerpt {
+    font-size: 16px;
+  }
+  /* MOBILE RELATED PROJECTS ------------------------------------------------------------*/
+  .related-projects {
+    margin-bottom: 80px;
+  }
+  .related-projects .related-heading {
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .related-projects .related-list li {
+    float: left;
+    width: 210px;
+  }
+  /* MOBILE FORMS  ----------------------------------------------------*/.wpcf7-form input,
+  .wpcf7-form textarea,
+  #contactForm input,
+  #contactForm textarea,
+  #commentform input,
+  #commentform textarea,
+  .wpcf7-form textarea,
+  #contactForm textarea,
+  #commentform textarea {
+    padding: 10px 15px;
+    width: 182px;
+  }
+  /* MOBILE WIDGETS  ----------------------------------------------------*/.widget-cols > li {
+    width: 212px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 0px;
+    border-bottom: 1px solid #694e41;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .widget-cols > li:last-child {
+    border-bottom: none;
+  }
+  /* MOBILE FOOTER ----------------------------------------------------*/footer #bottom-left {
+    width: 212px;
+  }
+  footer #bottom-right {
+    width: 212px;
+    text-align: left;
+  }
+}
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #top-page,
+  header,
+  #main {
+    width: 436px;
+  }
+  .widget-holder {
+    width: 436px;
+  }
+  footer {
+    width: 396px;
+  }
+  /* WIDE MOBILE NAV  ----------------------------------------------------*/#nav {
+    display: none;
+  }
+  #comboNav {
+    display: block;
+    width: 396px;
+    margin-left: 20px;
+  }
+  /* WIDE MOBILE FEATURE ----------------------------------------------------*/.feature,
+  .work-list {
+    width: 396px;
+    margin-left: 20px;
+  }
+  .feature li,
+  .work-list li {
+    width: 396px;
+    margin-left: 0px;
+  }
+  /* WIDE MOBILE BLOG  ----------------------------------------------------*/#posts-list {
+    width: 396px;
+  }
+  #posts-list article {
+    font-size: 14px;
+  }
+  #posts-list article .entry-title .post-heading {
+    font-size: 24px;
+  }
+  /* WIDE MOBILE SIDEBAR ----------------------------------------------------*/#sidebar {
+    clear: both;
+    float: none;
+    margin: 0 auto 40px auto;
+    width: 320px;
+  }
+  #sidebar .block {
+    margin-bottom: 20px;
+  }
+  #sidebar .block:before {
+    left: 100px;
+  }
+  #sidebar .block:after {
+    display: block;
+  }
+  /* WIDE MOBILE PROJECT ------------------------------------------------------------*/
+  #project-title {
+    font-size: 24px;
+  }
+  #project-gallery {
+    width: 396px;
+  }
+  #project-info {
+    width: 396px;
+  }
+  /* WIDE MOBILE RELATED PROJECTS ------------------------------------------------------------*/
+  .related-projects .related-list li {
+    width: 396px;
+    margin-bottom: 30px;
+  }
+  /* WIDE MOBILE FORMS  ----------------------------------------------------*/.wpcf7-form input,
+  .wpcf7-form textarea,
+  #contactForm input,
+  #contactForm textarea,
+  #commentform input,
+  #commentform textarea,
+  .wpcf7-form textarea,
+  #contactForm textarea,
+  #commentform textarea {
+    padding: 10px 15px;
+    width: 366px;
+  }
+  /* WIDE MOBILE WIDGETS  ----------------------------------------------------*/.widget-cols > li {
+    width: 396px;
+  }
+  /* FOOTER ----------------------------------------------------*/footer #bottom-left {
+    width: 396px;
+  }
+  footer #bottom-right {
+    width: 396px;
+    text-align: left;
+  }
+}

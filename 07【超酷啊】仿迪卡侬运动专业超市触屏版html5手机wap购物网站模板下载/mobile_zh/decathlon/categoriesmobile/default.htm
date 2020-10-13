@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>Magento Enterprise Edition</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="../../../static.decathlon.com.cn/skin/frontend/enterprise/decathlon_mobile/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../../static.decathlon.com.cn/skin/frontend/enterprise/decathlon_mobile/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../../../static.decathlon.com.cn/js/static/mobile-base.20140326.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../../static.decathlon.com.cn/skin/frontend/enterprise/decathlon_mobile/fancybox/jquery.fancybox.css" media="all" />
+<script type="text/javascript" src="../../../static.decathlon.com.cn/js/static/libs.000.min.js"></script>
+<script type="text/javascript" src="../../../static.decathlon.com.cn/js/static/mobile-base.000.min.js"></script>
+<script type="text/javascript" src="../../../static.decathlon.com.cn/skin/frontend/enterprise/decathlon_mobile/fancybox/jquery.fancybox.pack.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '../../../';
+Mage.Cookies.domain   = '.m.decathlon.com.cn';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["CN","MO","HK","PA","IE"];
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate({"HTML tags are not allowed":"\u4e0d\u5141\u8bb8\u4f7f\u7528 HTML \u6807\u7b7e","Please select an option.":"\u8bf7\u9009\u62e9\u4e00\u4e2a\u9009\u9879\u3002","This is a required field.":"\u8fd9\u662f\u5fc5\u586b\u533a\u57df\u3002","Please enter a valid number in this field.":"\u8bf7\u5728\u6b64\u533a\u57df\u8f93\u5165\u6709\u6548\u7684\u6570\u5b57\u3002","The value is not within the specified range.":"\u6570\u503c\u4e0d\u5728\u6307\u5b9a\u8303\u56f4\u5185\u3002","Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.":"\u8bf7\u5728\u8be5\u5b57\u6bb5\u4e2d\u53ea\u4f7f\u7528\u6570\u5b57\u3002\u8bf7\u4e0d\u8981\u4f7f\u7528\u7a7a\u683c\u6216\u5176\u5b83\u5b57\u7b26\uff0c\u4f8b\u5982\u53e5\u70b9\u6216\u9017\u53f7\u3002","Please use letters only (a-z or A-Z) in this field.":"\u5728\u8be5\u5b57\u6bb5\u4e2d\u8bf7\u53ea\u4f7f\u7528\u5b57\u6bcd\uff08a-z\u6216A-Z\uff09","Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"\u8be5\u5b57\u6bb5\u4e2d\u8bf7\u53ea\u4f7f\u7528\u5b57\u6bcd\uff08a-z\uff09\u3001\u6570\u5b57\uff080-9\uff09\u4ee5\u53ca\u4e0b\u5212\u7ebf\uff08_\uff09\uff0c\u7b2c\u4e00\u4e2a\u5b57\u7b26\u5e94\u4e3a\u5b57\u6bcd\u3002","Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.":"\u8be5\u5b57\u6bb5\u4e2d\u8bf7\u53ea\u4f7f\u7528\u5b57\u6bcd\uff08a-z \u6216 A-Z\uff09\u6216\u6570\u5b57\uff080-9\uff09\uff0c\u4e0d\u80fd\u4f7f\u7528\u7a7a\u683c\u6216\u5176\u5b83\u5b57\u7b26\u3002","Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.":"\u8be5\u5b57\u6bb5\u4e2d\u53ea\u80fd\u4f7f\u7528\u5b57\u6bcd\uff08a-z \u6216 A-Z\uff09\u6216\u6570\u5b57\uff080-9\uff09\u6216\u7a7a\u683c\uff0c\u6216 # \u3002","Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.":"\u8bf7\u8f93\u5165\u6709\u6548\u7684\u7535\u8bdd\u53f7\u7801\u3002\u4f8b\u5982 (123) 456-7890 \u6216 123-456-7890\u3002","Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.":"\u8bf7\u8f93\u5165\u6709\u6548\u4f20\u771f\u53f7\u7801\uff0c\u4f8b\u5982 (123) 456-7890 \u6216 123-456-7890\u3002","Please enter a valid date.":"\u8bf7\u8f93\u5165\u6709\u6548\u65e5\u671f","Please enter a valid email address. For example johndoe@domain.com.":"\u8bf7\u8f93\u5165\u6709\u6548\u90ae\u4ef6\u5730\u5740\u3002\u4f8b\u5982johndoe@domain.com\u3002","Please use only visible characters and spaces.":"\u8bf7\u53ea\u4f7f\u7528\u53ef\u89c1\u5b57\u7b26\u548c\u7a7a\u683c\u3002","Please enter 6 or more characters. Leading or trailing spaces will be ignored.":"\u8bf7\u8f93\u5165\u516d\u4e2a\u6216\u66f4\u591a\u5b57\u7b26\u3002\u5f00\u5934\u6216\u7ed3\u5c3e\u5904\u7684\u7a7a\u683c\u4f1a\u88ab\u5ffd\u7565\u3002","Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.":"\u8bf7\u8f93\u5165\u81f3\u5c117\u4e2a\u5b57\u7b26\u3002\u5bc6\u7801\u5e94\u5305\u542b\u6570\u5b57\u4e0e\u5b57\u6bcd\u3002","Please make sure your passwords match.":"\u8bf7\u786e\u4fdd\u5bc6\u7801\u5339\u914d\u3002","Please enter a valid URL. Protocol is required (http:\/\/, https:\/\/ or ftp:\/\/)":"\u8bf7\u8f93\u5165\u6709\u6548URL\u3002\u534f\u8bae\u540d\u662f\u5fc5\u987b\u7684\uff08http:\/\/\u3001https:\/\/\uff0c\u6216ftp:\/\/\uff09","Please enter a valid URL. For example ../../../../www.example.comorwww.example.com/default.htm":"\u8bf7\u8f93\u5165\u6709\u6548\u7684URL\uff0c\u4f8b\u5982../../../../www.example.com/u6216www.example.com/default.htm","Please enter a valid URL Key. For example \"example-page\", \"example-page.html\" or \"anotherlevel\/example-page\".":"\u8bf7\u8f93\u5165\u6709\u6548\u7684 URL \u5bc6\u94a5\u3002\u4f8b\u5982\uff0c \"example-page\"\u3001\"example-page.html\"\uff0c\u6216 \"anotherlevel\/example-page\"\u3002","Please enter a valid XML-identifier. For example something_1, block5, id-4.":"\u8bf7\u8f93\u5165\u6709\u6548\u7684XML\u6807\u8bc6\u7b26\u3002\u4f8b\u5982\uff0c\u7c7b\u4f3csomething_1\u3001block5\u3001id-4\u3002","Please enter a valid social security number. For example 123-45-6789.":"\u8bf7\u8f93\u5165\u6709\u6548\u793e\u4f1a\u5b89\u5168\u53f7\u7801\uff0c\u4f8b\u5982123-45-6789\u3002","Please enter a valid zip code. For example 90602 or 90602-1234.":"\u8bf7\u8f93\u5165\u6709\u6548\u90ae\u7f16\uff0c\u4f8b\u598290602\u621690602-1234\u3002","Please enter a valid zip code.":"\u8bf7\u8f93\u5165\u6709\u6548\u7684\u90ae\u653f\u7f16\u7801\u3002","Please use this date format: dd\/mm\/yyyy. For example 17\/03\/2006 for the 17th of March, 2006.":"\u8bf7\u4f7f\u7528\u8fd9\u6837\u7684\u65e5\u671f\u683c\u5f0f\uff1add\/mm\/yyyy\u3002\u4f8b\u598217\/03\/2006\u4ee3\u88682006\u5e743\u670817\u65e5\u3002","Please enter a valid $ amount. For example $100.00.":"\u8bf7\u8f93\u5165\u6709\u6548\u7684\u91d1\u989d\uff0c\u4f8b\u5982$100.00\u3002","Please select one of the above options.":"\u8bf7\u9009\u62e9\u4e0a\u5217\u9009\u9879\u4e2d\u7684\u4e00\u4e2a\u3002","Please select one of the options.":"\u8bf7\u9009\u62e9\u4e0b\u5217\u4e00\u4e2a\u9009\u9879\u3002","Please select State\/Province.":"\u8bf7\u9009\u62e9\u5dde\/\u7701\u3002","Please enter a number greater than 0 in this field.":"\u8bf7\u5728\u8be5\u5b57\u6bb5\u4e2d\u8f93\u5165\u5927\u4e8e0\u7684\u6570\u5b57\u3002","Please enter a number 0 or greater in this field.":"\u8bf7\u5728\u8be5\u5b57\u6bb5\u4e2d\u8f93\u5165\u6570\u5b570\u6216\u66f4\u5927\u503c\u3002","Please enter a valid credit card number.":"\u8bf7\u8f93\u5165\u6709\u6548\u7684\u4fe1\u7528\u5361\u5361\u53f7\u3002","Credit card number does not match credit card type.":"\u4fe1\u7528\u5361\u7f16\u53f7\u4e0e\u4fe1\u7528\u5361\u7c7b\u578b\u4e0d\u5339\u914d\u3002","Card type does not match credit card number.":"\u4fe1\u7528\u5361\u7c7b\u578b\u4e0e\u4fe1\u7528\u5361\u53f7\u4e0d\u5339\u914d\u3002","Incorrect credit card expiration date.":"\u9519\u8bef\u7684\u4fe1\u7528\u5361\u5230\u671f\u65e5\u3002","Please enter a valid credit card verification number.":"\u8bf7\u8f93\u5165\u6709\u6548\u7684\u4fe1\u7528\u5361\u9a8c\u8bc1\u7801\u3002","Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.":"\u5728\u6b64\u5b57\u6bb5\u4e2d\uff0c\u8bf7\u4ec5\u4f7f\u7528\u5b57\u6bcd\uff08a-z\u6216A-Z\uff09\u3001\u6570\u5b57\uff080-9\uff09\u6216\u4e0b\u5212\u7ebf\uff08_\uff09\uff0c\u9996\u5b57\u7b26\u5fc5\u987b\u4e3a\u5b57\u6bcd\u3002","Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.":"\u8bf7\u8f93\u5165\u6709\u6548 CSS\u957f\u5ea6\u3002\u4f8b\u5982\uff0c 100px \u6216 77pt \u6216 20em \u6216 .5ex \u6216 50%\u3002","Text length does not satisfy specified text range.":"\u6587\u672c\u957f\u5ea6\u4e0d\u7b26\u5408\u6307\u5b9a\u7684\u6587\u672c\u957f\u5ea6\u8303\u56f4\u3002","Please enter a number lower than 100.":"\u8bf7\u8f93\u5165\u4e0d\u8d85\u8fc7100\u4e2a\u6570\u5b57\u3002","Please select a file":"\u8bf7\u9009\u62e9\u4e00\u4e2a\u6587\u4ef6","Please enter issue number or start date for switch\/solo card type.":"\u8bf7\u8f93\u5165Switch\/Solo\u7c7b\u5361\u7684\u9881\u53d1\u53f7\u6216\u5f00\u59cb\u65e5\u671f\u3002","Please wait, loading...":"\u8bf7\u7a0d\u5019\uff0c\u6b63\u5728\u52a0\u8f7d...","This date is a required value.":"\u8be5\u65e5\u671f\u4e3a\u5fc5\u9700\u503c\u3002","Please enter a valid day (1-%d).":"\u8bf7\u8f93\u5165\u6709\u6548\u5929\u6570\uff081-%d\uff09\u3002","Please enter a valid month (1-12).":"\u8bf7\u8f93\u5165\u6709\u6548\u6708\u4efd\uff081-12\uff09\u3002","Please enter a valid year (1900-%d).":"\u8bf7\u8f93\u5165\u6709\u6548\u5e74\u4efd\uff081900-%d\uff09\u3002","Please enter a valid full date":"\u8bf7\u8f93\u5165\u6709\u6548\u5b8c\u6574\u65e5\u671f","Please enter a valid date between %s and %s":"\u8bf7\u5728 %s \u4e0e %s \u4e4b\u95f4\u8f93\u5165\u6709\u6548\u65e5\u671f\u3002","Please enter a valid date equal to or greater than %s":"\u8bf7\u8f93\u5165\u7b49\u4e8e\u6216\u5927\u4e8e %s \u7684\u6709\u6548\u65e5\u671f","Please enter a valid date less than or equal to %s":"\u8bf7\u8f93\u5165\u5c0f\u4e8e\u6216\u7b49\u4e8e %s \u7684\u6709\u6548\u65e5\u671f","Complete":"\u5b8c\u6210","Add Products By SKU":"\u6309\u7167 SKU \u6dfb\u52a0\u4ea7\u54c1","Please choose to register or to checkout as a guest":"\u8bf7\u9009\u62e9\u5730\u533a\u6216\u4ee5\u6765\u5bbe\u8eab\u4efd\u7ed3\u8d26","Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.":"\u7531\u4e8e\u9001\u8d27\u65b9\u6cd5\u4e0d\u53ef\u7528\uff0c\u73b0\u5728\u65e0\u6cd5\u5b8c\u6210\u60a8\u7684\u8ba2\u5355\u3002\u8bf7\u66f4\u6539\u60a8\u7684\u6536\u8d27\u5730\u5740\u3002","Please specify payment method.":"\u8bf7\u6307\u5b9a\u652f\u4ed8\u65b9\u5f0f\u3002","Your order cannot be completed at this time as there is no payment methods available for it.":"\u7531\u4e8e\u4ed8\u6b3e\u65b9\u6cd5\u4e0d\u53ef\u7528\uff0c\u73b0\u5728\u65e0\u6cd5\u5b8c\u6210\u60a8\u7684\u8ba2\u5355\u3002","Wishlist Name":"\u613f\u671b\u6e05\u5355\u540d\u79f0","Save":"\u4fdd\u5b58","Cancel":"\u53d6\u6d88","Error happened during wishlist creation. Try again later":"\u521b\u5efa\u613f\u671b\u6e05\u5355\u65f6\u53d1\u751f\u9519\u8bef\u3002\u8bf7\u7a0d\u540e\u91cd\u8bd5","Create New Wishlist":"\u521b\u5efa\u65b0\u7684\u613f\u671b\u6e05\u5355","Edit Wishlist":"\u7f16\u8f91\u613f\u671b\u6e05\u5355","Select items to move":"\u9009\u62e9\u9879\u76ee\u6765\u79fb\u52a8","Select items to copy":"\u9009\u62e9\u9879\u76ee\u6765\u590d\u5236","Add to:":"\u6dfb\u52a0\u81f3\uff1a"});
+        //]]></script></head>
+<body class="lang-zh decathlon-categoriesmobile-index lang-mobile_zh">
+<div id="wrapper">
+    <!-- BEGIN GOOGLE ANALYTICS CODEs -->
+<!--ipt type="text/javascript">
+//<![CDATA[
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+_gaq.push(['_setAccount', 'UA-12905251-1']);
+_gaq.push(['_setAllowAnchor', true]);
+_gaq.push(['_setSiteSpeedSampleRate', 100]);
+_gaq.push(['_setCampaignCookieTimeout', 2592000000]);
+_gaq.push(['_addOrganic','baidu','word']);
+_gaq.push(['_addOrganic','baidu','word']);
+_gaq.push(['_addOrganic','baidu','wd']);
+_gaq.push(['_addOrganic','baidu','q1']);
+_gaq.push(['_addOrganic','baidu','q2']);
+_gaq.push(['_addOrganic','baidu','q3']);
+_gaq.push(['_addOrganic','baidu','q4']);
+_gaq.push(['_addOrganic','baidu','q5']);
+_gaq.push(['_addOrganic','baidu','q6']);
+_gaq.push(['_addOrganic','360','q']);
+_gaq.push(['_addOrganic','360','u']);
+_gaq.push(['_addOrganic','soso','w']);
+_gaq.push(['_addOrganic','sogou','query']);
+_gaq.push(['_addOrganic','www.so.com','q']);
+_gaq.push(['_addOrganic','www.so.com','u']);
+_gaq.push(['_trackPageview']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+//]]>
+</scri-->
+<!-- END GOOGLE ANALYTICS CODE -->
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>你的浏览器似乎禁用了 JavaScript。</strong><br />
+                    您必须在浏览器中启用JavaScript才能使用本网站的功能。                </p>
+            </div>
+        </div>
+    </noscript>
+    
+    <section id="col-main" class="col-main ">
+        <!--{GLOBAL_MESSAGES_aae3749ba9c2e308ffa9c240ac185959}--><!--/{GLOBAL_MESSAGES_aae3749ba9c2e308ffa9c240ac185959}-->        <script src="../../../skin/frontend/enterprise/decathlon_mobile/js/iscroll.js"></script>
+<div id="all-categories">
+  <header class="header">
+               <p class="title">运动分类</p>
+           </header>
+  <div id="catwrapper">
+    <div id="scroller">
+      <!--{MESSAGES_563d2fa92bba0edf7c5c14c52f9368d1}--><!--/{MESSAGES_563d2fa92bba0edf7c5c14c52f9368d1}-->      <ul id="pop-category">
+                    <li class="level box-sports"><a href="index/cate/3/default.htm"    >所有运动分类</a></li>
+                    <li class="level box-men"><a href="index/cate/4/default.htm"    >男士</a></li>
+                    <li class="level box-women"><a href="index/cate/5/default.htm"    >女士</a></li>
+                    <li class="level box-junior-baby"><a href="index/cate/6/default.htm"    >少年儿童</a></li>
+                </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  
+jQuery(function($){
+
+    //Add iScroll for iphone
+    // if ((navigator.userAgent.match(/iPhone/)) || (navigator.userAgent.match(/iPod/))) {
+           
+      var myScroll = new iScroll("catwrapper"); 
+      document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+      document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+    // }
+
+    // Add popup for navigation redirect
+      $("#pop-category li a").click(function(){
+        $("body").prepend("<div class='loading'></div>");
+      })
+
+
+})
+
+</script>    </section>
+        
+        </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<!--
+AUTHOR
+Design and code by: http://www.free-responsive-templates.com
+Free stock photos by: http://free-responsive-templates.com/category/free-stock-photos/
+Created: 17 September 2012
+
+LICENSE
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+http://creativecommons.org/licenses/by/3.0/
+License: http://free-responsive-templates.com/license/
+
+SUPPORT
+E-mail: free.responsive.templates@gmail.com
+Contact: http://free-responsive-templates.com/contact/
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Responsive Template #32 - Village Hall-模板之家cssMoban.com</title>
+<link href='http://fonts.googleapis.com/css?family=Coda|Oranienbaum|Amarante' rel='stylesheet' type='text/css'>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+	 // DOM ready
+	 $(function() {
+	   
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Select a page"
+      }).appendTo("nav select");
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+	   // To make dropdown actually work
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 
+	 });
+	</script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Village</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>    
+</header>
+<div class="wrapper">
+	<h1><a href="">Village Hall</a></h1>
+    <div class="contentBody">
+    	<div class="post">
+            <h2>Lorem Ipsum is simply</h2>
+            <span>September 17, 2012</span>
+            <p>
+                Lorem Ipsum is simply dummy text of the <a href="#">printing and typesetting</a> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of <strong>type and scrambled it</strong> to make a type specimen book.  It has survived not only five centuries, b<a href="#">ut also the leap into elect</a>ronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+            </p>
+            <img src="images/pic1.jpg" alt="pic1">
+        </div>
+        <div class="post">
+            <h2>Lorem Ipsum is simply</h2>
+            <span>September 16, 2012</span>
+            <p>
+                Lorem Ipsum is simply dummy text of the <a href="#">printing and typesetting</a> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of <strong>type and scrambled it</strong> to make a type specimen book.  It has survived not only five centuries, b<a href="#">ut also the leap into elect</a>ronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+            </p>
+            <img src="images/pic2.jpg" alt="pic2">
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sBlock">
+        	<h2>Sidebar</h2>
+            <ul>
+            	<li><a href="">Lorem Ipsum is</a></li>
+                <li><a href="">Simply dummy</a></li>
+                <li><a href="">Text of the printing</a></li>
+                <li><a href="">And typesetting</a></li>
+                <li><a href="">Industry lorem</a></li>
+                <li><a href="">Ipsum has been</a></li>
+                <li><a href="">The industry's</a></li>
+            </ul>
+        </div>
+        <div class="sBlock">
+        	<h2>Partners</h2>
+            <ul>
+            	<li><a href="">Lorem Ipsum is</a></li>
+                <li><a href="">Simply dummy</a></li>
+                <li><a href="">Text of the printing</a></li>
+                <li><a href="">And typesetting</a></li>
+                <li><a href="">Industry lorem</a></li>
+                <li><a href="">Ipsum has been</a></li>
+                <li><a href="">The industry's</a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="clearfloat"></div>
+</div>
+<footer>
+    <p class="copyright">
+        Copyright &copy; <a href="#">Your Site Name</a> | Collect Form <a href="http://www.cssmoban.com/" title="网页模板">网页模板</a>
+    </p>
+</footer>
+</body>
+</html>

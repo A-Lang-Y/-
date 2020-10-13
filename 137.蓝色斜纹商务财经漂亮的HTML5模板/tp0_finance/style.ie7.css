@@ -1,0 +1,99 @@
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.art-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.art-header
+{
+   z-index: 1;
+}
+
+.art-hmenu>li, .art-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.art-hmenu, ul.art-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+ul.art-hmenu>li:first-child {
+   padding-right:3px;
+}
+
+ul.art-hmenu ul{
+   background-color: #3D91D6 !important;
+}
+
+.art-content-layout, .art-content-layout-row, .art-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.art-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.art-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.art-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.art-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.art-postheadericons span{
+   zoom: 1;
+}
+.art-postcontent {
+   height: 1%;
+}
+
+.art-postmetadatafooter{
+   zoom:1;
+}
+
+.art-postfootericons span{
+   zoom: 1;
+}
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.art-content 
+{
+   width: auto;
+   float:none;
+}
+

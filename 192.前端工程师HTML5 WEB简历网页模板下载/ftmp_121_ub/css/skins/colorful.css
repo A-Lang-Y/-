@@ -1,0 +1,183 @@
+/*
+
+Skin: Colorful
+Colors: Blue, Orange, Yellow, Teal, Ping
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+
+/*-------------------------------------------------------------------
+  Usually changes global style: colors, backgrounds, fonts, etc.
+-------------------------------------------------------------------*/
+
+body {
+  font-family: 'Myriad Pro', 'Segoe UI', 'Trebuchet MS', arial, sans-serif;
+  background: url(../../img/patterns/green-fibers.png) repeat;
+}
+
+#container {
+  background: url(../../img/patterns/warm.png) repeat;
+}
+
+/* Fonts */
+
+.ribbon em, .ribbon2 em, .ribbon3 em,
+.wrap-header h1,
+.section-title,
+.portfolio h2 {
+  font-family: 'Arvo', arial, sans-serif;
+}
+
+.section-title, .portfolio h2 {
+  padding: 8px 18px 7px;
+  letter-spacing: 0.03em;
+  font-size: 0.8125em;
+  text-shadow: 0 1px 0 rgba(51, 51, 51, 0.2);
+}
+
+.wrap-header h1 {
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  color: #333840;
+}
+
+.wrap-header p {
+  font-size: 15px;
+}
+
+/* Roundeness */
+
+#container,
+#container:before,
+#container:after {
+  border-radius: 10px 10px 15px 15px;
+}
+
+.row-icon {
+  border-radius: 0 0 10px 10px;
+}
+
+.section-title {
+  border-radius: 3px;
+}
+
+/* Markup adjustments */
+
+.markup del {
+  color: #888;
+}
+
+.markup blockquote footer {
+  color: #333;
+}
+
+.markup table td,
+.markup table th {
+  border-color: #aaa;
+}
+
+.markup table thead td,
+.markup table thead th {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.row {
+  border-top: 1px dashed #cfcfcf;
+}
+
+.row-inversed.row-icon {
+  border-top: 1px dashed #333;
+}
+
+.row-profile {
+  border: 0 none;
+  box-shadow: inset 0 -3px 3px -3px rgba(0, 0, 0, 0.2);
+}
+
+.row-inversed .profile-pic {
+  border: 0 none;
+  background: #F2ECDD;
+  padding: 6px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Section Specific Colors */
+
+.row-inversed {
+  background: #282828;  /* Default */
+}
+
+.portfolio h2, .section-title { background: #8FBF4D; /* default */ }
+.row-info a:hover { color: #629a14; }
+.markup blockquote:before { color: #8FBF4D; }
+
+.row-education .section-title { background: #0D8C7F; }
+.row-education a:hover { color: #0D8C7F; }
+
+.row-skills .section-title { background: #063559; }
+.row-skills a:hover { color: #063559; }
+
+.row-experience .section-title { background: #F2D13E; }
+.row-experience a:hover { color: #bc9d0e; }
+
+.row-portfolio .section-title, .portfolio h2 { background: #D95929; }
+.row-portfolio a:hover { color: #D95929; }
+
+.row-inversed h2 { background: #d73353; }
+.row-inversed a:hover { color: #d73353 !important; }
+
+.portfolio h2,
+.section-title,
+.row-inversed {
+  color: #fff;
+}
+
+.row-inversed .info th {
+  color: #999;
+}
+
+.row-inversed .info td a, .row-inversed .info td {
+  color: #eaeaea;
+}
+
+.wrap-footer {
+  color: #888;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wrap-footer .fl {
+  padding-left: 10px;
+}
+
+.wrap-footer .fr {
+  padding-right: 10px;
+}
+
+/* Selection Colors */
+
+::-moz-selection {
+  background: #3D3D3D;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #3D3D3D;
+  color: #fff;
+  text-shadow: none;
+}
+
+.row-inversed ::-moz-selection {
+  background: #fff;
+  color: #3D3D3D;
+  text-shadow: none;
+}
+
+.row-inversed ::selection {
+  background: #fff;
+  color: #3D3D3D;
+  text-shadow: none;
+}
+

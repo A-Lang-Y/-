@@ -1,0 +1,198 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0 0 20px 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img { 
+	max-width: 100%;
+	display: block;
+	visibility: hidden;
+}
+
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+
+.flexslider {
+	position: relative;
+	zoom: 1;
+	background: url(images/loading.gif) no-repeat scroll center center #FFFFFF;
+}
+
+.flexslider .slides {zoom: 1;}
+
+	.flexslider .slides > li {
+		
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+				box-sizing: border-box;
+		
+		border: 8px solid #e0e1e3; overflow: hidden;
+	}
+	
+		.flexslider .caption {
+			position: absolute;
+			top: 8px;
+			bottom: 8px;
+			right: 8px !important; /* -31.5%*/
+			width: 31.5%;
+			background-repeat: repeat;
+			background-color: rgba(0,0,0,.5);
+		}
+		
+		.ie8 .flexslider .caption {background-image: url(images/mask.png);}
+		
+		.ie7 .flexslider .caption {
+			background-image: url(images/mask.png);
+			zoom: 1;
+		}
+
+			.flexslider .caption-entry {padding: 30px;}
+			
+				.caption-title {
+					margin-bottom: 7%;
+					padding: 10% 0 7px 0;
+					border-bottom: 1px solid rgba(255,255,255,.3);
+				}
+
+					.caption-entry h2 {
+						margin: 0;
+						color: #fff;
+						font-size: 30px;
+						font-family: 'Alice', serif;
+						text-transform: uppercase;
+					}
+
+					.caption-entry p {
+						opacity: .9;
+						color: #f5f4f6;
+						font-size: 14px;
+						font-family: 'Adamina', serif;
+					}
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+
+/* IE rgba() hack */
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption {width: 96%; padding: 2%; margin: 0; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 14px; line-height: 18px;}
+
+/* Direction Nav */
+
+.flex-direction-nav {
+	position: absolute;
+	z-index: 5;
+	bottom: 18px;
+	right: 18px;
+}
+	
+	.flex-direction-nav li {float: left; margin-left: 1px;}
+
+		.flex-direction-nav li a {
+			display: block;
+			width: 27px;
+			height: 27px;
+			background-image: url(images/direction-nav.png);
+			background-color: rgba(0,0,0,.5);
+			background-repeat: no-repeat;
+			text-indent: -999em;
+			cursor: pointer;
+		}
+		
+		.not-ie .flex-direction-nav li a {
+			-webkit-border-radius: 2px;
+			   -moz-border-radius: 2px;
+					border-radius: 2px;				
+		}
+		
+		.ie7 .flex-direction-nav li a,
+		.ie8 .flex-direction-nav li a {
+			background-color: rgb(0,0,0);
+			filter: alpha(opacity=70);
+		}
+
+		.flex-direction-nav li .next {background-position: right top;}
+
+		.style-1 .flex-direction-nav li a:hover {background-color: #549dc8;}
+		.style-2 .flex-direction-nav li a:hover {background-color: #E53535;}
+		.style-3 .flex-direction-nav li a:hover {background-color: #79B027;}
+		.style-4 .flex-direction-nav li a:hover {background-color: #EBA505;}
+		.style-5 .flex-direction-nav li a:hover {background-color: #3B5381;}
+		.style-6 .flex-direction-nav li a:hover {background-color: #75A9C7;}
+	
+	.flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+
+.flex-control {
+	position: absolute;
+	bottom: 0; 
+	padding: 9px 0;
+	width: 100%;
+	height: 3px;
+	background-color: rgba(0,0,0,.5);
+}
+
+.ie7 .flex-control,
+.ie8 .flex-control {
+	background: url(../../images/mask-light.png) repeat;
+}
+
+	.flex-control-nav {
+		float: right;
+		margin-right: 20px;
+		list-style: none;
+	}
+
+		.flex-control-nav li {
+			margin: 0 0 0 5px;
+			float: left;
+			display: block; 
+			zoom: 1; 
+		}
+
+		.flex-control-nav li:first-child {margin: 0;}
+
+			.flex-control-nav li a {
+				display: block; 
+				width: 35px;
+				height: 3px;
+				background-color: #232323;
+				cursor: pointer;
+				text-indent: -9999em;
+			}
+
+			.flex-control-nav li a:hover {background-color: #ccc;}
+			.flex-control-nav li a.active {background-color: #ffcc00; cursor: default;}

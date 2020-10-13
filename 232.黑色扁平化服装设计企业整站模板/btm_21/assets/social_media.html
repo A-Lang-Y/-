@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8">
+  	<title>Social and Media Sharing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="description" content="">
+
+  <!-- styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+    <link href="css/tm_docs.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <link href="css/ie.css" rel="stylesheet">
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+<!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top" id="advanced">
+      <span class="trigger"><strong></strong><em></em></span>
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="scaffolding.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="home">
+                <a href="../index.html"><img src="img/tm/tm_home.png" alt=""></a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li >
+                <a href="scaffolding.html">Scaffolding</a>
+              </li>
+              <li class="">
+                <a href="base-css.html">Base CSS</a>
+              </li>
+              <li class="">
+                <a href="components.html">Components</a>
+              </li>
+              <li class="">
+                <a href="javascript.html">Javascript</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">TM add-ons <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../404.html">Pages</a>
+                    <ul>  
+                      <li><a href="under_construction.html">Under Construction</a></li>
+                      <li><a href="intro.html">Intro Page</a></li>
+                      <li class=""><a href="../404.html">404 page</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="slider.html">Slider</a></li>
+                  <li class="active"><a href="social_media.html">Social and Media<br> Sharing</a></li>
+                  <li><a href="css3.html">CSS3 Tricks</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Social and Media Sharing</h1>
+  </div>
+</header>
+
+  <div class="container">
+
+<!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+	      <li><a href="#soc-pl"><i class="icon-chevron-right"></i> Social Plugins</a></li>
+	      <li><a href="#soc-v"><i class="icon-chevron-right"></i> Social Videos</a></li>
+	      <li><a href="#soc-ic"><i class="icon-chevron-right"></i> Social Icons</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+<!--==============================section=================================-->
+	<section id="soc-pl">
+		<div class="page-header">
+		    <h2>Twitter</h2>
+		</div>
+		<div class="row">
+			<div class="span4">
+	To make carousel work  <strong>jquery.tweet.js</strong> file is used.<br>					
+	You can add Twitter-widget and configure it quite easily:
+	<ol>
+	<li>Insert a div with twitter class and twitter id to a desired location on the page:</li>
+	</ol>
+	<pre class="prettyprint linenums">
+&lt;div class="tm_tweet"&gt; &lt;/div&gt;</pre>
+	<ol start="2">
+	<li>Next you need to configure twitter-widget to use your twitter-account. In order to do this you should change the user name in the initiasization script:
+	<strong>username: "..."</strong></li>
+	<li>Then choose the number of tweets to display:
+	<strong>count: 3</strong></li>
+	</ol>
+			</div>
+			<div class="span5 twitter-box">
+<!-- twitter Begin -->
+				<div class="tm_tweet"></div>
+<!-- twitter end -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="span4">
+				<div class="page-header">
+				    <h2>Flickr</h2>
+				</div>
+<!-- Start of Flickr Badge -->
+				<div id="flickr_badge_uber_wrapper"><a href="http://www.flickr.com" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a><div id="flickr_badge_wrapper">
+<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?show_name=1&amp;count=10&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=54088809@N05"></script>
+</div></div>
+			<pre>You can place images from your  <a href="http://www.flickr.com/">Flickr</a> account using  <a href="http://www.flickr.com/badge.gne">Flickr Badge</a></pre>
+<!-- End of Flickr Badge -->
+			</div>
+			<div class="span5">
+				<div class="page-header">
+				    <h2>Likebox <small>Facebook</small></h2>
+				</div>
+				<div class="fb-lb-pad">
+<!-- Facebook Likebox Begin -->
+				<div class="fw_facebook">
+					<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FTemplateMonster&amp;width=710&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:710px; height:258px;" allowTransparency="true"></iframe>
+				</div>
+<!-- Facebook Likebox End -->
+				</div>
+				<pre>You can customize <a href="http://developers.facebook.com/docs/reference/plugins/like-box/">LikeBox Plugin</a> from the official website at <a href="http://www.facebook.com/">Facebook</a>.</pre>
+			</div>
+		</div>
+	</section>
+	<section id="soc-v">
+		<div class="page-header">
+		    <h2>Youtube</h2>
+		</div>
+		<div class="fw_video"><iframe width="460" height="264" src="http://www.youtube.com/embed/2kodXWejuy0?rel=0"></iframe></div>
+		<div class="fw_descr">
+			<p>You can add Youtube Video easily:</p>
+			<ol>
+				<li>Open desired video on <a href="http://www.youtube.com">Youtube</a></li>
+				<li>Click the Share button under the video</li>
+				<li>In the appeared window click Embed</li>
+				<li>After making your selection, copy and paste the embed code to your website.</li>
+			</ol>
+		</div>
+		<div class="page-header">
+		    <h2>Vimeo</h2>
+		</div>
+		<div class="fw_video"><iframe src="http://player.vimeo.com/video/37582150?byline=0&amp;portrait=0&amp;color=ffffff" width="460" height="259"></iframe></div>
+		<div class="fw_descr">
+			<p>You can add Vimeo Video easily:</p>
+			<ol>
+			  <li>Open desired video on <a href="http://www.vimeo.com">Vimeo</a></li>
+			  <li>Click Embed in the top right corner of the video</li>
+			  <li>In the appeared window you can see the embed code. You can copy it or customize according to your needs.  Click "Customize embed options" to see video embed options.</li>
+			  <li>After making your selection, copy and paste the embed code to your website.</li>
+			</ol>
+		</div>
+	</section>
+	<section id="soc-ic">
+<!-- Icons Begin -->
+				<div class="page-header">
+				    <h2>Social Icons</h2>
+				</div>
+						<ul class="tm_icons">
+							<li><a href="#"><img  alt="" src="img/icons/delicious.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/email.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/facebook.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/feed.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/flickr.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/linkedin.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/stumble.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/tripadvisor.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/twitter.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/vimeo.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/youtube.png"></a></li>
+						</ul>
+						<ul class="tm_icons">
+							<li><a href="#"><img  alt="" src="img/icons/20x20/AIM.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Apple.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Blogger.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Delicious.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Digg.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Dopplr.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Evernote.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Facebook.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Flickr.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Google.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Linkedin.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Mail.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/MobileMe.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/MySpace.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Picasa.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/RSS.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Skype.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Stumble_Upon.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Technorati.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Twitter.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Vimeo.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Windows.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Yahoo.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/20x20/Youtube.png"></a></li>
+						</ul>
+						<ul class="tm_icons">
+							<li><a href="#"><img  alt="" src="img/icons/35x35/blip.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/facebook.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/flickr.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/lastfm.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/linkedin.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/myspace.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/picasa.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/rss.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/tumblr.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/twitter.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/vimeo.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/wordpress.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/35x35/yt.png"></a></li>
+						</ul>
+						<ul class="tm_icons">
+							<li><a href="#"><img  alt="" src="img/icons/medium/delicious.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/aim.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/facebook.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/rss.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/flickr.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/linkedin.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/stumbleupon.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/google.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/twitter.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/vimeo.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/picasa.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/reddit.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/skype.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/medium/technorati.png"></a></li>
+						</ul>
+						<ul class="tm_icons">
+							<li><a href="#"><img  alt="" src="img/icons/40x40/delicious_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/digg_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/facebook_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/flickr_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/lastfm_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/linkedin_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/myspace_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/rss_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/stumbleupon_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/technorati_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/twitter_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/vimeo_small.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/40x40/youtube_small.png"></a></li>
+						</ul>
+						<ul class="tm_icons">
+							<li><a href="#"><img  alt="" src="img/icons/big/delicious.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/facebook.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/rss.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/flickr.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/furl.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/stumbleupon.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/reddit.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/twitter.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/yahoo.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/technorati.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/big/youtube.png"></a></li>
+						</ul>
+						<ul class="tm_icons">
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/delicious.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/facebook.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/flickr.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/foursquare.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/google_buzz.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/rss.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/stumbleupon.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/tumblr.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/technorati.png"></a></li>
+							<li><a href="#"><img  alt="" src="img/icons/55x55_2/twitter.png"></a></li>
+						</ul>
+						<ul class="tm_icons tm_social">
+							<li>	
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+							</li>
+							<li class="last">
+								<!-- Place this tag where you want the +1 button to render. -->
+				                <div class="g-plusone" data-size="medium"></div>
+
+				                <!-- Place this tag after the last +1 button tag. -->
+				                <script type="text/javascript">
+				                  (function() {
+				                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				                    po.src = 'https://apis.google.com/js/plusone.js';
+				                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				                  })();
+				                </script>
+							</li>
+							<li class="fb-li">
+								<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FTemplate-Monster-Web-Design-Templates%2F19675425295&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=377251495662825" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+							</li>
+						</ul>
+						<div class="fw_descr">
+							<h6>Social Icons</h6>
+							<p>To add social icons to your website you can use the icon sets that are included into the purchased template package. Icon sets are located in the &quot;images&quot; directory. </p>
+					   		<h6>Twitter Button</h6>
+							<p>You can learn more about adding Twitter Button to your website <a href="https://dev.twitter.com/docs/twitter-for-websites">here</a></p>
+			        		<h6>Google Plus Button</h6>
+							<p>You can learn more about adding Google Plus Button to your website <a href="https://developers.google.com/+/plugins/+1button/"> here</a></p>
+							<h6>Like Button</h6>
+							<p>You can learn more about adding Like Button to your website <a href="http://developers.facebook.com/docs/reference/plugins/like/">here</a></p>
+						</div>
+</section>
+
+</div>
+
+</div>
+
+  </div>
+   <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blog.getbootstrap.com">Read the blog</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Submit issues</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/prettify.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-affix.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/jquery.cookie.js"></script> 
+    <script src="js/jquery.tweet.js"></script>
+
+</body>
+</html>

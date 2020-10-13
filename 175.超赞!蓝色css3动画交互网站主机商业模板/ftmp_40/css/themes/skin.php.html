@@ -1,0 +1,1 @@
+Please define a default CSS file with "default" GET parameter or via the PHP variable; or set the current style with the "style" GET parameter.

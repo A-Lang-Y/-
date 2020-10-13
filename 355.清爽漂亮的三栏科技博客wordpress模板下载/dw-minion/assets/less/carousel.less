@@ -1,0 +1,167 @@
+//
+// Carousel
+// --------------------------------------------------
+
+
+.carousel {
+  position: relative;
+  line-height: 1;
+  background: #eee;
+}
+
+.carousel-768-lt-ie9() {
+  .carousel {
+    margin-bottom: 30px;
+  }
+}
+
+.lt-ie9 {
+  .carousel-768-lt-ie9();
+}
+
+@media ( min-width: 768px ) {
+  .carousel-768-lt-ie9();
+}
+
+@media ( max-width: 767px ) {
+  .carousel {
+    margin-bottom: 15px;
+  }
+}
+
+.carousel-inner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-inner {
+
+  > .item {
+    display: none;
+    position: relative;
+    .transition(.6s ease-in-out left);
+
+    // Account for jankitude on images
+    > img,
+    > a > img {
+      display: block;
+      line-height: 1;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  > .active,
+  > .next,
+  > .prev { display: block; }
+
+  > .active {
+    left: 0;
+  }
+
+  > .next,
+  > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  > .next {
+    left: 100%;
+  }
+  > .prev {
+    left: -100%;
+  }
+  > .next.left,
+  > .prev.right {
+    left: 0;
+  }
+
+  > .active.left {
+    left: -100%;
+  }
+  > .active.right {
+    left: 100%;
+  }
+
+}
+
+// Left/right controls for nav
+// ---------------------------
+
+.carousel-control {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: @white;
+  text-align: center;
+  background: @gray2;
+  .border-radius(@baseBorderRadius);
+  .opacity(50);
+
+  // we can't have this transition here
+  // because webkit cancels the carousel
+  // animation if you trip this while
+  // in the middle of another animation
+  // ;_;
+  // .transition(opacity .2s linear);
+
+  // Reposition the right one
+  &.right {
+    right: 10px;
+  }
+
+  // Hover/focus state
+  &:hover {
+    color: @white;
+    text-decoration: none;
+    .opacity(90);
+  }
+}
+
+// Carousel indicator pips
+// -----------------------------
+.carousel-indicators {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    text-indent: -999px;
+    background-color: #ccc;
+    background-color: rgba(255,255,255,.25);
+    border-radius: 5px;
+  }
+  .active {
+    background-color: #fff;
+  }
+}
+
+// Caption for text below images
+// -----------------------------
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px 90px 15px 15px;
+  line-height: 1.5;
+  background: @gray3;
+  background: rgba(255, 255, 255, .5);
+  color: @black;
+}

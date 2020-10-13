@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width" />
+<title>I Folio A Responsive HTML5 Template</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+<link rel="stylesheet" type="text/css" href="css/jqueryslidemenu.css" />
+<link rel="stylesheet" type="text/css" href="css/widget.css" />
+<link rel="stylesheet" type="text/css" href="css/elements.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+<script type="text/javascript" src="js/jqueryslidemenu.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".pane .delete").click(function(){
+		$(this).parents(".pane").animate({ opacity: 'hide' }, "slow");
+	});
+});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<body>
+<!-- Header Start -->
+<section id="header_wrap">
+<nav id="myslidemenu" class="jqueryslidemenu clearfix">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="portfolio.html">Portfolio</a>
+        <ul>
+            <li><a href="portfolio_3col.html">Portfolio 3</a></li>
+            <li><a href="portfolio_2col.html">Portfolio 2</a></li>
+            <li><a href="portfolio_sidebar.html">Portfolio Sidebar</a></li>
+        </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a class="active" href="typography.html">Typography</a>
+        <ul>
+            <li><a class="active" href="elements.html">Elements</a></li>
+            <li><a href="columns.html">Columns</a></li>
+            <li><a href="pricing_table.html">Pricing Table</a></li>
+        </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+</section>
+<!-- Header End -->
+
+<!-- Logo Start -->
+<figure><a href="index.html"><img src="images/logo.png" alt="img" /></a></figure> 
+<!-- Logo End -->
+
+<div id="triangle-up"></div>
+
+<!-- Content Start -->
+<section id="content_wrap" class="typography">
+<article>
+    <div class="sub_header">
+        <h2>Elements</h2>
+        <form class="searchform" method="get" role="search" />
+            <input class="s" type="text" onblur="if(this.value=='') this.value='Site Search'" onfocus="if(this.value =='Site Search' ) this.value=''" value="Site Search" />
+            <input class="searchsubmit" type="submit" value="" />
+            <a onclick="document.getElementById('search-form').submit()"></a>
+        </form>
+    </div>
+	
+    <!-- Buttons Start -->
+    <h3>Buttons</h3>
+    <div class="shortcode_buttons">
+        <a class="small_button black" href="#">Button</a>
+        <a class="small_button pink" href="#">Button</a>
+        <a class="small_button green" href="#">Button</a>
+        <a class="small_button blue" href="#">Button</a>
+        <a class="small_button yellow" href="#">Button</a>
+        <a class="small_button grey" href="#">Button</a>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="shortcode_buttons">
+        <a class="medium_button black" href="#">Button</a>
+        <a class="medium_button pink" href="#">Button</a>
+        <a class="medium_button green" href="#">Button</a>
+        <a class="medium_button blue" href="#">Button</a>
+        <a class="medium_button yellow" href="#">Button</a>
+        <a class="medium_button grey" href="#">Button</a>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="shortcode_buttons">
+        <a class="large_button black" href="#">Button</a>
+        <a class="large_button pink" href="#">Button</a>
+        <a class="large_button green" href="#">Button</a>
+        <a class="large_button blue" href="#">Button</a>
+        <a class="large_button yellow" href="#">Button</a>
+        <a class="large_button grey" href="#">Button</a>
+    </div>
+	<!-- Buttons End -->
+    
+    <span class="divider"></span>
+	
+    <!-- List Style Start -->
+    <h3>List Styles</h3>
+    <div class="one_fourth">
+        <ul class="list list_style1">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+    </div>
+    <div class="one_fourth">
+        <ul class="list list_style2">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+    </div>
+    <div class="one_fourth">
+        <ul class="list list_style3">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+    </div>
+    <div class="one_fourth_last">
+        <ul class="list list_style4">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+    </div>
+	<!-- List Style End -->
+    
+    <span class="divider"></span>
+	
+    <!-- Info Box Start -->
+    <h3>Info Box</h3>
+    <div class="one_half">
+        <div class="pane sucess">
+            In hac habitasse platea dictumst. Aliquam in est leo. Aliquam ut urna
+            pulvinar ipsum ultricies fringilla et sed magna. Duis faucibus lorem at
+            eros cursus fermentum. Vivamus a nisl vel magna tincidunt sodales ac 
+            imperdiet arcu. Proin blandit cursus blandit.
+            <img src="images/sucess_btn.png" alt="delete" class="delete" />
+        </div>
+        <div class="pane info">
+            In hac habitasse platea dictumst. Aliquam in est leo. Aliquam ut urna
+            pulvinar ipsum ultricies fringilla et sed magna. Duis faucibus lorem at
+            eros cursus fermentum. Vivamus a nisl vel magna tincidunt sodales ac 
+            imperdiet arcu. Proin blandit cursus blandit.
+            <img src="images/info_btn.png" alt="delete" class="delete" />
+        </div>
+    </div>
+    <div class="one_half_last">
+        <div class="pane warning">
+            In hac habitasse platea dictumst. Aliquam in est leo. Aliquam ut urna
+            pulvinar ipsum ultricies fringilla et sed magna. Duis faucibus lorem at
+            eros cursus fermentum. Vivamus a nisl vel magna tincidunt sodales ac 
+            imperdiet arcu. Proin blandit cursus blandit.
+            <img src="images/warning_btn.png" alt="delete" class="delete" />
+        </div>
+        <div class="pane error">
+            In hac habitasse platea dictumst. Aliquam in est leo. Aliquam ut urna
+            pulvinar ipsum ultricies fringilla et sed magna. Duis faucibus lorem at
+            eros cursus fermentum. Vivamus a nisl vel magna tincidunt sodales ac 
+            imperdiet arcu. Proin blandit cursus blandit.
+            <img src="images/error.png" alt="delete" class="delete" />
+        </div>
+    </div>
+	<!-- Info Box End -->
+</article>
+</section>
+<!-- Content End -->
+
+<div id="triangle-down">&nbsp;</div>
+
+<!-- Footer Start -->
+<section id="footer_wrap">
+<footer>
+    <div class="one_fourth">
+    <div class="widget_container">
+        <h3>About <span>Theme</span></h3>
+        <p>Etiam rutrum, massa ac viverra malesuada, nisl velit vestibulum leo, non laoreet est leo ut velit.
+        Vivamus at ligula est. Phasellus venenatis mollis ligula non rhoncus. Pellentesque malesuada.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend libero eu ligula consectetur
+        lacinia. Aliquam non pellentesque turpis. Duis placerat felis sit amet dui gravida vulputate tristique
+        nibh rhoncus. Morbi hendrerit cursus nisl quis auctor.</p>
+    </div>
+    </div>
+    <div class="one_fourth">
+    <div class="widget_container">
+        <h3>Popular <span>Post Widget</span></h3>
+        <ul>
+            <li>
+                <img src="images/popular_post_img_1.jpg" alt="img" class="thumb_img" />
+                <div class="description">
+                    <strong>Tristique ipsum</strong>
+                    <p>In hac habitasse pla...</p>
+                    <span class="comment">5 Comments</span>
+                </div>
+            </li>
+            <li>
+                <img src="images/popular_post_img_2.jpg" alt="img" class="thumb_img" />
+                <div class="description">
+                    <strong>Gravida vulputate</strong>
+                    <p>Duis placerat felis...</p>
+                    <span class="comment">10 Comments</span>
+                </div>
+            </li>
+            <li>
+                <img src="images/popular_post_img_3.jpg" alt="img" class="thumb_img" />
+                <div class="description">
+                    <strong>Morbi hendrerit</strong>
+                    <p>Aliquam non pellent...</p>
+                    <span class="comment">7 Comments</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="one_fourth">
+    <div class="widget_container">
+        <h3>Recent <span>Tweets</span></h3>
+        <ul>
+        <li>
+            <img src="images/twitter_icon.png" alt="img" class="thumb_img" />
+            <div class="description">
+                <p>Phasellus: venenatis mollis ligula non rhoncus malesuada.
+                @ about <span>4 days ago</span></p>
+            </div>
+        </li>
+        <li>
+            <img src="images/twitter_icon.png" alt="img" class="thumb_img" />
+            <div class="description">
+                <p>Duis: placerat felis sit amet dui gravida gristiqu rhoncus.
+                @ about <span>12 days ago</span></p>
+            </div>
+        </li>
+        <li>
+            <img src="images/twitter_icon.png" alt="img" class="thumb_img" />
+            <div class="description">
+                <p>Gravida: Tell me and I forget. Show me and I remember
+                @ about <span>20 days ago</span></p>
+            </div>
+        </li>
+        </ul>
+    </div>
+    </div>
+    <div class="one_fourth_last">
+    <div class="widget_container flick_widget">
+        <h3>Flickr <span>Widget</span></h3>
+        <img src="images/flickr_img_1.jpg" alt="img" />
+        <img src="images/flickr_img_2.jpg" alt="img" />
+        <img src="images/flickr_img_3.jpg" alt="img" />
+        <img src="images/flickr_img_4.jpg" alt="img" />
+        <img src="images/flickr_img_5.jpg" alt="img" />
+        <img src="images/flickr_img_6.jpg" alt="img" />
+        <img src="images/flickr_img_7.jpg" alt="img" />
+        <img src="images/flickr_img_8.jpg" alt="img" />
+        <img src="images/flickr_img_9.jpg" alt="img" />
+    </div>
+    </div>
+
+    <div class="bottom_sec">
+        <span>Copyright &copy; Kayapati 2012 . Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a></span>
+        <ul>
+            <li><img src="images/social_icon_1.png" alt="img" /></li>
+            <li><img src="images/social_icon_2.png" alt="img" /></li>
+            <li><img src="images/social_icon_3.png" alt="img" /></li>
+            <li><img src="images/social_icon_4.png" alt="img" /></li>
+            <li><img src="images/social_icon_5.png" alt="img" /></li>
+        </ul>
+    </div>
+
+</footer>
+</section>
+<!-- Footer End -->
+</body>
+</html>

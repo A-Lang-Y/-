@@ -1,0 +1,217 @@
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* SLIDER --------------------------------------------------------- */
+/*
+ * jQuery Nivo Slider v3.0
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* The Nivo Slider styles */
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0;
+}
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+}
+.nivo-box img {
+  display: block;
+}
+/* Caption styles */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #888888;
+  color: #444444;
+  width: 100%;
+  z-index: 8;
+  padding: 5px 10px;
+  opacity: 1;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=8);
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+}
+.nivo-caption p {
+  padding: 5px;
+  margin: 0;
+}
+.nivo-caption a {
+  display: inline !important;
+}
+.nivo-html-caption {
+  display: none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer;
+}
+.nivo-prevNav {
+  left: 0px;
+}
+.nivo-nextNav {
+  right: 0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+  text-align: center;
+  padding: 15px 0;
+}
+.nivo-controlNav a {
+  cursor: pointer;
+}
+.nivo-controlNav a.active {
+  font-weight: bold;
+}
+/*
+Skin Name: Halftone Theme
+Skin URI: http://www.luiszuno.com
+Skin Type: flexible
+Description: Skink for halftone theme
+Version: 1
+Author: Ansimuz
+Author URI: http://www.luiszuno.com
+*/
+.theme-halftone {
+  padding: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.theme-halftone .slider-left {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 58px;
+  left: -10px;
+  background: url(../img/slider-left.png) no-repeat;
+}
+.theme-halftone .slider-right {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 58px;
+  right: -10px;
+  background: url(../img/slider-right.png) no-repeat;
+}
+.theme-halftone .nivoSlider {
+  position: relative;
+  background: #ece9d6 url(../img/loading.gif) no-repeat 50% 50%;
+  margin-left: -10px;
+  width: 1000px;
+}
+.theme-halftone .nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.theme-halftone .nivoSlider a {
+  border: 0;
+  display: block;
+}
+.theme-halftone .nivo-controlNav {
+  text-align: center;
+  padding: 20px 0 10px 0px;
+}
+.theme-halftone .nivo-controlNav a {
+  display: inline-block;
+  width: 27px;
+  height: 28px;
+  background: url(../img/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin: 0 2px;
+}
+.theme-halftone .nivo-controlNav a.active {
+  background-position: 0px -28px;
+}
+.theme-halftone .nivo-directionNav a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: url(../img/arrows.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+}
+.theme-halftone a.nivo-nextNav {
+  background-position: 0px -42px;
+  right: 10px;
+}
+.theme-halftone a.nivo-prevNav {
+  left: 10px;
+}
+.theme-halftone .nivo-caption {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.theme-halftone .nivo-caption a {
+  color: #e37655;
+  border-bottom: 1px dotted #e37655;
+}
+.theme-halftone .nivo-caption a:hover {
+  color: #e37655;
+}
+.theme-halftone .nivo-controlNav.nivo-thumbs-enabled {
+  width: 100%;
+}
+.theme-halftone .nivo-controlNav.nivo-thumbs-enabled a {
+  width: auto;
+  height: auto;
+  background: none;
+  margin-bottom: 5px;
+}
+.theme-halftone .nivo-controlNav.nivo-thumbs-enabled img {
+  display: block;
+  width: 120px;
+  height: auto;
+}

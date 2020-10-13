@@ -1,0 +1,889 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@font-face {
+  font-family: "linecons";
+  src: url('fonts/linecons.eot');
+  src: url('fonts/linecons.eot?#iefix') format('eot'), 
+    url('fonts/linecons.woff') format('woff'), 
+    url('fonts/linecons.ttf') format('truetype'), 
+    url('fonts/linecons.svg#linecons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+h3 {
+    font-size: 180%;
+    font-weight: 300;
+    margin: 46px 0 30px 10px;
+}
+
+h4 {
+    font-size: 120%;
+    font-weight: 400;
+    color: #fff;
+}
+
+a {
+    color: #e66e0d;
+}
+
+p a {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #000;
+}
+
+a.button_dark, a.button_light {
+    background-color: #e66e0d;
+    display: block;
+    width: 90px;
+    padding: 15px 30px 0 30px;
+    height: 33px;
+    text-align: center;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    font-size: 11pt;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px #d72d05;
+    border: 5px solid rgba(0, 0, 0, .2);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: inset 0px 1px #f08715;
+    
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a.button_light {
+    margin-left: 10px;
+    width: 100px;
+    border: 5px solid #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 0px 0px 0px 1px #dbdbdb;
+}
+
+a:hover.button_dark, a:hover._button_light {
+    background-color: #d76203;
+    text-shadow: 0px -1px #a70d00;
+    border: 5px solid rgba(0, 0, 0, .4);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box;
+    box-shadow: inset 0px 1px 2px #c14d00;
+}
+
+a:hover.button_light {
+    background-color: #d76203;
+    border: 5px solid #f5f5f5;
+    box-shadow: 0px 0px 0px 1px #cbcbcb;
+}
+
+.moreabout .button_dark {
+    margin: 0;
+}
+
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+.pxline {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    opacity: 0.1;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+}
+
+hr.cleanit {
+    visibility: hidden;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+div.cara {
+    clear: both;
+    width: 940px;
+    height: 1px;
+    background-color: #cccccc;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+
+
+/* ---------- Header ---------- */
+
+#header {
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+}
+
+#header_in {
+    width: 960px;
+    padding: 0px 10px 0 10px;
+    height: 75px;
+    margin: auto;
+    position: relative;
+}
+
+#header_in h1 {
+    font-size: 15pt;
+    letter-spacing: 1px;
+    float: left;
+    padding-top: 25px;
+}
+
+#header_in h1 a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 100;
+}
+
+#header_in h1 a b {
+    font-weight: 600;
+}
+
+    /* ----- Menu ----- */
+    
+    #menu {
+	position: absolute;
+	right: 00px;
+	font-size: 95%;
+	background: url('img/menu_cut.jpg') no-repeat scroll right;
+	margin-right: 0px;
+    }
+    
+    
+    #menu ul li {
+	float: left;
+	display: inline;
+    }
+    
+    #menu ul li a {
+	text-decoration: none;
+	color: #101115;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+	display: block;
+	padding: 29px 40px 0 40px;
+	height: 46px;
+	background-color: #fff;
+    }
+    
+    #menu ul li a:hover {
+	background-color: #f3f3f3;
+    }
+    
+    #menu ul li a.active {
+	background: none;
+	color: #fff;
+    }
+    
+    
+    /* --- */
+
+
+/* ---------- Main part (slider) ---------- */
+
+
+
+#main_part, #main_part_inner {
+    width: 100%;
+    height: 465px;
+    background: url('img/main_img_1.jpg') scroll no-repeat center;
+    background-color: #000;
+    border-bottom: 7px solid #e5e5e5;
+}
+
+#main_part_in, #main_part_inner_in {
+    width: 960px;
+    margin: auto;
+}
+
+#main_part_in h2, #main_part_inner_in h2 {
+    padding-top: 120px;
+    padding-bottom: 14px;
+    font-size: 280%;
+    font-weight: 200;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px #000;
+}
+
+#main_part_in p {
+    font-size: 150%;
+    font-weight: 300;
+    color: #bcbcbc;
+    text-align: center;
+    text-shadow: 0px 1px #000;
+}
+
+#main_part .button_main {
+    margin-top: 60px;
+}
+
+		/* ---------- Main part, inner pages (headline) ---------- */
+		/* -- Some of the css already included in the previous "Main part" for homepage -- */
+		
+		#main_part_inner {
+		    height: 150px;
+		    background: url('img/main_img_1.jpg') scroll no-repeat top center;
+		}
+		
+		#main_part_inner_in {
+		    position: relative;
+		}
+		
+		#main_part_inner_in h2 {
+		    padding-top: 46px;
+		    text-align: left;
+		}
+		
+		#main_part_inner .button_main {
+		    position: absolute;
+		    top: 46px;
+		    right: 15px;
+		}
+		
+		/* --- */
+
+
+/* ---------- Content ---------- */
+
+#content {
+    width: 960px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+#content_inner {
+    width: 960px;
+    margin: auto;
+    padding-top: 0;
+}
+
+    /* ----- thirds / fourths (homepage) / sixths (about)----- */
+
+    .thirds {
+	width: 300px;
+	margin: 0 10px 0 10px;
+	float: left;
+    }
+    
+    .thirds h3 {
+	margin-top: 0;
+	margin-left: 0;
+	font-size: 150%;
+	font-weight: 300;
+	color: #27292a;
+	margin-bottom: 18px;   
+    }
+    
+    .thirds p {
+	font-size: 90%;
+	color: #37393a;
+	line-height: 160%;
+    }
+    
+    .fourths_portfolio {
+	width: 220px;
+	height: 220px;
+	margin: 0 10px 20px 10px;
+	background-color: #e66e0d;
+	float: left;
+	position: relative;
+    }
+    
+    .fourths_portfolio a {
+	display: block;
+	width: 220px;
+	height: 220px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    }
+    
+    .fourths_portfolio a:hover {
+	opacity: 0.15;
+    }
+    
+    .fourths_portfolio h4 {
+	position: absolute;
+	top: 80px;
+	display: block;
+	width: 220px;
+	text-align: center;
+	text-shadow: 0px 1px #d72d05;
+    }
+    
+    .fourths_portfolio img {
+	position: absolute;
+    }
+    
+    .fourths_portfolio span {
+	font-size: 90%;
+	font-weight: 200;
+	text-shadow: 0px 1px #b70d02;
+    }
+    
+    .sixths_team {
+	width: 140px;
+	height: 160px;
+	margin: 0 10px 0 10px;
+	background-color: #e66e0d;
+	float: left;
+	position: relative;
+    }
+    
+    .sixths_team a {
+	display: block;
+	width: 140px;
+	height: 140px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+    }
+    
+    .sixths_team a.profession {
+	display: block;
+	width: 140px;
+	height: 20px;
+	background-color: #fff;
+	text-decoration: none;
+	font-size: 95%;
+	padding-top: 10px;
+    }
+    
+    .sixths_team a.profession:hover {
+	opacity: 1;
+    }
+    
+    .sixths_team a:hover {
+	opacity: 0.10;
+    }
+    
+    .sixths_team h4 {
+	position: absolute;
+	top: 50px;
+	display: block;
+	width: 140px;
+	text-align: center;
+	text-shadow: 0px 1px #d72d05;
+	font-weight: 200;
+	font-size: 100%;
+	line-height: 140%;
+    }
+    
+    .sixths_team img {
+	position: absolute;
+    }
+    
+    .sixths_team span {
+	font-weight: 400;
+	text-shadow: 0px 1px #b70d02;
+    }
+    
+    /* --- */
+    
+		/* ----- History (About us) ----- */
+		/* --- this section is really not pixel-perfect, so you might want to redo it, if it doesn't fit your needs :) */
+    
+		.history_blok {
+		    background-color: #1e2022;
+		    width: 855px;
+		    min-height: 100px;
+		    margin: 70px 0 0 10px;
+		    padding: 43px 40px 30px 45px;
+		}
+		
+		.history_blok h3 {
+		    color: #f8f9f9;
+		    font-weight: 200;
+		    margin: 0;
+		}
+		
+		.history_blok img.milestones {
+		    margin: 30px 0 0 -13px;
+		}
+		
+		.milestone1, .milestone2, .milestone3, .milestone4 {
+		    width: 170px;
+		    float: left;
+		    margin-left: 32px;
+		}
+		
+		.milestone1 {
+		    margin-left: 0;
+		}
+		
+		.milestone2 {
+		    width: 188px;
+		}
+		
+		.milestone3 {
+		    width: 205px;
+		}
+		
+		.milestone4 {
+		    width: 190px;
+		}
+		
+		.miles {
+		    padding-top: 2px;
+		    font-size: 95%;
+		    font-weight: 300;
+		    line-height: 180%;
+		    color: #e9ecef;
+		}
+		
+		.miles b {
+		    font-size: 105%;
+		    font-weight: 400;
+		}
+		
+		.descr {
+		    margin-top: 3px;
+		    color: #a4a8ad;
+		    font-size: 90%;
+		    font-weight: 300;
+		    line-height: 150%;
+		}
+		
+		.moreabout {
+		    background-color: #1e2022;
+		    width: 855px;
+		    min-height: 100px;
+		    padding: 35px 40px 40px 45px;
+		    margin-left: 10px;
+		    margin-bottom: 60px;
+		    border-top: 1px #292b2d solid;
+		}
+		
+		.moreabout p {
+		    width: 860px;
+		    color: #e9ecef;
+		    font-size: 115%;
+		    font-weight: 200;
+		    line-height: 160%;
+		    margin-bottom: 25px;
+		}
+		
+		.moreabout b {
+		    font-weight: 400;
+		    color: #fff;
+		}
+		
+		
+		/* --- */
+		
+		/* ----- Services (About us) ----- */
+		
+		a.services_list {
+		    width: 298px;
+		    height: 85px;
+		    display: block;
+		    float: left;
+		    margin: 8px 10px 12px 10px;
+		    border: 1px #ccc solid;
+		    text-decoration: none;
+		    color: #333;
+		    -webkit-transition: all 0.2s ease-in-out;
+		    -moz-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    -ms-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+		    position: relative;
+		}
+		
+		a:hover.services_list {
+		    background-color: #1e2022;
+		    border: 1px #1e2022 solid;
+		    color: #e4e4e4;
+		    font-weight: 100;
+		}
+	    
+		
+		.services_list span {
+		    display: block;
+		    float: left;
+		    width: 179px;
+		    margin-left: 100px;
+		    font-size: 105%;
+		    padding-top: 19px;
+		}
+		
+		.services_list span b {
+		    font-weight: 400;
+		    line-height: 140%;
+		}
+		
+		
+		a.services_list span.icon_services {
+		    display: block;
+		    float: left;
+		    width: 62px;
+		}
+		
+		    /* -- Web Icons (linecons) -- */
+		    
+		    .ico_paperplane:before, .ico_iphone:before, .ico_food:before, .ico_message:before, .ico_mapmark:before, .ico_shop:before {
+			font-family: linecons;
+			font-weight: 100;
+			font-style: normal;
+			font-size: 310%;
+			position: absolute;
+			top: 14px;
+			left: 17px;
+			-webkit-font-smoothing: antialiased;
+		    }
+		    
+		    .ico_paperplane:before {
+			content: "\e01e";
+		    }
+		    
+		    .ico_iphone:before {
+			content: "\e017";
+			left: 20px;
+		    }
+		    
+		    .ico_food:before {
+			content: "\e026";
+			left: 19px;
+			top: 13px;
+		    }
+		    
+		    .ico_message:before {
+			content: "\e019";
+			left: 21px;
+		    }
+		    
+		    .ico_mapmark:before {
+			content: "\e012";
+			left: 21px;
+		    }
+		    
+		    .ico_shop:before {
+			content: "\e02a";
+			left: 22px;
+		    }
+		
+		    /* ---- */
+		    
+		    
+    /* --------- Our Work (portfolio stuffs) ---------- */
+		
+    ul#work_filter {
+    margin: 60px 0 42px 0;
+    }
+	    
+    #work_filter li a, .pagination li a {
+    text-decoration: none;
+    color: #27292a;
+    font-size: 100%;
+    font-weight: 200;
+    letter-spacing: 1px;
+    }
+	    
+    #work_filter li a:hover, .pagination li a:hover {
+    color: #000;
+    font-weight: 400;
+    }
+	    
+    #work_filter li a.active, .pagination li a.active {
+    font-weight: 400;
+    }
+		
+    #work_filter li, .pagination li {
+    display: inline;
+    margin: 0 10px 0 10px;
+    }
+    
+    .pagination {
+	text-align: right;
+	margin-top: 20px;
+    }
+    
+		
+		
+		
+
+
+p.youlike, p.teamline {
+    font-size: 125%;
+    font-weight: 400;
+    line-height: 150%;
+    width: 940px;
+    color: #323536;
+    margin: 10px 0 0 10px;
+}
+
+
+p.teamline {
+    font-size: 110%;
+    margin: -5px 0 20px 10px;
+}
+
+p.textit {
+    font-size: 115%;
+    font-weight: 400;
+    line-height: 150%;
+    width: 940px;
+    margin: 50px 0 0 10px;
+}
+
+.about_blok {
+    width: 550px;
+    float: left;
+    margin-right: 80px;
+}
+
+p.about {
+    width: 540px;
+    margin: -10px 0 25px 10px;
+    color: #27292a;
+    font-size: 95%;
+    font-weight: 400;
+    line-height: 165%;
+}
+
+.testimonials {
+    width: 318px;
+    min-height: 80px;
+    float: left;
+    margin-top: 50px;
+}
+
+.testimonials .quote {
+    border: 1px solid #bbb;
+    border-bottom: none;
+    font-size: 90%;
+    font-weight: 400;
+    line-height: 160%;
+    color: #474a4c;
+    padding: 20px 16px 25px 25px;
+}
+
+.testimonials_bottom {
+    display: block;
+    clear: both;
+    width: 318px;
+    height: 20px;
+    background: url('design/quote_bottom.png') no-repeat scroll top;
+    margin-top: -5px;
+}
+
+.testimonials span.by {
+    display: block;
+    width: 318px;
+    text-align: right;
+    font-size: 90%;
+}
+
+.testimonials ul.controls {
+    
+}
+
+.testimonials ul.controls li {
+    display: inline;
+    float: left;
+}
+
+.testimonials ul.controls li a {
+    display: block;
+    width: 7px;
+    height: 7px;
+    padding: 3px;
+    background: url('design/control.png') no-repeat scroll;
+}
+
+.testimonials ul.controls li a:hover, .testimonials ul.controls li a.current {
+    background: url('design/control_active.png') no-repeat scroll;
+}
+
+
+/* ---------- Contact ---------- */
+
+form.formit {
+    margin-left: 10px;
+}
+
+.formit input[type="text"] {
+    padding: 15px 22px;
+    height: 20px;
+    width: 230px;
+    border: 1px solid #bbbbbb;
+    margin: 0px 18px 20px 0px;
+    font-size: 75%;
+    color: #010f5f;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.formit textarea {
+    width: 900px;
+    height: 146px;
+    margin-bottom: 22px;
+    resize: none;
+    padding: 20px;
+    font-size: 90%;
+    border: 1px solid #bbbbbb;
+}
+
+form.formit .button_submit {
+    cursor:pointer;
+    background-color: #e66e0d;
+    width: 200px;
+    height: 58px;
+    color: #fff;
+    font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: 5px solid #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: 0px 0px 0px 1px #dbdbdb;
+    text-shadow: 0px 1px #d72d05;
+}
+
+
+.contactinfo {
+    position: relative;
+    float: left;
+    margin-right: 40px;
+}
+
+.contactinfo .ico_mapmark:before, .contactinfo .ico_message:before, .contactinfo .ico_iphone:before {
+    font-size: 140%;
+    top: 0;
+    left: 10px;
+}
+
+.contactinfo b {
+    font-size: 110%;
+    font-weight: 300;
+    padding-left: 45px;
+}
+
+.mapit {
+    width: 940px;
+    margin: 30px 0 0 10px;
+}
+
+
+
+/* ---------- Footer ---------- */
+
+
+
+
+#footer {
+    width: 100%;
+    height: 182px;
+    background: url('img/bg_footer.jpg') scroll no-repeat center;
+    background-color: #000;
+    color: #a5a5a5;
+    font-weight: 300;
+    font-size: 90%;
+    margin-top: 80px;
+}
+
+#footer_in {
+    width: 960px;
+    margin: auto;
+    position: relative;
+    padding-top: 50px;
+}
+
+#footer_in p {
+    float: left;
+}
+
+#footer_in a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer_in a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#footer_in span {
+    position: absolute;
+    right: 10px;
+}
+
+
+
+/* ---------- Other elements ---------- */
+
+.banner1 {
+    width: 890px;
+    height: 76px;
+    padding: 42px 0 0 50px;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 45px;
+    background: url('img/banner1.jpg') no-repeat scroll;
+    background-color: #000;
+    color: #c3ccd5;
+    position: relative;
+}
+
+.banner1 p {
+    font-weight: 200; 
+    font-size: 20pt;
+    display: block;
+    width: 630px;
+    text-shadow: 0px 1px #000;
+}
+
+.banner1 p b {
+    color: #fff;
+    font-weight: 300;
+}
+
+.banner1 a.button_dark {
+    width: 100px;
+    position: absolute;
+    right: 42px;
+    top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

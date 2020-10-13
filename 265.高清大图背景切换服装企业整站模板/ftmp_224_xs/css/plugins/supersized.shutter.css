@@ -1,0 +1,142 @@
+/*
+
+Supersized - Fullscreen Slideshow jQuery Plugin
+Version : 3.2.5
+Site : www.buildinternet.com/project/supersized
+
+Theme : Shutter 1.1
+Author : Sam Dunn
+Company : One Mighty Roar (www.onemightyroar.com)
+License : MIT License / GPL License
+
+*/
+
+/* Controls Bar
+----------------------------*/
+#controls-wrapper {
+	margin: 0 auto;
+	height: 42px;
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+	z-index: 4;
+	background: url(../images/ss/nav-bg.png) repeat-x;
+	position: fixed;
+}
+#controls {
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+	text-align: left;
+	z-index: 5;
+}
+#slidecounter {
+	float: left;
+	color: #999;
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: #000 0 -1px 0;
+	margin: 0px 10px 0 15px;
+	line-height: 42px;
+}
+
+#navigation {
+	float: right;
+	margin: 0px 20px 0 0;
+}
+#pauseplay {
+	/*float: left;
+	margin-top: 1px;
+	border-right: 1px solid #333;
+	background: url('../images/ss/bg-hover.png') repeat-x 0 44px;*/
+}
+#pauseplay {
+	/*background-position: 0 1px;
+	cursor: pointer;*/
+}
+
+#prevslide, #nextslide {
+	/*position: absolute;
+	height: 43px;
+	width: 43px;
+	top: 50%;
+	margin-top: -21px;
+	opacity: 0.6;*/
+}
+#prevslide {
+	/*left: 10px;
+	background: url('../images/ss/back.png');*/
+}
+#nextslide {
+	/*right: 10px;
+	background: url('../images/ss/forward.png');*/
+}
+#prevslide:active, #nextslide:active {
+	/*margin-top: -19px;*/
+}
+#prevslide:hover, #nextslide:hover {
+	/*cursor: pointer;*/
+}
+
+ul#slide-list {
+	padding: 15px 0;
+	float: left;
+	position: absolute;
+	left: 50%;
+}
+ul#slide-list li {
+	list-style: none;
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin: 0 5px 0 0;
+}
+ul#slide-list li.current-slide a, ul#slide-list li.current-slide a:hover {
+	background-position: 0 0px;
+}
+ul#slide-list li a {
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: url('../images/ss/nav-dot.png') no-repeat 0 -24px;
+}
+ul#slide-list li a:hover {
+	background-position: 0 -12px;
+	cursor: pointer;
+}
+
+#tray-button {
+	float: right;
+	margin-top: 1px;
+	border-left: 1px solid #333;
+	background: url('../images/ss/bg-hover.png') repeat-x 0 44px;
+}
+#tray-button:hover {
+	background-position: 0 1px;
+	cursor: pointer;
+}
+
+
+/* Progress Bar
+----------------------------*/
+/*#progress-back {
+	z-index: 10;
+	position: fixed;
+	bottom: 45px;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	background: url('../images/ss/progress-back.png') repeat-x;
+}
+#progress-bar {
+	position: relative;
+	height: 3px;
+	width: 100%;
+	background: url('../images/ss/progress-bar.png') repeat-x;
+}*/
+
+
+#thumbs-scroller { display:none}
+ul#thumb-list {
+	display: none;
+}
+#gallery_overlay { background:none; z-index:-10; position:absolute; width:100%; height:100%; left:0; top:0}

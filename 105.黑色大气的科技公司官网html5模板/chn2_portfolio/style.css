@@ -1,0 +1,131 @@
+/*Original Design by Roshan Ravi
+Author's Website : CSSHeaven.org, Roshanravi.com
+This website templats, Images, CSS, and HTML files are released under Creative Commons Non-Commercial Attribution License.
+You are free to use it for your website provided that you keep the link back to CSSHeaven.org unaltered and on all the pages designed with this template.
+*/
+@import url("font/droidsans.css");
+@import url("font/fertigo.css");
+@import url("font/texgyre.css");
+
+* {padding:0; margin:0;}
+ul {list-style:none;}
+a {color:#1b78a8; text-decoration:none;}
+a img {border:none;}
+.clear {
+ clear:both;
+ line-height:1px; height:1px;
+}
+.clear:after {
+ display:block; 
+ visibility:hidden; 
+ clear:both; 
+ height:0; 
+ content: "."; 
+}
+section, header, footer, article, nav {display:block;}
+body { background:url(images/htmlbg.jpg) left top repeat-x; font-size:62.5%; color:#333; font-family: Verdana, Geneva, sans-serif;}
+body.normalpage {background:url(images/normalhtml.jpg) left top repeat-x;}
+#page {width:100%; height:100%; background: url(images/headerbg.jpg) center top no-repeat; }
+body.normalpage #page {background:url(images/normalheader.jpg) center top no-repeat; height:255px;}
+#bodywrap { width:1032px; margin: 0 auto;}
+#top {height:366px;}
+body.normalpage #top {height:155px;}
+body.normalpage #top #normalheader {height:81px;}
+#contentwrap { background:url(images/wrapbg.png) center top no-repeat;}
+#contents { margin:0 26px 0 26px; background:url(images/wraptop.jpg) 0 30px repeat-x; min-height:300px; padding:45px 15px 0 15px;}
+#top nav {height:74px; width:980px; margin:0 auto; font-family:'TeXGyreAdventor', Arial, sans-serif}
+#homeheader { height:292px; width:980px; margin:0 auto;}
+#sitename {display:block; float:left; padding:18px 0 0 0;}
+#sitename a {display:block; background:url(images/portfoliologo.gif) no-repeat; height:42px; width:170px; float:left; text-indent:-5000px; overflow:hidden;}
+#sitenav {display:block; float:right; height:59px; font-size:2.0em; font-family:'TeXGyreAdventor', Arial, sans-serif; padding-top:15px;}
+#sitenav li {font-weight:bold; display:inline;}
+#sitenav li a {display:block; float:left; color:#7d7d7d; padding:5px 15px 5px 15px;}
+#sitenav li a:hover {color:#fff; text-shadow:#000 1px 1px 1px;}
+#sitenav li.current a {color:#fff; background:url(images/activemenu.png) center bottom no-repeat;}
+#topcolumns {margin-bottom:25px;}
+#topcolumns .col {width:30%; margin:6px; float:left; padding:0 9px;}
+#topcolumns img.imgright {float:right; margin-left:10px;}
+#contents p {font-size:1.2em; line-height:20px;}
+#contents li {font-size:1.2em;}
+h2 {font-family:'TeXGyreAdventor', Arial, sans-serif;}
+h3 {font-family:'DroidSansBold', Arial, sans-serif; font-weight:normal;}
+#normalpage h2, #topcolumns h2 {font-size:2.2em; margin-bottom:10px; color:#2d2d2d;}
+#topcolumns h2 {text-shadow:#fff 1px 1px 1px;}
+#normalpage {background:url(images/sidebarbg.jpg) 650px 0 repeat-y; min-height:200px;}
+#left { width:640px; float:left;}
+#sidebar {width:298px; float:right;}
+#normalpage #left h2 {display:block; background:url(images/lefth2.jpg) left center no-repeat; line-height:27px; padding:5px 10px 10px 10px;}
+#normalpage #sidebar h2 {display:block; background:url(images/sidebarh2.jpg) left center no-repeat; line-height:27px; padding:5px 10px 10px 10px;}
+#normalpage p {margin-bottom:15px;}
+#left article { padding:0 10px;}
+#contents a:hover {text-decoration:underline; color:#036;}
+#normalpage h3 {font-size:1.8em; color:#2885b5; margin-bottom:10px;}
+#normalpage h4 {font:bold 1.6em "Trebuchet MS", Arial, Helvetica, sans-serif; color:#000; margin-bottom:10px;}
+#sidebar article {padding:10px;}
+blockquote {display:block; background:url(images/quote.png) left top no-repeat; padding-left:25px; font-style:italic; font-family:Georgia, "Times New Roman", Times, serif!important;}
+.testimonials blockquote {border-bottom:solid 1px #ddd; padding-bottom:10px; margin-bottom:10px;}
+blockquote p {margin-bottom:5px!important;}
+blockquote cite {display:block; font:italic 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif; color:#000;}
+#pagefooter {background:url(images/footerbg.jpg) repeat-x; height:351px; width:100%; padding-top:11px;}
+#bottom {background:url(images/footerbg.png) repeat-x; height:294px; width:940px; margin:0 auto; padding:0 20px;}
+#bottom .block1 { width:300px; padding:20px 20px 20px 0; background:url(images/footerblockdiv.png) right top repeat-y; height:254px; float:left;}
+#bottom .block2 {width:260px; padding:20px 0 20px 60px; height:254px; background:url(images/footerblockdiv.png) left top repeat-y; float:right;}
+#bottom .block3 {margin:0 330px 0 345px; padding:20px 0 20px; height:254px;}
+#pagefooter h2 {font:bold 2.2em TeXGyreAdventor, Arial, sans-serif; color:#ddd; text-shadow:#222 1px 1px 1px; margin-bottom:10px;}
+.teamimg .imgthmb {background: transparent url(images/footerimgbg.png) left top no-repeat; display:block; float:left; height:78px; width:78px; padding:3px 0 0 4px; margin:5px;}
+.teamimg {padding-left:15px;}
+.block1 h2 {padding-left:15px;}
+#pagefooter p {font-size:1.2em; color:#666; line-height:1.8em;}
+.projectthmb {text-align:center; padding:10px 0 10px; background:#000;}
+#slider .thumbholder {float:right; width:500px; text-align:right}
+#slider h2 {font: 2.2em 'FertigoProRegular', Arial, Helvetica, sans-serif; margin-bottom:10px; color:#fff;}
+#slider {height:232px; width:980px; padding-top:45px;}
+#slider .container {overflow:hidden; position:relative; cursor:pointer; color:#ddd; height:232px;  width:980px;}
+#slider .slides li {display:block; height:242px; width:980px; position:absolute; overflow:hidden; left:0; top:0;}
+#slider li .txtholder {float:left; width:470px; padding-top:35px;}
+.slides {position:relative;}
+#slider .slides p {font-size:1.4em; line-height:24px;}
+#slider .pagination {
+	display:block;
+	list-style:none;
+	z-index:999;
+	width:210px;
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	height:25px;
+	left:10px;
+}
+ ul.pagination li {display:inline;}
+
+ ul.pagination li a { display:block; float:left; width:19px; height:19px; margin:3px; background:url(images/slidernav.png) no-repeat; text-indent:-9000px;}
+ ul.pagination li.active a {background:url(images/slidernava.png) no-repeat!important; text-indent:-9000px;}
+ #credits p {display:block; height:18px; width:940px; padding:20px; margin:0 auto; font-size:1.0em;}
+ #credits p #designcredit {float:right; display:block;}
+ #credits p .copyright {float:left; display:block;}
+ #credits a {color:#fff;}
+.subhead {height:50px; line-height:50px; font:bold 2.6em 'TeXGyreAdventor', Arial, sans-serif; text-shadow:#fff 1px 1px 1px;}
+#left ul li {display:block; background:url(images/listbullet.gif) left center no-repeat; line-height:22px; margin-bottom:5px; padding-left:25px;}
+#left ul {margin-left:15px; margin-bottom:15px;}
+#contents.normalcontents {background-image:none!important;}
+.blogpreview {padding-top:15px;}
+.postpreview h3, .post h3 {font:normal 2.2em 'FertigoProRegular', Arial, Helvetica, sans-serif!important;}
+.postpreview .entry {width:475px; float:right;}
+.postpreview .postinfo {width:130px; float:left; display:block;}
+.postpreview .postinfo p span { display:block;}
+.postinfo p {display:block; font-size:1.1em!important; line-height:1.4em!important; text-align:right;}
+.postpreview {margin-bottom:15px; padding-bottom:10px; border-bottom:solid 1px #ddd;}
+#sidebar .sbwrap {padding:10px;}
+#sidebar ul li {display:block; height:31px;}
+#sidebar ul li a { line-height:20px; border-bottom:solid 1px #ddd; padding:5px 0 0 25px; background:url(images/sidebarli.gif) left 7px no-repeat; display:block;}
+#sidebar ul li a:hover {background:url(images/sidebarli2.gif) left 7px no-repeat; color:#036;}
+.sbwrap.twocol li {width:49%; float:left;}
+.form {padding:15px;}
+.form p, .form span, .form input, .form label {font-size:1.2em;}
+.form .field {padding:5px;}
+.form label {display:block; padding:5px 0 3px 0; font-weight:bold; color:#555;}
+.form .textfield {display:block; height:25px; line-height:25px; border:solid 1px #ccc; padding:3px; width:90%;}
+.form .text-area {display:block; width:90%; border:solid 1px #ccc; padding:3px;}
+.form .button {padding: 15px 0 0; height:45px;}
+input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border:solid 1px; border-color:#bbb #999 #999 #bbb; font: bold 1.4em 'TeXGyreAdventor', Arial, sans-serif; color:#777; background:#efefef;}
+.text-area:focus, .textfield:focus {border:solid 1px #666;}

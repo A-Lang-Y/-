@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head>
+    <meta charset="utf-8">
+    <title>Home 更多精品免费模板下载 请到模板之家cssMoban.com</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+<script>jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".blue_rave-slidecontainer11").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".blue_rave-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("horizontal", "next", $(".blue_rave-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                var items = helper.items(helper.current(0), helper.next(0));
+                helper.setBackground(inner, items);
+                helper.setPosition(inner, items);
+
+                slideContainer.on("beforeSlide", function () {
+                    var activeItem = $(".active", this),
+                        nextItem = $(".next, .prev", this),
+                        activePos = $(".blue_rave-slide-item", this).index(activeItem),
+                        nextPos = $(".blue_rave-slide-item", this).index(nextItem),
+                        currentItems = helper.items(helper.current(activePos), helper.current(nextPos));
+
+                    helper.transition(inner, false);
+                    helper.setBackground(inner, currentItems);
+                    helper.setPosition(inner, currentItems);
+                    if (inner.length) {
+                        tmp = inner.get(0).offsetHeight;
+                    }
+
+                    var movedCurrentItems = helper.items(helper.current(activePos), helper.current(nextPos), true);
+                    helper.transition(inner, true);
+                    helper.setPosition(inner, movedCurrentItems);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "horizontal",
+                direction: "next",
+                navigator: slideContainer.siblings(".blue_rave-slidenavigator11"),
+                helper: helper
+                            });
+        });
+    }
+});
+</script><style>.blue_rave-content .blue_rave-postcontent-0 .layout-item-0 { border-top-width:1px;border-top-style:solid;border-top-color:#65787B;margin-top: 10px;margin-bottom: 10px;  }
+.blue_rave-content .blue_rave-postcontent-0 .layout-item-1 { padding-right: 10px;padding-left: 10px;  }
+.blue_rave-content .blue_rave-postcontent-0 .layout-item-2 { color: #C7CFD1; background: ;  border-collapse: separate;  }
+.blue_rave-content .blue_rave-postcontent-0 .layout-item-3 { color: #151819; background: #59B1C5; padding-right: 10px;padding-left: 10px;  }
+.ie7 .post .layout-cell {border:none !important; padding:0 !important; }
+.ie6 .post .layout-cell {border:none !important; padding:0 !important; }
+
+.blue_rave-slidecontainer11 {
+    position: relative;
+        width: 837px;
+    height: 344px;
+        }
+
+.blue_rave-slidecontainer11 .blue_rave-slide-item
+{
+
+}
+
+.blue_rave-slidecontainer11 .blue_rave-slide-item {
+    -webkit-transition: 600ms ease-in-out left;
+    -moz-transition: 600ms ease-in-out left;
+    -ms-transition: 600ms ease-in-out left;
+    -o-transition: 600ms ease-in-out left;
+    transition: 600ms ease-in-out left;
+    position: relative;
+    display: none;
+    width:  100%;
+    height: 100%;
+}
+
+.blue_rave-slidecontainer11 .active, .blue_rave-slidecontainer11 .next, .blue_rave-slidecontainer11 .prev {
+    display: block;
+}
+
+.blue_rave-slidecontainer11 .active {
+    left: 0;
+}
+
+.blue_rave-slidecontainer11 .next, .blue_rave-slidecontainer11 .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.blue_rave-slidecontainer11 .next {
+    left: 100%;
+}
+
+.blue_rave-slidecontainer11 .prev {
+    left: -100%;
+}
+
+.blue_rave-slidecontainer11 .next.forward, .blue_rave-slidecontainer11 .prev.back {
+    left: 0;
+}
+
+.blue_rave-slidecontainer11 .active.forward {
+    left: -100%;
+}
+
+.blue_rave-slidecontainer11 .active.back {
+    left: 100%;
+}
+
+
+
+
+.blue_rave-slide110 {
+    background-image:  url('images/slide110.jpg');
+    background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.blue_rave-slide111 {
+    background-image:  url('images/slide111.jpg');
+    background-position:  0 0;
+    background-repeat: no-repeat;
+}
+.blue_rave-slide112 {
+    background-image:  url('images/slide112.jpg');
+    background-position:  0 0;
+    background-repeat: no-repeat;
+}
+
+
+.blue_rave-slidenavigator11 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 320px;
+  left: 0%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+      right: 0px;
+  }
+.blue_rave-slidenavigator11
+{
+background: #B3D39C;background: transparent;
+
+
+
+padding:7px;
+
+
+
+
+
+}
+.blue_rave-slidenavigator11 > a
+{
+background: #FFFFFF;
+-webkit-border-radius:40%;-moz-border-radius:40%;border-radius:40%;
+
+border:1px solid transparent;
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.blue_rave-slidenavigator11 > a.active
+{
+background: #457792;
+-webkit-border-radius:40%;-moz-border-radius:40%;border-radius:40%;
+
+border:1px solid transparent;
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.blue_rave-slidenavigator11 > a:hover
+{
+background: #476D76;
+-webkit-border-radius:40%;-moz-border-radius:40%;border-radius:40%;
+
+border:1px solid #5A8B96;
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="blue_rave-main">
+<header class="blue_rave-header clearfix">
+
+
+    <div class="blue_rave-shapes">
+<h1 class="blue_rave-headline" data-left="7.32%">
+    <a href="#">Blue Rave</a>
+</h1>
+
+
+            </div>
+
+<nav class="blue_rave-nav clearfix">
+    <div class="blue_rave-nav-inner">
+    <ul class="blue_rave-hmenu"><li><a href="home.html" class="active">Home</a></li><li><a href="sample-page.html">Sample Page</a></li><li><a href="contact.html">Contact</a></li></ul> 
+        </div>
+    </nav>
+
+                    
+</header>
+<div class="inner_copyright">Collect from <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></div>
+<div class="blue_rave-sheet clearfix">
+            <div class="blue_rave-layout-wrapper clearfix">
+                <div class="blue_rave-content-layout">
+                    <div class="blue_rave-content-layout-row">
+                        <div class="blue_rave-layout-cell blue_rave-content clearfix"><article class="blue_rave-post blue_rave-article">
+                                
+                                                
+                <div class="blue_rave-postcontent blue_rave-postcontent-0 clearfix"><div class="blue_rave-content-layout">
+    <div class="blue_rave-content-layout-row">
+    <div class="blue_rave-layout-cell layout-item-1" style="width: 100%" >
+        <p> </p>
+<div id="11" style="position: relative; display: inline-block; z-index: 0; margin: 7px;  border-style: solid; border-color: #000000; border-width: 1px;  " class="blue_rave-collage">
+<div class="blue_rave-slider blue_rave-slidecontainer11">
+    <div class="blue_rave-slider-inner">
+<div class="blue_rave-slide-item blue_rave-slide110">
+
+</div>
+<div class="blue_rave-slide-item blue_rave-slide111">
+
+</div>
+<div class="blue_rave-slide-item blue_rave-slide112">
+
+</div>
+
+    </div>
+</div>
+<div class="blue_rave-slidenavigator blue_rave-slidenavigator11">
+<a href="#" class="blue_rave-slidenavigatoritem"></a><a href="#" class="blue_rave-slidenavigatoritem"></a><a href="#" class="blue_rave-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        <p style="text-align: center;"><br></p>
+    </div>
+    </div>
+</div>
+<div class="blue_rave-content-layout-br layout-item-0">
+</div><div class="blue_rave-content-layout layout-item-2">
+    <div class="blue_rave-content-layout-row">
+    <div class="blue_rave-layout-cell layout-item-3" style="width: 33%" >
+        <h3><span style="color: #FFFFFF;">About Our Company</span></h3>
+        <div class="image-caption-wrapper" style="width: 100%">
+        <p style="text-align: left;"><img width="251" height="125" style="margin-top: 7px; margin-right: 7px; margin-bottom: 7px; margin-left: 7px;" alt="" class="blue_rave-lightbox" src="images/1-2.jpg"><br></p>
+        <p style="text-align: left;"><br></p>
+        <p style="margin-top: 13px; margin-bottom: 13px; text-align: justify;"><span style="font-size: 13px;">Eu donec nisl magna venenatis aliquam mi habitant sit eget arcu eu amet congue massa ante facilisis blandit. Aliquam tortor platea sed platea ligula rutrum vel metus risus at nec vestibulum. Condimentum lacinia praesent.</span></p>
+        <p style="margin-top: 13px; margin-bottom: 13px; text-align: justify;">&nbsp;<a href="" target="_self" class="pro-button blue_rave-button">more</a>&nbsp;<span style="font-size: 13px;"><br></span></p>
+        <p style="text-align: left;"><br></p>
+        </div>
+    </div><div class="blue_rave-layout-cell layout-item-3" style="width: 34%" >
+        <h3><span style="color: #FFFFFF;">What We Do</span></h3>
+        <div class="image-caption-wrapper" style="width: 100%">
+        <p style="text-align: left;"><img width="261" height="130" style="margin-top: 7px; margin-right: 7px; margin-bottom: 7px; margin-left: 7px;" alt="" class="blue_rave-lightbox" src="images/2-2.jpg"><br></p>
+        <p style="text-align: left;"><br></p>
+        <p style="text-align: justify;"><span style="font-size: 13px; text-align: justify;">Eu donec nisl magna venenatis aliquam mi habitant sit eget arcu eu amet congue massa ante facilisis blandit. Aliquam tortor platea sed platea ligula rutrum vel metus risus at nec vestibulum. Condimentum lacinia praesent.</span></p>
+        <p style="text-align: justify;"><span style="font-size: 13px; text-align: justify;"><br></span></p>
+        <p style="text-align: justify;">&nbsp;<a href="" target="_self" class="pro-button blue_rave-button">more</a>&nbsp;<span style="font-size: 13px; text-align: justify;"><br></span></p>
+        </div>
+    </div><div class="blue_rave-layout-cell layout-item-3" style="width: 33%" >
+        <h3><span style="color: #FFFFFF;">Our Team</span></h3>
+        <div class="image-caption-wrapper" style="width: 100%"><img width="251" height="125" style="margin-top: 7px; margin-right: 7px; margin-bottom: 7px; margin-left: 7px;" alt="" class="blue_rave-lightbox" src="images/3-2.jpg"></div>
+        <div class="image-caption-wrapper" style="width: 100%"><span style="text-align: justify;">Eu donec nisl magna venenatis aliquam mi habitant sit eget arcu eu amet congue massa ante facilisis blandit. Aliquam tortor platea sed platea ligula rutrum vel metus risus at nec vestibulum. Condimentum lacinia praesent.</span><br></div>
+        <div class="image-caption-wrapper" style="width: 100%"><span style="font-size: 10px; text-align: justify;">&nbsp;<a href="" target="_self" class="pro-button blue_rave-button">more</a>&nbsp;</span><span style="text-align: justify;"><br></span></div>
+    </div>
+    </div>
+</div>
+<div class="blue_rave-content-layout-br layout-item-0">
+</div><div class="blue_rave-content-layout">
+    <div class="blue_rave-content-layout-row">
+    <div class="blue_rave-layout-cell layout-item-1" style="width: 33%" >
+        <h3>Welcome To Our Site</h3>
+        <p style="text-align: justify;"><span style="text-align: justify; color: #DFEAEC;">Eu donec nisl magna venenatis aliquam mi habitant sit eget arcu eu amet congue massa ante facilisis blandit. Aliquam tortor platea sed platea ligula rutrum vel metus risus at nec vestibulum. Condimentum lacinia praesent.&nbsp;Eu donec nisl magna venenatis aliquam mi habitant sit eget arcu eu amet congue massa ante facilisis blandit. Aliquam tortor platea sed platea ligula rutrum vel metus risus at nec vestibulum. Condimentum lacinia praesent.</span></p>
+        <div style="margin-left: 2em">         </div>
+        <p>         </p>
+        <p>         </p>
+        <div class="image-caption-wrapper" style="width: 100%">
+        <p><br></p>
+        </div>
+        <p style="text-align: justify;"><a href="#"></a></p>
+    </div><div class="blue_rave-layout-cell layout-item-1" style="width: 34%" >
+        <h3>Featured Services</h3>
+        <div class="image-caption-wrapper" style="width: 100%">
+        <p style="text-align: justify;"><span style="font-size: 13px;">Quam posuere ipsum ut quis in sit cubilia pretium natoque tincidunt maecenas quisque adipiscing inceptos.</span>&nbsp;</p>
+        <p style="text-align: justify;"><br></p>
+        <p style="text-align: justify;"><span style="font-size: 13px;">Quam posuere ipsum ut quis in sit cubilia pretium natoque tincidunt maecenas quisque adipiscing inceptos.</span><br></p>
+        <p style="text-align: justify;"><span style="font-size: 13px;"><br></span></p>
+        <p style="text-align: justify;"><span style="font-size: 13px;">Quam posuere ipsum ut quis in sit cubilia pretium natoque tincidunt maecenas quisque adipiscing inceptos.</span></p>
+        </div>
+    </div><div class="blue_rave-layout-cell layout-item-1" style="width: 33%" >
+        <h3>Latest News</h3>
+        <p>March 14, 2013</p>
+        <p style="text-align: justify;"><span style="text-align: justify;">Quam posuere ipsum ut quis in sit cubilia pretium natoque tincidunt maecenas quisque adipiscing inceptos.</span></p>
+        <p>March 14, 2013</p>
+        <p style="text-align: justify;">Quam posuere ipsum ut quis in sit cubilia pretium natoque tincidunt maecenas quisque adipiscing inceptos.</p>
+        <p>March 14, 2013</p>
+        <p style="text-align: justify;">Quam posuere ipsum ut quis in sit cubilia pretium natoque tincidunt maecenas quisque adipiscing inceptos.</p>
+        <p style="text-align: justify;"><span style="text-align: justify;"><br></span></p>
+    </div>
+    </div>
+</div>
+<div class="blue_rave-content-layout-br layout-item-0">
+</div></div>
+</article></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<footer class="blue_rave-footer clearfix">
+  <div class="blue_rave-footer-inner">
+<p>Copyright © 2013. All Rights Reserved. Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a><br></p>
+  </div>
+</footer>
+
+</div>
+
+
+</body></html>

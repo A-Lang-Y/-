@@ -1,0 +1,135 @@
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.wrapper {width:100%; overflow:hidden;}
+
+/* Global properties ======================================================== */
+
+body{ background: url(../images/bg.jpg) center 0 no-repeat #000; border:0; font:14px Arial, Helvetica, sans-serif; color:#7f7f7f; line-height:25px; min-width:960px;}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3{border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 0 0 4px rgba(0, 0, 0, .4); -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .4); -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .4); position: relative;}
+
+/* Global Structure ============================================================= */
+
+.main {	margin: 0 auto;	width: 960px; }
+
+.bg1{ background:url(../images/bg_menu.png) 0 0 repeat-x}
+
+/* ============================= main layout ====================== */
+
+a{ color:#7f7f7f; text-decoration: underline; outline:none}
+a:hover{ text-decoration: none}
+h1{ padding:35px 0 0 43px;}
+h2{ font-size:40px; color:#fff; line-height:1.2em; padding:20px 0 14px 0; letter-spacing:-3px; font-weight:400; margin-left:-2px;}
+h2#welcom{ font-size:61px; line-height:1.2em; padding:0 0 9px 0; letter-spacing:-5px; margin-left:-5px;}
+h2 strong{ font-weight:700; color:#7532a9;}
+h3{ font-size:30px; line-height:1.2em; color:#7532a9; padding:0 0 8px 0; font-weight:400; letter-spacing:-2px;}
+h4{ font-size:30px; color:#7f7f7f; line-height:1.2em; font-weight:400; letter-spacing:-2px; padding:12px 0 11px 0}
+p{ padding-bottom:25px;}
+
+/* ============================= header ====================== */
+header{ height:205px;}
+
+#logo{ display:block; text-indent:-9999px; background:url(../images/logo.png) 0 0 no-repeat; width:273px; height:86px;}
+
+#menu { width:100%; overflow:hidden; background:url(../images/menu_line.png) 0 0 no-repeat}
+#menu > li { float:left; padding-right:2px; background:url(../images/menu_line.png) right 0 no-repeat}
+#menu > li > a{ display:block; width:158px; font-size:22px; color:#7f7f7f; text-decoration:none; text-align:center; height:60px; line-height:60px; letter-spacing:-1px;}
+#menu > li > a:hover, #menu > .active > a{ background:url(../images/menu_active.gif) top repeat-x; color:#fff}
+
+/* ============================= content ====================== */
+
+.box{background:url(../images/bg_content.png) repeat; padding:20px 46px 50px 49px; overflow:hidden}
+#page1 .box{ padding-top:34px;}
+
+#content{ padding-bottom:18px;}
+#page2 #content{ padding-bottom:50px;}
+#page5 #content{ padding-bottom:40px;}
+
+.pad_left1{ padding-left:60px}
+.pad_bot1{ padding-bottom:15px;}
+.pad_bot2{ padding-bottom:30px;}
+.marg_right1{ margin-right:40px}
+#page2 .pad_bot1{ padding-bottom:40px;}
+#page5 .pad_bot1{ padding-bottom:10px;}
+#page6 .pad_left1{ padding-left:36px;}
+#page6 .pad_bot1{ padding-bottom:10px;}
+
+.color1{ color:#fff}
+.color2{ color:#7532a9}
+
+.link1{ color:#fff; text-decoration: none}
+.link1:hover{ color:#7532a9}
+
+.link2{ color:#7532a9; text-decoration: none}
+.link2:hover{ text-decoration:underline}
+
+.dropcap_1{ float:left; margin-top:-4px; width:110px; height:95px; background:url(../images/bg_dropcap.png) 0 0 no-repeat; margin-right:7px; font-size:48px; color:#fff; line-height:1.2em; text-align:center; font-weight:bold; letter-spacing:-4px; padding-top:15px;}
+.dropcap_1 span{ display:block; font-size:19px; line-height:1.2em; font-weight:400; letter-spacing:-1px; margin-top:-11px}
+
+#gallery1{ height: 225px !important; margin-left:-7px;}
+#gallery1 li{ overflow:inherit !important; }
+
+.prev, .next{ float:right; background:url(../images/markers.jpg) 0 0 no-repeat; width:39px; height:39px; margin-right:-3px;}
+.next{ background-position:right 0}
+.prev:hover{ background-position: 0 bottom}
+.next:hover{ background-position: right bottom}
+
+
+.list1{}
+.list1 li{ line-height:25px;}
+.list1 li a{ color:#fff; text-decoration:none; padding-left:14px; background:url(../images/marker_1.gif) 0 5px no-repeat}
+.list1 li a:hover{ color:#7532a9}
+
+.folio {}
+.folio dt{position:relative; width:100%; height:455px; margin-bottom:40px;}
+.folio dt img{ position:absolute; top:0; left:0}
+.folio ul{ float:left; width:260px;}
+.folio li{ padding-bottom:40px;}
+
+
+.address{ width:97px; float:left;}
+
+/* ============================= footer ====================== */
+
+footer { height:172px; color:#fff;}
+footer a{ color:#fff; text-decoration:none}
+footer a:hover{ text-decoration:underline}
+
+.line1{ background:url(../images/line_vert1.gif) 260px 0 repeat-y; height:100%;}
+.line2{ background:url(../images/line_vert1.gif) 600px 0 repeat-y; height:100%}
+
+.icons{ float:left; width:230px; padding-right:70px}
+.info{ float:left; width:140px;}
+.phone{ width:215px; float:left; padding-left:70px;}
+
+.phone span{ font-size:30px; margin-top:-5px; text-transform:uppercase; display:block; line-height:1.2em; letter-spacing:-2px;}
+
+#icons{ padding: 8px 0 0 0; overflow:hidden;}
+#icons li{ float:left; padding-right:6px;}
+
+/* Tooltips */
+.aToolTip { background: url(../images/menu_active.gif) top repeat-x;  color:#fff;	margin:0; padding:2px 10px 3px; font-size:11px; line-height:1.2em; position: absolute;}
+.aToolTip .aToolTipContent { position:relative;	margin:0; padding:0;}
+
+
+/* ============================= forms ============================= */
+
+#ContactForm{ padding-top:2px;width:100%; overflow:hidden;}
+#ContactForm .wrapper{ min-height:35px;}
+#ContactForm .textarea_box{ min-height:264px;}
+#ContactForm  span{ float:left; width:120px; line-height:30px;}
+#ContactForm .button{ margin-right:5px; float:right; font-size:25px; color:#7532a9; text-decoration:none;letter-spacing:-2px; padding:0 13px; line-height:26px; height:31px; background:#fff;box-shadow: 0 0 6px rgba(256, 256, 256, .5); -moz-box-shadow: 0 0 6px rgba(256, 256, 256, .5); -webkit-box-shadow:  0 0 6px rgba(256, 256, 256, .5); position: relative; margin-bottom:5px;}
+#ContactForm .button:hover{ background: url(../images/menu_active.gif) top repeat-x; color:#fff;box-shadow: 0 0 6px rgba(152, 103, 190, .5); -moz-box-shadow: 0 0 6px rgba(152, 103, 190, .5); -webkit-box-shadow:  0 0 6px rgba(152, 103, 190, .5)}
+#ContactForm .input { margin:0;width:360px; height:16px; background:#fff; padding:7px 10px;color:#474747; font:14px Arial, Helvetica, sans-serif; margin:0}
+#ContactForm textarea { overflow: auto; margin:0;width:720px; height:230px; background:#fff; padding:7px 10px;color:#474747; font:14px Arial, Helvetica, sans-serif;}
+
+
+
+

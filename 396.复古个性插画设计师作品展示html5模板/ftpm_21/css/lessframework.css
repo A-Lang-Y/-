@@ -1,0 +1,434 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+/*	
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* Default General  ----------------------------------------------------*//* Defaul tNav   ----------------------------------------------------*/#comboNav {
+  display: none;
+}
+#nav {
+  display: block;
+}
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* TABLET GENERAL  ----------------------------------------------------*/.wrapper {
+    width: 712px;
+  }
+  /* TABLET NAV  ----------------------------------------------------*/#nav {
+    display: block;
+  }
+  #comboNav {
+    display: none;
+  }
+  #nav li {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 16px;
+  }
+  /* TABLET SLIDER ----------------------------------------------------*/.theme-halftone .nivoSlider {
+    margin-left: -10px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .theme-halftone .slider-right,
+  .theme-halftone .slider-left {
+    display: none;
+  }
+  #main .headline {
+    font-size: 36px;
+  }
+  /* TABLET FEATURED----------------------------------------------------*/.feature li,
+  .work-list li {
+    width: 210px;
+  }
+  .feature li .thumb .date,
+  .work-list li .thumb .date {
+    left: 70px;
+  }
+  /* TABLET BLOG ----------------------------------------------------*/#posts-list {
+    position: relative;
+    width: 672px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    float: left;
+  }
+  #posts-list article {
+    position: relative;
+    margin-bottom: 60px;
+  }
+  #posts-list article .entry-right-data {
+    width: 573px;
+  }
+  /* TABLET SIDEBAR ----------------------------------------------------*/#sidebar {
+    clear: both;
+    float: none;
+    margin: 0 auto 40px auto;
+  }
+  /* PROJECT ------------------------------------------------------------*/
+  #project-title {
+    font-size: 48px;
+  }
+  #project-gallery {
+    width: 362px;
+  }
+  #project-info {
+    width: 290px;
+  }
+  /* TABLET WIDGETS  ----------------------------------------------------*/.widget-cols > li {
+    width: 153px;
+    margin-left: 20px;
+  }
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width: 252px;
+  }
+  #main {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  /* MOBILE NAV  ----------------------------------------------------*/#nav {
+    display: none;
+  }
+  #comboNav {
+    display: block;
+    width: 212px;
+    margin-left: 20px;
+  }
+  /* MOBILE Logo ----------------------------------------------------*/#logo {
+    width: 200px;
+    margin: 0 auto;
+  }
+  #logo img {
+    width: 100%;
+  }
+  /* SLIDER ----------------------------------------------------*/.theme-halftone {
+    margin-bottom: 20px;
+  }
+  .theme-halftone .nivoSlider {
+    margin-left: -10px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .theme-halftone .slider-right,
+  .theme-halftone .slider-left {
+    display: none;
+  }
+  .theme-halftone .nivo-controlNav {
+    display: none;
+  }
+  .theme-halftone .nivo-directionNav {
+    display: block !important;
+    /* ALWAYS show the arrows */
+  
+  }
+  .theme-halftone .nivo-directionNav a {
+    width: 16px;
+    height: 16px;
+    background: #e37655 url(../img/arrows-mobile.png) no-repeat;
+  }
+  .theme-halftone .nivo-directionNav .nivo-prevNav {
+    left: 0px;
+  }
+  .theme-halftone .nivo-directionNav .nivo-nextNav {
+    right: 0px;
+    background-position: 0px -16px;
+  }
+  #main .headline {
+    font-size: 24px;
+  }
+  /* MOBILE FEATURE----------------------------------------------------*/.feature,
+  .work-list {
+    width: 212px;
+    margin-left: 20px;
+  }
+  .feature li,
+  .work-list li {
+    width: 212px;
+    margin-left: 0px;
+  }
+  .feature li .thumb .date,
+  .work-list li .thumb .date {
+    left: 71px;
+  }
+  /* MOBILE COLUMNS ----------------------------------------------------*/.entry-content .one-half,
+  .entry-content .one-third,
+  .entry-content .one-fourth {
+    width: auto;
+    margin-right: 0px;
+  }
+  #main .page-navigation {
+    text-indent: -9000px;
+  }
+  #main .page-navigation div {
+    width: 25px;
+  }
+  /* MOBILE BLOG ----------------------------------------------------*/#posts-list {
+    position: relative;
+    width: 212px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    float: left;
+  }
+  #posts-list article {
+    position: relative;
+    margin-bottom: 60px;
+  }
+  #posts-list article .entry-left-data {
+    width: 200px;
+    height: 20px;
+    float: left;
+    position: relative;
+  }
+  #posts-list article .entry-right-data {
+    width: 212px;
+    margin-left: 0px;
+  }
+  #posts-list article .entry-right-data .post-heading {
+    font-size: 24px;
+  }
+  #posts-list article .entry-date {
+    position: absolute;
+    top: -50px;
+    left: 76px;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+  }
+  #posts-list article .comments {
+    position: absolute;
+    top: -60px;
+    left: 200px;
+    display: none;
+  }
+  /* MOBILE SIDEBAR ----------------------------------------------------*/#sidebar {
+    clear: both;
+    float: none;
+    margin: 0 auto 40px auto;
+    width: 252px;
+  }
+  #sidebar .block {
+    background: #f1f1f1;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  #sidebar .block .sidebar-content {
+    background: none;
+    width: 232px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  #sidebar .block .sidebar-top {
+    background: none;
+    width: 100%;
+    height: 38px;
+  }
+  #sidebar .block .sidebar-bottom {
+    background: none;
+    width: 100%;
+    height: 38px;
+  }
+  /* MOBILE PROJECT ------------------------------------------------------------*/
+  #project-title {
+    font-size: 24px;
+  }
+  #project-gallery {
+    width: 212px;
+  }
+  #project-info {
+    width: 212px;
+  }
+  /* MOBILE WIDGETS  ----------------------------------------------------*/.widget-cols > li {
+    width: 212px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 0px;
+    border-bottom: 1px solid #ece9d6;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .widget-cols > li:last-child {
+    border-bottom: none;
+  }
+  /* MOBILE Social ----------------------------------------------------*/footer #social-bar {
+    margin: 20px 0px 30px 0px;
+    background: none;
+    height: 46px;
+  }
+  footer #social-bar li {
+    margin-bottom: 5px;
+  }
+  footer #social-bar .left-corner,
+  footer #social-bar .right-corner {
+    display: none;
+  }
+}
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .wrapper {
+    width: 436px;
+  }
+  /* WIDE MOBILE Logo ----------------------------------------------------*/#logo img {
+    width: 100%;
+  }
+  /* WIDE MOBILE NAV  ----------------------------------------------------*/#nav {
+    display: none;
+  }
+  #comboNav {
+    display: block;
+    width: 396px;
+    margin-left: 20px;
+  }
+  /* WIDE MOBILE FEATURE ----------------------------------------------------*/.feature,
+  .work-list {
+    width: 396px;
+    margin-left: 20px;
+  }
+  .feature li,
+  .work-list li {
+    width: 396px;
+    margin-left: 0px;
+  }
+  .feature li .thumb .date,
+  .work-list li .thumb .date {
+    left: 163px;
+  }
+  /* WIDE MOBILE BLOG ------------------------------------------------------------*/
+  #posts-list {
+    position: relative;
+    width: 396px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    float: left;
+  }
+  #posts-list article {
+    position: relative;
+    margin-bottom: 60px;
+  }
+  #posts-list article .entry-left-data {
+    width: 400px;
+    height: 20px;
+    float: left;
+    position: relative;
+  }
+  #posts-list article .entry-right-data {
+    width: 396px;
+    margin-left: 0px;
+  }
+  #posts-list article .entry-date {
+    position: absolute;
+    top: -50px;
+    left: 165px;
+  }
+  #posts-list article .comments {
+    position: absolute;
+    top: -60px;
+    left: 200px;
+    display: none;
+  }
+  /* WIDE MOBILE SIDEBAR ----------------------------------------------------*/#sidebar {
+    position: relative;
+    width: 320px;
+    margin: 0px auto 40px auto;
+    float: none;
+  }
+  #sidebar .block {
+    background: none;
+    border: none;
+  }
+  #sidebar .block .sidebar-content {
+    background: url(../img/sidebar.png) repeat-y;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  #sidebar .block .sidebar-top {
+    background: url(../img/sidebar-top.png) no-repeat;
+    width: 100%;
+    height: 38px;
+  }
+  #sidebar .block .sidebar-bottom {
+    background: url(../img/sidebar-bottom.png) no-repeat;
+    width: 100%;
+    height: 38px;
+  }
+  #sidebar .heading {
+    border-bottom: 1px solid #888;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #sidebar li {
+    display: block;
+  }
+  #sidebar a {
+    color: #e37655;
+  }
+  /* WIDE MOBILE PROJECT ------------------------------------------------------------*/
+  #project-title {
+    font-size: 24px;
+  }
+  #project-gallery {
+    width: 396px;
+  }
+  #project-info {
+    width: 396px;
+  }
+  /* WIDE MOBILE RELATED PROJECTS ------------------------------------------------------------*/
+  .related-projects .related-list li {
+    width: 436px;
+    margin-bottom: 30px;
+  }
+  /* WIDE MOBILE WIDGETS  ----------------------------------------------------*/.widget-cols > li {
+    width: 396px;
+  }
+}

@@ -1,0 +1,157 @@
+.menu_block {
+	z-index: 999;
+	padding: 20px 0 21px;
+	position: relative;
+	background-color: #2a394e;
+}
+
+.menu_block nav {
+    font-family: 'Economica', sans-serif;
+}
+
+nav>.sf-menu {
+	z-index: 990;
+	text-align: center;
+	position: relative;
+}
+
+nav {
+	position:relative;
+	padding: 0 0 0 0;
+}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu li {float:left;position:relative; }
+.sf-menu>li {
+	display: inline-block;
+	z-index: 900;
+	float: none;
+	position: relative;
+	z-index: 5;
+	font-size: 28px;
+	line-height: 24px;
+}
+
+.sf-menu>li+li {
+	margin-left: 73px;
+}
+
+.sf-menu>li+li:after {
+	background: url(../images/menu_sep.png) 0 0 no-repeat;
+	width: 9px;
+	height: 9px;
+	left: -37px;
+	top: 19px;
+	content: '';
+	display: block;
+	position: absolute;
+	pointer-events: none;
+}
+
+
+.sf-menu>li>ul>li {
+  float: none;
+  position: static;
+}
+
+.sf-menu>li>a {
+	text-align: center;
+	display: block;
+	padding: 10px 24px 11px;
+	position: relative;
+	z-index: 999;
+	color: #fff;
+}
+
+.sf-menu>li>a:hover,
+.sf-menu>li.current>a,
+.sf-menu>li.sfHover>a {
+	background-color: #979aa0;
+}
+
+.sf-menu>li.current,.sf-menu>li:hover, .sf-menu>li.sfHover {
+	z-index: 999;
+}
+
+.sf-menu>li.sfHover {
+	z-index: 999;
+}
+
+.sf-menu>li.sfHover>a.sf-with-ul:after,
+.sf-menu>li.current>a.sf-with-ul:after {
+	background-position: 0 0;
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	content: '';
+	position: absolute;
+	width: 7px;
+	background: url(../images/arrows.png) right 0 no-repeat;
+	height: 5px;
+	right: -10px;
+	left: auto !important;
+	bottom: 5px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.sf-menu>li>ul>li.sfHover>a.sf-with-ul:after {}
+
+.sf-menu a{}
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu li ul,.sf-menu li.sfHover>ul {
+	left: 0px;
+	z-index: 999;
+	padding-top: 12px;
+	width: 97px;
+	top: 104px;
+	padding-bottom: 14px;
+	background-color: #4d4d4d;
+}
+
+.sf-menu li ul li {
+	position: relative;
+	text-align: left;
+	float: none !important;
+	font-size: 12px;
+	padding: 0 3px;
+	margin: 0 20px;
+	line-height: 35px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.sf-menu li ul li+li {}
+
+.sf-menu li ul li a {
+	position: relative;
+	z-index: 999;
+	color:#bcbcbc;
+}
+
+.sf-menu li li a:hover, .sf-menu li.sfHover li.sfHover>a {
+	color: #fff;
+}
+
+/*================================>> 3 Level <<========================================*/
+.sf-menu li.sfHover li.sfHover ul {
+	left: 77px;
+	top: -12px;
+	width: 86px;
+	background-color: #ff422f;
+}
+
+.sf-menu li.sfHover li.sfHover ul li {
+	line-height: 36px;
+	margin: 0 14px 0 18px;
+	padding-left: 0;
+}
+
+.sf-menu li.sfHover li.sfHover ul li+li {}
+
+.sf-menu li.sfHover li.sfHover ul li a {
+	color: #ffe5b1;
+}
+
+.sf-menu li.sfHover li.sfHover ul li a:hover {
+	color: #fff;
+}

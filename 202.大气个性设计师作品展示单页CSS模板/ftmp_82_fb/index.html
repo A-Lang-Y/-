@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<title>Sticky Fudge</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.nivo.slider.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/filter-gallery.js"></script>
+
+<script type="text/javascript">
+
+   $(document).ready(function()
+   {         
+      //
+      // jQuery SmoothScroll | Version 11-09-30
+      //
+
+      $('a[href*=#]').click(function() {
+
+         // skip SmoothScroll on links inside sliders or scroll boxes also using anchors or if there is a javascript call
+         if($(this).parent().hasClass('scrollable_navigation') || $(this).attr('href').indexOf('javascript')>-1) return;
+
+         // duration in ms
+         var duration=1000;
+
+         // easing values: swing | linear
+         var easing='swing';
+
+         // get / set parameters
+         var newHash=this.hash;
+         var oldLocation=window.location.href.replace(window.location.hash, '');
+         var newLocation=this;
+
+         // make sure it's the same location      
+         if(oldLocation+newHash==newLocation)
+         {
+            // get target
+            var target=$(this.hash+', a[name='+this.hash.slice(1)+']').offset().top;
+
+            // adjust target for anchors near the bottom of the page
+            if(target > $(document).height()-$(window).height()) target=$(document).height()-$(window).height();         
+
+            // set selector
+            if($.browser.safari) var animationSelector='body:not(:animated)';
+            else var animationSelector='html:not(:animated)';
+
+            // animate to target and set the hash to the window.location after the animation
+            $(animationSelector).animate({ scrollTop: target }, duration, easing, function() {
+
+               // add new hash to the browser location
+               window.location.href=newLocation;
+            });
+
+            // cancel default click action
+            return false;
+         }
+      });
+   });
+   
+</script>
+
+<!-- Nivo Slider -->
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+
+    <!-- PrettyPhoto Jquery Gallery -->
+    <script type="text/javascript">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
+
+<!-- Jquery Form Validation -->
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $("#commentForm").validate();
+});
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+	<div class="wrapper">
+	<div class="up">
+		<a href="#top"><img src="img/up.png" width="50" height="50" alt="up" /></a>
+	</div>
+	<span class="guide" id="top">&nbsp;</span>
+	<div id="header">
+		<div class="inner cf">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" width="221" height="61" alt="logo" /></a>
+			</div>
+			<div class="menu">
+				<ul id="main-menu">
+					<li class="current"><a href="#top">Home</a></li>
+					<li><a href="#about-section">About</a></li>
+					<li><a href="#work-section">Work</a></li>
+					<li><a href="#blog-section">Blog</a></li>
+					<li><a href="#contact-section">Get in Touch</a></li>
+				</ul>
+			</div><!-- end inner -->
+		</div><!-- end header -->
+	</div>
+	<div id="feature">
+		<div class="inner">
+			<h1>Welcome to my<br />Online Portfolio</h1>
+			<!-- Start Nivo Slider -->
+			<div class="slider">
+		        <div class="slider-wrapper theme-default">
+		             <div id="slider" class="nivoSlider">
+		              	<img src="nivo-slider/images/slide.png" alt="Happiness" width="750" height="300" />
+		              	<img src="nivo-slider/images/slide3.png" alt="Happiness" width="750" height="300" />
+		              	<img src="nivo-slider/images/slide4.png" alt="Happiness" width="750" height="300" />
+		              	<img src="nivo-slider/images/slide2.png" alt="Happiness" width="750" height="300" /> </div>
+		            </div><!-- end slider -->
+		      </div><!-- end slider wrapper -->  
+		  </div><!-- end slider -->
+		</div><!-- end inner -->
+	</div><!-- end feature -->
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+    
+	<div id="about">
+		<div class="inner cf">
+			<span class="guide" id="about-section">&nbsp;</span>
+			<h1>About Me</h1>
+			<div class="profile">
+				<img src="img/profile.png" width="150" height="151" alt="Thats Me" />
+			</div><!-- end profile -->
+
+			<div class="more-info">
+				<h2>In Case you wondered</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur and then we all just left and went home.</p>
+			</div><!-- end more-info -->
+			
+			<div class="skills">
+				<h2>My Skills I have to Offer</h2>
+				<ul class="skills-set">
+					<li><strong>Wordpress</strong><em>8/10</em></li>
+					<li><strong>HTML5</strong><em>7/10</em></li>
+					<li><strong>Jquery</strong><em>8/10</em></li>
+					<li><strong>PHP</strong><em>6/10</em></li>
+					<li><strong>Photoshop</strong><em>8/10</em></li>
+					<li><strong>Illustrator</strong><em>9/10</em></li>
+				</ul>
+			</div>
+
+			<div class="graph">
+				<h2>The Timeline</h2>
+				<img src="img/graph.png" width="560" height="260" alt="Grapg" />
+			</div>
+		</div><!-- end inner -->
+	</div><!-- end about -->
+
+	<div id="work">
+		<div class="inner cf">
+
+			<span class="guide" id="work-section">&nbsp;</span>
+			<h1>Work</h1>
+			<h2>Some of my recent projects</h2>
+			<p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+			<div class="gallery">
+
+			<ul id="filter">
+				<li class="current"><a href="#">All</a></li>
+				<li><a href="#">Design</a></li>
+				<li><a href="#">Photography</a></li>
+				<li><a href="#">Development</a></li>
+				<li><a href="#">Service</a></li>
+			</ul>
+			</div>
+				<ul id="portfolio">
+					<li class="service photography">
+					<a href="img/gallery00-large.png" rel="prettyPhoto"><img src="img/preview.png" alt="Preview" height="200" width="212" /></a><p>Heading<span>Description</span></p></li>
+
+					<li class="photography development">
+					<a href="img/gallery00-large.png" rel="prettyPhoto"><img src="img/preview2.png" alt="Preview" height="200" width="212" /></a><p>Heading<span>Description</span></p></li>
+
+					<li class="design development">
+					<a href="img/gallery00-large.png" rel="prettyPhoto"><img src="img/preview3.png" alt="Preview" height="200" width="212" /></a><p>Heading<span>Description</span></p></li>
+
+					<li class="development photography last">
+					<a href="img/gallery00-large.png" rel="prettyPhoto"><img src="img/preview4.png" alt="Preview" height="200" width="212" /></a><p>Heading<span>Description</span></p></li>
+
+					<li class="service design">
+					<a href="img/gallery00-large.png" rel="prettyPhoto"><img src="img/preview5.png" alt="Preview" height="200" width="212" /></a><p>Heading<span>Description</span></p></li>
+
+					<li class="photography service">
+					<a href="img/gallery00-large.png" rel="prettyPhoto"><img src="img/preview6.png" alt="Preview" height="200" width="212" /></a><p>Heading<span>Description</span></p></li>
+
+					<li class="design development">
+					<a href="img/gallery00-large.png" rel="prettyPhoto"><img src="img/preview7.png" alt="Preview" height="200" width="212" /></a><p>Heading<span>Description</span></p></li>
+
+					<li class="design photography last">
+					<a href="img/gallery00-large.png" rel="prettyPhoto"><img src="img/preview8.png" alt="Preview" height="200" width="212" /></a><p>Heading<span>Description</span></p></li>
+				</ul>
+		</div><!-- end inner -->
+	</div><!-- end work -->
+
+	<div id="blog">
+		<div class="inner cf">
+			<span class="guide" id="blog-section">&nbsp;</span>
+			<h1>Blog</h1>
+				<ul id="blog-filter">
+				<li><strong>Categories:</strong></li>
+				<li class="current"><a href="#">All</a></li>
+				<li><a href="#">Design</a></li>
+				<li><a href="#">Photography</a></li>
+				<li><a href="#">Development</a></li>
+				<li><a href="#">Personal</a></li>
+			</ul>
+
+			<ul id="blog-posts">
+				<li class="service photography">
+				<a href="#"><img src="img/blog-preview1.png" alt="" height="300" width="458" /></a>
+				<h2>Blog Post</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<ul class="post-info cf">
+					<li><strong>Posted on</strong> <em>2 Sept</em></li>
+					<li><strong>By</strong> <em>Kobus Swartz</em></li>
+					<li><strong>Tags:</strong> <em>Design</em></li>
+				</ul>
+				<button class="alt-1">Read More</button>
+				</li>
+
+				<li class="design photography">
+				<a href="#"><img src="img/blog-preview2.png" alt="" height="300" width="458" /></a>
+				<h2>Blog Post</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<ul class="post-info cf">
+					<li><strong>Posted on</strong> <em>2 Sept</em></li>
+					<li><strong>By</strong> <em>Kobus Swartz</em></li>
+					<li><strong>Tags:</strong> <em>Design</em></li>
+				</ul>
+				<button class="alt-1">Read More</button>
+				</li>
+
+				<li class="personal photography">
+				<iframe src="http://player.vimeo.com/video/23534361" width="458" height="300"></iframe>
+				<h2>Blog Post</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<ul class="post-info cf">
+					<li><strong>Posted on</strong> <em>2 Sept</em></li>
+					<li><strong>By</strong> <em>Kobus Swartz</em></li>
+					<li><strong>Tags:</strong> <em>Design</em></li>
+				</ul>
+				<button class="alt-1">Read More</button>
+				</li>
+
+				<li class="development design">
+				<a href="#"><img src="img/blog-preview4.png" alt="" height="300" width="458" /></a>
+				<h2>Blog Post</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<ul class="post-info cf">
+					<li><strong>Posted on</strong> <em>2 Sept</em></li>
+					<li><strong>By</strong> <em>Kobus Swartz</em></li>
+					<li><strong>Tags:</strong> <em>Design</em></li>
+				</ul>
+				<button class="alt-1">Read More</button>
+				</li>
+				</ul>
+		</div>
+	</div>
+
+	<div id="contact">
+	<div class="inner cf">
+		<span class="guide" id="contact-section">&nbsp;</span>
+		<h1>Contact</h1>
+		<p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+		<h2>Use the form below to get in touch</h2>
+		<div class="form">
+			<form id="commentForm" method="post" action="check.php" />
+		        <fieldset class="text-fields">
+		   			<input type="text" name="name" id="cname" class="required cname" onFocus="if(this.value == 'Your name') { this.value = ''; }" value="Your name" />
+		          	<input type="text" name="cemail" id="cemail" class="required email" onFocus="if(this.value == 'Your Email') { this.value = ''; }" value="Your Email" />
+		        </fieldset>
+		        <fieldset class="text-block">
+		          	<textarea name="ccomment" class="required comment" onFocus="if(this.value == 'Type your message here') { this.value = ''; }">Type your message here</textarea>
+		        </fieldset>
+		        <button class="alt-2">Send Message</button>
+		      </form>
+		</div><!-- end form -->
+
+		 <div class="map">
+	  	<p><strong>//Email:</strong>  <span>info@example.com</span> <strong>//Tel:</strong>  <span>(+27) 74125 6528</span></p>
+	  	<iframe width="590" height="330" src="https://maps.google.co.za/maps?q=hollywood+california&amp;ie=UTF8&amp;hq=&amp;hnear=Hollywood,+Los+Angeles,+California,+United+States&amp;gl=za&amp;t=m&amp;z=14&amp;ll=34.092809,-118.328661&amp;output=embed"></iframe>
+	  </div><!-- end map -->
+	</div><!-- end contact -->
+</div><!-- end wrapper -->
+<div id="footer">
+		<div class="inner cf">
+			<p>Sticky Fudge<br /> Exclusively Available<br /> Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+			<ul>
+				<li><a href="#"><img src="img/facebook.png" width="25" height="25" alt="Get Social" /></a></li>
+				<li><a href="#"><img src="img/youtube.png" width="25" height="25" alt="Get Social" /></a></li>
+				<li><a href="#"><img src="img/twitter.png" width="25" height="25" alt="Get Social" /></a></li>
+			</ul>
+
+			<img src="img/logo.png" width="221" height="61" alt="footer logo" />
+		</div>
+	</div>
+</body>
+</html>

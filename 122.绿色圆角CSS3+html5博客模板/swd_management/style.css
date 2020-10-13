@@ -1,0 +1,2035 @@
+#management-main
+{
+   background: #46BBD2;
+   margin:0 auto;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+}
+table, ul.management-hmenu
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags. 
+ * border-collapse should be separate for shadow in IE. 
+ */
+.management-button
+{
+   border-collapse: separate;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #46BBD2;
+   background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -moz-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -o-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -ms-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   -svg-background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   -webkit-border-radius:12px;
+   -moz-border-radius:12px;
+   border-radius:12px;
+   border:1px solid #2B9AB1;
+   padding:0 20px;
+   margin:0 auto;
+   height:30px;
+}
+
+.management-postcontent,
+.management-postheadericons,
+.management-postfootericons,
+.management-blockcontent,
+ul.management-vmenu a 
+{
+   text-align: left;
+}
+
+.management-postcontent,
+.management-postcontent li,
+.management-postcontent table,
+.management-postcontent a,
+.management-postcontent a:link,
+.management-postcontent a:visited,
+.management-postcontent a.visited,
+.management-postcontent a:hover,
+.management-postcontent a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent p
+{
+   margin: 10px 0;
+}
+
+.management-postcontent h1, .management-postcontent h1 a, .management-postcontent h1 a:link, .management-postcontent h1 a:visited, .management-postcontent h1 a:hover,
+.management-postcontent h2, .management-postcontent h2 a, .management-postcontent h2 a:link, .management-postcontent h2 a:visited, .management-postcontent h2 a:hover,
+.management-postcontent h3, .management-postcontent h3 a, .management-postcontent h3 a:link, .management-postcontent h3 a:visited, .management-postcontent h3 a:hover,
+.management-postcontent h4, .management-postcontent h4 a, .management-postcontent h4 a:link, .management-postcontent h4 a:visited, .management-postcontent h4 a:hover,
+.management-postcontent h5, .management-postcontent h5 a, .management-postcontent h5 a:link, .management-postcontent h5 a:visited, .management-postcontent h5 a:hover,
+.management-postcontent h6, .management-postcontent h6 a, .management-postcontent h6 a:link, .management-postcontent h6 a:visited, .management-postcontent h6 a:hover,
+.management-blockheader .t, .management-blockheader .t a, .management-blockheader .t a:link, .management-blockheader .t a:visited, .management-blockheader .t a:hover,
+.management-vmenublockheader .t, .management-vmenublockheader .t a, .management-vmenublockheader .t a:link, .management-vmenublockheader .t a:visited, .management-vmenublockheader .t a:hover,
+.management-headline, .management-headline a, .management-headline a:link, .management-headline a:visited, .management-headline a:hover,
+.management-slogan, .management-slogan a, .management-slogan a:link, .management-slogan a:visited, .management-slogan a:hover,
+.management-postheader, .management-postheader a, .management-postheader a:link, .management-postheader a:visited, .management-postheader a:hover
+{
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+
+.management-postcontent a, .management-postcontent a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #2FA9C1;
+}
+
+.management-postcontent a:visited, .management-postcontent a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #4E666A;
+}
+
+.management-postcontent  a:hover, .management-postcontent a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #2FA9C1;
+}
+
+.management-postcontent h1
+{
+   color: #2FA9C1;
+   margin-top: 21px;
+   margin-bottom: 21px;
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-blockcontent h1
+{
+   margin-top: 21px;
+   margin-bottom: 21px;
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h1 a, .management-postcontent h1 a:link, .management-postcontent h1 a:hover, .management-postcontent h1 a:visited, .management-blockcontent h1 a, .management-blockcontent h1 a:link, .management-blockcontent h1 a:hover, .management-blockcontent h1 a:visited 
+{
+   font-size: 32px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h2
+{
+   color: #2FA9C1;
+   margin-top: 19px;
+   margin-bottom: 19px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-blockcontent h2
+{
+   margin-top: 19px;
+   margin-bottom: 19px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h2 a, .management-postcontent h2 a:link, .management-postcontent h2 a:hover, .management-postcontent h2 a:visited, .management-blockcontent h2 a, .management-blockcontent h2 a:link, .management-blockcontent h2 a:hover, .management-blockcontent h2 a:visited 
+{
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h3
+{
+   color: #2FA9C1;
+   margin: 10px 0 0 5px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-blockcontent h3
+{
+   margin: 10px 0 0 5px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h3 a, .management-postcontent h3 a:link, .management-postcontent h3 a:hover, .management-postcontent h3 a:visited, .management-blockcontent h3 a, .management-blockcontent h3 a:link, .management-blockcontent h3 a:hover, .management-blockcontent h3 a:visited 
+{
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h4
+{
+   color: #212A2C;
+   margin: 20px 0 10px;
+   font-size: 16px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-blockcontent h4
+{
+   margin: 20px 0 10px;
+   font-size: 16px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h4 a, .management-postcontent h4 a:link, .management-postcontent h4 a:hover, .management-postcontent h4 a:visited, .management-blockcontent h4 a, .management-blockcontent h4 a:link, .management-blockcontent h4 a:hover, .management-blockcontent h4 a:visited 
+{
+   font-size: 16px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h5
+{
+   color: #212A2C;
+   margin-top: 26px;
+   margin-bottom: 26px;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-blockcontent h5
+{
+   margin-top: 26px;
+   margin-bottom: 26px;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h5 a, .management-postcontent h5 a:link, .management-postcontent h5 a:hover, .management-postcontent h5 a:visited, .management-blockcontent h5 a, .management-blockcontent h5 a:link, .management-blockcontent h5 a:hover, .management-blockcontent h5 a:visited 
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h6
+{
+   color: #4E666A;
+   margin-top: 35px;
+   margin-bottom: 35px;
+   font-size: 11px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-blockcontent h6
+{
+   margin-top: 35px;
+   margin-bottom: 35px;
+   font-size: 11px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postcontent h6 a, .management-postcontent h6 a:link, .management-postcontent h6 a:hover, .management-postcontent h6 a:visited, .management-blockcontent h6 a, .management-blockcontent h6 a:link, .management-blockcontent h6 a:hover, .management-blockcontent h6 a:visited 
+{
+   font-size: 11px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+header, footer, article, nav, #management-hmenu-bg, .management-sheet, .management-hmenu a, .management-vmenu a, .management-slidenavigator > a, .management-checkbox:before, .management-radiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #management-hmenu-bg, .management-sheet, .management-slidenavigator > a, .management-checkbox:before, .management-radiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 882px;
+   color: #303E41;
+}
+
+.clearfix:before, .clearfix:after {
+   content: "";
+   display: table;
+}
+
+.clearfix:after {
+   clear: both;
+}
+
+.cleared {
+   font: 0/0 serif;
+   clear: both;
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+li h1, .management-postcontent li h1, .management-blockcontent li h1 
+{
+   margin:1px;
+} 
+li h2, .management-postcontent li h2, .management-blockcontent li h2 
+{
+   margin:1px;
+} 
+li h3, .management-postcontent li h3, .management-blockcontent li h3 
+{
+   margin:1px;
+} 
+li h4, .management-postcontent li h4, .management-blockcontent li h4 
+{
+   margin:1px;
+} 
+li h5, .management-postcontent li h5, .management-blockcontent li h5 
+{
+   margin:1px;
+} 
+li h6, .management-postcontent li h6, .management-blockcontent li h6 
+{
+   margin:1px;
+} 
+li p, .management-postcontent li p, .management-blockcontent li p 
+{
+   margin:1px;
+}
+
+
+.management-shapes
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.management-slider-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.management-slidenavigator > a {
+   display: inline-block;
+   vertical-align: middle;
+   outline-style: none;
+   font-size: 1px;
+}
+
+.management-slidenavigator > a:last-child {
+   margin-right: 0 !important;
+}
+
+.management-headline
+{
+  display: inline-block;
+  position: absolute;
+  min-width: 50px;
+  top: 66px;
+  left: 10.03%;
+  line-height: 100%;
+  margin-left: -35px !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 99;
+}
+
+.management-headline, 
+.management-headline a, 
+.management-headline a:link, 
+.management-headline a:visited, 
+.management-headline a:hover
+{
+font-size: 48px;
+font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+font-weight: bold;
+font-style: normal;
+text-decoration: none;
+letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  color: #4F5049 !important;
+  white-space: nowrap;
+}
+.management-slogan
+{
+  display: inline-block;
+  position: absolute;
+  min-width: 50px;
+  top: 119px;
+  left: 33.17%;
+  line-height: 100%;
+  margin-left: -87px !important;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  z-index: 99;
+  white-space: nowrap;
+}
+
+.management-slogan, 
+.management-slogan a, 
+.management-slogan a:link, 
+.management-slogan a:visited, 
+.management-slogan a:hover
+{
+font-size: 14px;
+font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+font-weight: bold;
+font-style: normal;
+text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #3A3B35 !important;
+}
+
+
+
+
+.management-footer .layout-item-0 { padding: 10px; vertical-align: middle;  }
+.ie7 .post .layout-cell {border:none !important; padding:0 !important; }
+.ie6 .post .layout-cell {border:none !important; padding:0 !important; }
+
+.management-header
+{
+   margin:0 auto;
+   position:relative;
+   height: 210px;
+   background-image: url('images/header.jpg');
+   background-position: center top;
+   background-repeat: no-repeat;
+}
+
+.responsive .management-header 
+{
+   background-image: url('images/header.jpg');
+   background-position: center center;
+}
+
+.management-header-inner{
+   position: relative;
+   width: 882px;
+   z-index: auto !important;
+   margin: 0 auto;
+}
+
+.management-header>.widget 
+{
+   position:absolute;
+   z-index:101;
+}
+
+.management-nav
+{
+   background: #293638;
+   background: linear-gradient(top, #0F1415 0, #415558 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #0F1415 0, #415558 100%) no-repeat;
+   background: -moz-linear-gradient(top, #0F1415 0, #415558 100%) no-repeat;
+   background: -o-linear-gradient(top, #0F1415 0, #415558 100%) no-repeat;
+   background: -ms-linear-gradient(top, #0F1415 0, #415558 100%) no-repeat;
+   background: linear-gradient(top, #0F1415 0, #415558 100%) no-repeat;
+   -svg-background: linear-gradient(top, #0F1415 0, #415558 100%) no-repeat;
+   padding:9px 6px;
+   margin:0 auto;
+   position: relative;
+   z-index: 100;
+   font-size: 0;
+}
+
+ul.management-hmenu a, ul.management-hmenu a:link, ul.management-hmenu a:visited, ul.management-hmenu a:hover 
+{
+   outline: none;
+   position: relative;
+   z-index: 11;
+}
+
+ul.management-hmenu, ul.management-hmenu ul
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   list-style-type: none;
+}
+
+ul.management-hmenu li
+{
+   position: relative;
+   z-index: 5;
+   display: block;
+   float: left;
+   background: none;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+ul.management-hmenu li:hover
+{
+   z-index: 10000;
+   white-space: normal;
+}
+
+ul.management-hmenu:after, ul.management-hmenu ul:after
+{
+   content: ".";
+   height: 0;
+   display: block;
+   visibility: hidden;
+   overflow: hidden;
+   clear: both;
+}
+
+ul.management-hmenu, ul.management-hmenu ul 
+{
+   min-height: 0;
+}
+
+ul.management-hmenu 
+{
+   display: inline-block;
+   vertical-align: middle;
+   padding-left: 6px;
+   padding-right: 6px;
+}
+
+.management-nav-inner:before 
+{
+   content:' ';
+}
+
+.management-nav-inner{
+   text-align: left;
+   margin:0 auto;
+}
+
+.desktop-nav .management-nav-inner{
+   width: 882px;
+   padding-left: 6px;
+   padding-right: 6px;
+}
+
+.desktop-nav.management-nav
+{
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.management-hmenu-extra1
+{
+   position: relative;
+   display: block;
+   float: left;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.management-hmenu-extra2
+{
+   position: relative;
+   display: block;
+   float: right;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.management-hmenu
+{
+   float: left;
+}
+
+.management-menuitemcontainer
+{
+   margin:0 auto;
+}
+ul.management-hmenu>li {
+   margin-left: 8px;
+}
+ul.management-hmenu>li:first-child {
+   margin-left: 4px;
+}
+ul.management-hmenu>li:last-child, ul.management-hmenu>li.last-child {
+   margin-right: 4px;
+}
+
+ul.management-hmenu>li>a
+{
+   background: #9EB4B7;
+   background: transparent;
+   -webkit-border-radius:11px;
+   -moz-border-radius:11px;
+   border-radius:11px;
+   border:1px solid transparent;
+   padding:0 17px;
+   margin:0 auto;
+   position: relative;
+   display: block;
+   height: 28px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #C9D9D9;
+   line-height: 28px;
+   text-align: center;
+}
+
+.management-hmenu a, 
+.management-hmenu a:link, 
+.management-hmenu a:visited, 
+.management-hmenu a.active, 
+.management-hmenu a:hover
+{
+   font-size: 16px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   text-align: left;
+}
+
+ul.management-hmenu>li>a.active
+{
+   background: #46BBD2;
+   background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -moz-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -o-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -ms-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   -svg-background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   -webkit-border-radius:11px;
+   -moz-border-radius:11px;
+   border-radius:11px;
+   border:1px solid #2B9AB1;
+   padding:0 17px;
+   margin:0 auto;
+   color: #1F2D2C;
+   text-decoration: none;
+}
+
+ul.management-hmenu>li>a:visited, 
+ul.management-hmenu>li>a:hover, 
+ul.management-hmenu>li:hover>a {
+   text-decoration: none;
+}
+
+ul.management-hmenu>li>a:hover, .desktop ul.management-hmenu>li:hover>a
+{
+   background: #7BA3A1;
+   background: linear-gradient(top, #90B2B0 0, #699694 93%, #669391 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #90B2B0 0, #699694 93%, #669391 100%) no-repeat;
+   background: -moz-linear-gradient(top, #90B2B0 0, #699694 93%, #669391 100%) no-repeat;
+   background: -o-linear-gradient(top, #90B2B0 0, #699694 93%, #669391 100%) no-repeat;
+   background: -ms-linear-gradient(top, #90B2B0 0, #699694 93%, #669391 100%) no-repeat;
+   background: linear-gradient(top, #90B2B0 0, #699694 93%, #669391 100%) no-repeat;
+   -svg-background: linear-gradient(top, #90B2B0 0, #699694 93%, #669391 100%) no-repeat;
+   -webkit-border-radius:11px;
+   -moz-border-radius:11px;
+   border-radius:11px;
+   border:1px solid #628D8B;
+   padding:0 17px;
+   margin:0 auto;
+}
+ul.management-hmenu>li>a:hover, 
+.desktop-nav ul.management-hmenu>li:hover>a {
+   color: #1F2D2C;
+   text-decoration: none;
+}
+
+ul.management-hmenu li li a
+{
+   background: #C1CFD1;
+   padding:0 22px;
+   margin:0 auto;
+}
+ul.management-hmenu li li 
+{
+   float: none;
+   width: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.desktop-nav ul.management-hmenu li li ul>li:first-child 
+{
+   margin-top: 0;
+}
+
+ul.management-hmenu li li ul>li:last-child 
+{
+   margin-bottom: 0;
+}
+
+.management-hmenu ul a
+{
+   display: block;
+   white-space: nowrap;
+   height: 23px;
+   min-width: 7em;
+   border: 0 solid transparent;
+   text-align: left;
+   line-height: 23px;
+   color: #21302F;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   margin:0;
+}
+
+.management-hmenu ul a:link, 
+.management-hmenu ul a:visited, 
+.management-hmenu ul a.active, 
+.management-hmenu ul a:hover
+{
+   text-align: left;
+   line-height: 23px;
+   color: #21302F;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   margin:0;
+}
+
+ul.management-hmenu ul li a:hover, .desktop ul.management-hmenu ul li:hover>a
+{
+   background: #9EB4B7;
+   margin:0 auto;
+}
+
+.management-hmenu ul li a:hover
+{
+   color: #000000;
+}
+
+.desktop-nav .management-hmenu ul li:hover>a
+{
+   color: #000000;
+}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+ul.management-hmenu ul:before
+{
+   background: #EDF1F2;
+   margin:0 auto;
+   display: block;
+   position: absolute;
+   content: ' ';
+   z-index: 1;
+}
+.desktop-nav ul.management-hmenu li:hover>ul {
+   visibility: visible;
+   top: 100%;
+}
+.desktop-nav ul.management-hmenu li li:hover>ul {
+   top: 0;
+   left: 100%;
+}
+
+ul.management-hmenu ul
+{
+   visibility: hidden;
+   position: absolute;
+   z-index: 10;
+   left: 0;
+   top: 0;
+   background-image: url('images/spacer.gif');
+}
+
+.desktop-nav ul.management-hmenu>li>ul
+{
+   padding: 10px 30px 30px 30px;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop-nav ul.management-hmenu ul ul
+{
+   padding: 30px 30px 30px 10px;
+   margin: -30px 0 0 -10px;
+}
+
+.desktop-nav ul.management-hmenu ul.management-hmenu-left-to-right 
+{
+   right: auto;
+   left: 0;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop-nav ul.management-hmenu ul.management-hmenu-right-to-left 
+{
+   left: auto;
+   right: 0;
+   margin: -10px -30px 0 0;
+}
+
+.desktop-nav ul.management-hmenu li li:hover>ul.management-hmenu-left-to-right {
+   right: auto;
+   left: 100%;
+}
+.desktop-nav ul.management-hmenu li li:hover>ul.management-hmenu-right-to-left {
+   left: auto;
+   right: 100%;
+}
+
+.desktop-nav ul.management-hmenu ul ul.management-hmenu-left-to-right
+{
+   right: auto;
+   left: 0;
+   padding: 30px 30px 30px 10px;
+   margin: -30px 0 0 -10px;
+}
+
+.desktop-nav ul.management-hmenu ul ul.management-hmenu-right-to-left
+{
+   left: auto;
+   right: 0;
+   padding: 30px 10px 30px 30px;
+   margin: -30px -10px 0 0;
+}
+
+.desktop-nav ul.management-hmenu li ul>li:first-child {
+   margin-top: 0;
+}
+.desktop-nav ul.management-hmenu li ul>li:last-child {
+   margin-bottom: 0;
+}
+
+.desktop-nav ul.management-hmenu ul ul:before
+{
+   border-radius: 0;
+   top: 30px;
+   bottom: 30px;
+   right: 30px;
+   left: 10px;
+}
+
+.desktop-nav ul.management-hmenu>li>ul:before
+{
+   top: 10px;
+   right: 30px;
+   bottom: 30px;
+   left: 30px;
+}
+
+.desktop-nav ul.management-hmenu>li>ul.management-hmenu-left-to-right:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop-nav ul.management-hmenu>li>ul.management-hmenu-right-to-left:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop-nav ul.management-hmenu ul ul.management-hmenu-left-to-right:before {
+   right: 30px;
+   left: 10px;
+}
+.desktop-nav ul.management-hmenu ul ul.management-hmenu-right-to-left:before {
+   right: 10px;
+   left: 30px;
+}
+
+.management-sheet
+{
+   border:1px solid transparent;
+   margin:20px auto 0;
+   position:relative;
+   cursor:auto;
+   width: 882px;
+   z-index: auto !important;
+}
+
+.management-layout-wrapper
+{
+   position: relative;
+   margin: 10px auto 0 auto;
+   z-index: auto !important;
+}
+
+.management-content-layout
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+   border-collapse: collapse;
+}
+
+.management-content-layout-row 
+{
+   display: table-row;
+}
+
+.management-layout-cell
+{
+   display: table-cell;
+   vertical-align: top;
+}
+
+.management-breadcrumbs
+{
+   margin:0 auto;
+}
+
+a.management-button,
+a.management-button:link,
+a:link.management-button:link,
+body a.management-button:link,
+a.management-button:visited,
+body a.management-button:visited,
+input.management-button,
+button.management-button
+{
+   text-decoration: none;
+   font-size: 16px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   position:relative;
+   display: inline-block;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-align: center;
+   color: #151E1E;
+   margin: 0 !important;
+   overflow: visible;
+   cursor: pointer;
+   text-indent: 0;
+   line-height: 30px;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.management-button img
+{
+   margin: 0;
+   vertical-align: middle;
+}
+
+.firefox2 .management-button
+{
+   display: block;
+   float: left;
+}
+
+input, select, textarea
+{
+   vertical-align: middle;
+   font-size: 16px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-block select 
+{
+   width:96%;
+}
+
+input.management-button
+{
+   float: none !important;
+}
+
+.management-button.active, .management-button.active:hover
+{
+   background: #46BBD2;
+   background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -moz-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -o-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -ms-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   -svg-background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   -webkit-border-radius:12px;
+   -moz-border-radius:12px;
+   border-radius:12px;
+   border:1px solid #2B9AB1;
+   padding:0 20px;
+   margin:0 auto;
+}
+.management-button.active, .management-button.active:hover {
+   color: #0A2429 !important;
+}
+
+.management-button.hover, .management-button:hover
+{
+   background: #78CDDE;
+   background: linear-gradient(top, #98D9E6 0, #5BC2D7 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #98D9E6 0, #5BC2D7 100%) no-repeat;
+   background: -moz-linear-gradient(top, #98D9E6 0, #5BC2D7 100%) no-repeat;
+   background: -o-linear-gradient(top, #98D9E6 0, #5BC2D7 100%) no-repeat;
+   background: -ms-linear-gradient(top, #98D9E6 0, #5BC2D7 100%) no-repeat;
+   background: linear-gradient(top, #98D9E6 0, #5BC2D7 100%) no-repeat;
+   -svg-background: linear-gradient(top, #98D9E6 0, #5BC2D7 100%) no-repeat;
+   -webkit-border-radius:12px;
+   -moz-border-radius:12px;
+   border-radius:12px;
+   border:1px solid #46BBD2;
+   padding:0 20px;
+   margin:0 auto;
+}
+.management-button.hover, .management-button:hover {
+   color: #1A2223 !important;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   background: #FFFFFF;
+   margin:0 auto;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   width: 100%;
+   padding: 8px 0;
+   color: #364749 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+input.management-error, textarea.management-error
+{
+   background: #FFFFFF;
+   border:1px solid #E2341D;
+   margin:0 auto;
+}
+input.management-error, textarea.management-error {
+   color: #364749 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.management-search input[type="text"]
+{
+   background: #FFFFFF;
+   border-radius: 0;
+   margin:0 auto;
+   width: 100%;
+   padding: 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #364749 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.management-search 
+{
+   background-image: none;
+   border: 0;
+   display:block;
+   position:relative;
+   top:0;
+   padding:0;
+   margin:5px;
+   left:0;
+   line-height: 0;
+}
+
+form.management-search input
+{
+   top:0;
+   right:0;
+}
+
+form.management-search>input {
+   bottom:0;
+   left:0;
+   vertical-align: middle;
+}
+ 
+form.management-search input[type="submit"]
+{
+   background: #46BBD2;
+   margin:0 auto;
+   color: #151E1E !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position:absolute;
+   display:block;
+   left: auto;
+   border: 0;
+   top: 0;
+   bottom: 0;
+   right: 	0;
+}
+
+label.management-checkbox:before
+{
+   background: #FFFFFF;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.management-checkbox
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+}
+
+.management-checkbox>input[type="checkbox"]
+{
+   margin: 0 5px 0 0;
+}
+
+label.management-checkbox.active:before
+{
+   background: #78CDDE;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.management-checkbox.hovered:before
+{
+   background: #B9E5EE;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.management-radiobutton:before
+{
+   background: #FFFFFF;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+}
+label.management-radiobutton
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 12px;
+   display: inline-block;
+}
+
+.management-radiobutton>input[type="radio"]
+{
+   vertical-align: baseline;
+   margin: 0 5px 0 0;
+}
+
+label.management-radiobutton.active:before
+{
+   background: #78CDDE;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+label.management-radiobutton.hovered:before
+{
+   background: #B9E5EE;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+.management-block
+{
+   margin:15px;
+}
+div.management-block img
+{
+   border: none;
+   margin: 0;
+}
+
+.management-blockheader
+{
+   background: #46BBD2;
+   background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -moz-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -o-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: -ms-linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   -svg-background: linear-gradient(top, #63C6D9 0, #32B3CD 86%, #30ACC5 100%) no-repeat;
+   -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   border-radius:10px;
+   border:1px solid #2B9AB1;
+   padding:8px 5px;
+   margin:0 auto 4px;
+}
+.management-blockheader .t,
+.management-blockheader .t a,
+.management-blockheader .t a:link,
+.management-blockheader .t a:visited, 
+.management-blockheader .t a:hover
+{
+   color: #000000;
+   font-size: 16px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: center;
+   margin: 0 10px;
+}
+
+.management-blockcontent
+{
+   padding:5px;
+   margin:0 auto;
+   color: #161C1D;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+.management-blockcontent table,
+.management-blockcontent li, 
+.management-blockcontent a,
+.management-blockcontent a:link,
+.management-blockcontent a:visited,
+.management-blockcontent a:hover
+{
+   color: #161C1D;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-blockcontent p
+{
+   margin: 6px 0;
+}
+
+.management-blockcontent a, .management-blockcontent a:link
+{
+   color: #195A67;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.management-blockcontent a:visited, .management-blockcontent a.visited
+{
+   color: #F0F4F4;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.management-blockcontent a:hover, .management-blockcontent a.hover
+{
+   color: #09BDDC;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+.management-block ul>li:before
+{
+   content:url('images/blockbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -12px;
+}
+.opera .management-block ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.management-block li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 150%;
+   color: #E8EDEE;
+   margin: 0 0 0 10px;
+}
+
+.management-block ul>li, .management-block ol
+{
+   padding: 0;
+}
+
+.management-block ul>li
+{
+   padding-left: 12px;
+}
+
+.management-post
+{
+   background: #EDF1F2;
+   -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+   border-radius:8px;
+   padding:10px;
+   margin:2px;
+}
+a img
+{
+   border: 0;
+}
+
+.management-article img, img.management-article, .management-block img, .management-footer img
+{
+   margin: 0 0 0 0;
+}
+
+.management-metadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.management-article table, table.management-article
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+.management-post .management-content-layout-br
+{
+   height: 0;
+}
+
+.management-article th, .management-article td
+{
+   padding: 2px;
+   border: solid 1px #7B999D;
+   vertical-align: top;
+   text-align: left;
+}
+
+.management-article th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+.preview-cms-logo
+{
+   border: 0;
+   margin: 1em 1em 0 0;
+   float: left;
+}
+
+.image-caption-wrapper
+{
+   padding: 0 0 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper div.management-collage
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+   font-size: 80%;
+   text-align: right;
+   margin: 0;
+}
+
+.management-postheader
+{
+   color: #164F5A;
+   margin: 0 0 0 10px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postheader a, 
+.management-postheader a:link, 
+.management-postheader a:visited,
+.management-postheader a.visited,
+.management-postheader a:hover,
+.management-postheader a.hovered
+{
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-postheader a, .management-postheader a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #2A97AC;
+}
+
+.management-postheader a:visited, .management-postheader a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #6F9095;
+}
+
+.management-postheader a:hover,  .management-postheader a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #2FA9C1;
+}
+
+.management-postheadericons,
+.management-postheadericons a,
+.management-postheadericons a:link,
+.management-postheadericons a:visited,
+.management-postheadericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #303E41;
+}
+
+.management-postheadericons
+{
+   display:inline-block;
+   padding: 1px;
+}
+
+.management-postheadericons a, .management-postheadericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #43605F;
+}
+
+.management-postheadericons a:visited, .management-postheadericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: none;
+   color: #43605F;
+}
+
+.management-postheadericons a:hover, .management-postheadericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: underline;
+   color: #207383;
+}
+
+.management-postpdficon:before
+{
+   content:url('images/postpdficon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .management-postpdficon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.management-postprinticon:before
+{
+   content:url('images/postprinticon.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .management-postprinticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.management-postemailicon:before
+{
+   content:url('images/postemailicon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .management-postemailicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.management-postcontent ul>li:before,  .management-post ul>li:before,  .management-textblock ul>li:before
+{
+   content:url('images/postbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .management-postcontent ul>li:before, .opera   .management-post ul>li:before, .opera   .management-textblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.management-postcontent li, .management-post li, .management-textblock li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   line-height: 150%;
+   color: #0F1415;
+   margin: 0 0 0 26px;
+}
+
+.management-postcontent ul>li, .management-post ul>li, .management-textblock ul>li, .management-postcontent ol, .management-post ol, .management-textblock ol
+{
+   padding: 0;
+}
+
+.management-postcontent ul>li, .management-post ul>li, .management-textblock ul>li
+{
+   padding-left: 13px;
+}
+
+.management-postcontent ul>li:before,  .management-post ul>li:before,  .management-textblock ul>li:before
+{
+   margin-left: -13px;
+}
+
+.management-postcontent ol, .management-post ol, .management-textblock ol, .management-postcontent ul, .management-post ul, .management-textblock ul
+{
+   margin: 1em 0 1em 26px;
+}
+
+.management-postcontent li ol, .management-post li ol, .management-textblock li ol, .management-postcontent li ul, .management-post li ul, .management-textblock li ul
+{
+   margin: 0.5em 0 0.5em 26px;
+}
+
+.management-postcontent li, .management-post li, .management-textblock li
+{
+   margin: 0 0 0 0;
+}
+
+.management-postcontent ol>li, .management-post ol>li, .management-textblock ol>li
+{
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.management-postcontent ul>li, .management-post ul>li, .management-textblock ul>li
+{
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+blockquote
+{
+   background: #EDF1F2 url('images/postquote.png') no-repeat scroll;
+   padding:0 0 0 28px;
+   margin:10px 10px 10px 50px;
+   color: #0F1415;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+blockquote a, .management-postcontent blockquote a, .management-blockcontent blockquote a, .management-footer blockquote a,
+blockquote a:link, .management-postcontent blockquote a:link, .management-blockcontent blockquote a:link, .management-footer blockquote a:link,
+blockquote a:visited, .management-postcontent blockquote a:visited, .management-blockcontent blockquote a:visited, .management-footer blockquote a:visited,
+blockquote a:hover, .management-postcontent blockquote a:hover, .management-blockcontent blockquote a:hover, .management-footer blockquote a:hover
+{
+   color: #0F1415;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+}
+
+/* Override native 'p' margins*/
+blockquote p,
+.management-postcontent blockquote p,
+.management-blockcontent blockquote p,
+.management-footer blockquote p
+{
+   margin: 0;
+   margin: 2px 0 2px 15px;
+}
+
+.management-postfootericons,
+.management-postfootericons a,
+.management-postfootericons a:link,
+.management-postfootericons a:visited,
+.management-postfootericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #303E41;
+}
+
+.management-postfootericons
+{
+   display:inline-block;
+   padding: 1px;
+}
+
+.management-postfootericons a, .management-postfootericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #207383;
+}
+
+.management-postfootericons a:visited, .management-postfootericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #43605F;
+}
+
+.management-postfootericons a:hover, .management-postfootericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #151E1E;
+}
+
+.management-footer
+{
+   background: #293638;
+   background: transparent;
+   padding:25px;
+   margin:10px auto 0;
+   position: relative;
+   color: #0A2429;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-align: left;
+}
+
+.management-footer a,
+.management-footer a:link,
+.management-footer a:visited,
+.management-footer a:hover,
+.management-footer td, 
+.management-footer th,
+.management-footer caption
+{
+   color: #0A2429;
+   font-size: 12px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.management-footer p 
+{
+   padding:0;
+   text-align: left;
+}
+
+.management-footer a,
+.management-footer a:link
+{
+   color: #195A67;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.management-footer a:visited
+{
+   color: #181F20;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.management-footer a:hover
+{
+   color: #09BDDC;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.management-footer img
+{
+   border: none;
+   margin: 0;
+}
+
+.management-rss-tag-icon
+{
+   background:  url('images/footerrssicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:38px;
+   min-width:29px;
+   display: inline-block;
+   text-indent: 32px;
+   background-position: left center;
+}
+
+.management-rss-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.management-footer li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 125%;
+   color: #E8EDEE;
+}
+
+.management-page-footer, 
+.management-page-footer a,
+.management-page-footer a:link,
+.management-page-footer a:visited,
+.management-page-footer a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #2B393B;
+}
+
+.management-page-footer
+{
+   position: relative;
+   z-index: auto !important;
+   padding: 1em;
+   text-align: center !important;
+   text-decoration: none;
+   color: #144852;
+}
+
+img.management-lightbox
+{
+   cursor: pointer;
+}
+
+#management-lightbox-bg *
+{
+   padding: 0;
+   margin: 0;
+}
+
+div#management-lightbox-bg
+{
+   top: 0;
+   left: 0;
+   width: 100%;
+   position: absolute;
+   height: 100%;
+   background-color: #000;
+   opacity: 0.8;
+   filter: alpha(opacity=80);
+   z-index: 9999;
+}
+
+img.management-lightbox-image
+{
+   -webkit-transition: opacity 350ms ease-in-out;
+   -moz-transition: opacity 350ms ease-in-out;
+   -o-transition: opacity 350ms ease-in-out;
+   -ms-transition: opacity 350ms ease-in-out;
+   transition: opacity 350ms ease-in-out;
+   cursor: pointer;
+   z-index: 10000;
+   position: fixed;
+   border: 6px solid #fff;
+   border-radius: 3px;
+   opacity: 0;
+   filter: alpha(opacity=0);
+}
+
+img.management-lightbox-image.active
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.lightbox-error
+{
+   position: fixed;
+   background: #fff;
+   z-index: 100;
+   opacity: 0.95;
+   padding: 20px;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   width: 300px;
+   height: 80px;
+}
+
+.loading
+{
+   position: fixed;
+   background: #fff url('images/preloader-01.gif') center center no-repeat;
+   width: 32px;
+   height: 32px;
+   z-index: 10100;
+   opacity: 0.5;
+   padding: 10px;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+}
+
+.arrow
+{
+   height: 100px;
+   width: 82px;
+   z-index: 10003;
+   position: fixed;
+   cursor: pointer;
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+}
+
+.arrow.left
+{
+   left: 9px;
+}
+.arrow.right
+{
+   right: 9px;
+}
+
+.arrow:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.arrow.disabled 
+{
+   display: none;
+}
+
+.arrow-t, .arrow-b
+{
+   height: 6px;
+   width: 30px;
+   left: 26px;
+   background-color: #fff;
+   position: relative;
+   border-radius: 3px;
+}
+
+.arrow-t
+{
+   top: 38px;
+}
+
+.arrow-b
+{
+   top: 50px;
+}
+
+.close
+{
+   width: 22px;
+   height: 22px;
+   position: fixed;
+   top: 30px;
+   right: 39px;
+   cursor: pointer;
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+}
+
+.close:hover 
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.close .cw, .close .ccw
+{
+   position: absolute;
+   top: 8px;
+   left: -4px;
+   width: 30px;
+   height: 6px;
+   background-color: #fff;
+   border-radius: 3px;
+}
+
+.cw
+{
+   transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(45deg);
+   /* Opera */
+    -moz-transform: rotate(45deg);
+/* Firefox */}
+
+.ccw
+{
+   transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(-45deg);
+   /* Opera */
+    -moz-transform: rotate(-45deg);
+/* Firefox */}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt 
+{
+   display: none;
+   color: #fff;
+   font-size: 2.5em;
+}
+
+.ie8 .close-alt, .ie8 .arrow-right-alt, .ie8 .arrow-left-alt {
+   display: block;
+}
+.ie8 .cw, .ie8 .ccw {
+   display: none;
+}
+
+.management-content-layout .management-content
+{
+   margin:0 auto;
+}
+
+.management-content-layout .management-sidebar1
+{
+   margin:0 auto;
+   width: 235px;
+}
+
+/* Begin Additional CSS Styles */
+.management-blockheader .t, .management-vmenublockheader .t {white-space: nowrap;}
+.responsive .management-header .management-headline a
+{font-size: 32px;}
+
+/* End Additional CSS Styles */

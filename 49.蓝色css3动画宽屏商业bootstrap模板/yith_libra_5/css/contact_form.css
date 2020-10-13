@@ -1,0 +1,168 @@
+.content .contact-form li.text-field input,
+.content .contact-form li.password-field input,
+.content .contact-form li.file-field input,
+.content .contact-form li textarea,
+.content .contact-form li select
+{
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.content .contact-form li select {
+	height: 45px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.content .contact-form li.text-field input.error,
+.content .contact-form li textarea.error
+{
+	background-color: #eff1f2;
+	border: 1px solid #CF0606;
+}
+
+.content .contact-form li input, .content .contact-form li textarea, .content .contact-form li select {
+    font-family: 'Open Sans','Verdana','Arial',sans-serif;
+    font-size: 13px;
+}
+
+.content .contact-form fieldset {padding:0; margin-top: 10px }          
+.content .contact-form ul { margin:0; list-style:none; }
+.content .contact-form li { position: relative; }
+
+/* Label */
+.content .contact-form li label { display: block; position: absolute; z-index: 10; top: 11px; left: 12px; font-size: 13px; }
+.content .contact-form li.with-icon label { display: block; position: absolute; z-index: 10; top: 11px; left: 53px; font-size: 13px; }
+.content .contact-form .file-field label { display: inline-block; position: static; }
+.content .contact-form li label span.mainlabel { font-size:13px; float: left; }
+.content .contact-form li label span.sublabel { font-size: 11px; color: #9C9B9B; float: left; clear: left;}
+.content .contact-form .text-field label span.sublabel,
+.content .contact-form .password-field label span.sublabel { margin-top: -49px;}
+.content .contact-form li.select-field label span.sublabel, .content .contact-form li.with-icon.select-field label span.sublabel  { margin-top: -30px;}
+.content .contact-form .textarea-field span.sublabel { margin-top: -50px; }
+.content .contact-form li.text-field label span.sublabel { margin-left: -12px }
+.content .contact-form li.with-icon label span.sublabel { margin-left: -49px }
+.content .contact-form li.checkbox-field label, .content .contact-form li.radio-field label { display: inline-block; }
+.content .contact-form li input { padding: 6px 5px; }
+.content .contact-form li.with-icon input[type="text"], .content .contact-form li.with-icon input[type="password"], .content .contact-form li.with-icon select { text-indent: 48px;}
+.gecko .content .contact-form li.with-icon select, .ie .content .contact-form li.with-icon select  { padding-left: 48px; text-indent: 0; }
+.safari .content .contact-form li.with-icon select { text-indent: 48px;}
+.content .contact-form li select { padding: 11px 6px; }
+.content .contact-form label, .content .contact-form input, .content .contact-form textarea { color:#4c4c4c; }
+
+/* Input validation error */
+.content .contact-form li.error input, .content .contact-form li.error textarea, .content .contact-form li.error select,
+.content .contact-form li input.error, .content .contact-form li textarea.error, .content .contact-form li select.error { border:1px solid #cf0606; }                    
+.content .contact-form li div.msg-error { font-style:normal; font-size:11px; color:#cf0606; position: absolute; top: 47px; }
+.content .contact-form li.file-field div.msg-error { font-style:normal; font-size:11px; color:#cf0606; position: absolute; top: 80px; }
+.content .contact-form li.radio-field div.msg-error  { position: static; margin-top: -35px; }
+.content .contact-form li.textarea-field div.msg-error { top: 202px; } 
+
+#yit_bot {display:none !important;}
+
+/* Add-on Icon */
+.input-prepend { position: relative; margin-bottom: 35px; font-size: 13px}
+.input-prepend .add-on { position: absolute; top: 1px; left: 1px; background-color: #f3f1f1; border: 0px; z-index: 10; width: 45px; height: 43px; padding: 0; line-height: 43px; }
+.textarea-field .input-prepend .add-on{ position: absolute; top: 1px; left: 1px; background-color: #f3f1f1; border: 0px; z-index: 10; width: 45px; height: 198px; padding: 0; line-height: 43px; }
+.input-prepend input.error, .input-prepend textarea.error{ background-image: none !important; }
+.content .contact-form li input[type="file"].error, .content .contact-form li input[type="checkbox"].error { border: none !important; }
+
+/* Textarea */
+.content .contact-form li textarea,
+.content .contact-form li textarea:focus {
+    border: 1px solid #e1e1e1;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: 200px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+	resize: none;
+    max-width: 100%;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+.content .contact-form li.with-icon textarea {
+	padding-left: 50px;	
+}
+
+/* input */
+.content .contact-form li input[type="text"],
+.content .contact-form li input[type="password"] {
+	height: 45px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#ie8 .content .contact-form li input[type="text"], #ie8 .content .contact-form li input[type="password"] { line-height: 45px; }
+
+
+.content .contact-form li input[type="file"] {
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* submit alignment */
+.content .contact-form li.submit-button input[disabled] { color:#ddd; }
+
+.content .contact-form li.submit-button input.sendmail {
+	clear:both;
+	float:none;
+    background: #eee8e8 url("../images/sendmail-arrow.png") no-repeat 6px 50%;
+    border: 1px solid #d1cece;
+    border-left: 5px solid #b4b3b3;
+    color: #8a898a;
+    display: inline-block;
+    padding: 8px 25px;
+}
+
+.contact-form li.submit-button input.sendmail:hover { background-color: #e0dfdf; }
+
+.contact-form li.submit-button input.sendmail.alignleft { float:left; }
+.contact-form li.submit-button input.sendmail.alignright { float:right; }
+.contact-form li.submit-button input.sendmail.aligncenter { display: block; margin:0 auto; }
+
+/* checkbox */
+.content .contact-form .checkbox-field label {
+	margin-top: -10px;
+	margin-left: 5px;
+}
+
+.ie .content .contact-form .checkbox-field label { margin-left: 10px };
+.content .contact-form .checkbox-field label .sublabel { margin-left: -16px; }
+.ie .content .contact-form .checkbox-field label .sublabel { margin-left: 0; }
+
+/* radio */
+.content .contact-form .radio-field input {
+	margin-right: 5px;
+	float: left;
+	clear: left;
+	vertical-align: middle;
+}
+
+.content .contact-form .radio-field label {
+	position: static;
+	float: left;
+}
+
+.ie .content .contact-form .radio-field .input-prepend label { margin-top: 3px }
+
+/* Message Success and Error */
+.content .contact-form p.success, .content .contact-form p.error { border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; }
+.content .contact-form p.success, .content .contact-form p.error { padding:10px 15px 10px 55px; border:1px solid; margin:0 auto 30px; background:no-repeat 15px center; width:400px; }
+.content .contact-form p.success { background-color:#effea9; border-color:#d7ee6e; color:#839607; }
+.content .contact-form p.error   { background-color:#fedccd; border-color:#fa8c83; color:#c82c1f; }

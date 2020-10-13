@@ -1,0 +1,92 @@
+
+
+/*Slider*/
+.slider-relative {
+	position:relative;
+	overflow:hidden;
+	margin: 0 auto;
+}
+
+
+.items {
+	display: none;	
+}
+
+.slider-block {
+	position:relative;
+	overflow:hidden;
+	height: 625px;
+	margin: 0 auto;
+	
+}
+.slider {
+	z-index:2;
+	height: 625px;
+	position: absolute;
+	left: 50%;
+	margin-left: -800px;
+	width: 1600px;
+}
+
+
+.slider .banner{
+	position: absolute;
+	z-index: 1 !important;
+	background: url(../images/banner_bg.png) 0 0 repeat;
+	left: 0;
+	width: 210px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	right: 0;
+	top: 402px;
+	width: 100%;
+}
+
+.banner h2 {
+	color: #fff;
+	font-size: 21px;
+	line-height: 38px;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	padding-bottom: 26px;
+	text-align: center;
+	padding: 11px 60px 10px ;
+}
+
+.banner h2 span {
+	color: #e5ad2a;	
+}
+
+
+.pagination {
+bottom: 0px;
+position: absolute;
+left: 50%;
+margin-left: -51px;
+z-index: 999;
+}
+
+.pagination li {
+	float: left;
+}
+
+.pagination li+li {
+	margin-left: 15px;
+}
+
+
+.pagination  li a{
+	width: 24px;
+	display: block;
+		transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+	height: 23px;
+	background: url(../images/pagination.png) right 0 no-repeat;
+}
+
+.pagination li a:hover, .pagination li.current a {
+	background-position: 0 0;
+}

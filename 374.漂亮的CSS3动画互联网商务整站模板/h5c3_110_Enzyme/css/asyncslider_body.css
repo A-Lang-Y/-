@@ -1,0 +1,128 @@
+	
+	/* Prev Next Nav */
+	#asyncslider_next_prev_nav {position: relative !important;}
+	#asyncslider_next_prev_nav li {}
+	#asyncslider_next_prev_nav li a {}
+	#asyncslider_next_prev_nav li.prev a {}
+	#asyncslider_next_prev_nav li.next a {}
+	/* Slide Buttons Nav */
+	#asyncslider_slides_nav {
+		position:relative;
+		bottom:44px;
+		text-indent:-99999px;
+		left:0;		
+	}
+	#asyncslider_slides_nav li {
+		position: relative !important;
+	}
+	.slider-wrapper .fallback {display:none;}	
+	#asyncslider_slides_nav li a {
+		width:9px;
+		height:9px;
+		background:url(../images/async/assets/bullets.png) no-repeat transparent;
+		float:left;
+		margin:0 0 0 2px;
+		position:relative;
+		z-index:1000000000;
+		display:block;
+	}
+	#asyncslider_slides_nav li.active {}
+	#asyncslider_slides_nav li.active a {background-position:0 -10px;}
+	.asyncslider {
+		height:410px;
+		background:url(../images/design/rb-960.png) left top no-repeat transparent;
+		position:relative;
+		margin:auto;
+		z-index:331;
+	}
+	.asyncslider.hide {
+		display:none;
+	}
+	.asyncslider .slide {
+		height:100%;
+		position:relative;
+	}
+	.asyncslider .slide h1 {width:531px;}
+	.asyncslider .slide h2 {width:283px;}
+	.asyncslider .slide h3 {width:104px;}
+	.asyncslider .slide .laptop { left:-41px;z-index:1;top:153px; }
+	.asyncslider .slide .iphone { left:422px;z-index:12;top:189px; }
+	.asyncslider .slide .monitor { left:125px;z-index:4;top:24px; }
+	.asyncslider .slide #button { position:absolute;top:230px; }
+	.asyncslider .slide .laptop img, .asyncslider .slide .monitor img, .asyncslider .slide .iphone img { position:relative; }
+	
+	/* ClEAR PROPERTIES */
+	/* #Typography
+================================================== */
+		.asyncslider div, .asyncslider span,.asyncslider  applet, .asyncslider object, .asyncslider iframe, .asyncslider h1, .asyncslider h2, .asyncslider h3, .asyncslider h4, .asyncslider h5, .asyncslider h6, .asyncslider p, .asyncslider blockquote, .asyncslider pre, .asyncslider a, .asyncslider abbr, .asyncslider acronym, .asyncslider address, .asyncslider big, .asyncslider cite, .asyncslider code, .asyncslider del, .asyncslider dfn, .asyncslider em, .asyncslider img, .asyncslider ins, .asyncslider kbd, .asyncslider q, s, .asyncslider samp, .asyncslider small, .asyncslider strike, .asyncslider strong, .asyncslider sub, .asyncslider sup, .asyncslider tt, .asyncslider var, .asyncslider b, .asyncslider u, .asyncslider i, .asyncslider center, .asyncslider dl, .asyncslider dt, .asyncslider dd, .asyncslider ol, .asyncslider ul, .asyncslider li, .asyncslider fieldset, .asyncslider form, .asyncslider label, .asyncslider legend, .asyncslider table, .asyncslider caption, .asyncslider tbody, .asyncslider tfoot, .asyncslider thead, .asyncslider tr, .asyncslider th, .asyncslider td, .asyncslider article, .asyncslider aside, .asyncslider canvas, .asyncslider details, .asyncslider embed, .asyncslider figure,.asyncslider  figcaption, .asyncslider footer, .asyncslider header, .asyncslider hgroup, .asyncslider menu, .asyncslider nav, .asyncslider output, .asyncslider ruby, .asyncslider section, .asyncslider summary, .asyncslider time, .asyncslider mark, .asyncslider audio, .asyncslider video {
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #353535;
+	font-size:13px;
+	line-height:17px;
+}
+.asyncslider a.button span {
+	font-size:15px;
+	font-family:"Open Sans";
+	font-weight:bold;
+	font-style:italic;
+	color:#368fb1;
+	text-shadow: none;
+	padding:5px 19px 5px 28px;
+}
+.asyncslider h1, .asyncslider h2, .asyncslider h3, .asyncslider h4, .asyncslider  h5, .asyncslider h6 {
+	color: #ffffff;
+	font-family: "Open Sans", serif;
+	font-weight:bold;
+	padding:10px 10px 10px 10px;
+	background:rgba(0,0,0,.25);
+	border-bottom:2px solid rgba(0,0,0,.35);
+	margin-bottom:3px;
+	width:auto;
+}
+.asyncslider .push {padding-top:28px;}
+.asyncslider h1 a, .asyncslider  h2 a, .asyncslider  h3 a, .asyncslider h4 a, .asyncslider  h5 a, .asyncslider h6 a { font-weight: inherit;color: #ffffff; }
+.asyncslider h1 { font-size: 26px; line-height: 40px;padding-left:11px;}
+.asyncslider h1 strong {color:#64d1fa;border-bottom:1px solid #64d1fa; padding-bottom:2px;font-size:26px;font-weight:bold;}
+.asyncslider h2 { font-size: 19px; line-height: 35px;}
+.asyncslider h3 { font-size: 16px; line-height: 30px;}
+.asyncslider .subheader { color: #777; }
+
+.asyncslider p { margin: 0 0 20px 0; color:#ffffff; }
+.asyncslider p img { margin: 0; }
+.asyncslider p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+.asyncslider em { font-style: italic; }
+strong { font-weight: bold; color: #333; }
+small { font-size: 80%; }
+
+/*	Blockquotes  */
+.asyncslider blockquote, .asyncslider blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+.asyncslider blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+.asyncslider blockquote cite { display: block; font-size: 12px; color: #555; }
+.asyncslider blockquote cite:before { content: "\2014 \0020"; }
+.asyncslider blockquote cite a, .asyncslider blockquote cite a:visited, .asyncslider blockquote cite a:visited { color: #555; }
+
+.asyncslider hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+	
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.asyncslider .slide img {max-width: 100%;height: auto; } /* Scale with Grid */
+	
+	.asyncslider .slide .laptop { left:-40px;z-index:1;top:139px; }
+	.asyncslider .slide .iphone { left:300px;z-index:4;top:175px; }
+	.asyncslider .slide .monitor {left:20px;z-index:4;top:10px; }
+	.asyncslider .slide .laptop img, .asyncslider .slide .monitor img, .asyncslider .slide .iphone img { position:relative; }
+}
+@media only screen and (max-width: 767px) {
+	.asyncslider {background:none;margin-top:-30px;}
+	.asyncslider .slide h3 {font-size:16px;line-height:20px;margin-bottom:-10px;}
+	.asyncslider .slide p {font-size:11px;}
+	.asyncslider .slide .monitor {left:90px;width:270px;}
+	.asyncslider .slide .laptop {left:10px;width:180px;}
+	.asyncslider .slide .iphone {left:300px;width:80px;top:120px;}
+	.asyncslider .slide #button {display:none;}
+}
+@media only screen and (max-width: 479px) {
+	.slider-wrapper .asyncslider-wrapper {display:none;}
+	.slider-wrapper .fallback {display:block;}	
+}
+

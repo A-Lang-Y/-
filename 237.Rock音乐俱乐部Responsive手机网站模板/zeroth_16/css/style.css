@@ -1,0 +1,633 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+/* Global properties ======================================================== */
+html {width:100%}
+body {font-family:Arial, Helvetica, sans-serif;font-size:100%;color:#a1a1a1;background:#000}
+.ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.bg-1 {width:100%; background:url(../images/bg-top.jpg) no-repeat center top; min-height:131px}
+.bg-2 {width:100%; background:url(../images/bg-2-tail.gif) repeat center top; border-radius:3px;}
+.main {	
+	width: 960px;
+	padding:0;
+	margin:0 auto;
+	font-size:0.8125em;
+	line-height:1.5384em;
+}
+a {color:#93ceee; outline:none}
+a:hover {text-decoration:none}
+.col-1, .col-2 {float:left}
+.wrapper {width:100%; overflow:hidden}
+.extra-wrap {overflow:hidden}
+p {margin-bottom:18px}
+.p1 {margin-bottom:8px}
+.p2 {margin-bottom:15px}
+.p3 {margin-bottom:30px}
+.p4 {margin-bottom:40px}
+.p5 {margin-bottom:50px}
+.reg {text-transform:uppercase}
+.fleft {float:left}
+.fright {float:right}
+.alignright {text-align:right}
+.aligncenter {text-align:center}
+.title {margin-bottom:18px}
+.it {font-style:italic}
+.letter {letter-spacing:-1px}
+.color-1 {color:#fff}
+.color-2 {color:#000}
+.color-3 {color:#666}
+.relet {position:relative}
+
+/*********************************boxes**********************************/
+.margin-bot {margin-bottom:35px}
+.margin-bot1 {margin-bottom:32px}
+
+.spacing {margin-right:35px}
+
+.indent {padding:0 0 0px 30px}
+.indent2 {padding-left:50px}
+.indent-bot {margin-bottom:20px}
+.indent-bot1 {margin-bottom:29px}
+.indent-bot3 {margin-bottom:45px}
+
+.indent-top {margin-top:-3px}
+.indent-top1 {margin-top:-10px}
+
+.margin-none {margin-bottom:0px}
+
+.img-indent-bot {margin-bottom:25px}
+.img-indent-bot1 {margin-bottom:23px}
+.img-indent-bot2 {margin-bottom:26px}
+
+.img-indent {float:left; margin:0 20px 0px 0}	
+.img-indent2 {float:left; margin:0 13px 0px 0}	
+.img-indent-r {float:right; margin:0 0px 0px 40px}	
+
+.prev-indent-bot {margin-bottom:10px}
+.prev-indent-bot1 {margin-bottom:6px}
+.prev-indent-bot2 {margin-bottom:4px}
+
+.buttons a:hover {cursor:pointer}
+.clear {
+ clear: both;
+ display: block;
+ overflow: hidden;
+ visibility: hidden;
+ width: 0;
+ height: 0;
+}
+
+.menu li a,
+.list-1 li a,
+.list-2 li a,
+.link,
+.button,
+.logo {text-decoration:none}	
+
+/*********************************header*************************************/
+header {
+	min-height:189px; 
+	width:100%;
+	position:relative; 
+	z-index:2;
+}
+
+h1 {
+	padding-top:39px; 
+	position:relative;
+}
+h1 a {
+	margin: 0 auto;
+	display:block; 
+	width:246px; 
+	height:62px; 
+	text-indent:-5000px; 
+	background:url(../images/logo.png) 0 0 no-repeat;
+}
+.menu-bg-tail {background:url(../images/menu-bg-tail.gif) repeat-x center top; width:100%}
+.menu-bg {background:url(../images/menu-bg.jpg) no-repeat center top; width:100%}
+.menu {
+	padding:10px 0 10px 0; 
+	width:100%;
+	height:40px;
+	overflow:hidden;
+}
+.menu li {
+	float:left; 
+	position:relative;
+	background:url(../images/menu-li-line.png) no-repeat left top;
+	padding:5px 33px 0 34px;
+}
+.menu li.item {background:none; padding-left:46px}
+.menu li.item-1 {padding-right:34px; padding-left:39px}
+.menu li.last {padding-left:33px; padding-right:0px}
+.menu li a {
+	display:inline-block; 
+	font-size:23px; 
+	line-height:1.391em;
+	text-transform:uppercase;
+	padding:0; 
+	color:#fff;
+	letter-spacing:-1px;
+}
+.menu li a.active,
+.menu li a:hover {color:#93ceee}
+
+
+/*********************************content*************************************/
+#content {
+	width:100%; 
+	padding:0;
+	position:relative;
+	z-index:1;
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+.content-padding-1 {padding:18px 0 37px 0}
+.content-padding-2 {padding:23px 0 57px 0}
+.padding-grid-1 {padding: 0 0 0 28px}
+.padding-grid-2 {padding: 0 0 0 29px}
+.padding-grid-3 {padding: 0 0 0 19px}
+.padding-grid-4 {padding:3px 0 0 19px; line-height:24px}
+h3 {
+	font-size:25px; 
+	line-height:2em; 
+	margin:0 0 9px 0; 
+	color:#93ceee;
+}
+h3 strong {color:#fff}
+h4 {
+	font-size:20px;
+	line-height:2em;
+	color:#ffffff;
+	letter-spacing:-1px;
+	margin-bottom:-8px;
+	}
+h4 strong {color:#93ceee}
+h4 a {text-decoration:none; display:inline-block; color:#fff}
+h4 a:hover {color:#93CEEE}
+h6 {
+	font-size:13px;
+	line-height:20px;
+	color:#fff;
+	}
+.time {
+	display:block;
+	width:55px;
+	height:54px;
+	overflow:hidden;
+	text-align:center;
+	float:left;
+	margin-right:16px;
+	}
+.time-stule-1 {background:url(../images/marker-text-1.png) no-repeat 1px top}
+.time-stule-2 {background:url(../images/marker-text-2.png) no-repeat 1px top}
+.time-stule-3 {background:url(../images/marker-text-3.png) no-repeat 1px top}
+.text-1,
+.text-3,
+.text-5 {
+	font-size:25px;
+	line-height:2em;
+	display:block;
+	color:#fff;
+	margin-top:-6px;
+	padding-left:2px;
+	}
+.text-5 {color:#5ca8d2}
+.text-2,
+.text-4,
+.text-6 {
+	font-size:20px;
+	line-height:2em;
+	display:block;
+	color:#a1a1a1;
+	margin-top:-29px;
+	letter-spacing:-1px;
+}
+.text-4 {color:#fff}
+.text-6 {color:#4d4d4d}
+.style-img {background:#3b3b3b; padding:1px}
+.style-img-2 {border:1px solid #333333; padding:3px}
+.list-1 li {
+	font-size:13px;
+	line-height:20px;
+}
+	.list-1 li a {
+		display:inline-block;
+		color:#fff;
+	}
+		.list-1 li a:hover {color:#93CEEE}
+		
+.list-2 {padding:5px 21px 0 0}
+.list-2 li {
+	position:relative;
+	overflow:hidden;
+	width:41px;
+	min-height:20px;
+	}
+	.list-2 li span {
+		display:inline-block;
+		width:21px;
+		background:url(../images/list-2-line.gif) no-repeat right -1px;
+		margin-right:15px;
+		float:left;
+	}
+	.list-2 li a {
+		display:block;
+		width:5px;
+		height:10px;
+		background:url(../images/list-2-marker.gif) no-repeat center -50px;
+		float:right;
+		}
+	.list-2 li a.left-list {background-position:left 0; float:left}
+	.list-2 li a.right-list {background-position:right 0; float:right}
+		.list-2 li a.left-list:hover {background-position:left bottom}
+		.list-2 li a.right-list:hover {background-position:right bottom}
+.link-2 {
+	display:block;
+	width:73px;
+	height:12px;
+	background:url(../images/marker-1.png) left top;
+	}
+.link-2.link-style1 {background-position:-300px 0}
+.link-2.link-style2 {background-position:-620px 0}
+.text-width {width:66px; display:inline-block}
+.list-3 li {
+	font-size:13px;
+	line-height:20px;
+	background:url(../images/list-3-marker.gif) no-repeat left 12px;
+	padding:5px 0 5px 12px;
+}
+	.list-3 li a {
+		display:inline-block;
+		color:#fff;
+		text-decoration:none;
+	}
+		.list-3 li a:hover {color:#93CEEE}
+
+.list-4 dt {padding-bottom:10px}
+.list-4 dd a {margin-left:20px}
+
+
+.link:hover {text-decoration:underline} 
+
+dl span {float:left; width:80px}
+.inline {display:inline-block}
+/* -- gallery  begin --*/
+#js {
+	position:relative;
+	width:910px;
+	overflow:hidden;
+	padding:0 0 0 1px;
+	height:720px;
+	}
+.js-padding {padding:0}
+ div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+	width: 902px;
+	height: 360px;
+	margin:  0 0 40px 0;
+	overflow: hidden;
+	border:1px solid #333333;
+	padding:3px;
+}
+ div.content img {
+	position: relative;
+	z-index: 2;
+}
+ div.content a, div.navigation a {
+	color: #6c6c6c;
+}
+ div.content a:focus, div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+ div.controls {
+}
+ div.controls a {
+	padding: 0px;
+}
+ div.ss-controls {
+	float: left;
+	display:none;
+}
+ div.nav-controls {
+	position:absolute;
+	left:0px;
+	width:100%;
+	bottom:0px;
+	z-index: 1;
+}
+#controls {
+	width:100%;
+	overflow:hidden;
+	}
+div.nav-controls a {
+	font-family: 'Oswald', sans-serif;
+	font-size:10px;
+	text-transform:uppercase;
+	display:block;
+	line-height:2em;
+	padding:6px 0;
+	width:71px;
+	height:31px;
+	position:absolute;
+	text-align:center;
+	text-decoration:none;
+	bottom:-31px;
+	z-index:11;
+	color:#f6f7f6;
+	background:url(../images/button-bg.png) no-repeat left top;
+}
+ div.nav-controls a.prev {left:18px;
+}
+ div.nav-controls a.prev:hover {color:#FB4A16}
+ div.nav-controls a.next {right:34px; bottom:-51px; }
+ div.nav-controls a.next:hover {color:#FB4A16}
+ div.slideshow-container {
+	position: relative;
+	height: 479px; /* This should be set to be at least the height of the largest image in the slideshow */
+	z-index:1;
+	
+}
+ div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image:url(images/loader.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 592px;
+	height: 470px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+
+ div.slideshow span.image-wrapper {
+	display: block;
+	width:910px;
+	height:479px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+ div.slideshow a.advance-link {
+	display: block;
+	width: 874px;
+	height: 660px; /* This should be set to be at least the height of the largest image in the slideshow */
+	padding: 0;
+	margin: 0;
+}
+ div.slideshow a.advance-link img {
+	padding:0;
+	margin:0;
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+}
+ div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+ div.slideshow img {
+}
+ div.download {
+	float: right;
+}
+ div.caption-container {
+	position: absolute;
+	top: 680px;
+	left: 60px;
+	width: 600px;
+	height: 100px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#000;
+}
+ span.image-caption {
+	display: block;
+	position: absolute;
+	width: 596px;
+	height: 151px;
+	top: 0;
+	left: 0;
+	z-index:10;
+}
+.text-gallery {
+	line-height: 18px;
+	font-size: 12px;
+	color: #606060;
+	padding:28px 0 0 8px;
+	}
+ div.caption {
+	width: 580px;
+	height: 128px;
+}
+ div.caption h5{
+	line-height: 18px;
+	font-size: 13px;
+	color: #fd003f;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-decoration:none;
+}
+ div.caption h6{
+	line-height: 18px;
+	font-size: 13px;
+	color: #fff;
+	font-weight:normal;
+	margin: 0 0 18px 0
+}
+ div.image-title {
+}
+ div.image-desc {
+}
+ div.navigation {
+/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+}
+ div#thumbs {
+	overflow: hidden;
+	padding: 0 0 4px 0;
+	margin:0 auto;
+}
+ ul.thumbs {
+	margin:0 auto;
+	padding:0px;
+}
+ ul.thumbs li {
+	float: left;
+	margin: 0 50px 40px 0;
+	overflow: hidden;
+	padding:3px;
+	vertical-align:top;
+	border:1px solid #333333;
+}
+ ul.thumbs li.last {margin-right:0px}
+ ul.thumbs li img {
+	border: none;
+}
+ a.thumb {display:block}
+ a.thumb:focus {
+	outline: none;
+}
+ div.pagination {
+	clear: both;
+	text-align:center;
+	position:relative;
+	z-index:10;
+}
+ div.top.pagination {
+
+	display:none;
+}
+ div.navigation div.bottom {
+	 display:none;
+}
+ div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	padding:0 4px;
+	font-weight:bold;
+	color:#fff;
+}
+ div.pagination a:hover {
+	text-decoration: none;
+	color:#ffeaa8;
+}
+ div.pagination span.current {
+	color:#ffeaa8;
+}
+ div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+/* -- gallery end --*/
+/***** prettyPhot *****/
+.lightbox-image {
+	position:relative;
+	z-index:1;
+	overflow:hidden;
+	display:inline-block;
+	cursor:pointer;
+	}
+	.lightbox-image img {
+		position:relative;
+		z-index:1;
+	}
+	.lightbox-image span {
+		display:inline-block;
+		position:absolute;
+		left:0px;
+		top:0;
+		width:100%;
+		height:100%;
+		background:url(../images/magnify.png) no-repeat 50% 50%;
+		z-index:2;
+		padding:0;
+	}
+/***** Contact form *****/
+#contact-form {
+	position:relative;
+	vertical-align:top;
+	width:100%;
+	z-index:1;
+	}
+	#contact-form fieldset {
+		border:none;
+		padding:0;
+		width:100%;
+		overflow:hidden;
+		}			
+			#contact-form label {display:block; min-height:40px; overflow:hidden}
+			
+			#contact-form input {
+				width:479px;
+				padding:6px 12px;
+				margin:0;
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:13px;
+				line-height:1.25em;
+				color:#a1a1a1; 
+				border:1px solid #333333;
+				background:none;
+				outline:none;
+			}
+			#contact-form .area .error { float:none}
+			#contact-form textarea {
+				height:184px;
+				margin:0;
+				width:479px;
+				padding:6px 12px;
+				margin:0;
+				font-family:Arial, Helvetica, sans-serif;
+				font-size:13px;
+				line-height:1.25em;
+				color:#a1a1a1; 
+				border:1px solid #333333;
+				background:none;
+				overflow:auto;
+				outline:none;
+			}
+			#contact-form a {cursor:pointer}
+			.name-input {
+				display:block;
+				float:left;
+				width:75px;
+				padding:5px 0 0 1px;
+				}
+		.link-form {text-align:right;padding:8px 20px 0 0}
+		.link-margin {margin-right:20px}
+		
+/****************************footer************************/
+footer {
+	width:100%; 
+	padding:0;
+	height:104px;
+	position:relative;
+	z-index:2;
+	color:#fff;
+	overflow:hidden;
+}
+.footer-bg {width:100%; background:url(../images/footer-bg.jpg) no-repeat -1px top; min-height:104px}
+.footer-padding {padding:28px 80px 0 29px}
+.footer-link {
+	font-size:14px;
+	line-height:24px;
+	color:#fff;
+	display:block;
+	float:left;
+	}
+.footer-link span {display:block}
+#easyTooltip{
+	font-family:Arial, Helvetica, sans-serif;
+	padding:7px 11px;
+	font-weight:bold;
+	border:1px solid #fff;
+	background:#7fb2cd;
+	color:#fff;
+	font-size:12px;
+	position:relative;
+	z-index:3;
+}
+.list-services {float:right; padding:2px 0 0 0}
+.list-services li {
+		float:left; 
+		padding:0 4px 0 0px;	
+	}
+		.list-services li a {
+			display:inline-block;
+			width:51px;
+			height:51px;
+			background:url(../images/list-services.png) no-repeat left top;
+		}
+		.list-services li a.n-1 {background-position:0 0px}
+		.list-services li a.n-2 {background-position:-55px 0}
+		.list-services li a.n-3 {background-position:-110px 0}
+		.list-services li.last {padding-right:0px}
+.block {height:104px}
+.extra {
+	min-height:100%; 
+	height:auto !important; 
+	height:100%; 
+	margin: 0 auto -104px; 
+	position:relative;
+	overflow:hidden;
+	z-index:1;
+} 
+html, body {height:100%}

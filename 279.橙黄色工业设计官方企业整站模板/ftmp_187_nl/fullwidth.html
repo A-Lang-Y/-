@@ -1,0 +1,1089 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Welcome To *Respond</title>
+
+<!-- *************************************************************************
+**************************   STYLE SHEET   *******************************
+************************************************************************** -->
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+
+<!-- *************************************************************************
+**************************        JS       *******************************
+************************************************************************** -->
+ 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.quicksand.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"> </script>
+<script type="text/javascript" src="js/hoverIntent.js"> </script>
+<script type="text/javascript" src="js/superfish.js"> </script>
+<script type="text/javascript" src="js/supersubs.js"> </script>
+<script type="text/javascript" src="js/custom.js"> </script>
+<script type="text/javascript" src="js/scrolltopcontrol.js"> </script>
+<script type="text/javascript" src="js/twitter.js"> </script>  
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#form").val();
+		});
+</script>
+
+<!-- END OF SCRIPT FOR FORM -->
+<!--Mobile Fix for header-->
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('.trigger').bind('touchstart', function(){
+    $('ul#.social').addClass('thover');
+    return false;
+}).bind('touchend', function(){
+    $(this).removeClass('thover');
+});
+	$('.searchtrigger').bind('touchstart', function(){
+    $('ul#search').addClass('thover');
+    return false;
+}).bind('touchend', function(){
+    $(this).removeClass('thover');
+});
+		});
+
+</script>
+<!--End Mobile Script-->
+
+<!-- Menu to Select Setting -->
+<script type="text/javascript">
+// DOM ready
+
+$(document).ready(function(){
+
+// Create the dropdown base
+$("<select />").appendTo("#top_menu");
+
+// Create default option "Go to..."
+$("<option />", {
+ "selected": "selected",
+ "value"   : "",
+ "text"    : "Menu Selection..."
+}).appendTo("#top_menu select");
+
+// Populate dropdown with menu items
+$("#top_menu a").each(function() {
+var el = $(this);
+$("<option />", {
+   "value"   : el.attr("href"),
+   "text"    : el.text()
+}).appendTo("#top_menu select");
+});
+
+// To make dropdown actually work
+// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+$("#top_menu select").change(function() {
+window.location = $(this).find("option:selected").val();
+});
+
+});
+</script>
+
+<!-- *************************************************************************
+*********************   THIS IS THE SOCIAL JS    **************************
+************************************************************************** -->
+
+<!--[if lt IE 10]>
+<script type="text/javascript">
+$(document).ready(function(){
+			$('ul.social').hover(function(){
+				$(this).animate({width: "180px"}, {duration:1000, queue:false});
+			}, function(){
+				$(this).animate({width: "30px"}, {duration:1000, queue:false});
+			});
+				});
+                
+                $('div#search').hover(function(){
+				$(this).animate({width: "180px"}, {duration:1000, queue:false});
+			}, function(){
+				$(this).animate({width: "34px"}, {duration:1000, queue:false});
+			});
+				});
+</script>
+<![endif]--> 
+
+
+<!-- END OF SCRIPT FOR SOCIAL --> 
+
+</head>
+
+<body>
+
+<!-- Start of toggleMe -->
+<div id="toggleMe" style="display:none; overflow:hidden; height:40px;">
+
+    <!-- Start of header -->
+    <div id="header">
+    
+    <p>Get this awesome theme today! Head over to <a href="http://www.cssmoban.com/">themeforest.net</a> and get yours!</p>
+            
+    </div><!-- End of header -->
+
+</div><!-- End of toggleMe -->
+
+<!-- This is the button that opens and closes the toggle box at the top of the page -->
+<a href="javascript:;" onmousedown="toggleSlide('toggleMe');" class="tog"><img src="img/close_tab.png" height="36" width="39" alt="toggle me" /></a>
+
+<!-- Start of social bar wrapper -->
+<div id="social_bar_wrapper">
+    
+    <!-- Start of social_bar -->
+    <div id="social_bar">
+    
+        <ul id="social">
+  <li class="trigger"></li>
+  <!-- Start of google -->
+  
+  <li class="google"> <a href="http://google.com" target="_blank"><img src="img/google1.png" width="30" height="30" alt="google" /></a> </li>
+  <!-- Start of facebook -->
+  
+  <li class="facebook"> <a href="http://facebook.com" target="_blank"><img src="img/facebook1.png" width="30" height="30" alt="facebook" /></a> </li>
+  <!-- Start of twitter -->
+  
+  <li class="twitter"> <a href="http://twitter.com" target="_blank"><img src="img/twitter1.png" width="30" height="30" alt="twitter" /></a> </li>
+  <!-- Start of linkedin -->
+  
+  <li class="linkedin"> <a href="http://linkedin.com" target="_blank"><img src="img/linkedin1.png" width="30" height="30" alt="linkedin" /></a> </li>
+  <!-- Start of dribbble -->
+  
+  <li class="dribbble"> <a href="http://dribbble.com" target="_blank"><img src="img/dribbble1.png" width="30" height="30" alt="dribbble" /></a> </li>
+</ul>
+        
+        <!-- Start of search -->
+		<ul id="search">
+  			<li class="searchtrigger">
+            
+            <form>
+            	<input type="text" value="Search" id="" name="s" onblur="if(this.value == '') { this.value = 'Search'; }" onfocus="if(this.value == 'Search') { this.value = ''; }" class="" />
+            </form>
+            
+            </li>
+        </ul><!-- End of search -->
+        
+    </div><!-- End of social bar -->
+
+</div><!-- End of social bar wrapper -->
+
+<!-- Start of menu wrapper -->
+<div id="menu_wrapper">
+
+	<!-- Start of logo menu wrapper -->
+    <div id="logo_menu_wrapper">
+    
+        <!-- Start of top logo -->
+        <div id="top_logo">
+        
+        <a href="index.html"><img src="img/logo.png" height="40" width="247" alt="top logo" /></a>
+        
+        </div><!-- End of top logo -->
+        
+		<!-- Start of top menu -->
+        <div id="top_menu">
+        
+            <ul class="sf-menu">
+            
+                <li><a href="index.html">Home <span>That happy place</span></a></li>
+                                
+                <li><a href="portfolio.html">Portfolio <span>Some of my work</span></a></li>
+                
+                <li><a class="active" href="blog.html">Blog <span>I love blogging</span></a>
+                
+                	<ul>
+                    	<li><a class="active" href="fullwidth.html">Full Width</a></li>
+                    	<li><a href="left-sidebar.html">Left Sidebar</a></li>
+                    </ul> 
+                    
+                </li>
+                
+                <li><a href="contact.html">Contact <span>Drop me a line</span></a></li>
+            
+            </ul>
+
+		</div><!-- End of top menu --> 
+        
+        <div class="clear"></div>        
+    
+    </div><!-- End of logo menu wrapper -->
+
+</div><!-- End of menu wrapper -->
+
+<!-- Start of slider wrapper -->
+<div id="slider_wrapper">
+
+	<!-- Start of breadcrumb wrapper -->
+    <div id="breadcrumb_wrapper">
+
+        <h1>Full Width Styles Page</h1>
+        
+            <!-- Start of breadcrumb -->
+            <div id="breadcrumb">
+        
+                <!-- Start of breadcrumb ul -->
+                <ul>
+        
+                    <li><a href="index.html">Home</a></li>
+                    <li>&#8250;&nbsp; Styles Pages</li>
+        
+                </ul><!-- End of breadcrumb ul -->
+        
+            </div><!-- End of breadcrumb -->
+            
+	</div><!-- End of breadcrumb wrapper -->
+
+</div><!-- End of slider wrapper -->
+
+<!-- Start of wrapper -->
+<div id="wrapper">
+
+	<!-- Start of full width -->
+    <div class="full_width">
+    
+        <!-- Start of one third first -->
+        <div class="one_third_first">
+        <a href="#"><img src="img/portfolio1.jpg" width="305" height="227" alt="image 1" /></a>
+        
+        <h6>Made Using a 1/3 column</h6>           
+		
+        <p>Lorem ipsum dolor sit <span class="highlight">amet, consectetur adipisicing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+        
+        <div class="blog_readmore"><a href="#">Read More</a></div>              
+            
+        </div><!-- End of one third first -->
+        
+        <!-- Start of one third -->
+        <div class="one_third">
+        
+        <a href="#"><img src="img/portfolio2.jpg" width="305" height="227" alt="image 2" /></a>
+       		
+        <h6>Made Using a 1/3 column</h6>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna <span class="highlight">aliqua. Ut enim ad minim</span> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+        
+        <div class="blog_readmore"><a href="#">Read More</a></div>           
+            
+        </div><!-- End of one third -->
+        
+        <!-- Start of one third -->
+        <div class="one_third">
+        <a href="#"><img src="img/portfolio3.jpg" width="305" height="227" alt="image 3" /></a>
+        
+        <h6>Made Using a 1/3 column</h6>           
+		
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <span class="highlight">nisi ut aliquip</span> ex ea commodo consequat.</p>  
+        
+        <div class="blog_readmore"><a href="#">Read More</a></div>           
+            
+        </div><!-- End of one third -->   
+        
+        <hr />      
+        
+        <h5>Blockquote</h5>   
+                 
+        <!-- Start of quote -->
+        <div class="quote">
+        Awesome blockquote goes here! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore enim ad minim veniam nostrud exercitation ullamco. <span class="testimonialfrom">Written by client name</span>
+        
+        <div class="clear"></div>
+                
+        </div><!-- End of quote -->
+        
+        <hr /> 
+        
+        <h1>Example of H1 Title</h1>
+        <h2>Example of H2 Title</h2>
+        <h3>Example of H3 Title</h3>
+        <h4>Example of H4 Title</h4>
+        <h5>Example of H5 Title</h5>
+        <h6>Example of H6 Title</h6>
+        
+        <hr /> 
+        
+        <h5>Image Aligned Left</h5>
+        
+        <img class="alignleft" src="img/portfolio6.jpg" width="305" height="227" alt="left aligned" />
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        
+        	<ul>
+            
+                <li><a href="#">Example of an unordered list item</a></li>
+                <li><a href="#">Example of an unordered list item</a></li>
+                <li><a href="#">Example of an unordered list item</a></li>
+                <li>Example of an unordered list item</li>
+                <li>Example of an unordered list item</li>
+            
+            </ul>
+        
+        <hr />
+        
+        <h5>Image Aligned Right</h5>
+        
+        <img class="alignright" src="img/portfolio7.jpg" width="305" height="227" alt="right aligned" />
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> 
+        
+        	<ol>
+            
+                <li><a href="#">Example of an ordered list item</a></li>
+                <li><a href="#">Example of an ordered list item</a></li>
+                <li><a href="#">Example of an ordered list item</a></li>
+                <li>Example of an ordered list item</li>
+                <li>Example of an ordered list item</li>
+            
+            </ol>
+        
+        <hr />
+
+        <h5>Quote Pulled to the Left</h5>
+        
+			<!-- Start of pullquoteleft -->
+            <div class="pullquoteleft">Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio.
+            
+            </div><!-- End of pullquoteleft -->
+            
+        <p>Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam.</p>
+
+		<hr />
+        
+		<h5>Quote Pulled to the Right</h5>
+        
+            <!-- Start of pullquoteright -->
+            <div class="pullquoteright">
+            Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio.
+            
+            </div><!-- End of pullquoteright -->
+        
+        <p>Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam.</p>
+
+		<hr />
+        
+        <h5>Alert Boxes</h5>  
+        
+        <!-- Start of one fifth first -->
+        <div class="one_fifth_first">    
+        
+            <!-- Start of alert standard -->
+            <div class="alert_standard">
+            <h5>Standard</h5>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="#">sed do eiusmod tempor incididunt ut consectetur.</a>
+            
+            </div><!-- End of alert standard -->
+            
+        </div><!-- End of one fifth first -->  
+        
+        <!-- Start of one fifth -->
+        <div class="one_fifth">           
+            
+            <!-- Start of alert red -->
+            <div class="alert_red">
+            <h5>Red</h5>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="#">sed do eiusmod tempor incididunt ut consectetur.</a>
+            
+            </div><!-- End of alert red -->
+            
+        </div><!-- End of one fifth --> 
+        
+        <!-- Start of one fifth -->
+        <div class="one_fifth">                        
+            
+            <!-- Start of alert green -->
+            <div class="alert_green">
+            <h5>Green</h5>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="#">sed do eiusmod tempor incididunt ut consectetur.</a>
+            
+            </div><!-- End of alert green -->
+            
+        </div><!-- End of one fifth -->  
+            
+        <!-- Start of one fifth -->
+        <div class="one_fifth"> 
+                    
+            <!-- Start of alert yellow -->
+            <div class="alert_yellow">
+            <h5>Yellow</h5>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="#">sed do eiusmod tempor incididunt ut consectetur.</a>
+            
+            </div><!-- End of alert yellow -->  
+                       
+        </div><!-- End of one fifth --> 
+        
+        <!-- Start of one fifth -->
+        <div class="one_fifth"> 
+                    
+            <!-- Start of alert blue -->
+            <div class="alert_blue">
+            <h5>Blue</h5>            
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="#">sed do eiusmod tempor incididunt ut consectetur.</a>
+            
+            </div><!-- End of alert blue -->  
+                       
+        </div><!-- End of one fifth --> 
+        
+        <hr />
+        
+        <h5>Tabbed Area</h5>
+        
+            <!-- *************************************************************************
+            ***********************  START OF TABBED AREA  *******************************
+            ************************************************************************** -->
+            
+            <ul class="tabs">
+            
+            <li><a href="#tab1">Tab 1</a></li>
+            <li><a href="#tab2">Tab 2</a></li>
+            <li><a href="#tab3">Tab 3</a></li>
+            
+            </ul>
+            
+            <!-- Start of tab container -->
+            <div class="tab_container">
+            
+                <!-- ************  START OF TABBED CONTENT AREA 1  ************* -->
+                
+                <!-- Start of tab1 tab content -->
+                <div id="tab1" class="tab_content">
+                <h5>Tab Content 1</h5>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                
+                </div><!-- End of tab1 tab content -->
+            
+                <!-- ************  START OF TABBED CONTENT AREA 2  ************* -->
+                
+                <!-- Start of tab2 tab content -->
+                <div id="tab2" class="tab_content">
+                <h5>Tab Content 2</h5>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                
+                </div><!-- End of tab2 tab content -->
+            
+                <!-- ************  START OF TABBED CONTENT AREA 3  ************* -->
+                
+                <!-- Start of tab3 tab content -->
+                <div id="tab3" class="tab_content">
+                <h5>Tab Content 3</h5>   
+                         
+                    <!-- Start of quote -->
+                    <div class="quote">
+                    Awesome blockquote goes here! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore enim ad minim veniam nostrud exercitation ullamco. <span class="testimonialfrom">Written by client name</span>
+                    
+                    </div><!-- End of quote -->
+                
+                </div><!-- End of tab3 tab content --> 
+                           
+            </div><!-- End of tab container -->
+            
+            <hr />
+
+        <h5>Accordian Area</h5>
+        
+        <!-- Start of accordion button -->
+        <div class="accordionButton">Accordion Title 1
+        
+        </div><!-- End of accordion button -->
+        
+        <!-- Start of accordion content -->
+        <div class="accordionContent">
+        
+        <p>Nulla dui purus, eleifend vel, consequat non, dictum porta, nulla.</p>
+        
+        <p>Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam.</p>
+        
+        </div><!-- End of accordion content -->
+        
+        <!-- Start of accordion button -->
+        <div class="accordionButton">Accordion Title 2
+        
+        </div><!-- End of accordion button -->
+        
+        <!-- Start of accordion content -->
+        <div class="accordionContent">
+        
+        <p>Nulla dui purus, eleifend vel, consequat non, dictum porta, nulla.</p>
+        
+        <p>Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam.</p>
+        
+        </div><!-- End of accordion content -->  
+        
+        <!-- Start of accordion button -->
+        <div class="accordionButton">Accordion Title 3
+        
+        </div><!-- End of accordion button -->
+        
+        <!-- Start of accordion content -->
+        <div class="accordionContent">
+        
+        <p>Nulla dui purus, eleifend vel, consequat non, dictum porta, nulla.</p>
+        
+        <p>Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam.</p>
+        
+        </div><!-- End of accordion content -->  
+        
+        <hr />
+        
+        <h5>Buttons</h5>
+        
+        <!-- Start of one fourth first -->
+        <div class="one_fourth_first">
+        
+			<!-- Start of button large -->
+            <div class="button_large">
+            <a href="#">Large Button</a>
+            
+            </div><!-- End of button large -->        
+        
+        </div><!-- End of one fourth first -->
+        
+        <!-- Start of one fourth -->
+        <div class="one_fourth">
+        
+			<!-- Start of button medium -->
+            <div class="button_medium">
+            <a href="#">Medium Button</a>
+            
+            </div><!-- End of button medium -->        
+        
+        </div><!-- End of one fourth -->    
+        
+        <!-- Start of one fourth -->
+        <div class="one_fourth">
+        
+			<!-- Start of button small -->
+            <div class="button_small">
+            <a href="#">Small Button</a>
+            
+            </div><!-- End of button small -->        
+        
+        </div><!-- End of one fourth --> 
+        
+        <!-- Start of one fourth -->
+        <div class="one_fourth">
+        
+			<!-- Start of button xsmall -->
+            <div class="button_xsmall">
+            <a href="#">Extra Small Button</a>
+            
+            </div><!-- End of button xsmall -->        
+        
+        </div><!-- End of one fourth -->  
+        
+		<div class="clear"></div>      
+        
+        <hr />  
+        
+        <h5>Columns</h5>
+        
+        <!-- Start of one half first -->
+        <div class="one_half_first">
+		
+        <p><span class="dropcap_yellow">1/2</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+        
+        </div><!-- End of one half first -->
+        
+        <!-- Start of one half -->
+        <div class="one_half">
+
+        <p><span class="dropcap_black">1/2</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+        
+        </div><!-- End of one half -->
+
+        <hr />
+
+        <!-- Start of one third first -->
+        <div class="one_third_first">
+
+        <p><span class="dropcap_yellow">1/3</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+        
+        </div><!-- End of one third first -->
+
+        <!-- Start of one third -->
+        <div class="one_third">
+
+        <p><span class="dropcap_black">1/3</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of one third -->
+
+        <!-- Start of one third -->
+        <div class="one_third">
+
+        <p><span class="dropcap_yellow">1/3</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of one third -->
+
+        <hr />
+
+        <!-- Start of one fourth first -->
+        <div class="one_fourth_first">
+
+        <p><span class="dropcap_yellow">1/4</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of one fourth first -->
+
+        <!-- Start of one fourth  -->
+        <div class="one_fourth">
+
+        <p><span class="dropcap_black">1/4</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of one fourth -->
+
+        <!-- Start of one fourth  -->
+        <div class="one_fourth">
+
+        <p><span class="dropcap_yellow">1/4</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of one fourth -->
+
+        <!-- Start of one fourth  -->
+        <div class="one_fourth">
+
+        <p><span class="dropcap_black">1/4</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of one fourth -->
+
+        <hr />
+
+        <!-- Start of one fifth first -->
+        <div class="one_fifth_first">
+
+        <p><span class="dropcap_yellow">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth first -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_black">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_yellow">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_black">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_yellow">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <hr />
+
+        <!-- Start of one sixth first -->
+        <div class="one_sixth_first">
+
+        <p><span class="dropcap_yellow">1/6</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one sixth first -->
+
+        <!-- Start of one sixth -->
+        <div class="one_sixth">
+
+        <p><span class="dropcap_black">1/6</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one sixth -->
+
+        <!-- Start of one sixth -->
+        <div class="one_sixth">
+
+        <p><span class="dropcap_yellow">1/6</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one sixth -->
+
+        <!-- Start of one sixth -->
+        <div class="one_sixth">
+
+        <p><span class="dropcap_black">1/6</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one sixth -->
+
+        <!-- Start of one sixth -->
+        <div class="one_sixth">
+
+        <p><span class="dropcap_yellow">1/6</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one sixth -->
+
+        <!-- Start of one sixth -->
+        <div class="one_sixth">
+
+        <p><span class="dropcap_black">1/6</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one sixth -->
+
+        <hr />
+
+        <!-- Start of two third first -->
+        <div class="two_third_first">
+
+        <p><span class="dropcap_yellow">2/3</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of two third first -->
+
+        <!-- Start of one third -->
+        <div class="one_third">
+
+        <p><span class="dropcap_black">1/3</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one third -->
+
+        <hr />
+
+        <!-- Start of one third first -->
+        <div class="one_third_first">
+
+        <p><span class="dropcap_yellow">1/3</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+        
+        </div><!-- End of one third first -->
+
+        <!-- Start of two third -->
+        <div class="two_third">
+
+        <p><span class="dropcap_black">2/3</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of two third first -->
+
+        <hr />
+
+        <!-- Start of three fourth first -->
+        <div class="three_fourth_first">
+
+        <p><span class="dropcap_yellow">3/4</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of three fourth first -->
+
+        <!-- Start of one fourth -->
+        <div class="one_fourth">
+
+        <p><span class="dropcap_black">1/4</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fourth -->
+
+        <hr />
+
+        <!-- Start of one fourth first -->
+        <div class="one_fourth_first">
+
+        <p><span class="dropcap_yellow">1/4</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fourth first -->
+
+        <!-- Start of three fourth -->
+        <div class="three_fourth">
+
+        <p><span class="dropcap_black">3/4</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of three fourth -->
+
+        <hr />
+
+        <!-- Start of two fifth first -->
+        <div class="two_fifth_first">
+
+        <p><span class="dropcap_yellow">2/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+        
+        </div><!-- End of two fifth first -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_black">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_yellow">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_black">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <hr />
+
+        <!-- Start of one fifth first -->
+        <div class="one_fifth_first">
+
+        <p><span class="dropcap_yellow">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth first -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_black">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_yellow">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <!-- Start of two fifth -->
+        <div class="two_fifth">
+
+        <p><span class="dropcap_yellow">2/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+        
+        </div><!-- End of two fifth -->
+
+        <hr />
+
+        <!-- Start of three fifth first -->
+        <div class="three_fifth_first">
+
+        <p><span class="dropcap_yellow">3/5</span>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of three fifth first -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_black">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_yellow">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <hr />
+
+        <!-- Start of one fifth first -->
+        <div class="one_fifth_first">
+
+        <p><span class="dropcap_yellow">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth first -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_black">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <!-- Start of three fifth -->
+        <div class="three_fifth">
+
+        <p><span class="dropcap_yellow">3/5</span>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of three fifth -->
+
+        <hr />
+
+        <!-- Start of four fifth first -->
+        <div class="four_fifth_first">
+
+        <p><span class="dropcap_yellow">4/5</span>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of four fifth first -->
+
+        <!-- Start of one fifth -->
+        <div class="one_fifth">
+
+        <p><span class="dropcap_black">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth -->
+
+        <hr />
+
+        <!-- Start of one fifth first -->
+        <div class="one_fifth_first">
+
+        <p><span class="dropcap_yellow">1/5</span>Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam.</p>
+
+        </div><!-- End of one fifth first -->
+
+        <!-- Start of four fifth -->
+        <div class="four_fifth">
+
+        <p><span class="dropcap_black">4/5</span>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+        </div><!-- End of four fifth -->
+            
+<hr /> 
+            
+            <h5>List items ordered and unordered with and without links</h5>  
+            
+			<!-- Start of one fourth first -->
+        	<div class="one_fourth_first">
+        
+            <ol>
+            
+                <li>Example of an ordered list item</li>
+                <li>Example of an ordered list item</li>
+                <li>Example of an ordered list item</li>
+                <li>Example of an ordered list item</li>
+                <li>Example of an ordered list item</li>
+            
+            </ol>
+            
+            </div><!-- End of one fourth first -->
+            
+            <!-- Start of one fourth -->
+        	<div class="one_fourth">
+        
+            <ol>
+            
+                <li><a href="#">Example of an ordered list item</a></li>
+                <li><a href="#">Example of an ordered list item</a></li>
+                <li><a href="#">Example of an ordered list item</a></li>
+                <li><a href="#">Example of an ordered list item</a></li>
+                <li><a href="#">Example of an ordered list item</a></li>
+            
+            </ol>
+            
+            </div><!-- End of one fourth -->
+
+            <!-- Start of one fourth -->
+        	<div class="one_fourth">
+            
+            <ul>
+            
+                <li>Example of an unordered list item</li>
+                <li>Example of an unordered list item</li>
+                <li>Example of an unordered list item</li>
+                <li>Example of an unordered list item</li>
+                <li>Example of an unordered list item</li>
+            
+            </ul>  
+            
+            </div><!-- End of one fourth -->                           
+            
+            
+            <!-- Start of one fourth -->
+        	<div class="one_fourth">
+            
+            <ul>
+            
+                <li><a href="#">Example of an unordered list item</a></li>
+                <li><a href="#">Example of an unordered list item</a></li>
+                <li><a href="#">Example of an unordered list item</a></li>
+                <li><a href="#">Example of an unordered list item</a></li>
+                <li><a href="#">Example of an unordered list item</a></li>
+            
+            </ul>  
+            
+            </div><!-- End of one fourth -->
+            
+    
+    </div><!-- End of full width -->
+
+</div><!-- End of wrapper -->
+
+<div class="clear"></div>
+
+<!-- Start of footer wrapper -->
+<div id="footer_wrapper">
+
+	<!-- Start of footer -->
+    <div id="footer">
+
+        <!-- Start of footer widget -->
+        <div id="footer_widget">
+        
+        <a href="#"><img src="img/footer_logo.png" height="34" width="209" alt="bottom logo" /></a>
+        
+        <p>Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        
+        </div><!-- End of footer widget -->
+                
+        <!-- Start of footer tweet -->
+        <div id="footer_tweet">
+        
+                <!-- Start of twitter message content -->
+        <div class="twitter_message_content">
+        
+        	<!-- Start of tweet -->
+            <div class="tweet">
+            
+            </div><!-- End of tweet -->
+        
+        </div><!-- End of twitter message content -->
+        
+        </div><!-- End of footer tweet -->
+        
+        <!-- Start of footer right -->
+        <div class="footer_right">
+        
+        <h5>Unordered List</h5>
+         
+         <ul>
+         <li><a href="#">Aenean lacinia bibendum</a></li>
+         <li>Aenean lacinia bibendum</li>
+         </ul>
+         
+         <h5>Ordered List</h5>
+         
+         <ol>
+         <li><a href="#">Aenean lacinia bibendum</a></li>
+         <li>Aenean lacinia bibendum</li>
+         </ol>
+         
+         
+        </div><!-- End of footer right -->
+    
+    </div><!-- End of footer -->
+    
+<div class="clear"></div>
+
+</div><!-- End of footer wrapper -->
+
+<!-- Start of bottom footer wrapper -->
+<div id="bottom_footer_wrapper">
+
+	<!-- Start of bottom footer -->
+    <div id="bottom_footer">
+    
+    <img src="img/logo_emblem.png" height="27" width="39" alt="bottom logo emblem" />
+    
+    <p>&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/" title="模板之家">模板之家</a> Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a></p>
+    
+    </div><!-- End of bottom footer -->
+
+</div><!-- End of bottom footer wrapper -->
+
+
+</body>
+</html>

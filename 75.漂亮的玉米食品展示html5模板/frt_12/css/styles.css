@@ -1,0 +1,251 @@
+/*
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+*/ 
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Belgrano', serif;
+	font-size:14px;
+	background: url(../images/siteBackground.jpg);
+	margin: 0;
+	padding: 10px 0 0 0;
+	color: #452200;	
+}
+a img { 
+	border: none;
+}
+a:link {
+	color: #900000;
+	text-decoration: none; 
+}
+a:visited {
+	color: #900000;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { 
+	color: #900000;
+	text-decoration: none;
+}
+h1 {
+	font-size:30px;
+	color:#883b12;
+	font-family: 'Lobster', sans-serif;
+	text-shadow: 0px 0px, 1px 2px #ffffff;
+	line-height: 25px;
+}
+h2 {
+	font-size:30px;
+	color:#883b12;
+	font-family: 'Lobster', sans-serif;
+	text-shadow: 0px 0px, 1px 2px #ffffff;
+}
+p {
+	line-height:140%;
+}
+.wrapper {
+	width:960px;
+	margin:0 auto;
+}
+header {
+	float:left;
+	width:241px;
+}
+.logo {
+	float: left;
+	background: url(../images/logoBackground.png) no-repeat;
+	width: 206px;
+	height: 205px;
+}
+.logo h1 {
+	padding:40px 0 0 43px;
+}
+.logo h1 a {
+	text-shadow: 0px 0px, 1px 1px #d4ac70;
+	font-size:60px;
+	color: #452200;
+	text-decoration:none;
+	line-height:50px;
+}
+.bodyContainer {
+	float:right;
+	width:719px;
+}
+article {
+	width:200px;
+	float:left;	
+	margin:0 57px 25px 0;
+	display:block;
+}
+.lastPost {
+	margin:0 0 25px 0;
+}
+article h1 {
+	padding:10px 0;
+}
+article img {
+	border: 1px solid #ac8829;
+	padding: 10px;
+}
+article a:hover h1 {
+	color:#452200;
+}
+article a:hover img {
+	background: #e6cb85;
+}
+.smallPost {
+	padding:10px 0;
+}
+.date span {
+	color:#ac8829;
+}
+.date, .readMore {
+	font-weight:bold;
+	font-style:italic;
+	font-size:12px;
+}
+footer {
+	margin-top:30px;
+	border-top: 1px solid #ac8829;
+}
+footer p {
+	text-align:center;
+	padding:30px 20px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+/**************************/
+/*********************************Begin main menu****************************************/
+/**************************/
+#navlist {
+	padding: 0 40px 0 0;
+	margin: 0;
+	text-align:center;
+}
+#navlist li {
+	list-style: none;
+	margin: 0;
+	padding: 5px 0;
+	font-family: 'Lobster', sans-serif;
+	text-shadow: 0px 0px, 1px 2px #ffffff;
+	font-size:36px;
+}
+#navlist li a { 
+	text-decoration: none;
+	color:#ac8829;
+}
+#navlist li a:hover { 
+	text-decoration: none;
+	color:#452200;
+}
+#navlist #active a { 
+	text-decoration: none;
+	color:#452200;
+}
+/**************************/
+/*********************************End main menu****************************************/
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	.wrapper {
+		width: 95%;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	header {
+		float: none;
+		width: auto;
+	}
+	nav {
+		float:right;
+		padding:76px 0 0 0;
+	}
+	#navlist {
+		padding: 0 10px 0 0;
+		text-align:right;
+	}
+	#navlist li {
+		display:inline;
+		padding: 0 10px;
+		font-size:24px;
+	}
+	.logo {
+		float: left;
+	}
+	.bodyContainer {
+		float: none;
+		width: auto;
+	}
+	article {
+	    width:200px;
+		float:left;	
+		margin:0 50px 25px 0;
+		display:block;
+	}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	header {
+		float: none;
+		width: auto;
+		text-align:center;
+		width:100%;
+	}
+	.logo {
+		float: none;
+		background: url(../images/logoBackground.png) no-repeat center top;
+		width: 100%;
+		height: 205px;
+		text-align:center;
+	}
+	.logo h1 {
+		padding:70px 0 0 0;
+	}
+	.logo h1 a {
+		font-size:38px;
+	}
+	nav {
+		float:none;
+		padding:5px 0 0 0;
+	}
+	#navlist {
+		padding: 0;
+		text-align:center;
+	}
+	#navlist li {
+		display:inline;
+		padding: 0 10px;
+		font-size:24px;
+	}
+	.logo {
+		float: left;
+	}
+	.bodyContainer {
+		float: none;
+		width: auto;
+	}
+	article {
+	    width: auto;
+		float: none;	
+		margin:0 0 25px 0;
+		display:block;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/

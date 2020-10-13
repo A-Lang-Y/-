@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Selroti | Premium Template</title>
+	
+	<link rel="shortcut icon" href="template_images/favicon.ico">
+	
+	<!---Style sheet-->
+	<link href="css/style.css" id="changer" rel="stylesheet"/>
+	<link href="css/prettyPhoto.css" rel="stylesheet" />
+	<link href="css/rel_cssframework.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+
+	<!--Javascript-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery-1.7.1.js"></script>
+	<!--jquery easing-->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!--jquery superfish-->
+	<script src="js/superfish.js"></script>
+	<!--jquery fred crausol-->
+	<script src="js/jquery.carouFredSel-5.5.0-packed.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.asyncslider.min.js"></script>
+	<script src="js/rel_styleswitcher.js" ></script>
+	<!--jquery custom script-->
+	<script src="js/custom.js"></script>
+	
+<script>
+	jQuery(document).ready(function() {
+			
+		// Async Slider	
+		jQuery("#async-slider").asyncSlider({
+			keyboardNavigate: true, // keyword use left or right arrow
+			easing: 'easeInOutExpo', //effect
+			minTime: 600,
+			maxTime: 1500,
+			autoswitch: 4800,
+			centerPrevNextNav: false,
+			slidesNav: false
+		});
+		
+		
+		//	Scrolled by user interaction
+		jQuery('#recent-works').carouFredSel({
+			prev: '#cr-prev',
+			next: '#cr-next',
+			auto: false // option : true/false
+		});
+		
+		var window_width = jQuery(window).width();
+		var actual_left = window_width - 70;
+		//alert (actual_left);
+		jQuery('ul#asyncslider_next_prev_nav li.next' ).children().css('left', actual_left);
+		
+	});
+	
+</script>
+		
+	<!--Header-->
+	<header>
+		<div class="container_wrap">
+			<div class="one_third">
+				<h1><a href="index-2.html">Selroti Premium Template</a></h1>
+			</div>
+			<div class="two_third">
+				<!--menu-->
+				<nav>
+					<ul id="menu-primary-menu" class="sf-menu sf-js-enabled">
+						<li><a href="index-2.html"><span>Home</span></a></li>
+						<li>
+							<a href="#"><span>Pages</span></a>
+							<ul>
+								<li><a href="about.html"><span>About Us</span></a></li>
+								<li><a href="services.html"><span>Services</span></a></li>
+								<li><a href="pricing-table.html"><span>Pricing Table</span></a></li>
+								<li><a href="typhography.html"><span>Typhography</span></a></li>
+								<li>
+									<a href="#"><span>Layouts</span></a>
+									<ul>
+										<li><a href="video.html"><span>Video Page</span></a></li>
+										<li><a href="static.html"><span>Static Page</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="products.html"><span>Products</span></a></li>
+						<li>
+							<a href="#"><span>Portfolio</span></a>
+							<ul>
+								<li><a href="portfolio-two.html"><span>Two Column</span></a></li>								
+								<li><a href="portfolio-three.html"><span>Three Column</span></a></li>
+								<li><a href="portfolio-four.html"><span>Four Column</span></a></li>
+							</ul>
+						</li>
+						<li><a href="blog.html"><span>Blog</span></a></li>
+						<li><a href="contact.html"><span>Contact</span></a></li>
+					</ul>
+				</nav>
+				<!--end of menu-->
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+	</header>
+	<!--end of header-->
+	
+	<div id="featured-container">
+		<ul id ="async-slider" class="round-images">
+			<li class="myslide">
+				<iframe src="http://player.vimeo.com/video/40379197?color=6ab9c0" width="460" height="320" class="left" ></iframe>
+				<div class = "desp-slider">
+					<hgroup>
+						<h1>Video Slider !!</h1>
+						<h2>We Create Awesome Wordpress and HTML Templates</h2>
+					</hgroup>
+					<!--<h1>We Create Awesome Wordpress and HTML Templates</h1>-->
+					<p>Lectus ut dolor turpis elit? Parturient! Magna aliquam sed augue magnis pid. Enim nisi integer urna egestas dis tincidunt odio dolor, scelerisque duis nisi aliquam sit dignissim elit? Mauris quis magnis, in.</p>
+					<a href="#" class="buttons orange"><span>Read More</span></a>
+				</div>
+			</li>
+			<li class="myslide">
+				<iframe src="http://player.vimeo.com/video/43180571?color=6ab9c0" width="460" height="320" class="left"></iframe>
+				<div class = "desp-slider">
+					<hgroup>
+						<h1>Exclusive Template !!</h1>
+						<h2>Superb Portfolio Theme To Showcase Your Work !!</h2>
+					</hgroup>
+					<!--<h1>We Create Awesome Wordpress and HTML Templates</h1>-->
+					<p>Lectus ut dolor turpis elit? Parturient! Magna aliquam sed augue magnis pid. Enim nisi integer urna egestas dis tincidunt odio dolor, scelerisque duis nisi aliquam sit dignissim elit? Mauris quis magnis, in.</p>
+					<a href="#" class="buttons orange"><span>Buy Now $15</span></a>
+				</div>
+			</li>
+			<li class="myslide">
+				<iframe src="http://player.vimeo.com/video/41175088?color=6ab9c0" width="460" height="320" class="left"></iframe>
+				<div class = "desp-slider">
+					<hgroup>
+						<h1>Exclusive Template !!</h1>
+						<h2>Also We Create Database Driven Web Apps !</h2>
+					</hgroup>
+					<!--<h1>We Create Awesome Wordpress and HTML Templates</h1>-->
+					<p>Lectus ut dolor turpis elit? Parturient! Magna aliquam sed augue magnis pid. Enim nisi integer urna egestas dis tincidunt odio dolor, scelerisque duis nisi aliquam sit dignissim elit? Mauris quis magnis, in.</p>
+					<a href="#" class="buttons orange"><span>Take a tour</span></a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="news-letter-container">
+		<div class="container_wrap">
+			<div class="three_fourth">
+				<hgroup>
+					<h2>Join Our Newsletter</h2>
+					<h4>Nullam eu augue vel nulla convallis ornare. Aenean auctor ornare pretium. Sed dignissim dui faucibus tortor.</h4>
+				</hgroup>
+			</div>
+			<div class="one_fourth">
+				<a href="#" class="buttons grey"><span>Sign up now</span></a>
+			</div>	
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	<!--content-->
+	<div id="content">
+		<div class="container_wrap">
+			<div class="full_width">	
+				<div id="intro-box">
+					<div id="call-out">
+						<h3>Selroti : is a business, <span>portfolio theme</span> available in dark and light version.</h3>
+						<p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta.</p>
+						<a href="#" class="intro-btn">Purchase this theme</a>
+					</div>
+					
+					<!--features sections-->
+					<section class="features">
+						<div class="column">
+							<img src="template_images/icons/drag_drop.png" width="35" height="35" title="support" alt="icon1" class="left" />
+							<h3>Drag and Drop</h3>
+							<span>Jquery Powered</span>
+							<p>Nullam eu augue vel nulla convallis ornare. Aenean auctor ornare pretium. Sed dignissim dui faucibus tortor tristique vulputate.</p>
+						</div>
+						
+						<div class="column">
+							<img src="template_images/icons/support.png" width="35" height="34" title="support" alt="icon1" class="left" />
+							<h3>Ultimate Support</h3>
+							<span>Full 24/7 support</span>
+							<p>Nullam eu augue vel nulla convallis ornare. Aenean auctor ornare pretium. Sed dignissim dui faucibus tortor tristique vulputate.</p>
+						</div>
+						
+						<div class="column last">
+							<img src="template_images/icons/psd.png" width="35" height="35" title="support" alt="icon1" class="left" />
+							<h3>PSD Included</h3>
+							<span>Easily Modified</span>
+							<p>Nullam eu augue vel nulla convallis ornare. Aenean auctor ornare pretium. Sed dignissim dui faucibus tortor tristique vulputate.</p>
+						</div>
+						<div class="clear">&nbsp;</div>
+					</section>
+					<div class="bottom">&nbsp;</div>
+				</div>
+			</div>
+			<!--end of features-->
+
+			<div class="clear">&nbsp;</div>
+			<div class="full_width">
+				<div class="dotted-sep">&nbsp;</div>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+		
+		<!--recent works-->
+		<section class="container_wrap">
+			<div class="full_width">
+				<div class="content-title">
+					<span class="stripe"></span>
+					<div class="title">
+						<h3>Recent Works</h3>
+						<span class="subtitle">popular works</span>
+					</div>
+				</div>
+				<div class="list_carousel">
+				<script>
+					jQuery(document).ready(function() {
+						jQuery('#recent-works li .project').css({
+							height:'162px'
+						});
+					});
+				</script>
+					<ul id="recent-works">
+						<li>
+							<div class="project">
+								<div class="inner">
+									<div class="hover">
+										<div class="clearfix hover-links">
+											<a class="zoom" href="template_images/crausol/big/01-big.jpg" data-gal="prettyPhoto" title="Something goes here">zoom</a>
+											<a class="attachment" href="#"  title="null">attachment</a>
+										</div>
+									</div>
+									<a href="#"><img src="template_images/crausol/01.jpg" alt="" title="" width="184" height="117" /></a>
+								</div>
+								<div class="title">
+									<h5>Lady With Blonde Eye</h5>
+								</div>
+							</div>
+						</li>
+						<!--end of single project-->
+						
+						<li>
+							<div class="project">
+								<div class="inner">
+									<div class="hover">
+										<div class="clearfix hover-links">
+											<a class="zoom" href="template_images/crausol/big/02-big.jpg" data-gal="prettyPhoto" title="Something goes here">zoom</a>
+											<a class="attachment" href="#"  title="null">attachment</a>
+										</div>
+									</div>
+									<a href="#"><img src="template_images/crausol/02.jpg" alt="" title="" /></a>
+								</div>
+								<div class="title">
+									<h5>Teamwork Group Pic</h5>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="project">
+								<div class="inner">
+									<div class="hover">
+										<div class="clearfix hover-links">
+											<a class="zoom" href="template_images/crausol/big/03-big.jpg" data-gal="prettyPhoto" title="Something goes here">zoom</a>
+											<a class="attachment" href="#"  title="null">attachment</a>
+										</div>
+									</div>
+									<a href="#"><img src="template_images/crausol/03.jpg" alt="" title="" /></a>
+								</div>
+								<div class="title">
+									<h5>Red Lips Like Kissing</h5>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="project">
+								<div class="inner">
+									<div class="hover">
+										<div class="clearfix hover-links">
+											<a class="zoom" href="template_images/crausol/big/04-big.jpg" data-gal="prettyPhoto" title="Something goes here">zoom</a>
+											<a class="attachment" href="#"  title="null">attachment</a>
+										</div>
+									</div>
+									<a href="#"><img src="template_images/crausol/04.jpg" alt="" title="" /></a>
+								</div>
+								<div class="title">
+									<h5>Happy Man Flying </h5>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="project">
+								<div class="inner">
+									<div class="hover">
+										<div class="clearfix hover-links">
+											<a class="zoom" href="template_images/crausol/big/05-big.jpg" data-gal="prettyPhoto" title="Something goes here">zoom</a>
+											<a class="attachment" href="#"  title="attachment">attachment</a>
+										</div>
+									</div>
+									<a href="#"><img src="template_images/crausol/05.jpg" alt="" title="" /></a>
+								</div>
+								<div class="title">
+									<h5>Beautiful Lady On Rock</h5>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="project">
+								<div class="inner">
+									<div class="hover">
+										<div class="clearfix hover-links">
+											<a class="zoom" href="template_images/crausol/big/06-big.jpg" data-gal="prettyPhoto" title="Something goes here">zoom</a>
+											<a class="attachment" href="#"  title="attachment">attachment</a>
+										</div>
+									</div>
+									<a href="#"><img src="template_images/crausol/06.jpg" alt="" title="" /></a>
+								</div>
+								<div class="title">
+									<h5>Business Discussion Section</h5>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="project">
+								<div class="inner">
+									<div class="hover">
+										<div class="clearfix hover-links">
+											<a class="zoom" href="template_images/crausol/big/07-big.jpg" data-gal="prettyPhoto" title="Something goes here">zoom</a>
+											<a class="attachment" href="#"  title="attachment">attachment</a>
+										</div>
+									</div>
+									<a href="#"><img src="template_images/crausol/07.jpg" alt="" title="" /></a>
+								</div>
+								<div class="title">
+									<h5>Spark Red Grew Lady</h5>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="clearfix">&nbsp;</div>
+					<!--control nav-->
+					<a href="#" id="cr-prev">prev</a>
+					<a href="#" id="cr-next">prev</a>
+				</div>
+			</div>
+			<div class="clear">&nbsp;</div>
+			<div class="full_width">
+				<div class="dotted-sep">&nbsp;</div>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</section>
+		<!--end of recent works-->
+		
+		<div class="container_wrap">
+			<section class="half_width">
+				<div class="content-title">
+					<span class="stripe"></span>
+					<div class="title">
+						<h3>Recent Blog</h3>
+						<span class="subtitle">get latest updates</span>
+					</div>
+				</div>
+				
+				<div id="recent-blog">
+					<ul>
+						<li>
+							<div class="post-date left">
+								<span class="month">March</span>
+								<strong class="date">19</strong>
+							</div>
+							<div class="post-info">
+								<h4>Professional Desiginners Are Great !!</h4>
+								<ul class="post-meta">
+									<li class="meta-comment"><a href="#">12 Comments</a></li>
+									<li class="meta-author"><a href="#">By: Admin</a></li>
+								</ul>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+							</div>
+						</li>
+						
+						<li>
+							<div class="post-date left">
+								<span class="month">April</span>
+								<strong class="date">24</strong>
+							</div>
+							<div class="post-info">
+								<h4>Design And Analysis of Algorithim</h4>
+								<ul class="post-meta">
+									<li class="meta-comment"><a href="#">14 Comments</a></li>
+									<li class="meta-author"><a href="#">By: RelStudios</a></li>
+								</ul>
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section class="half_width">
+				<div class="content-title">
+					<span class="stripe"></span>
+					<div class="title">
+						<h3>Testimonials</h3>
+						<span class="subtitle">see them all</span>
+					</div>
+				</div>
+				<div id="testimonials">
+					<ul>
+						<li>
+							<div class="t-image">
+								<div class="inner">
+									<a id="author-name" href="#"><img src="template_images/testimonials/01.jpg" alt=" " title= "By: Satish Pokharel " /></a>
+								</div>
+							</div>
+							<div class="t-content">
+								<h4>Great <span>Template For</span> Great People !!</h4>
+								<p>Some description for portfolio project, here is hundreds of these airships escaped to Hawaii, and not only did they bring the plague with them....</p>
+								<div class="arrow">&nbsp;</div>
+								<div class="t-author">
+									<span>By: Satish</span>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="t-image">
+								<div class="inner">
+									<a href="#"><img src="template_images/testimonials/02.jpg" alt=" " title= " " /></a>
+								</div>
+							</div>
+							<div class="t-content">
+								<h4>We Love this theme <span>it's clean</span> and superb !!</h4>
+								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+								<div class="arrow">&nbsp;</div>
+								<div class="t-author">
+									<span>By: Suruchi</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+	<!--end of content-->
+	
+	<!--begin of footer-->
+	<footer>
+		<div class="container_wrap">
+			<section class="one_fourth">
+				<h4>About us</h4>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+				<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+			</section>
+			<section class="one_fourth">
+				<h4>Flickr Stream</h4>
+				<div class="flickr-widget">
+					<ul>
+						<li><a href="#"><img src="template_images/flickr/01.jpg" alt="" title="" /></a></li>
+						<li><a href="#"><img src="template_images/flickr/02.jpg" alt="" title="" /></a></li>
+						<li><a href="#"><img src="template_images/flickr/03.jpg" alt="" title="" /></a></li>
+						<li><a href="#"><img src="template_images/flickr/04.jpg" alt="" title="" /></a></li>
+						<li><a href="#"><img src="template_images/flickr/05.jpg" alt="" title="" /></a></li>
+						
+					</ul>
+				</div>
+			</section>
+			<section class="one_fourth">
+				<h4>Latest Blog Post</h4>
+					<ul class="blog-widget">
+						<li>
+							<a href="#"><img src="template_images/blog_01.jpg" alt="" title="" /></a>
+							<span><a href="#">What are words</a></span>
+							<small>7th May 2012</small>
+						</li>
+						<li>
+							<a href="#"><img src="template_images/blog_02.jpg" alt="" title="" /></a>
+							<span><a href="#">Phantom Opera</a></span>
+							<small>9th May 2012</small>
+						</li>
+					</ul>
+			</section>
+			<section class="one_fourth">
+				<h4>Contact us</h4>
+				<p>
+					Address: <br />
+					Name of the Street: 1234/45 <br />
+					City Name , Country Name
+				</p>
+				<p>Phone Number: +977-9812-1348</p>
+				<p>
+					Email: <a href="#">jhondoedev@gmail.com</a>
+					Website: <a href="#">www.malto-xxx.com</a>
+				</p>
+				
+				<ul class="social-icons">
+					<li><a href="#"><img src="template_images/social_icons/flickr.png" alt="" title="" /></a></li>
+					<li><a href="#"><img src="template_images/social_icons/twitter.png" alt="" title="" /></a></li>
+					<li><a href="#"><img src="template_images/social_icons/facebook.png" alt="" title="" /></a></li>
+					<li><a href="#"><img src="template_images/social_icons/dribbble.png" alt="" title="" /></a></li>
+					<li><a href="#"><img src="template_images/social_icons/forrst.png" alt="" title="" /></a></li>
+					<li><a href="#"><img src="template_images/social_icons/vimeo.png" alt="" title="" /></a></li>
+				</ul>
+			</section>
+			<div class="clear">&nbsp;</div>
+		</div>
+		
+		<div class="container_wrap">
+			<div class="full_width">
+				<hr class="sep-footer">
+			</div>
+			<div class="clear">&nbsp;</div>
+			<div class="two_third">
+				<a href="#"><img src="template_images/orange/logo-footer.png" id="path" alt="somthing goes here" /></a>
+			</div>
+			<div class="one_third">
+				<span class="right">&copy; Copyright All Right Reversed 2011-2012. Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a></span>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+		<a href="#" class="scroll-top">Top</a>
+	</footer>
+</body>
+
+</html>

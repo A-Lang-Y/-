@@ -1,0 +1,130 @@
+/*   
+    Template Name: High Five
+    Template URI: http://cssheaven.org/
+	Author E-Mail : c.pixels@gmail.com
+    Author URI: http://roshanravi.com
+    Version: 1.0
+	License : GNU-GPL
+*/
+
+/**********************************************
+    Layout
+**********************************************/
+@import url("fontface.css");
+@import url(http://fonts.googleapis.com/css?family=Molengo);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+* {padding:0; margin:0;}
+html {background:url(images/htmlbg.jpg) repeat; width:100%; height:100%; display:block;}
+body {font-family:Verdana, Geneva, sans-serif; background:url(images/topbar.jpg) center top no-repeat; color:#3b2f2d; width:100%; height:100%; font-size:12px;}
+#wrap {display:block; background:url(images/wrapbg.jpg) center 24px no-repeat; min-height:650px; width:1000px; margin:auto;}
+header#mainheader {display:block; height:39px; padding:24px 45px 0 25px;}
+header#mainheader h1 {display:block; font:bold 28px "Trebuchet MS", Arial, Helvetica, sans-serif; text-shadow:#fff 1px 1px 1px; text-transform:lowercase; color:#7a415d; float:left;}
+header#mainheader h1 span {margin-left:-5px; font-weight:normal!important; color:#777745;}
+header#mainheader h1 a span {color:#777745; text-decoration:none;}
+header#mainheader h1 a {color:#7a415d; text-decoration:none;}
+header#mainheader h1 a:hover {color:#82426b;}
+header#mainheader h1 a:hover span {color:#515121;}
+#topnav {display:block; height:48px; padding:0 45px 0 45px;}
+ul {list-style:none;}
+#topnav ul {display:block; height:42px; float:right;}
+#topnav ul li { display:inline; font:bold 14px "Trebuchet MS", Arial, Helvetica, sans-serif; text-shadow:#fff 1px 1px 1px;}
+#topnav ul li a {display:block; float:left; color:#7d2e55; text-decoration:none; height:34px; padding:8px 15px 0 15px;}
+#topnav ul li a:hover, #topnav ul li.active a {background:url(images/menuhover.png) center 1px no-repeat; color:#443023;}
+.clear {clear:both;}
+#maincontent {padding:40px 25px 0 25px;}
+#leftcontent {display:block; float:left; width:691px;}
+#sidebar{float:right; width:240px; padding:25px 5px 5px 5px; display:block;}
+#leftcontent header#pageheader {display:block; background:url(images/pageheader.jpg) no-repeat; height:169px; padding:10px;}
+#leftcontent.normalpage {display:block; background:url(images/pageheader.jpg) no-repeat; padding-top:10px!important}
+
+#pageheader h1 {display:block; font-size:11px; font-weight:normal; padding:10px;}
+#pageheader h2#introduction {
+	font-size:14px;
+	font-weight:normal;
+	padding:0 10px 0 25px;
+	display:block;
+	width:500px;
+	color:#5d3648;
+	line-height:24px;
+}
+h2#introduction span {font: normal 24px 'Lobster'; display:block; color:#7a7953; margin-bottom:8px;}
+
+h1, h2, h3, h4, h5 {text-shadow:#fff 1px 1px 1px;}
+a {color:#7d2e55;}
+a:hover {color:#5c543e;}
+#mainheading {display:block; background:url(images/mainheadingbg.jpg) no-repeat; height:86px;}
+#leftcontents {display:block; width:680px; margin:auto;}
+#mainheading h2 {display:block; font: bold 22px 'Comfortaa'; color:#b485a3; display:block; padding:22px 20px 0 15px;}
+#contentwrap {background:url(images/mainbg.jpg) repeat-x; margin:0 4px 0 4px; padding:20px 10px 10px 10px;}
+#leftcontents article {display:block;}
+#leftcontents article header {margin-bottom:5px; display:block; background:url(images/thinline-h.gif) left bottom repeat-x; padding-bottom:8px;}
+#leftcontents article header h3 {display:block; font: bold 22px 'FertigoProRegular'!important; color:#9d6380;}
+.postdata {display:block; font-size:12px; color:#746562;}
+#leftcontents article p {line-height:22px; margin-bottom:18px; text-shadow:#fff 1px 1px 1px; font-size:14px;}
+#leftcontents article a {text-decoration:none;}
+#leftcontents article a:hover {text-decoration:underline;}
+.readmore {font-style:italic;}
+
+#leftcontents article header p {margin-bottom:0!important;}
+
+#sidebar section { margin-bottom:10px; padding-bottom:20px; background:url(images/deviderbg.jpg) center bottom no-repeat; display:block;}
+#sidebar h2 {background:url(images/sidebarheading.png) center bottom no-repeat; height:28px; display:block; text-transform:uppercase; margin-bottom:10px; padding:8px 8px 0 8px; font: bold 18px "Trebuchet MS", Arial, Helvetica, sans-serif;  color:#8e6c8a;}
+#sidebar h2 {}
+.thumbholder {background:url(images/thumbbg.jpg) no-repeat; height:146px; width:213px; margin:0 auto 10px auto; text-align:center; padding-top:12px;}
+.latestworks .proj-info {width:193px; padding:0 10px; margin:auto;}
+.proj-info h2 {display:block; font:normal 18px 'Lobster'; color:#8e6c8a;}
+.proj-info p {font-size:12px;}
+
+
+a img, img {border:none;}
+
+.latestworks .proj-info {text-align:center;}
+
+.sb-c {padding:10px 25px 10px 15px; font-size:14px;}
+.sb-c p {line-height:22px; margin-bottom:10px; color:#655459;}
+.roshanimg {background:url(images/authorimgbg.gif) no-repeat; width:209px; height:144px; display:block; text-align:center; padding-top:18px; margin:auto auto 10px auto;}
+.bioshort li {display:block; padding:3px;}
+.bioshort li .title {display:block; color:#111; margin-bottom:3px;}
+.sb-c ul {display:block; margin-bottom:10px;}
+.sb-c li {display:block; height:30px; font:normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif!important;}
+.sb-c li a {display:block; color:#fff; text-decoration:none; padding:5px 10px 0 10px; height:22px; background:url(images/sidebarmenu1.jpg) no-repeat;}
+.sb-c li a:hover {background:url(images/sidebarmenu2.jpg) no-repeat;}
+p.testimonial {display:block; background:url(images/quote.gif) left top no-repeat; padding:5px 0 0 20px; font:normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif; line-height:20px;}
+p.testimonial span {display:block; font:bold italic 12px "Trebuchet MS", Arial, Helvetica, sans-serif!important; color:#7a7953; padding-top:10px;}
+.postbtm {clear:both;}
+.postinfo {width:120px; float:left; text-align:right!important;}
+.postdate {background:url(images/datebg.jpg) 15px 0 no-repeat; height:20px!important;}
+.postpre {width:500px; float:right; padding-right:20px;}
+div#bottom {background:url(images/footerbg.jpg) center top no-repeat;  display:block; padding:10px; margin:auto; min-height:250px;}
+footer {display:block; background:url(images/btmbg.jpg) left top repeat-x; height:75px;}
+#btmwrap {width:800px; padding:100px 25px 0 25px; margin:auto;}
+#bottom #briefbio {width:38%; padding:0 10px 0 10px; float:left; display:block;}
+#bottom #latestproject {width:54%; padding:0 10px 0 10px; float:right; display:block;}
+#bottom h2 {display:block; font: normal 24px 'Lobster'; margin-bottom:10px; color:#74764a; text-shadow:#fff 1px 1px 1px;}
+#bottom p{ font: normal 14px 'FertigoProRegular'; line-height:18px; display:block; padding-right:20px;}
+.pf-thumb {background:url(images/portf-thumbholder.gif) no-repeat; height:137px; width:258px; float:left; padding:9px 0 0 10px;}
+.pf-txt {margin-left:280px;}
+.pf-txt h3 {font: bold 16px "Trebuchet MS", Arial, Helvetica, sans-serif; text-shadow:#fff 1px 1px 1px; color:#49481b; margin-bottom:8px;}
+footer p {display: block; padding:58px 0 0 0; text-align:center; color:#000; font:normal 10px Verdana, Geneva, sans-serif;}
+.postbtm { background:url(images/articlebg.jpg) center bottom no-repeat; height:20px; margin-bottom:10px;}
+.portfolio .pfitem {position:relative; background:url(images/portfoliobg.gif) no-repeat; width:650px; height:198px; margin:0 auto 10px auto;}
+.pfitem .clear {line-height:1px; height:1px;}
+.pfitem .pfthumb {width:302px; height:228px; position:absolute; left:10px; top:-20px;}
+.pfitem .pfinfo {width:320px; right:10px; top:10px; position:absolute;}
+.pfinfo p {margin-bottom:8px!important; font-size:12px!important; line-height:20px!important;}
+.pftags {font-size:14px; font-weight:bold;}
+.txtbtn {display:block; background:url(images/btnbg.png) no-repeat; width:121px; height:25px; font:bold 14px "Trebuchet MS", Arial, Helvetica, sans-serif; padding:7px 0 0 0; text-align:center; text-shadow:#d2c5bb 1px 1px 1px;}
+.portfolio article {margin-bottom:30px;}
+.wp-pagenavi {background:url(images/pagenavi.png) center 6px repeat-x; height:35px; padding-left:8px; margin-bottom:10px;}
+.wp-pagenavi span, .wp-pagenavi a {display:block; width:45px; height:22px; padding:13px 0 0 0; text-align:center; margin:0 3px 0 3px; float:left; text-decoration:none; font:bold 11px "Trebuchet MS", Arial, Helvetica, sans-serif;}
+.wp-pagenavi span:hover, .wp-pagenavi a:hover {background:url(images/pagenavibg.png) no-repeat; color:#000;}
+.wp-pagenavi span.current {background:url(images/pagenavibg.png) no-repeat; color:#000;}
+#commentstemplate  h3 {display:block; font: bold 22px 'FertigoProRegular'!important; color:#9d6380; background:url(images/articlebg.jpg) center bottom no-repeat; padding-bottom:10px; margin-bottom:10px;}
+
+
+#comments .entry {background:url(images/articlebg.jpg) center bottom no-repeat; padding-bottom:10px; margin-bottom:10px;}
+.entry p {display:block;}
+.entry .commentheader { width:120px; float:left;}
+.entry .con {margin-left:130px; padding:58px 5px 5px 5px;}
+.commentheader p{text-align:right; padding:5px;}
+.description {float:right; font:normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif; padding:10px 10px 0 10px;}

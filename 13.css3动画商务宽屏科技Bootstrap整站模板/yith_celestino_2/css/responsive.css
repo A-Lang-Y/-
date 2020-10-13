@@ -1,0 +1,141 @@
+#header .menu-select { display:none; }
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    .remove-under-1200 { display:none !important; }
+}
+ 
+/* Portrait tablet to landscape and desktop */   
+@media (min-width: 768px) and (max-width: 979px) {
+	.responsive #header div.menu > ul > li > a { font-size: 11px !important }
+	.responsive #header div.menu > ul ul li a { font-size: 11px !important }
+	.responsive #tagline { display: none }
+}
+@media (max-width: 1024px) {
+	.responsive .sf-menu li { padding: 0 9px 15px 9px; }
+	.responsive #header div.menu > ul > li > a { font-size: 12px }
+	.responsive #header div.menu > ul ul li a { font-size: 12px !important }  
+    .responsive .remove-under-1024 { display:none !important; }    
+	
+    /* === SLIDER */                       
+    .responsive .slider.fixed-image { position:relative; z-index:10; width:100%; margin-top:-22px; }
+    .responsive .mobile-slider { display:block !important; }
+    .responsive .slider.no-responsive { display:none !important; }
+    .responsive .slider.fixed-image.inner {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	/* === MOBILE */
+	.responsive #wrapper { margin: 0 -20px !important; overflow:hidden; }
+	.responsive .container { padding-left:20px; padding-right:20px; }
+	.responsive #wrapper.container { padding-left:0px; padding-right:0px; width:auto !important; }   
+    .responsive .boxed #header, .boxed #topbar, .boxed #footer, .boxed #copyright{
+    	margin-right: 0;
+    	margin-left: 0;
+    }
+    .responsive .style-picker {display:none !important;}
+	
+	/* === HEADER */
+	#header { text-align:center; } 
+	#logo { margin-top:10px; margin-bottom:10px; }
+	#logo-img, #tagline, #textual { float:none; display:block; width:100%; text-align:center; margin:0; }
+	#page-meta { margin-bottom:5px; }         
+    .slider.fixed-image { margin:-22px -20px 0; }
+	
+	/* === MENU */
+	#header .menu, #header #nav > ul { display:none; } 
+    #header .menu-select { display:block; }   
+    
+    /* === PAGES */
+    .accordion-item .meta { position:static; }
+    .accordion-item-content { padding-bottom:20px; }
+    .error-404-text input#s { width:60%; }
+    
+    /* === SHORTCODES */
+    .box-sections, .one-fourth, .one-third, .two-fourth, .two-third { float:none; width:100%; margin:0; clear:both; }
+    .content blockquote { padding:0; background-position: 0 0; }
+    .short-table table th, .short-table table td { padding:8px 0px; }
+    .call-to-action-two .call-btn, .call-to-action-two .incipit { display:block; vertical-align:baseline; width:100%; text-align:left; }
+    .call-to-action-two .call-btn { margin-top:10px; }
+    .call-to-action-two .incipit span { font-size:34px; }
+    .call-to-action-two p, .call-to-action-two h1, .call-to-action-two h2, .call-to-action-two h3, .call-to-action-two h4, .call-to-action-two h5, .call-to-action-two h6 { width:auto; font-size:1.5em; margin-bottom:10px; }
+    .pricing_box { width:100% !important; margin-top:17px !important; }
+    .image-styled .img_frame img { max-width:100% !important; }
+    .image-styled .img_frame.img_size_fullwidth, .image-styled .img_frame.img_size_fullwidth img { max-width: 100%; margin-right: 0px; }
+    .google-map-frame, .google-map-frame iframe { max-width: 100%; }
+    .call-to-action { height:auto; }   
+    .call-to-action .decoration-image { display: none; }   
+    .call-to-action .incipit { margin-right:20px; } 
+    .call-to-action .number-phone { margin-left:20px; margin-bottom:20px; text-shadow:none; }
+    .call-to-action .number-phone, .call-to-action .number-phone a { font-size:28px; line-height:46px; letter-spacing:0; }
+    
+    /* === FOOTER */
+    #footer [class*="span"] { margin-bottom:30px; }
+    #copyright .left, #copyright .right { text-align:left; }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	.remove-under-480 { display:none !important; }    
+}
+ 
+/* Portrait phones and down */
+@media (max-width: 320px) {  }
+/* Large desktop */
+@media (min-width: 1200px) { }
+ 
+/* Portrait tablet to landscape and desktop */   
+@media (min-width: 768px) and (max-width: 1024px) { #footer .recent-posts .hentry .text p { display:none; } }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {                                  
+    /* === HEADER */           
+    #topbar { text-align:center; }
+    #topbar .widget-first { display:none; } 
+    #topbar .widget-last > div { float:none; }
+    #page-meta .slogan h2 { font-size:24px !important; margin-bottom:0; }
+    #page-meta .slogan h3 { font-size:18px !important; }
+                     
+    /* === SLIDER */
+    .slider.thumbnails .showcase-content img { width: 96.5% !important; padding:1.5%; }
+    .boxed .slider.thumbnails .showcase-thumbnail-restriction { max-width:90%; }
+    .slider.thumbnails .showcase-thumbnail-restriction { margin-left:22px; }
+    .slider.thumbnails .showcase-thumbnail { margin-right:14px !important; /* deve essere così per il mobile, anche se su pc si vede male */ }
+    .slider.thumbnails .showcase-thumbnail-container { margin-top:0; }
+    .slider.thumbnails .showcase-thumbnail-button-forward { right:0; }
+    
+    /* === PORTFOLIO */
+    .work-description, .portfolio-full-description .work-thumbnail { margin-bottom:20px !important; }
+    .work-skillsdate { position:static !important; margin-top:20px; }
+    .picture_overlay { margin-bottom:20px; display:inline-block; /* serve */ }
+    #portfolio.slider li { float:left; width:220px; margin-right:20px !important; }
+    
+    /* === BLOG */
+    .blog-small .meta { padding-left:0; }
+    
+    /* === SHORTCODES */
+    .box-title { margin-bottom:20px; }  
+    .random-numbers { margin-bottom:20px; }
+    .testimonial .testimonial-text { margin-bottom:20px; }
+    
+    /* === COMMENTS */
+    #respond p { display:inline-block; width:100% !important; max-width:100%; clear:both; }  
+    #respond input[type="text"], #respond textarea { width:95% !important; }  
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    #portfolio.slider li { width:201px; } 
+}
+ 
+/* Portrait phones and down */
+@media (max-width: 320px) { 
+    #portfolio.slider li { width:260px; } 
+    
+    .slider.thumbnails .showcase-thumbnail { margin-right:15px !important; /* deve essere così per il mobile, anche se su pc si vede male */ }  
+    .slider.thumbnails .showcase-thumbnail-button-backward, .slider.thumbnails .showcase-thumbnail-button-forward { width:18px; }
+}

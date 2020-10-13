@@ -1,0 +1,148 @@
+
+nav { float: right; }
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * { margin: 0; padding: 0; list-style: none; }
+
+.sf-menu { line-height: 1.0; }
+
+.sf-menu ul li { width: 100%; }
+
+.sf-menu li:hover { visibility: inherit; /* fixes IE7 'sticky bug' */ }
+
+.sf-menu li { float: left; position: relative; }
+
+.sf-menu a { display: block; position: relative; }
+
+.sf-menu li:hover ul, .sf-menu li.sfHover ul { left: 0; top: 89px; /* match top ul list item height */ z-index: 99; }
+
+ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul { top: -999em; }
+
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul { left: 159px; /* match ul width */ top: 1px; }
+
+ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul { top: -999em; }
+
+ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 10em; /* match ul width */ top: 0; }
+
+/*** STYLIZATION ***/
+.sf-menu > li { margin-left:1px; }
+
+.sf-menu > li > a { font: 600 11px/39px 'Open Sans', Arial, Tahoma, sans-serif, Tahoma, sans-serif; height: 62px; margin-top: 27px; padding: 0 23px 0 23px; text-transform: uppercase; }
+
+.sf-menu > li > a:hover { color: #999; border-bottom: 1px solid #22AAEE; text-shadow: 0 0 0; }
+
+.sf-menu > li.active > a { border-bottom: 1px solid #22AAEE; color: #22AAEE; text-shadow: 0 0 0; }
+
+.sf-menu > li.sfHover > a { color: #666; text-shadow: 0 0 0; }
+
+.sf-menu > li:hover, .sf-menu > li.sfHover { background: none repeat scroll 0 0 #F9F9F9; box-shadow: 0 1px 3px #F6F6F6 inset; -webkit-box-shadow: 0 1px 3px #F6F6F6 inset; -moz-box-shadow: 0 1px 3px #F6F6F6 inset; behavior: url(js/PIE.htc); }
+
+.sf-menu > li.active { }
+
+.sf-menu ul { border-top:  1px solid #22AAEE; position: absolute; top: -999em; width: 162px; padding: 0; background: none repeat scroll 0 0 #FFFFFF; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); behavior: url(js/PIE.htc); }
+
+.sf-menu li li a { font: 11px/40px 'OpenSansSemibold'; color: #999999; text-shadow: none; padding: 0 6px 0 12px; }
+
+.sf-menu li li { border-bottom: 1px dashed #EEEEEE; }
+
+.sf-menu li li:first-child { background:none; }
+
+.sf-menu li li a { margin: 0; }
+
+.sf-menu li li a:hover, .sf-menu > li li.active a, .sf-menu > li li.sfHover > a { color: #666; }
+
+.sf-sub-indicator { background: url("img/indicator.png") no-repeat scroll 0 0 transparent; display: inline-block; height: 13px; margin-left: 9px; position: absolute; text-indent: -999em; right: 5px; top: 13px; width: 15px; }
+
+.sf-menu .sf-sub-indicator { display:none; }
+
+.sf-menu li li .sf-sub-indicator { display: block; }
+
+#responsive-main-nav-menu { display: none; }
+ @media handheld and (max-width: 480px), screen and (max-device-width: 767px), screen and (max-width: 1024px) {
+ nav {
+ float: left;
+}
+ .sf-menu > li {
+ margin-left:0px;
+}
+}
+ @media handheld and (max-width: 767px), screen and (max-device-width: 767px), screen and (max-width: 767px) {
+ nav {
+ display: block;
+ float: right;
+ margin: 24px 0 0;
+ position: relative;
+ width: 250px;
+}
+#main-nav-menu {
+display: none;
+}
+#responsive-main-nav-menu {
+ color: #666666;
+ font: 12px/1em 'Open Sans', Arial, Tahoma, sans-serif;
+ display: block;
+ float: right;
+ margin: 30px 0;
+ width: 100%;
+}
+ .sf-menu {
+float:none;
+margin-bottom:40px;
+}
+ .sf-menu ul, .sf-menu ul ul {
+min-width:100%;
+position: relative;
+left: 0 !important;
+top:0px !important;
+padding:0;
+}
+ .sf-menu li {
+float:none;
+}
+.sf-menu > li:hover, .sf-menu > li.active, .sf-menu > li.sfHover {
+background: none repeat scroll 0 0 #22AAEE;
+box-shadow: 0 0 0 #eee;
+-webkit-box-shadow:  0 0 0 #eee;
+-moz-box-shadow:  0 0 0 #eee;
+behavior: url(js/PIE.htc);
+}
+ .sf-sub-indicator {
+ background: url("img/autoArrows.png") no-repeat scroll 0 0 transparent;
+ display: inline-block;
+ float: right;
+ height: 3px;
+ left: 0;
+ position: relative;
+ text-indent: -999em;
+ top: 13px;
+ width: 5px;
+}
+ .sf-menu > li li > a > .sf-sub-indicator {
+ left:0px;
+ top:17px;
+ display:inline-block;
+ background: url('img/autoArrows-2.png') no-repeat;
+}
+ .sf-menu > li {
+ margin-bottom: 0;
+ background: none repeat scroll 0 0 #F7F7F7;
+}
+ .sf-menu > li > a {
+ border-bottom: 1px solid #EEEEEE;
+ color: #999999;
+ font: 600 11px/32px 'Open Sans', Arial, Tahoma, sans-serif;
+ height: 31px;
+ margin-top: 0;
+ padding: 2px 14px 0;
+}
+ .sf-menu > li li > a {
+ font: 12px/24px 'OpenSansSemibold';
+ padding-left:20px;
+}
+ .sf-menu > li li li > a {
+ padding-left:40px;
+}
+.sf-menu > li.active > a, .sf-menu > li.sfHover > a {
+ color: #fff;
+}
+}

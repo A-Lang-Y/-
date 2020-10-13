@@ -1,0 +1,210 @@
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #topmenu .menu.resp{display:inline-block;}
+    #topmenu .menu.resp li.first{ background:none;}
+    #topmenu .menu.full{display:none;}
+    /*sidebar*/ 
+    .side_search_box input[type="text"]{width:85px;}
+    .side_testimonials_client{width:188px !important;}
+
+    .side_testimonials_client{ float:right;}
+    .side_testimonials_client b{font:bold 16px 'Lato'; display:block; padding-bottom:6px;}
+
+    /*siteelements*/
+    .call_to_action h3{margin:10px 0px 5px 0px; width:100%; }
+    .call_to_action .cbutton {display:inline-block; float:none; margin-right:16px; margin-top:10px; margin-bottom:10px;} 
+
+    /* contact page */
+    .lcomment {margin-bottom:35px;}
+
+    /* Home Page */
+    .homepage_img .left_image {max-width:350px;}
+    .homepage_img .right_image {max-width:350px;}
+    .homepage .service_box {margin-right: 9px;}
+    .homepage .service_box.last {margin-right: 0px;}
+    .home_box,.home_box_last {float:right; margin-right: 55px;}
+
+    /* Toppanel */
+    #panel .ctext{width:210px;}
+ 
+    /* Features */
+    .accordion {width:auto; }
+    .toggle {width:auto; }
+    .price-table{margin-left:0px;}
+
+    /* Footer */
+    .footer_box .flickr {list-style: none; display:block; float:left; margin-top:7px; margin-left:-10px;}
+    .footer_box .flickr li {display:block; float:left; margin-left:5px; margin-bottom:5px;}
+    .footer_box .recent ul li a{font:bold 13px 'Lato'; line-height:18px; color:#000; }
+    .footer_box .recent ul li div a{margin-top: 6px;}
+    .footer_box p{line-height:19px;}
+    .footer_box {margin-top:16px;}
+    .footer_box h6 {margin-bottom:18px;}
+    .footer_2 .menu li{margin-left:3px;}
+    .footer_2 .info{margin-top:0px;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+    #topmenu .menu.resp{display:inline-block;}
+    #topmenu .menu.resp li.first{ background:none;}
+    #topmenu .menu.full{display:none;}
+
+    /* Toppanel */
+    #panel .ctext{width:210px;}
+    #panel fieldset div {float:left;}
+    #panel .fpass { margin:10px 0px 0px 0px; float:right;}
+    .top_slider{margin-bottom:-34px !important;}
+    .top_slider ul {float:none;  display:table; margin:0 auto;}
+
+    /*sidebar*/
+    .side_categories{margin-top:30px;}
+    .side_overlay_box{width:388px !important;}
+    .side_testimonials{width:388px !important;}
+    .side_testimonials_client{width:100% !important;}
+    .service_box{margin-right: 27px;}
+    .service_box:nth-child(odd){margin-right: 56px !important;}
+    .service_box:nth-child(even){margin-right: 0px !important;}
+
+    /* site elements*/
+    .service_box{margin-right: 30px;}
+    .side_search_box input[type="text"]{width:332px;}
+    .call_to_action h3{margin:10px 0px 5px 0px; width:100%; }
+    .call_to_action .cbutton {display:inline-block; float:none; margin-right:16px; margin-top:10px; margin-bottom:10px;}
+    .side_tab .liteTabs .tag_holder{padding:10px 0px 10px 0px;} 
+
+    /* Home Page */
+    .homepage_img .left_image {float: right;}
+    .homepage_img h5 {margin-top: 6px;margin-bottom: 6px;
+    }
+    .homepage_slogan1{padding-bottom:15px;}
+    #home_header{margin-bottom:10px;}
+    .homepage .service_box {margin-right: 27px;}
+    .home_box,.home_box_last {float:right; margin-right: 61px;}
+
+    /* contact page */
+    .lcomment {margin-bottom:35px;}
+
+    /* Features */
+    .accordion {width:auto;margin-bottom:20px;}
+    .toggle {width:auto;}
+    blockquote{margin-bottom:20px;}
+    blockquote.type1{margin-top:10px; margin-right:0px;}
+    .price-box-featured{margin-top:0px;}
+    .price-box{margin-bottom: 2px;}
+
+    /* Footer */
+    .footer_box {padding-top:20px;}
+    .footer_box .flickr {list-style: none; display:block; float:left; margin-top:7px; margin-left:-10px;}
+    .footer_box .flickr li {display:block; float:left; margin-left:8px; margin-right:24px; margin-bottom:16px;}
+    .footer_box .flickr li:last-child{margin-right: 0px;}
+    .footer_box .recent ul li a{font:bold 13px 'Lato'; line-height:18px; color:#000; }
+    .footer_box .recent ul li div a{margin-top: 6px;}
+    .footer_box p{line-height:19px;}
+    .footer_box {margin-top:16px;}
+    .footer_box h6 {margin-bottom:10px;}
+    .footer_2 .menu li{margin-left:1px; padding:0px 15px;}
+    .footer_2 .info{margin-top:0px;}
+    .footer_2 .copyright .madeby a{margin-top:-10px; padding-bottom:10px;}
+    .footer_2 .info{padding-top:20px;}
+    .footer_2 .copyright .madeby{float:left; padding-top:25px;}
+
+    .social_box {float:left; display:inline-block; margin-right:5px; width:205px;}
+    .social_box .stext{width:140px; font-weight:normal; font-size:13px;}
+
+    .mt40{margin-top:20px !important;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*Toppanel */
+    #topmenu .menu.resp li.first{ background:none;}
+    /* site elements*/
+    .service_box{margin-right: 30px;}
+    .call_to_action h3{margin:10px 0px 5px 0px; width:100%; }
+    .call_to_action .cbutton {display:inline-block; float:none; margin-right:16px; margin-top:10px; margin-bottom:10px;} 
+
+
+    /* Features */
+    .alertbox p{width:87%;}
+    .alertbox p{padding:6px 10px 6px 10px;}
+    .alertbox span{padding-top: 6px !important;}
+
+    /* contact page */
+    .lcomment {margin-bottom:35px;}
+
+    /* Footer */
+    .footer_box .flickr {list-style: none; display:block; float:left; margin-top:7px; margin-left:-2px;}
+    .footer_box .flickr li {display:block; float:left; margin-left:2px; margin-right:30px; margin-bottom:16px;}
+    .footer_box .flickr li:last-child{margin-right: 0px;}
+    .footer_box .flickr li.last-child{margin-right: 0px;}
+
+    .wpx300{width:auto;}
+    .pb15{padding-bottom:5px !important;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    #topmenu .menu.resp{position:absolute; left:0px;}
+    #topmenu .menu.resp .first{padding-left:0px; background:none;}
+    #topmenu .menu.resp li{margin-left:0px;}
+    #topmenu .menu.full{display:none;}
+    #panel fieldset div {float:left; width:100%;}
+    #panel .fpass {margin: 5px 0px 20px 57px; float:left;}
+    #toppanel label{display:block;}
+    .homepage_img .left_image {float: none !important; width:300px!important;}
+    .homepage_img .right_image img{float: none !important; width:300px!important;}
+
+    /* site elements*/
+    .side_search_box input[type="text"]{width:212px;}
+
+
+    #panel fieldset button, .top_slider ul {float:left !important;}
+
+    /* Home Page */
+    #home_header .homepage_social .dottes{width:98px;}
+    #home_header{margin-bottom:10px;}
+    .service_box:nth-child(odd){margin-right: 20px !important; width:140px;}
+    .service_box:nth-child(even){margin-right: 0px !important; width:140px;}
+    .home_box,.home_box_last {float:right; margin-right: 8px;}
+
+    /*Toppanel*/
+    #panel{padding-top:10px;}
+
+    #panel #close{float:right;}
+    #panel legend{padding-top:10px;}
+    fieldset button, .top_slider ul {float:left;}
+
+    /* Features */
+    .alertbox p{width:82%;}
+    .alertbox p{padding:6px 10px 6px 10px;}
+    .alertbox span{padding-top: 6px !important;}
+    .price-table{margin-left:25px;}
+    /*sidebar*/
+    .side_overlay_box{width:268px !important;}
+    .side_testimonials{width:268px !important;}
+    .side_testimonials_client{width:100% !important;}
+
+    .footer_box .flickr {margin-top:7px; margin-left:-8px;}
+    .footer_box .flickr li { margin-left:8px; margin-right:10px; margin-bottom:16px; width:60px;}
+    .footer_box .flickr li img{width:60px;}
+    .footer_box .flickr li:last-child{margin-right: 0px;}
+    .footer_box .flickr li.last-child{margin-right: 0px;}
+
+    .social_box {float:left; display:inline-block; margin-right:2px; width:auto;}
+    .social_box .stext{width:100px; font-weight:normal; font-size:13px;}
+
+    .footer_2 .menu li{margin-left:-8px; padding:0px 10px; background:none;}
+    .footer_2 .info{margin-top:-10px;}
+ 
+    .wpx300{width:270px;}
+    .pb15{padding-bottom:0px !important;}
+}
+

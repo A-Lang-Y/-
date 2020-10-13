@@ -1,0 +1,93 @@
+/* Left & Right alignment */
+.left  {float:left}
+.right  {float:right}
+.wrapper  {width:100%;overflow:hidden}
+.relative {position:relative}
+/* Global properties ======================================================== */
+body {background:url(../images/bg.jpg) center bottom #000 no-repeat;border:0;font:14px Arial, Helvetica, sans-serif;color:#4d4d4d;line-height:25px;min-width:950px;overflow:hidden}
+.ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:0 10000% 0 0;overflow:hidden;padding:0}
+.css3 {border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+.page_spinner {position:absolute;background:#000;z-index:99;width:100%;height:100%;top:0;left:0}
+.page_spinner div {position:absolute;background:url(../images/ajax-loader.gif) 50% 50% no-repeat;width:100%;height:100%;top:0;left:0}
+.left_block {float:left;width:220px;background:#fff}
+/* Global Structure ============================================================= */
+.main {margin:0 auto;	width:950px}
+/* ============================= main layout ====================== */
+a {color:#81b003;text-decoration:none;outline:none}
+a:hover {}
+strong {color:#81b003}
+h1 {float:left}
+h2 {font-size:40px;color:#4d4d4d;line-height:1.2em;padding:7px 0 18px 0;letter-spacing:-1px}
+h2.letter_spacing {letter-spacing:-2px}
+h3 {font-size:24px;line-height:1.2em;color:#4d4d4d;padding:11px 0 12px 0;letter-spacing:-1px}
+p {padding-bottom:25px}
+/* ============================= header ====================== */
+header {height:65px;background:#fff;position:relative;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow:0 0 5px rgba(0, 0, 0, .5);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .5);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .5);padding:18px 40px;margin:5px}
+#logo {display:block;text-indent:-9999px;background:url(../images/logo.jpg) 0 0 no-repeat;width:307px;height:65px}
+.menu {float:right;padding:19px 0 0 0}
+#menu  {}
+#menu > li  {position:relative;margin-left:23px;float:left}
+#menu > li > a {font-size:20px;color:#4d4d4d;line-height:1.2em;overflow:hidden;letter-spacing:-1px}
+#menu > li > a:hover, #menu > .active > a, #menu > .sfHover > a {color:#81b003}
+.submenu_1 {position:absolute;bottom:63px;left:-25px;width:140px}
+.submenu_1 ul {background:#fff;position:relative;padding:10px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}  
+.submenu_1 li {font-size:14px; line-height:28px;position:relative}
+.submenu_1 a {color:#4d4d4d;display:block}
+.submenu_1 a:hover, .submenu_1 .sfHover > a {color:#81b003}
+.submenu_2 {position:absolute;bottom:-10px;left:131px;width:140px}
+/* ============================= content ====================== */
+#content {padding-bottom:10px}
+#content > ul {position:relative;height:100%}
+#content > ul > li {position:relative;bottom:0;margin:5px}
+.box {background:#fff;padding:20px 60px;position:relative;min-height:511px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow:0 0 5px rgba(0, 0, 0, .5);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .5);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .5)}
+#page_More .box {min-height:0}
+.pad_left1 {padding-left:60px}
+.pad_bot1 {padding-bottom:15px}
+.marg_right1 {margin-right:30px}
+#page_Donations .pad_bot1 {padding-bottom:10px}
+.sign {float:right;margin-top:-33px}
+.promos {overflow:hidden;padding-top:15px}
+.promos li {float:left;margin-right:15px}
+.promos a {position:relative;display:block}
+.promos span {position:absolute;top:0;left:0;background:url(../images/border1.gif) 0 0 no-repeat;width:100%;height:100%}
+.promos .last {margin-right:0}
+.news {}
+.news li {padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid #f2f2f2}
+.news .last {border-bottom:0;margin-bottom:10px}
+.news a {font-size:12px}
+.button1 {display:inline-block;font-size:12px;color:#fff;font-weight:bold;line-height:36px;padding:0 20px;background-color:#81b003}
+.link2 {text-decoration:underline}
+.list1 {}
+.list1 li {padding-bottom:5px}
+.list1 a {color:#4d4d4d;text-decoration:underline;padding-left:12px;background:url(../images/marker_1.gif) 0 5px no-repeat}
+figure {padding-top:3px}
+.table {padding-top:3px}
+table {border-collapse:collapse;border:0}
+table td {background:#f2f2f2;border-bottom:1px solid #fff;border-right:1px solid #fff;padding-top:2px;padding-bottom:2px;vertical-align:middle;min-height:25px}
+.google_map {padding-top:0;margin-top:3px;margin-bottom:22px;width:220px;height:180px;background:#fff}
+/* ============================= columns ====================== */
+.col1, .col2, .col3 {float:left}
+.col1 {width:540px}
+.col2 {width:220px}
+.col3 {width:82px}
+#page_Mission .col1 {width:380px}
+table .col1 {width:45px;text-align:center}
+table .col2 {width:358px;padding-left:28px;padding-right:28px}
+table .col3 {width:79px;text-align:center;border-right:0}
+/* ============================= footer ====================== */
+footer  {height:64px;color:#808080;padding:27px 0 0 0;text-align:center}
+footer a {color:#6ab2b1}
+footer a:hover {}
+/* ============================= forms ============================= */
+#ContactForm {position:relative}
+#ContactForm .wrapper {overflow:inherit;min-height:30px}
+#ContactForm .success {display:none;position:absolute;bottom:0;left:69px}
+#ContactForm label {position:relative;min-height:20px;float:right}
+#ContactForm .message {height:312px}
+#ContactForm  span {display:block}
+#ContactForm .error, #ContactForm .empty {font-size:10px;color:#000;line-height:14px;display:none;width:100%}
+#ContactForm a {margin-left:10px;float:right}
+#ContactForm .input  {margin:0;width:451px;height:18px;background:#f2f2f2;padding:1px 10px;color:#4d4d4d;font:14px Arial, Helvetica, sans-serif}
+#ContactForm textarea  {overflow:auto;margin:0;resize:none;width:451px;height:287px;background:#f2f2f2;padding:1px 10px;color:#4d4d4d;font:14px Arial, Helvetica, sans-serif;margin-top:3px}
+#ContactForm .col1 {width:69px}
+#ContactForm  .bg {display:inline-block}

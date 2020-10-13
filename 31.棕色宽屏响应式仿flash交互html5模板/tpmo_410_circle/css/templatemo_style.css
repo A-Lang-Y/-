@@ -1,0 +1,614 @@
+/* ==========================================================================
+    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== 
+
+*/
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.menu-wrapper ul.menu, ul.tabs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.spacing {
+	margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+    Forms
+   ========================================================================== */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="password"] {
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    width: 100%;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="password"]:focus {
+    outline: none !important;
+}
+
+form .button {
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+
+form .button:focus, form .button:active {
+    outline: none !important;
+}
+
+form .button.yellow {
+    background: #e7af2a;
+    color: #fff;
+    border: 1px solid #c89316;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+  a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+
+thead {
+    display: table-header-group;
+    /* h5bp.com/t */;
+}
+
+tr,
+  img {
+    page-break-inside: avoid;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+@page {
+    margin: 0.5cm;
+}
+
+p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2,
+  h3 {
+    page-break-after: avoid;
+}
+}
+/* ==========================================================================
+    Structure & Defaults
+   ========================================================================== */
+html, body {
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: baseline;
+}
+
+body {
+    font: 13px/19px "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    color: #777777;
+    background-color: #4c4c4c;
+}
+
+a {
+    color: #d8aa46;
+    text-decoration: none !important;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+a:hover {
+    color: #d8aa46;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #333333;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: .8em;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bg-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container-fluid {
+    padding: 60px 80px;
+}
+
+.content {
+    display: none;
+}
+
+/* ==========================================================================
+    Header Site Styling
+   ========================================================================== */
+.sidebar-menu {
+    position: relative;
+    z-index: 9;
+    padding-right: 80px;
+}
+
+.logo-wrapper {
+    background-color: #e5e8ed;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo-wrapper h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+
+.logo-wrapper h1 span {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.menu-wrapper {
+    display: block;
+}
+
+.menu-wrapper ul.menu {
+    display: none;
+    background-color: white;
+    text-align: center;
+}
+
+.menu-wrapper ul.menu li {
+    border-top: 1px solid #c7cdd8;
+}
+
+.menu-wrapper ul.menu li a {
+    text-transform: uppercase;
+    display: block;
+    padding: 18px 30px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.menu-wrapper a.toggle-menu {
+    display: block;
+    background-color: #d8aa46;
+    color: white;
+    text-align: center;
+}
+
+.menu-wrapper a.toggle-menu i {
+    padding: 10px 20px;
+    font-size: 24px;
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+#prevslide {
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+
+#nextslide {
+    position: absolute;
+    top: 41px;
+    right: 40px;
+}
+
+#prevslide, #nextslide {
+    width: 40px;
+    height: 40px;
+    background-color: #d8aa46;
+    color: white;
+    opacity: 1 !important;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+}
+
+#prevslide i, #nextslide i {
+    font-size: 24px;
+}
+
+/* ==========================================================================
+    About Styling
+   ========================================================================== */
+.toggle-content {
+    margin-top: 30px;
+    display: block;
+    padding: 30px;
+    background-color: white;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */;
+}
+
+.icon-item {
+    margin-bottom: 30px;
+    padding: 40px 30px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+    display: block;
+}
+
+.icon-item i {
+    font-size: 36px;
+}
+
+.icon-item.active {
+    background-color: #d8aa46;
+    color: white;
+}
+
+ul.tabs {
+    text-align: center;
+    display: block;
+}
+
+.member-item {
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */;
+}
+
+.member-item .thumb {
+    width: 100%;
+    overflow: hidden;
+}
+
+.member-item .thumb img {
+    width: 100%;
+}
+
+.member-item h4 {
+    margin: 20px 0 10px 0;
+}
+
+.member-item span {
+    text-transform: uppercase;
+    color: #d8aa46;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+    Services Styling
+   ========================================================================== */
+.services .icon-item {
+    padding: 70px 40px;
+}
+
+/* ==========================================================================
+    Gallery Styling
+   ========================================================================== */
+.g-item {
+    margin-bottom: 30px;
+    padding: 6px;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+  /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+}
+
+.g-item img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.g-item .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #d8aa46;
+    text-align: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.g-item:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.g-item span {
+    color: white;
+    font-weight: 300;
+    font-size: 60px;
+    height: 60px;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    line-height: 60px;
+    margin-top: -30px;
+    position: absolute;
+    left: 0;
+}
+
+/* ==========================================================================
+    Contact Styling
+   ========================================================================== */
+.google-map {
+    height: 250px;
+    padding: 6px;
+    background-color: white;
+    margin-bottom: 40px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */;
+}
+
+.google-map iframe {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    outline: 0;
+    border: 0;
+    border: 2px solid #e5e8ed;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */;
+}
+
+.contact-form textarea {
+    min-height: 160px;
+}
+
+.contact-form input.button {
+    width: auto;
+    background-color: #d8aa46;
+    border-color: #d8aa46;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 35px;
+}
+
+.footer {
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+    color: white;
+    font-size: 13px;
+}
+
+.footer a {
+    color: white;
+}
+
+/*------------------------------------------------------
+	RESPONSIVE STYLES 
+--------------------------------------------------------*/
+@media (max-width: 1024px) {
+    .sidebar-menu {
+        padding-right: 40px;
+    }
+
+    #prevslide {
+        right: 0;
+    }
+
+    #nextslide {
+        right: 0;
+    }
+
+    .footer {
+        position: relative;
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar-menu {
+        margin-bottom: 30px;
+        padding-right: 40px;
+    }
+
+    .icon-item {
+        position: relative;
+        z-index: 99;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-fluid {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,81 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+/* Left & Right alignment */
+.left {float:left}
+.right {float:right}
+.wrapper {width:100%;overflow:hidden}
+/* Global properties */
+body {background:url(../images/bg.jpg) repeat;border:0;font:14px Arial, Helvetica, sans-serif;color:#363636;line-height:20px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3 {border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure */
+.main {margin:0 auto;width:900px}
+body, html {height:100%}
+.body1 {background:url(../images/bg_top.jpg) top repeat-x;height:100%;min-height:745px}
+.body2 {background:url(../images/bg_img.jpg) top center no-repeat;height:100%;min-height:745px}
+/*  main layout  */
+a {color:#558f0b;text-decoration:underline;outline:none}
+a:hover {text-decoration:none}
+h1 {float:left;padding:114px 0 0 63px}
+p {padding-bottom:20px}
+/*  header  */
+header {height:266px;width:100%;overflow:hidden}
+#logo {display:block;background:url(../images/logo.png) no-repeat;width:319px;height:86px;text-indent:-9999px}
+#menu {}
+#menu li {}
+#menu li a{}
+#menu li a:hover, #menu #menu_active a {}
+/*  content  */
+#content {height:372px;width:100%;overflow:hidden;background:#fff;position:relative}
+.cont_top_left, .cont_top_right, .cont_bot_left, .cont_bot_right {display:block;width:20px;height:20px;position:absolute;z-index:11}
+.cont_top_left {top:0;left:0;background:url(../images/content_top_left.gif) top left no-repeat}
+.cont_top_right {top:0;right:0;background:url(../images/content_top_right.gif) top right no-repeat}
+.cont_bot_left {bottom:0;left:0;background:url(../images/content_bot_left.gif) bottom left no-repeat}
+.cont_bot_right {bottom:0;right:0;background:url(../images/content_bot_right.gif) bottom right no-repeat}
+.inner {padding:3px;position:relative;z-index:10}
+.kwiks_wrap {height:366px}
+.kwicks{list-style:none;margin:0;	overflow:hidden;width:100% !important;	height:366px;position:relative}
+.kwicks > li {width:176px;height:366px;float:left;overflow:hidden;padding:0;cursor:pointer;background:url(../images/bg_content_right.jpg) top right no-repeat;position:relative;cursor:auto}
+.text {float:left;width:60px;height:366px;text-indent:-9999px;cursor:pointer}
+#page_1 .text {background:url(../images/page_1.gif) 0 0 no-repeat}
+#page_2 .text {background:url(../images/page_2.gif) 0 0 no-repeat}
+#page_3 .text {background:url(../images/page_3.gif) 0 0 no-repeat}
+#page_4 .text {background:url(../images/page_4.gif) 0 0 no-repeat}
+#page_5 .text {background:url(../images/page_5.gif) 0 0 no-repeat}
+#page_1.active .text, #page_1:hover .text {background:url(../images/page1_active.gif) 0 0 no-repeat}
+#page_2.active .text, #page_2:hover .text {background:url(../images/page2_active.gif) 0 0 no-repeat}
+#page_3.active .text, #page_3:hover .text {background:url(../images/page3_active.gif) 0 0 no-repeat}
+#page_4.active .text, #page_4:hover .text {background:url(../images/page4_active.gif) 0 0 no-repeat}
+#page_5.active .text, #page_5:hover .text {background:url(../images/page5_active.gif) 0 0 no-repeat}
+.cont {position:absolute;left:107px;top:32px;width:500px;height:320px;overflow:hidden}
+.marg_right1 {margin-right:24px}
+.marg_right2 {margin-right:15px}
+.pad_top1 {padding-top:5px}
+.marg_top1 {margin-top:-5px}
+.pad_left1 {padding-left:32px}
+.pad_bot1 {padding-bottom:10px}
+.pad_bot2 {padding-bottom:22px}
+.color1 {color:#558f0b}
+.link1 {font-weight:bold;color:#558f0b;text-decoration:none}
+.link1:hover {text-decoration:underline}
+/*  footer  */
+footer {font-size:12px;color:#fff;text-align:center;padding:0 0 0 0}
+footer a {color:#6daf0e}
+#icons {padding:28px 0 12px 0;display:inline-block}
+* +html #icons {display:inline}
+#icons li {float:left;padding-right:2px}
+/* Tooltips */
+.aToolTip {	border:1px solid #000;background:url(../images/opacity_50_black.png) repeat;color:#fff;	margin:0;padding:2px 10px;font-size:11px;	}
+.aToolTip .aToolTipContent {position:relative;	margin:0;padding:0}
+/*  forms  */
+#ContactForm {width:488px;padding-top:3px}
+#ContactForm .bg {border:1px solid #cccccc;float:left;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px}
+#ContactForm .bg div {background:url(../images/bg_input.gif) bottom repeat-x #fff;border:1px solid #fff;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px}
+#ContactForm .textarea_box .bg div {background:url(../images/bg_textarea.gif) bottom repeat-x #fff}
+#ContactForm span {float:left;width:107px;line-height:24px}
+#ContactForm .wrapper {height:30px}
+#ContactForm .textarea_box {height:210px;padding-bottom:5px}
+#ContactForm a {float:right;margin-left:25px}
+#ContactForm .input {width:367px;height:16px;background:none;padding:2px 5px;color:#363636;font:14px Arial, Helvetica, sans-serif}
+#ContactForm textarea {overflow:auto;margin:0;width:367px;height:196px;background:none;padding:2px 5px;color:#363636;font:14px Arial, Helvetica, sans-serif}

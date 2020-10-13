@@ -1,0 +1,587 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+/*	
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*/#comboNav {
+  display: none;
+}
+.wrapper {
+  width: 940px;
+}
+/* CAROUSEL Default ----------------------------------------------------*/#ch-holder {
+  display: block;
+}
+#cv-holder {
+  display: none;
+}
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* GENERAL TABLET ----------------------------------------------------*/.wrapper {
+    width: 712px;
+  }
+  /* NAV TABLET ----------------------------------------------------*/#nav {
+    display: block;
+  }
+  #comboNav {
+    display: none;
+  }
+  /* CAROUSEL TABLET ----------------------------------------------------*/#ch-holder {
+    display: block;
+  }
+  #cv-holder {
+    display: none;
+  }
+  /* SLIDER TABLET ----------------------------------------------------*/.lof-slidecontent,
+  .main-slider-content {
+    width: 712px;
+    height: 367px;
+  }
+  .lof-slidecontent .sliders-wrapper,
+  .main-slider-content .sliders-wrapper {
+    width: 712px;
+  }
+  .lof-slidecontent .navigator-content .button-next,
+  .main-slider-content .navigator-content .button-next,
+  .lof-slidecontent .navigator-content .button-previous,
+  .main-slider-content .navigator-content .button-previous,
+  .lof-slidecontent .navigator-content .button-control,
+  .main-slider-content .navigator-content .button-control {
+    opacity: 1;
+    bottom: 0px;
+    left: 0px;
+    z-index: 199;
+  }
+  .lof-slidecontent .navigator-content .button-next,
+  .main-slider-content .navigator-content .button-next {
+    left: 682px;
+  }
+  .lof-slidecontent .navigator-wrap-inner,
+  .main-slider-content .navigator-wrap-inner {
+    display: none;
+  }
+  .lof-slidecontent .navigator-wrapper,
+  .main-slider-content .navigator-wrapper {
+    width: 712px;
+  }
+  /* FILTERED ITEMS TABLET ----------------------------------------------------*/#filter-container {
+    width: 732px;
+    /* 712 + 20 gap */
+  
+  }
+  #filter-container figure {
+    width: 223px;
+    margin-right: 20px;
+  }
+  /* CAROUSEL TABLET ----------------------------------------------------*/.jcarousel-skin-folder .jcarousel-container-horizontal {
+    width: 585px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 63px;
+    padding-right: 63px;
+  }
+  .jcarousel-skin-folder .jcarousel-clip-horizontal {
+    width: 585px;
+    height: 100px;
+  }
+  .jcarousel-skin-folder .jcarousel-item {
+    width: 195px;
+    height: 100px;
+  }
+  .jcarousel-skin-folder .jcarousel-prev-horizontal,
+  .jcarousel-skin-folder .jcarousel-next-horizontal {
+    width: 63px;
+    height: 100px;
+  }
+  /*  PAGE TABLET----------------------------------------------------*/#page-content-sb {
+    width: 460px;
+    margin-right: 60px;
+  }
+  /*  BLOG TABLET ----------------------------------------------------*/#posts-list,
+  body.single #posts-list {
+    width: 460px;
+    margin-right: 60px;
+  }
+  #posts-list article,
+  body.single #posts-list article {
+    margin-bottom: 55px;
+    background: #f8f5f2;
+  }
+  #posts-list article .box,
+  body.single #posts-list article .box {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    padding: 0px 0px 0px 0px;
+    background: none;
+  }
+  #posts-list article .box .excerpt,
+  body.single #posts-list article .box .excerpt {
+    float: left;
+    width: 400px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  #posts-list article .box .meta,
+  body.single #posts-list article .box .meta {
+    width: 400px;
+    margin-left: 0px;
+    background: #f8f5f2 url(../img/meta-bg-vertical.png) repeat-x top right;
+    padding: 20px 20px 20px 40px;
+  }
+  /* SIDEBAR TABLET ------------------------------------------------------------*/
+  #sidebar {
+    width: 184px;
+    margin-top: 30px;
+  }
+  /* PORTFOLIO TABLET ----------------------------------------------------*/#portfolio-content #project-box .info {
+    width: 140px;
+    /* 160 - 20 */
+  
+    padding-left: 20px;
+    margin-right: 24px;
+  }
+  #portfolio-content #project-box .entry-content {
+    width: 528px;
+    margin-bottom: 40px;
+  }
+  #portfolio-content #project-box .entry-content .multicolumn .column * {
+    padding-right: 24px;
+  }
+  /* RELATED PROJECTS TABLET ---------------------------------------------------*/
+  .related-projects figure {
+    margin-right: 24px;
+    width: 160px;
+  }
+  .related-projects figure .thumb {
+    width: 160px;
+  }
+  /* WIDGET COLS TABLET ----------------------------------------------------*/.widget-cols > li {
+    width: 160px;
+    margin-right: 24px;
+  }
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width: 252px;
+  }
+  /* LOGO MOBILE ----------------------------------------------------*/#logo {
+    margin-left: 0px;
+  }
+  #logo a {
+    display: block ;
+    width: 252px;
+  }
+  #logo img {
+    display: block;
+    margin: 0 auto;
+  }
+  /* NAV MOBILE ----------------------------------------------------*/#nav {
+    display: none;
+  }
+  #comboNav {
+    display: block;
+  }
+  /* HEADLINE MOBILE ----------------------------------------------------*/#headline {
+    font-size: 36px;
+  }
+  /* CAROUSEL MOBILE ----------------------------------------------------*/#ch-holder {
+    display: none;
+  }
+  #cv-holder {
+    display: block;
+  }
+  .carousel-holder .carousel-heading span {
+    margin: 0px 0px 22px 0px;
+  }
+  /* SLIDER MOBILE ----------------------------------------------------*/.lof-slidecontent,
+  .main-slider-content {
+    width: 252px;
+    height: 367px;
+  }
+  .lof-slidecontent .sliders-wrapper,
+  .main-slider-content .sliders-wrapper {
+    width: 252px;
+  }
+  .lof-slidecontent .navigator-content .button-next,
+  .main-slider-content .navigator-content .button-next,
+  .lof-slidecontent .navigator-content .button-previous,
+  .main-slider-content .navigator-content .button-previous,
+  .lof-slidecontent .navigator-content .button-control,
+  .main-slider-content .navigator-content .button-control {
+    opacity: 1;
+    bottom: 0px;
+    left: 0px;
+    z-index: 199;
+  }
+  .lof-slidecontent .navigator-content .button-next,
+  .main-slider-content .navigator-content .button-next {
+    left: 222px;
+  }
+  .lof-slidecontent .navigator-wrap-inner,
+  .main-slider-content .navigator-wrap-inner {
+    display: none;
+  }
+  .lof-slidecontent .navigator-wrapper,
+  .main-slider-content .navigator-wrapper {
+    width: 252px;
+  }
+  .lof-slidecontent .slider-description,
+  .main-slider-content .slider-description {
+    top: 0px;
+    left: 0px;
+    width: 232px;
+    height: 100%;
+  }
+  /* Description MOBILE ----------------------------------------------------*/.main-slider-content:hover .slider-description {
+    opacity: 1;
+  }
+  /* FILTERED ITEMS MOBILE ----------------------------------------------------*/#filter-container {
+    width: 252px;
+    /* 712 + 20 gap */
+  
+  }
+  #filter-container figure {
+    width: 252px;
+    margin-right: 0px;
+  }
+  #filter-container figure figcaption .heading {
+    font-size: 28px;
+  }
+  /*  PAGE MOBILE ----------------------------------------------------*/#page-content-sb {
+    width: 252px;
+    margin-right: 0px;
+  }
+  /*  BLOG MOBILE ----------------------------------------------------*/#posts-list,
+  body.single #posts-list {
+    width: 252px;
+    margin-right: 0px;
+    margin-left: 0px;
+    /* Jplayer MOBILE ----------------------------------------------------*/
+    /* ENDS Jplayer MOBILE ----------------------------------------------------*/
+  }
+  #posts-list div.jp-audio,
+  body.single #posts-list div.jp-audio {
+    width: 200px;
+  }
+  #posts-list div.jp-audio div.jp-progress-container,
+  body.single #posts-list div.jp-audio div.jp-progress-container {
+    width: 80px;
+  }
+  #posts-list div.jp-audio div.jp-type-single div.jp-progress,
+  body.single #posts-list div.jp-audio div.jp-type-single div.jp-progress {
+    width: 80px;
+  }
+  #posts-list div.jp-audio div.jp-volume-bar-container,
+  body.single #posts-list div.jp-audio div.jp-volume-bar-container {
+    left: 181px;
+  }
+  #posts-list div.jp-audio div.jp-volume-bar-container,
+  body.single #posts-list div.jp-audio div.jp-volume-bar-container {
+    left: 135px;
+  }
+  #posts-list div.jp-audio div.jp-volume-bar-container,
+  body.single #posts-list div.jp-audio div.jp-volume-bar-container,
+  #posts-list div.jp-audio div.jp-volume-bar,
+  body.single #posts-list div.jp-audio div.jp-volume-bar {
+    width: 20px;
+  }
+  #posts-list div.jp-audio div.jp-type-single a.jp-mute,
+  body.single #posts-list div.jp-audio div.jp-type-single a.jp-mute,
+  #posts-list div.jp-audio div.jp-type-single a.jp-unmute,
+  body.single #posts-list div.jp-audio div.jp-type-single a.jp-unmute {
+    left: 144px;
+  }
+  #posts-list article,
+  body.single #posts-list article {
+    margin-bottom: 55px;
+    background: #f8f5f2;
+  }
+  #posts-list article .box,
+  body.single #posts-list article .box {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    padding: 0px 0px 0px 0px;
+    background: none;
+  }
+  #posts-list article .box .excerpt,
+  body.single #posts-list article .box .excerpt {
+    float: left;
+    width: 192px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  #posts-list article .box .excerpt .post-heading,
+  body.single #posts-list article .box .excerpt .post-heading {
+    font-size: 28px;
+    line-height: 1.1em;
+  }
+  #posts-list article .box .meta,
+  body.single #posts-list article .box .meta {
+    width: 192px;
+    margin-left: 0px;
+    background: #f8f5f2 url(../img/meta-bg-vertical.png) repeat-x top right;
+    padding: 20px 20px 20px 40px;
+  }
+  /* SIDEBAR MOBILE ------------------------------------------------------------*/
+  #sidebar {
+    width: 252px;
+    margin-top: 30px;
+  }
+  /* PORTFOLIO MOBILE ----------------------------------------------------*/#portfolio-content #project-box .info {
+    width: 212px;
+    padding-left: 20px;
+    margin-right: 24px;
+    margin-bottom: 30px;
+  }
+  #portfolio-content #project-box .entry-content {
+    width: 252px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+  #portfolio-content #project-box .entry-content .multicolumn .column * {
+    width: 100px;
+    padding-right: 0px;
+  }
+  #portfolio-content #project-box .entry-content .multicolumn .column.last {
+    margin-right: 0px;
+  }
+  /* RELATED PROJECTS MOBILE ---------------------------------------------------*/
+  .related-projects figure {
+    margin-right: 0px;
+    width: 252px;
+  }
+  .related-projects figure .thumb {
+    width: 252px;
+  }
+  /* WIDGET COLS MOBILE ----------------------------------------------------*/.widget-cols > li {
+    width: 252px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .widget-cols > li:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+}
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .wrapper {
+    width: 436px;
+  }
+  /* LOGO WIDE MOBILE ----------------------------------------------------*/#logo a {
+    display: block ;
+    width: 436px;
+  }
+  /* NAV WIDE MOBILE ----------------------------------------------------*/#nav {
+    display: none;
+  }
+  #comboNav {
+    display: block;
+  }
+  /* CAROUSEL WIDE MOBILE ----------------------------------------------------*/#ch-holder {
+    display: none;
+  }
+  #cv-holder {
+    display: block;
+  }
+  .carousel-holder .carousel-heading span {
+    margin: 0px 0px 22px 0px;
+  }
+  /* SLIDER WIDE MOBILE ----------------------------------------------------*/.lof-slidecontent,
+  .main-slider-content {
+    width: 436px;
+    height: 367px;
+  }
+  .lof-slidecontent .sliders-wrapper,
+  .main-slider-content .sliders-wrapper {
+    width: 436px;
+  }
+  .lof-slidecontent .navigator-content .button-next,
+  .main-slider-content .navigator-content .button-next,
+  .lof-slidecontent .navigator-content .button-previous,
+  .main-slider-content .navigator-content .button-previous,
+  .lof-slidecontent .navigator-content .button-control,
+  .main-slider-content .navigator-content .button-control {
+    opacity: 1;
+    bottom: 0px;
+    left: 0px;
+    z-index: 199;
+  }
+  .lof-slidecontent .navigator-content .button-next,
+  .main-slider-content .navigator-content .button-next {
+    left: 406px;
+  }
+  .lof-slidecontent .navigator-wrap-inner,
+  .main-slider-content .navigator-wrap-inner {
+    display: none;
+  }
+  .lof-slidecontent .navigator-wrapper,
+  .main-slider-content .navigator-wrapper {
+    width: 436px;
+  }
+  .lof-slidecontent .slider-description,
+  .main-slider-content .slider-description {
+    top: 0px;
+    left: 0px;
+    width: 232px;
+    height: 100%;
+  }
+  /* FILTERED ITEMS WIDE MOBILE ----------------------------------------------------*/#filter-container {
+    width: 460px;
+  }
+  #filter-container figure {
+    width: 206px;
+    margin-right: 24px;
+    float: left;
+  }
+  /*  PAGE WIDE MOBILE ----------------------------------------------------*/#page-content-sb {
+    width: 436px;
+    margin-right: 0px;
+  }
+  /*  BLOG WIDE MOBILE ----------------------------------------------------*/#posts-list,
+  body.single #posts-list {
+    width: 436px;
+    margin-right: 0px;
+    margin-left: 0px;
+    /* Jplayer WIDE MOBILE ----------------------------------------------------*/
+    /* ENDS Jplayer MOBILE ----------------------------------------------------*/
+  }
+  #posts-list div.jp-audio,
+  body.single #posts-list div.jp-audio {
+    width: 360px;
+  }
+  #posts-list div.jp-audio div.jp-progress-container,
+  body.single #posts-list div.jp-audio div.jp-progress-container {
+    width: 225px;
+  }
+  #posts-list div.jp-audio div.jp-type-single div.jp-progress,
+  body.single #posts-list div.jp-audio div.jp-type-single div.jp-progress {
+    width: 223px;
+  }
+  #posts-list div.jp-audio div.jp-volume-bar-container,
+  body.single #posts-list div.jp-audio div.jp-volume-bar-container {
+    left: 181px;
+  }
+  #posts-list div.jp-audio div.jp-volume-bar-container,
+  body.single #posts-list div.jp-audio div.jp-volume-bar-container {
+    left: 281px;
+  }
+  #posts-list div.jp-audio div.jp-volume-bar-container,
+  body.single #posts-list div.jp-audio div.jp-volume-bar-container,
+  #posts-list div.jp-audio div.jp-volume-bar,
+  body.single #posts-list div.jp-audio div.jp-volume-bar {
+    width: 40px;
+  }
+  #posts-list div.jp-audio div.jp-type-single a.jp-mute,
+  body.single #posts-list div.jp-audio div.jp-type-single a.jp-mute,
+  #posts-list div.jp-audio div.jp-type-single a.jp-unmute,
+  body.single #posts-list div.jp-audio div.jp-type-single a.jp-unmute {
+    left: 290px;
+  }
+  #posts-list article,
+  body.single #posts-list article {
+    margin-bottom: 55px;
+    background: #f8f5f2;
+  }
+  #posts-list article .box,
+  body.single #posts-list article .box {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    padding: 0px 0px 0px 0px;
+    background: none;
+  }
+  #posts-list article .box .excerpt,
+  body.single #posts-list article .box .excerpt {
+    float: left;
+    width: 376px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  #posts-list article .box .excerpt .post-heading,
+  body.single #posts-list article .box .excerpt .post-heading {
+    font-size: 28px;
+    line-height: 1.1em;
+  }
+  #posts-list article .box .meta,
+  body.single #posts-list article .box .meta {
+    width: 376px;
+    margin-left: 0px;
+    background: #f8f5f2 url(../img/meta-bg-vertical.png) repeat-x top right;
+    padding: 20px 20px 20px 40px;
+  }
+  /* SIDEBAR WIDE MOBILE ------------------------------------------------------------*/
+  #sidebar {
+    width: 436px;
+    margin-top: 30px;
+  }
+  /* PORTFOLIO WIDE MOBILE ----------------------------------------------------*/#portfolio-content #project-box .info {
+    width: 396px;
+    padding-left: 20px;
+    margin-right: 24px;
+    margin-bottom: 30px;
+  }
+  #portfolio-content #project-box .entry-content {
+    width: 416px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+  #portfolio-content #project-box .entry-content .multicolumn .column * {
+    width: 187px;
+    margin-right: 20px;
+  }
+  #portfolio-content #project-box .entry-content .multicolumn .column.last {
+    margin-right: 0px;
+  }
+  /* RELATED PROJECTS WIDE MOBILE ---------------------------------------------------*/
+  .related-projects figure {
+    margin-right: 0px;
+    width: 436px;
+  }
+  .related-projects figure .thumb {
+    width: 436px;
+  }
+  /* WIDGET COLS WIDE MOBILE ----------------------------------------------------*/.widget-cols > li {
+    width: 436px;
+    margin-right: 0px;
+  }
+}

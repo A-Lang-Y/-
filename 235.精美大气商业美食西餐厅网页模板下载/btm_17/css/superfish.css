@@ -1,0 +1,108 @@
+ 
+.menu_block  {
+	position: relative;
+	float: right;
+	padding-top: 31px;
+}
+
+nav>.sf-menu {
+	text-align: center;
+}
+nav{ position:relative;padding: 0px 0 0 0;}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu li {float:left;position:relative; }
+.sf-menu>li {
+	float: left;
+	position: relative;
+
+}
+
+
+
+.sf-menu>li:first-child {
+	margin-left: 0;
+}
+
+
+
+.sf-menu>li>a{
+	font-size: 18px;
+	font-family: 'Noto Sans', sans-serif;
+	color: #85423f;
+	position: relative;
+	text-transform: uppercase;
+	line-height: 20px;
+	z-index: 999;
+	background: url(../images/spacer.png) 0 0 repeat;
+	border-radius: 5px;
+	position: relative;
+	display: block;
+	padding: 5px 14px 8px;
+}
+
+
+.sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li:hover>a:hover {
+	color: #fff;
+	background: #e2827e;
+	padding: 6px 14px 7px;
+}
+
+
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu li ul,.sf-menu li.sfHover>ul{
+	top:34px;
+	left: 0;
+	width: 100%;
+	z-index: 999; 
+
+
+
+}
+.sf-menu li ul li{
+	text-align: center; 
+	float: none !important; 
+	margin-bottom: 1px;
+}
+
+.sf-menu li ul li:first-child {
+	padding-top: 0;
+	border: none;
+}
+.sf-menu li ul li a{
+	font-size: 18px;
+	font-family: 'Noto Sans', sans-serif;
+	background: #e9afac;
+	color: #916564;
+	text-transform: uppercase;
+	line-height: 20px;
+	position: relative;
+	border-radius: 5px;
+	position: relative;
+	display: block;
+	padding: 6px 0px 7px;
+}
+
+.sf-menu li li a:hover, 
+.sf-menu li.sfHover li.sfHover>a {  
+	color: #fff;
+	background: #e2827e;
+
+}
+
+/*================================>> 3 Level <<========================================*/
+.sf-menu li.sfHover li.sfHover ul{
+	padding-top: 1px;
+	top: 0 !important;
+	text-align: center;
+	position: relative !important;
+}
+
+.sf-menu li li ul li {
+	text-align: center !important;
+}
+
+.sf-menu li li ul li a{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}

@@ -1,0 +1,121 @@
+/* 2.1 =Splitter
+---------------------------------------------------------------------- */
+
+#filter, #filter ul {
+	text-align:center;
+
+}
+.splitter {
+	clear:both;	
+	border-bottom:1px solid #eee;
+	padding-bottom:40px;
+	margin-bottom:30px;
+}
+.splitter:after {
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+.splitter ul {
+	margin-right: 0;
+	margin-top: 0;
+}
+.splitter ul li a {
+	margin-right:10px;
+}
+.splitter li, .splitter ul, .splitter ul li a {
+	display: inline;
+	display: inline-block;
+	line-height: 1;
+}
+.splitter ul, .splitter ul li, .splitter ul li a {
+
+}
+.splitter ul li {
+}
+.splitter ul li:first-child {
+	margin-left: 0;
+}
+.splitter ul li a {
+padding:10px 15px;
+background-color:#222;
+
+}
+.splitter ul li a:hover {
+	background-color: #434343;
+}
+.splitter ul li.selected-0 a, .splitter ul li.selected-1 a, .splitter ul li.selected-2 a, .splitter ul li.selected-3 a, .splitter ul li.selected-4 a, .splitter ul li.selected-5 a, .splitter ul li.selected-6 a, .splitter ul li.selected-7 a, .splitter ul li.selected-8 a, .splitter ul li.selected-9 a {
+	color: #fff;
+	background-color:#ff6c00;
+
+}
+/* 3.2 =Image Grid 4 col
+---------------------------------------------------------------------- */
+.clearfix:after {
+	background-color: #333333;
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.image-grid, .image-grid_3col, .image-grid_2col {
+	width:980px;
+	margin-top:20px;
+	margin:0px;
+	padding:0px;
+}
+.image-grid:after, .image-grid_3col:after, .image-grid_2col:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.image-grid li img, .image-grid li strong, .image-grid_3col li img, .image-grid_3col li strong, .image-grid_2col li img, .image-grid_2col li strong {
+	display: block;
+}
+.image-grid li strong, .image-grid_3col li strong, .image-grid_2col li strong {
+	color: #fff;
+}
+.demo {
+	float:left;
+	overflow:hidden;
+	position:relative;
+}
+.image-grid li, .image-grid_3col li, .image-grid_2col li, .image-grid_1col li {
+	float: left;
+	text-align: center;
+	font-family: "Helvetica Neue", sans-serif;
+	line-height: 17px;
+	color: #686f74;
+	margin-right:31px;
+	margin-bottom:31px;
+	list-style:none;
+	overflow:hidden;
+	background-image: url(../images/ajax-loader.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+}
+/* 3.2 =Image Grid 4 col
+---------------------------------------------------------------------- */
+.image-grid li {
+	width:212px;
+}
+/* 3.2 =Image Grid 3 col
+---------------------------------------------------------------------- */
+.image-grid_3col li {
+	width:293px;
+}
+/* 3.2 =Image Grid 2 col
+---------------------------------------------------------------------- */
+.image-grid_2col li {
+	width:455px;
+}
+/* 3.2 =Image Grid 1 col
+---------------------------------------------------------------------- */
+.image-grid_1col li {
+	width:940px;
+}

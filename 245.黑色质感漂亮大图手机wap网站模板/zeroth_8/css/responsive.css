@@ -1,0 +1,36 @@
+html {
+   -webkit-text-size-adjust: none;
+}
+.video embed,
+.video object,
+.video iframe {
+   width: 100%;
+   height: auto;
+}
+img{
+	max-width:100%;
+	height: auto;
+   	width: auto\9; /* ie8 */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	header, footer, .featured, .social {width:768px;}
+}
+
+@media only screen and (max-width: 767px) {
+	header, footer, .featured, .social{width:100%;}
+	header {margin-top: 0px;height:170px;}
+	header #logo{top:50px;}
+	#content{background-color:#ffffff;}
+	header nav {top:5px; right: 5px;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 479px) {
+	header{height: 200px;}
+	header #logo{top: 80px; left:10px;}
+	.social {height:70px;}
+	.social #search{right:auto; top:auto; bottom: 4px; left:7px; }
+}

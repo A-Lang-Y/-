@@ -1,0 +1,113 @@
+/* 2.1 =Splitter
+---------------------------------------------------------------------- */
+#filter{
+	border-top:2px solid #d7d7d7;
+}
+
+.splitter {
+	clear:both;
+	
+}
+.splitter:after {
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+	
+}
+
+.splitter ul li a {
+		padding:15px;
+	
+}
+.splitter li, .splitter ul, .splitter ul li a {
+	display: inline;
+	display: inline-block;
+	line-height: 1;
+	float:left;
+	margin-right:1px;
+	font-size:14px;
+	
+}
+	
+
+.splitter ul li a {
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.splitter ul li.selected-0 a, .splitter ul li.selected-1 a, .splitter ul li.selected-2 a, .splitter ul li.selected-3 a, .splitter ul li.selected-4 a, .splitter ul li.selected-5 a, .splitter ul li.selected-6 a, .splitter ul li.selected-7 a, .splitter ul li.selected-8 a, .splitter ul li.selected-9 a {
+	color: #fe7360;
+	padding:15px;
+	border-top:1px solid #d7d7d7;
+	margin-top:-1px;	
+}
+
+.splitter ul li{
+position:relative;
+
+}
+.splitter ul li.selected-0 a:after,
+.splitter ul li.selected-1 a:after,
+.splitter ul li.selected-2 a:after,
+.splitter ul li.selected-3 a:after
+{
+	 border-color: #d7d7d7 transparent transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: " ";
+    display: block;
+    height: 0;
+    left: 50%;
+	margin-left:-6px;
+    position: absolute;
+    top:0px;
+    width: 0;
+    z-index: 33;
+	border-top:6px solid #d7d7d7;
+}
+
+
+/* 3.2 =Image Grid 4 col
+---------------------------------------------------------------------- */
+.clearfix:after {
+	background-color: #333333;
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.image_grid {
+	float:left;
+	overflow:hidden;
+	width:101%;
+	position:relative;
+	margin-top:40px;
+}
+.image_grid li{
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 17px;
+	color: #686f74;
+	list-style:none;
+	overflow:hidden;
+	background-image: url(../images/ajax-loader.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom:1px;
+	margin-right:1px;
+	
+}
+
+.da-thumbs:after
+{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+
+

@@ -1,0 +1,146 @@
+//
+// Pager pagination
+// --------------------------------------------------
+
+.pager {
+  border-top: 1px solid @gray9;
+  border-bottom: 1px solid @gray9;
+  position: relative;
+  .clearfix();
+
+  &:before {
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: @gray9;
+    top: 0;
+    left: 50%;
+  }
+
+  .disabled {
+    background: @gray4;
+  }
+
+  .btn {
+    padding: 5px 12px;
+  }
+
+  .nav-next {
+    float: right;
+    width: 50%;
+    text-align: right;
+
+    .btn {
+      float: right;
+    }
+
+    .pager-title {
+      float: right;
+      margin-right: -33px;
+      padding: 0 53px 0 20px;
+    }
+  }
+
+  .nav-previous {
+    float: left;
+    width: 50%;
+
+    .btn {
+      float: left;
+    }
+
+    .pager-title {
+      float: left;
+      margin-left: -33px;
+      padding: 0 20px 0 53px;
+    }    
+  }
+
+  .nav-next,
+  .nav-previous {
+    .btn {
+      font-size: 14px;
+      line-height: @baseLineHeight;
+    }
+  }
+}
+
+.pager-768-lt-ie9() {
+  .pager {
+    padding: @layoutGutterWidth 0;
+
+    .pager-title {
+      font-family: @headingsFontFamily;
+      font-weight: bold;
+      font-size: @baseFontSize;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 35px;
+      width: 100%;
+      .box-sizing(border-box);
+      .text-overflow();
+    }
+
+    .nav-next, 
+    .nav-previous {
+      a:hover {
+        .btn {
+          background: @linkColorHover;
+        }
+
+        .pager-title {
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+
+  // Positions
+  // -------------------------
+  .content-list .pager {
+    margin-top: 2*@layoutGutterWidth;
+  }
+
+}
+
+.lt-ie9 {
+  .pager-768-lt-ie9();
+}
+
+@media (min-width: 768px) {
+  .pager-768-lt-ie9()
+}
+
+@media (max-width: 767px) {
+  .pager {
+    padding: @layoutGutterWidth767 0;
+
+    .pager-title {
+      display: none;
+    }
+  }
+  
+  // Positions
+  // -------------------------
+  .content-list .pager {
+    margin-top: 2*@layoutGutterWidth767; 
+  }
+}
+
+//
+// Page links
+// --------------------------------------------------
+.page-links {
+  margin-top: 20px;
+
+  > span.btn {
+    cursor: default;
+    .opacity(30);
+
+    &:hover {
+      background: @linkColor;
+    }
+  }
+}

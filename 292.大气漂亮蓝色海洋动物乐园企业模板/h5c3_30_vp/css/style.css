@@ -1,0 +1,1141 @@
+@import"reset.css";
+@import"grid.css";
+@import"forms.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Alex+Brush);
+body{
+	background:url(../images/body-bg.jpg) no-repeat 50% 0 #000;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	line-height:25px;
+	color:#333;
+	position:relative;
+	min-width:960px;
+}
+.ic {
+	background:#fff;
+	border:0;
+	float:right;
+	color:#f00;
+	width:50%;
+	line-height:10px;
+	font-size:10px;
+	margin:-220% 0 0 0;
+	padding:0;
+	overflow:hidden;
+}
+html,body{height:100%;}
+html {min-width:960px;}
+/* Global Structure---------------------------------------- */
+.main{
+	margin:0 auto;
+	position:relative;
+	width:960px;
+	background:url(../images/main-bg.png);
+	border-radius:4px;
+	padding:0 0 10px 0;
+}
+.main-indents {
+	padding:50px 0;
+}
+/*----- alignment & clearing -----*/
+.fleft{float:left}
+.fright{float:right}
+.alignright{text-align:right}
+.aligncenter{text-align:center}
+.alignmiddle *{vertical-align:middle}
+
+.clear{
+	clear:both;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+	height:0;
+	width:100%;
+}
+.wrapper{
+	overflow:hidden;
+	position:relative;
+}
+.extra-wrap{
+	overflow:hidden;
+	display:block;
+}
+/*  Header styles */
+h1,h2,h3,h4,h5,h6{
+	color:#333;
+	padding:0 0 12px 0;
+	font-weight:normal;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing:-1px;
+	text-transform:uppercase;
+}
+h1{font-size:36px; line-height:42px;}
+h2{font-size:30px; line-height:36px;}
+h3{font-size:24px; line-height:30px;} 
+h4{font-size:20px; line-height:24px;}  
+h5{font-size:18px; line-height:22px;}
+h6{font-size:16px; line-height:20px;}
+
+.welcome {
+	display:block;
+	color:#0043e4;
+	font-size:60px;
+	line-height:72px;
+	letter-spacing:-1px;
+	margin:0 0 -20px 0;
+	font-family: 'Alex Brush', cursive;
+	text-transform:capitalize;
+}
+.hp-1 {
+	padding:0 0 20px 0;
+}
+h5 span {
+	color:#0043e4;
+}
+/*----- text & typography -----*/
+.quote-1 {
+	padding:0 0 20px 40px;
+	background:url(../images/quotes.png) no-repeat 0 8px;
+}
+/*----- borders & lines -----*/
+
+/*----- boxes -----*/
+.content-box {
+	background:#fff;
+	padding:22px 36px 25px 36px;
+	margin:0 10px;
+}
+.img-box {
+	display:inline-block;
+	padding:3px;
+	background:#fff;
+	border:1px solid #d9d9d9;
+	border-radius:3px;
+	margin-bottom:12px;
+}
+/* Lightbox image */
+
+.lightbox-image{display:inline-block;position:relative;}
+a.border{padding:6px;background:#dededa;display:inline-block;}
+.lightbox-image img{position:relative;z-index:2;}
+.lightbox-image span{position:absolute;width:100%;height:100%;left:0;top:0;background:url(../images/magnify.png) 50% 50% #fff no-repeat;}
+
+/*----- indents -----*/
+.img-indent {
+	float:left;
+	margin:5px 20px 0 0;
+}
+.img-indent-1 {
+	float:left;
+	margin:0 20px 0 36px;
+}
+.img-indent-bot {margin:5px 0 16px 0;}
+
+p {padding-bottom:25px;}
+.p {padding-bottom:25px;}
+.p0 {padding-bottom:0 !important;}
+.p1 {padding-bottom:30px !important;}
+.p2 {padding-bottom:14px !important;}
+.p3 {padding-bottom:20px !important;}
+
+.a1 {margin:0 10px;}
+.a2 {margin:0 46px;}
+
+/*----- lists -----*/
+.list-1 {padding:0 0 20px 0;}
+.list-1 li {
+	display:block;
+	padding:0 0 0 20px;
+	background:url(../images/list-1-marker.gif) no-repeat 0 10px;
+	line-height:25px;
+}
+	.list-1 li a {
+		color:#333;
+		font-size:14px;
+	}
+		.list-1 li a:hover {
+			color:#0043e4;
+			text-decoration:none;
+		}
+.list-2 {
+	padding:5px 0 20px 0;
+}
+.list-2 li {
+	line-height:22px;
+	padding:0 0 18px 0;
+}
+.list-2 li a {
+	display:inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size:18px;
+	line-height:22px;
+	color:#0043e4;
+	text-transform:uppercase;
+	letter-spacing:-1px;
+}
+	.list-2 li a:hover {
+		color:#000;
+		text-decoration:none;
+	}
+/*----- buttons & links -----*/
+a {
+	color:#0043e4;
+	text-decoration: none;
+	cursor:pointer;
+}
+	a:hover {text-decoration: underline;}
+
+.button {
+	display:inline-block;
+	font-size:18px;
+	line-height:22px;
+	color:#fff;
+	text-decoration:none;
+	background:#0043e4;
+	padding:7px 20px;
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+}
+	.button:hover {
+		text-decoration:none;
+		background:#000;
+	}
+
+
+.link {
+	text-decoration: underline;
+	color:#ee623a;
+	font-weight:bold;
+}
+	.link:hover {text-decoration: none;}
+
+/*********************************header*************************************/
+header{
+	position:relative;
+	z-index:2;
+	width:940px;
+	margin:0 auto;
+	padding:25px 0 12px;
+}
+
+.logo {
+	float:left;
+	padding:0 !important;
+	margin:0 0 0 40px;
+}
+.logo a {
+	position:relative;
+	background: url(../images/logo.png) no-repeat 0 0;
+	height:49px;
+	width:203px;
+	overflow:hidden;
+	text-indent:-99em;
+	display:block;
+}
+/********************** Slider ************************/
+.mp-slider .items {display:none;}
+.mp-slider {
+	width:940px;
+	height:392px;
+	margin:0 auto;
+	position:relative;
+}
+
+.mp-prev, .mp-next {
+	position:absolute;
+	width:30px;
+	height:60px;
+	bottom:82px;
+	z-index:999;
+}
+.mp-prev {
+	left:50px;
+	background:url(../images/mp-prev.png);
+}
+	.mp-prev:hover {
+		opacity:0.8;
+	}
+.mp-next {
+	right:50px;
+	background:url(../images/mp-next.png);
+}
+	.mp-next:hover {
+		opacity:0.8;
+	}
+
+.mp-slider .banner {
+	position:absolute;
+	left:35px;
+	right:35px;
+	font-family: 'Oswald', sans-serif;
+	color:#fff;
+	z-index:99 !important;
+	top:auto !important;
+	bottom:40px !important;
+	padding:0;
+	text-align:center;
+	font-size:50px;
+	line-height:60px;
+	text-transform:uppercase;
+}
+	.mp-slider .banner span {
+		display:block;
+	}
+	.mp-slider .banner b {
+		color:#ead909;
+	}
+	.mp-slider .banner .row-1 b {font-weight:normal;}
+	.mp-slider .row-1 {
+		padding:0;
+	}
+	.mp-slider .row-2 {
+		font-size:80px;
+		line-height:90px;
+		margin:-5px 0 0 0;
+		font-weight:bold;
+	}
+
+/********************** Navigation ************************/
+nav {
+	float:right;
+	padding:16px 35px 0 0;
+}
+
+.sf-menu{
+	min-height:36px;
+	padding:0;
+	margin:0;
+}
+.sf-menu ul{
+	position:absolute;
+	top:-999em;
+	width:185px;
+	left:0;
+	display:none;
+	background:#333;
+}
+.sf-menu > li{
+	position:relative;
+	float:left;
+	margin:0 3px;
+}
+
+.sf-menu > li > a {
+	text-decoration:none;
+	display:block;
+	font-family: 'Oswald', sans-serif;
+	font-size:18px;
+	line-height:22px;
+	text-transform:uppercase;
+	color:#333;
+	padding:7px 8px;
+}
+
+	.sf-menu > li.current > a, .sf-menu > li:hover > a, .sf-menu > li.sfHover > a {
+		color:#fff;
+		text-decoration:none;
+		background:#333;
+	}
+
+.sf-menu li:hover ul,.sf-menu li.sfHover ul{top:37px; left:0; z-index:999;}
+.sf-menu li:hover li ul,ul.sf-menu li.sfHover li ul{top:-999em}
+.sf-menu li.current,.sf-menu li:hover,.sf-menu li.sfHover{
+	text-decoration:none;
+}
+.sf-menu li li a{
+	display:block;
+	margin:0;
+	position:relative;
+	text-decoration:none;
+	font-size:14px;
+	line-height:18px;
+	color:#fff;
+	overflow:hidden;
+	padding:5px 5px 5px 15px;
+	text-transform:uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+.sf-menu li li > a:hover, .sf-menu li li.sfHover > a, .sf-menu li li.current > a{
+	color:#333;
+	background:#fff;s
+}
+
+.sf-menu li li{
+	float:none;
+	position:relative;
+}
+
+.sf-menu li li:hover ul,ul.sf-menu li li.sfHover ul{left:186px;top:0;}
+
+
+
+/********************** Content ************************/
+
+section#content {
+	position:relative; 
+	z-index:1;
+	padding:30px 0 0 0;
+}
+.col-1 {
+	float:left;
+	width:268px;
+	margin:0 32px 0 0;
+}
+.col-2 {
+	float:left;
+	width:268px;
+	margin:0;
+}
+.col-3 {
+	float:left;
+	width:260px;
+	margin:0 36px 0 0;
+	
+}
+.col-4 {
+	float:left;
+	width:568px;
+}
+.col-5 {
+	float:left;
+	width:148px;
+	margin:0 32px 0 0;
+}
+.col-6 {
+	float:left;
+	width:148px;
+}
+.col-7 {
+	float:left;
+	width:260px;
+	margin:0 40px 20px 0;
+}
+.col-8 {
+	float:left;
+	width:562px;
+	margin:0 0 60px 0;
+}
+.col-9 {
+	float:left;
+	width:580px;
+	margin:0 20px 20px 0;
+}
+.col-10 {
+	float:left;
+	width:261px;
+}
+.col-11 {
+	float:left;
+	width:410px;
+	margin:0 40px 0 0;
+}
+.col-12 {
+	float:left;
+	width:410px;
+}
+.contnt-slider section {
+	background:#fff !important;
+}
+.relative {
+	position:relative;
+}
+.cs-prev, .cs-next {
+	display:block;
+	position:absolute;
+	bottom:20px;
+	width:17px;
+	height:25px;
+	z-index:99;
+}
+	.cs-prev {
+		background:url(../images/cs-controls.png) no-repeat 0 0;
+		right:24px;
+	}
+	.cs-next {
+		background:url(../images/cs-controls.png) no-repeat right 0;
+		right:0;
+	}
+	.cs-prev:hover, .cs-next:hover {
+		opacity:0.7;
+	}
+
+.gallery-meta {
+	overflow:hidden;
+	padding:0 0 20px 0;
+}
+.gallery-name {
+	float:left;
+	font-family: 'Oswald', sans-serif;
+	font-size:18px;
+	line-height:22px;
+	text-transform:uppercase;
+	color:#333;
+	max-width:70%;
+}
+	.gallery-name:hover {
+		text-decoration:none;
+		color:#0043e4;
+	}
+.capacity {
+	float:right;
+	max-width:30%;
+}
+.map_container {
+	padding:0 0 20px 0;
+}
+.map_container iframe {
+	width:410px;
+	height:376px;
+	border:none;
+	margin:0;
+}
+.adress {padding:0 0 40px 0;}
+.adress .dt {
+	display:block;
+	font-weight:normal;
+	float:left;
+	color:#333;
+	letter-spacing:-1px;
+	font-size:12px;
+	line-height:18px;
+	width:180px;
+	margin:0 40px 0 0;
+	font-size:18px;
+	line-height:30px;
+	text-transform:uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+.adress .dd {
+	font-size:14px;
+	line-height:25px;
+	color:#333;
+	overflow:hidden;
+}
+.adress .dd a {
+	color:#333;
+}
+
+/******************** Footer ******************/
+footer {
+	color:#7f7f7f;
+	font-size:14px;
+	overflow:hidden;
+	padding:28px 40px;
+	background:#000;
+	margin:0 10px;
+}
+	footer a {
+		color:#fff;
+	}
+	.copyright {
+		float:left;
+	}
+	.social-list {
+		float:right;
+	}
+		.social-list li {
+			float:left;
+			margin:0 0 0 10px;
+		}
+		.social-list li a:hover img {
+			opacity:0.8;
+		}
+		
+/* Calendar styles */
+
+
+.fc {
+	direction: ltr;
+	text-align: left;
+	padding:30px 0 0 0;
+	position:relative;
+	}
+	
+.fc table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	
+html .fc,
+.fc table {
+	font-size: 1em;
+	}
+	
+.fc td,
+.fc th {
+	padding: 0;
+	vertical-align: top;
+	}
+
+
+
+/* Header
+------------------------------------------------------------------------*/
+
+.fc-header td {
+	white-space: nowrap;
+	background:#0043e4;
+	}
+
+.fc-header-left {
+	width: 100%;
+	text-align: left;
+	}
+	
+.fc-header-center {
+	text-align: center;
+	}
+	
+.fc-header-right {
+	text-align: right;
+	}
+	
+.fc-header-title {
+	display:block;
+	vertical-align: top;
+	padding:0;
+	text-align:center;
+	}
+	
+.fc-header-title h2 {
+	margin-top: 0;
+	white-space: nowrap;
+	color:#fff;
+	padding:0;
+	font-size:18px;
+	line-height:36px;
+	height:36px;
+	}
+	
+.fc .fc-header-space {
+	padding-left: 0;
+	}
+	
+
+	
+.fc-header .fc-corner-right {
+	margin-right: 1px; /* back to normal */
+	}
+	
+.fc-header .ui-corner-right {
+	margin-right: 0; /* back to normal */
+	}
+	
+/* button layering (for border precedence) */
+	
+.fc-header .fc-state-hover,
+.fc-header .ui-state-hover {
+	z-index: 2;
+	}
+	
+.fc-header .fc-state-down {
+	z-index: 3;
+	}
+
+.fc-header .fc-state-active,
+.fc-header .ui-state-active {
+	z-index: 4;
+	}
+	
+.fc-button-next {
+	position:absolute;
+	right:9px;
+	top:39px;
+	width:12px;
+	height:18px;
+	font-size:0;
+	line-height:0;
+	border:none;
+	background:url(../images/calendar-next.png) no-repeat 0 0;
+	cursor:pointer;
+}
+.fc-button-prev {
+	position:absolute;
+	left:9px;
+	top:39px;
+	width:12px;
+	height:18px;
+	font-size:0;
+	line-height:0;
+	border:none;
+	background:url(../images/calendar-prev.png) no-repeat 0 0;
+	cursor:pointer;
+}
+.fc-button-next:hover, .fc-button-prev:hover {
+	opacity:0.7;
+}
+	
+/* Content
+------------------------------------------------------------------------*/
+	
+.fc-content {
+	clear: both;
+	}
+	
+.fc-view {
+	width: 100%; /* needed for view switching (when view is absolute) */
+	overflow: hidden;
+	}
+	
+	
+
+/* Cell Styles
+------------------------------------------------------------------------*/
+
+.fc-widget-header {
+	background:#000;
+	color:#fff;
+	font-family: 'Oswald', sans-serif;
+	font-size:18px;
+	text-decoration:none;
+	font-weight:normal;
+	text-align:center;
+	line-height:36px;
+	height:36px;
+	text-transform:uppercase;
+}    /* <th>, usually */
+.fc-widget-content {  /* <td>, usually */
+	border: 1px solid #c4ccc6;
+	background:#fff;
+	height:119px;
+	}
+.fc-other-month {
+	background:none;
+}
+.fc-state-highlight { /* <td> today cell */ /* TODO: add .fc-today to <th> */
+	background: #ffc;
+	}
+	
+.fc-cell-overlay { /* semi-transparent rectangle while dragging */
+	background: #9cf;
+	opacity: .2;
+	filter: alpha(opacity=20); /* for IE */
+	}
+	
+
+
+/* Buttons
+------------------------------------------------------------------------*/
+
+.fc-button {
+	display: inline-block;
+	cursor: pointer;
+	}
+	
+
+	
+.fc-button-inner {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	}
+	
+	
+.fc-button-content {
+	position: relative;
+	float: left;
+	white-space: nowrap;
+	text-transform:capitalize;
+	font-size:14px;
+	}
+
+.fc-button-today {
+	position:absolute;
+	left:0;
+	top:0;
+	background:none;
+	color:#333;
+	font-size:14px;
+}
+	.fc-button-today:hover {
+		color:#0043e4 !important;
+	}
+/* icon (for jquery ui) */
+	
+
+	
+
+	
+
+	
+
+	
+/* button states (determines colors)  */
+	
+.fc-state-default,
+.fc-state-default .fc-button-inner {
+	color: #333;
+	}
+	
+.fc-state-hover,
+.fc-state-hover .fc-button-inner {
+	border-color: #333;
+	}
+	
+
+	
+.fc-state-disabled,
+.fc-state-disabled .fc-button-inner {
+	color: #333;
+	border:none;
+	padding:0;
+	}
+	
+.fc-state-disabled {
+	cursor: default;
+	}
+	
+.fc-state-disabled .fc-button-effect {
+	display: none;
+	}
+	
+	
+
+/* Global Event Styles
+------------------------------------------------------------------------*/
+	 
+.fc-event {
+	border-style: solid;
+	border-width: 0;
+	font-size: .85em;
+	cursor: default;
+	}
+	
+a.fc-event,
+.fc-event-draggable {
+	cursor: pointer;
+	}
+	
+a.fc-event {
+	text-decoration: none;
+	}
+	
+.fc-rtl .fc-event {
+	text-align: right;
+	}
+	
+.fc-event-skin {
+	border:none;    /* default BORDER color */
+	background: none; /* default BACKGROUND color */
+	color: #333;            /* default TEXT color */
+	font-size:12px;
+	line-height:18px;
+	padding:0 0 0 2px;
+	}
+	
+.fc-event-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-width: 0;
+	overflow: hidden;
+	}
+	
+.fc-event-time,
+.fc-event-title {
+	padding: 0 1px;
+	}
+	
+.fc .ui-resizable-handle { /*** TODO: don't use ui-resizable anymore, change class ***/
+	display: block;
+	position: absolute;
+	z-index: 99999;
+	overflow: hidden; /* hacky spaces (IE6/7) */
+	font-size: 300%;  /* */
+	line-height: 50%; /* */
+	}
+	
+	
+	
+/* Horizontal Events
+------------------------------------------------------------------------*/
+
+.fc-event-hori {
+	margin-bottom: 1px;
+	}
+	
+/* resizable */
+	
+.fc-event-hori .ui-resizable-e {
+	top: 0           !important; /* importants override pre jquery ui 1.7 styles */
+	right: -3px      !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: e-resize;
+	}
+	
+.fc-event-hori .ui-resizable-w {
+	top: 0           !important;
+	left: -3px       !important;
+	width: 7px       !important;
+	height: 100%     !important;
+	cursor: w-resize;
+	}
+	
+.fc-event-hori .ui-resizable-handle {
+	_padding-bottom: 14px; /* IE6 had 0 height */
+	}
+	
+	
+	
+/* Fake Rounded Corners (for buttons and events)
+------------------------------------------------------------*/
+	
+.fc-corner-left {
+	margin-left: 1px;
+	}
+	
+.fc-corner-left .fc-button-inner,
+.fc-corner-left .fc-event-inner {
+	margin-left: -1px;
+	}
+	
+.fc-corner-right {
+	margin-right: 1px;
+	}
+	
+.fc-corner-right .fc-button-inner,
+.fc-corner-right .fc-event-inner {
+	margin-right: -1px;
+	}
+	
+.fc-corner-top {
+	margin-top: 1px;
+	}
+	
+.fc-corner-top .fc-event-inner {
+	margin-top: -1px;
+	}
+	
+.fc-corner-bottom {
+	margin-bottom: 1px;
+	}
+	
+.fc-corner-bottom .fc-event-inner {
+	margin-bottom: -1px;
+	}
+	
+	
+	
+
+	
+/* Reusable Separate-border Table
+------------------------------------------------------------*/
+
+table.fc-border-separate {
+	border-collapse: separate;
+	}
+	
+.fc-border-separate th,
+.fc-border-separate td {
+	border-width: 1px 0 0 1px;
+	}
+	
+.fc-border-separate th.fc-last,
+.fc-border-separate td.fc-last {
+	border-right-width: 1px;
+	}
+	
+.fc-border-separate tr.fc-last th,
+.fc-border-separate tr.fc-last td {
+	border-bottom-width: 1px;
+	}
+	
+.fc-border-separate tbody tr.fc-first td,
+.fc-border-separate tbody tr.fc-first th {
+	border-top-width: 0;
+	}
+	
+	
+
+/* Month View, Basic Week View, Basic Day View
+------------------------------------------------------------------------*/
+
+.fc-grid th {
+	text-align: center;
+	}
+	
+.fc-grid .fc-day-number {
+	float: left;
+	color:#000;
+	padding: 5px;
+	font-family: 'Oswald', sans-serif;
+	font-size:16px;
+	}
+	
+.fc-grid .fc-other-month .fc-day-number {
+	opacity: 0.3;
+	filter: alpha(opacity=30); /* for IE */
+	/* opacity with small font can sometimes look too faded
+	   might want to set the 'color' property instead
+	   making day-numbers bold also fixes the problem */
+	}
+	
+.fc-grid .fc-day-content {
+	clear: both;
+	padding: 2px 2px 1px; /* distance between events and day edges */
+	}
+	
+/* event styles */
+	
+.fc-grid .fc-event-time {
+	font-weight: bold;
+	}
+	
+/* right-to-left */
+	
+.fc-rtl .fc-grid .fc-day-number {
+	float: left;
+	}
+	
+.fc-rtl .fc-grid .fc-event-time {
+	float: right;
+	}
+	
+	
+
+/* Agenda Week View, Agenda Day View
+------------------------------------------------------------------------*/
+
+.fc-agenda table {
+	border-collapse: separate;
+	}
+	
+.fc-agenda-days th {
+	text-align: center;
+	}
+	
+.fc-agenda .fc-agenda-axis {
+	width: 50px;
+	padding: 0 4px;
+	vertical-align: middle;
+	text-align: right;
+	white-space: nowrap;
+	font-weight: normal;
+	}
+	
+.fc-agenda .fc-day-content {
+	padding: 2px 2px 1px;
+	}
+	
+/* make axis border take precedence */
+	
+.fc-agenda-days .fc-agenda-axis {
+	border-right-width: 1px;
+	}
+	
+.fc-agenda-days .fc-col0 {
+	border-left-width: 0;
+	}
+	
+/* all-day area */
+	
+.fc-agenda-allday th {
+	border-width: 0 1px;
+	}
+	
+.fc-agenda-allday .fc-day-content {
+	min-height: 34px; /* TODO: doesnt work well in quirksmode */
+	_height: 34px;
+	}
+	
+/* divider (between all-day and slots) */
+	
+.fc-agenda-divider-inner {
+	height: 2px;
+	overflow: hidden;
+	}
+	
+.fc-widget-header .fc-agenda-divider-inner {
+	background: #eee;
+	}
+	
+/* slot rows */
+	
+.fc-agenda-slots th {
+	border-width: 1px 1px 0;
+	}
+	
+.fc-agenda-slots td {
+	border-width: 1px 0 0;
+	background: none;
+	}
+	
+.fc-agenda-slots td div {
+	height: 20px;
+	}
+	
+.fc-agenda-slots tr.fc-slot0 th,
+.fc-agenda-slots tr.fc-slot0 td {
+	border-top-width: 0;
+	}
+
+.fc-agenda-slots tr.fc-minor th,
+.fc-agenda-slots tr.fc-minor td {
+	border-top-style: dotted;
+	}
+	
+.fc-agenda-slots tr.fc-minor th.ui-widget-header {
+	*border-top-style: solid; /* doesn't work with background in IE6/7 */
+	}
+	
+
+
+/* Vertical Events
+------------------------------------------------------------------------*/
+
+.fc-event-vert {
+	border-width: 0 1px;
+	}
+	
+.fc-event-vert .fc-event-head,
+.fc-event-vert .fc-event-content {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	overflow: hidden;
+	}
+	
+.fc-event-vert .fc-event-time {
+	white-space: nowrap;
+	font-size: 10px;
+	}
+	
+.fc-event-vert .fc-event-bg { /* makes the event lighter w/ a semi-transparent overlay  */
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: .3;
+	filter: alpha(opacity=30);
+	}
+	
+.fc .ui-draggable-dragging .fc-event-bg, /* TODO: something nicer like .fc-opacity */
+.fc-select-helper .fc-event-bg {
+	display: none\9; /* for IE6/7/8. nested opacity filters while dragging don't work */
+	}
+	
+/* resizable */
+	
+.fc-event-vert .ui-resizable-s {
+	bottom: 0        !important; /* importants override pre jquery ui 1.7 styles */
+	width: 100%      !important;
+	height: 8px      !important;
+	overflow: hidden !important;
+	line-height: 8px !important;
+	font-size: 11px  !important;
+	font-family: monospace;
+	text-align: center;
+	cursor: s-resize;
+	}
+	
+.fc-agenda .ui-resizable-resizing { /* TODO: better selector */
+	_overflow: hidden;
+	}
+	

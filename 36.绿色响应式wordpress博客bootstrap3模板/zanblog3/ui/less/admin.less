@@ -1,0 +1,179 @@
+/**
+ * ZanBlog 3.0.0
+ * admin.less ZanBlog3后台样式文件
+ * Copyright 2012-2014 YEAHZAN.COM
+ * Licensed under MIT
+*/
+
+@import "variables.less";
+
+
+a {
+  color: @zan-primary !important;
+}
+
+#menu-dashboard,
+#reg_passmail {
+  display: none;
+}
+
+div.updated, .login .message, .press-this #message {
+  border-left: 4px solid  @zan-inverse ;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
+body.login{
+  background-color: @zan-inverse;
+}
+
+#login {
+  padding-top: 3% !important;
+}
+
+.login form .input {
+  border: 2px solid @zan-gray;
+}
+
+.message.register {
+  display: none;
+}
+
+.login h1 a {
+  background:url(../images/logo.jpg)  no-repeat;
+  display:block;
+  text-decoration: none;
+  color: @zan-primary;
+  width: 160px !important;
+  height: 160px !important;
+  margin: 0 auto;
+  background-color: @zan-primary;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: rgb(10, 61, 82) 1px 1px,
+    rgb(10, 61, 82) 2px 2px,
+    rgb(10, 61, 82) 3px 3px,
+    rgb(10, 61, 82) 4px 4px,
+    rgb(10, 61, 82) 5px 5px,
+    rgb(10, 61, 82) 6px 6px,
+    rgb(10, 61, 82) 7px 7px,
+    rgb(10, 61, 82) 8px 8px,
+    rgb(10, 61, 82) 9px 9px,
+    rgb(10, 61, 82) 10px 10px,
+    rgb(10, 61, 82) 11px 11px,
+    rgb(10, 61, 82) 12px 12px,
+    rgb(10, 61, 82) 13px 13px,
+    rgb(10, 61, 82) 14px 14px,
+    rgb(10, 61, 82) 15px 15px,
+    rgb(10, 61, 82) 16px 16px,
+    rgb(10, 61, 82) 17px 17px,
+    rgb(10, 61, 82) 18px 18px,
+    rgb(10, 62, 83) 19px 19px,
+    rgb(10, 62, 83) 20px 20px,
+    rgb(10, 62, 83) 21px 21px,
+    rgb(10, 62, 84) 22px 22px,
+    rgb(10, 63, 84) 23px 23px,
+    rgb(10, 63, 84) 24px 24px,
+    rgb(10, 63, 85) 25px 25px,
+    rgb(10, 63, 85) 26px 26px,
+    rgb(10, 64, 85) 27px 27px,
+    rgb(10, 64, 86) 28px 28px,
+    rgb(10, 64, 86) 29px 29px,
+    rgb(10, 64, 86) 30px 30px,
+    rgb(10, 65, 87) 31px 31px,
+    rgb(10, 65, 87) 32px 32px,
+    rgb(10, 65, 87) 33px 33px,
+    rgb(10, 65, 88) 34px 34px,
+    rgb(10, 66, 88) 35px 35px,
+    rgb(10, 66, 88) 36px 36px,
+    rgb(10, 66, 89) 37px 37px,
+    rgb(10, 66, 89) 38px 38px,
+    rgb(10, 67, 89) 39px 39px,
+    rgb(10, 67, 90) 40px 40px,
+    rgb(10, 67, 90) 41px 41px,
+    rgb(10, 67, 90) 42px 42px,
+    rgb(11, 68, 91) 43px 43px;
+   background-color: rgb(11, 68, 91);
+}
+
+.login h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login #nav a, 
+.login #backtoblog a {
+  color: @zan-inverse !important;
+  text-shadow:none;
+  &:hover {
+    color: @zan-primary !important;
+  }
+}
+
+#wp-submit {
+  padding: 8px 20px;
+  height: auto;
+  color: #ffffff;
+  background-color: @zan-primary !important;
+  border-color: #ffffff;
+  background-image:none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius:0;
+}
+
+.forgetmenot {
+  padding: 10px 0;
+}
+
+.wp-core-ui .button-primary {
+  box-shadow: none !important;
+}
+
+#wp-submit:hover {
+  color: @zan-primary;
+  background-color: #ffffff !important;
+  border-color: @zan-primary;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.alert {
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+input[type=checkbox]:focus,
+.login form .input:focus {
+  border-color: @zan-primary;
+  outline: 0;
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked:before {
+  color: @zan-primary;
+}
+
+#wpfooter {
+  display: none;
+}
+
+.login #backtoblog {
+  display: none;
+}
+
+#login {
+  position: relative;
+}
+
+.login #nav {
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  padding: 0 16px !important;
+}

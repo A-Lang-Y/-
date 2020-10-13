@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>Blog in 2 Columns</title>
+	<meta name="description" content="" />
+    <meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="" id="css_skin" />    
+    <link rel="stylesheet" href="css/content_css.css" id="css_skin" />
+	<link rel="stylesheet" href="" id="css_color" />
+    <link rel="stylesheet" href="css/patterns/lines1.css" id="css_pattern" />
+	<link rel="stylesheet" href="css/layout/layout_background.css" id="css_layout" />
+    
+	<link rel="stylesheet" href="css/skeleton.css" />
+	
+    <link rel="stylesheet" href="css/plugins/camera.css" />
+    <link rel="stylesheet" href="css/plugins/elastislide.css" />
+    <link rel="stylesheet" href="css/plugins/prettyPhoto.css" />
+    <link rel="stylesheet" href="css/plugins/supersized.css" />
+    <link rel="stylesheet" href="css/plugins/supersized.shutter.css" />
+    <link rel="stylesheet" href="css/color_panel.css" />    
+        
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+	<!--[if IE]> <link rel="stylesheet" href="css/ie_fix.css"> <![endif]-->
+
+	<!-- JS
+	================================================== -->
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>-->
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.8.20/jquery-ui.min.js"></script>    
+    <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type='text/javascript' src='js/camera.min.js'></script> 	 	
+	<script type='text/javascript' src='js/jquery.prettyPhoto.js'></script> 	 	
+    <script type='text/javascript' src='js/prettify.js'></script>
+        
+	<script type="text/javascript" src="js/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+
+    <script type="text/javascript" src="js/apng-canvas.min.js"></script>
+	<script type="text/javascript">
+		APNG.ifNeeded(function() {
+			$("img.apng").each(function() { APNG.animateImage(this); });
+		}).fail(function(message) {
+			/*Fail Message*/
+		}); 
+		$(document).ready(function(){
+			
+		});
+    </script>
+	<script type="text/javascript" src="js/color_panel.js"></script>
+	<script type="text/javascript" src="js/color_panel_inc.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script type="text/javascript" src="js/ie_fix.js"></script>
+	<![endif]-->
+    <!--<script type="text/javascript" src="js/respond.src.js"></script>-->
+	<script type='text/javascript' src='js/fw_ui.js'></script>
+    <script type='text/javascript' src='js/scripts.js'></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body id="no_layout">
+	<header>
+    	<a href="index.html" class="logo">
+        	<span class="logo_ico"></span>
+            in<span>cipiens</span>
+            <span class="slogan">slogan goes <span>here</span></span>        </a>
+    	<div class="head_contact">
+          <ul>
+            <li class="top_phone">call us toll free <span>800.505.1618</span></li>
+            <li><a href="#" class="social_facebook"></a></li>
+            <li><a href="#" class="social_twitter"></a></li>
+            <li><a href="#" class="social_flickr"></a></li>
+            <li><a href="#" class="social_vimeo"></a></li>
+          </ul>
+  	  	</div>
+    	<div class="head_menu">
+        	<ul class="menu">
+            	<li><a href="index.html">home</a></li>
+                <li><a href="javascript:void(0)">about</a>
+                	<ul class="sub-menu">
+                        <li><a href="404.html">404 error</a></li>
+                        <li><a href="full_width.html">Full Width</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Features</a>
+                	<ul class="sub-menu">
+                    	<li><a href="typography.html">Typography</a></li>
+                        <li><a href="shortcodes.html">Shortcodes</a></li>
+					</ul>                
+                </li>
+                <li><a href="javascript:void(0)">portfolio</a>
+					<ul class="sub-menu">
+						<li><a href="portfolio1.html">1 Column</a></li>
+						<li><a href="portfolio2.html">2 Columns</a></li>                
+						<li><a href="portfolio3.html">3 Columns</a></li>
+						<li><a href="portfolio4.html">4 Columns</a></li>                
+						<li><a href="portfolio5.html">Masonry</a></li>                
+					</ul>                
+                </li>
+                <li><a href="javascript:void(0)">blog</a>
+					<ul class="sub-menu">
+						<li><a href="blog_full.html">Full Width</a></li>
+                        <li><a href="blog_2col.html">2 Columns</a></li>
+                        <li><a href="blog_post.html">Blog post</a></li>
+						<li><a href="javascript:void(0)">With sidebar</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog_left.html">Left sidebar</a></li>
+                                <li><a href="blog_right.html">Right sidebar</a></li>
+                                <li><a href="blog_post_sidebar.html">Blog post</a></li>
+							</ul>                                                
+                        </li>
+					</ul>                                        
+                </li>
+                <li><a href="javascript:void(0)">contact</a>
+					<ul class="sub-menu">
+						<li><a href="contacts_full.html">Full Width</a></li>
+						<li><a href="contacts_sidebar.html">With sidebar</a></li>                
+					</ul>
+                </li>
+            </ul>
+          <div class="head_search">
+            <form name="head_search" method="post" action="" />
+              <input type="submit" name="submit" id="submit" value="l" />
+              <input type="text" name="search_field" id="search_field" title="search the site" value="search the site" />              
+			</form>
+          </div>
+			<div class="responsive_menu">
+                menu <span class="pm">+</span>
+			</div>
+        </div>
+    </header>
+	<div class="responsive-menu-wrapper">
+		<div class="responsive-menu-items"></div>
+    </div>
+
+	<!-- Content
+    ============= -->
+    <div class="content_wrapper"></div>
+    
+    <div class="content_block">    	      
+		<div class="container content_area">        	
+            <div class="columns sixteen blog_2col">
+				<div class="columns sixteen"><h1>2 Columns Blog</h1>
+                Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, pretium non tristique vitae, porta in libero. Nam facilisis ornare erat, ut posuere eget urna tristique eget. Vivamus rhoncus ligula eu felis elementum placerat id a leo. Etiam facilisis tristique.                
+                <hr class="bold" />
+                </div>
+                <div class="blog_post_preview">
+                	<div class="top_toolbox">
+                        <div class="featured_image_full">
+                            <img src="images/pictures/img_blog_2col1.jpg" alt="" />
+						</div>
+                      	<div class="top_toolbox_border"></div>
+                        <a href="javascript:void(0)" class="btn_tags">8</a>
+                        <div class="blog_tags"><a href="#">Tag1</a>, <a href="#">Tag2</a></div>
+                        <a href="blog_post.html" class="btn_readmode">l</a>
+                        <hr class="vertical_sep0" />
+                    </div>                    
+                	<div class="blog_post_text">
+                    	<div class="blogpost_title">
+                            <a href="blog_post.html" class="mainTitlePermalink"><h5>Aliquam Nec Eros Vel Neque Curat </h5></a>
+                            <div class="date"><span>05</span>apr<br />2013</div>
+                        </div>
+                        <div class="blog_info">
+                        	<span class="author_name"><a href="#"><span class="ico">a</span>John Doe</a></span>|
+                            <span class="comments"><a href="#"><span class="ico">c</span>15</a></span>
+                            <span class="like"><a href="#"><span class="ico">e</span>17</a></span>
+                        </div>
+                        Aliquam nec eros vel neque fermentum luctus eu sed risus. Phasellus acum sit amet urna sed ligula pharetra dictum. Phasellus mauris nisi consequat a bibendum 
+sapien, hendrerit non dictum in, posuere nec odio. Nam ut est orci. Donec condimentum viverra lobortis. Curabitur lectus erat, vulputate ege ut faucibus non, tempor consequat odio. Cras vel diam lorem, faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porttitor, sem dictum pulvinar posuere, orci felis feugiat magna, at hendrerit diam ante in nisi. Duis urna dui, volutpat consectetur placerat in, aliquam non magna. <a href="#">Read more...</a>
+                    </div>
+                </div>
+                <!-- -->
+				<div class="blog_post_preview">
+                	<div class="top_toolbox">
+                        <div class="featured_image_full">
+                            <img src="images/pictures/img_blog_2col2.jpg" alt="" />
+						</div>                    
+                        <div class="top_toolbox_border"></div>
+                        <a href="javascript:void(0)" class="btn_tags">8</a>
+                        <div class="blog_tags"><a href="#">Tag1</a>, <a href="#">Tag2</a></div>
+                        <a href="blog_post.html" class="btn_readmode">l</a>
+                        <hr class="vertical_sep0" />
+                    </div>                    
+                	<div class="blog_post_text">
+                    	<div class="blogpost_title">
+                            <a href="blog_post.html" class="mainTitlePermalink"><h5>Curabitur Dolor Massa</h5></a>
+                            <div class="date"><span>20</span>mar<br />2013</div>
+                        </div>
+                        <div class="blog_info">
+                        	<span class="author_name"><a href="#"><span class="ico">a</span>John Doe</a></span>|
+                            <span class="comments"><a href="#"><span class="ico">c</span>26</a></span>
+                            <span class="like"><a href="#"><span class="ico">e</span>13</a></span>
+                        </div>
+                        Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, nulla pretum non tristique vitae, porta in libero. Nam facilisis ornare erat, ut posuere ege urna tristique  lectus, nec congue libero tortor vel dolor. Ut commodo mollis nisl nec consequat. Cras vel diam lorem, faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porttitor, sem dictum pulvinar posuere, orci felis feugiat magna, at hendrerit diam ante in nisi. Ut commodo mollis nisl nec consequat. Cras vel diam lorem, faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <a href="#">Read more...</a>
+                    </div>
+                </div>
+                <!-- -->
+				<div class="blog_post_preview">
+                	<div class="top_toolbox">
+                        <div class="top_toolbox_border"></div>
+                        <a href="javascript:void(0)" class="btn_tags">8</a>
+                        <div class="blog_tags"><a href="#">Tag1</a>, <a href="#">Tag2</a></div>
+                        <a href="blog_post.html" class="btn_readmode">l</a>
+                        <hr class="vertical_sep0" />
+                    </div>                    
+                	<div class="blog_post_text">
+                    	<div class="blogpost_title">
+                            <a href="blog_post.html" class="mainTitlePermalink"><h5>Curabitur Dolor Massa, Aliquet Fusce Rhoncus Risus Quis <br />
+Sollicitudin Suscipit Metus Dictum</h5></a>
+                            <div class="date"><span>20</span>mar<br />2013</div>
+                        </div>
+                        <div class="blog_info">
+                        	<span class="author_name"><a href="#"><span class="ico">a</span>John Doe</a></span>|
+                            <span class="comments"><a href="#"><span class="ico">c</span>26</a></span>
+                            <span class="like"><a href="#"><span class="ico">e</span>13</a></span>
+                        </div>
+                        Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, nulla pretum non tristique vitae, porta in libero. Nam facilisis ornare erat, ut posuere ege urna tristique  lectus, nec congue libero tortor vel dolor. Ut commodo mollis nisl nec consequat. Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, nulla pretum non tristique vitae, porta in libero. Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, nulla pretum non tristique vitae, porta in libero. Nam facilisis ornare erat, ut posuere ege urna tristique  lectus, nec congue libero tortor vel dolor. Ut commodo mollis nisl nec consequat. Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, nulla pretum non tristique vitae, porta in libero. Nam facilisis ornare erat, ut posuere ege urna tristique  lectus, nec congue libero tortor vel dolor. Ut commodo mollis nisl nec consequat. <a href="#">Read more...</a>
+                    </div>
+                </div>
+                <!-- -->
+				<div class="blog_post_preview">
+                	<div class="top_toolbox">
+                        <div class="top_toolbox_border"></div>
+                        <a href="javascript:void(0)" class="btn_tags">8</a>
+                        <div class="blog_tags"><a href="#">Tag1</a>, <a href="#">Tag2</a></div>
+                        <a href="blog_post.html" class="btn_readmode">l</a>
+                        <hr class="vertical_sep0" />
+                    </div>                    
+                	<div class="blog_post_text">
+                    	<div class="blogpost_title">
+                            <a href="blog_post.html" class="mainTitlePermalink"><h5>Curabitur Dolor Massa, Aliquet Fusce Rhoncus Risus Quis <br />
+Sollicitudin Suscipit Metus Dictum</h5></a>
+                            <div class="date"><span>20</span>mar<br />2013</div>
+                        </div>
+                        <div class="blog_info">
+                        	<span class="author_name"><a href="#"><span class="ico">a</span>John Doe</a></span>|
+                            <span class="comments"><a href="#"><span class="ico">c</span>26</a></span>
+                            <span class="like"><a href="#"><span class="ico">e</span>13</a></span>
+                        </div>
+                        Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, nulla pretum non tristique vitae, porta in libero. Nam facilisis ornare erat, ut posuere ege urna tristique  lectus, nec congue libero tortor vel dolor. Ut commodo mollis nisl nec consequat. Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, nulla pretum non tristique vitae, porta in libero. Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, nulla pretum non tristique vitae, porta in libero. Nam facilisis ornare erat, ut posuere ege urna tristique  lectus, nec congue libero tortor vel dolor. Ut commodo mollis nisl nec consequat. Sed a est nec mi sollicitudin consectetur. Nullam urna nisi, nulla pretum non tristique vitae, porta in libero. Nam facilisis ornare erat, ut posuere ege urna tristique  lectus, nec congue libero tortor vel dolor. Ut commodo mollis nisl nec consequat. <a href="#">Read more...</a>
+                    </div>
+                </div>
+                <!-- -->
+				<div class="blog_post_preview">
+                	<div class="top_toolbox">
+                        <div class="featured_image_full">
+                            <img src="images/pictures/img_blog_2col1.jpg" alt="" />
+						</div>
+                      	<div class="top_toolbox_border"></div>
+                        <a href="javascript:void(0)" class="btn_tags">8</a>
+                        <div class="blog_tags"><a href="#">Tag1</a>, <a href="#">Tag2</a></div>
+                        <a href="blog_post.html" class="btn_readmode">l</a>
+                        <hr class="vertical_sep0" />
+                    </div>                    
+                	<div class="blog_post_text">
+                    	<div class="blogpost_title">
+                            <a href="blog_post.html" class="mainTitlePermalink"><h5>Aliquam Nec Eros Vel Neque Curat </h5></a>
+                            <div class="date"><span>05</span>apr<br />2013</div>
+                        </div>
+                        <div class="blog_info">
+                        	<span class="author_name"><a href="#"><span class="ico">a</span>John Doe</a></span>|
+                            <span class="comments"><a href="#"><span class="ico">c</span>15</a></span>
+                            <span class="like"><a href="#"><span class="ico">e</span>17</a></span>
+                        </div>
+                        Aliquam nec eros vel neque fermentum luctus eu sed risus. Phasellus acum sit amet urna sed ligula pharetra dictum. Phasellus mauris nisi consequat a bibendum 
+sapien, hendrerit non dictum in, posuere nec odio. Nam ut est orci. Donec condimentum viverra lobortis. Curabitur lectus erat, vulputate ege ut faucibus non, tempor consequat odio. Cras vel diam lorem, faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porttitor, sem dictum pulvinar posuere, orci felis feugiat magna, at hendrerit diam ante in nisi. Duis urna dui, volutpat consectetur placerat in, aliquam non magna. <a href="#">Read more...</a>
+                    </div>
+                </div>
+                <!-- -->
+				<div class="blog_post_preview">
+                	<div class="top_toolbox">
+                        <div class="featured_image_full">
+                            <img src="images/pictures/img_blog_2col2.jpg" alt="" />
+						</div>                    
+                        <div class="top_toolbox_border"></div>
+                        <a href="javascript:void(0)" class="btn_tags">8</a>
+                        <div class="blog_tags"><a href="#">Tag1</a>, <a href="#">Tag2</a></div>
+                        <a href="blog_post.html" class="btn_readmode">l</a>
+                        <hr class="vertical_sep0" />
+                    </div>                    
+                	<div class="blog_post_text">
+                    	<div class="blogpost_title">
+                            <a href="blog_post.html" class="mainTitlePermalink"><h5>Aliquam Nec Eros Vel Neque Curat </h5></a>
+                            <div class="date"><span>20</span>mar<br />2013</div>
+                        </div>
+                        <div class="blog_info">
+                        	<span class="author_name"><a href="#"><span class="ico">a</span>John Doe</a></span>|
+                            <span class="comments"><a href="#"><span class="ico">c</span>26</a></span>
+                            <span class="like"><a href="#"><span class="ico">e</span>13</a></span>
+                        </div>
+                        Aliquam nec eros vel neque fermentum luctus eu sed risus. Phasellus acum sit amet urna sed ligula pharetra dictum. Phasellus mauris nisi consequat a bibendum 
+sapien, hendrerit non dictum in, posuere nec odio. Nam ut est orci. Donec condimentum viverra lobortis. Curabitur lectus erat, vulputate ege ut faucibus non, tempor consequat odio. Cras vel diam lorem, faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin porttitor, sem dictum pulvinar posuere, orci felis feugiat magna, at hendrerit diam ante in nisi. Duis urna dui, volutpat consectetur placerat in, aliquam non magna. <a href="#">Read more...</a>
+                    </div>
+                </div>
+                <!-- -->
+				<ul class="pager">
+					<li><a class="left disabled" href="#"></a></li>
+					<li><a class="active" href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">...</a></li>
+					<li><a href="#">25</a></li>
+					<li><a href="#">26</a></li>
+					<li><a class="right" href="#"></a></li>        
+				</ul>
+			</div>	
+		</div>                  
+    </div>
+
+	<!-- EOC -->
+	<footer>
+        <div class="bg_footer">
+            <div class="copyright">&copy; 2020. Incipiens. Donec aliqu semipimatis. all rights reserved.</div>
+            <div class="subscribe"><a href="#">Subscribe to our free updates: <span>rss</span></a></div>
+            <ul class="social_share">	
+            	<li><a href="#" class="twitter_share">t</a></li>
+                <li><a href="#" class="facebook_share">f</a></li><li class="share_txt">share this on</li>
+            </ul>
+            <a href="#" class="footer_toggler"></a>		</div>
+<div class="supersized hided">
+            <div id="slidecaption"></div>
+        </div>        
+		<div class="subfooter">
+        	<div class="subfooter_content container">
+            	<div class="columns four">
+                	<h5>Popular Posts</h5>
+                    <div class="widget_block">
+                        <ul class="popular_posts">
+                            <li>
+                                <img src="images/pictures/img_aside1.png" alt="" class="scale-with-grid" />
+                                <div class="popular_posts_content">                            
+                                    <p><span class="white">Aliquam Nec Eros.</span> Velnes Neque Ipsum Vestibulum Curat</p>
+                                    <span class="post_date">05 apr 2013</span> | <span class="read_more"><a href="#">Read more...</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="popular_posts_content">                        	
+                                    <p><span class="white">Donec enim orci nec.</span> Magna molestie tincidunt vitae a arcu. Nam ut sapien quam, et congue quam.</p>
+                                    <span class="post_date">03 apr 2013</span> | <span class="read_more"><a href="#">Read more...</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            	<div class="columns four">
+                	<h5>Flickr Photostream</h5>
+                	<script type="text/javascript" src="js/jflickrfeed.js"></script>
+                    <div class="widget_block">
+	                    <ul id="flickr" class="flicker_widget"></ul>
+                    </div>
+                </div>
+            	<div class="columns four">
+	                <h5>Latest Tweets</h5>
+                    <div class="widget_block">
+                        <ul class="latest_tweets">
+                            <li><p>Vivamus venenatis, diam veltristique scelerisque, nibh dui tempus lectus, nec congue eget libero tortor vel ac dolor. </p><a href="#">About a day ago</a></li>
+                            <li><p>Sed hendrerit tincidunt orci. Cura vitae urna in justo eleifendeset tincidunt non quis risus. Accomo vestibulum eget porttitor nec enit aliquet ac enim <a href="#">bit.ly/VzaGId</a></p><a href="#">Five days ago</a></li>
+                        </ul>
+                    </div>
+                </div>
+            	<div class="columns four">
+                	<h5>Contact</h5>
+                    <div class="widget_block">
+                        <ul class="list_contacts">
+                            <li class="contacts_address">9090 Lorem Ipsum Dolor. <br />
+                            Sit Amet, QW 90 ER 90.</li>
+                            <li class="contacts_phone">+1 800 328 4047. +1 666 777 1313</li>
+                            <li class="contacts_email"><a href="#">email@companyname.com</a></li>
+                            <li class="contacts_skype">companyname</li>
+                        </ul>
+                    </div>
+                    <p class="white">Venenatis aliquam mi, ac sollicitudin justo consequat lobortis. </p>
+                    <p>Donec enim orci, fermentum vitae malesuada non, eleifend eu turpis. Sed eu est lectus, sed dapibus lectus. Nunc lectus massa, faucibus eget. </p>
+                </div>
+                <hr />
+                
+                <div class="columns sixteen">
+                	Quisque venenatis aliquam mi, ac sollicitudin justo consequat lobortis. Donec enim orci, fermentum vitae malesuada non, eleifend eu turpis. Sed eu est lectus, sed dapibus lectus. Nunc lectus massa, faucibus eget porttitor nec, aliquet ac enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                </div>
+            </div>
+        </div>
+</footer>
+
+</body>
+</html>

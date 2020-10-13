@@ -1,0 +1,313 @@
+/*
+    AnythingSlider v1.7+ Default (base) theme
+    By Chris Coyier: http://css-tricks.com
+    with major improvements by Doug Neiner: http://pixelgraphics.us/
+    based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+
+/*****************************
+  SET DEFAULT DIMENSIONS HERE
+ *****************************/
+/* change the ID to match your slider */
+
+/* Opera width restriction */
+.anythingBase { max-width: 32766px; }
+
+/*****************
+  SET COLORS HERE
+ *****************/
+/**** Default state (no keyboard focus) ****/
+/* slider window - top & bottom borders, default state */
+div.anythingSlider .anythingWindow {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+ul.anythingBase {
+    background: none repeat scroll 0 0 transparent;
+    left: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+
+
+ul.anythingBase li.panel {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    list-style-type: none !important;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Navigation buttons, default state */
+div.anythingSlider .anythingControls ul a.cur, div.anythingSlider .anythingControls ul a {
+    background-position: center top;
+}
+/* start-stop button, stopped, default state */
+div.anythingSlider .start-stop {
+    background-color: #040;
+    color: #fff;
+}
+/* start-stop button, playing, default state */
+div.anythingSlider .start-stop.playing {
+    background-color: #800;
+}
+/* start-stop button, default hovered text color (when visible) */
+div.anythingSlider .start-stop:hover, div.anythingSlider .start-stop.hover {
+    color: #ddd;
+}
+
+/**** Active State (slider has keyboard focus) ****/
+/* slider window - top & bottom borders, active state */
+div.anythingSlider.activeSlider .anythingWindow {
+
+}
+/* Navigation buttons, active state */
+div.anythingSlider.activeSlider .anythingControls ul a.cur, div.anythingSlider.activeSlider .anythingControls ul a {
+
+}
+ div.anythingSlider.activeSlider .anythingControls ul a span{visibility:hidden;}
+/* start-stop button, stopped, active state */
+div.anythingSlider .start-stop {
+    background-color: #080;
+    color: #fff;
+}
+/* start-stop button, playing, active state */
+div.anythingSlider .start-stop.playing {
+    background-color: #d00;
+}
+/* start-stop button, active slider hovered text color (when visible) */
+div.anythingSlider .start-stop:hover, div.anythingSlider .start-stop.hover {
+    color: #fff;
+}
+
+/***********************
+  COMMON SLIDER STYLING
+ ***********************/
+/* Overall Wrapper: 45px right & left padding for the arrows, 28px @ bottom for navigation */
+div.anythingSlider {
+    display: block;
+    margin: 0 auto;
+    overflow: visible !important; /* needed for Opera and Safari */
+    position: relative;
+}
+/* anythingSlider viewport window */
+div.anythingSlider .anythingWindow {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* anythingSlider base (original element) */
+.anythingBase {
+    background: transparent;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+/* all panels inside the slider */
+.anythingBase .panel {
+    background: transparent;
+    display: block;
+    overflow: hidden;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Arrows */
+div.anythingSlider .arrow {
+    top: 70%;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+}
+div.anythingSlider .arrow a {
+    display: block;
+    height: 47px;
+    margin: -70px 0 0 0; /* half height of image */
+    width: 47px;
+    text-align: center;
+    outline: 0;
+    background: url(../images/default.png) no-repeat left center;
+}
+/* hide text, target the span so IE7 doesn't text-indent the link */
+div.anythingSlider .arrow a span { display: block; text-indent: -9999px; }
+/* back arrow */
+div.anythingSlider .back { left: 0; padding-left: 15%; }
+.boxed div.anythingSlider .back { left: 0; padding-left: 4%; }
+div.anythingSlider .back.disabled { display: none; } /* disabled arrows, hide or reduce opacity: opacity: .5; filter: alpha(opacity=50); */
+/* forward arrow */
+div.anythingSlider .forward { right: 0; padding-right: 15%; }
+.boxed div.anythingSlider .forward { right: 0; padding-right: 4%; }
+div.anythingSlider .forward a { background-position: right center; }
+div.anythingSlider .forward.disabled { display: none; } /* disabled arrows, hide or reduce opacity: opacity: .5; filter: alpha(opacity=50); */
+
+/* Navigation Links */
+div.anythingSlider .anythingControls { outline: 0; display: none; }
+div.anythingSlider .anythingControls ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    top: -285px;
+    width: 100%;}
+div.anythingSlider .anythingControls ul li { display: inline; }
+div.anythingSlider .anythingControls ul a {
+   background-image: url("img/slider-pointer.png");
+    background-position: center bottom;
+    display: inline-block;
+    height: 8px;
+    margin: 0 25px 0 0;
+    outline: 0 none;
+    text-align: center;
+    text-decoration: none;
+    width: 8px;
+}
+div.anythingSlider .anythingControls ul a:hover {
+    background-position:top;
+}
+/* Navigation size window */
+div.anythingSlider .anythingControls .anythingNavWindow { overflow: hidden; float: left; }
+
+/* slider autoplay right-to-left, reverse order of nav links to look better */
+div.anythingSlider.rtl .anythingControls ul a { float: right; } /* reverse order of nav links */
+div.anythingSlider.rtl .anythingControls ul { float: left; }    /* move nav link group to left */
+div.anythingSlider.rtl .anythingWindow {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+/* div.anythingSlider.rtl .start-stop { float: right; } */ /* move start/stop button - in case you want to switch sides */
+
+/* Autoplay Start/Stop button */
+div.anythingSlider .start-stop {
+    background-image: url(../images/default.png);
+    background-position: center -288px;
+    background-repeat: repeat-x;
+    padding: 2px 5px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    z-index: 100;
+    outline: 0;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+}
+/* hide cell shading on hover - makes the button appear to come forward */
+div.anythingSlider .start-stop:hover, div.anythingSlider .start-stop.hover { background-image: none; }
+
+/* probably not necessary, but added just in case */
+div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .anythingControls ul a, div.anythingSlider .arrow a, div.anythingSlider .start-stop {
+    transition-duration: 0;
+    -o-transition-duration: 0;
+    -moz-transition-duration: 0;
+    -webkit-transition-duration: 0;
+}
+
+
+
+
+.slide-holder{width:100%!important;margin:0 auto;position:relative;}
+
+/*.panel img{
+    float: left;
+    height: 485px;
+    width:100%;} */
+
+.slide-content-holder{
+    z-index: 999; 
+    position:relative; 
+}
+
+
+/* #header {margin-bottom:0 !important;} - mi annula il margine dell'header '*/
+
+
+.slider.slider_cycle {
+    margin: -23px auto 0;
+    position: relative;
+}
+.slider_cycle { position:relative; /*margin-top:-80px;*/ margin-bottom:60px; padding:0; }
+.slider_cycle{width: 100%;}
+
+
+
+
+.slider_cycle .slide-title h2, .slider_cycle .slide-title h2 span {
+    font-size: 48px;
+    line-height: 60px;
+    color: #282627;
+}
+
+.slider_cycle .slide-title h2 span { color: #ea7206; }
+
+.slider_cycle .slide-content {
+    color: #282627;
+    font-size: 14px;
+}
+.slider_cycle .slide-content p { color: inherit !important; font-size: 14px; }
+
+
+#yit-widget-area {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1001;
+    top: -90px;
+    overflow: hidden
+}
+
+/*@media only screen and (max-width: 1000px) {
+    #yit-widget-area { width:100%; left:0; margin-left:0; }
+} */
+
+.yit-widget-content { background: #fff; font-size: 12px; padding: 0 15px; position:relative; }
+.boxed .yit-widget-content { padding: 0; }
+.yit-widget-content h3, .yit-widget-content h3 a, .yit-widget-content h2, .yit-widget-content h2 a { margin: 0px; font-size: 28px; font-family: 'Rokkitt', serif; }
+.yit-widget-content h3, .yit-widget-content h3 a { font-size: 20px; }
+.yit-widget-content h2 { font-family: 'Bebas', serif; }
+
+/* shadow */ 
+.yit-widget-content .shadow-left, .yit-widget-content .shadow-right { position:absolute; bottom:0; width:49px; height:34px; background: transparent url('../images/widget-area.png') no-repeat; }
+.yit-widget-content .shadow-left  { background-position: 0 0; left:-49px; }
+.yit-widget-content .shadow-right { background-position: -49px 0; right:-49px; }
+
+.yit-widget-content .widget { border-right: 1px solid #CFCFCF; margin-top: 15px; min-height: 98px; margin-bottom:0; margin-right:-10px; padding-right:10px; }
+.yit-widget-content .widget-last { border:none; display:block; }
+.yit-widget-content .widget.only-one {width:100%;margin-right:0;border-right:none;padding-right:0;}
+
+.yit-widget-content .yit-text-image-icon-left  { padding-right: 10px; }
+.yit-widget-content .yit-text-image-icon-right { padding-left: 10px; }
+
+.yit-widget-content .yit_text_quote { padding-top: 10px; text-align: center; }
+.yit-widget-content .yit_text_quote blockquote { font-weight: normal; font-size:28px; color:#030303; line-height:28px; margin-bottom: 8px; border:0; }
+.yit-widget-content .yit_text_quote cite { margin-top: 15px; color: #c07203; font-size:20px; }
+
+.yit-widget-content .yit-lastpost h3 { color: #c07203 }
+
+.yit-widget-content .yit_text_quote.one-third { width: 65.66%; }  
+.yit-widget-content .yit_text_quote.one-fourth { width: 43%; }
+
+/* === ICON TEXT */
+.yit-widget-content .widget-icon-text img.imgicon, .yit-widget-content .widget-last-post img.imgicon, .yit-widget-content .widget-icon-text i, .yit-widget-content .widget-last-post i { float:left; margin-right:10px; font-size:24px; }
+.yit-widget-content .widget-icon-text h3, .yit-widget-content .widget-last-post h3 { line-height:32px; }
+.yit-widget-content .widget-last-post span.more { color:#AB5705; }                  
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)  { 
+    .responsive .slider_cycle { margin-left:-20px; margin-right:-20px; width: auto !important; }
+}
+
+.slider_cycle .slide-title h2 a { color: inherit; }

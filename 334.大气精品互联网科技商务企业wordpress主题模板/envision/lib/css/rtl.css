@@ -1,0 +1,59 @@
+/*---------------------------*/
+/*  RTL Codes
+/*---------------------------*/
+
+.pull-left {
+	float: right;
+	direction: rtl;
+}
+
+#header-navigation,
+.pull-right {
+	float: left;
+	direction: rtl;
+}
+
+.abs-left {
+	left: auto;
+	right: 0;
+}
+
+.abs-right {
+	right: auto;
+	left: 0;
+}
+
+.text-left { text-align: right; }
+.text-right { text-align: left; }
+
+#header-navigation > li {
+	float:right;
+}
+
+#header-navigation li > ul.sub-menu li a .ui--caret {
+	right: auto;
+	left: 12px;
+}
+
+#header-navigation > li.top-level-item > a .ui--caret {
+	margin-left: -5px;
+	margin-right: 8px;
+}
+
+#breadcrumb,
+#titlebar-breadcrumb {
+	direction: rtl;
+	right: auto !important;
+	left: 0 !important;
+}
+
+#titlebar-text {
+	padding-left: 2%;
+	padding-right: 0;
+}
+
+#top-bar .ui--custom-menu li > a [class^="fontawesome-angle-"],
+#top-bar .ui--custom-menu li > a [class*=" fontawesome-angle-"] {
+	margin-left: -6px;
+	margin-right: 8px;
+}

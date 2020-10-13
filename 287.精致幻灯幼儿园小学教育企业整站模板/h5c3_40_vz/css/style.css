@@ -1,0 +1,139 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline }
+/* Left & Right alignment */
+.left {float:left}
+.right {float:right}
+.wrapper {width:100%;overflow:hidden}
+/* Global properties ======================================================== */
+body {background:url(../images/bg.jpg) top center repeat;border:0;font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;color:#575652;line-height:22px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3 {border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure ============================================================= */
+.main {margin:0 auto;width:940px}
+.body1 {background:url(../images/bg_top.gif) top repeat-x}
+/* ============================= main layout ====================== */
+a {color:#575652;text-decoration:underline;outline:none}
+a:hover {text-decoration:none}
+h1 {float:left;padding:44px 0 0 35px}
+h2 {font-size:35px;color:#575652;font-weight:400;line-height:1.2em;letter-spacing:-1px;padding-bottom:12px}
+h2 span {font-weight:300}
+h2 strong, .box1 h2 strong {font-weight:700;display:inline-block;width:36px;color:#fff;text-align:center;background:url(../images/bg_title1.gif) 0 4px repeat-x;margin-right:3px}
+h2.color2 strong {background-image:url(../images/bg_title2.gif)}
+h2.color3 strong {background-image:url(../images/bg_title3.gif)}
+h3 {font-size:35px;color:#dad6cc;font-weight:400;line-height:1.2em;padding:25px 0 0 35px;float:left;letter-spacing:-1px}
+h4 {color:#dad6cc;font-weight:300;font-size:35px;line-height:1.2em;padding:0 0 7px 0;letter-spacing:-1px}
+h4 span {color:#ffc11e;font-weight:400}
+h4.color2 span {color:#9ecf39}
+h4.color3 span {color:#6cd6af}
+#page4 h4, #page5 h4 {padding:25px 0 16px 0;margin-left:-3px}
+p {padding-bottom:22px}
+strong {color:#dcd9cf}
+/* ============================= header ====================== */
+header {}
+#logo {display:block;background:url(../images/logo.png) 0 0 no-repeat;width:146px;height:83px;text-indent:-9999px}
+#menu {float:right;padding:28px 12px 20px 0}
+#menu li {float:left;padding-left:1px}
+#menu li a {display:block;padding:0 20px;height:42px;font-size:18px;color:#dad6cc;line-height:42px;text-transform:uppercase;text-decoration:none;font-weight:400}
+#menu li a:hover, #menu #menu_active a {background:url(../images/menu_active.gif) top repeat-x;color:#fff}
+#top_nav {float:right;padding:40px 37px 0 575px}
+#top_nav li {float:left;padding:4px 26px 5px 0;margin-right:25px;background:url(../images/top_line.png) right 0 no-repeat}
+#top_nav .end {padding-right:0;margin-right:0;background:none}
+.slider {position:relative;z-index:1;width:100%;height:465px;overflow:hidden;margin-bottom:10px}
+.slider .items {display:none}
+.pic {float:right;position:relative}
+.mask {left:auto !important;right:0;width:720px !important}
+.pagination {position:absolute;left:0;top:0;z-index:3}
+.pagination li {width:250px;height:155px}
+.pagination a {display:block;position:relative;cursor:pointer;padding:29px 0 0 33px;font-size:50px;line-height:1.2em;font-weight:400;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:-1px;height:126px}
+.pagination a span {display:block;font-weight:300;font-size:30px;line-height:1.2em;margin-top:-10px;letter-spacing:0}
+#banner1 {background:url(../images/banner1.png) 0 0 no-repeat}
+#banner1 a {background:url(../images/banner1_active.png) -250px 0 no-repeat}
+#banner2 {background:url(../images/banner2.png) 0 0 no-repeat}
+#banner2 a {background:url(../images/banner2_active.png) -250px 0 no-repeat}
+#banner3 {background:url(../images/banner3.png) 0 0 no-repeat}
+#banner3 a {background:url(../images/banner3_active.png) -250px 0 no-repeat}
+.pagination #banner1:hover, .pagination #banner1.current, .pagination #banner2:hover, .pagination #banner2.current, .pagination #banner3:hover, .pagination #banner3.current {}
+.banner {position:absolute;z-index:2;right:0;bottom:0;margin:0 10px 10px 0}
+.banner span {float:right;padding:0 32px;margin-bottom:5px;background:#000;font-size:40px;line-height:56px;height:56px;font-weight:400;color:#dad6cc;line-height:1.2em}
+.banner em {font-style:normal;text-transform:uppercase}
+.banner strong {float:right;padding:0 32px;background:#000;font-size:40px;line-height:56px;font-weight:300;color:#dad6cc}
+/* ============================= content ====================== */
+#content {}
+.pad_left1 {padding-left:26px}
+.pad_left2 {padding-left:36px}
+.pad_bot1 {padding-bottom:14px}
+.pad_bot2 {padding-bottom:4px}
+.marg_right1 {margin-right:37px}
+.box1 {background:url(../images/bg_box1.jpg) top center no-repeat #dad6cc;border-top:5px solid #cdc8bc;padding:15px 30px 29px}
+.box1 strong {color:#3f3f3f}
+.box1 figure {box-shadow:0 0 3px #a4a19a;-moz-box-shadow:0 0 3px #a4a19a;-webkit-box-shadow:0 0 3px #a4a19a;position:relative}
+.box2 {background:#0e0c0a;padding:25px 30px 32px}
+.box2 .line1, .box2 .line2 {background-image:url(../images/line_vert2.gif)}
+#page4 .box2 {margin-top:7px;padding-top:30px;padding-bottom:28px}
+.line1 {background:url(../images/line_vert1.gif) 289px 0 repeat-y}
+.line2 {background:url(../images/line_vert1.gif) 591px 0 repeat-y}
+#page3 .line1 {background-position:282px 0}
+.relative {position:relative}
+.button1 {float:right;color:#dddad1;text-decoration:none;background:#000;line-height:18px;padding:0 9px;margin-top:2px}
+* + html .button1 {margin-top:-20px}
+.button1 {color:#dddad1}
+.button1:hover {background:#ffb919;color:#fff}
+.button1.color2 {color:#dddad1}
+.button1.color2:hover {background:#94c932;color:#fff}
+.button1.color3 {color:#dddad1}
+.button1.color3:hover {background:#63d1a7;color:#fff}
+.button2 {display:inline-block;font-size:15px;color:#fff;text-transform:uppercase;text-decoration:none;padding:0 21px;height:36px;line-height:34px;font-weight:400;background:url(../images/button1_bg.gif) top repeat-x;letter-spacing:-1px}
+.button2.color2 {background-image:url(../images/button2_bg.gif)}
+.button2.color3 {background-image:url(../images/button3_bg.gif)}
+.button2:hover {background:#000}
+.color0 {color:#616161;text-decoration:none}
+.link1 {text-decoration:none}
+.link1:hover {text-decoration:underline}
+.quot {margin-top:17px;float:left;margin-left:94px;padding:12px 0 17px 41px;font-style:italic;background:url(../images/quot1.png) 0 0 no-repeat;width:570px}
+.quot img {display:inline-block;margin:4px 0 0 9px}
+#page2 .quot {padding-bottom:7px}
+.list1 {margin-top:-2px;margin-bottom:-2px}
+.list1 li {line-height:26px}
+.list1 li a {color:#dcd8cf;padding-left:22px;background:url(../images/marker_1.gif) 0 3px no-repeat}
+.list1 .color2 a {background-position:0 -23px}
+.list1 .color3 a {background-position:0 -49px}
+/*--- tabs begin ---*/
+.tabs {}
+.tabs ul.nav {padding:27px 0 27px 2px;overflow:hidden}
+.tabs ul.nav li {float:left;padding-left:31px}
+.tabs ul.nav li a {font-size:35px;color:#ddd9cf;font-weight:400;text-decoration:none;line-height:1.2em;letter-spacing:-1px}
+.tabs ul.nav .selected a, .tabs ul.nav a:hover {color:#ffc11e}
+.tabs .tab-content {}
+/*--- tabs end ---*/
+.address {float:left;width:80px}
+.img1 {position:absolute;right:0;top:32px}
+/* ============================= footer ====================== */
+footer {background:#000;padding:21px 36px 44px}
+#footer_logo {float:left;font-size:46px;font-weight:300;text-transform:uppercase;color:#dedbd2;line-height:1.2em;text-decoration:none;letter-spacing:-3px;margin-left:-4px}
+#footer_logo span {color:#ffc11e}
+#icons {float:right;padding:20px 0 0 0}
+#icons li {float:left;padding-left:4px}
+/* Tooltips */
+.aToolTip {background:#ffc11e;color:#fff;font-weight:bold;margin:0;padding:2px 10px 3px;font-size:11px;position:absolute;line-height:17px}
+.aToolTip .aToolTipContent {position:relative;margin:0;padding:0}
+.tel {float:right;margin-top:-1px;background:url(../images/bot_icon.gif) 0 15px no-repeat;padding:0 0 0 38px;font-size:35px;line-height:1.2em;color:#dedad1;letter-spacing:-2px;font-weight:300}
+.tel span {color:#ffc11e}
+footer nav {float:left}
+#footer_menu {float:left;padding:15px 0 18px 0;margin-left:-1px}
+#footer_menu li {float:left;padding-right:29px;background:url(../images/menu_line.gif) right 0 no-repeat;margin-right:29px}
+#footer_menu li a {display:block;color:#fff;text-decoration:none;line-height:20px}
+#footer_menu li a:hover, #footer_menu .active a {color:#575652}
+#footer_menu .end {background:none;padding-right:0;padding-left:0}
+#footer_text {padding-top:18px;border-top:1px solid #0d0d0d;text-align:center}
+#footer_text a {color:#fff;text-decoration:none}
+#footer_text a:hover {text-decoration:underline}
+/* ============================= forms ============================= */
+#ContactForm {width:585px;overflow:hidden;padding-bottom:36px}
+#ContactForm .wrapper {height:26px}
+#ContactForm span {float:left;width:105px;line-height:24px}
+#ContactForm .textarea_box {width:100%;overflow:hidden;min-height:103px;padding-bottom:5px}
+#ContactForm {}
+#ContactForm a {margin-left:10px;width:72px;text-align:center;float:right}
+#ContactForm .input {width:470px;background:#000;padding:3px 5px;color:#575652;font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;height:14px}
+#ContactForm textarea {overflow:auto;width:470px;background:#000;padding:3px 5px;color:#575652;font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;height:91px}

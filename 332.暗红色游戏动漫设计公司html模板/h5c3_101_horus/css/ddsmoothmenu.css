@@ -1,0 +1,189 @@
+.ddsmoothmenu{
+	font: bold 12px Arimo;
+	width: 100%;
+	
+}
+
+.ddsmoothmenu ul{
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	
+}
+
+/*Top level list items*/
+.ddsmoothmenu ul li{
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a{
+	display: block;
+	color: white;
+	padding: 17px 20px 16px;
+	color: #2d2b2b;
+	text-decoration: none;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+* html .ddsmoothmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited{
+	color: white;
+}
+
+.ddsmoothmenu ul li a.selected { /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+	color: white;
+	background: #0085ff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #0085ff 0%, #00adff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#0085ff), color-stop(100%,#00adff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #0085ff 0%,#00adff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #0085ff 0%,#00adff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #0085ff 0%,#00adff 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #0085ff 0%,#00adff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0085ff', endColorstr='#00adff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ }
+
+.ddsmoothmenu ul li a:hover{
+	color: white;
+	background: #0085ff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #0085ff 0%, #00adff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#0085ff), color-stop(100%,#00adff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #0085ff 0%,#00adff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #0085ff 0%,#00adff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #0085ff 0%,#00adff 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #0085ff 0%,#00adff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0085ff', endColorstr='#00adff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+	
+/* sub menus */
+.ddsmoothmenu ul li ul{
+	position: absolute;
+	left: -3000px;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	background:#fff;
+	padding:10px 20px;
+	border-radius:2px;
+}
+
+.ddsmoothmenu ul li ul:after {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 30px;
+	border-style: solid;
+	border-width: 0 6px 10px;
+	border-color: #FFFFFF transparent;
+	display: block;
+	width: 0;
+	z-index: 999;
+}
+
+/*Sub level menu list items (alters style from Top level List Items)*/
+.ddsmoothmenu ul li ul li{
+	display: list-item;
+	float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul{
+	top: 0;
+}
+
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a{
+	font: normal 12px Arimo;
+	width: 115px; /*width of sub menus*/
+	padding: 10px 0;
+	margin: 0;
+	border-top-width: 0;
+	border-bottom: 1px solid #e6e6e6;
+	color:#353535 !important;
+	text-transform:none;
+	-webkit-transition:all 0.3s ease-in-out;  
+	-moz-transition:all 0.3s ease-in-out;  
+	-o-transition:all 0.3s ease-in-out;  
+	transition:all 0.3s ease-in-out; 
+}
+
+.ddsmoothmenu ul li ul li:last-child a {
+	border-bottom: 1px solid #fff;
+}
+
+.ddsmoothmenu ul li ul li a:hover {
+	background:#fff;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 fallback on horizontal gradient */
+	color:#0099ff !important;
+	-webkit-transition:all 0.3s ease-in-out;  
+	-moz-transition:all 0.3s ease-in-out;  
+	-o-transition:all 0.3s ease-in-out;  
+	transition:all 0.3s ease-in-out; 
+}
+
+
+.ddsmoothmenu ul li ul li a:hover:before {
+	content: "\00BB";
+	padding-right: 5px;
+	background:#fff;
+	color:#0099ff !important;
+	font-size:12px;
+	font-weight:normal;
+	-webkit-transition:all 0.3s ease-in-out;  
+	-moz-transition:all 0.3s ease-in-out;  
+	-o-transition:all 0.3s ease-in-out;  
+	transition:all 0.3s ease-in-out; 
+}
+
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+	position: absolute;
+	top: 23px;
+	right: 18px;
+	width:12px;
+	height:5px;
+
+}
+
+.rightarrowclass{
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	width:12px;
+	height:5px;
+	display:none;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.ddshadow{ 
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+}
+
+.toplevelshadow{
+}
+
+.ddcss3support .ddshadow.toplevelshadow {
+	margin: 0; /* in CSS3 capable browsers overrides offset from NON CSS3 capable browsers, allowing the box-shadow values in the next selector to govern that */
+	/* opacity: 1; */ /* optionally uncomment this to remove partial opacity for browsers supporting a box-shadow property which has its own slight gradient opacity */
+}
+
+.ddcss3support .ddshadow {
+	background-color: transparent;
+}

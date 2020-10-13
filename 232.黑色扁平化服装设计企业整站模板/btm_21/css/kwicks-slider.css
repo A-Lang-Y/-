@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* FlexSlider Necessary Styles
+*********************************/
+
+.flex-container a,
+.flexslider a,
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+.flex-direction-nav {z-index:8;position:relative}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 40px 0 55px; padding: 0;background:#000;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+/* Clearfix for the .slides element */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+html[xmlns] .slides {
+	display: block;
+}
+* html .slides {
+	height: 1%;
+}
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+	display: block;
+}
+.flexslider, .flex-container {
+	position: relative;	
+
+}
+
+.flexslider { zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+
+.flexslider .slides > li {	
+	width:20%;
+	overflow:hidden;
+	position:relative;
+	
+}
+.flexslider .slides > li .flex-caption {
+	font-family: 'Dorsa', sans-serif;
+	color:#fff;
+	font-size:100px;
+	line-height:104px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-50px 0 0 -10px;
+	opacity:1;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.flexslider .slides > li.active .flex-caption {
+	opacity:0
+}
+.flexslider .slides {
+	margin:0;
+	list-style: none outside none;
+}
+.flexslider .slides > li{
+	opacity:0.6
+}
+.flexslider .slides > li.active {
+	opacity:1
+}
+.flexslider .slides img {
+	display: block;
+	max-width: 770px;
+}
+.flexslider .hover-img {
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+}
+/* Caption style */
+	.flex-caption {
+}
+#responsiveFlag {
+	display:block;
+}
+
+
+@media handheld, only screen and (min-width:1300px) {
+	.flexslider .slides > li {
+		display:block;	
+	}	
+	#responsiveFlag{display:block;}
+}
+
+ @media only screen and (max-width: 1299px) {
+.flexslider .slides > li {
+	opacity:1
+}	 
+ .flexslider .slides img {
+max-width: 100%;width:100%
+}
+ .flex-control-nav {
+display:none;
+}
+ .flex-direction-nav {
+position: absolute;
+left: 0;
+top: 50%;
+width:100%;
+overflow:hidden;
+margin:-27px 0 0 0;
+list-style: none outside none;
+}
+ .flex-direction-nav li {
+float:left;
+width:50%;
+height:100%;
+text-align:right;font-size:0;
+line-height:0;overflow:hidden
+}
+ .flex-direction-nav li:first-child {
+text-align:left
+}
+ .flex-direction-nav a {
+display:inline-block;
+font-size:0;
+line-height:0;
+text-indent:-1000px;
+overflow:hidden;
+width:55px;
+height:55px;
+vertical-align:middle;
+}
+ .flex-direction-nav a:hover {
+text-decoration:none;
+}
+ .flex-direction-nav a.flex-next {
+text-align:right;
+background:url(../img/next.png) no-repeat 50% 50% #181818
+}
+ .flex-direction-nav a.flex-prev {
+text-align:left;
+background:url(../img/prev.png) no-repeat 50% 50% #181818
+}
+.flex-direction-nav a:hover{background-color:#e85356}
+
+
+ #responsiveFlag {
+font-size:0;
+line-height:0;
+display:inline;
+}
+}
+
+@media only screen and (max-width: 420px) {
+ .flex-direction-nav {
+margin-top:-20px
+}
+ .flex-direction-nav a {
+width:40px;
+height:40px
+}
+}
+ @media (max-width: 320px) {
+ .flex-direction-nav {
+margin-top:-15px
+}
+ .flex-direction-nav a {
+width:30px;
+height:30px
+}
+}

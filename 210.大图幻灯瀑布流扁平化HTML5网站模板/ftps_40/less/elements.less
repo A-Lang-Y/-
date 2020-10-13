@@ -1,0 +1,423 @@
+@import "palette.less";
+
+.block-divider{
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+/* DROPCAP ------------------------------------------------------------*/
+
+.dropcap:first-letter{ 
+	font-size: 3.571em; 
+	line-height: 0.76em; 
+	padding: 0.2em 0.2em 0 0; 
+	float: left;
+	display: block;
+	color: @headingColor;
+}
+
+.dropcap.dark:first-letter{ 
+	display:block;
+	float:left;
+	font-size:30px;
+	line-height:40px;
+	margin:0 8px 0 0;
+	padding: 10px 10px;
+	background: #606060;
+	color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+}
+
+/* LISTS ------------------------------------------------------------*/
+
+
+.lists-check ul,
+.lists-arrow ul,
+.lists-plus ul,
+.lists-star ul,
+.lists-heart ul{
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+
+
+.lists-check ul li{ 
+	list-style-image: url(../img/bullets/check.png);
+	line-height: 1.5em;
+}
+	
+.lists-arrow ul{ 
+	list-style-image: url(../img/bullets/arrow.png); 
+	line-height: 1.5em;
+}
+
+.lists-plus ul{ 
+	list-style-image: url(../img/bullets/plus.png); 
+	line-height: 1.5em;
+}
+
+.lists-star ul{ 
+	list-style-image: url(../img/bullets/star.png); 
+	line-height: 1.5em;
+}
+
+.lists-heart ul{ 
+	list-style-image: url(../img/bullets/heart.png); 
+	line-height: 1.5em;
+}
+
+/* PULLQUOTES ------------------------------------------------------------*/
+
+.pullquote-right,
+.pullquote-left {
+	border-left: #555555 2px solid;
+	float:right;
+	font-size:16px;
+	line-height:1.5em;
+	margin: 20px 0px 20px 20px;
+	width:33%;
+	font-style: italic;
+}
+
+.pullquote-left {
+	float:left;
+	margin: 20px 20px 20px 0px;
+	padding:0 0 0 20px;
+}
+
+.pullquote-right{
+	border-left: none;
+	border-right: #555555 2px solid;
+	padding:0 20px 0 0px;
+}
+
+/* HIGHLIGHT ------------------------------------------------------------*/
+
+.highlight{ background: #fbe471 }
+
+
+/* Link buttons ------------------------------------------------*/
+
+.theme-link-button{
+	display: inline-block;
+	padding: 10px;
+	background: @accentColor;
+	color: #f1d76e;
+} 
+
+.link-button {
+	display: inline-block;
+	background-color: @accentColor;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fe8300), to(#c46500));
+	/* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #fe8300, #c46500);
+	background-image: -moz-linear-gradient(top, #fe8300, #c46500);
+	background-image: -ms-linear-gradient(top, #fe8300, #c46500);
+	background-image: -o-linear-gradient(top, #fe8300, #c46500);
+	background-image: linear-gradient(top, #fe8300, #c46500);
+	border: 1px solid #c46500;
+	border-bottom: 1px solid #fe8300;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 0 0 #fe8300;
+	-moz-box-shadow: inset 0 1px 0 0 #fe8300;
+	-ms-box-shadow: inset 0 1px 0 0 #fe8300;
+	-o-box-shadow: inset 0 1px 0 0 #fe8300;
+	box-shadow: inset 0 1px 0 0 #fe8300;
+	color: #703a00;
+	font-weight: bold;
+	line-height: 1;
+	padding: 8px 10px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.link-button:hover {
+	color: #703a00;
+	background-color: #ff9627;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9627), to(#c46500));
+	/* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #ff9627, #c46500);
+	background-image: -moz-linear-gradient(top, #ff9627, #c46500);
+	background-image: -ms-linear-gradient(top, #ff9627, #c46500);
+	background-image: -o-linear-gradient(top, #ff9627, #c46500);
+	background-image: linear-gradient(top, #ff9627, #c46500);
+}
+
+.link-button.fullwidth{
+	display: block;
+	width: 97%;
+	margin: 0 auto;
+}
+
+.list-buttons{
+	display: block;	
+}
+
+.list-buttons li{
+	display: block;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+
+/* Link buttons red ------------------------------------------------*/
+
+.link-button.red{
+	color: #530909;
+	background-color: #e4504c;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e4504c), to(#a61b1b));
+	/* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #e4504c, #a61b1b);
+	background-image: -moz-linear-gradient(top, #e4504c, #a61b1b);
+	background-image: -ms-linear-gradient(top, #e4504c, #a61b1b);
+	background-image: -o-linear-gradient(top, #e4504c, #a61b1b);
+	background-image: linear-gradient(top, #e4504c, #a61b1b);
+	border: 1px solid #6e0606;
+	border-bottom: 1px solid #6e0606;
+	-webkit-box-shadow: inset 0 1px 0 0 #f95c59;
+	-moz-box-shadow: inset 0 1px 0 0 #f95c59;
+	-ms-box-shadow: inset 0 1px 0 0 #f95c59;
+	-o-box-shadow: inset 0 1px 0 0 #f95c59;
+	box-shadow: inset 0 1px 0 0 #f95c59;
+}
+
+.link-button.red:hover {
+	color: #530909;
+	background-color: #89cc54;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8380), to(#b40e0e));
+	/* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #ff8380, #b40e0e);
+	background-image: -moz-linear-gradient(top, #ff8380, #b40e0e);
+	background-image: -ms-linear-gradient(top, #ff8380, #b40e0e);
+	background-image: -o-linear-gradient(top, #ff8380, #b40e0e);
+	background-image: linear-gradient(top, #ff8380, #b40e0e);
+}
+
+/* Link buttons green ------------------------------------------------*/
+
+.link-button.green{
+	color: #223613;
+	background-color: #7fbf4d;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#7fbf4d), to(#426825));
+	/* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #7fbf4d, #426825);
+	background-image: -moz-linear-gradient(top, #7fbf4d, #426825);
+	background-image: -ms-linear-gradient(top, #7fbf4d, #426825);
+	background-image: -o-linear-gradient(top, #7fbf4d, #426825);
+	background-image: linear-gradient(top, #7fbf4d, #426825);
+	border: 1px solid #63a62f;
+	border-bottom: 1px solid #5b992b;
+	-webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+	-moz-box-shadow: inset 0 1px 0 0 #96ca6d;
+	-ms-box-shadow: inset 0 1px 0 0 #96ca6d;
+	-o-box-shadow: inset 0 1px 0 0 #96ca6d;
+	box-shadow: inset 0 1px 0 0 #96ca6d;
+}
+
+.link-button.green:hover {
+	color: #223613;
+	background-color: #89cc54;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#89cc54), to(#426825));
+	/* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #89cc54, #426825);
+	background-image: -moz-linear-gradient(top, #89cc54, #426825);
+	background-image: -ms-linear-gradient(top, #89cc54, #426825);
+	background-image: -o-linear-gradient(top, #89cc54, #426825);
+	background-image: linear-gradient(top, #89cc54, #426825);
+}
+
+/* Link buttons blue ------------------------------------------------*/
+
+.link-button.blue{
+	color: #2c4358;
+	background-color: #97b2c9;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#97b2c9), to(#4e7da5));
+	/* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #97b2c9, #4e7da5);
+	background-image: -moz-linear-gradient(top, #97b2c9, #4e7da5);
+	background-image: -ms-linear-gradient(top, #97b2c9, #4e7da5);
+	background-image: -o-linear-gradient(top, #97b2c9, #4e7da5);
+	background-image: linear-gradient(top, #97b2c9, #4e7da5);
+	border: 1px solid #b9d3e9;
+	border-bottom: 1px solid #2c4358;
+	-webkit-box-shadow: inset 0 1px 0 0 #b9d3e9;
+	-moz-box-shadow: inset 0 1px 0 0 #b9d3e9;
+	-ms-box-shadow: inset 0 1px 0 0 #b9d3e9;
+	-o-box-shadow: inset 0 1px 0 0 #b9d3e9;
+	box-shadow: inset 0 1px 0 0 #b9d3e9;
+}
+
+.link-button.blue:hover {
+	color: #2c4358;
+	background-color: #89cc54;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#89bde8), to(#3771a2));
+	/* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #89bde8, #3771a2);
+	background-image: -moz-linear-gradient(top, #89bde8, #3771a2);
+	background-image: -ms-linear-gradient(top, #89bde8, #3771a2);
+	background-image: -o-linear-gradient(top, #89bde8, #3771a2);
+	background-image: linear-gradient(top, #89bde8, #3771a2);
+}
+
+/* ACCORDION -------------------------------------------------*/
+
+.accordion-trigger{
+	text-decoration: none;
+	color: #444;
+	font-weight: bold;
+	padding: 5px 10px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	background: @fgColor;
+	
+	&.active{
+		border-bottom: 1px solid #ccc;	
+	}
+	
+	&:hover{
+		background: @fgColor;
+	}
+}
+
+
+
+.accordion-container{
+	margin-bottom: 0px;
+	padding: 5px 10px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+/* TOGGLE -------------------------------------------------*/
+
+.toggle-trigger{
+	text-decoration: none;
+	color: #444;
+	font-weight: bold;
+	padding: 5px 10px 5px 25px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	background: #f1f1f1 url(../img/toggle.png) no-repeat 5px 7px;
+	
+	&.active{
+		border-bottom: 1px solid #ccc;	
+		background:  @fgColor url(../img/toggle.png) no-repeat 5px -78px;
+	}
+	
+	&:hover{
+		background-color: @fgColor;
+	}
+}
+
+
+.toggle-container{
+	margin-bottom: 0px;
+	padding: 5px 10px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+/* TABS -------------------------------------------------*/
+
+/* root element for tabs  */
+
+.tabs { 
+	list-style:none; 
+	margin:0 !important;
+	padding: 0px;	
+	height: 33px;
+}
+
+body.home .tabs { 
+	padding: 0px 30px;
+
+}
+
+/* single tab */
+ul.tabs li { 
+	display: block;
+	float:left;	 
+	text-indent:0;
+	padding:0;
+	margin: 2px 5px 0px 0px !important;
+	list-style-image: none !important; 
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	display:block;
+	font-size:13px;
+	font-weight: bold;
+	height: 30px;  
+	line-height:30px;
+	text-align:center;	
+	text-decoration:none;
+	padding: 0px 0px 0px 10px;	
+	position:relative;
+	top:0px;
+}
+
+ul.tabs a span{ 
+	display:block;
+	height: 100%;
+	padding-right: 10px;
+}
+
+ul.tabs a{
+	text-decoration: none;
+	color: @fontColor;
+	background: @fgColor;
+}
+
+ul.tabs a:active {
+	outline:none;
+}
+
+/* when mouse enters the tab move the background image */
+
+
+ul.tabs li:hover a,
+ul.tabs a.current{ 
+	background: #fff;
+	color: #444;
+	border-bottom: 1px solid #fff;
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current,
+ul.tabs a.current:hover,
+ul.tabs li.current a {	
+	cursor:default !important; 
+	color:#444 !important;
+	display: block;
+	text-decoration: none;
+}
+
+
+/* initially all panes are hidden */ 
+.panes .pane {
+	display:none;	
+}
+
+.panes>div {
+   display: none;
+   min-height: 200px;
+   border: 1px solid #ccc;
+   padding: 15px;
+   background: #fff;
+}
+
+

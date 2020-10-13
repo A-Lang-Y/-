@@ -1,0 +1,117 @@
+
+.carousel_wrapper {
+	position: relative;
+	overflow: hidden;
+	padding: 0 30px;
+}
+
+
+
+
+.carousel1 li {
+	float: left;
+	overflow:  hidden;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+
+.car  {
+	padding-top: 65px;
+
+}
+
+.car>div {
+	border-bottom: 1px solid #d2d1d1;
+}
+
+.car h3 {
+	text-align: center;
+	border-top: 1px solid #d2d1d1;
+	padding-bottom: 6px;
+
+}
+.car h3 span {
+	display: inline-block;
+	background: url(../images/cont_bg.png) 0 0 repeat;
+	padding: 0 6px;
+	position: relative;
+	top: -13px;
+}
+
+
+.carousel1 li a {
+
+}
+
+.carousel1 li a img {
+	max-width: 100%;
+}
+
+.carousel1 li a:hover {
+}
+
+.carousel1 li  p {
+	margin-bottom: 12px;
+}
+
+.carousel1 {
+	cursor: default !important;	
+}
+
+
+a.next1 {
+	background: url(../images/prevnext.png) right 0 no-repeat;
+	display: block;
+	position: absolute;
+	width:25px;
+	height: 49px; 
+	right: 0px;
+	top: 5px;
+	z-index: 999;
+	transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+
+}
+
+
+a.prev1 {
+	background: url(../images/prevnext.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+	width: 25px;
+	left: 0px;
+	height: 49px;
+	top: 5px;
+	z-index: 999;
+	transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+}
+
+ 
+.prev1:hover {
+	background-position: 0 bottom;
+}
+.next1:hover {
+	background-position: right bottom;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+ 	.carousel1 li {
+		margin-left: 0;
+	}	
+	
+	.carousel-div {
+		margin: 0 !important;	
+	}
+}
+
+ @media only screen and (max-width: 479px) { 
+ 	.carousel1 li {
+		margin-left: 0;	
+	} }

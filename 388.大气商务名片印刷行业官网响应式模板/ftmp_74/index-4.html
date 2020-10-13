@@ -1,0 +1,492 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	
+	<!-- mobile meta tag -->		
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Sympathique</title> 
+	
+	<!-- main style -->
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	
+	<!-- color scheme -->
+	<link rel="stylesheet" type="text/css" href="color-schemes/red/red.css" media="screen" title="red" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/yellow/yellow.css" media="screen" title="yellow" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/orange/orange.css" media="screen" title="orange" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/blue/blue.css" media="screen" title="blue" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/green/green.css" media="screen" title="green" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/purple/purple.css" media="screen" title="purple" />
+	
+	<!--miscellaneous-->
+	<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/audioplayer.css" media="screen" />	
+	
+	<!-- revolution slider settings -->
+	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />		
+
+	<!-- setting mobile environment -->		
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen" />	
+	
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css">
+	<![endif]-->
+	
+	<!--[if lt IE 9]>
+	<script src="../../../html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="js/jquery.tweet.js"></script>
+	<script type="text/javascript" src="js/jflickrfeed.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+	<script type="text/javascript" src="js/jquery.contact.js"></script>
+	<script type="text/javascript" src="js/jquery.preloadify.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	
+	<!-- jQuery Revolution Slider -->
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	
+	<script type="text/javascript" src="js/custom.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="template-changer.css" media="screen"/>		
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>	
+	<script type="text/javascript" src="js/styleswitch.js"></script>	
+	
+	<!-- Google Web Fonts -->
+	<link href='../../../fonts.googleapis.com/css@family=Open+Sans_3A300,400,600,700' rel='stylesheet' type='text/css'>
+
+
+<script type="text/javascript">
+	$(function()
+		{
+			// Call stylesheet init so that all stylesheet changing functions 
+			// will work.
+			$.stylesheetInit();
+			
+			// This code loops through the stylesheets when you click the link with 
+			// an ID of "toggler" below.
+			$('#toggler').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetToggle();
+					return false;
+				}
+			);
+			
+			// When one of the styleswitch links is clicked then switch the stylesheet to
+			// the one matching the value of that links rel attribute.
+			$('.styleswitch').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetSwitch(this.getAttribute('rel'));
+					return false;
+				}
+			);
+		}
+	);
+</script>	
+	
+</head> 
+
+<body class="home"> 
+
+<!-- setting a fullscreen image as background:
+<img id="bg" src="images/apple.jpg" alt="apple-background" />
+-->
+
+
+	<div class="theme-changer-wrap">
+		<div class="theme-changer">
+			<div class="changer-inner">				
+				<span> COLOR SCHEME </span>
+					<ul id="colors">
+						<li><a href="index-4.html@style=yellow" rel="yellow" class="styleswitch color-yellow">yellow</a></li>
+						<li><a href="index-4.html@style=orange" rel="orange" class="styleswitch color-orange">orange</a></li>
+						<li><a href="index-4.html@style=blue" rel="blue" class="styleswitch color-blue">blue</a></li>
+						<li><a href="index-4.html@style=green" rel="green" class="styleswitch color-green">blue</a></li>
+						<li><a href="index-4.html@style=red" rel="red" class="styleswitch color-red">blue</a></li>
+						<li><a href="index-4.html@style=purple" rel="purple" class="styleswitch color-purple">blue</a></li>
+					
+					</ul>
+					<div style="clear:both; height:10px; width:100%"></div>				
+			</div>
+		</div>
+		<div class="open-close"></div>
+	</div> 	
+<div id="wrapper">
+	<header id="header">
+		<div class="centered-wrapper">
+			<div class="one-third">
+				<div class="logo"><a href="index.html"></a></div>
+			</div><!--end one-third-->
+			
+			<div class="two-third column-last">		
+				<nav id="navigation">
+					<ul id="mainnav">
+						<li><a href="index.html"><span>HOME</span></a>
+							<ul>
+								<li><a href="index.html">Home Version 1</a></li>
+								<li><a href="index-2.html">Home Version 2</a></li>
+								<li><a href="index-3.html">Home Version 3</a></li>
+								<li><a class="current" href="index-4.html">Home Version 4</a></li>
+								<li><a href="index-onepage.html">Home One Page</a></li>
+							</ul>							
+						</li>
+						<li><a href="#"><span>PAGES</span></a>
+							<ul>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+								<li><a href="pricing.html">Pricing Options</a></li>
+								<li><a href="testimonials.html">Testimonials</a></li>
+							</ul>
+						</li>
+						<li><a href="#"><span>FEATURES</span></a>
+							<ul>								
+								<li><a href="typography.html">Typography</a></li>
+								<li><a href="columns.html">Columns</a></li>
+								<li><a href="buttons-and-boxes.html">Buttons and Boxes</a></li>
+								<li><a href="tabs-and-toggles.html">Tabs and Toggles</a></li>
+								<li><a href="tables-and-lists.html">Tables and Lists</a></li>
+								<li><a href="#">3rd Level Nav</a>
+									<ul>
+										<li><a href="#">this is</a></li>
+										<li><a href="#">a third level</a></li>
+										<li><a href="#">nav menu</a></li>
+									</ul>							
+								</li>
+							</ul>				
+						</li>						
+						<li><a href="portfolio-four-columns.html"><span>PORTFOLIO</span></a>
+							<ul>
+								<li><a href="portfolio-grid.html">Grid Layout</a></li>
+								<li><a href="portfolio-four-columns.html">4 Columns</a></li>
+								<li><a href="portfolio-three-columns.html">3 Columns</a></li>
+								<li><a href="portfolio-two-columns.html">2 Columns</a></li>
+								<li><a href="portfolio-single.html">Portfolio Single</a></li>
+							</ul>		
+						</li>
+						<li><a href="blog-masonry-2-columns.html"><span>BLOG</span></a>
+							<ul>
+								<li><a href="blog-masonry-2-columns.html">Masonry Layout 1</a></li>
+								<li><a href="blog-masonry-3-columns.html">Masonry Layout 2</a></li>
+								<li><a href="blog.html">Regular Layout</a></li>
+								<li><a href="blog-single.html">Blog Post</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html"><span>CONTACT</span></a>
+							<ul>
+								<li><a href="contact.html">Contact Layout 1</a></li>
+								<li><a href="contact-fullwidth.html">Contact Layout 2</a></li>
+							</ul>						
+						</li>
+					</ul>
+				</nav><!--end navigation-->
+			</div><!--end two-third-->
+		<div class="clear"></div>			
+		</div><!--end centered-wrapper-->
+	</header>	
+
+	<div class="top-shadow"></div>
+	<div class="fullwidthbanner-container">
+		<div class="fullwidthbanner">
+			<ul>
+				<!-- THE FIRST SLIDE -->
+				<li data-transition="slidedown" data-slotamount="15" data-masterspeed="300">
+					<img src="images/slides/slide5.jpg" alt="" />
+									
+					<div class="caption box-slide1 lfl ltl"  
+						 data-x="0" 
+						 data-y="150" 
+						 data-speed="300" 
+						 data-start="1000" 
+						 data-easing="easeOutExpo"><h2>HEY THERE! WE ARE SYMPATHIQUE</h2><p>This fullwidth slider is a very flexible one, and works with text, images, videos, or all of them in the same slide. Cool!</p></div>
+				</li>
+				
+				<!-- THE SECOND SLIDE -->
+				<li data-transition="fade" data-slotamount="15" data-masterspeed="300">
+					<!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+					<img src="images/slides/slide3.jpg" alt="" />
+															
+					<!-- THE CAPTIONS IN THIS SLDIE -->
+					<div class="caption box-slide2 lft ltt"  
+						 data-x="770" 
+						 data-y="110" 
+						 data-speed="300" 
+						 data-start="500" 
+						 data-easing="easeOutExpo"><h2>JJ ROYAL PROJECT</h2><p>Describing projects it`s so easy. Define a caption, style it as you want and drop in it some content, not any type of content but only awesome content! You can also add HTML code, like buttons:</p><a class="button red" href="#">Find Out More</a></div>
+				</li>				
+				
+				<!-- THE THIRD SLIDE -->
+				<li data-transition="papercut" data-slotamount="15" data-masterspeed="300" data-link="portfolio-single.html">
+					<img src="images/slides/slide2.jpg" alt="" />
+				</li>
+
+				<!-- THE FIFTH SLIDE -->
+				<li data-transition="slideright" data-slotamount="15" data-masterspeed="300">
+					<img src="images/slides/slide1.jpg" alt="" />
+									
+					<div class="caption title_text lfl stl"  
+						 data-x="0" 
+						 data-y="250" 
+						 data-speed="300" 
+						 data-start="1000" 
+						 data-easing="easeOutExpo">CREATE UNLIMITED CAPTIONS</div>
+									
+					<div class="caption description_text lfl stl"  
+						 data-x="0" 
+						 data-y="292" 
+						 data-speed="300" 
+						 data-start="1300" 
+						 data-easing="easeOutExpo">AND STYLE AND ANIMATE THEM INDIVIDUALLY</div>
+				</li>	
+				<!-- THE SIX SLIDE -->
+				<li data-transition="fade" data-slotamount="15" data-masterspeed="300">
+					<img src="images/slides/slide6.jpg" alt="" />
+									
+					<div class="caption lfl fadeout"  
+						 data-x="0" 
+						 data-y="40" 
+						 data-speed="300" 
+						 data-start="500" 
+						 data-easing="easeOutExpo"><img src="images/slides/layer1.jpg" alt=""></div>
+									
+					<div class="caption lfl fadeout"  
+						 data-x="15" 
+						 data-y="260" 
+						 data-speed="300" 
+						 data-start="800" 
+						 data-easing="easeOutExpo"><img src="images/slides/layer2.jpg" alt=""></div>
+					<div class="caption lfr fadeout"  
+						 data-x="855" 
+						 data-y="60" 
+						 data-speed="300" 
+						 data-start="1100" 
+						 data-easing="easeOutExpo"><img src="images/slides/layer4.jpg" alt=""></div>
+									
+					<div class="caption lfr fadeout"  
+						 data-x="880" 
+						 data-y="290" 
+						 data-speed="300" 
+						 data-start="1400" 
+						 data-easing="easeOutExpo"><img src="images/slides/layer5.jpg" alt=""></div>						 
+				</li>					
+			</ul>
+			<!--enable slider timer 
+				<div class="tp-bannertimer"></div>
+			-->
+		</div>
+		<div class="bottom-shadow"></div>	
+	</div><!--end slider-->
+	
+	
+	<div class="centered-wrapper">	
+		<section class="intro">
+			<h2>We`re an award winning digital studio specialised in web design.</h2>
+			<h5>Our projects stand out from the crowd so if you want to collaborate, <a href="#">get in touch with us</a> to see how we can help you!</h5>
+		</section>
+			
+		<section>
+			<div class="bgtitle"><h2>Our Works</h2></div>
+			<ul id="portfolio-carousel">
+				<li>
+					<a href="images/portfolio/image1.jpg" rel="prettyPhoto[pp_gal]" title="Cervejaria Republica">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img src="images/portfolio/image1-small.jpg" alt=" " />
+					</a>
+					<div class="portfolio-carousel-details">
+						<h3><a href="portfolio-single.html">Cervejaria Republica</a></h3>
+						<span>rebranding, printing identity</span>
+					</div>
+				</li>
+				
+				<li>
+					<a href="images/portfolio/image2.jpg" rel="prettyPhoto[pp_gal]" title="Website Redesign">
+						<span class="item-on-hover"><span class="hover-link"></span></span>
+						<img src="images/portfolio/image2-small.jpg" alt=" " />
+					</a>
+					<div class="portfolio-carousel-details">
+						<h3><a href="portfolio-single.html">Website Redesign</a></h3>
+						<span>web design, programming</span>
+					</div>
+				</li>
+				
+				<li>
+					<a href="../../../vimeo.com/7449107" rel="prettyPhoto">
+						<span class="item-on-hover"><span class="hover-video"></span></span>
+						<img src="images/portfolio/image3-small.jpg" alt=" " />
+					</a>
+					<div class="portfolio-carousel-details">
+						<h3><a href="portfolio-single.html">BOBO</a></h3>
+						<span>business cards, branding</span>
+					</div>
+				</li>
+				
+				<li>
+					<a href="images/portfolio/image6.jpg">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img src="images/portfolio/image6-small.jpg" alt=" " />
+					</a>
+					<div class="portfolio-carousel-details">
+						<h3><a href="portfolio-single.html">Old City Streets</a></h3>
+						<span>urban, photography</span>
+					</div>
+				</li>				
+				
+				<li>
+					<a href="images/portfolio/image4.jpg" rel="prettyPhoto[pp_gal]" title="Warner Bros">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img src="images/portfolio/image4-small.jpg" alt=" " />
+					</a>
+					<div class="portfolio-carousel-details">
+						<h3><a href="portfolio-single.html">Warner Bros</a></h3>
+						<span>web design, rebranding</span>
+					</div>
+				</li>
+				
+				<li>
+					<a href="portfolio-single.html">
+						<span class="item-on-hover"><span class="hover-link"></span></span>
+						<img src="images/portfolio/image6-small.jpg" alt=" " />
+					</a>
+					<div class="portfolio-carousel-details">
+						<h3><a href="portfolio-single.html">City Photo Session</a></h3>
+						<span>marketing, photography</span>
+					</div>
+				</li>				
+			</ul>	
+		</section>		
+
+		<div class="space"></div>
+		
+		<section>
+			<div class="one-third">
+				<div class="bgtitle"><h2>OUR SERVICES</h2></div>
+				<ul id="toggle-view">
+					<li>
+						<h3>PROFESSIONAL WEB DESIGN</h3>
+						<span class="toggle-plus"></span>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing</a> elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
+						</div>
+					</li>
+					<li>
+						<h3>SEARCH ENGINES OPTIMIZATION</h3>
+						<span class="toggle-plus"></span>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
+						</div>
+					</li>
+					<li>
+						<h3>WEB BRANDING AND IDENTITY</h3>
+						<span class="toggle-plus"></span>
+						<div class="panel">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
+						</div>
+					</li>
+				</ul>			
+			</div>
+			<div class="one-third">
+				<div class="bgtitle"><h2>WHY TO CHOOSE US:</h2></div>
+				<ul class="customlist tick-list">
+					<li>We take seriously every project</li>
+					<li>We understand the needs of our clients</li>
+					<li>We deliver the best solutions within deadline</li>
+					<li>Our team is creative and dedicated to work </li>
+					<li>We love to create pixel perfect products </li>
+				</ul>					
+			</div><!--end one-third-->			
+			<div class="one-third column-last">
+				<div class="bgtitle"><h2>TESTIMONIALS</h2></div>
+				<div id="testimonials">
+					<div class="testimonial-item">
+						<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."</p><div class="testimonial-pin"></div>
+						<div class="testimonial-meta"><h5>John Doe,</h5><span>Company CEO</span></div>
+					</div><!--end testimonial-item-->
+					<div class="testimonial-item">
+						<p>"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."</p><div class="testimonial-pin"></div>
+						<div class="testimonial-meta"><h5>Michael Davis,</h5><span>Chicago Web Design</span></div>
+					</div><!--end testimonial-item-->	
+					<div class="testimonial-item">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p><div class="testimonial-pin"></div>
+						<div class="testimonial-meta"><h5>Virginia Smith,</h5><span>EcoSoft</span></div>
+					</div><!--end testimonial-item-->						
+				</div>
+			</div>	
+		</section>
+		
+	</div><!--end centered-wrapper-->
+	
+	<div class="space"></div>
+	<div class="half-space"></div>
+
+	<footer id="footer">
+		<div class="centered-wrapper">
+			<div id="topfooter">
+				<div class="one-half">
+					<h3>About Us</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam veritatis et quasi nam liber tempore.</p>
+					<div class="footer-logo"></div>
+				</div><!--end percent-one-half-->
+				<div class="one-half column-last">
+					<div class="percent-one-half">
+						<h3>We are on Twitter</h3>
+						<div class="tweet1"></div>
+					</div>
+					
+					<div class="percent-one-half column-last">
+						<h3>Get in Touch with Us</h3>
+						<ul>
+							<li>Address: 1600 Amphitheatre Parkway, Mountain View, CA 94043</li>
+							<li>Phone: +321 123 456 7<br/>
+							E-mail: <a href="mailto:">johndoe@ipsum.com</a></li>
+						</ul>
+					</div><!--end one-half-->					
+				</div><!--end one-half-->
+			</div><!--end topfooter-->
+		</div><!--end centered-wrapper-->
+		
+		<div id="bottomfooter">		
+			<div class="centered-wrapper">		
+				<div class="one-half">
+					<p>COPYRIGHT &copy; 2013 - SYMPATHIQUE | ALL RIGHTS RESERVED. - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+				</div><!--end one-half-->
+
+				<div class="one-half column-last">
+					<ul id="social">
+						<li><a class="rss" href="#">RSS Feed</a></li>
+						<li><a class="facebook" href="#">Facebook</a></li>
+						<li><a class="twitter" href="#">Twitter</a></li>
+						<li><a class="flickr" href="#">Flickr</a></li>
+						<li><a class="google" href="#">Google</a></li>
+						
+					<!-- You can add social icons for forrst, dribbble, vimeo, linkedin and skype. Take the ones you need from the list and paste them above
+					
+						<li><a class="forrst" href="#">Forrst</a></li>
+						<li><a class="dribbble" href="#">Dribbble</a></li>
+						<li><a class="vimeo" href="#">Vimeo</a></li>
+						<li><a class="linkedin" href="#">LinkedIn</a></li>
+						<li><a class="skype" href="#">Skype</a></li> 
+					-->	
+					</ul>					
+				</div><!--end one-half-->
+			</div><!--end centered-wrapper-->				
+		</div><!--end bottomfooter-->
+	</footer><!--end footer-->	
+	
+</div><!--end wrapper-->
+</body> 
+</html>

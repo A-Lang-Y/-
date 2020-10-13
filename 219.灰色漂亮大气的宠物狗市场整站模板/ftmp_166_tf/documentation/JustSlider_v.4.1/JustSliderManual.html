@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Just slider</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/idea.css" type="text/css" media="all">    
+  <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/tms-0.4.1.js"></script>
+  <!-- demo -->
+  <link rel="stylesheet" href="css/demo.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/demo.js"></script>
+  <!-- end demo -->  
+  <script src="js/highlight.js"></script>
+  <script src="js/html5.js"></script>
+  <script src="js/html-xml.js"></script>
+  <script src="js/css.js"></script>
+  <script src="js/javascript.js"></script>
+  
+  <script>
+    hljs.tabReplace = '    ';
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+  <!--[if lt IE 7]>
+  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="screen">    
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">    
+  <![endif]-->
+</head>
+
+<body>
+	<div id="main">
+		<div class="inside">
+			<!-- header -->
+			<header id="header">
+				<div class="inside">
+					<h1>Just slider Manual</h1>
+				</div>
+			</header>
+			<section id="content">
+				<article>		
+					<div class="inner">
+						<div id="slide">			  	
+							<!-- slider -->
+							<div class="slider">
+								<ul class="items">
+									<li><img src="images/slide-3.jpg" alt="" /><div class="banner"><span>Unde omnis iste natus errsit rem aperiam, eaque ipsa quae. Woluptatem accusantium </span></div></li>
+									<li><img src="images/slide-4.jpg" alt="" /><div class="banner"><span>Nearuasi architecto beatae faserse vitaerspiciat kerusler miase lerosnr lertyseras</span></div></li>
+									<li><img src="images/slide-1.jpg" alt="" /><div class="banner"><span>Unde omnis iste natus errsit rem aperiam, eaque ipsa quae. Woluptatem accusantium </span></div></li>
+									<li><img src="images/slide-2.jpg" alt="" /><div class="banner"><span>Unde omnis iste natus errsit rem aperiam, eaque ipsa quae. Woluptatem accusantium </span></div></li>
+									<li><img src="images/slide-5.jpg" alt="" /><div class="banner"><span>Nearuasi architecto beatae faserse vitaerspiciat kerusler miase lerosnr lertyseras.</span></div></li>
+									<li><img src="images/slide-6.jpg" alt="" /><div class="banner"><span>Woluptatem accusantium dolor massa astumosto Unde omnis iste natus errsit rem aper</span></div></li>
+									<li><img src="images/slide-7.jpg" alt="" /><div class="banner"><span>Unde omnis iste natus errsit rem aperiam, eaque ipsa quae. Woluptatem accusantium </span></div></li>
+								</ul>
+							</div>	
+							<a href="#" class="prev">&lt;</a> <a href="#" class="play"><em>stop</em><span>play</span></a> <a href="#" class="next">&gt;</a>
+							<!-- slider end -->	
+						</div>		
+						<p class="pad"><strong>Features:</strong></p>
+						<div class="inner">
+							<ul>
+								<li>the ability to create slide transition effects;</li>
+								<li>static/dynamic pagination;</li>
+								<li>transition effects for HTML slider titles/captions;</li>
+								<li>start/stop buttons;</li>
+								<li>"current/total" images counter (e.g. the 2nd of 3);</li>
+								<li>progressbar;</li>
+							</ul>
+						</div>	
+					</div>
+					<h2 class="pad">Description</h2>
+					<div class="inner">
+						<p><strong>Files needed to work with the slider:</strong></p>
+						<div class="inner">
+							<ul>
+								<li><strong>jquery-1.7.min.js</strong> &ndash; jQuery library (the slider will work with this version of library only);</li>
+								<li><strong>jquery.easing.1.3.js</strong> &ndash; easing effects needed for creating an animation;</li>
+								<li><strong>tms-0.4.1.js</strong> &ndash; the slider’s functionality;</li>
+								<li><strong>demo.css</strong> &ndash; the set of CSS styles for the slider stylization;</li>
+								<li><strong>demo.js</strong> &ndash; slider 	initialization;</li>
+							</ul>
+						</div>
+						<p class="pad"><strong>To start with please include the following files in the &lt;head&gt; section of HTML file:</strong></p>
+						<div class="code"><pre><code>&lt;link rel="stylesheet" href="css/demo.css" type="text/css" media="all"&gt;
+&lt;script type="text/javascript" src="js/jquery-1.7.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/jquery.easing.1.3.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/tms-0.4.1.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/demo.js"&gt;&lt;/script&gt;</code></pre></div>
+						<p class="pad"><strong>The HTML Slider Structure:</strong></p>
+						<div class="code">
+							<pre><code>&lt;div class="slider"&gt;
+	&lt;ul class="items"&gt;
+		&lt;li&gt;&lt;img src="images/slide-1.png" /&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="images/slide-2.png" /&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="images/slide-3.png" /&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="images/slide-4.png" /&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="images/slide-5.png" /&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+						</div>
+						<p class="pad"><strong>If there are any HTML titles and navigation buttons in the slider, the HTML code will be the following:</strong></p>
+						<div class="code">
+							<pre><code>&lt;div class="slider"&gt;
+	&lt;ul class="items"&gt;
+		&lt;li&gt;&lt;img src="images/slide-1.png" /&gt;&lt;span class="banner"&gt;banner content&lt;/span&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="images/slide-2.png" /&gt;&lt;span class="banner"&gt;banner content&lt;/span&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="images/slide-3.png" /&gt;&lt;span class="banner"&gt;banner content&lt;/span&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="images/slide-4.png" /&gt;&lt;span class="banner"&gt;banner content&lt;/span&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="images/slide-5.png" /&gt;&lt;span class="banner"&gt;banner content&lt;/span&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;a href="#" class="prev"&gt;prev&lt;/a&gt; &lt;a href="#" class="play"&gt;play&lt;/a&gt; &lt;a href="#" class="next"&gt;next&lt;/a&gt;</code></pre>
+						</div>
+						<p class="pad">The core styles are located in <strong>demo.css</strong> file. The most important requirement for the slider stylization is the following CSS rule - <strong> .items {display:none;}</strong> - do not change it. All other attributes are editable.</p>
+					</div>
+					<h2 class="pad1">Initialization</h2>
+					<div class="inner">
+						<p class="pad">slider initialization is set in <strong>demo.js</strong> file:</p>
+						<div class="code">
+							<pre><code>$(document).ready(function(){
+	$('.slider')._TMS({
+		show:0,
+		pauseOnHover:false,
+		prevBu:'.prev',
+		nextBu:'.next',
+		playBu:'.play',
+		duration:1100,
+		preset:'fadeThree',
+		pagination:true,//'.pagination',true,'&lt;ul&gt;&lt;/ul&gt;'
+		pagNums: false ,
+		slideshow:7000,
+		numStatus:true,
+		banners:false,// fromLeft, fromRight, fromTop, fromBottom
+		waitBannerAnimation:false,
+		progressBar:'&lt;div class="progbar"&gt;&lt;/div&gt;'
+	})		
+ })							</code></pre>
+						</div>
+						<p class="pad">The initialization occurs on the event <b><i>$(document).ready()</i></b>. Parameters:</p>
+						<ul>
+							<li><strong>preset</strong> &ndash; the preset that will be used. All presets are located in tms-0.4.x.js;</li>
+							<li><strong>duration</strong> &ndash; the animation time in milliseconds;</li>
+							<li><strong>pagination</strong> &ndash; the pagination, there are three possible values:
+								<ul class="pad">
+									<li>(<strong>true</strong>/<strong>false</strong>, by default <strong>false</strong>) -  use/do not use the pagination;</li>
+									<li>css path to the sepately created pagination, f.e. ".pags";</li>
+									<li>pagination HTML  code, f.e. "&lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;", it will be added to the block <strong>div</strong>;</li>
+								</ul>
+							</li>
+							<li><strong>pagNums</strong> &ndash; possible values - true/false - sets images numbers in order;</li>
+							<li><strong>numStatus</strong> &ndash; possible values - true/false - creates the counter in the slider;</li>
+							<li><strong>playBu, nextBu, prevBu</strong> &ndash; set the css class for the buttons which turn the slideshow on/off, switch the last/next image;</li>
+							<li><strong>slideshow</strong> &ndash; the number of milliseconds in which one image change another, false by default;</li>
+							<li><strong>progressBar</strong> &ndash; progressbar, that is displayed in the slideshow and changes its length as the pictures change one another f.e. '&lt;div class="progbar"&gt;&lt;/div&gt;', corresponding CSS styles should be created for this class;</li>
+							<li><strong>banners</strong> &ndash; possible values:
+								<ul class="pad">
+									<li><strong>true</strong>/<strong>false</strong> - turn banners on/off;
+									<li><strong>fade</strong>, <strong>fromLeft</strong>, <strong>fromRight</strong>, <strong>fromTop</strong>, <strong>fromBottom</strong> - the ready-made presets to display the banners;</li>
+								</ul>
+							</li>
+							<li><strong>pauseOnHover</strong> &ndash; possible values - true/false -  as soon the cursor is put over the slider area the animation stops;</li>
+							<li><strong>waitBannerAnimation</strong> &ndash; possible values - true/false - the feature is used for simultaneous (false) or gradual (true) animation of the banner and the image;</li>
+							<li><strong>show</strong> &ndash; indicates the number of the slide to start the animation from, the count starts from 0.</li>
+						</ul>
+					</div>
+				</article> 
+			</section>
+		</div>
+	</div>
+</body>
+</html>

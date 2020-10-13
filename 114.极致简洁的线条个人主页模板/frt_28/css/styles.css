@@ -1,0 +1,243 @@
+/*
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+Coder: lsa, free.responsive.templates@gmail.com
+Created: 13 September 2012 
+*/
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%;
+	background: url(../images/siteBackground.jpg) repeat left top;
+	margin: 0;
+	padding: 0;
+	color: #343434;
+	text-shadow:0 0px, 1px 1px #ffffff;
+}
+h1 {
+	line-height:30px;
+}
+h1 a {
+	font-size:0.9em; 
+	font-family: 'Emblema One', cursive;
+	text-decoration:none;
+	color:#6d6c6c;
+}
+h1 a:hover {
+	color:#6d6c6c;
+}
+h2 {
+	font-size:1.1em;
+	color:#6d6c6c;
+	font-weight:inherit;
+	margin:0 0 10px 0;
+}
+span {
+	color:#ffcc00;
+}
+.slogan {
+	text-transform:uppercase;
+	font-size:0.6em;
+}
+a img { 
+	border: none;
+}
+a {
+	color: #ffcc00;
+	text-decoration: underline; 
+}
+a:hover { 
+	color: #d5aa00;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;	
+}
+p {
+	line-height:140%;
+}
+hr {
+	background: none repeat scroll 0 0 #e9e9e9;
+    border: 0 none;
+    height: 1px;
+    margin: 15px 0;
+}
+.wrapper {
+	width:93.75%; /* 960px/1024px  */
+	margin:0 auto;
+}
+.logo {
+	float:left;
+	margin:10px 0 0 0;
+}
+.contentBody {
+	width:72.916666666666666666666666666667%;
+	float:left;
+}
+.floatLeft {
+	width:31.428571428571428571428571428571%;
+	float:left;
+}
+.description {
+	width:65.714285714285714285714285714286%;
+	float:right;
+}
+.sidebar {
+	width:22.916666666666666666666666666667%;
+	float:right;
+}
+.sidebarBox {
+	margin-bottom:40px;
+}
+.sidebarBox li {
+	display:block;
+	list-style:0;
+	width:100%;
+}
+.sidebarBox li a {
+	display:block;
+	padding:10px 10px 10px 20px;
+	border-bottom:1px solid #e9e9e9;
+	background:url(../images/p.png) no-repeat 5px 16px;
+	text-decoration:none;
+}
+.sidebarBox li a:hover {
+	background:#e9e9e9;
+	color:#6d6c6c;
+}
+.button {
+	font-weight:bold;
+}
+.lastBox {
+	margin-right:0 !important;
+}
+.box {
+	margin-right:5%;
+	float:left;
+	width:30%;
+}
+.box h2 {
+	text-align:center;
+}
+.box img {
+	margin:3% 0;
+}
+footer {
+	text-align: center;
+	padding:20px 0;
+	background:#e9e9e9;
+	margin:20px 0 0 0;
+}
+footer p {
+	font-size:0.8571428571428571em; /* 12px/14px */
+	padding: 0 10px;
+}
+.icons li {
+	list-style:none;
+	display:inline;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	line-height: 0px;
+}
+/**************************/
+/*********************************Begin main menu****************************************/
+/**************************/
+nav {
+	margin-top:25px;
+	float:right;
+}
+nav li {
+	list-style:none;
+	display:inline;
+}
+nav li a {
+	text-shadow: none;
+	text-decoration: none;
+	padding:0 0 0 15px;
+	font-weight:bold;
+	color:#9c9c9c;
+}
+nav li a:hover {
+	color:#6d6c6c;
+}
+nav .active a {
+	color:#6d6c6c;
+}
+nav select {
+      display: none;
+    }
+select {
+	width:200px;
+}
+/**************************/
+/*********************************End main menu****************************************/
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 960px or less */
+@media screen and (max-width: 980px) {
+	.wrapper {
+		width:93.75%; /* 960px/1024px  */
+		margin:0 auto;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	nav ul { display: none; }
+	nav select { display: inline-block; }
+	.contentBody, .sidebar {
+		float:none;
+		width:auto;
+	}
+	h2 {margin:30px 0 10px 0;}
+	header {text-align:center;}
+	.logo, nav {
+		float:none;
+		width:auto
+	}
+	.sidebar {
+		border-top:1px solid #6d6c6c;
+		margin-top:30px;
+	}
+	.sidebarBox {
+		float:left;
+		width:28%;
+		margin-right:8%;
+	}
+	.lastSidebarBox {margin-right:0% !important;}
+
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	.box {
+		float:none;
+		width:auto;
+		margin:2% 0 0 0;
+		border-bottom:1px solid #e9e9e9;
+		padding:0 0 3% 0;
+	}
+	.floatLeft, .description {
+		float:none;
+		width:auto;
+	}
+	.sidebarBox {
+		float:none;
+		width:auto;
+		margin-right:0%;
+	}
+	.sidebar {
+		border-top:0;
+		margin-top:0;
+	}
+}
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/

@@ -1,0 +1,25 @@
+.portfolio-big-image { margin-top:20px }
+.portfolio-big-image img { margin-bottom:0; }
+.portfolio-big-image .work { margin-bottom:60px; position:relative; }
+.portfolio-big-image .work-description { line-height: 2em; margin-bottom:90px; }
+.portfolio-big-image h3, .portfolio-big-image h3 a { clear:none; margin-top:0 !important; font-size:28px; font-weight:normal; margin-bottom:1.4em; text-decoration:none; }
+.portfolio-big-image a.thumb { display:block; position:relative; height: 100%; overflow: auto; }
+.portfolio-big-image a.more { padding:10px 20px; text-align:center; border:1px solid #CFCFCF; background:#f3f3f3; color:#605f5f; display:inline-block; line-height:16px }
+.portfolio-big-image a.more:hover { border:1px solid #CFCFCF; background:#eae7e7; text-decoration:none }   
+.portfolio-big-image a.zoom { position:absolute; }  
+.portfolio-big-image .work-thumbnail { position: relative; }
+.portfolio-big-image .work-thumbnail .nozoom { display: block; overflow: hidden; position:relative; }
+.portfolio-big-image .work-thumbnail .picture_overlay { border:8px solid #cdcfd0; /*transition: border-color .4s ease-in-out; -moz-transition: border-color .4s ease-in-out; -webkit-transition: border-color .4s ease-in-out;*/ }
+.portfolio-big-image .work-thumbnail .picture_overlay:hover { border-color:#F29A03; }
+.portfolio-big-image .work-skillsdate  { position:absolute; bottom:0; right:0; }
+.portfolio-big-image .work-skillsdate p { border-left:4px solid #d18f1d; padding:0 0 0 40px; margin:0; background:no-repeat 10px 3px; }
+.portfolio-big-image .work-skillsdate p.categories { background-image:url('../../../images/icons/portfolio-project.png'); }
+.portfolio-big-image .work-skillsdate p.customer   { background-image:url('../../../images/icons/author.png'); background-position:9px 0; }
+.portfolio-big-image .work-skillsdate p.workdate   { background-image:url('../../../images/icons/date.png'); background-position:7px 2px; }
+.portfolio-big-image .work-skillsdate span { padding-right: 5px; text-transform: none; font-weight: bold; }
+
+@media (max-width: 767px) {
+    .responsive .portfolio-big-image h3 { margin:20px 0 !important; }    
+    .responsive .portfolio-big-image .work-description { margin-bottom:20px; }
+    .responsive .portfolio-big-image .work-skillsdate  { position:relative; clear:both; }
+}

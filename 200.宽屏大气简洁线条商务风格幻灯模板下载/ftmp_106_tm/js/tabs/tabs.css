@@ -1,0 +1,40 @@
+
+/*TABS*/
+.tabs { padding:30px; height:auto!important; position:relative; border-bottom: 1px solid #567f1f; }
+
+.tab-menu { margin: 0; padding: 0; float: left; list-style: none; height: 40px; /*--Set height of tabs--*/ border-bottom: 1px solid #E9E9EA; width: 100% !important; }
+
+.tab-menu li { float: left; margin:0 1px 0 0 !important; padding:0; line-height: 31px; /*--Vertically aligns the text within the tab--*/ border: 1px solid #E9E9EA; margin-bottom: -1px; /*--Pull the list item down 1px--*/ overflow: hidden; position: relative; background: none repeat scroll 0 0 #f3f3f3; width: auto !important; }
+
+.tab-menu li a { text-decoration: none; color: #333; display: block; font-size:12px; font-weight:bold; padding:4px 15px 4px 15px; outline: none; text-shadow:0 1px 1px #fff; }
+
+.tab-menu li a:hover { background: none repeat scroll 0 0 #e7e7e7; }
+
+html .tab-menu li.active, html .tab-menu li.active a:hover { /*--Makes sure that the active tab does not listen to the hover properties--*/ background: none repeat scroll 0 0 #fff; border-bottom: 1px solid #fff; /*--Makes the active tab look like it's connected with its content--*/ width: auto; }
+
+/*TAB CONTAINER*/
+.tab-container { border:1px solid #E9E9EA; border-top: none; overflow: hidden; clear:both; float: left; width:99.7%; margin-bottom:30px; background: none repeat scroll 0 0 #FFFFFF; }
+
+.tab-content { padding:22px 22px 7px 22px; position:relative; }
+
+.tab-container-two { border:1px solid #E9E9EA; border-top: none; overflow: hidden; clear:both; float: left; width:442px; margin-bottom: 0; background: none repeat scroll 0 0 #fff; }
+
+.tab-content-img1 { background: none repeat scroll 0 0 #fff; border: 1px solid #E9E9EA; padding: 4px; margin: 4px 10px 10px 0; float: left; }
+
+.tab-content-img2 { background: none repeat scroll 0 0 #fff; border: 1px solid #F3F3F3; padding: 4px; margin: 4px 0 10px 10px; float: right; }
+
+
+
+/****************************
+RESPONSIVE CSS
+****************************/
+@media handheld and (max-width: 480px), screen and (max-device-width: 767px), screen and (max-width: 1024px) {
+.tab-container-two {
+width:279px;
+}
+}
+ @media handheld and (max-width: 767px), screen and (max-device-width: 767px), screen and (max-width: 767px) {
+.tab-container-two {
+width:248px;
+}
+}

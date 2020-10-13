@@ -1,0 +1,33 @@
+body { background:url(../../images/bg_slider/fullscreen_slider3.jpg) no-repeat center top fixed;
+background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+-moz-background-size: cover;
+
+}
+
+/*----------------------------------------------------------
+Tablet Portrait size to standard 960 (768x1024) 
+-----------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	body { -webkit-background-size: auto 100%; background:url(../../images/bg_slider/fullscreen_slider1.jpg) no-repeat center top fixed;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	/*Empty*/
+}
+
+/*------------------------------------------------
+Mobile Landscape Size to Tablet Portrait (480x320)
+--------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body { -webkit-background-size: auto 100%; background:url(../../images/bg_slider/fullscreen_slider1.jpg) no-repeat center top fixed;}
+}
+
+/*-----------------------------------------------------
+Mobile Portrait Size to Mobile Landscape Size (320x480) 
+-------------------------------------------------------*/
+@media only screen and (max-width: 479px) {
+	body { -webkit-background-size: auto 100%; background:url(../../images/bg_slider/fullscreen_slider1.jpg) no-repeat center top fixed;}
+}

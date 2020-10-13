@@ -1,0 +1,170 @@
+/****Form****/
+
+#form {
+	padding-top: 2px;
+}
+
+#form input {
+	border: 1px solid #dddddd;
+	background: none;
+	font-size:13px;
+	color:#676767;
+	line-height: 18px;
+	padding: 7px 18px 8px;
+	outline: medium none;
+	background: url(../images/form_Bg.png) 0 0 repeat;
+	width: 100%;
+	height: 39px;
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+}
+
+#form textarea {
+	border: 1px solid #dddddd;
+	background: url(../images/form_Bg.png.) 0 0 repeat;
+	font-size:13px;
+	color:#676767;
+	height: 279px;
+	outline: medium none;
+	overflow: auto;
+	padding: 10px 18px 8px;
+	width: 100%;
+	position: relative;
+	resize:none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	float:left;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	
+}
+#form label {
+	position:relative;
+	display: block;
+	min-height: 59px;
+	width: 302px;
+	float: left;
+	clear: left;
+}
+
+
+#form .error, #form .empty {
+	color: #FF0000;
+	display: none;
+	font-size: 11px;
+	line-height:14px;
+	width:auto;
+	position: absolute;
+	z-index: 999;
+	right: 5px;
+	top: 12px;
+	float:left;
+}
+
+
+
+#form.contact .error, #form.contact .empty {
+	top: 7px;
+}
+
+#form .error-empty {
+	display:none;
+	float:left;
+}
+
+.btns {
+	position:relative;
+	overflow:hidden;
+	padding-top: 20px;
+	padding-right: 80px;
+	text-align: right;
+}
+
+
+.btns a.btn {
+	margin: 0 0 0 20px !important;
+	cursor: pointer;
+
+}
+
+#form .message {
+	width: 462px;
+	margin-top: -1px;
+}
+
+
+.message br {
+	height: 0;
+	line-height: 0;
+}
+
+#form .success {
+	border: 1px solid #dddddd;
+	display: none;
+	position: absolute;
+	width: 302px;
+	background: #fff;
+	text-align: center;
+	padding: 20px 10px;
+	z-index: 999;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+}
+
+
+
+.success_wrapper {
+	position: relative;	
+}
+
+@media only screen and (max-width: 995px) {
+
+#form {
+	padding-top: 0;	
+}
+
+
+#form label {
+	float: none !important;	
+	width: 100%;
+}
+
+#form label.message {
+	width: 100% !important;
+}
+
+#form .success {
+	width: 100%;
+}
+
+.btns {
+	padding-right: 0;
+}
+
+
+}
+
+@media only screen and (max-width: 767px) {
+  .map {
+	margin-bottom: 25px;
+}
+  .btns {
+		padding-bottom: 0;  
+  }
+  
+  #form textarea {
+		height: 300px !important;  
+  }
+  
+}
+@media only screen and (max-width: 479px) {
+ 
+  #form textarea {
+		height: 200px !important;  
+  }
+}

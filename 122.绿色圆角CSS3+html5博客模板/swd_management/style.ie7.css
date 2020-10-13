@@ -1,0 +1,95 @@
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.management-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.management-header
+{
+   z-index: 1;
+}
+
+.management-hmenu>li, .management-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.management-hmenu, ul.management-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+ul.management-hmenu>li:first-child {
+   padding-right:8px;
+}
+
+ul.management-hmenu ul{
+   background-color: #EDF1F2 !important;
+}
+
+.management-content-layout, .management-content-layout-row, .management-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.management-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.management-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.management-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.management-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.management-postheadericons span{
+   zoom: 1;
+}
+.management-postcontent {
+   height: 1%;
+}
+
+.management-postfootericons span{
+   zoom: 1;
+}
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.management-sidebar1 
+{
+   width: auto;
+   float:none;
+}
+

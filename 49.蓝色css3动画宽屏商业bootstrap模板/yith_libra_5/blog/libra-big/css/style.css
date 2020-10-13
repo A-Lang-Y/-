@@ -1,0 +1,168 @@
+.blog-libra-big { margin-bottom: 50px; }
+
+/* === DATE & COMMENTS */
+.blog-libra-big .date-comments .date {
+    background: rgb( 232, 232, 232 );
+    background: rgba( 232, 232, 232, 0.65 );
+    margin-top: 0px;
+    margin-bottom: 6px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    text-align: center;
+}
+
+.blog-libra-big .date-comments .date span {
+    color: #a5a4a4;
+    display: block;
+}
+
+.blog-libra-big .date-comments .date .month {
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 22px;
+}
+
+.blog-libra-big .date-comments .date .day {
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: -3px;
+    line-height: 48px;
+}
+
+.blog-libra-big .date-comments .comments {
+    background: #a7a91e;
+    color: #fff;
+    margin-bottom: 0px;
+    padding: 1px 0;
+    text-align: center;
+}
+
+.blog-libra-big .date-comments .comments a,
+.blog-libra-big .date-comments .comments a:hover {
+    color: #fff;
+    font-family: 'Arbutus Slab', Georgia, 'Times New Roman', serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog-libra-big .date-comments .comments i {
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+/* === TITLE */
+.blog-libra-big .post-title,
+.blog-libra-big .post-title a {
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    margin-left: 7px;
+}
+
+.blog-libra-big .post-title:hover,
+.blog-libra-big .post-title a:hover { color: #6c6d03; }
+
+/* === THUMBNAIL */
+.blog-libra-big .thumbnail {
+    background-color: #ffffff;
+    border-color: #e5e7e7;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    position: relative;
+    width: 760px;
+}
+
+.sidebar-no .blog-libra-big .thumbnail { width: 1060px; }
+#ie8 .blog-libra-big .thumbnail { width: 610px; }
+#ie8 .sidebar-no .blog-libra-big .thumbnail { width: 850px; }
+
+/* === POST FORMATS */
+.blog-libra-big .post-format {
+    background: url(../../../images/post-formats.png);
+    display: block;
+    margin: 0px;
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    text-indent: -9999px;
+    width: 33px;
+    height: 33px;
+}
+
+.blog-libra-big .post-format.gallery { background-position: left top; }
+.blog-libra-big .post-format.audio { background-position: center top; }
+.blog-libra-big .post-format.video { background-position: right top; }
+
+.single-post .post-format.video,
+.single-post .post-format.gallery,
+.blog-libra-big .post-formats-on-list .post-format,
+.blog-libra-big .without.thumbnail .post-format { display: none; }
+
+.soundcloud-frame { float: right; margin-top: 20px; }
+.soundcloud-frame iframe { width: 100%; }
+
+.blog-libra-big .post_video { margin-bottom: 0px; }
+
+
+.blog-libra-big.format-quote .post-title {
+    background-position: 15px 25px;
+    font-size: 19px;
+    margin-top: 15px;
+    padding-left: 50px;
+    padding-bottom: 12px;
+}
+
+.blog-libra-big.format-quote .post-title,
+.blog-libra-big.format-quote .post-title a {
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 0px;
+}
+
+.blog-libra-big.format-quote .post-title cite {
+    color: #919303;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 7px;
+}
+
+.blog-libra-big.format-quote .post-title cite:before { content: "- "; }
+
+/* === CONTENT */
+.blog-libra-big .the-content {
+    float: right;
+    margin-top: 6px;
+}
+
+.single-post .blog-libra-big .the-content p:last-child {
+    border-top: 1px solid #e1e1e1;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+/* === RESPONSIVE */
+@media (max-width: 1199px) {
+    .blog-libra-big .thumbnail { width: 610px; }
+    .sidebar-no .blog-libra-big .thumbnail { width: 850px; }
+    .blog-libra-big .date-comments .date .day { font-size: 42px !important; }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .blog-libra-big .date-comments .date .month { font-size: 15px !important; }
+    .blog-libra-big .date-comments .date .day { font-size: 28px !important; }
+    .blog-libra-big .thumbnail { width: 466px; }
+    .sidebar-no .blog-libra-big .thumbnail { width: 652px; }
+}
+
+@media (max-width: 767px) {
+    .blog-libra-big .thumbnail, .sidebar-no .blog-libra-big .thumbnail { margin-top: 10px; width: 100%; }
+    .blog-libra-big.format-quote .post-title { background-position: 15px 0px; }
+}

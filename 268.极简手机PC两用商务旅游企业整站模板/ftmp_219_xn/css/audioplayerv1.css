@@ -1,0 +1,215 @@
+.APV1_wrapper,
+.APV1_wrapper *
+{
+	display:block !important;
+	float:none !important;
+	cursor:default !important;
+	border: none!important;
+	overflow: visible!important;
+	position: static!important;
+	float: none!important;
+	z-index: auto!important;
+	list-style:none !important;
+	line-height: 0!important;
+	direction: ltr!important;
+	text-align: center!important;
+	opacity:1!important;
+	
+	-webkit-user-select:none;
+	 -khtml-user-select:none;
+	   -moz-user-select:none;
+		 -o-user-select:none;
+			user-select:none;
+}
+
+.APV1_play_button,
+.APV1_volume_button,
+.APV1_volume_bar_container,
+.APV1_volume_bar,
+.APV1_seek_bar,
+.APV1_play_bar,
+.APV1_progress_bar_wrapper
+{
+	cursor: hand!important;
+	cursor: pointer!important;
+}
+
+.APV1_wrapper
+{
+	overflow: hidden!important;
+	background: #58605b;
+	width: 100%;
+	height: 30px;
+}
+
+.APV1_wrapper li
+{
+	float:left!important;
+	height:100%!important;
+}
+
+.APV1_seperator
+{
+	width:0px!important;
+}
+
+.APV1_play_button,
+.APV1_volume_button
+{
+	margin: 0 5px;
+	height: 100%!important;
+	width: 30px!important;
+	background: url('../images/sprite.png') no-repeat 0 0 !important;
+}
+
+.APV1_play_button:hover
+{
+	background-position:-34px 0px!important;
+}
+
+.APV1_playing .APV1_play_button
+{
+	background-position: 0 -30px!important;
+}
+
+.APV1_playing .APV1_play_button:hover
+{
+	background-position: -34px -30px!important;
+}
+
+.APV1_volume_button
+{
+	background-position:-1px -60px!important;
+}
+
+.APV1_volume_button:hover
+{
+	background-position:-34px -60px!important;
+}
+
+.APV1_mute .APV1_volume_button
+{
+	background-position:-1px -90px!important;
+}
+
+.APV1_mute .APV1_volume_button:hover
+{
+	background-position:-34px -90px!important;
+}
+
+.APV1_progress_bar_container
+{
+	margin: 11px 3px !important;
+	height: 8px!important;
+	background-color: #7e8a83;
+}
+
+.APV1_volume_bar_container {
+	margin: 12px 15px !important;
+	height: 6px !important;
+	background-color: #738a83;
+}
+
+.APV1_volume_bar_container
+{
+	width: 63px!important;
+	margin-left: 0px!important;
+}
+
+.APV1_progress_bar_wrapper
+{
+	position:relative !important;
+	width:100%!important;
+	height:100%!important;
+}
+
+.APV1_seek_bar
+{
+	background-color: #7e8a83;		
+	height:100%!important;
+	width:0;
+
+	-webkit-transition:width 1s ease;
+	-khtml-transition:width 1s ease;
+	-moz-transition:width 1s ease;
+	-o-transition:width 1s ease;
+	transition:width 1s ease;
+	
+	-webkit-transform: translateZ(0);
+}
+
+.APV1_play_bar,
+.APV1_seek_bar
+{
+	position:absolute !important;
+	top:0 !important;
+	left:0 !important;
+}
+
+.APV1_volume_bar,
+.APV1_play_bar
+{			
+	background-color: #ebeeeb;
+	width:0;
+	height:100%!important;
+	
+	-webkit-transform: translateZ(0);
+	
+	-webkit-border-radius:1px;
+	-khtml-border-radius:1px;
+	-moz-border-radius:1px;
+	-o-border-radius:1px;
+	border-radius:1px;
+}
+
+.APV1_play_bar.APV1_transition
+{			
+	-webkit-transition:width 500ms ease;
+	-khtml-transition:width 500ms ease;
+	-moz-transition:width 500ms ease;
+	-o-transition:width 500ms ease;
+	transition:width 500ms ease;
+}
+
+.APV1_duration_text {
+	font-family: 'Droid Serif', serif !important;
+	color: #fff !important;
+	font-size: 11px!important;
+	line-height: 30px!important;
+	padding: 0 9px!important;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.APV1_time_text {
+	padding: 0 0 0 13px !important;
+	font-family: 'Droid Serif', serif !important;
+	color: #fff !important;
+	font-size: 11px!important;
+	line-height: 30px!important;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.APV1_time_minus {width: 4px !important;}
+
+.APV1_error .APV1_duration_text,
+.APV1_error .APV1_seperator,
+.APV1_error .APV1_volume_button,
+.APV1_error .APV1_progress_bar_container,
+.APV1_error .APV1_volume_bar_container
+{
+	display: none!important;
+}
+
+.APV1_error .APV1_for_play
+{
+	display: block!important;
+}
+
+.APV1_error .APV1_play_button
+{
+	cursor: default!important;
+	background-position: -1px -120px!important;
+}
+
+
+

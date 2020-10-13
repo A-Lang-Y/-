@@ -1,0 +1,252 @@
+@import "palette.less";
+
+/* Carousel def  ----------------------------------------------------*/ 
+
+@holderw: 780px;
+@holderh: 100px;
+
+@width: 195px;
+@height: @holderh;
+
+@nav-w: 80px;
+@nav-h: 80px;
+
+
+
+/* Carousel Horizontal ----------------------------------------------------*/ 
+
+
+
+.carousel-holder{
+	margin-bottom: 20px;
+	
+	.carousel-heading{
+		text-align: center;
+		padding-top: 40px;
+		
+		.title{
+			color: @headingColor;	
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+		}
+		
+		span{
+			font-size: 14px;
+			display: block;
+			margin-bottom: 22px;
+			margin-left: 80px;
+			margin-right: 80px;	
+		}
+	}
+}
+
+
+.jcarousel-skin-folder {	
+	
+	
+	img{ height: @height; }
+	
+	.jcarousel-container {
+	    //background: @fgColor;
+	    //.box-shadow();
+	    margin-bottom: 70px;
+	}
+	
+	.jcarousel-container-horizontal {
+	    width: @holderw; /* 940 - 80 x 2 */
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	    padding-left: @nav-w;
+	    padding-right: @nav-w;
+	  	margin: 0 auto 60px auto;
+	}
+	
+	.jcarousel-clip {
+	    overflow: hidden;
+	}
+	
+	.jcarousel-clip-horizontal {
+	    width:  @holderw;
+	    height: @holderh + 30;
+	}
+		
+	.jcarousel-item {
+	    width: @width;
+	    height: @height + 30;
+	    
+	    .caption{
+	    	text-align: center;
+	    	color: #444;
+	    	font-size: 12px;
+	    }
+	}
+	
+	.jcarousel-item-horizontal {
+		margin-left: 0;
+	    margin-right: 0px;
+	}
+	
+	.jcarousel-item-placeholder {
+	    background: #fff;
+	    color: #000;
+	}
+	
+	
+	/* Next Horizontal ----------------------------------------------------*/ 
+	 
+	 
+	.jcarousel-next-horizontal{
+	    position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    width: @nav-w;
+	    height: @height;
+	    cursor: pointer;
+	    border-left: 1px solid #ccc;
+	    background: transparent url(../img/arrow-right-dark.png) no-repeat center center;
+	    
+	}
+	
+    .jcarousel-next-horizontal:hover,
+	.jcarousel-next-horizontal:focus {
+		//background-color: #fff;
+	}
+	
+	.jcarousel-next-horizontal:active {
+	    //background-color: #fff;
+	}
+	
+	.jcarousel-next-disabled-horizontal,
+	.jcarousel-next-disabled-horizontal:hover,
+	.jcarousel-next-disabled-horizontal:focus,
+	.jcarousel-next-disabled-horizontal:active {
+	    cursor: default;
+	    background: transparent url(../img/arrow-right-dark.png) no-repeat center center;
+	    opacity: 0.2;
+	}
+	
+	/* Previous Horizontal ----------------------------------------------------*/ 
+
+	.jcarousel-prev-horizontal{
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    width: @nav-w;
+	    height: @height;
+	    cursor: pointer;
+	    border-right: 1px solid #ddd;
+	    background: transparent url(../img/arrow-left-dark.png) no-repeat center center;
+	}
+
+ 	.jcarousel-prev-horizontal:hover, 
+	.jcarousel-prev-horizontal:focus {
+		//background-color: #fff;
+	}
+	
+	.jcarousel-prev-horizontal:active {
+		//background-color: #fff;
+	}
+	
+	.jcarousel-prev-disabled-horizontal,
+	.jcarousel-prev-disabled-horizontal:hover,
+	.jcarousel-prev-disabled-horizontal:focus,
+	.jcarousel-prev-disabled-horizontal:active {
+		cursor: default;
+		background: transparent url(../img/arrow-left-dark.png) no-repeat center center;
+		opacity: 0.2;
+	}
+
+	
+	/* Vertical rules ------------------------------------------*/ 
+
+	.jcarousel-container-vertical {
+	    width: @width; 
+	    padding-top: 80px;
+	    padding-bottom: 80px;
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-bottom: 0px;
+	    height: (@height + 30)  * 3 + 80;
+	    margin: 0 auto;
+	}
+	
+	.jcarousel-clip-vertical {
+		width: @width;
+		height: (@height + 30) * 3;
+	}
+	
+	.jcarousel-item-vertical {
+		margin-left: 0;
+	    margin-right: 0px;
+	}
+	
+	/* Next Vertical ----------------------------------------------------*/ 
+
+	.jcarousel-next-vertical {
+		position: absolute;
+	    bottom: 0px;
+	    right: 0px;
+	    width: @width;
+	    height: @nav-h;
+	    cursor: pointer;
+	    border: none;
+	    background: transparent url(../img/arrow-down.png) no-repeat center center;
+	}
+	
+	
+	.jcarousel-next-vertical:hover,
+	.jcarousel-next-vertical:focus {
+		//background-color: #fff;
+	}
+	
+	.jcarousel-next-vertical:active {
+	    //background-color: #fff;
+	}
+	
+	.jcarousel-next-disabled-vertical,
+	.jcarousel-next-disabled-vertical:hover,
+	.jcarousel-next-disabled-vertical:focus,
+	.jcarousel-next-disabled-vertical:active {
+	    cursor: default;
+	    background: transparent url(../img/arrow-down.png) no-repeat center center;
+	    opacity: 0.2;
+	}
+    
+	
+	/* Previous Vertical ----------------------------------------------------*/ 
+
+	
+	.jcarousel-prev-vertical {
+		position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    width: @width;
+	    height: @nav-h;
+	    cursor: pointer;
+	    border: none;
+	    border-bottom: 1px solid #ddd;
+	    background: transparent url(../img/arrow-up.png) no-repeat center center;
+	}
+
+	
+	.jcarousel-prev-vertical:hover, 
+	.jcarousel-prev-vertical:focus {
+		//background-color: #fff;
+	}
+	
+	.jcarousel-prev-vertical:active {
+		//background-color: #fff;
+	}
+	
+	.jcarousel-prev-disabled-vertical,
+	.jcarousel-prev-disabled-vertical:hover,
+	.jcarousel-prev-disabled-vertical:focus,
+	.jcarousel-prev-disabled-vertical:active {
+		cursor: default;
+		background: transparent url(../img/arrow-up.png) no-repeat center center;
+		opacity: 0.2;
+	}
+
+
+}

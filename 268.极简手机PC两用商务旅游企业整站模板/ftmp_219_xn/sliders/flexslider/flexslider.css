@@ -1,0 +1,233 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* Browser Resets */
+
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+
+.flexslider {
+	position: relative;
+	margin-bottom: 35px;
+	padding: 0;
+	zoom: 1;
+}
+
+	.flexslider .slides > li {
+		display: none;
+		-webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+
+		.flexslider .slides img {
+			display: block;
+			visibility: hidden;
+			margin: 0;
+			max-width: 100%; 
+		}
+
+/* Clearfix for the .slides element */
+
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+
+.flexslider .slides-wrap {
+	position: relative;
+}
+
+.flexslider .slides {zoom: 1;}
+
+.light .flexslider .slides {
+	background: url(theme/loading-light.gif) no-repeat 50% 50%;
+}
+
+.dark .flexslider .slides {
+	background: url(theme/loading-dark.gif) no-repeat 50% 50%;
+}
+
+.flexslider .slides > li {
+	position: relative;
+	text-align: center;
+}
+
+	.flexslider .slides .slides-entry {
+		position: relative;
+		display: none;
+	}
+	
+	.flexslider .flex-entry {
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.flexslider .flex-entry h1 {
+		margin-bottom: .7em;
+		font-style: italic;
+		font-weight: 700;
+		line-height: 1.1;
+		word-spacing: -2px;
+	}
+	
+	.flexslider .flex-entry span {
+		font-family: 'Droid Serif',serif;
+		font-size: 1.154em;
+		font-style: italic;
+	}
+
+.flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+			   
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+
+.flex-caption {
+	width: 96%;
+	padding: 2%;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.3);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+	font-size: 14px; 
+	line-height: 18px;
+}
+
+/* Direction Nav */
+
+.flex-direction-nav {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+	.flex-direction-nav li {
+		float: left;
+		margin: 0 0 0 1px;
+	}
+
+		.flex-direction-nav li .disabled {
+			opacity: .3;
+			filter:alpha(opacity=30);
+			cursor: default;
+		}
+
+			.flex-direction-nav li a {
+				display: block;
+				margin: 0;
+				width: 30px;
+				height: 30px;
+				background-image: url(theme/bg_direction_nav.png);
+				background-repeat: no-repeat;
+				cursor: pointer;
+				text-indent: -999em;
+				
+				-webkit-transition: background-color .2s linear;
+				   -moz-transition: background-color .2s linear;
+					-ms-transition: background-color .2s linear;
+					 -o-transition: background-color .2s linear;
+						transition: background-color .2s linear;
+			}
+			
+			.light .flex-direction-nav li a {background-color: #1f221e;}
+			.dark .flex-direction-nav li a {background-color: #7E8A83;}
+			
+			.dark .flex-direction-nav li .prev {background-position: left bottom;}
+			.dark .flex-direction-nav li .next {background-position: right bottom;}
+
+			.flex-direction-nav li .next {background-position: top right;}
+			.flex-direction-nav li .prev {background-position: 0 0;}
+
+			.light .flex-direction-nav li .next:hover,
+			.dark .flex-direction-nav li .next:hover {background-position: right -30px;}
+			
+			.light .flex-direction-nav li .prev:hover,
+			.dark .flex-direction-nav li .prev:hover {background-position: left -30px;}
+
+			.flex-direction-nav li a:hover {background-color: #a6412b;}
+
+/* Control Nav */
+
+.flex-control-nav {
+    opacity: 1;
+    text-align: center;
+    width: 100%;
+    z-index: 8;
+}
+
+	.flex-control-nav li {
+		margin: 0 0 0 5px;
+		display: inline-block; 
+		zoom: 1; 
+	}
+
+	.flex-control-nav li:first-child {margin: 0;}
+
+		.flex-control-nav li a {
+			float: left;
+			display: block;
+			margin-right: 2px;
+			width: 50px;
+			height: 4px;
+			border: 0 none;
+			background-color: #A4A9A4;
+			text-indent: -9999px;
+			cursor: pointer;
+			-moz-transition: background-color 0.25s linear 0s;
+			-moz-transition: background-color 0.25s linear 0s;
+			-ms-transition: background-color 0.25s linear 0s;
+			-o-transition: background-color 0.25s linear 0s;
+			transition: background-color 0.25s linear 0s;
+		}
+		
+		body.light .flex-control-nav li a {background-color: #a4a9a4;}
+		body.dark .flex-control-nav li a {background-color: #58605b;}
+
+		.flex-control-nav li a:hover {background-color: #858985;}
+		
+		.flex-control-nav li a.active {cursor: auto;}
+		.flex-control-nav li a.active:hover {cursor: auto;}
+		
+		body.light .flex-control-nav li a.active,
+		body.dark .flex-control-nav li a.active {background-color: #a6412b;}
+		
+		body.light .flex-control-nav li a.active:hover {background-color: #858985 !important;}
+		body.dark .flex-control-nav li a.active:hover {background-color: #858985 !important;}

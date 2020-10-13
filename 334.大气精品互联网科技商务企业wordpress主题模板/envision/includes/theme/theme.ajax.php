@@ -1,0 +1,1 @@
+<?php /** slient is gold */ ?>

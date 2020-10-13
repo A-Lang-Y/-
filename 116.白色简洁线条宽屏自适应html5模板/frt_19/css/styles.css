@@ -1,0 +1,328 @@
+/*
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
+Coder: lsa, free.responsive.templates@gmail.com
+Created: August 23, 2012
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Cutive', serif;
+	font-size: 100%;
+	background: url(../images/siteBackground.jpg);
+	margin: 0;
+	padding: 0;
+	color: #858585;
+	text-shadow: 0 0px, 1px 1px #ffffff;
+}
+h1 {
+	color: #363636;
+	font-size: 3.428571428571429em;
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: normal;
+}
+h2, h3 {
+	color: #363636;
+	font-size: 1.714285714285714em;
+	font-family: 'Stoke', serif;
+	font-weight: normal;
+}
+h3 {
+	border-bottom: 1px solid #858585;
+	padding-bottom:5px;
+	margin:20px 0;
+}
+a img { 
+	border: none;
+}
+a {
+	color: #d34e16;
+	text-decoration: none; 
+}
+a:hover, a:active, a:focus { 
+	color: #d34e16;
+	text-decoration: none;
+}
+h1 a {
+	color:#363636;
+	float:left;
+	padding:20px 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+p {
+	line-height: 140%;
+}
+hr {
+	margin:5px 0 15px 0;
+	background:#858585;
+	height:1px;
+	border:0;
+}
+.more {
+	padding-top:5px;
+}
+.wrapper {
+	width: 93.75%; /* 960px/1024px  */
+	margin: 0 auto
+}
+.headerPicContainer {
+	background:#e7e7e7;
+}
+.websiteDescription {
+	padding:20px;
+}
+.mainContent {
+	float: right;
+	width: 72.91666666666667%; /* 700px/960px  */
+}
+.parkNewsLast {
+	padding-right:0px !important;
+}
+.parkNews li {
+	list-style: none;
+	width: 31.42857142857143%; /* 220px/700px */
+	display: inline;
+	float: left;
+	padding-right: 02.85714285714286%;
+}
+.blockTitle {
+	color: #363636;
+	padding: 0 0 10px 0;
+}
+.birchNews {
+	float: left;
+	width: 65.71428571428571%; /* 460px/700px */
+}
+.birchNews li {
+	list-style:none;
+	display:block;
+	float:left;
+	padding-bottom:24px;
+}
+.birchNewsLast, .ourParkLast {
+	padding-bottom:0px !important;
+}
+.birchNewsPic {
+	float:left;
+	width: 47.82608695652174%; /* 220px/460px */
+}
+.birchNewsContent {
+	padding-left: 52.17391304347826%; /* 240px/460px */
+}
+.ourPark {
+	margin-left:68.57142857142857%; /* 480px/700px */
+}
+.ourPark li {
+	padding-bottom:20px;
+	list-style:none;
+}
+.sidebar {
+	margin:0 75% 0 0 ; /* 720px/960px  */
+}
+.sidebarFirst {
+	border-top:1px solid #858585;
+}
+.sidebar li {
+	list-style:none;
+	width:100%;
+	border-right:1px solid #858585;
+	border-bottom:1px solid #858585;
+	border-left:1px solid #858585;
+}
+.sidebar li a {
+	display:block;
+	background:#ffffff url(../images/p.png) no-repeat 10px 17px;
+	padding:7px 10px 7px 17px;
+}
+.sidebar li a:hover {
+	background:#e7e7e7 url(../images/p2.png) no-repeat 10px 17px;
+	color:#363636;
+}
+footer {
+	background: #f3f3f3;
+	margin-top:20px;
+}
+footer ul {
+	padding: 20px 0;
+	text-align:center;
+}
+footer li {
+	display: inline;
+	padding: 0 1%;
+}
+footer li span {
+	color: #363636;
+}
+footer a {
+	text-decoration: underline;
+}
+.clearfloat { 
+	clear: both;
+	height: 0;
+	line-height: 0px;
+}
+/**************************/
+/*********************************Begin main menu****************************************/
+/**************************/
+nav {
+	float:right;
+	padding-top:40px;
+}
+nav li {
+	display: inline;
+	list-style: none;
+	padding:1px;
+}
+nav li a {
+	font-size:1.285714285714286em;
+	display:inline;
+	color:#ffffff;
+	text-shadow: none;
+	background:#363636;
+	padding:4px 7px;
+}
+nav li a:hover {
+	background:#d34e16;
+	color:#ffffff;
+}
+nav #active a {
+	background:#d34e16;
+	color:#ffffff;
+}
+/**************************/
+/*********************************End main menu****************************************/
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 960px or less */
+@media screen and (max-width: 960px) {
+	.wrapper {
+		width:93.75%; /* 960px/1024px  */
+		margin:0 auto;
+	}
+	.headerPic {
+		width: auto;
+		float: none;
+		padding:20px;
+	}
+	.websiteDescription {
+		margin-left:0;
+	}	
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	.birchNews {
+		float:none;
+		width:auto;
+	}
+	.ourPark {
+		margin-left:0;
+	}
+	.mainContent {
+		float:none;
+		width:auto;
+	}
+	.sidebar {
+		margin:0;
+	}
+	h1 {
+		text-align:center;
+	}
+	h1 a {
+		float:none;
+	}
+	nav {
+		float: none;
+		padding-top: 10px;
+	}
+	nav li {
+		display: block;
+		list-style: none;
+		padding:1px;
+		text-align:center;
+	}
+	nav li a {
+		display: block;
+	}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	.parkNews li {
+		display:block;
+		width:auto;
+		padding-right:0 !important;
+		padding-bottom:20px;
+	}
+	h1 {
+		text-align:center;
+		font-size:2.42857em;
+	}
+	h1 a {
+		float:none;
+	}
+	nav {
+		float: none;
+		padding-top: 10px;
+	}
+	nav li {
+		display: block;
+		list-style: none;
+		padding:1px;
+		text-align:center;
+	}
+	nav li a {
+		display: block;
+	}
+	.birchNewsPic {
+		float:none;
+		width:auto;
+	}
+	.birchNewsContent {
+		padding-left:0;
+	}
+}
+@media (min-width: 981px) {
+	.headerPic {
+		width:500px;
+		float:left;
+		padding:20px;
+	}
+	.websiteDescription {
+		margin-left:500px;
+	}	
+	.birchNews {
+		float:none;
+		width:auto;
+	}
+	.birchNews li {
+		display: inline;
+		float: left;
+		list-style: none outside none;
+		padding-right: 2.85714%;
+		width: 31.4286%;
+	}
+	.birchNewsPic {
+		float:none;
+		width:auto;
+	}
+	.birchNewsContent {
+		padding-left:0;
+	}
+	.birchNewsLast {
+		padding-right:0 !important;
+	}
+	.ourPark {
+		margin-left:0;
+	}
+
+}
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/

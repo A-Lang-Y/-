@@ -1,0 +1,263 @@
+
+
+/******************************* General Styles **********************************/
+html, body { font-family: 'Open Sans', sans-serif; font-size: 12px; padding: 0px; margin: 0px; margin-top: 10px; color: white; background: #596168; }
+body { width: 100%; display: table; }
+p { font-size: 14px; color: #aeb5ba; max-width: 500px; margin-left: auto; margin-right: auto; }
+a { text-decoration: none; color: white; }
+ul { padding: 0; }
+header { position: absolute; text-align: center; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 350px; }
+h1 { font-size: 30px; font-weight: 600; color: white; text-transform: uppercase; }
+h2  { font-size: 14px; font-weight: normal; color: white; text-align: center; margin: 0; }
+
+.container { position:relative; width: 894px; height: 853px; padding-left: 0; margin: 0 auto; }
+
+.templatemo_footer { width: 894px; padding: 20px; margin: auto; text-align: center; }
+	
+.menu {  position: relative; }
+.menu i {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: bottom;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+.content {  position: absolute; top: 470px; left: 20px; width: 100%; text-align: center; }
+.content .hexagon_container {  display: inline-block;  margin-left: -20px; }
+.content-description { margin-left: -30px; }
+.pagination { position: absolute; top: 790px; text-align: center; }
+.pagination li {
+  font-size: 16px;
+  display: inline-block;
+  list-style: none;
+  float: left;
+  width: 25px;
+  height: 25px;
+  background-color: #65a8dd;
+  margin-right: 5px;
+  padding: 2px;
+  cursor: pointer;
+
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.pagination li:hover, .pagination li.active { background-color: #a2c044; }
+.hexagon {
+  float: left;
+  overflow: hidden;
+  visibility: hidden;
+
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+  cursor: pointer;
+}
+.hexagon2 { width: 180px; height: 144px; }
+.hexagon-in1 {
+  overflow: hidden;
+  width: 180px;
+  height: 144px;
+
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.hexagon-in2 {
+  overflow: hidden;
+  width: 180px;
+  height: 144px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #65a8dd;
+
+  -webkit-background-size: 125%;
+  -moz-background-size: 125%;
+  background-size: 125%;
+  visibility: visible;
+
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  transform: rotate(-60deg);/**/
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.menu .hexagon-in2:hover { background-color: #a2c044; }
+.menu .hexagon-in2.active { background-color: #a2c044; }
+
+#logo { position: absolute; left: 347px; top: 10px; }
+#logo h2 { font-size: 22px; font-weight: 600; line-height: 144px; }
+
+/******************************* end General Styles **********************************/
+
+/******************************* Gallery Styles **************************************/
+.gallery .hexagon_container { width: 200px; height: 160px; overflow: hidden; }
+.gallery .hexagon-in2:hover { webkit-box-shadow: inset 0 0 0 200px rgba(36,36,36, 0.7); box-shadow: inset 0 0 0 200px rgba(36,36,36, 0.7); }
+.gallery-item { background-color: white; -webkit-box-shadow: inset 0 0 1px #666; -moz-box-shadow: inset 0 0 1px #666; margin-bottom: 30px; overflow: hidden; }
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  display: block;
+  -webkit-transition: all 50ms ease-in-out;
+  -moz-transition: all 50ms ease-in-out;
+  -ms-transition: all 50ms ease-in-out;
+  -o-transition: all 50ms ease-in-out;
+  transition: all 50ms ease-in-out;
+}
+.gallery-item .overlay a {
+  color: #2a2a2a;
+  width: 32px;
+  height: 32px;
+  background-color: #d3b850;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+}
+
+#gallery-content .pagination { left: 398.5px; }
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/************************** end Gallery Styles *******************************/
+
+/************************** Team Styles ***************************************/
+.team .hexagon, .team .hexagon2, .team .hexagon-in1, .team .hexagon-in2 { width: 220px; height: 176px; }
+.team .hexagon_container { width: 220px; height: 176px; overflow: hidden; margin-right: 15px; margin-bottom: 30px; }
+.team .hexagon-in2:hover { webkit-box-shadow: inset 0 0 0 200px rgba(161,192,67, 1); box-shadow: inset 0 0 0 200px rgba(161,192,67, 1); }
+.team-item { background-color: white; -webkit-box-shadow: inset 0 0 1px #666; -moz-box-shadow: inset 0 0 1px #666; margin-bottom: 30px; overflow: hidden; }
+.team-item h2 { font-size: 18px; margin-top: 50px; }
+.team-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  display: block;
+  -webkit-transition: all 50ms ease-in-out;
+  -moz-transition: all 50ms ease-in-out;
+  -ms-transition: all 50ms ease-in-out;
+  -o-transition: all 50ms ease-in-out;
+  transition: all 50ms ease-in-out;
+}
+.team-item .overlay a {
+  width: 32px;
+  height: 32px;
+  background-color: #d2e0a2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 15px;
+}
+
+#team { position: absolute; left: 197px; top: 90px; }
+#team-content .pagination { left: 415.5px; }
+
+/******************************* end Team Styles *************************************/
+
+/******************************* Services Styles *************************************/
+
+.services .hexagon, .services .hexagon2, .services .hexagon-in1, .services .hexagon-in2 {
+  width: 90px;
+  height: 72px;
+}
+.services .hexagon_container { width: 280px; height: 80px; overflow: hidden; margin-left: 15px; margin-bottom: 30px; }
+.services .hexagon-in2:hover {
+  webkit-box-shadow: inset 0 0 0 200px rgba(161,192,67, 1);
+  box-shadow: inset 0 0 0 200px rgba(161,192,67, 1);
+}
+.services i { font-size: 18px; margin-top: 27px; }
+.services h2 { margin-top: 26.5px; font-weight: 600; text-transform: uppercase; text-align: left; margin-left: 100px; }
+.services .hexagon-in2.active { background-color: #a2c044; }
+.services-item { background-color: white; -webkit-box-shadow: inset 0 0 1px #666; -moz-box-shadow: inset 0 0 1px #666; margin-bottom: 30px; overflow: hidden; }
+#services { position: absolute; left: 497px; top: 90px; }
+
+/******************************* end Services Styles ********************************/
+
+/******************************* Contact Styles *************************************/
+form { position: absolute; width: 400px; right: 150px; top: 0px; }
+address { margin-top: 100px; }
+button:focus { border: none; outline:none; }
+
+.templatemo_form  {  width: 100%; }
+.templatemo_form button.btn-primary{
+  float: left; 
+  width: 160px;
+  line-height: 34px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 0px;
+  background: #a2c044;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.templatemo_form input { 
+  float: left; 
+  height: 34px; 
+  padding: 6px 12px; 
+  border-radius: 0px; 
+  background: #343536; 
+  border: 1px solid #4b5257; 
+  width: 160px;
+  margin-right: 5px;
+  color: #cccccc;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+}
+.templatemo_form textarea {
+  float: left; 
+  padding: 6px 12px;
+  width: 350px;
+  height: 130px;
+  border-radius: 0px; 
+  background: #343536; 
+  border: 1px solid #4b5257; 
+  margin-top: 10px; 
+  color: #cccccc;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+}
+.contact a { color: #a2c044; }
+.contact .fa { color: #a2c044; font-size: 18px; margin-right: 10px; vertical-align: middle; }
+.templatemo_contactmap  { width: 250px; height: 214px; }
+.templatemo_contactmap img { position: absolute; width: 250px; height: 214px; top: 0px; left: 70px; }
+
+#templatemo_map { width: 100%; height: 214px; margin-left: 70px; }
+#contact { position: absolute; left: 347px; top: 170px; }
+
+/******************************* end Contact Styles *********************************/

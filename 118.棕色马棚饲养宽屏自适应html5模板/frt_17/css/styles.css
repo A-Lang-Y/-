@@ -1,0 +1,273 @@
+/*
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+Coder: lsa, free.responsive.templates@gmail.com
+Created: 3 August 2012 
+*/
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Cutive', serif;
+	font-size:100%;
+	background: url(../images/templateBackground.jpg);
+	margin: 0;
+	padding: 0;
+	color: #cdcdcd;
+	text-shadow:0 0px, 1px 1px #151313;
+}
+h1 {
+	font-size:2.57em; /* 36px/14px */
+	color:#e49c00;
+	font-family: 'Vast Shadow', sans-serif;
+	text-transform:uppercase;
+}
+h2 {
+	font-size:2.142857142857143em; /* 30px/14px */
+	color:#e49c00;
+	font-weight:inherit;
+}
+h3 {
+	font-size:1.285714285714286em; /* 18px/14px */
+	color:#e49c00;
+	text-transform:uppercase;
+}
+a img { 
+	border: none;
+}
+a:link {
+	color: #e49c00;
+	text-decoration: none; 
+	-moz-transition: 0.4s color linear;
+	-webkit-transition: 0.4s color linear;
+	transition: 0.4s color linear;
+}
+a:visited {
+	color: #e49c00;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { 
+	color: #ffc74e;
+	text-decoration: underline;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+p {
+	line-height:140%;
+}
+.wrapper {
+	width:93.75%; /* 960px/1024px  */
+	margin:0 auto;
+}
+header {
+	float:left;
+	width:33.4375%;  /* 321px/960px */	
+}
+.siteDescription, .siteGallery, footer {
+	float:right;
+	width:65.10416666666667%; /* 625px/960px */
+}
+section h2, section p, section ul, section .horSeparator, footer .horSeparator {
+	padding:10px 01.6%; /* 10px/625px */
+}
+section h3, footer h3 {
+	padding:20px 0 0 0;
+}
+.logo {
+	text-align:center;
+	padding:20px 03.11526479750779%; /* 10px/321px */
+	border-bottom:1px solid #976700;
+	box-shadow:0 0px, 0px 1px #151313;
+}
+.logo a {
+	text-shadow:none;
+	text-decoration:none;
+}
+.logo span {
+	color:#cdcdcd;
+	font-family: 'Cutive', serif;
+	padding: 0 0 10px 0;
+	text-transform:uppercase;
+}
+li#picJohnAdams, li#picOldGlory {
+	margin-right:0px;
+}
+.siteGallery h3 {
+	text-align:center;
+}
+.siteGallery li {
+	float:left;
+	width:28.72%; 
+	list-style:none;
+	text-transform:uppercase;
+	text-align:center;
+	margin:0 06.54% 03.04% 0; 
+	line-height:1.1;
+}
+.siteGallery li img {
+	box-shadow:0 0px, 1px 1px #151313;
+	display:block;
+	margin:0 auto 10px;
+}
+.siteGallery li span b, nav li span b {
+	display:block;
+	color:#cdcdcd;
+	font-size:0.5714285714285714em; /* 8px/14px */
+	letter-spacing:0.1em;
+}
+.siteGallery li a:hover {
+	text-decoration:none;
+}
+footer {
+	text-align: center;
+}
+footer p {
+	font-size:0.8571428571428571em; /* 12px/14px */
+	padding:0 0 30px 0;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	line-height: 0px;
+}
+.horSeparator {
+	background:url(../images/horSeparator.png)  no-repeat center top;
+	height:30px;
+}
+.horSeparator h3 {
+	text-align:center;
+}
+/**************************/
+/*********************************Begin main menu****************************************/
+/**************************/
+nav {
+	padding:0 03.11526479750779%; /* 10px/321px */
+}
+nav li {
+	text-align:center;
+	list-style:none;
+	border-bottom:1px solid #976700;
+	box-shadow:0 0px, 0px 1px #151313;
+	padding:10px 0;
+}
+nav li a {
+	text-transform:uppercase;
+}
+nav li a:hover {
+	text-decoration:none;
+}
+/**************************/
+/*********************************End main menu****************************************/
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	.wrapper {
+		width:93.75%; /* 960px/1024px  */
+		margin:0 auto;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	header {
+		float: none;
+		width: auto;
+	}
+	.logo {
+		text-align:center;
+	}
+	.siteDescription, .siteGallery, footer {
+		float: none;
+		width:auto;
+	}
+	nav ul {
+		text-align:center;
+		margin:10px auto;
+		width:93.75%;
+		padding-bottom:30px;
+	}
+	nav li {
+		display:inline;
+		padding:10px 5px;
+		margin:0 0.1%;
+		background:#251f1d;
+	}
+	nav li span b {
+		display:none;
+	}
+
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	nav {
+		padding:0;
+		margin:0;
+	}
+	nav ul {
+		text-align:center;
+		margin:0;
+		padding: 0 0 10px 0;
+		width:100%;
+	}
+	nav li {
+		display: block;
+		padding:10px 10px;
+		margin:0;
+		background:#251f1d;
+	}
+	nav li span b {
+		display: block;
+	}
+	h2 {
+		font-size:1.14286em
+	}
+	.siteGallery li, li#picJohnAdams {
+		width:47.7%; /* 192px/625px */
+		margin:0 4% 5.04% 0; /* 19px/625px  */
+	}
+	li#picAirborneMagic, li#picMinuteMan, li#picOldGlory {
+		margin-right:0;
+	}
+}
+@media (min-width: 1300px) {
+	header {
+		float: none;
+		width: auto;
+	}
+	.logo {
+		text-align:center;
+	}
+	.siteDescription, .siteGallery, footer {
+		float: none;
+		width:auto;
+	}
+	nav ul {
+		text-align:center;
+		margin:10px auto;
+		width:93.75%;
+		padding-bottom:30px;
+	}
+	nav li {
+		display:inline;
+		padding:10px 10px;
+		margin:0 0.5%;
+		background:#251f1d;
+	}
+	nav li span b {
+		display:none;
+	}
+	.siteGallery li, li#picJohnAdams {
+		width:13.3%; /* 192px/625px */
+		margin:0 4% 0.04% 0; /* 19px/625px  */
+	}
+}
+
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/

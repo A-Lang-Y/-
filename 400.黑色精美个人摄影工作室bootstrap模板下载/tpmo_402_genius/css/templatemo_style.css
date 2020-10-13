@@ -1,0 +1,218 @@
+/*-----------------------------------------------------------------------------------*/
+/*	GENERAL
+/*-----------------------------------------------------------------------------------*/
+body { font: 14px/23px 'Dosis', Arial, sans-serif; -webkit-font-smoothing: antialiased; word-wrap: break-word; color: #dddddd; background-color: #222222; }
+
+a { -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
+
+input::-moz-focus-inner { border: 0; }
+
+a:hover, a:active, a:focus { text-decoration: none; outline: none; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Dosis', serif; color: white; }
+
+.main-content { margin-top: 80px; }
+
+.content { background-color: rgba(0, 0, 0, 0.7); }
+
+.content { display: none; }
+
+.page-header { padding: 20px 30px; margin: 0; border-bottom: 1px solid #a71e2b; }
+
+.page-title { font-size: 20px; text-transform: uppercase; margin: 0; }
+
+.content-inner { padding: 30px; }
+
+.main-content { position: relative; z-index: 9999; }
+
+.bg-image { position: fixed; top: 0; left: 0; background-image: url(../images/bg-homepage.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; width: 100%; height: 100%; z-index: 8; }
+
+.overlay-bg { background-image: url(../images/pattern.png); background-color: rgba(0, 0, 0, 0.4); position: fixed; top: 0; left: 0; width: 100%; min-height: 100%; z-index: 9; }
+
+.language-select { text-align: right; position: relative; z-index: 9999; top: 30px; }
+
+select { background-image: url("../images/select-arrow.png"); background-repeat: no-repeat; background-position: right center; outline: 0; border: 0; background-color: black; color: white; width: 180px; padding: 0 5px; font-size: 13px; height: 30px; line-height: 30px; box-shadow: none; -webkit-box-shadow: 0 0 0 0; -moz-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; text-indent: 0.01px; text-overflow: ''; }
+select::-ms-expand { display: none; }
+
+@-moz-document url-prefix() { select { padding-top: 5px; line-height: 30px; } }
+.widget-title { font-size: 16px; margin: 0 0 25px 0; font-weight: 600; text-transform: uppercase; }
+
+/*------------------------------------------------------
+	HomePage Styling 
+--------------------------------------------------------*/
+.homepage { text-align: center; margin: 0 auto; }
+
+.portfolio-item { overflow: hidden; margin-left: auto; margin-right: auto; margin-bottom: 30px; position: relative; border: 3px solid rgba(0, 0, 0, 0.4); width: 200px; height: 200px; }
+.portfolio-item img { height: 100%; overflow: hidden; }
+.portfolio-item .overlay { background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.portfolio-item .overlay a { position: absolute; width: 40px; height: 40px; background-color: #a71e2b; text-align: center; line-height: 40px; color: white; top: 50%; left: 50%; margin: -20px 0 0 -20px; }
+.portfolio-item:hover .overlay { opacity: 1; visibility: visible; }
+
+/*------------------------------------------------------
+	About Us Styling 
+--------------------------------------------------------*/
+.progress-bar { background-color: #a71e2b; text-transform: uppercase; line-height: 20px; }
+
+.progress { box-shadow: none; background-color: #d4d4d4; -webkit-border-radius: 0; border-radius: 0; }
+
+.our-team { margin-top: 40px; }
+
+.member-thumb { overflow: hidden; }
+.member-thumb img { width: 100%; height: auto; }
+
+.member-infos { background-color: white; padding: 20px; text-align: center; }
+
+.member-name { margin: 0 0 10px 0; color: #222222; text-transform: uppercase; }
+
+.member-role { font-size: 13px; color: #6f6f6f; }
+
+.member-desc { margin: 20px 0; color: #555555; }
+
+.member-social li { display: inline; margin: 0 2px; }
+.member-social li a { color: #626262; width: 26px; height: 26px; text-align: center; line-height: 26px; -webkit-border-radius: 3px; border-radius: 3px; }
+.member-social li a:hover { background-color: #dddddd; }
+
+/*------------------------------------------------------
+	Gallery Styles 
+--------------------------------------------------------*/
+#Grid .mix { display: none; opacity: 0; vertical-align: top; }
+
+.gallery-thumb { overflow: hidden; margin-top: 30px; position: relative; }
+.gallery-thumb img { width: 100%; height: auto; }
+.gallery-thumb .overlay-g { position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; visibility: hidden; opacity: 0; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.gallery-thumb .overlay-g a { position: absolute; width: 40px; height: 40px; background-color: #a71e2b; text-align: center; line-height: 40px; color: white; top: 50%; left: 50%; margin: -20px 0 0 -20px; }
+
+.gallery-item:hover .overlay-g { visibility: visible; opacity: 1; }
+
+.gallery-content { padding: 20px; background-color: white; }
+
+.gallery-category { color: #626262; }
+
+.gallery-title { color: #222222; margin: 0 0 10px 0; }
+
+.filter-work { text-align: right; width: 180px; position: relative; }
+
+.toggle-filter { width: 180px; height: 40px; background-color: black; display: inline-block; text-align: left; line-height: 40px; padding-left: 15px; color: white; position: relative; }
+.toggle-filter:hover { color: white; }
+.toggle-filter:after { font-family: 'FontAwesome'; content: '\f107'; width: 40px; height: 40px; background-color: #a71e2b; display: inline-block; text-align: center; position: absolute; top: 0; right: 0; }
+
+.filter-controls { margin-left: -1px !important; position: absolute; top: 100%; right: 0; display: none; width: 180px; z-index: 9999; }
+.filter-controls li { width: 100%; height: 40px; line-height: 40px; background-color: rgba(0, 0, 0, 0.95); padding: 0 15px; text-align: left; border-top: 1px solid #222222; cursor: pointer; }
+
+/*------------------------------------------------------
+	Services Styles 
+--------------------------------------------------------*/
+.services .service { margin-top: 30px; overflow: hidden; background-color: white; }
+
+.services .header { position: relative; height: 60px; }
+
+.services .header .header-bg { position: absolute; width: 60px; height: 60px; z-index: 2; }
+
+.services .header .service-header { position: absolute; z-index: 3; width: 100%; }
+
+.services .header .service-header .icon { width: 60px; position: relative; float: left; line-height: 60px; height: 60px; text-align: center; }
+.services .header .service-header .icon i { font-size: 18px; }
+
+.services .header .service-header h4 { float: left; line-height: 60px; margin: 0; padding: 0 15px; color: #222222; }
+.services .header .service-header h4.active { color: white; }
+
+.services .body { padding: 20px; color: #3c3c3c; overflow: hidden; }
+
+.services .header .header-bg { background: #a71e2b; }
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/*------------------------------------------------------
+	Contact Page Styles 
+--------------------------------------------------------*/
+.contact-form input { width: 100%; padding: 7px 10px; outline: 0; border: 0; }
+
+textarea { outline: 0; border: 0; padding: 10px; }
+
+label { font-weight: normal; }
+
+.contact-form { margin-top: 30px; }
+.contact-form input { margin-bottom: 20px; height: 40px; }
+
+.full-row textarea { width: 100%; }
+
+input.mainBtn { background-color: #a71e2b; color: white; border: 0; outline: 0; margin-top: 20px; padding: 7px 12px; text-transform: uppercase; }
+
+.our-location li { line-height: 28px; }
+.our-location li span { color: #a71e2b; margin-right: 10px; }
+.our-location li span i { margin-right: 10px; }
+.our-location li a { color: white; }
+
+.google-map { margin-top: 30px; }
+
+.contact-map { width: 100%; overflow: hidden; }
+
+/*-----------------------------------------------------------------------------------*/
+/*	BOOTSTRAP OVERRIDING
+/*-----------------------------------------------------------------------------------*/
+.progess-bars, .member-social, .filter-controls, .our-location, .menu, .main_menu, .social-icons-footer ul { padding: 0; margin: 0; list-style: none; }
+
+/*-----------------------------------------------------------------------------------*/
+/*	HEADER
+/*-----------------------------------------------------------------------------------*/
+.templatemo_logo { text-align: center; margin-bottom: 40px; overflow: hidden; }
+
+/* .main_menu { position: fixed; } */
+
+.menu li { width: 120px; height: 120px; margin-bottom: 3px; background-color: rgba(0, 0, 0, 0.7); text-align: center; }
+.menu li a { width: 70px; height: 70px; color: white; line-height: 72px; border: 1px solid rgba(255, 255, 255, 0.5); display: inline-block; margin: 5px auto 0 auto; -webkit-border-radius: 45px; border-radius: 45px; text-align: center; }
+.menu li a:hover { border-color: white; }
+.menu li a i { text-align: center; margin: 0 !important; font-size: 24px; }
+
+.tooltip { font-size: 16px; width: 120px; }
+
+.responsive-navigation { position: relative; z-index: 99999; }
+
+.menu-toggle-btn { width: 100%; height: 60px; background-color: #a71e2b; display: block; color: white; text-align: center; }
+.menu-toggle-btn:hover { color: white; }
+.menu-toggle-btn i { line-height: 60px; }
+
+.responsive_menu { display: none; position: relative; width: 100%; }
+
+.main_menu li { padding: 20px; background-color: rgba(0, 0, 0, 0.7); border-bottom: 1px solid #333333; }
+.main_menu li:last-child { border-bottom: 0px; }
+.main_menu li a { color: #999999; display: block; font-size: 18px; }
+.main_menu li a:hover { color: white; }
+.main_menu li a i { margin-right: 15px; }
+
+/*-----------------------------------------------------------------------------------*/
+/*	SLIDER
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*	FOOTER
+/*-----------------------------------------------------------------------------------*/
+.site-footer { margin: 40px 0; padding: 15px 0; }
+
+.copyright-text { color: white; }
+.copyright-text a { color: white; }
+
+.social-icons-footer { text-align: right; }
+.social-icons-footer ul li { display: inline; margin-left: 5px; }
+.social-icons-footer ul a { color: white; width: 36px; height: 36px; border: 1px solid white; -webkit-border-radius: 18px; border-radius: 18px; text-align: center; line-height: 36px; }
+.social-icons-footer ul a:hover { background-color: white; color: #222222; }
+
+/********************************
+IPAD LANDSCAPE (1024x768)
+********************************/
+@media only screen and (max-width: 1200px) { .main-content { margin-top: 60px; }
+  .main_menu { position: relative; } }
+/********************************
+IPAD PORTRAIT (768x1024)
+********************************/
+@media only screen and (max-width: 960px) { .site-footer, .social-icons-footer { text-align: center; }
+  .portfolio-item { height: auto; }
+  .portfolio-item img { width: 100%; height: auto; }
+  .team-member { margin-bottom: 30px; }
+  .information { margin-top: 60px; }
+  .portfolio-item { width: auto; }
+  .main-menu { position: relative; } }
+/********************************
+IPHONE 4-4S-5 LANDSCAPE (568x320)
+********************************/
+/********************************
+IPHONE 4-4S-5 PORTRAIT (320x568)
+********************************/
+@media only screen and (max-width: 450px) { .templatemo_logo img { width: 100%; height: auto; } }

@@ -1,0 +1,12 @@
+Cufon.replace('.menu li a', { fontFamily: 'Lora', hover:true });
+Cufon.replace('.slog-1', { fontFamily: 'Lora', textShadow: '2px 2px #c22d03', hover:true });
+Cufon.replace('.slog-2', { fontFamily: 'Lora', textShadow: '2px 2px #c22d03', hover:true });
+Cufon.replace('.slog-3', { fontFamily: 'Lora', textShadow: '2px 2px #c22d03', hover:true });
+Cufon.replace('.news-title', { fontFamily: 'Lora', textShadow: '2px 2px #c22d03', hover:true });
+Cufon.replace('.news-list li a', { fontFamily: 'Lora', textShadow: '2px 2px #c22d03', hover:true });
+Cufon.replace('h3', { fontFamily: 'Lora', hover:true });
+Cufon.replace('.title-1', { fontFamily: 'Lora', hover:true });
+Cufon.replace('.title-2', { fontFamily: 'Lora', hover:true });
+Cufon.replace('.title-3', { fontFamily: 'Lora', hover:true });
+Cufon.replace('.phone-numb', { fontFamily: 'Lora', hover:true });
+Cufon.replace('.social-title', { fontFamily: 'Lora', hover:true });

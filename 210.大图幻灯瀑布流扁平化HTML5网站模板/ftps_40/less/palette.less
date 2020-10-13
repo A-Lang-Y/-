@@ -1,0 +1,47 @@
+/* Vars ----------------------------------------------------*/ 
+
+@fontColor: #656360;
+@fontLightColor: #dcd2be;
+@headingColor: #444444;
+
+@accentColor: #CB5432;
+@fgColor: #f8f5f2;
+@bgColor: #f1ede8;
+@headerColor: #2d2d2d;
+
+
+/* Mixins ----------------------------------------------------*/ 
+
+.box-shadow-full (@x: 0, @y: 5px, @blur: 5px, @spread: -5px, @color: #000) {
+   -moz-box-shadow: @x @y @blur @spread @color;
+   -webkit-box-shadow: @x @y @blur @spread @color;
+   box-shadow: @x @y @blur @spread @color;
+}
+
+.box-shadow (@opa: 0.2) {
+	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,@opa); 
+	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,@opa); 
+	-o-box-shadow: 0px 0px 2px rgba(0,0,0,@opa);
+	box-shadow: 0px 0px 2px rgba(0,0,0,@opa);
+}
+
+.transition(){
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.folder-shadow(){
+	box-shadow: 4px 4px 0 0 rgba(0,0,0,0.2);
+}
+
+.border-radius(@t:40, @r:40px, @b:40px, @l:40px){
+	-moz-border-radius: @t @r @b @l;
+    -webkit-border-radius: @t @r @b @l;
+    border-radius: @t @r @b @l;
+}
+
+.folder-text-shadow(){
+	text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* 初始化 */
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {margin: 0;	padding: 0;}
+
+img, fieldset {border: 0;}
+
+/* set image max width to 100% */
+img {max-width: 100%;height: auto;width: auto\9;} /* \9 在IE6/IE7/IE8/IE9/IE10下生效 */
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+/* disable webkit text size adjust (for iPhone) */
+html {
+	-webkit-text-size-adjust: none;
+}
+
+/* reset webkit search input styles */
+/* 在写样式的时候，iphone会有一些默认样式，比如 <input type=”submit” style=”background:#000″ value=”提交” /> 背景竟然是比较灰，并不黑。使用-webkit-appearance:none可去除系统默认的样式 */
+/* outline: none;定义无轮廓样式*/
+input[type=search] {-webkit-appearance: none;outline: none;}
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {display: none;}
+
+
+/* 全局CSS定义 */
+body{font-family:Microsoft YaHei,Arial,Helvetica,sans-serif;background:none;text-align:center;margin:0 auto;padding:0;font-size:100%;color:#000;}
+
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:bold;}
+ul,ol,li{list-style:none;}
+
+/* 默认链接颜色 */
+a{outline-style:none; color:#000;text-decoration:none}
+a:hover{color:#000;text-decoration:underline;}
+
+/* 通用属性 */
+.clear{clear:both;}
+
+/*常用方法*/
+.hidden{display:none;} 
+.hidden div{border-bottom:solid 1px #EFEFEF;}
+.hand{cursor:pointer;}
+.fontArial{font-family:'Arial';}
+
+/* CSS空白 */
+.blank1{margin:0 auto;height:1px;font-size:1px;background:#C5DBE8;overflow:hidden;clear:both;}
+.blank3{margin:10px auto 25px;height:3px;font-size:1px;background:url(../../../images/2014/m/line_1x3.jpg);clear:both;}
+.blank2{margin:0 auto;height:2px;font-size:1px;clear:both;}
+
+.blank5{margin:0 auto;height:5px;font-size:1px;clear:both;}
+.blank8{margin:0 auto;height:8px;font-size:1px;clear:both;}
+.blank10{margin:0 auto;height:10px;font-size:1px;clear:both;}
+.blank20{margin:0 auto;height:20px;font-size:1px;clear:both;}
+.blank30{margin:0 auto;height:30px;font-size:1px;clear:both;}
+.blank40{margin:0 auto;height:40px;font-size:1px;clear:both;}
+.blank60{margin:0 auto;height:60px;font-size:1px;clear:both;}
+
+header{margin:0 auto;width:100%;max-width:960px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>960?"960px":"");}
+.loc_logo_nav{width:100%;color:#FFF;
+background: #C23434;
+background-image: -khtml-linear-gradient(top, #AB3030, #C23434);
+background-image: -rim-linear-gradient(top, #AB3030, #C23434);
+background-image: -ms-linear-gradient(top, #AB3030, #C23434);
+background-image: -o-linear-gradient(top, #AB3030, #C23434);
+background-image: -moz-linear-gradient(top, #AB3030, #C23434);
+background-image: -webkit-linear-gradient(top, #AB3030, #C23434);
+background-image: linear-gradient(top, #AB3030, #C23434);
+}
+.loc_logo_navbtn{width:100%;height:50px;line-height:50px;border-bottom:solid 1px #A0141D;color:#FFF;font-weight:bold;cursor:pointer;}
+.loc_logo{float:left;}
+.loc{float:left;width:50px;height:50px;border-right:solid 1px #A0141D;overflow:hidden;}
+.loc img{width:50px;height:50px;}
+.logo{float:left;padding-left:10px;}
+.logo h1 a{font-size:1.25em;color:#FFFFFF;height:50px;line-height:50px;font-weight:bold;}
+.logo h1 a:hover{text-decoration:none;color:#FFCC00;}
+.navbtn{float:right;width:80px;height:50px;overflow:hidden;background:url(../../../images/2014/m/icon_5F25x20.png) center 15px no-repeat;overflow:hidden;border-left:solid 1px #A0141D;
+-khtml-box-shadow:-1px 0 #C3464F;	/* Konqueror */
+-rim-box-shadow:-1px 0 #C3464F;	/* RIM */
+-ms-box-shadow:-1px 0 #C3464F;	/* Microsoft */
+-o-box-shadow:-1px 0 #C3464F; 	/* Opera */
+-moz-box-shadow:-1px 0 #C3464F; /* Mozilla(如 Firefox) */
+-webkit-box-shadow:-1px 0 #C3464F;	/* Webkit（如 Safari 和 Chrome） */
+box-shadow:-1px 0 #C3464F;	/* W3C */
+}
+
+nav{margin:0 auto;padding:0 10px;border-top:solid 1px #C3464F;display:block;}			
+nav ul{padding:10px 0;}
+nav ul li{float:left;width:16.6666666%;line-height:2.0em;text-align:left;}
+nav ul li a:link {color:#FFF;}
+nav ul li a:visited{color:#FFF;}
+nav ul li a:hover{color:#FFF;text-decoration:underline;}
+nav ul li a:active{color:#FFF;}
+
+section{margin:0 auto;width:100%;max-width:960px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>960?"960px":"");}
+
+/* 滑动门通用样式*/
+/* tabbed_content */
+.tabbed_content{background-color:none;max-width:960px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>960?"960px":"");}
+.tabs{width:100%;height:45px;line-height:45px;position:relative;background:#F3F3F3;border-bottom:solid 1px #CCC;overflow:hidden;}
+.tabs h2{padding-left:10px;float:left;}
+.tabs .moving_bg{width:25%;_width:15%;height:43px;border-bottom:solid 2px #B52232;background-color:#FFF;position:absolute;z-index:190;left:0;background-position:bottom left;background-repeat:no-repeat;font-weight:bold;overflow:hidden;}
+.tabs2 .moving_bg{width:20%}
+.tabs3 .moving_bg{width:16.6666666%;}
+.tabs .tab_item{display:block;float:left;width:25%;color:#ffffff;text-align:center;z-index:200;position:relative;cursor:pointer;color:#000;font-weight:bold;overflow:hidden;}
+.tabs2 .tab_item{width:20%;}
+
+.tabs3 .tab_item{width:16.6666666%;}
+.tabs .tab_item:hover{color:#B52232;font-weight:bold;}
+.tabbed_content .slide_content{overflow:hidden;background-color:none;position:relative;width:100%;}
+.tabslider{width:400%}
+.tabslider2{width:500%}
+.tabslider3{width:600%}
+.tabslider ul{float:left;margin:0px;width:25%;text-align:left;-ms-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;/* padding和border被包含在定义的width和height之内 */background:none;}
+.tabslider2 ul{width:20%}
+.tabslider3 ul{width:16.6666666%;}
+.tabslider ul a{margin-bottom:10px;display:block;color:#000;text-decoration:none;}
+.tabslider ul a:hover{color:#00;text-decoration:underline;}
+.tabslider .hidden div{padding:10px 10px;_padding:10px 0;*padding:10px 0;font-size:16px;}
+.tabslider ul li span,.tabslider .hidden div span{display:block;width:100%;color:#C5C5C5;text-align:right;font-size:0.875em;}
+.tabslider ul li span em,.tabslider .hidden div em{float:left;font-style:normal;}
+.tabslider ul li{padding:10px;border-bottom:solid 1px #EFEFEF;}
+
+.more,.computer{margin:20px auto;width:auto;max-width:960px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>960?"960px":"");height:40px;line-height:40px;background:#F3F3F3;border:solid 1px #EFEFEF;text-align:center;cursor:pointer;overflow:hidden;}
+
+/* 文章页 */
+article{margin:0 auto;padding:25px 10px;width:auto;max-width:940px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>940?"940px":"");text-align:left;}
+article h2{font-size:1.25em;}
+article .time_source{margin:10px 0;color:#999;text-align:left;}
+article .time_source span{margin-right:20px;}
+article .editor p{text-align:left;font-size:0.8em;line-height:2.0em;color:#696969;}
+article .editor p em{font-style:normal;font-weight:bold;}
+article .content{padding:10px 0;word-wrap:break-word;overflow:hidden;}
+article .content p{margin-bottom:10px;line-height:1.8em;text-align:left;}
+
+
+#user_comment{margin:0 auto;width:auto;max-width:960px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>960?"960px":"");padding:0 10px;}
+#user_comment .title{height:50px;line-height:50px;border-bottom:solid 1px #CCC;text-align:right;}
+#user_comment .title span{color:#C9C9C9;font-size:0.75em;}
+#user_comment .title h3{float:left;font-size:1.25em;}
+#user_comment .title h3 em{font-style:normal;font-size:0.8em;color:#C9C9C9;}
+#user_comment form{width:100%;padding:10px 0;}
+#user_comment form textarea{width:100%;max-width:958px;padding: 5px;height:30px; font-size:16px;line-height:24px;border:solid 1px #CCC;background:#FFF;-moz-box-sizing: border-box;box-sizing: border-box;/* padding和border被包含在定义的width和height之内 */}
+/*user_comment form textarea:focus{height:130px;}*/
+#user_comment form input{float:right;margin-top:10px;width:60px;height:32px;line-height:32px;background:#F3F3F3;border:solid 1px #CCC;overflow: hidden;
+background: #C23434;
+background-image: -khtml-linear-gradient(top, #E0E0E0, #F3F3F3);
+background-image: -rim-linear-gradient(top, #E0E0E0, #F3F3F3);
+background-image: -ms-linear-gradient(top, #E0E0E0, #F3F3F3);
+background-image: -o-linear-gradient(top, #E0E0E0, #F3F3F3);
+background-image: -moz-linear-gradient(top, #E0E0E0, #F3F3F3);
+background-image: -webkit-linear-gradient(top, #E0E0E0, #F3F3F3);
+background-image: linear-gradient(top, #E0E0E0, #F3F3F3);
+}
+.comment{padding:20px 0;}
+.commentbox{padding:20px 0;border-bottom:solid 1px #EFEFEF;text-align:left;}
+.name_time{margin-bottom:10px;padding-left:15px;width:100%;background:url(../../../images/2014/m/icon_9x16.png) left 2px no-repeat;text-align:left;color:#A7ABAC;-moz-box-sizing: border-box;box-sizing: border-box;}
+.name_time span{float:right;font-size:0.75em;}
+#top{margin:0 auto;position:relative;width:100%;max-width:960px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>960?"960px":"");height:30px;}
+#goTopBtn {position:absolute;right:10px;top:16px;width:31px;height:11px;cursor:pointer;display:block;overflow:hidden;}
+footer{margin:0 auto;margin-top:10px;width:auto;max-width:960px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>960?"960px":"");padding:10px;background:#F3F3F3;border-top:solid 1px #E3E3E3;font-size:0.75em;color:#666;}

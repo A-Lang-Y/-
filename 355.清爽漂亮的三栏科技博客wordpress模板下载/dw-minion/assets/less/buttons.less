@@ -1,0 +1,132 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+// Core
+.btn {
+  display: inline-block;
+  padding: 5px 15px; 
+  margin-bottom: 0; // For input.btn
+  line-height: 30px;
+  font-size: @baseFontSize;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: @white;
+  border: none;
+  font-family: @sansFontFamily;
+  background-color: @btnBackground;
+  text-transform: capitalize;
+  .border-radius(@baseBorderRadius);
+  .transition(background .2s);
+
+  // Hover/focus state
+  &:hover {
+    background-color: @btnBackgroundHover;
+    text-decoration: none;
+    color: @white;
+  }
+
+  // Focus state for keyboard and accessibility
+  &:focus {
+  }
+
+  // Disabled state
+  &.disabled,
+  &[disabled] {
+    cursor: default; 
+    .opacity(30);
+  }
+}
+
+
+
+// Button Sizes
+// --------------------------------------------------
+
+// Large
+.btn-large {
+  padding: @paddingLarge;
+}
+.btn-large [class^="icon-"], 
+.btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+
+// Small
+.btn-small {
+  line-height: @lineHeightSmall; 
+  font-size: @fontSizeSmall;
+  padding: 5px 12px;
+}
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+
+input[type="submit"].btn-small {
+  height: 30px;
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+// Set the backgrounds
+// -------------------------
+.btn-primary {
+  .buttonBackground(@btnPrimaryBackground);
+}
+// Warning appears are orange
+.btn-warning {
+  .buttonBackground(@btnWarningBackground);
+}
+// Danger and error appear as red
+.btn-danger {
+  .buttonBackground(@btnDangerBackground);
+}
+// Success appears as green
+.btn-success {
+  .buttonBackground(@btnSuccessBackground);
+}
+// Info appears as a neutral blue
+.btn-info {
+  .buttonBackground(@btnInfoBackground);
+}
+// Inverse appears as dark gray
+.btn-inverse {
+  .buttonBackground(@btnInverseBackground);
+}
+
+
+// Link buttons
+// --------------------------------------------------
+
+// Make a button look and behave like a link
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  .box-shadow(none);
+}
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: @linkColor;
+  .border-radius(0);
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: @linkColorHover;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: @gray3;
+  text-decoration: none;
+}

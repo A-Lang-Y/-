@@ -1,0 +1,185 @@
+/*
+ * jQuery Nivo Slider v3.0.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+}
+
+
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+	margin-bottom:0;
+
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption{width:960px;margin:0 auto;}
+
+ .caption {
+	font-family:Droid Sans;
+	position:absolute;
+	bottom:100px;
+	background:url(../img/caption-bg.png);
+	color:#fff;
+	width:750px;
+	z-index:8;
+	left:-225;
+	overflow: hidden;
+	padding-top:10px;
+	text-transform:lowercase;
+	border-right:3px solid #f65529;
+	border-radius:3px;
+}
+
+.caption h6{
+margin-left:18px;
+margin-top:10px;
+margin-bottom:5px;
+clear:both;
+font-size:18px;
+padding-left:20px;
+background:url(../img/caption-qutoes.png) no-repeat left;
+position:relative;
+height:33px;
+color:#fff;
+}
+
+.caption p {
+	padding:5px;
+	font-size:14px;
+	color:#fff;
+	width:90%;
+	top:-15px;
+	padding-left:35px;
+	position:relative;
+	line-height:25px;
+	text-transform:lowercase;
+}
+.catpion a {
+	display:inline !important;
+}
+.nivo-html-caption {
+display:none;
+}
+
+
+/* Direction nav styles (e.g. Next & Prev) */
+.control{
+background:url(../img/slider-navbg.png);
+width:100%;
+height:48px;
+}
+
+.nav-wrapper{
+width:960px;
+margin:0 auto;
+}
+.nivo-directionNav {
+float:left;
+height:48px;
+position:relative;
+}
+
+
+
+.nivo-directionNav a {
+position:relative;
+z-index:9;
+cursor:pointer;
+text-indent:-999999px;
+width:33px;
+height:33px;
+z-index:8;
+}
+.nivo-prevNav {
+background:url(../img/left-ar.png) no-repeat;
+display:block;
+top:7px;
+}
+.nivo-nextNav {
+  background: url(../img/right-ar.png) no-repeat scroll 0 0 transparent;
+  display: block;
+  left: 38px;
+  top: -26px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	width:150px;
+	float:right;
+	background:#292929;
+	border-radius:4px;
+	border:1px solid #333;
+	right:14%;
+	position:relative;
+	z-index:99;
+	text-indent:-9999px;
+	bottom:40px
+}
+.nivo-controlNav a {
+	cursor:pointer;
+	background:url(../img/not-activeb.png) no-repeat;
+	width:18px;
+	height:22px;
+	float:left;
+	margin:5px 1px 5px 5px;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+	background:url(../img/active-b.png) no-repeat;
+
+}
+
+
+ 
+@media screen and (max-width: 1024px){
+ .nivo-controlNav{right:10px;}
+  .caption{height:auto;}
+}

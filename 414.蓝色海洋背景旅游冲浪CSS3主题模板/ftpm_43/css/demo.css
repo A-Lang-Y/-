@@ -1,0 +1,183 @@
+/*--------- slider ---------*/
+
+
+.slider {
+	width:970px;
+	margin:0 auto;
+	position:relative;
+	z-index:2
+}
+.items {
+	display:none;
+}
+
+.pagination {
+		position:absolute;
+		top:551px;
+		left:369px;
+		display:inline-block;
+		height:20px;
+		width:140px;
+		border:1px solid #000;
+		background:url(../images/pagination-bg.gif) left top repeat-x;
+		border-radius:15px;
+		-moz-border-radius:15px;
+		-webkit-border-radius:15px;
+		padding:5px 0 0 20px;		
+		z-index:60;
+	}
+	.pagination li {
+		float:left;
+		padding:0 3px 0 0;
+		font-size:0;
+		line-height:0;
+		margin:0;
+		color:#252525;
+		background:none !important;
+	}
+		.pagination a {
+			display:block;
+			width:15px;
+			height:15px;
+			background:url(../images/pagination-a-bg.gif) left 0px no-repeat;
+			font-size:0;
+			line-height:0;
+			text-decoration:none;
+		}
+			.pagination li.current a {
+				background:url(../images/pagination-a-active.gif) left 0px no-repeat;
+			}
+
+.prev {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../images/prev.png) no-repeat 0 0;
+	position:absolute;
+	z-index:15;
+	bottom:110px;
+	right:31px;
+}
+	.prev:hover,
+	.next:hover {
+		background-position:0 -111px;
+	}
+.next {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../images/next.png) no-repeat 0 0;
+	position:absolute;
+	z-index:15;
+	bottom:110px;
+	right:0px;
+}
+
+	
+.play {
+	display:block;
+	width:45px;
+	height:22px;
+	background:url(../images/pagination-bg.gif) left top repeat-x;
+	position:absolute;
+	z-index:15;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	top:552px;
+	left:823px;
+	padding:2px 0 0 0;
+	text-align:center;
+	color:#fff;
+	text-decoration:none;
+}
+	.play span {
+		display:none;
+	}
+	.play em {
+		font-style:normal;
+		display:block;
+	}
+.paused span {
+	display:block;
+}
+.paused em {
+	display:none;
+}
+.banner {
+    color: #FFFFFF;
+    font-family: 'Orbitron',sans-serif;
+    font-weight: bold;
+    left: auto !important;
+    overflow: hidden;
+    position: absolute;
+    right: -2px !important;
+    top: 367px;
+    width: 478px;
+    z-index: 15;
+}
+.text1 {
+    display: inline-block;
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 60px;
+    margin-right: 9px;
+    margin-top: 10px;
+}
+
+
+.text2 {
+    display: block;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: -9px;
+    text-transform: uppercase;
+}
+
+.text3 {
+	font-size:60px;
+	display:inline-block;
+	line-height:72px;
+}
+
+.progbar {
+	background:#000;
+	width:100%;
+	height:2px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:999;
+}
+.numStatus {
+	display:block;
+	width:45px;
+	height:22px;
+	background:url(../images/pagination-bg.gif) left top repeat-x;
+	position:absolute;
+	z-index:15;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	top:551px;
+	left:583px;
+	padding:2px 0 0 0;
+	text-align:center;
+	color:#fff;
+	text-decoration:none;
+}
+/*-------- end slider -----------*/
+
+.col-1 {
+	float:left;
+	width:400px;
+	padding-right:50px
+}
+* + html .min {
+	min-height:45px;
+}
+.col-2 {
+	float:left;
+	width:400px;
+}
+/*-------- end preset -------*/

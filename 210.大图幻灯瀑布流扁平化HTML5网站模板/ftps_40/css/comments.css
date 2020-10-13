@@ -1,0 +1,309 @@
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* COMMENTS ------------------------------------------------------------*/
+#comments-wrap {
+  padding-top: 40px;
+  margin-bottom: 60px;
+}
+#comments-wrap .heading {
+  margin-bottom: 41px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #ccc;
+}
+#comments-wrap a {
+  text-decoration: none;
+}
+#comments-wrap .commentlist {
+  margin: 0 0 30px 0;
+  list-style-type: none;
+  font-size: 13px;
+  /* CHILDREN ------------------------------------------------------------*/
+
+  /* REPLY ------------------------------------------------------------*/
+
+  /* META ------------------------------------------------------------*/
+
+  /* COMMENTS PAGINATION ------------------------------------------------------------*/
+
+}
+#comments-wrap .commentlist .comment-body {
+  border-bottom: 1px  solid #ccc;
+  margin: 0 0 18px;
+  padding: 25px 0px 20px 0px;
+}
+#comments-wrap .commentlist > li:last-child {
+  border: none;
+  padding-top: 0px;
+}
+#comments-wrap .commentlist .v-card {
+  color: #ccc;
+}
+#comments-wrap .commentlist .comment .avatar {
+  float: right;
+  margin: 2px 15px 0 0;
+  height: 35px;
+  width: 35px;
+}
+#comments-wrap .commentlist .respond-title-wrap,
+#comments-wrap .commentlist .comment-title-wrap {
+  border-bottom: 1px solid #484848;
+  padding: 0 0 15px 0;
+  margin: 0 0 30px 0;
+}
+#comments-wrap .commentlist #respond-title,
+#comments-wrap .commentlist #comments,
+#comments-wrap .commentlist .add-comment-link {
+  font-size: 15px;
+  color: #2c2d31;
+  font-weight: bold;
+}
+#comments-wrap .commentlist .respond-caption {
+  font-size: 11px;
+}
+#comments-wrap .commentlist .add-comment-link a {
+  font-size: 12px;
+  padding: 0 15px 0 0;
+}
+#comments-wrap .commentlist .comment-body {
+  position: relative;
+  margin-bottom: 20px;
+}
+#comments-wrap .commentlist ul li {
+  padding: 0 0 0px 0;
+}
+#comments-wrap .commentlist ul li:first-child .comment-border {
+  border-bottom: 1px #ccc solid;
+  margin: 18px 0 0 0;
+  height: 18px;
+  width: 430px;
+}
+#comments-wrap .commentlist .comment p:last-child {
+  margin: 0;
+}
+#comments-wrap .commentlist .comment .children {
+  list-style-type: none;
+  margin-left: 13%;
+}
+#comments-wrap .commentlist .comment .children .comment-body {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+#comments-wrap .commentlist .comment .children .comment-meta {
+  margin-left: 0px;
+  margin-bottom: 18px;
+}
+#comments-wrap .commentlist .comment .children .comment .avatar {
+  height: 35px;
+  width: 35px;
+}
+#comments-wrap .commentlist .comment .children li {
+  background: url(../img/reply.png) no-repeat 10px 40px;
+}
+#comments-wrap .commentlist .comment .children .comment-body {
+  margin: 20px 0 0 0px;
+}
+#comments-wrap .commentlist .nocomments {
+  text-align: center;
+  padding: 20px;
+}
+#comments-wrap .commentlist .comment-body ul {
+  list-style-type: disc;
+}
+#comments-wrap .commentlist .comment-body ol {
+  list-style-type: decimal;
+}
+#comments-wrap .commentlist .reply {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+#comments-wrap .commentlist .comment-reply-link-wrap .comment-reply-link {
+  color: #444;
+  font-size: 11px;
+}
+#comments-wrap .commentlist .comment-reply-link-wrap .comment-reply-link:hover {
+  color: #cb5432;
+}
+#comments-wrap .commentlist .comment-meta {
+  margin: 0 0 20px 0px;
+  color: #a4a5aa;
+  font-size: 11px;
+  position: relative;
+}
+#comments-wrap .commentlist .comment-author {
+  color: #444;
+  font-weight: bold;
+}
+#comments-wrap .commentlist .comment-author cite {
+  font-weight: bold;
+  font-style: normal;
+  color: #2C2D31;
+  margin: 0;
+  padding: 0;
+}
+#comments-wrap .commentlist .comment-author cite a {
+  padding: 0 15px 0 0;
+  color: #2C2D31;
+}
+#comments-wrap .commentlist .comments-pagination {
+  clear: both;
+  overflow: hidden;
+  padding: 20px 0;
+  position: relative;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 10px;
+}
+#comments-wrap .commentlist .comments-pagination span,
+#comments-wrap .commentlist .comments-pagination a {
+  display: block;
+  float: left;
+  margin: 2px 2px 2px 0;
+  padding: 6px 9px 5px 9px;
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  background: #555;
+}
+#comments-wrap .commentlist .comments-pagination span:hover,
+#comments-wrap .commentlist .comments-pagination a:hover {
+  color: #fff;
+  background: #000000;
+}
+#comments-wrap .commentlist .comments-pagination .current {
+  padding: 6px 9px 5px 9px;
+  background: #000000;
+  color: #fff;
+}
+/* FORMS ------------------------------------------------------------*/
+#respond {
+  margin: 25px 0 0px 0px;
+}
+#respond #reply-title {
+  margin-bottom: 41px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #ccc;
+}
+#respond #cancel-comment-reply-link {
+  display: block;
+  float: right;
+  color: #444;
+  text-decoration: none;
+  background: #f8f5f2;
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+  font-family: Helvetica, Arial, "sans-serif";
+  font-size: 12px;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#respond #cancel-comment-reply-link:hover {
+  background: #cb5432;
+}
+#commentform,
+#contactForm {
+  margin-bottom: 70px;
+}
+#commentform .comment-notes,
+#contactForm .comment-notes {
+  margin-bottom: 30px;
+}
+#commentform .form-allowed-tags,
+#contactForm .form-allowed-tags {
+  margin-bottom: 20px;
+  font-size: 11px;
+  color: #888;
+}
+#commentform input,
+#contactForm input,
+#commentform textarea,
+#contactForm textarea {
+  padding: 10px 15px;
+  background: #f1f1f1;
+  color: #484848;
+  border: 1px  solid #ccc;
+  font-size: 13px;
+  font-family: Helvetica, Arial;
+  line-height: 1.5em;
+  overflow: auto;
+}
+#commentform input:focus,
+#contactForm input:focus,
+#commentform textarea:focus,
+#contactForm textarea:focus {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+  -moz-box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+  -o-box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+  box-shadow: 0px 0px 3px rgba(251, 228, 113, 0.4);
+}
+#commentform input[type="text"],
+#contactForm input[type="text"],
+#commentform input[type="password"],
+#contactForm input[type="password"] {
+  overflow: auto;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#commentform textarea,
+#contactForm textarea {
+  width: 93.1818%;
+  height: 230px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#commentform input[type="submit"],
+#contactForm input[type="submit"],
+#commentform input[type="button"],
+#contactForm input[type="button"] {
+  width: auto;
+  color: #444;
+  font-size: 11px;
+  background: #eaeaea;
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#commentform input[type="submit"]:hover,
+#contactForm input[type="submit"]:hover,
+#commentform input[type="button"]:hover,
+#contactForm input[type="button"]:hover {
+  background: #cb5432;
+}
+#commentform input#submit,
+#contactForm input#submit {
+  margin-top: 7px;
+}
+#commentform label,
+#contactForm label {
+  display: block;
+}
+#commentform p,
+#contactForm p {
+  margin-bottom: 20px;
+}
+#commentform #error,
+#contactForm #error {
+  margin-left: 10px;
+}
+#commentform #sent-form-msg,
+#contactForm #sent-form-msg {
+  padding: 5px 10px;
+  margin-bottom: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #444;
+}

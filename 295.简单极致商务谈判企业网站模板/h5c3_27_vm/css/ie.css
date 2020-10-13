@@ -1,0 +1,22 @@
+*+html{overflow:auto;}
+.sf-menu ul {behavior:url(js/PIE.htc);}
+#mp-pags li, #mp-pags-cont-extra li {background:url(../images/mp-pag-3.png) no-repeat 0 0;}
+#mp-pags li:first-child, #mp-pags-cont-extra li:first-child {background:url(../images/mp-pag-1.png) no-repeat 0 0;}
+#mp-pags li:first-child+li, #mp-pags-cont-extra li:first-child+li {background:url(../images/mp-pag-2.png) no-repeat 0 0;}
+.sf-menu > li > a {padding:4px 40px;}
+#mp-pags li a, #mp-pags-cont-extra li a {
+		display:block;
+		font-size:18px;
+		line-height:20px;
+		font-weight:600;
+		font-family: 'Open Sans', sans-serif;
+		color:#fff;
+		text-decoration:none;
+		text-transform:uppercase;
+		padding:52px 0 150px 0;
+		background:url(../images/pags-active.png) no-repeat center -22px;
+	}
+		#mp-pags li:hover a, #mp-pags li.activeSlide a, #mp-pags-cont-extra li:hover a {
+			background-position:center 22px;	
+		}
+		#mp-pags li:hover, #mp-pags li.activeSlide, #mp-pags-cont-extra li:hover {background-position:0 0;}

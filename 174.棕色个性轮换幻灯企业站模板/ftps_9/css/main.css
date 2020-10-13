@@ -1,0 +1,1510 @@
+/* -----------------------------------------------
+ * Easy Readers
+ * Created by Easy! Designs, LLC
+ * http://easy-designs.net
+ * ----------------------------------------------- */
+
+/* =Reset defaults (based on Eric Meyer's) */
+html,body,div,header,footer,nav,article,section,figure,aside,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-size:100%;font-style:inherit;font-weight:inherit;vertical-align:baseline;background:transparent;}
+body{line-height:1;}
+header,footer,nav,article,aside,section,figure,figcaption{display:block;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+a:focus img{outline: inherit;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+@font-face {font-family: 'PT Serif'; 
+	src: url('PTF55F_W.eot'); 
+	src: local('PT Serif'),
+	 		 url('/c/PTF55F_W.woff') format('woff'),
+	     url('/c/PTF55F_W.ttf') format('truetype'),
+			 url('/c/PTF55F_W.svg#PTSerif-Regular') format('svg');
+}
+@font-face {font-family: 'PT Serif'; 
+	font-style: italic;
+	src: url('PTF56F_W.eot'); 
+	src: local('PT Serif Italic'),
+			 url('/c/PTF56F_W.woff') format('woff'),
+			 url('/c/PTF56F_W.ttf') format('truetype'),
+			 url('/c/PTF56F_W.svg#PTSerif-Italic') format('svg');
+}
+@font-face {font-family: 'PT Serif';
+	src: url('PTF75F_W.eot');
+	font-style: normal;
+	font-weight: bold; 
+	src: local('PT Serif Bold'),
+	     url('/c/PTF75F_W.woff') format('woff'),
+	     url('/c/PTF75F_W.ttf') format('truetype'),
+	     url('/c/ptf75F_W.svg#PTSerif-Bold') format('svg');
+}
+@font-face {font-family: 'PT Serif';
+	font-style: italic;
+	font-weight: bold; 
+	src: url('PTF76F_W.eot'); 
+	src: local('PT Serif Bold Italic'),
+	 		 url('/c/PTF76F_W.woff') format('woff'),
+			 url('/c/PTF76F_W.ttf') format('truetype'),
+			 url('/c/PTF76F_W.svg#PTSerif-BoldItalic') format('svg');}
+
+@font-face {font-family: 'PT Serif Caption'; 
+	src: url('PTZ55F_W.eot');
+	src: local('PT Serif Caption'),
+			 url('/c/PTZ55F_W.woff') format('woff'),
+			 url('/c/PTZ55F_W.ttf') format('truetype'), 
+			 url('/c/PTZ55F_W.svg#PTSerif-Caption') format('svg');}
+
+@font-face {font-family: 'PT Serif Caption';
+	font-style: italic; 
+	src: url('PTZ56F_W.eot');
+	src: local('PT Serif Caption Italic'),
+		   url('/c/PTZ56F_W.woff') format('woff'),
+		   url('/c/PTZ56F_W.ttf') format('truetype'),
+		   url('/c/PTZ56F_W.svg#PTSerif-CaptionItalic') format('svg');}
+
+body {
+    font-family: Georgia, sans-serif;
+    line-height: 1.27;
+    font-size: 93.75%; /* sets the base to 15px */
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a, button {
+	cursor: pointer;
+}
+
+
+p, li,
+#cart li,
+#contributors .vcard {
+	line-height: 1.5;
+}
+
+p.pitch {
+	line-height: 1.09;
+}
+    
+/* fonts */
+
+.amp {
+    font-family: "AGaramondAlt Italic", Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', Cambria, serif;
+}
+
+#easy-network,
+button span,
+a.button span {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+}
+
+.book-preview,
+#free-preview,
+table caption,
+#contact h1,
+#print-specs h1,
+#reviews h2 {
+    font-family: 'PT Serif', Georgia, serif;
+}
+
+.book-preview .author i,
+table caption h2,
+table.cart thead th,
+article header,
+#bottom h1 {
+    font-family: 'PT Serif Caption', Georgia, serif;
+}
+
+.book-preview blockquote,
+form .email input,
+form .text input,
+form textarea {
+    font-family: Georgia, serif;
+}
+
+/* styles & weights */
+
+cite,
+.amp,
+#free-preview i,
+.book-preview .author i,
+.hproduct blockquote {
+    font-style: italic;
+}
+
+.book-preview blockquote:before,
+.hproduct blockquote cite {
+    font-style: normal;
+}
+
+#easy-network ul li,
+#cart a,
+form .failure a,
+form label,
+a.button span,
+button span,
+#print-specs strong {
+    font-weight: bold;
+}
+
+#content section header h2 {
+    font-weight: normal;
+}
+
+/* sizes */
+
+button span,
+a.button span,
+del,
+.change {
+    font-size: 0.7334em; /* 11px */
+}
+
+#easy-network ul li,
+#cart {
+    font-size: 0.8em; /* 12px */
+}
+
+#order .description,
+#bottom-about p,
+#bottom small {
+    font-size: 0.8667em; /* 13px */
+}
+
+button,
+a.button,
+#faq #content section h1 {
+    font-size: 1em; /* 15px */
+}
+
+.hproduct blockquote,
+form .email input,
+form .text input,
+form textarea {
+    font-size: 1.13333em; /* 17px */
+}
+
+#order table caption h2 {
+    font-size: 1.2em; /* 18px */
+}
+
+.book-preview .contributor {
+    font-size: 1.267em; /* 19px */
+}
+
+#bottom h1 {
+    font-size: 1.334em; /* 20px */
+}
+
+#content section header h2 {
+    font-size: 1.4667em; /* 22px */
+}
+
+.book-preview .author,
+#free-preview {
+    font-size: 1.6em; /* 24px */
+}
+
+article header h1,
+#content h1,
+#reviews h2 {
+    font-size: 1.7334em; /* 26px */
+}
+
+#order table caption h1,
+#print-specs h1 {
+    font-size: 1.8em; /* 27px */
+}
+
+.book-preview h2 {
+    font-size: 2em; /* 30px */
+}
+
+#content article.book-preview header h1 {
+    font-size: 3.867em; /* 58px */
+}
+
+/* size overrides, these need to be after their parent rule */
+
+.book-preview blockquote:before {
+    font-size: 3.5em; /* relative to parent */
+}
+
+#free-preview i {
+    font-size: 0.91666em; /* 22px relative to parent */
+}
+
+#free-preview a.button span {
+    font-size: 0.625em; /* 15px relative to parent */
+}
+
+.book-preview .author i {
+    font-size: 0.791em; /* 19px relative to parent */ 
+}
+
+/* alignments */
+
+table .price,
+table td.actions,
+#cart ul,
+#checkout .buttons {
+    text-align: right;
+}
+
+table .price {
+	white-space: nowrap;
+}
+
+table caption,
+table th,
+#checkout thead th.description {
+    text-align: left;
+}
+
+#contributors header,
+#reviews header,
+#reviews .entry-content h2,
+#shopping-cart .qty input,
+#checkout .quantity {
+    text-align: center;
+}
+
+/* misc */
+
+button span,
+a.button span {
+    text-transform: uppercase;
+    line-height: 1.12;
+		letter-spacing: .1em;
+}
+
+.textshadow button span,
+.textshadow a.button span {
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+    
+article.book-preview header h1,
+article.book-preview header h2 {
+    font-weight: normal;
+    letter-spacing: -.069em;
+    text-transform: none;
+}
+
+article.book-preview header h2 {
+    line-height: 1.1;
+    letter-spacing: 0;
+}   
+    
+.book-preview blockquote {
+    line-height: 1.4;
+}
+
+#easy-network ul li {
+    line-height: 30px;
+}
+
+#free-preview a.button span {
+    letter-spacing: 0.1em;
+}
+
+#order tbody th,
+#cart {
+    line-height: 1.1;
+}
+
+.caps {
+    letter-spacing: 0.1em;
+}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+article header h1,
+#faq #content section h1,
+#reviews h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+#easy-network ul li {
+    text-transform: uppercase;
+}
+
+button span,
+a.button span {
+    white-space: nowrap;
+}
+
+#adaptive-web-design-preview #free-preview a.button mark {
+    text-indent: -999em;
+}
+
+#faq #content p {
+	margin-bottom: 1em;
+}
+#faq #content section h1 {
+	letter-spacing: .1em;
+	margin-bottom: .3em;
+}body {
+    padding: 30px 0 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+abbr {
+    cursor: help;
+}
+
+/* tables */
+table {
+    width: 100%;
+		margin: 1em 0;
+}
+
+    table caption {
+        padding: 0 10px 0.9em;
+        margin: 0 -10px;
+        border-bottom: 1px solid;
+    }
+    
+    table tbody:first-child,
+    table thead {
+        border-top: 1px solid;
+        margin: 0 -10px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+        table th,
+        table td {
+            padding: 0.5em;
+        }
+    
+        table tbody td.actions {
+            padding-right: 0;
+        }
+        
+        table tbody td.actions button {
+            position: relative;
+            top: -0.15em;
+        }
+        
+/* buttons */
+
+button, 
+a.button {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+    button span, 
+    a.button span {
+        -moz-border-radius: 4px;
+        -o-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        display: inline-block;
+        padding: 0.9em 1.1em;
+        cursor: pointer;
+    }
+
+/* grid */
+
+#content,
+#order,
+#top,
+#bottom .wrapper,
+#easy-network ul {
+    max-width: 940px;
+    width: 96%;
+		margin: 0 auto;
+}
+
+#order {
+	width: 100%;
+}
+
+#order-options,
+#print-specs,
+#table-of-contents {
+	max-width: 400px;
+	margin: 0 auto 20px;
+}
+
+#bottom {
+    clear: both;
+}
+
+/* header */
+#top {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.cart #top {
+		margin-top: 80px;
+}
+
+    #top p {
+        margin: 0;
+        float: left;
+        display: block;
+        overflow: hidden;
+        text-indent: -100em;
+        height: 51px;
+    }
+    
+    #top .logo {
+        width: 310px;
+        margin-right: 0.5em;
+    }
+
+    #top .tagline {
+        width: 128px;
+				position: relative;
+				top: -2px;
+    }
+    
+/* content */
+
+#content section,
+#print-specs,
+#table-of-contents {
+	padding-top: 50px;
+}
+
+#content section {
+    clear: both;
+}
+
+section#order {
+	padding-top: 45px;
+}
+section#reviews {
+	padding-top: 65px;
+}
+
+#content section header {
+    padding: 0 10px 9px;
+    margin: 0 -10px;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+#content #order header,
+#content section.author header {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#content section .entry-content {
+    border-top: 1px solid;
+    overflow: hidden;
+    padding: 12px 10px 0;
+    margin: 0 -10px;
+    width: 100%;
+}
+
+#order .entry-content,
+#content section.author .entry-content,
+#content #order .entry-content {
+    border-top: none;
+    padding: 0;
+    margin: 0;
+}
+
+.book-preview {
+    width: 100%;
+}
+
+#content h1,
+#content h2 {
+	text-align: center;
+}
+
+
+#content figure {
+		width: 332px;
+		height: auto;
+		margin: 0 auto 10px;
+}
+
+#content figure img {
+		height: auto;
+}
+
+.book-preview figure img {
+		width: 100%;
+		margin-left: -5%;
+}
+
+.book-preview h1 {
+    margin-bottom: 2px;
+		text-align: center;
+}
+
+.book-preview h2 {
+    margin-bottom: 6px;
+		text-align: center;
+}
+
+.book-preview .author {
+    margin-bottom: 3px;
+		text-align: center;
+}
+
+.book-preview .contributor {
+    margin-bottom: 6px;
+		text-align: center;
+}
+
+.book-preview blockquote {
+	  max-width: 440px;
+	  margin: 30px auto 20px;
+		padding-left: 1.45em;
+    position: relative;
+}
+
+.book-preview blockquote:before {
+    content: '“';
+    position: absolute;
+    left: 0;
+    top: -0.35em;
+}
+
+#free-preview {
+	clear: both;
+	max-width: 300px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
+#free-preview b,
+#free-preview i {
+    display: block;
+}
+
+#free-preview a.button {
+    margin-top: 10px;
+}
+
+#free-preview a.button {
+    position: relative;
+}
+
+#free-preview a.button span {
+    padding-right: 1.25em;
+}
+
+#free-preview a.button mark {
+    position: absolute;
+    bottom: -29px;
+    right: -27px;
+    width: 54px;
+    height: 56px;
+    overflow: hidden;
+		-moz-transform: rotate(20deg);
+		-ms-transform: rotate(20deg);
+		-o-transform: rotate(20deg);
+		-webkit-transform: rotate(20deg);
+		transform: rotate(20deg);
+}
+
+/* orders */
+#order-options table {
+	margin: 0;
+}
+#order table th {
+	padding: .9em .5em .9em 0;
+}
+#order table td {
+  padding: .9em 0 .9em .5em;
+}
+#order .price {
+	white-space: nowrap;
+}
+#order-options .description {
+	margin-right: -60px;
+}
+
+/* =Share */
+section#share {
+	line-height: 24px;
+	margin: 20px 0;
+	text-align: center;
+}
+#share p, #share div {
+	display: inline-block;
+	height: 24px;
+	width: auto;
+	max-width: 70px;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+/* =Print Specs */
+#print-specs h1 {
+    padding: 0 10px .4em;
+    margin: 0 -10px .4em;
+    border-bottom: 1px solid;
+}
+
+
+/* =TOC */
+#table-of-contents ol {
+	line-height: 1.5em;
+}
+
+/* =Project Files */
+#project-files .button {
+	margin-top: .5em;
+}
+
+/* =Reviews */
+#reviews li {
+	float: left;
+	clear: both;
+}
+
+#reviews blockquote p {
+	text-indent: -.45em;
+}
+
+blockquote p.reviewer {
+		font-style: normal;
+    margin-top: 0.5em;
+		float: right;
+		width: 80%;
+}
+
+#reviews blockquote p.reviewer {
+	text-indent: 0;
+}
+ 
+blockquote p.reviewer:before {
+    content: "— ";
+		margin-left: -1.1em;
+}
+
+#reviews blockquote p.reviewer b.role {
+  display: block;
+}
+
+blockquote p.reviewer cite {
+		font-style: italic;
+}
+
+article header h1 {
+    margin: 0 auto;
+}
+
+#content section header h2 {
+    margin: -0.5em auto 0;
+}
+
+article .entry-content p {
+    margin: 0 auto 1em;
+}
+
+article .entry-content blockquote p {
+    margin-bottom: 0;
+}
+
+.caps i {
+    margin-left: -0.1em;
+}
+
+section.author figure img {
+    border: 20px solid;
+    display: block;
+		margin-top: -12px;
+}
+
+#reviews ul {
+	padding: 0 10px 0 15px;
+}
+
+#reviews ul.col-1 {
+    margin-left: 0;
+}
+
+#reviews ul li {
+    margin: 0 0 40px;
+}
+
+#reviews h2 {
+	clear: both;
+  padding: 40px 10px 9px;
+  margin: 0 -10px 12px;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+#reviews ul#tweets {
+	margin-left: 0;
+	width: auto;
+}
+#tweets li {
+	clear: right;
+	width: 100%;
+}
+
+
+
+/* =Contributors */
+#contributors figure img {
+    border: 10px solid;
+    display: block;
+    float: left;
+    margin: -20px 20px 6px 0;
+    width: 120px;
+    height: 120px;
+}
+
+#contributors .vcard {
+	clear: both;
+	padding-top: 20px;
+}
+
+.rgba section.author figure img,
+.rgba #contributors figure img {
+    border: none;
+    padding: 20px;
+}
+
+#contributors figure {
+  display: inline;
+}
+
+section.author figure img,
+#contributors figure img {
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#contributors ul {
+    width: 100%;
+    margin-bottom: -40px;
+}
+
+#contributors ul li {
+    margin: 0 0 40px;
+}
+
+#contributors ul li .fn {
+    display: inline-block;
+    clear: both;
+}
+
+
+
+/* footer */
+
+#bottom {
+    padding: 30px 10px;
+    margin: 14px auto 0;
+}
+
+#bottom #bottom-about {
+    margin-bottom: 10px;
+}
+
+#bottom h1 {
+    margin: 0 auto 0.5em;
+}
+
+#bottom p {
+	margin-top: -.2em;
+	line-height: 1.5em;
+}
+
+#bottom ul {
+    margin-top: -0.25em;
+}
+
+#bottom li {
+    margin: 0 auto 0.4em;
+}
+
+#bottom small {
+    display: block;
+    margin-top: 0.6em;
+}
+
+/* Network Links */
+#social-links li {
+	float: left;
+	margin: 20px 10px 0 0;
+}
+#social-links li a {
+	background: top left no-repeat;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	display: block;
+	overflow: hidden;
+	text-indent: -999em;
+	width: 30px;
+	height: 30px;
+}
+
+#easy-network {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+
+#easy-network ul {
+    padding: 0;
+}
+
+#easy-network ul li {
+    float: left;
+    margin: 0 35px 0 0;
+}
+
+#easy-network ul li a {
+    display: block;
+    padding-left: 18px;
+    height: 30px;
+}
+
+#easy-network ul li.easy-designs a {
+    padding-left: 25px;
+}
+
+#easy-network ul li.r4g {
+    margin-right: -35px;
+}
+
+#easy-network ul li.r4g a {
+    padding-left: 15px;
+}
+
+/* inline cart */
+
+#cart {
+    position: absolute;
+    top: 30px;
+    left: 0;
+		right: 0;
+    z-index: 100;
+    padding: 18px 20px;
+    overflow: hidden;
+}
+
+#cart .description {
+    padding-left: 26px;
+    min-height: 20px;
+    float: left;
+}
+
+#cart ul  {
+    float: right;
+}
+
+/* cart & checkout pages */
+
+#shopping-cart table caption,
+#checkout table caption {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#shopping-cart table tbody th,
+#shopping-cart table tbody td,
+#checkout table tbody th,
+#checkout table tbody td {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+#shopping-cart td.qty input {
+    width: 4em;
+}
+
+.error {
+	margin-left: .5em;
+}
+
+#checkout .buttons {
+    margin-top: 1em;
+}
+
+#checkout table tbody th {
+    padding-left: 0.5em;
+}
+
+#checkout table caption {
+    padding: 0 .5em .5em;
+}
+
+#checkout #content header p {
+    margin: 0 auto 1em;
+}
+
+#checkout .cart .description {
+	width: 75%;
+}
+table.cart label {
+	display: inline;
+	margin-right: .5em;
+}
+
+/* forms */
+
+form {
+    display: block;
+}
+
+form .notice,
+form fieldset,
+form fieldset ol li {
+    margin: 0 auto 1em;
+}
+
+form .notice li,
+form .notice p {
+    margin: 0 auto 0.5em;
+}
+
+form fieldset {
+    border-top: 1px solid;
+}
+
+form fieldset legend {
+    display: block;
+    padding: 0 0.25em 0.5em 0;
+}
+
+form label {
+    display: block;
+}
+
+form .email input,
+form .text input,
+form textarea {
+    padding: 3px;
+    border: 1px solid;
+    width: 100%;
+		max-width: 460px;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#checkout header h1 {
+	padding-left: 8px;
+}
+#contact header h1 {
+	padding-left: 10px;
+}
+#contact form {
+	margin-top: .85em;
+
+}
+#contact form fieldset {
+	padding-top: 1em;
+	padding-left: .75em;
+}
+
+form .notice {
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	margin: 0 0 1em;
+	padding: .7em .9em;
+}
+form fieldset .notice {
+	margin-left: -.75em;
+}
+form .notice li {
+	margin-left: 1em;
+}
+form .notice p, form .notice ol {
+	margin: 0;
+}
+
+#faq #content h1 {
+	border-bottom: 1px solid;
+	padding: 2px 0 11px 10px;
+}
+#faq #content section {
+	padding-top: 15px;
+	padding-left: 10px;
+}
+#faq #content section h1 {
+	text-align: left;
+	border: 0;
+	padding: 0;
+}
+
+@media screen and (min-width:690px) {
+	ul#tweets li {
+		margin-right: 40px;
+		width: 47%;
+	}
+	ul#tweets li:nth-child(2n+1) {
+		clear: left;
+	}
+	ul#tweets li:nth-child(2n+2) {
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width:980px) {
+	.cart #top {
+		margin-top: 30px;
+	}
+	#order, #free-preview, #table-of-contents, #print-specs {
+		max-width: none;
+	}
+	#order aside,
+	section.author figure {
+	    width: 333px;
+	    float: left;
+			clear: left;
+	}
+	.book-preview {
+	    margin-left: -62px;
+	    padding-left: 62px;
+	    min-height: 489px;
+	}
+	.book-preview h1,
+	.book-preview h2,
+	.book-preview .author,
+	.book-preview .contributor,
+	.book-preview blockquote,
+	#free-preview {
+	    margin-left: 380px;
+	}
+	#content figure {
+			width: auto;
+			height: auto;
+			margin: 0;
+	}
+	#content .book-preview figure {
+	    float: left;
+	    margin: 10px 30px 0 -62px;
+	}
+	.book-preview figure img {
+	  	width: auto;
+			margin-left: 0;
+	}
+	#content h1,
+	#content h2,
+	.book-preview h1,
+	.book-preview h2,
+	.book-preview .author,
+	.book-preview .contributor {
+			text-align: left;
+	}
+	.book-preview blockquote {
+		  max-width: none;
+			padding-left: 0;
+	}
+	.book-preview blockquote:before {
+	    left: -.45em;
+	}
+	blockquote p.reviewer {
+		width: auto;
+	}
+	#free-preview {
+		clear: right;
+		text-align: left;
+	}
+	#free-preview .pitch {
+	    float: left;
+	}
+	#free-preview a.button {
+	    float: right;
+	    margin-top: 4px;
+	}
+	#free-preview a.button mark {
+	    top: -29px;
+			bottom: auto;
+	}
+	section#share {
+		clear: right;
+		margin: 0;
+		padding: 10px 0 0;
+		text-align: right;
+	}
+	#order article,
+	section.author article {
+	    width: 560px;
+	    float: right;
+	}
+	#print-specs {
+		clear: right;
+	}
+  #contributors h1,
+	#reviews h1 {
+		text-align: center;
+	}
+	#contributors ul {
+	    overflow: hidden;
+	    margin-bottom: -40px;
+	}
+	#contributors .vcard {
+		clear: none;
+		padding-top: 0;
+	}
+	#contributors figure img {
+	    float: left;
+			margin-top: 0;
+	}
+	#contributors ul li:nth-child(n+1) figure img {
+	    width: auto;
+	    height: auto;
+	    margin-right: 0;
+	}
+	#contributors ul li:nth-child(n+1) {
+	    float: left;
+	    margin-left: 155px;
+	    width: 210px;
+	}
+	#contributors ul li:nth-child(3n+1) {
+	    margin-left: 0;
+	}
+	#contributors ul li:nth-child(3n+1) {
+	    clear: both;
+	}
+	#contributors ul li:nth-child(3n+1):not(:first-child) {
+	    margin-left: 150px;
+	}
+	#reviews ul {
+			float: left;
+	    width: 450px;
+			padding: 0;
+	    margin-left: 40px;
+	    margin-bottom: -40px;
+	}
+	#reviews ul#tweets li {
+		margin-right: 40px;
+		width: 287px;
+		clear: none;
+	}
+	#reviews ul#tweets li:nth-child(3n+1) {
+		clear: left;
+	}
+	#reviews ul#tweets li:nth-child(3n+3) {
+		margin-right: -1px;
+	}	
+	#reviews blockquote p.reviewer {
+		text-indent: 0;
+		width: 60%;
+	}
+	#bottom {
+	    padding: 30px 0;
+	    margin: 74px auto 0;
+	}
+	#bottom .wrapper {
+	    overflow: hidden;
+	}
+	#bottom section {
+	    float: left;
+	    width: 450px;
+	    margin-left: 40px;
+	}
+	#bottom #bottom-about {
+	    margin-left: 0;
+			margin-bottom: 0;
+	}
+	#cart {
+	    position: absolute;
+	    top: 0;
+	    left: auto;
+			right: 50%;
+	    margin-right: -479px;
+	    z-index: 100;
+	    width: 228px;
+	    padding: 46px 20px 18px;
+	    overflow: hidden;
+	}
+	#faq #content section {
+		width: 650px;
+	}
+}html, body {
+    background: #fdf4e8 url('http://cdn.easy-readers.net/i/c/bg.png') 50% 0;
+}
+
+/* colors */
+
+body {
+    color: #3d3d3d;
+}
+
+a,
+label abbr {
+    color: #ca6627;
+}
+
+:focus {
+	outline-color: #1989a6;
+}
+
+a:hover, a:focus {
+    color: #e24e0e;
+}
+
+#free-preview b,
+h1,
+#reviews h2 { 
+    color: #115860;
+}
+
+.book-preview h1 {
+    color: #323023;
+}
+
+.book-preview h2,
+.book-preview .author,
+.book-preview .contributor,
+.hreview p.reviewer,
+#easy-network ul li a,
+#easy-network ul li a:hover,
+#easy-network ul li a:focus,
+#free-preview,
+#content section header h2,
+table.cart thead th {
+    color: #57533f;
+}
+.book-preview blockquote:before {
+    color: #57533f;
+}
+
+button span, 
+a.button span {
+    color: #fff;
+}
+
+del,
+#order .description {
+    color: #868060;
+}
+
+form .failure a, .error {
+    color: #c00;
+}
+
+table caption,
+#print-specs h1,
+#content section header {
+    border-bottom-color: #868060;
+}
+
+#shopping-cart table tbody th,
+#shopping-cart table tbody td,
+#checkout table tbody th,
+#checkout table tbody td,
+#faq #content h1,
+form fieldset,
+form .email input,
+form .text input,
+form textarea {
+    border-color: #c1baa4;
+}
+
+table tbody:first-child,
+table thead,
+#content section .entry-content {
+    border-top-color: #fff;
+}
+
+section.author figure img,
+#contributors figure img {
+    border-color: #e2d9ce;
+}
+
+/* backgrounds */
+
+button,
+a.button {
+    background: transparent;
+}
+
+button span, 
+a.button span {
+    background: #1989a6 50% 0;
+}
+
+button:hover span,
+a.button:hover span,
+button:focus span,
+a.button:focus span {
+    background-color: #e24e0e;
+}
+
+.cssgradients button span,
+.cssgradients a.button span {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgba(255,255,255,0.0)),
+        color-stop(1, rgba(255,255,255,0.33))
+    );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        rgba(255,255,255,0.0) 0%,
+        rgba(255,255,255,0.33) 100%
+    );
+}
+
+#top .logo {
+    background: url(http://cdn.easy-readers.net/i/c/logo.png) no-repeat 50% 50%;
+}
+
+#top .tagline {
+    background: url(http://cdn.easy-readers.net/i/c/presents.png) no-repeat 50% 20px;
+}
+
+#social-links li.twitter a {
+	background-image: url(http://cdn.easy-readers.net/i/c/twitter.png);
+}
+#social-links li.facebook a {
+	background-image: url(http://cdn.easy-readers.net/i/c/facebook.png);
+}
+
+#easy-network {
+    background: #faefe1;
+}
+
+.rgba #easy-network {
+    background: rgba(250,239,225,0.5);
+}
+
+#easy-network ul li a,
+#easy-network ul li a:hover,
+#easy-network ul li a:focus {
+    background: no-repeat 0 50%;
+}
+
+.opacity #easy-network ul li a {
+    opacity: 0.5;
+}
+
+.opacity #easy-network ul li a:hover,
+.opacity #easy-network ul li a:focus {
+    opacity: 0.99; /* value of 1 changes the antialiasing */
+}
+
+#easy-network ul li.easy-designs a {
+    background-image: url(http://cdn.easy-readers.net/i/c/en-easy-designs.png);
+}
+
+#easy-network ul li.blog a {
+    background-image: url(http://cdn.easy-readers.net/i/c/en-blog.png);
+}
+
+#easy-network ul li.r4g a {
+    background-image: url(http://cdn.easy-readers.net/i/c/en-r4g.png);
+}
+
+.rgba section.author figure img,
+.rgba #contributors figure img {
+    background-color: rgba(226,217,206,0.3);
+}
+
+#bottom {
+    background: #f0e1ce;
+}
+
+#cart, .notice {
+    background: #efe1ca;
+}
+
+.notice {
+	border-color: #faefe1;
+}
+
+.rgba #cart {
+    background: rgba(207,181,134,0.1);
+}
+
+#cart .description {
+    background: url(http://cdn.easy-readers.net/i/c/cart.png) no-repeat 0 0;
+}
+
+#adaptive-web-design-preview #free-preview a.button mark {
+    background: url(http://cdn.easy-readers.net/i/c/free-badge.png) no-repeat 50% 50%;
+}a {
+    -webkit-transition: color 0.25s;
+    -moz-transition: color 0.25s;
+    -o-transition: color 0.25s;
+    transition: color 0.25s;
+}
+
+button span,
+a.button span {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+#easy-network ul li a {
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+}/* =Global Print Styles */
+@media print {
+	@page { margin: 0.5in; }
+	* { background: transparent !important; }
+	body { font-size: 120%; }
+	h1, h2, h3, h4, h5, h6 { margin: 1em 0; }
+	p { widows: 4; orphans: 4; }
+	h1, h2, ul, ol { page-break-inside: avoid; }
+	nav, .frame, #contact, #mobile-nav { display: none; }
+	#bottom { margin-top: .05in; padding-top: 0.05in; border-top: 1px solid; }
+	#bottom p { display: inline; }
+}
+
+@-moz-document url-prefix() {
+	
+	/* GENERATED CONTENT - FF3 doesn't allow positioning */
+	/* ornaments */
+	.book-preview blockquote:before {
+		content: '';
+	}	
+	.book-preview blockquote:first-of-type:before {
+		content: '“';
+	}
+	
+	/* Fonts */
+	.hproduct h1.fn {
+		letter-spacing: 0;
+	}
+	.hproduct h1.fn:first-of-type {
+		letter-spacing: -0.069em;
+	}
+	
+	/* Layout */
+	#contributors ul li {
+	    float: left;
+	    margin-left: 155px;
+	    width: 210px;
+	}
+	#contributors img {
+	    width: 170px !important;
+			height: 170px !important;
+	}
+
+}

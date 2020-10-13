@@ -1,0 +1,244 @@
+/* Getting the new tags to behave
+---------------------------------------- */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+
+/* Global properties
+---------------------------------------- */
+body { 
+	background:#eee; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%; 
+	line-height:1.1875em;
+	color:#6f787a;
+	}
+html { min-width:980px;}
+html, body { height:100%;}
+
+#main {
+	min-height:100%;
+	margin: 0 auto;
+	position: relative;
+	width: 980px;
+	font-size:.8125em;
+	background:#fff;
+	border-right:1px solid #dbdbdb;
+	border-left:1px solid #dbdbdb;
+	}
+	#main .inside {
+		padding:0 30px;
+		}
+	
+.menu {
+	padding:0px 0 10px 0px
+}
+
+
+.pad {
+	margin-top:20px;
+}
+.pad1 {
+	margin-top:90px;
+}
+a {
+	color:#017c9a; 
+	outline:none;
+	}
+a:hover{
+	text-decoration:none;
+	}
+strong {
+	color:#393939;
+	}
+em {
+	
+	}
+
+ul {
+	list-style-type:square;
+	list-style-position:outside;
+	margin:0 0 1.5em 1.5em;
+	}
+ul li {
+	padding-bottom:.5em;
+	}
+
+ol {
+	list-style-type:decimal;
+	margin:.5em 0 1.5em 1.5em;
+	}
+	ol li {
+		padding-bottom:.5em;
+		}
+		ol li ul {
+			padding:.5em 0 0 0;
+			margin-bottom:0;
+			}
+			ol li ul li:last-child {
+				padding-bottom:0;
+				}
+.fonts {
+	font-size:22px;
+	font-family:"Times New Roman", Times, serif;
+	color:#393939;
+}
+	.fonts ol, .fonts code {
+		font-size:13px; 
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	.fonts ol {
+		color:#6f787a;
+	}
+/* Left & Right alignment */
+
+.fleft { float:left;}
+.fright { float:right;}
+.clear { clear:both;}
+
+.alignright { text-align:right;}
+.aligncenter { text-align:center;}
+
+.wrapper { 
+	width:100%;
+	overflow:hidden;
+	}
+
+.extra-wrap { 
+	overflow:hidden;
+	}
+
+
+
+
+
+
+/* Header
+---------------------------------------- */
+#header {
+	text-align:center;
+	border-bottom:1px solid #dbdbdb;
+	}
+	#header h1 {
+		padding:1em 0 .5em 0;
+		}
+
+
+
+
+/* Content
+---------------------------------------- */
+#content {
+	padding:40px 0 40px 0;
+	}
+	
+
+article {
+	padding-bottom:50px;
+	}
+	article .inner {
+		padding:0 0 0 14px;
+		}
+pre, code, samp, kbd, var{font:100% mono-space,monospace;}
+pre{
+	margin:0;
+	padding:10px;
+	overflow:auto;
+	background:#fff;
+	border:1px dashed #000
+	}
+.code {
+	background:#eee;
+	padding:10px;
+}
+
+
+
+/* Paragraph */
+p {margin-bottom:1.5em;}
+	
+	
+
+
+/* Footer
+---------------------------------------- */
+#footer {
+	text-align:center;
+	font-size:10px;
+	text-transform:uppercase;
+	color:#666;
+	background:#eee;
+	}
+	#footer .inside {
+		padding:20px 0 20px 0;
+		}
+
+
+/* Forms
+---------------------------------------- */
+#form1 {
+	
+}
+	#form1 input {
+		 border:1px solid #000;
+		 border-radius:10px;
+		 background:#CCC;
+		 color:#333;
+		 -moz-border-radius:10px;
+		 -webkit-border-radius:10px;
+		 font-size:12px;
+		 line-height:1.2307em;
+		 padding:5px 0 5px 10px;
+		 width:200px;
+		 outline:none;		 
+		 box-shadow:none;
+	}
+	#form1 textarea {
+		 border:1px solid #000;
+		 border-radius:10px;
+		 background:#CCC;
+		 color:#333;
+		 -moz-border-radius:10px;
+		 -webkit-border-radius:10px;
+		 font-size:12px;
+		 line-height:1.2307em;
+		 padding:5px 0 5px 10px;
+		 width:300px;
+		 height:100px;
+		 overflow:auto;
+		 outline:none;
+	}
+	#form1 label {
+		display:inline-block;
+		min-height:30px;
+	}
+	#form1 .error, #form1 .empty {
+		display:none;
+		font-size:10px;
+		color:#F00
+	}
+	.btns a{
+		display:inline-block;
+		padding:5px 10px;
+		background:#000;
+		margin-right:20px;
+		text-decoration:none;
+		color:#fff;
+		border-radius:10px;
+		-moz-border-radius:10px;
+		 -webkit-border-radius:10px;
+	}
+		.btns a:hover {
+			background:#333;
+		}
+
+
+/* Form defaults */
+input, select, textarea { 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	vertical-align:middle;
+	font-weight:normal;
+	}
+
+/*==========================================*/

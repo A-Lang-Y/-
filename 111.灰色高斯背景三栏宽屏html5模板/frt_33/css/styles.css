@@ -1,0 +1,253 @@
+/*
+AUTHOR
+Design and code by: http://www.free-responsive-templates.com
+Free stock photos by: http://free-responsive-templates.com/category/free-stock-photos/
+Created: 18 September 2012
+
+LICENSE
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+http://creativecommons.org/licenses/by/3.0/
+License: http://free-responsive-templates.com/license/
+
+SUPPORT
+E-mail: free.responsive.templates@gmail.com
+Contact: http://free-responsive-templates.com/contact/
+*/
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: 'Lustria', serif;
+	font-size:100%;
+	background: url(../images/siteBackground.jpg) repeat left top;
+	margin: 0;
+	padding: 0;
+	color: #434648;
+	text-shadow:0 0px, 1px 1px #ffffff;
+}
+h1 {
+	padding:15px 10px;
+}
+h1 a {
+	font-size:1.9em; 
+	font-family: 'Niconne', cursive;
+	text-decoration:none;
+}
+h2 {
+	font-family: 'McLaren', cursive;
+	font-size:1.7142857142857142857142857142857em;
+	color:#2eaaea;
+	font-weight:inherit;
+}
+span {
+	font-size:1em;
+}
+a img { 
+	border: none;
+}
+a {
+	color: #2eaaea;
+	text-decoration: underline; 
+}
+a:hover { 
+	color: #178ac6;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;	
+}
+p {
+	line-height:140%;
+}
+hr {
+	background: none repeat scroll 0 0 #b2b2b2;
+    border: 0 none;
+    box-shadow: 0 0px, 1px 1px #ececec;
+    height: 1px;
+	margin:1px 0;
+}
+.wrapper {
+	width:93.75%; /* 960px/1024px  */
+	margin:0 auto;
+}
+.camera_pag {
+	text-align:center;
+}
+header {
+	text-align:center;
+	background:url(../images/headerBackground.jpg) repeat left top;
+	margin-bottom:20px;
+}
+.welcome {
+	width:47.916666666667%; /* 460px/960px; */
+	float:left;
+}
+.wel {
+	margin-bottom:20px;
+}
+.testimonials {
+	background:url(../images/headerBackground.jpg) repeat left top;
+	padding:5%;
+	margin-top:20px;
+}
+.testim {
+	padding: 0 0 30px 0;
+}
+.testim p {
+	font-style:italic;
+}
+.testim span {
+	float:right;
+	font-weight:bold;
+}
+.rightBox {
+	width:22.916666666667%; /* 220px/960px */
+	float:right;
+}
+.rb {
+	padding-bottom:40px;
+}
+.sidebar {
+	margin:0 36% 0 51%;
+	border:1px solid #b2b2b2;
+	width:22.916666666667%; /* 220px/960px */
+}
+.sBox {
+}
+.sBox h2 {
+	background:url(../images/headerBackground.jpg) repeat left top;
+	padding:3%;
+}
+.sBox ul {
+	padding:3%;
+}
+.sBox li {
+	list-style:none;
+	width:100%;
+}
+.sBox li a {
+	padding:10px 5px 10px 20px;
+	background:url(../images/p.png) no-repeat 7px 16px;
+	display:block;
+}
+.sBox li a:hover {
+	padding:10px 5px 10px 20px;
+	background: url(../images/headerBackground.jpg) repeat 7px 16px;
+}
+footer {
+	text-align: center;
+	margin:20px 0;
+}
+footer p {
+	font-size:0.8571428571428571em; /* 12px/14px */
+	float:left;
+	padding:30px 0 40px 10px;
+}
+.icons {
+	float:right;
+	padding:25px 10px 0 0;
+}
+.icons li {
+	list-style:none;
+	display:inline;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	line-height: 0px;
+}
+/**************************/
+/*********************************Begin main menu****************************************/
+/**************************/
+nav {
+	text-align:center;
+	margin:20px 0;
+}
+nav li {
+	list-style:none;
+	display:inline;
+}
+nav li a {
+	font-family: 'McLaren', cursive;
+	text-shadow: none;
+	color:#8c8c8c;
+	text-transform:uppercase;
+	text-decoration: none;
+	padding:3px 10px;
+	font-weight:bold;
+}
+nav li a:hover {
+	color:#46494b;
+}
+nav .active a {
+	color:#ffffff;
+	background-color:#2eaaea;
+	text-shadow:none;
+}
+nav select {
+      display: none;
+    }
+select {
+	width:200px;
+}
+/**************************/
+/*********************************End main menu****************************************/
+/**************************/
+/*********************************Begin Media Queries****************************************/
+/**************************/
+/* for 960px or less */
+@media screen and (max-width: 980px) {
+	.wrapper {
+		width:93.75%; /* 960px/1024px  */
+		margin:0 auto;
+	}
+}
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+	.welcome, .rightBox, .sidebar, footer p, footer .icons {
+		float:none;
+		width:auto;
+	}
+	.rightBox {
+		text-align:center;
+		margin-top:20px;
+	}
+	.sidebar {
+		margin:0;
+	}
+	footer .icons {
+		padding:0;
+	}
+	footer p {
+		padding:30px 0 15px 10px;
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	h1 {
+		padding:0;
+	}
+	nav {
+		text-align:center;
+		margin:0;
+	}
+	nav li {
+		list-style:none;
+		width:100%;
+	}
+	nav li a {
+		font-family: 'McLaren', cursive;
+		text-shadow: none;
+		color:#8c8c8c;
+		text-transform:uppercase;
+		text-decoration: none;
+		padding:3px 15px;
+		font-weight:bold;
+		display:block;
+	}
+}
+/**************************/
+/*********************************End Media Queries****************************************/
+/**************************/

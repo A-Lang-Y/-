@@ -1,0 +1,151 @@
+/*
+HTML 5 Template Name: Competitive
+File: Layout CSS
+Author: OS Templates
+Author URI: #
+Licence: <a href="#">Website Template Licence</a>
+*/
+
+@import url(navi.css);
+@import url(forms.css);
+@import url(tables.css);
+@import url(slider.css);
+@import url(homepage.css);
+@import url(gallery.css);
+@import url(portfolio.css);
+
+html{overflow-y:scroll;}
+
+body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#989898; background-color:#E1E1E1;}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:block; clear:both;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none;}
+
+code{font-weight:normal; font-style:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgholder, .imgl, .imgr{padding:4px; border:1px solid #D6D6D6; text-align:center;}
+.imgl{float:left; margin:0 15px 15px 0; clear:left;}
+.imgr{float:right; margin:0 0 15px 15px; clear:right;}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
+address, article, aside, figcaption, figure, footer, header, hgroup, nav, section{display:block; margin:0; padding:0;}
+
+q{display:block; padding:0 10px 8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+q:before{content:'?'; font-size:26px;}
+q:after{content:' ?; font-size:26px; line-height:0;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{display:block; width:960px; margin:0 auto; text-align:left;}
+
+.row1, .row2, .row3{color:#989898; background-color:#FFFFFF; border-bottom:1px solid #D4D4D4;}
+.row1 a, .row2 a, .row3 a{color:#BA2E1F; background-color:#FFFFFF;}
+
+.row1{border-top:5px solid #BA2E1F; border-bottom:1px solid #D4D4D4;}
+.row2{}
+.row3{}
+.row4{color:#989898; background-color:#131313;}
+.row4 a{color:#BA2E1F; background-color:#131313;}
+.row5, .row5 a{color:#666666; background-color:#000000;}
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+#header, #container, #footer, #copyright{display:block; width:900px; margin:0 auto; padding:0;}
+
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:16px; font-weight:bold; line-height:normal; color:#666666; background-color:#FFFFFF;}
+
+address{font-style:normal;}
+
+blockquote, q{display:block; padding:8px 10px; color:#979797; background-color:#ECECEC; font-style:italic; line-height:normal;}
+blockquote:before, q:before{content:'?'; font-size:26px;}
+blockquote:after, q:after{content:' ?; font-size:26px; line-height:0;}
+
+.one_quarter, .two_quarter, .three_quarter{display:block; float:left; margin:0 0 0 20px;}
+.one_quarter{width:210px;}
+.two_quarter{width:440px;}
+.three_quarter{width:670px;}
+
+.one_third, .two_third{display:block; float:left; margin:0 0 0 30px;}
+.one_third{width:280px;}
+.two_third{width:590px;}
+
+.first, .one_quarter:first-child, .two_quarter:first-child, .three_quarter:first-child, .one_third:first-child, .two_third:first-child{margin-left:0;}
+.four_quarter, .three_third{width:100%; float:none; margin-left:0; clear:both;}
+
+/*----------------------------------------------Header-------------------------------------*/
+
+#header{padding:21px 0 30px 0;}
+
+#header hgroup{margin:15px 0 0 0; float:left;}
+#header hgroup h1, #header hgroup h2{font-weight:normal; font-style:normal; text-transform:none;}
+#header hgroup h1{font-size:36px;}
+#header hgroup h1 span{font-size:26px; text-transform:uppercase;}
+#header hgroup h1 a{color:#666666; background-color:#FFFFFF;}
+#header hgroup h2{font-size:13px;}
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+#container{padding:50px 0; line-height:1.6em;}
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6{margin-bottom:20px;}
+#container section{display:block; width:100%; margin:0 0 40px 0; padding:0;}
+#container .last{margin:0;}
+#container .more{text-align:right;}
+
+/* ------Content-----*/
+
+#container #content{float:left; width:590px; margin-bottom:0;}
+
+/* ------Comments-----*/
+
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li.comment_odd, #comments li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+#comments li.comment_odd{color:#666666; background-color:#F7F7F7;}
+#comments li.comment_odd a{color:#BA2E1F; background-color:#F7F7F7;}
+#comments li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments li.comment_even a{color:#BA2E1F; background-color:#E8E8E8;}
+#comments article, #comments header{display:block; width:100%;}
+#comments figure{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid #DEDACB; text-align:center;}
+#comments figure img{float:inherit;}
+#comments header address{font-weight:bold;}
+#comments header time{font-size:smaller;}
+#comments article section{margin:0; padding:0;}
+#comments article section p{margin:10px 5px 10px 0; padding:0;}
+
+/* ------Right Column-----*/
+
+#container #right_column{float:right; width:280px;}
+
+aside h2{padding-bottom:8px; font-size:16px; text-transform:uppercase; border-bottom:5px solid #CCCCCC; text-align:right;}
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{padding:30px 0; line-height:1.6em;}
+
+#footer section h2.title{margin-bottom:30px; font-size:13px; font-weight:normal; text-transform:uppercase; color:#666666; background-color:#131313;}
+
+/* ------Quick Links-----*/
+
+#footer section nav ul li{margin:5px 0 0 0; padding:0 0 5px 0; border-bottom:1px solid #2C2C2C;}
+#footer section nav ul li:first-child, #footer section nav ul li.first{margin-top:0;}
+#footer section nav ul li a{}
+
+/* ------Blogposts-----*/
+
+#footer section article header, #footer section article address, #footer section article time, #footer section article p{margin:0; padding:0;}
+#footer section article p{margin-top:10px;}
+#footer section article header h2{font-size:14px; font-weight:bold; text-transform:none; color:#989898; background-color:#131313;}
+#footer section article address, #footer section article time{font-size:10px; font-style:normal;}
+
+/*----------------------------------------------Copyright-------------------------------------*/
+
+#copyright{padding:20px 0;}
+#copyright p{margin:0; padding: 0;}

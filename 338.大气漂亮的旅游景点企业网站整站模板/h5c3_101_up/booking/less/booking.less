@@ -1,0 +1,309 @@
+@import '../font/font-awesome.css';
+/* CSS for jquery.fancyform.js */
+
+/*custom mixins */
+.customStyle(){
+	.box-shadow(inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2));	  
+	.box-sizing(border-box);
+	.border-radius(4px);
+	border: 1px #ccc solid;
+	color: #000;
+	background: #fff;
+	&:focus{
+		background: #fff;
+	}
+}
+.buttonStyle(){
+	.box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0.2));
+	.border-radius(4px);
+	padding: 6px 15px;
+	border: 1px #ccc solid;
+	background: #f5f5f5;
+	color: #000;
+	font-weight: normal; 
+	&:hover {
+	  background: #efefef;
+	}
+}
+.customFont(){
+	font: 12px/18px Arial, sans-serif;
+}
+.fontAwesome(){
+	font: normal normal 18px 'FontAwesome';
+	color: #ccc;
+}
+/*end custom mixins */
+/* Control Holder */
+#bookingForm {
+	position: relative;
+	width: 100%;
+	margin: 30px 0;
+	.customFont();
+	input, 
+	textarea{
+	   outline: none;
+	  .customStyle();
+	  padding: 8px 10px;
+	  line-height: 15px;
+	  .size(34px,100%);
+	}
+	textarea {
+		min-height: 200px;
+		resize: none;
+		.customFont();
+	}
+	a.btn{
+		.buttonStyle();	
+	}
+}
+.controlHolder{
+	position: relative;
+	margin-bottom: 10px;
+}
+/* Messages */
+.error-message{
+	position: absolute;
+	top: 4px;
+	right: 2px;
+	font-weight: normal;
+	text-align: right;
+	width: 100%;
+	font-size: 10px;
+	line-height: 1em;
+	color: gray;
+	z-index: 4;
+	color: #fe5353;
+}
+.success-message{
+	position: relative;
+	text-align: left;
+	color: gray;
+	margin: 5px 0px;
+	color: #28a1fe;
+}
+/* transformSelect CSS */
+/* 1st type of select */
+.tmSelect, .tmSelect2 {
+	clear: both;
+	width: 100%;
+	margin: 0px;
+	li{
+		position: relative;
+		list-style: none;
+	}
+	span, input[type=text] {
+		position: relative;
+	    cursor: pointer;
+	    display: block;
+	    left: 0;
+	    top: 0;
+	    margin: 0;
+	}
+	&:after{
+		content: '\f002';
+		position: absolute;
+		top: 8px;
+		right: 9px;
+		.fontAwesome();
+		z-index: 4;
+	}
+	&.auto{
+		cursor: pointer;
+		span {		
+			background: transparent;
+		}
+		padding: 0;
+		margin: 0 0 20px 0;
+		line-height: 20px;
+		.customStyle();
+		.customFont();
+		.box-sizing(border-box);
+		ul{
+			margin: 1px 0 0;
+			.box-sizing(border-box);
+			width: 100%;
+			background: #f9f9f9;
+		}		
+		>li{
+			&:first-child>span{
+				padding: 7px 12px;
+				width: 100%;
+				.box-sizing(border-box);
+			}
+		}
+	}
+	ul, .transformSelectDropdown{
+		position: absolute;
+		width: 100%;
+		max-height: 210px;
+		padding: 7px 0px;
+		margin: 0px; 
+		.customStyle();
+		.customFont();
+		border-top: none;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		.box-sizing(border-box);
+		box-shadow: none;
+		background: #f9f9f9;
+		z-index: 10;
+		span {
+			border: 0;
+			color: #000;
+			padding: 5px 13px;
+			&:hover{
+				background: #ccc;
+			}
+		}
+	}
+	ul li input[type=checkbox] {
+		position: relative;
+		top: 2px;
+		margin: 0 5px 0 0;
+		cursor: pointer;
+	}
+}
+/* 2nd type of select */
+.tmSelect2{
+	&:after{
+		content: '\f0ab';
+	}
+}
+/* Radio */
+.trans-element-radio{
+	display: inline-block;
+	display: block;
+	zoom: 1;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+.tmRadio{
+	padding-left: 0;
+	p{
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	p{
+		padding-bottom: 0;
+		margin-bottom: 3px;
+	}
+	input{
+		margin-right: 5px;
+	}
+	.unchecked, .checked{
+		position: relative;
+		cursor: pointer;
+		margin-right: 10px;
+		&:after{
+			content: '\f10c';
+			position: relative;
+			top: 2px;
+			.fontAwesome();
+		}
+	}
+	.checked{
+		&:after{
+			content: '\f05d';
+		}
+	}
+}
+/* Checkbox */
+.trans-element-checkbox{
+	cursor: pointer;
+	zoom: 1;
+	span{
+		padding-left: 40px;
+	}
+	&.checked{
+		&:after{
+			content: '\f046';
+		}
+	}
+	&:after{
+		content: '\f096';
+		position: relative;
+		display: inline-block;
+		top: 2px;
+		width: 17px;
+		.fontAwesome();
+	}
+	&.unchecked{
+		&:after{
+			content: '\f096';
+		}
+	}
+}
+.tmCheckbox, .tmRadio{ 	 
+	margin-left: 0;
+	padding-left: 0;
+	padding: 0;
+	span{
+		position: relative;
+		margin-right: 10px;
+	}
+}
+/* Datepicker */
+.tmDatepicker{
+	position: relative;
+	margin-bottom: 20px;
+	&:after{
+		content: '\f073';
+		position: absolute;
+		top: 7px;
+		right: 9px;
+		.fontAwesome();
+		z-index: 4;
+	}
+}
+.ui-datepicker{
+	padding: 10px;
+	width: 300px;
+	font-size: 13px;
+	display:none;
+	z-index: 100 !important;
+	.customStyle();
+	background: #f9f9f9;
+	a{
+		color: #777;
+		&:hover{
+			color: #000;
+			text-decoration: none;
+		}
+	}
+}
+.ui-datepicker-prev, .ui-datepicker-next{
+	cursor: pointer;
+	float: left;
+}
+.ui-datepicker-next{
+	float: right;
+}
+.ui-datepicker-title{
+	text-align: center;
+}
+.ui-datepicker-calendar{
+	margin: 10px 11px;
+	td{
+		padding: 1px 10px;
+		text-align: center;
+	}
+	.ui-datepicker-current-day, .ui-datepicker-today{
+		.buttonStyle();
+		padding: 3px;
+	}
+	.ui-datepicker-today{
+		border-color: #fff;
+	}
+}
+button.ui-state-default{
+	border: none;
+	padding: 3px 7px;
+	.customFont();
+	.buttonStyle();
+}
+.ui-datepicker-close{
+	float: right;
+}
+
+@import "mixins.less";

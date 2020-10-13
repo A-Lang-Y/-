@@ -1,0 +1,182 @@
+
+.menu_block {
+
+	float: right;
+	position: relative;
+	z-index: 999;
+	padding-top: 25px;
+}
+
+nav>.sf-menu {
+	text-align: center;
+}
+nav{ position:relative;padding: 0px 0 0 0;}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu li {float:left;position:relative; }
+.sf-menu>li {
+	float: left;
+	margin-left: 54px;
+}
+
+
+.sf-menu>li img {
+	display: none;
+	width: 100%;
+	position: absolute;
+	height: 86px;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+
+.sf-menu>li>ul>li {
+  float: none;
+  	
+}
+
+
+.sf-menu>li>a{
+	color: #fff; 
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 14px; 
+	line-height: 24px;
+	position: relative;
+}
+
+.sf-menu>li>a span.menu-arrow {
+	position: absolute;
+	content: '';
+	left: 50%;
+	margin-left: -2px;
+	width: 5px;
+	background: url(../images/arrows.png) no-repeat 0 0px;
+	height: 3px;
+	top: 20px;	
+	pointer-events: none;
+	z-index: 999;
+}
+
+.sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li>a:hover {
+	color: #41dcf3;
+}
+
+
+.sf-menu>li>ul>li>a>span {
+	position: absolute;
+	right: 10px;
+	width: 4px;
+	background: url(../images/arrows.png) no-repeat right bottom;
+	height: 7px;
+	top: 7px;	
+}
+
+	
+
+
+.sf-menu a{
+	font-size: 16px; 
+	line-height: 21px; 
+	color:#fffefe;
+	}
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu li ul,.sf-menu li.sfHover>ul{
+	left:0; 
+	right: 0;
+	background: #D4D4D4;
+	top:50px;
+	width: 135px;
+	left: 50%;
+	margin-left: -67px;
+	padding:25px 0 24px; 
+	z-index: 999;  
+}
+
+.sf-menu li ul li{
+	text-align: center; 
+	float: none !important; 
+	margin-bottom: 11px;
+}
+
+.sf-menu li ul li:first-child {
+	padding-top: 0;
+	background: none;
+}
+.sf-menu li ul li a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 14px; 
+	padding-right: 0 !important;
+	line-height: 19px;
+	color: #555555;
+}
+
+.sf-menu li li a:hover, .sf-menu li.sfHover li.sfHover>a{  color: #41dcf3 !important;}
+
+/*================================>> 3 Level <<========================================*/
+.sf-menu li li ul{
+	left: 207px !important;
+	top: 5px !important; 
+	z-index: 999;
+}
+
+
+/*========
+.sf-menu li li ul li:first-child {
+	margin: 0 !important;	
+}
+
+.sf-menu li li ul li a {
+	color: #9d9d9d !important;
+}
+
+.sf-menu li li ul li a:hover {
+	color: #4d4d4d !important;	
+}======*/
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 995px) {
+
+	.sf-menu>li{
+		margin-left: 25px;
+	}
+
+	header nav {
+		padding-top: 0px !important;	
+	}
+}
+@media only screen and (max-width: 767px) {
+	.menu_block {
+		float: none !important;
+		margin: 20px 0px 0!important;	
+		
+	}
+
+  header nav{
+		float:none;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		
+		width: 100%;
+		margin: 0 auto;
+		
+	
+	}
+
+		.sf-menu{display:none;float: none;}
+	nav select{
+		font:12px/15px Arial, Helvetica, sans-serif;
+		color:#202020;
+		width:100%;
+		margin: 0 auto;
+		float: none;
+    outline: none;
+    cursor: pointer;
+		border:2px solid #fff;
+	}
+	
+
+}

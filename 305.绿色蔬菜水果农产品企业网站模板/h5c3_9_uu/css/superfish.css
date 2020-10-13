@@ -1,0 +1,85 @@
+ 
+.menu_block  {
+	position: relative;
+	z-index: 999;
+	float: right;
+	padding-top: 6px;
+
+}
+
+nav>.sf-menu {
+
+}
+nav{ position:relative;padding: 0px 0 0 0;}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu li {float:left;position:relative; }
+.sf-menu>li {
+	position: relative;
+	float: left;
+
+}
+
+.sf-menu>li+li {
+	
+}
+
+
+.sf-menu>li>a{
+	font-size: 16px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+	display: block;
+	text-transform: uppercase;
+	position: relative;
+	line-height: 16px;
+	z-index: 999;
+	position: relative;
+	padding: 9px 20px 9px;
+}
+
+
+.sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li:hover>a:hover {
+	background-color: #fd9220;
+}
+
+
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu li ul,.sf-menu li.sfHover>ul{
+	top:-28px;
+	left: 114px;
+
+	width: 141px;
+	z-index: 999; 
+	padding-top: 28px;
+	padding-bottom: 23px;
+	background-color: #ffffff;
+}
+
+
+.sf-menu li ul li{
+	padding-left: 18px;
+	float: none !important; 
+	margin-bottom: 3px;
+
+
+}
+
+
+
+
+.sf-menu li ul li a{
+	text-transform: uppercase;
+	font: 16px/16px 'Dosis', sans-serif;
+;
+	position: relative;
+	color: #000;
+
+}
+
+.sf-menu li li a:hover, 
+.sf-menu li.sfHover li.sfHover>a {  
+	color: #ec0606;
+
+}
+

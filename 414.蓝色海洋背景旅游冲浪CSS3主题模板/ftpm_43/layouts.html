@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Layouts</title>
+  	<meta charset="utf-8">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body id="propage">
+<!--==============================header=================================-->
+    <header>    
+    	<div class="main">
+        	<div class="head-box1">
+            <h1><a class="logo" href="index.html">kitesurfing</a></h1>
+            <nav>
+                <ul class="sf-menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="index-1.html">about us</a></li>
+                    <li><a href="index-2.html">gallery</a></li>
+                    <li><a href="index-3.html">store</a>
+                    	<ul>
+                            <li><a href="more.html">Kites</a></li>
+                            <li><a href="more.html">Bars</a></li>
+                            <li><a href="more.html">Boards</a></li>
+                            <li><a href="more.html">Accessories</a></li>
+                            <li><a href="more.html">Harnesses</a></li>
+                            <li><a href="more.html">Clothing</a>
+                            	<ul>
+                                    <li><a href="more.html">men</a></li>
+                                    <li><a href="more.html">Women</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="index-4.html">contacts</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+            </div>                   
+        </div>  
+         <div class="slider-bg1">
+            <figure class="page2-img1"><img src="images/page2-img2.png" alt=""></figure>
+        </div>          
+    </header>
+    
+	<!--==============================content================================-->
+    <section id="content">
+        <div class="main">
+	<div class="container_24">
+<!-- pro_structure Begin -->
+		<div class="pro_wrapper">
+			<div class="grid_24">
+				<h2 class="pro_title3">Layouts Page</h2>
+				<h3 class="pro_title3">Structure of an HTML document</h3>
+				<div class="pro_structuce">
+					<div class="pro_struct pro_struct-header">&lt;header&gt; &lt;/header&gt;</div>
+					<div class="pro_struct pro_struct-nav">&lt;nav&gt; &lt;/nav&gt;</div>
+					<div class="pro_wrapper">
+						<div class="pro_struct pro_struct-aside fright">&lt;aside&gt; &lt;/aside&gt;</div>
+						<div class="pro_struct pro_struct-section fleft">&lt;section&gt; &lt;/section&gt;</div>
+					</div>
+					<div class="pro_struct pro_struct-footer">&lt;footer&gt; &lt;/footer&gt;</div>
+				</div>
+				<dl class="pro_description-box">
+					<dt><a class="pro_description-dark">Description<span></span></a></dt>
+					<dd>
+						<div class="pro_inner">
+						<p>The first step of creating any HTML document is formatting page pro_structure. To create new website pages you can use blank.html file that is included into the purchased template package. </p>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+<!-- pro_structure End -->
+<!-- pro_structure 2 Begin -->
+	<div class="pro_wrapper"><div class="grid_24"><h3 class="pro_title">Structure Configuration</h3></div></div>
+	<div class="pro_wrapper">
+		<div class="grid_12">
+			<h6>Page Layout</h6>
+			<div class="pro_structuce">
+				<div class="pro_struct-main">
+					<div class="pro_struct">Header</div>
+					<div class="pro_struct pro_struct-content">Content</div>
+					<div class="pro_struct">Footer</div>
+				</div>
+			</div>
+			<dl class="pro_description-box">
+				<dt><a class="pro_description-dark">Description<span></span></a></dt>
+				<dd>
+					<div class="pro_inner">
+					<p>If the pro_layout looks like a single sheet of paper on top of &lt;body&gt; and all content sections are wrapped by a single width-defining element, use the following code:</p>
+					<p>HTML</p>
+<pre class="pro_htmlCode">&lt;div id="pro_main"&gt;
+	&lt;header&gt;
+		 &lt;!-- Your Logo here --&gt;
+		&lt;nav&gt;
+			&lt;!-- Your Main Menu here --&gt;
+		&lt;/nav&gt;
+	&lt;/header&gt;
+	&lt;section&gt;
+		&lt;div class="container_24"&gt;
+			&lt;div class="pro_wrapper"&gt;
+				&lt;!-- Your Columns here --&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;footer&gt; &lt;!-- Your Footer here --&gt; &lt;/footer&gt;
+&lt;/div&gt;</pre>
+					<p>CSS</p>
+<pre class="pro_cssCode">#pro_main{ 
+width:1000px; /* Your Main Block width */
+margin:0 auto; 
+background:#fff; /* Your Background Color */
+}</pre>
+					</div>
+				</dd>
+			</dl>
+		</div>
+		<div class="grid_12">
+			<h6>Page Layout width full-width backgrounds</h6>
+			<div class="pro_structuce pro_structuce2">
+				<div class="pro_struct"><div class="pro_struct2">Header</div></div>
+				<div class="pro_struct pro_struct3"><div class="pro_struct2 pro_struct2-content">Content</div></div>
+				<div class="pro_struct"><div class="pro_struct2">Footer</div></div>
+			</div>
+			<dl class="pro_description-box">
+				<dt><a class="pro_description-dark">Description<span></span></a></dt>
+				<dd>
+					<div class="pro_inner">
+					<p>If the pro_layout is subdivided into several vertical aligned sections, covering the full width of the viewport and the content area is aligned or centered within these sections, use the following code:</p>
+					<p>HTML</p>
+<pre class="pro_htmlCode">&lt;header class="pro_full-width-bg"&gt;
+	&lt;div class="pro_header-box"&gt;
+		&lt;!-- Your Logo here --&gt;
+		&lt;nav&gt;
+			&lt;!-- Your Main Menu here --&gt;
+		&lt;/nav&gt;
+	&lt;/div&gt;
+&lt;/header&gt;
+&lt;section class="pro_full-width-bg"&gt;
+	&lt;div class="container_24"&gt;
+		&lt;div class="pro_wrapper"&gt;
+			&lt;!-- Your Columns here --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+&lt;footer class="pro_full-width-bg"&gt;
+	&lt;div class="pro_footer-box"&gt;
+			&lt;!-- Your Footer here --&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;
+</pre>
+						<p>CSS</p>
+<pre class="pro_cssCode">.pro_full-width-bg{ 
+width:100%; 
+background:#ddd; /* Your Backgrounds Color */
+}
+.pro_header-box{ 
+width:960px; /* Your Header Block width */
+margin:0 auto; 
+}
+.pro_footer-box{ 
+width:960px;  /* Your Footer Block width */
+margin:0 auto; 
+}</pre>
+					</div>
+				</dd>
+			</dl>
+		</div>
+	</div>
+<!-- pro_structure 2 End -->
+<!-- Columns Begin -->
+		<div class="pro_wrapper"><div class="grid_24"><h3 class="pro_title">Columns</h3></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_24"><div class="pro_grid-box normaltip aligncenter" title="950px">grid_24</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_1"><div class="pro_grid-box normaltip aligncenter" title="30px">1</div></div><div class="grid_23"><div class="pro_grid-box normaltip aligncenter" title="910px">grid_23</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_2"><div class="pro_grid-box normaltip aligncenter" title="70px">grid_2</div></div><div class="grid_22"><div class="pro_grid-box normaltip aligncenter" title="870px">grid_22</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_3"><div class="pro_grid-box normaltip aligncenter" title="110px">grid_3</div></div><div class="grid_21"><div class="pro_grid-box normaltip aligncenter" title="830px">grid_21</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_4"><div class="pro_grid-box normaltip aligncenter" title="150px">grid_4</div></div><div class="grid_20"><div class="pro_grid-box normaltip aligncenter" title="790px">grid_20</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_5"><div class="pro_grid-box normaltip aligncenter" title="190px">grid_5</div></div><div class="grid_19"><div class="pro_grid-box normaltip aligncenter" title="750px">grid_19</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_6"><div class="pro_grid-box normaltip aligncenter" title="230px">grid_6</div></div><div class="grid_18"><div class="pro_grid-box normaltip aligncenter" title="710px">grid_18</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_7"><div class="pro_grid-box normaltip aligncenter" title="270px">grid_7</div></div><div class="grid_17"><div class="pro_grid-box normaltip aligncenter" title="670px">grid_17</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_8"><div class="pro_grid-box normaltip aligncenter" title="310px">grid_8</div></div><div class="grid_16"><div class="pro_grid-box normaltip aligncenter" title="630px">grid_16</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_9"><div class="pro_grid-box normaltip aligncenter" title="350px">grid_9</div></div><div class="grid_15"><div class="pro_grid-box normaltip aligncenter" title="590px">grid_15</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_10"><div class="pro_grid-box normaltip aligncenter" title="390px">grid_10</div></div><div class="grid_14"><div class="pro_grid-box normaltip aligncenter" title="550px">grid_14</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_11"><div class="pro_grid-box normaltip aligncenter" title="430px">grid_11</div></div><div class="grid_13"><div class="pro_grid-box normaltip aligncenter" title="510px">grid_13</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_12"><div class="pro_grid-box normaltip aligncenter" title="470px">grid_12</div></div><div class="grid_12"><div class="pro_grid-box normaltip aligncenter" title="470px">grid_12</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_13"><div class="pro_grid-box normaltip aligncenter" title="510px">grid_13</div></div><div class="grid_11"><div class="pro_grid-box normaltip aligncenter" title="430px">grid_11</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_14"><div class="pro_grid-box normaltip aligncenter" title="550px">grid_14</div></div><div class="grid_10"><div class="pro_grid-box normaltip aligncenter" title="390px">grid_10</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_15"><div class="pro_grid-box normaltip aligncenter" title="590px">grid_15</div></div><div class="grid_9"><div class="pro_grid-box normaltip aligncenter" title="350px">grid_9</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_16"><div class="pro_grid-box normaltip aligncenter" title="630px">grid_16</div></div><div class="grid_8"><div class="pro_grid-box normaltip aligncenter" title="310px">grid_8</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_17"><div class="pro_grid-box normaltip aligncenter" title="670px">grid_17</div></div><div class="grid_7"><div class="pro_grid-box normaltip aligncenter" title="270px">grid_7</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_18"><div class="pro_grid-box normaltip aligncenter" title="710px">grid_18</div></div><div class="grid_6"><div class="pro_grid-box normaltip aligncenter" title="230px">grid_6</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_19"><div class="pro_grid-box normaltip aligncenter" title="750px">grid_19</div></div><div class="grid_5"><div class="pro_grid-box normaltip aligncenter" title="190px">grid_5</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_20"><div class="pro_grid-box normaltip aligncenter" title="790px">grid_20</div></div><div class="grid_4"><div class="pro_grid-box normaltip aligncenter" title="150px">grid_4</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_21"><div class="pro_grid-box normaltip aligncenter" title="830px">grid_21</div></div><div class="grid_3"><div class="pro_grid-box normaltip aligncenter" title="110px">grid_3</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_22"><div class="pro_grid-box normaltip aligncenter" title="870px">grid_22</div></div><div class="grid_2"><div class="pro_grid-box normaltip aligncenter" title="70px">grid_2</div></div></div>
+		<div class="pro_wrapper pro_grid-row"><div class="grid_23"><div class="pro_grid-box normaltip aligncenter" title="910px">grid_23</div></div><div class="grid_1"><div class="pro_grid-box normaltip aligncenter" title="30px">1</div></div></div>
+<!-- Columns End -->
+<!-- Layouts Begin -->
+	<div class="pro_wrapper"><div class="grid_24"><h3 class="pro_title">Layouts</h3></div></div>
+	</div>
+	<div class="pro_tabs pro_tabs1">
+		<div class="pro_wrapper">
+			<ul class="pro_layouts-menu">
+				<li class="pro_layout1"><a href="#"><span></span></a></li>
+				<li class="pro_layout2"><a href="#"><span></span></a></li>
+				<li class="pro_layout3"><a href="#"><span></span></a></li>
+				<li class="pro_layout4"><a href="#"><span></span></a></li>
+				<li class="pro_layout5"><a href="#"><span></span></a></li>
+				<li class="pro_layout6"><a href="#"><span></span></a></li>
+			</ul>
+		</div>
+		<div class="pro_tab-content">
+			<div class="container_24">
+<!-- Full-width Begin -->
+		<div class="pro_wrapper"><div class="grid_24"><h6>Full-width</h6></div></div>
+		<div class="pro_grid-row2"><div class="pro_wrapper"><div class="grid_24 pro_grid-box2 normaltip" title="950px">Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis.</div></div></div>
+		<div class="pro_wrapper pro_pad_description">
+			<div class="grid_24">
+				<dl class="pro_description-box">
+					<dt><a class="pro_description-dark">Description<span></span></a></dt>
+					<dd>
+						<div class="pro_inner">
+						<p>The template is based on a grid system that uses 24 columns. In order to create the full-witdh column you will need to insert the following code:</p>
+<pre class="pro_htmlCode">&lt;div class="container_24"&gt;
+	&lt;div class="pro_wrapper"&gt;
+		&lt;div class="grid_24"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+                        <p>Lets examine the pro_layout creation process, step by step:</p>
+                        <ol>
+                        <li>Create a <strong>&lt;div&gt;</strong> with the <strong>"pro_wrapper"</strong> class (<strong>&lt;div class="pro_wrapper"&gt;</strong>). This <strong>&lt;div&gt;</strong> is a container for our columns so using it is a must.</li>
+                        <li>Next you need to create the desired number of columns and add the <strong>"grid"</strong> class to them.</li>
+                        <li>Now the most important step. You need to add <strong>"grid_x"</strong> class to each of the columns, where <strong>x</strong> - is the column width index. <strong>Total index of all the columns should be equal to 24</strong> and should not be bigger than this value.</li>
+						</ol>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+<!-- Full-width End -->
+			</div>
+		</div>
+		<div class="pro_tab-content">
+			<div class="container_24">
+<!-- Two Columns Begin -->
+		<div class="pro_wrapper"><div class="grid_24"><h6>Two Columns</h6></div></div>
+		<div class="pro_grid-row2">
+			<div class="pro_wrapper">
+				<div class="grid_12 pro_grid-box2 normaltip" title="470px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est. Nulla ullamcorper ultrices mi a pellentesque. Cras ultricies, quam ac lobortis porta, ante sapien mollis dui, a sollicitudin dui sem et ante.</div>
+				<div class="grid_12 pro_grid-box2 normaltip" title="470px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est. Nulla ullamcorper ultrices mi a pellentesque. Cras ultricies, quam ac lobortis porta, ante sapien mollis dui, a sollicitudin dui sem et ante.</div>
+			</div>
+		</div>
+		<div class="pro_wrapper pro_pad_description">
+			<div class="grid_24">
+				<dl class="pro_description-box">
+					<dt><a class="pro_description-dark">Description<span></span></a></dt>
+					<dd>
+						<div class="pro_inner">
+						<p>In order to create two columns you will need to insert the following code:</p>
+<pre class="pro_htmlCode">&lt;div class="container_24"&gt;
+	&lt;div class="pro_wrapper"&gt;
+		&lt;div class="grid_12"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;div class="grid_12"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+						<p>Two Columns Layout creation:</p>
+						<ol>
+                <li>Create a <strong>&lt;div&gt;</strong> with the <strong>"pro_wrapper"</strong> class (<strong>&lt;div class="pro_wrapper"&gt;</strong>). This <strong>&lt;div&gt;</strong> is a container for our columns so using it is a must.</li>
+                <li>Next you need to create the desired number of columns and add the <strong>"grid"</strong> class to them.</li>
+                <li>Now the most important step. You need to add <strong>"grid_x"</strong> class to each of the columns, where <strong>x</strong> - is the column width index. <strong>Total index of all the columns should be equal to 24</strong> and should not be bigger than this value.</li>
+                </ol>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+<!-- Two Columns End -->
+			</div>
+		</div>
+		<div class="pro_tab-content">
+			<div class="container_24">
+<!-- Three Columns Begin -->
+		<div class="pro_wrapper"><div class="grid_24"><h6>Three Columns</h6></div></div>
+		<div class="pro_grid-row2">
+			<div class="pro_wrapper">
+				<div class="grid_8 pro_grid-box2 normaltip" title="310px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est.</div>
+				<div class="grid_8 pro_grid-box2 normaltip" title="310px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est.</div>
+				<div class="grid_8 pro_grid-box2 normaltip" title="310px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est.</div>
+			</div>
+		</div>
+		<div class="pro_wrapper pro_pad_description">
+			<div class="grid_24">
+				<dl class="pro_description-box">
+					<dt><a class="pro_description-dark">Description<span></span></a></dt>
+					<dd>
+						<div class="pro_inner">
+						<p>In order to create three columns you will need to insert the following code:</p>
+<pre class="pro_htmlCode">&lt;div class="container_24"&gt;
+	&lt;div class="pro_wrapper"&gt;
+		&lt;div class="grid_8"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;div class="grid_8"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;div class="grid_8"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+						<p>Three Columns Layout creation:</p>
+						<ol>
+                <li>Create a <strong>&lt;div&gt;</strong> with the <strong>"pro_wrapper"</strong> class (<strong>&lt;div class="pro_wrapper"&gt;</strong>). This <strong>&lt;div&gt;</strong> is a container for our columns so using it is a must.</li>
+                <li>Next you need to create the desired number of columns and add the <strong>"grid"</strong> class to them.</li>
+                <li>Now the most important step. You need to add <strong>"grid_x"</strong> class to each of the columns, where <strong>x</strong> - is the column width index. <strong>Total index of all the columns should be equal to 24</strong> and should not be bigger than this value.</li>
+                </ol> 
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+<!-- Three Columns End -->
+			</div>
+		</div>
+		<div class="pro_tab-content">
+			<div class="container_24">
+<!-- Four Columns Begin -->
+		<div class="pro_wrapper"><div class="grid_24"><h6>Four Columns</h6></div></div>
+		<div class="pro_grid-row2">
+			<div class="pro_wrapper">
+				<div class="grid_6 pro_grid-box2 normaltip" title="230px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem.</div>
+				<div class="grid_6 pro_grid-box2 normaltip" title="230px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem.</div>
+				<div class="grid_6 pro_grid-box2 normaltip" title="230px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem.</div>
+				<div class="grid_6 pro_grid-box2 normaltip" title="230px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem.</div>
+			</div>
+		</div>
+		<div class="pro_wrapper pro_pad_description">
+			<div class="grid_24">
+				<dl class="pro_description-box">
+					<dt><a class="pro_description-dark">Description<span></span></a></dt>
+					<dd>
+						<div class="pro_inner">
+						<p>In order to create four columns you will need to insert the following code:</p>
+<pre class="pro_htmlCode">&lt;div class="container_24"&gt;
+	&lt;div class="pro_wrapper"&gt;
+		&lt;div class="grid_6"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;div class="grid_6"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;div class="grid_6"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;div class="grid_6"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+						<p>Four Columns Layout creation:</p>
+						<ol>
+                <li>Create a <strong>&lt;div&gt;</strong> with the <strong>"pro_wrapper"</strong> class (<strong>&lt;div class="pro_wrapper"&gt;</strong>). This <strong>&lt;div&gt;</strong> is a container for our columns so using it is a must.</li>
+                <li>Next you need to create the desired number of columns and add the <strong>"grid"</strong> class to them.</li>
+                <li>Now the most important step. You need to add <strong>"grid_x"</strong> class to each of the columns, where <strong>x</strong> - is the column width index. <strong>Total index of all the columns should be equal to 24</strong> and should not be bigger than this value.</li>
+                </ol> 
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+<!-- Four Columns End -->
+			</div>
+		</div>
+		<div class="pro_tab-content">
+			<div class="container_24">
+<!-- Left Sidebar Begin -->
+		<div class="pro_wrapper"><div class="grid_24"><h6>Left Sidebar</h6></div></div>
+		<div class="pro_grid-row2">
+			<div class="pro_wrapper">
+				<div class="grid_6 pro_grid-box2 normaltip" title="230px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem.</div>
+				<div class="grid_18 pro_grid-box2 normaltip" title="710px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est. Nulla ullamcorper ultrices mi a pellentesque. Cras ultricies, quam ac lobortis porta, ante sapien mollis dui, a sollicitudin dui sem et ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem.</div>
+			</div>
+		</div>
+		<div class="pro_wrapper pro_pad_description">
+			<div class="grid_24">
+				<dl class="pro_description-box">
+					<dt><a class="pro_description-dark">Description<span></span></a></dt>
+					<dd>
+						<div class="pro_inner">
+						<p>In order to create pro_layout with left sidebar you will need to insert the following code:</p>
+<pre class="pro_htmlCode">&lt;div class="container_24"&gt;
+	&lt;div class="pro_wrapper"&gt;
+		&lt;div class="grid_6"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;div class="grid_18"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+						<p>Layout with left sidebar creation:</p>
+						<ol>
+                <li>Create a <strong>&lt;div&gt;</strong> with the <strong>"pro_wrapper"</strong> class (<strong>&lt;div class="pro_wrapper"&gt;</strong>). This <strong>&lt;div&gt;</strong> is a container for our columns so using it is a must.</li>
+                <li>Next you need to create the desired number of columns and add the <strong>"grid"</strong> class to them.</li>
+                <li>Now the most important step. You need to add <strong>"grid_x"</strong> class to each of the columns, where <strong>x</strong> - is the column width index. <strong>Total index of all the columns should be equal to 24</strong> and should not be bigger than this value.</li>
+                </ol>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+<!-- Left Sidebar End -->
+			</div>
+		</div>
+		<div class="pro_tab-content">
+			<div class="container_24">
+<!-- Right Sidebar Begin -->
+		<div class="pro_wrapper"><div class="grid_24"><h6>Right Sidebar</h6></div></div>
+		<div class="pro_grid-row2">
+			<div class="pro_wrapper">
+				<div class="grid_18 pro_grid-box2 normaltip" title="710px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est. Nulla ullamcorper ultrices mi a pellentesque. Cras ultricies, quam ac lobortis porta, ante sapien mollis dui, a sollicitudin dui sem et ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem.</div>
+				<div class="grid_6 pro_grid-box2 normaltip" title="230px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem.</div>
+			</div>
+		</div>
+		<div class="pro_wrapper pro_pad_description">
+			<div class="grid_24">
+				<dl class="pro_description-box">
+					<dt><a class="pro_description-dark">Description<span></span></a></dt>
+					<dd>
+						<div class="pro_inner">
+						<p>In order to create pro_layout with right sidebar you will need to insert the following code:</p>
+<pre class="pro_htmlCode">&lt;div class="container_24"&gt;
+	&lt;div class="pro_wrapper"&gt;
+		&lt;div class="grid_18"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;div class="grid_6"&gt;
+			&lt;!-- insert content here --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+						<p>Layout with right sidebar creation:</p>
+						<ol>
+                <li>Create a <strong>&lt;div&gt;</strong> with the <strong>"pro_wrapper"</strong> class (<strong>&lt;div class="pro_wrapper"&gt;</strong>). This <strong>&lt;div&gt;</strong> is a container for our columns so using it is a must.</li>
+                <li>Next you need to create the desired number of columns and add the <strong>"grid"</strong> class to them.</li>
+                <li>Now the most important step. You need to add <strong>"grid_x"</strong> class to each of the columns, where <strong>x</strong> - is the column width index. <strong>Total index of all the columns should be equal to 24</strong> and should not be bigger than this value.</li>
+                </ol>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+<!-- Right Sidebar End -->
+			</div>
+		</div>
+	</div>
+<!-- Layouts End -->
+	<div class="container_24"><div class="pro_wrapper"><div class="grid_24"><h3 class="pro_title">Images</h3></div></div></div>
+<!-- Images Begin -->
+	<div class="pro_tabs pro_tabs2">
+		<div class="pro_wrapper">
+			<ul class="pro_layouts-menu">
+				<li class="pro_layout7"><a href="#"><span></span></a></li>
+				<li class="pro_layout8"><a href="#"><span></span></a></li>
+			</ul>
+		</div>
+		<div class="pro_tab-content">
+			<div class="container_24">
+				<div class="pro_wrapper">
+					<div class="grid_8">
+						<h6>Floating Left</h6>
+						<div class="pro_wrapper">
+							<img src="images/stock_images/120x120_2.jpg" alt="" class="pro_image_left">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est. Cras ultricies, quam ac lobortis porta, ante sapien mollis dui.</p>
+						</div>
+					</div>
+					<div class="grid_8">
+						<h6>Floating Left 2</h6>
+						<div class="pro_wrapper">
+							<img src="images/stock_images/70x70_3.jpg" alt="" class="pro_image_left">
+							<p class="extra-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est. Cras ultricies, quam ac lobortis porta, ante sapien mollis dui.</p>
+						</div>
+					</div>
+					<div class="grid_8">
+						<h6>Floating Right</h6>
+						<div class="pro_wrapper">
+							<img src="images/stock_images/120x120_4.jpg" alt="" class="pro_image_right">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat pharetra turpis, sed posuere nisi porta a. Etiam vel enim lorem. Nunc lorem sapien, ultrices at faucibus at, varius a est. Cras ultricies, quam ac lobortis porta, ante sapien mollis dui.</p>
+						</div>
+					</div>
+				</div>
+				<div class="pro_wrapper pro_pad_description">
+					<div class="grid_24">
+						<dl class="pro_description-box">
+							<dt><a class="pro_description-dark">Description<span></span></a></dt>
+							<dd>
+								<div class="pro_inner">
+								<p class="pro_descr_title"><strong>Floating Left</strong></p>
+								<p>In order to create an image block with the text wrapping it on the right, add class &quot;pro_image_left&quot; to the image.</p>
+<pre class="pro_htmlCode">&lt;div class="pro_wrapper"&gt;
+	&lt;div class="pro_image_left"&gt;
+		&lt;img src="YourImage.jpg" alt=""&gt;
+	&lt;/div>
+	&lt;p&gt; &lt;!-- insert text here --&gt; &lt;/p&gt;
+&lt;/div></pre>
+								<p class="pro_descr_title"><strong>Floating Left 2</strong></p>
+								<p>In order to create left-aligned image block and right-aligned text block add class "pro_image_left" to the image and class "extra-wrap&quot; to the text block.</p>
+<pre class="pro_htmlCode">&lt;div class="pro_wrapper"&gt;
+	&lt;div class="pro_image_left"&gt;
+		&lt;img src="YourImage.jpg" alt=""&gt;
+	&lt;/div>
+	&lt;p class="extra-wrap"&gt; &lt;!-- insert text here --&gt; &lt;/p&gt;
+&lt;/div></pre>
+								<p class="pro_descr_title"><strong>Floating Right</strong></p>
+								<p>In order to create an image block with the text wrapping it on the left, add class &quot;pro_image_right&quot; to the image.</p>
+<pre class="pro_htmlCode">&lt;div class="pro_wrapper"&gt;
+	&lt;div class="pro_image_right"&gt;
+		&lt;img src="YourImage.jpg" alt=""&gt;
+	&lt;/div>
+	&lt;p&gt; &lt;!-- insert text here --&gt; &lt;/p&gt;
+&lt;/div></pre>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pro_tab-content">
+			<div class="container_24">
+				<div class="pro_wrapper">
+					<div class="grid_6">
+						<h6>Image without style</h6>
+						<span><img src="images/stock_images/200x150_1.jpg" alt=""></span>
+					</div>
+					<div class="grid_6">
+						<h6>Image Style 1</h6>
+						<span class="pro_image_style1 pro_image_style1_marg"><img src="images/stock_images/200x150_2.jpg" alt=""></span>
+					</div>
+					<div class="grid_6">
+						<h6>Image Style 2</h6>
+						<span class="pro_image_style2"><img src="images/stock_images/200x150_3.jpg" alt=""></span>
+					</div>
+					<div class="grid_6">
+						<h6>Image Style 3</h6>
+						<span class="pro_image_style3 pro_image_style1_marg"><img src="images/stock_images/200x150_4.jpg" alt=""></span>
+					</div>
+				</div>
+				<div class="pro_wrapper pro_pad_description">
+					<div class="grid_24">
+						<dl class="pro_description-box">
+							<dt><a class="pro_description-dark">Description<span></span></a></dt>
+							<dd>
+								<div class="pro_inner">
+								<p class="pro_descr_title">Image without style</p>
+								<p>To create simple image block without any styles use the &quot;img&quot; tag. Using the &quot;src&quot; image attribute input the root to the image file.</p>
+<pre class="pro_htmlCode">&lt;img src="images/YourImage.jpg" alt=""&gt;</pre>
+								<p class="pro_descr_title">Image Style 1</p>
+								<p>Create &quot;span&quot; tag with class "pro_image_style1" and insert &quot;img&quot; tag with &quot;src&quot; attribute and root to the image file. </p>
+<pre class="pro_htmlCode">&lt;span class="pro_image_style1"&gt; 
+	&lt;img src="images/YourImage.jpg" alt=""&gt; 
+&lt;/span&gt;</pre>
+								<p class="pro_descr_title">Image Style 2</p>
+								<p>Create &quot;span&quot; tag with class "pro_image_style2" and insert &quot;img&quot; tag with &quot;src&quot; attribute and root to the image file. </p>
+<pre class="pro_htmlCode">&lt;span class="pro_image_style2"&gt; 
+	&lt;img src="images/YourImage.jpg" alt=""&gt; 
+&lt;/span&gt;</pre>
+								<p class="pro_descr_title">Image Style 3</p>
+								<p>Create &quot;span&quot; tag with class "pro_image_style3" and insert &quot;img&quot; tag with &quot;src&quot; attribute and root to the image file. </p>
+<pre class="pro_htmlCode">&lt;span class="pro_image_style3"&gt; 
+	&lt;img src="images/YourImage.jpg" alt=""&gt; 
+&lt;/span&gt;</pre>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Images End -->
+	</div>
+</div>
+    </section>
+    
+	<!--==============================footer=================================-->
+    <footer>
+        <div class="main">
+            <div class="container_24">
+            	<div class="wrapper">
+                	<article class="grid_10">
+                    	<h6 class="p11">Navigation menu</h6>
+                       <article class="grid_4 alpha">
+                        <ul class="list1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index-1.html">About us</a></li>
+                            <li><a href="index-2.html">Gallery</a></li>
+                            <li class="last1"><a href="index-3.html">Store</a></li>
+                        </ul>
+                        </article>
+                        <article class="grid_4 push_1">
+                        	<ul class="list1">
+                            <li><a href="#">Events</a></li>
+                            <li class="last1"><a href="index-4.html">Contacts</a></li>
+                        </ul>
+                        </article>
+                    </article>
+                    <article class="grid_9">
+                    	<h6 class="p11">Kitesurfing tips</h6>
+                       <article class="grid_4 alpha"> 
+                       <ul class="list1">
+                            <li><a href="#">Praesent vestibulum</a></li>
+                            <li><a href="#">Molestie lacus</a></li>
+                            <li><a href="#">Aenean nonummy</a></li>
+
+                            <li class="last1"><a href="#">Hendrerit mauris</a></li>
+                        </ul>
+                        </article>
+                        <article class="grid_4 omega push_1">
+                        	<ul class="list1">
+                                <li><a href="#">Phasellus porta</a></li>
+                                <li><a href="#">Fusce suscipit varius mi </a></li>
+                                <li><a href="#">Cum sociis natoque </a></li>
+                                <li class="last1"><a href="#">Penatibus magnis</a></li>
+                            </ul>
+                        </article>
+                    </article>
+                    <article class="grid_4 push_1">
+                    	<h6 class="p11">Help Info</h6>
+                        <ul class="list1">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Work for us</a></li>
+                            <li class="last1"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="foot-page"> 
+        <div class="fleft">&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></div>
+        <div class="clear"></div>
+        </div>
+    </footer>
+
+</body>
+</html>

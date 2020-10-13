@@ -1,0 +1,119 @@
+
+
+/*Slider*/
+.slider-relative {
+	position:relative;
+	overflow: hidden;
+}
+
+
+.items {
+	display: none;	
+	overflow: hidden;
+}
+
+.slider-block {
+	position:relative;
+	height: 534px;
+	
+}
+.slider {
+	border-top: 1px solid #fff1bd;
+	border-bottom: 1px solid #a8a8a8;
+	z-index:2;
+	overflow: visible !important;
+	height: 532px;
+	position: absolute;
+	left: 50%;
+	margin-left: -800px;
+	width: 1600px;
+}
+
+
+.slider .banner{
+	top: 141px;
+	text-align: center;
+	left: 127px;
+	padding: 47px  20px 65px;
+	position: absolute;
+	font: italic bold 48px/36px 'Marvel', sans-serif;
+	color: #fff;	
+	width: 430px;
+	background: url(../images/banner_bg.png) 0 0 repeat;
+}
+
+.slider .banner span {
+	color: #f98d0d;
+}
+
+.slider .banner i {
+	font-style: normal;
+	color: #c9e54e;
+}
+
+.slider .banner p {
+	padding-top: 23px;
+	font-size: 24px;
+	color: #bdbdbd;
+}
+/*
+
+.pagination {
+bottom: 14px;
+position: absolute;
+right: 157px;
+z-index: 999;
+}
+
+.pagination li {
+	float: left;
+}
+
+.pagination li+li {
+	margin-left: 4px;
+}
+
+
+.pagination  li a{
+	width: 15px;
+	display: block;
+		transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+	height: 15px;
+	background: url(../images/pagination.png) right 0 no-repeat;
+}
+
+.pagination li a:hover, .pagination li.current a {
+	background-position: 0 0;
+}
+*/
+
+
+a.prev, a.next {
+	width: 16px;
+	background: url(../images/prevnext.png) 0 0 no-repeat;
+	height: 27px;
+	position: absolute;
+	display: block;
+	bottom: 73px;
+	z-index: 999;
+	right: 256px;
+	transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+}
+
+a.next {
+	right: 231px;
+	background-position: right bottom;
+
+}
+
+a.next:hover {
+	background-position: right 0;
+}
+
+a.prev:hover {
+	background-position: 0 bottom;
+}

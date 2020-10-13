@@ -1,0 +1,112 @@
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.rubel-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.rubel-header
+{
+   z-index: 1;
+}
+
+.rubel-hmenu>li, .rubel-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.rubel-hmenu, ul.rubel-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+ul.rubel-hmenu>li:first-child {
+   padding-right:9px;
+}
+ul.rubel-hmenu>li{
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('span'),firstChild).className='rubel-hmenu-separator');
+}
+ul.rubel-hmenu>li>span.rubel-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -9px;
+   width: 9px;
+   height: 43px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+ul.rubel-hmenu>li:first-child>span.rubel-hmenu-separator
+{
+   display:none;
+}
+
+ul.rubel-hmenu ul{
+   background-color: #E0E0E0 !important;
+}
+
+.rubel-content-layout, .rubel-content-layout-row, .rubel-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.rubel-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.rubel-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.rubel-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.rubel-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.rubel-postheadericons span{
+   zoom: 1;
+}
+.rubel-postcontent {
+   height: 1%;
+}
+
+.rubel-postfootericons span{
+   zoom: 1;
+}
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.rubel-content 
+{
+   width: auto;
+   float:none;
+}
+

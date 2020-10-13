@@ -1,0 +1,166 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Body reset
+// -------------------------
+
+body {
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @textColor;
+  background-color: @bodyBackground;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+#page {
+  background-color: @white;
+}
+
+// Links
+// -------------------------
+
+a {
+  color: @linkColor;
+  text-decoration: none;
+  .transition(all .3s);
+}
+
+a:hover {
+  color: @linkColorHover;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus,
+a:active {
+  outline: none;
+}
+
+
+// Images
+// -------------------------
+
+// Rounded corners
+.img-rounded {
+  .border-radius(6px);
+}
+
+// Add polaroid-esque trim
+.img-polaroid {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  .box-shadow(0 1px 3px rgba(0,0,0,.1));
+}
+
+// Perfect circle
+.img-circle {
+  .border-radius(500px); // crank the border-radius so it works with most reasonably sized images
+}
+
+// map
+.lt-ie9 {
+  .map {
+    margin-bottom: 30px;
+  }
+}
+
+@media(min-width: 768px) {
+  .map {
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 767px) {
+  .map {
+    margin-bottom: 20px;
+  }
+}
+
+// Wp class
+// -------------------------
+.alignnone,
+.alignleft,
+.alignright,
+.aligncenter {
+  margin-bottom: @baseLineHeight;
+  display: block;
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  font-size: @fontSizeSmall;
+  color: @gray6;
+}
+
+.imgAlign() {
+  .alignnone {
+    clear: both;
+    margin-bottom: @baseLineHeight;
+  }
+
+  .alignleft {
+    float: left;
+    margin-right: @layoutGutterWidth/2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .alignright {
+    float: right;
+    margin-left: @layoutGutterWidth/2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .aligncenter {
+    .center-block();
+    margin-bottom: @baseLineHeight;
+  }
+}
+
+.lt-ie9 {
+  .imgAlign();
+}
+
+@media (min-width: 768px) {
+  .imgAlign();
+}
+
+@media (max-width: 767px) {
+  .alignnone,
+  .alignleft,
+  .alignright,
+  .aligncenter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+// .contact-info {
+//   margin-bottom: 20px;
+
+//   .clearfix();
+
+//   ul {
+//     float: left;
+//     width: 50%;
+//     padding-left: 10px;
+//     .box-sizing(border-box);
+
+//     &:first-child {
+//       padding-right: 10px;
+//       padding-left: 0;
+//     }
+
+//     i {
+//       margin-right: 10px;
+//     }
+//   }
+// }
+

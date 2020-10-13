@@ -1,0 +1,86 @@
+/*Recent Portolio*/
+.list_carousel {
+	position:relative;
+}
+.list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.list_carousel li {
+	display: block;
+	float: left;
+	margin-right:3px;
+}
+.list_carousel .responsive {
+	width: auto;
+	margin-left: 0;
+}
+.list_carousel #controls {
+	position:absolute;
+	right:0px;
+	top:-35px;
+}
+.list_carousel .prev {
+	position:relative;
+	right:0px;
+	margin-right:1px;
+	background-repeat:no-repeat;
+	background-color:#333333;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	padding:5px 10px;
+	background-position:center center;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	-moz-transition: all 200ms ease 0s;
+	background:url(../images/slider_prev.png) no-repeat scroll center center #f96e5b;
+	border-color: #f96e5b #f96e5b #db5f4e;
+	border-image: none;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-bottom-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	-moz-border-radius-topright:3px;
+	border-top-right-radius:3px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 0 #ffc2ba inset;
+	cursor: pointer;
+	height:30px;
+	text-align: center;
+}
+.list_carousel .next {
+	position:relative;
+	right:0px;
+	padding:5px 10px;
+	background-position:center center;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	-moz-transition: all 200ms ease 0s;
+	background:url(../images/slider_next.png) no-repeat scroll center center #fe7360;
+	border-color: #fe7360 #fe7360 #db5f4e;
+	border-image: none;
+	-webkit-border-bottom-right-radius:3px;
+	-moz-border-radius-bottomright:3px;
+	border-bottom-right-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	-moz-border-radius-topright:3px;
+	border-top-right-radius:3px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 0 #ffc2ba inset;
+	cursor: pointer;
+	text-align: center;
+}
+.list_carousel .prev:hover, .list_carousel .next:hover {
+	-moz-transition: background-color 0.3s ease 0s, border 0.2s ease 0s, color 0.2s ease 0s, opacity 0.2s ease-in-out 0s;
+	border-color: #353535;
+	background-color: #1A1D1E;
+	box-shadow: inset 0 1px 0 0 #808080;
+}

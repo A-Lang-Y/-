@@ -1,0 +1,517 @@
+@import '../font/font-awesome.css';
+/* CSS for jquery.fancyform.js */
+/*custom mixins */
+/*end custom mixins */
+/* Control Holder */
+
+.tmInput {
+  position: relative;
+}
+
+.mr0 {
+  margin-right: 0;
+}
+
+.tmTextarea {
+  padding-top: 12px;
+}
+
+.fl1 {
+  width: 193px;
+  float: left;
+}
+
+.fl1.fl2 {
+  top: 33px;
+}
+
+.fl1+.fl1 {
+  margin-left: 47px;
+}
+
+.fl1 em {
+  font-style: normal;
+  padding-top: 12px;
+  display: block;
+  float: left;
+  padding-left: 12px;
+}
+
+.fl1 em +div {
+  float: right;
+}
+
+.tmInput {
+    width: 100%;
+}
+
+#bookingForm textarea {
+  min-height: 143px;
+  resize: none;
+  padding-top: 10px !important;
+  color: #737272;
+  font: 14px/20px 'Open Sans', sans-serif;
+
+}
+
+
+.fl1 em +.controlHolder {
+  margin-bottom: 0;
+}
+
+.tmSelect {
+  margin-bottom: 8px !important;
+}
+
+
+.tmInput {
+  margin-right: 47px;
+}
+
+#bookingForm {
+  position: relative;
+  display: block;
+  padding-top: 5px;
+  margin-right: 27px;
+  color: #737272;
+  font: 14px/20px 'Open Sans', sans-serif;
+}
+#bookingForm input,
+#bookingForm textarea {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  border: 1px solid #f1f1f1;
+  color: #737272;
+  background: #f0f3f5;
+  padding: 5px 12px;
+  width: 100%;
+  font: 14px/20px 'Open Sans', sans-serif;
+  height: 30px;
+ 
+}
+
+
+#bookingForm input::-webkit-input-placeholder { 
+  color: #737272; 
+}
+
+input::-webkit-input-placeholder ,
+textarea::-webkit-input-placeholder 
+{color:#737272;}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder
+{color:#737272;}
+
+#bookingForm input:focus,
+#bookingForm textarea:focus {
+  background: #fff;
+}
+
+#bookingForm a.btn {
+  margin-top: 16px;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+#bookingForm a.btn:hover {
+}
+.controlHolder {
+  position: relative;
+  margin-bottom: 13px;
+}
+/* Messages */
+.error-message {
+  position: absolute;
+  top: 31px;
+  white-space: nowrap;
+  right: 0px;
+  font-weight: normal;
+  text-align: right;
+  font-size: 10px;
+  line-height: 1em;
+  color: gray;
+  z-index: 4;
+  color: #fe5353;
+}
+.success-message {
+  position: relative;
+  text-align: left;
+  color: gray;
+  margin: 5px 0px;
+  color: #F3AA29;
+}
+/* transformSelect CSS */
+/* 1st type of select */
+.tmSelect,
+.tmSelect2 {
+  clear: both;
+  width: 100%;
+  margin: 0px;
+}
+.tmSelect li,
+.tmSelect2 li {
+  position: relative;
+  list-style: none;
+
+}
+.tmSelect span,
+.tmSelect2 span,
+.tmSelect input[type=text],
+.tmSelect2 input[type=text] {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+.tmSelect:after,
+.tmSelect2:after {
+  content: '\f002';
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  font: normal normal 18px 'FontAwesome';
+  color: #ccc;
+  z-index: 4;
+}
+.tmSelect.auto,
+.tmSelect2.auto {
+  cursor: pointer;
+  padding: 0;
+  margin: 6px 0 20px 0;
+  border: 1px #f1f1f1 solid;
+  color: #737272;
+  background: #f0f3f5;
+  font: 14px/20px 'Open Sans', sans-serif;
+  width: 95px;
+  height: 30px;
+  float: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tmSelect.auto span,
+.tmSelect2.auto span {
+  background: transparent;
+}
+.tmSelect.auto:focus,
+.tmSelect2.auto:focus {
+  background: #fff;
+}
+.tmSelect.auto ul,
+.tmSelect2.auto ul {
+  margin: 0px 0 0;
+  float: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 55px;
+}
+.tmSelect.auto > li:first-child > span,
+.tmSelect2.auto > li:first-child > span {
+  padding: 4px 12px 6px;
+  color: #737272;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tmSelect ul,
+.tmSelect2 ul,
+.tmSelect .transformSelectDropdown,
+.tmSelect2 .transformSelectDropdown {
+  position: absolute;
+  width: 100%;
+  max-height: 210px;
+  padding: 0px 0px;
+  top: 29px;
+  margin: 0px;
+  right: 0;
+  border: 1px #ccc solid;
+  color: #737272;
+  min-height: 65px;
+  background: #fff;
+  font: 12px/18px Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: none;
+  z-index: 999;
+}
+.tmSelect ul:focus,
+.tmSelect2 ul:focus,
+.tmSelect .transformSelectDropdown:focus,
+.tmSelect2 .transformSelectDropdown:focus {
+  background: #fff;
+}
+.tmSelect ul span,
+.tmSelect2 ul span,
+.tmSelect .transformSelectDropdown span,
+.tmSelect2 .transformSelectDropdown span {
+  border: 0;
+  color: #000;
+  padding: 0px 9px;
+  line-height: 17px;
+}
+.tmSelect ul span:hover,
+.tmSelect2 ul span:hover,
+.tmSelect .transformSelectDropdown span:hover,
+.tmSelect2 .transformSelectDropdown span:hover {
+  background: #d2dae0;
+}
+.tmSelect ul li input[type=checkbox],
+.tmSelect2 ul li input[type=checkbox] {
+  position: relative;
+  top: 2px;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+}
+/* 2nd type of select */
+.tmSelect2:after {
+  content: '';
+  background-color: #d2dae0;
+  width: 23px;
+  height: 22px;
+  text-align: center;
+  color: #adaeaf;
+  font-size: 14px;
+  line-height: 25px;
+  right: 4px;
+  margin-top: 2px;
+}
+/* Radio */
+.trans-element-radio {
+  display: inline-block;
+  display: block;
+  zoom: 1;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.tmRadio {
+  padding-left: 0;
+}
+.tmRadio p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 0px;
+  position: relative;
+  top: -6px;
+}
+.tmRadio p {
+  padding-bottom: 0;
+  margin-bottom: 3px;
+  padding-left: 30px;
+}
+.tmRadio input {
+  margin-right: 5px;
+}
+.tmRadio .unchecked,
+.tmRadio .checked {
+  position: relative;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.tmRadio strong {
+  margin-left: 30px;
+}
+
+.tmRadio {
+  margin-left: -30px !important;
+}
+.tmRadio .unchecked:after,
+.tmRadio .checked:after {
+  content: '\f10c';
+  position: relative;
+  top: 1px;
+  font: normal normal 20px 'FontAwesome';
+  color: #adaeaf;
+}
+.tmRadio .checked:after {
+  content: '\f05d';
+  color: #98a6b3;
+}
+/* Checkbox */
+.trans-element-checkbox {
+  cursor: pointer;
+  zoom: 1;
+}
+.trans-element-checkbox span {
+  padding-left: 40px;
+
+}
+.trans-element-checkbox.checked:after {
+  content: '\f046';
+}
+.trans-element-checkbox:after {
+  content: '\f096';
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  width: 17px;
+  font: normal normal 18px 'FontAwesome';
+  color: #ccc;
+}
+.trans-element-checkbox.unchecked:after {
+  content: '\f096';
+}
+.tmCheckbox,
+.tmRadio {
+  margin-left: 0;
+  padding-left: 0;
+  padding: 0;
+}
+.tmCheckbox span,
+.tmRadio span {
+  position: relative;
+  margin-right: 10px;
+  top: 1px;
+}
+/* Datepicker */
+.tmDatepicker {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#bookingForm>strong {
+  display: block;
+  font-weight: normal;
+  float: left;
+  padding-top: 7px;
+}
+
+
+#bookingForm>strong+.controlHolder {
+  width: 336px;
+  float: right;
+  padding-top: 1px;
+}
+
+.tmDatepicker {
+  display: block;
+  margin-bottom: 0;
+}
+
+.tmDatepicker:after {
+  content: '\f073';
+  position: absolute;
+  bottom: 5px;
+  right: 23px;
+  font: normal normal 20px/20px 'FontAwesome';
+  color: #98a6b3;
+  z-index: 4;
+  cursor: text;
+}
+.ui-datepicker {
+  padding: 10px;
+  width: 300px;
+  font-size: 13px;
+  display: none;
+  z-index: 100 !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px #ccc solid;
+  color: #737272;
+  background: #F0F3F5;
+}
+.ui-datepicker:focus {
+  background: #fff;
+}
+.ui-datepicker a {
+  color: #777;
+}
+.ui-datepicker a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  cursor: pointer;
+  float: left;
+}
+.ui-datepicker-next {
+  float: right;
+}
+.ui-datepicker-title {
+  text-align: center;
+}
+.ui-datepicker-calendar {
+  margin: 10px 11px;
+}
+.ui-datepicker-calendar td {
+  padding: 1px 10px;
+  text-align: center;
+}
+.ui-datepicker-calendar .ui-datepicker-current-day,
+.ui-datepicker-calendar .ui-datepicker-today {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 6px 15px;
+  border: 1px #ccc solid;
+  background: #f5f5f5;
+  color: #000;
+  font-weight: normal;
+  padding: 3px;
+}
+.ui-datepicker-calendar .ui-datepicker-current-day:hover,
+.ui-datepicker-calendar .ui-datepicker-today:hover {
+  background: #efefef;
+}
+.ui-datepicker-calendar .ui-datepicker-today {
+  border-color: #fff;
+}
+button.ui-state-default {
+  border: none;
+  padding: 3px 7px;
+  font: 12px/18px Arial, sans-serif;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 6px 15px;
+  border: 1px #ccc solid;
+  background: #f5f5f5;
+  color: #000;
+  font-weight: normal;
+}
+button.ui-state-default:hover {
+  background: #efefef;
+}
+.ui-datepicker-close {
+  float: right;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}

@@ -1,0 +1,166 @@
+ul#mainnav li ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+ul#mainnav li ul {
+	line-height:1.0;
+}
+
+ul#mainnav li {
+	overflow:hidden;
+}
+
+ul#mainnav li ul {
+	position:absolute;
+	width:200px; /* left offset of submenus need to match (see below) */
+	padding-top:0px;
+	z-index:3000;
+	top:86px;
+}
+
+ul#mainnav li ul li {
+	width:100%;
+}
+
+ul#mainnav li ul li:hover {
+	visibility:inherit; /* fixes IE7 'sticky bug' */
+}
+
+ul#mainnav li ul li {
+	float:left;
+	position:relative;
+	z-index:980;
+}
+
+ul#mainnav li ul li a {
+	display:block;
+	position:relative;
+	font-size:12px;
+}
+
+ul#mainnav li ul li:hover ul,
+ul#mainnav li ul li.sfHover ul {
+	left:201px;
+	top:-1px; /* match top ul list item height */
+	z-index:99;
+}
+
+ul#mainnav li ul li ul li.nav-first-item {
+	border-top:1px solid #efefef;
+}
+
+ul#mainnav li ul li ul li.nav-first-item:hover {
+	border-top:1px solid #efefef;
+}
+
+ul#mainnav li ul li:hover li ul,
+ul#mainnav li ul li.sfHover li ul {
+	top:-999em;
+}
+
+ul#mainnav li ul li li:hover ul,
+ul#mainnav li ul li li.sfHover ul {
+	left:200px; /* match ul width */
+	top:0;
+}
+
+ul#mainnav li ul li li:hover li ul,
+ul#mainnav li ul li li.sfHover li ul {
+	top:-999em;
+}
+
+ul#mainnav li ul li ul {
+	position:absolute;
+	width:200px;
+	left:201px;
+	top:-2px;
+	padding-top:0px;
+}
+
+ul#mainnav li ul li ul li:hover ul,
+ul#mainnav li ul li ul li.sfHover ul {
+	left:200px; /* match ul width */
+	top:0;
+}
+
+ul#mainnav > li ul li.sfHover > a {
+	border-bottom:1px solid #444;
+	border-left:1px solid #444;
+	color:#fff;
+	background:#444;
+}
+
+ul#mainnav ul li.sfHover > a {
+	border-bottom:1px solid #444;
+}
+
+.sf-shadow ul {
+
+}
+
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}
+
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			10px;
+	top:			14px; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 	-999em;
+	overflow:		hidden;
+	background:		url(../images/nav-arrows.png) no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+#mainnav > li > a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top: 58px;
+	right: 50%;
+	background-position: 0 -97px;
+	margin-right: -6px;
+	border:none;
+}
+
+#mainnav > li > ul > li a.sf-sub-indicator {  /* give all except IE6 the correct values */
+	top:			12px;
+	background-position: 0 -97px; /* use translucent arrow for modern browsers*/
+}
+
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -97px; /* arrow hovers for modern browsers*/
+}
+
+/* point right for anchors in subs */
+#mainnav li ul li a span.sf-sub-indicator { background-position:  0 0; }
+.sf-menu ul a > .sf-sub-indicator { background-position:  0 0; }
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus > .sf-sub-indicator,
+.sf-menu ul a:hover > .sf-sub-indicator,
+.sf-menu ul a:active > .sf-sub-indicator,
+.sf-menu ul li:hover > a > .sf-sub-indicator,
+.sf-menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+#mainnav > li > a.sf-with-ul {
+	min-width: 1px;
+}
+
+
+
+/*** shadows for all but IE6 ***/
+ul#mainnav li ul {
+	background:	url('../images/shadow.png') no-repeat bottom right;
+	padding: 0 6px 7px 0;
+
+}
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}

@@ -1,0 +1,76 @@
+.sf-menu, .sf-menu * {margin:0;padding:0;list-style:none;}
+.sf-menu{ float:right;}
+.sf-menu li {position:relative; float:left; font:italic 16px/20px Arial, Helvetica, sans-serif;  margin-left:2px; border-radius:0 0 5px 5px; background: url(../images/bg-png.png) 0 0 repeat;}
+	.sf-menu li a {display:block; color:#382c27; padding:87px 12px 16px; position:relative;}
+	.sf-menu li.current,.sf-menu li.sfHover,.sf-menu li:hover{background:#01bdcf url(../images/menu-hover.jpg) 0 0 repeat-x;}
+		.sf-menu li.current a,.sf-menu li.sfHover a,.sf-menu li a:hover{ color:#fff; text-decoration:none;}
+		.sf-menu li.current a span.arrow,.sf-menu li.sfHover a span.arrow,.sf-menu li a:hover span.arrow{ background-position:0 -4px;}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	z-index:		99;
+	width:			123px; 
+	display:none;
+	background:#1d1d1d url(../images/submenu.jpg) 0 0 repeat-x;
+	border-radius:5px;
+	padding:30px 0 25px;
+}
+.sf-menu li li{padding:0 10px 10px; border-radius:0; background:none;}
+.sf-menu li li:hover,.sf-menu li li.sfHover,.sf-menu li li.current{background:none;}
+	.sf-menu li li a,.sf-menu li.sfHover li a,.sf-menu li.current li a{ color:#fff; padding:0; background:none;}
+		.sf-menu li li a:hover,.sf-menu li li.sfHover a,.sf-menu li li.current a{color:#00afbe;}
+.sf-menu ul ul {
+	position:		absolute;
+	top:			-999em;
+	z-index:		99;
+	width:			123px; 
+	display:none;
+	background:#1d1d1d url(../images/submenu.jpg) 0 0 repeat-x;
+}
+	.sf-menu li li li a,.sf-menu li li.sfHover li a,.sf-menu li li.current li a{ color:#fff; }
+		.sf-menu li li li a:hover,.sf-menu li li li.current a{color:#00afbe;}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0px;
+	top:			125px; /* match top ul list item height */
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			122px; /* match ul width */
+	top:			-30px;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			00px;
+}
+.sf-menu li a span.arrow{ display:block; background:url(../images/menu-arrow.png) 0 0 no-repeat; width:7px; height:4px; position:absolute; bottom:17%; right:2px;}
+@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (max-width: 767px) {
+	.sf-menu{ float:none;}
+	.sf-menu li{padding:0;float: none; margin-bottom:3px; border-radius:0; background:none !important;}
+	.sf-menu li a{ display:block;padding:11px 12px 12px 20px; border-radius:5px; border:1px solid #eae6e5;
+		background: #F2EEEE;
+		background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F2EEEE), to(#eae6e5));
+		background: -webkit-linear-gradient(#F2EEEE, #eae6e5);
+		background: -moz-linear-gradient(#F2EEEE, #eae6e5);
+		background: -ms-linear-gradient(#F2EEEE, #eae6e5);
+		background: -o-linear-gradient(#F2EEEE, #eae6e5);
+		background: linear-gradient(#F2EEEE, #eae6e5);
+		-pie-background: linear-gradient(#F2EEEE, #eae6e5);}
+		.sf-menu li.current a,.sf-menu li.sfHover a,.sf-menu li a:hover{background:url(../images/menu-hover.jpg) 0 0 repeat-x;}
+	.sf-menu ul,.sf-menu ul ul{ min-width:100%;position: relative; left: 0 !important; top:0px !important;padding:15px 0;}
+	.sf-menu ul ul{ background:none !important;}
+	.sf-menu li li a{ border:none;}
+	.sf-menu li li li a{ margin-left:10px !important;}
+	.sf-menu li a span.arrow{bottom:45%; left:100px;}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

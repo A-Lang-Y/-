@@ -1,0 +1,1759 @@
+/**
+ * ZanBlog 3.0.0
+ * zan.less ZanBlog3主题样式文件
+ * Copyright 2012-2014 YEAHZAN.COM
+ * Licensed under MIT
+ *
+ * 1.通用样式
+ * 2.全局样式
+ * 3.自定义BootStrap样式
+ * 4.组件样式
+ * 5.页面头部样式
+ * 6.主体样式
+ * 7.主题发布页面
+ * 8.single页面样式
+ * 9.主题发布页面样式
+ * 10.404页面样式
+ */
+
+@import "variables.less";
+
+/* =========================== 1.通用样式 =========================== */
+
+.zan-transition {
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+.zan-navbar {
+  background-color: @zan-inverse !important;
+  border-bottom: 3px solid @zan-primary;
+}
+
+.zan-shadow {
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+       -o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+          box-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+
+.zan-border-radius {
+  border-radius: 0 !important;
+}
+
+.zan-transform {
+  .zan-transition;
+  &:hover {
+    .zan-transition;
+    -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);  
+  }
+}
+
+.zan-thumb {
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0;
+  border: 0;
+  .zan-border-radius;
+  img {
+    .zan-transform;
+  }
+}
+
+#sidebar .zan-thumb {
+  float: left;
+}
+
+.footer-space {
+  background-color: #ffffff;
+  padding: 10px 0 5px 0;
+}
+
+.footer-space-line {
+  background-color: @zan-inverse;
+  height: 5px;
+}
+
+/* =========================== 通用样式结尾 =========================== */
+
+
+/* =========================== 2.全局样式 =========================== */
+
+body {
+  font-family: "Microsoft YaHei";
+  background-color: @zan-bg;
+  word-wrap:break-word;
+}
+
+body.theme-release {
+  nav.navbar-inverse {
+    margin-bottom: 0;
+  }
+}
+
+a.btn,
+.btn,
+.panel,
+input,
+.alert,
+div.well {
+    border-radius: @zan-radius !important;
+}
+
+.well {
+  border: 0;
+  box-shadow: none;
+}
+
+audio {
+  width: 100%;
+}
+
+.ad {
+  margin-bottom: 20px;
+  * {
+    max-width: 100%;
+  }
+}
+
+code {
+  white-space: normal;
+  border-radius: 0;
+  color: @zan-danger;
+  margin: 0 5px;
+  background-color: white;
+  a {
+    &:hover {
+      color: @zan-primary !important;
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: @zan-inverse;
+  .zan-transition;
+  &:hover {
+    color: @zan-primary;
+    text-decoration: none;
+    .zan-transition;
+  }
+}
+
+.form-control {
+  height: auto;
+  border: 2px solid @zan-gray;
+  background-color: transparent;
+  box-shadow: none;
+  &:focus {
+    border-color: @zan-primary;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+    .zan-transition;
+  }
+}
+
+.article-stick {
+  position: absolute;
+  top: -10px;
+  right: 5%;
+  font-size: 40px;
+  color: @zan-primary;
+}
+
+/* =========================== 全局样式结尾 =========================== */
+
+
+/* =========================== 3.自定义BootStrap样式 =========================== */
+
+.alert-primary {
+  background-color: @zan-primary;
+  border: 2px solid @zan-primary - #222;
+  color: white;
+  a {
+    color: @zan-primary - #777;
+    text-decoration: underline;
+    padding: 0 5px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.alert-info {
+  background-color: @zan-info;
+  border: 2px solid @zan-info - #222;
+  color: white;
+  a {
+    color: @zan-info - #777;
+    text-decoration: underline;
+    padding: 0 5px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.alert-success {
+  background-color: @zan-success;
+  border: 2px solid @zan-success - #222;
+  color: white;
+  a {
+    color: @zan-success - #777;
+    text-decoration: underline;
+    padding: 0 5px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.alert-warning {
+  background-color: @zan-warning;
+  border: 2px solid @zan-warning - #222;
+  color: white;
+  a {
+    color: @zan-warning - #777;
+    text-decoration: underline;
+    padding: 0 5px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.alert-danger {
+  background-color: @zan-danger;
+  border: 2px solid @zan-danger - #222;
+  color: white;
+  a {
+    color: @zan-danger - #777;
+    text-decoration: underline;
+    padding: 0 5px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.btn-primary {
+  color: @zan-primary;
+  background-color: transparent;
+  border: 2px solid @zan-primary;
+  &:hover {
+    color: white;
+    background-color: @zan-primary;
+    border: 2px solid @zan-primary;
+  }
+}
+
+.btn-inverse {
+  color: @zan-inverse;
+  background-color: transparent;
+  border: 2px solid @zan-inverse;
+  &:hover {
+    color: white;
+    background-color: @zan-inverse;
+    border: 2px solid @zan-inverse;
+  }
+}
+
+.btn-info {
+  color: @zan-info;
+  background-color: transparent;
+  border: 2px solid @zan-info;
+  &:hover {
+    color: white;
+    background-color: @zan-info;
+    border: 2px solid @zan-info;
+  }
+}
+
+.btn-success {
+  color: @zan-success;
+  background-color: transparent;
+  border: 2px solid @zan-success;
+  &:hover {
+    color: white;
+    background-color: @zan-success;
+    border: 2px solid @zan-success;
+  }
+}
+
+.btn-warning {
+  color: @zan-warning;
+  background-color: transparent;
+  border: 2px solid @zan-warning;
+  &:hover {
+    color: white;
+    background-color: @zan-warning;
+    border: 2px solid @zan-warning;
+  }
+}
+
+.btn-danger {
+  color: @zan-danger;
+  background-color: transparent;
+  border: 2px solid @zan-danger;
+  &:hover {
+    color: white;
+    background-color: @zan-danger;
+    border: 2px solid @zan-danger;
+  }
+}
+
+.panel-primary > .panel-heading {
+  color: white;
+  background-color: @zan-primary;
+}
+
+.panel-inverse > .panel-heading {
+  color: white;
+  background-color: @zan-inverse;
+}
+
+.panel-info > .panel-heading {
+  color: white;
+  background-color: @zan-info;
+}
+
+.panel-success > .panel-heading {
+  color: white;
+  background-color: @zan-success;
+}
+
+.panel-warning > .panel-heading {
+  color: white;
+  background-color: @zan-warning;
+}
+
+.panel-danger > .panel-heading {
+  color: white;
+  background-color: @zan-danger;
+}
+
+.navbar-nav > li {
+  margin-right: 50px;
+  @media (max-width: @screen-md-max) { 
+    margin-right: 15px;
+  }
+  @media (max-width: @screen-sm-max) { 
+    margin-right: 0px;
+  }
+}
+
+pre {
+  border-radius: 0;
+  border: 2px solid @zan-primary;
+}
+
+/* ====== 自定义按钮解释：line表示线框按钮，solid表示实心按钮。w表示白色，i表示暗色，p表示主色，通过顺序搭配表示正常颜色和hover颜色 ====== */
+
+.btn-zan-line-wp {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  .zan-transition;
+  &:hover {
+    color: white;
+    background-color: @zan-primary;
+    border: 2px solid @zan-primary;
+    .zan-transition;
+  }
+}
+
+.btn-zan-line-wi {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  .zan-transition;
+  &:hover {
+    color: white;
+    background-color: @zan-inverse;
+    border: 2px solid @zan-inverse;
+    .zan-transition;
+  }
+}
+
+.btn-zan-line-ww {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  .zan-transition;
+  &:hover {
+    color: @zan-inverse;
+    background-color: white;
+    border: 2px solid white;
+    .zan-transition;
+  }
+}
+
+.btn-zan-line-ii {
+  color: @zan-inverse;
+  background-color: transparent;
+  border: 2px solid @zan-inverse;
+  .zan-transition;
+  .badge {
+    color: @zan-inverse;
+    background-color: transparent;
+    border: 2px solid @zan-inverse;
+    .zan-transition;
+  }
+  &:hover {
+    color: white;
+    background-color: @zan-inverse;
+    border: 2px solid @zan-inverse;
+    .zan-transition;
+    .badge {
+      color: white;
+      background-color: @zan-inverse;
+      border: 2px solid white;
+      .zan-transition;
+    }
+  }
+}
+
+.btn-zan-line-pp {
+  color: @zan-primary;
+  background-color: transparent;
+  border: 2px solid @zan-primary;
+  .zan-transition;
+  .badge {
+    color: @zan-primary;
+    background-color: transparent;
+    border: 2px solid @zan-primary;
+    .zan-transition;
+  }
+  &:hover {
+    color: white;
+    background-color: @zan-primary;
+    border: 2px solid @zan-primary;
+    .zan-transition;
+    .badge {
+      color: white;
+      background-color: @zan-primary;
+      border: 2px solid white;
+      .zan-transition;
+    }
+  }
+}
+
+.btn-zan-solid-iw {
+  color: white;
+  background-color: @zan-inverse;
+  border: 2px solid @zan-inverse;
+  .zan-transition;
+  &:hover {
+    color: @zan-inverse;
+    background-color: white;
+    border: 2px solid white;
+    .zan-transition;
+  }
+}
+
+.btn-zan-solid-wi {
+  color: @zan-inverse;
+  background-color: white;
+  border: 2px solid white;
+  .zan-transition;
+  &:hover {
+    color: white;
+    background-color: @zan-inverse;
+    border: 2px solid @zan-inverse;
+    .zan-transition;
+  }
+}
+
+.btn-zan-solid-ip {
+  color: white;
+  background-color: @zan-inverse;
+  border: 2px solid @zan-inverse;
+  .zan-transition;
+  &:hover {
+    color: white;
+    background-color: @zan-primary;
+    border: 2px solid @zan-primary;
+    .zan-transition;
+  }
+}
+
+.btn-zan-solid-pi {
+  color: white;
+  background-color: @zan-primary;
+  border: 2px solid @zan-primary;
+  .zan-transition;
+  &:hover {
+    color: white;
+    background-color: @zan-inverse;
+    border: 2px solid @zan-inverse;
+    .zan-transition;
+  }
+}
+
+.btn-zan-solid-pw {
+  color: white;
+  background-color: @zan-primary;
+  border: 2px solid @zan-primary;
+  .zan-transition;
+  &:hover {
+    color: @zan-primary;
+    background-color: white;
+    border: 2px solid white;
+    .zan-transition;
+  }
+}
+
+.label-zan {
+  .zan-border-radius;
+  padding: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: @zan-primary;
+  a {
+    color: white;
+  }
+}
+
+.label-avatar {
+  width: 60px;
+  padding: 3px 8px;
+  font-size: 12px;
+  .zan-border-radius;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: @zan-inverse;
+  a {
+    color: white;
+  }
+}
+
+.panel {
+  border: none;
+  .panel-heading {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom: 0;
+  }
+  &.panel-zan {
+    .panel-heading {
+      color: white;
+      background-color: @zan-primary;
+      border-color: none;
+      .zan-border-radius;
+    }
+    .panel-body {
+      padding: 0 15px;
+      &.custom {
+        padding: 15px;
+        background-color: @zan-inverse;
+        color: white;
+        * {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.list-group {
+  .zan-list {
+    padding: 15px 0;
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    img {
+      float: left;
+    }
+    h5, h6 {
+      padding: 5px 0 0 15px;
+      margin: 0;
+      display: block;
+      overflow: hidden;
+      line-height: 20px;
+    }
+  }
+  .zan-list:last-child {
+    border-bottom:none;
+  }
+}
+
+.pagination-zan {
+  margin: 0 0 20px 0;
+  .zan-border-radius;
+  li > a {
+    color: @zan-primary;
+    border: 2px solid @zan-primary;
+    background-color: transparent;
+    margin-left: 10px;
+    .zan-border-radius;
+    &:hover {
+      color: white;
+      border: 2px solid @zan-primary;
+      background-color: @zan-primary;
+      .zan-transition;
+    }
+  }
+  .active a {
+      color: white;
+      border: 2px solid @zan-primary;
+      background-color: @zan-primary;
+      .zan-transition;
+      &:hover {
+        color: white;
+        border: 2px solid @zan-primary;
+        background-color: @zan-primary;
+        .zan-transition;
+        cursor: not-allowed;
+      }
+  }
+}
+
+.zan-article {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  .post-big-info span {
+    margin: 10px 10px 10px 0;
+  }
+  .zan-thumb {
+    margin-bottom: 20px;
+  }
+  .zan-single-content {
+    width: 100%;
+    img {
+      margin: 20px auto;
+      border: 2px solid white;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.breadcrumb {
+  .zan-border-radius;
+  .fa {
+    font-size: 18px;
+  }
+}
+
+#zan-breadcrumb {
+  background-color: white;
+}
+
+.pager li>a {
+  border-radius: @zan-radius;
+  .btn-zan-line-pp;
+}
+
+.thumbnail {
+  border-radius: 0;
+  border: 0;
+}
+
+blockquote {
+  font-size: 16px;
+  color: @zan-primary - #222 !important;
+  border-left: 5px solid @zan-primary !important;
+}
+
+.navbar-toggle {
+  border-radius: 0;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: white;
+  &:hover {
+    border-color: @zan-inverse;
+    color: @zan-inverse;
+    background-color: white;
+  }
+}
+
+/* =========================== 自定义BootStrap样式结尾 =========================== */
+
+
+/* =========================== 4.组件样式 =========================== */
+
+#searchform {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  input {
+    width: 65% !important;
+    float: left;
+  }
+  button {
+    width: 33%;
+    float: right;
+  }
+}
+
+.flexslider {
+  .zan-border-radius;
+  margin-bottom: 20px;
+  box-shadow: none;
+}
+
+.flex-control-nav {
+  display: none;
+}
+
+.flex-control-paging li a {
+  display: none;
+  background: @zan-inverse;
+  &.flex-active {
+    background: @zan-primary;
+    cursor: default;
+  }
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  opacity: .8;
+  color: white;
+  font-size: 22px;
+  background: @zan-primary;
+}
+
+.zan-author {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  margin-bottom: 20px;
+  .author-top {
+    position: absolute;
+    background-color: @zan-inverse;
+    width: 100%;
+    height: 80px;
+  }
+  .author-bottom {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 180px;
+    background-color: @zan-primary;
+    border-top: 4px solid white;
+  }
+  img {
+    margin-top: -60px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 50%;
+    -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+    &:hover {
+      -webkit-transition: all .3s ease-in-out;
+         -moz-transition: all .3s ease-in-out;
+           -o-transition: all .3s ease-in-out;
+              transition: all .3s ease-in-out;
+               transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+       -webkit-transform: rotate(360deg);
+    }
+  }
+  span {
+    display: block;
+  }
+  .author-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+  }
+  .author-social {
+    .btn {
+      border-left: none;
+      border-right: none;
+      padding: 20px;
+    }
+  }
+}
+
+.zan-category {
+  a {
+    width: 100%;
+    display: inline-block;
+    padding: 15px 30px;
+    border-bottom: 1px solid #eee;
+    &:hover {
+      color: white;
+      background-color: @zan-inverse;
+    }
+  }
+}
+
+aside[id*="simplesubscribe-"] .widgetGuts {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  dt {
+    display: none;
+  }
+  dd {
+    #frm-email {
+      float: left;
+      width: 65%;
+      padding: 6px 12px;
+      .form-control;
+      border: 2px solid @zan-gray;
+      &:focus {
+        border: 2px solid @zan-primary;
+      }
+    }
+    .btn {
+      width: 33%;
+      float: right;
+    }
+  }
+  input.text {
+    color: @zan-inverse;
+    &:focus {
+      color: @zan-inverse;
+    }
+  }
+  .error {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    color: white;
+    background-color: @zan-danger;
+    border-radius: @zan-radius;
+  }
+  .success {
+    width: 100%;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    color: white;
+    background-color: @zan-success;
+    border-radius: @zan-radius;
+  }
+}
+
+
+aside[id*="zan_audio"] {
+  margin-bottom: 20px;
+}
+
+.audiojs {
+  width: 100%;
+  padding: 10px 5px;
+  height: 60px;
+  box-shadow: none;
+  background-color: @zan-inverse;
+  background-image: none;
+  .play-pause {
+    width: 10%;
+    border: none;
+  }
+  .scrubber {
+    margin: 10px 0 10px 8px;
+    @media (min-width: @screen-lg-min) { 
+      width: 58%;
+    }
+    width: 50%;
+    border: none;
+    background-color: white;
+    .progress {
+      border-radius: @zan-radius;
+      background-color: @zan-danger;
+      background-image: none;
+    }
+    .loaded {
+      background-color: @zan-primary;
+      background-image: none;
+    }
+  }
+  .time {
+    float: right;
+    padding: 0 5px;
+    text-shadow: none;
+    border: none;
+    color: white;
+  }
+}
+
+#sidebar video {
+  border: 5px solid white;
+}
+
+#smilelink {
+  cursor:pointer;
+  margin-bottom: 10px;
+}
+
+aside[id*="zan_login"] {
+  margin-bottom: 20px;
+}
+
+.login-form {
+  background-color: white;
+  padding: 30px 20px;
+  .input-group-addon {
+    #commentform .input-group .input-group-addon;
+  }
+  .form-control {
+    display: inline-block;
+    padding: 10px 5px;
+    border-left: none;
+  }
+  .btn {
+    width: 48%;
+    padding: 10px;
+  }
+  img {
+    border: 3px solid @zan-primary;
+    border-radius: 50%;
+    padding: 3px;
+  }
+}
+
+.login-panel {
+  height: 100px;
+  padding: 20px 0px;
+  background-color: @zan-inverse;
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
+    padding: 20px 0;
+  }
+  img{
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: white;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out; 
+    &:hover {
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  a {
+    color: white;
+    &:hover {
+      color: @zan-primary;
+    }
+  }
+  .user-name {
+    margin-right: 20px;
+  }
+}
+
+#sidebar .ad {
+  margin-bottom: 20px;
+}
+
+/* =========================== 组件样式结尾 =========================== 
+
+
+/* =========================== 5.页面头部样式 =========================== */
+
+.header {
+  padding: 10px 0 20px;
+  background-color: @zan-primary;
+  .logo {
+    display: block;
+    height: 160px;
+    width: 160px;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 50%;
+    background: url("../images/logo.jpg") no-repeat center;
+    .zan-transition;
+    &.animation {
+      box-shadow: rgb(18, 133, 110) 1px 1px,
+      rgb(18, 133, 110) 2px 2px,
+      rgb(18, 133, 110) 3px 3px,
+      rgb(18, 133, 110) 4px 4px,
+      rgb(18, 133, 110) 5px 5px,
+      rgb(18, 133, 110) 6px 6px,
+      rgb(18, 133, 110) 7px 7px,
+      rgb(18, 133, 110) 8px 8px,
+      rgb(18, 133, 110) 9px 9px,
+      rgb(18, 133, 110) 10px 10px,
+      rgb(18, 133, 110) 11px 11px,
+      rgb(18, 133, 110) 12px 12px,
+      rgb(18, 133, 110) 13px 13px,
+      rgb(18, 133, 110) 14px 14px,
+      rgb(18, 133, 110) 15px 15px,
+      rgb(18, 134, 111) 16px 16px,
+      rgb(18, 135, 112) 17px 17px,
+      rgb(18, 136, 113) 18px 18px,
+      rgb(18, 137, 113) 19px 19px,
+      rgb(18, 138, 114) 20px 20px,
+      rgb(18, 139, 115) 21px 21px,
+      rgb(19, 140, 116) 22px 22px,
+      rgb(19, 141, 116) 23px 23px,
+      rgb(19, 142, 117) 24px 24px,
+      rgb(19, 142, 118) 25px 25px,
+      rgb(19, 143, 119) 26px 26px,
+      rgb(19, 144, 119) 27px 27px,
+      rgb(19, 145, 120) 28px 28px,
+      rgb(20, 146, 121) 29px 29px,
+      rgb(20, 147, 122) 30px 30px,
+      rgb(20, 148, 123) 31px 31px,
+      rgb(20, 149, 123) 32px 32px,
+      rgb(20, 150, 124) 33px 33px,
+      rgb(20, 151, 125) 34px 34px,
+      rgb(20, 151, 126) 35px 35px,
+      rgb(20, 152, 126) 36px 36px,
+      rgb(21, 153, 127) 37px 37px,
+      rgb(21, 154, 128) 38px 38px,
+      rgb(21, 155, 129) 39px 39px,
+      rgb(21, 156, 129) 40px 40px,
+      rgb(21, 157, 130) 41px 41px,
+      rgb(21, 158, 131) 42px 42px,
+      rgb(21, 159, 132) 43px 43px,
+      rgb(22, 160, 133) 44px 44px;
+      background-color: rgb(22, 160, 133);
+      .zan-transition;
+    }
+  }
+}
+
+nav.navbar-inverse {
+  min-height: none;
+	color: white;
+  background-color: @zan-inverse;
+	border: none;
+  .zan-border-radius;
+  .navbar-nav {
+    a {
+      padding-bottom: 12px;
+      color: white !important;
+      border-bottom: 3px solid transparent;
+      &:hover {
+        .zan-navbar;
+        .zan-transition;
+      }
+    }
+  }
+  .open a {
+      color: #fff;
+      .zan-navbar;
+      &:hover {
+        .zan-navbar;
+      }
+  }
+  ul.dropdown-menu {
+    padding: 0;
+    border: 0;
+    a {
+      padding: 10px 20px;
+      background-color: white !important;
+      color: @font-color !important;
+      border: none;
+      &:hover {
+        background-color: @zan-primary !important;
+        color: white !important;
+        border: none;
+      }
+    }
+  }
+  .user {
+    margin-top: 6px;
+  }
+}
+
+/* =========================== 页面头部样式结尾 =========================== */
+
+
+/* =========================== 6.主体样式 =========================== */
+.zan-post {
+  position: relative;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.zan-outline {
+  font-size: 14px;
+  color: @zan-gray;
+  line-height: 28px;
+  @media (min-width: @screen-lg-min) { 
+    margin-top: 14px;
+  }
+}
+
+.post-info {
+  color: @zan-gray;
+  a {
+    color: @zan-gray;
+    &:hover {
+      color: @zan-primary;
+    }
+  }
+  i {
+    color: @zan-primary;
+  }
+  span {
+    margin-right: 10px;
+  }
+}
+
+.sidebar-info {
+  font-size: 12px;
+  margin: 20px 0 0 0;
+  padding: 5px 0 0 15px;
+  overflow: hidden;
+  .post-info;
+}
+
+.sidebar-avatar {
+  float: left;
+  text-align: center;
+  img {
+    .zan-transition;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    &:hover {
+      .zan-transition;
+              transform: rotate(360deg);
+         -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg); 
+    }
+  }
+}
+
+.sidebar-comment {
+  font-size: 12px;
+  color: @zan-gray;
+  padding: 10px 0 0 15px;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  a {
+    color: @zan-gray !important;
+    &:hover {
+      color: @zan-primary !important;
+    }
+  }
+}
+
+.comments-header {
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: @zan-primary;
+}
+
+.comment-list {
+  padding: 0;
+  li {
+    margin: 10px 0px 10px 0px;
+    list-style: none;
+    border: 1px solid #f4f4f4;
+    padding: 4px;
+    background-color: white;
+  }
+  .comment-body {
+    position: relative;
+    .comment-meta {
+      background: #f1f5f8;
+      position: relative;
+      height: auto;
+      min-height: 37px;
+      line-height: 37px;
+      padding-left: 45px;
+      .comment-author {
+        float: left;
+      }
+      img {
+        background-color: white;
+        border: 4px solid white;
+        border-radius: 50%;
+        position: absolute;
+        display: block;
+        left: -40px;
+        top: 10px;
+        margin: 0;
+        .zan-transition;
+        &:hover {
+          .zan-transition;
+                  transform: rotate(360deg);
+             -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg); 
+        }
+      }
+    }
+    .comment-metadata {
+      text-transform: uppercase;
+      float: right;
+      margin-right: 10px;
+      font-size: 12px;
+      display: inline;
+      color: #237dac;
+      text-decoration: none;
+      outline: none;
+      font-weight: bold;
+    }
+    .comment-content {
+      padding: 20px 55px 30px 45px;
+      position: relative;
+    }
+    .comment-reply-link {
+      position: absolute;
+      bottom: 3px;
+      right: 12px;
+      font-size: 12px;
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+}
+
+#comment-nav {
+  margin: 30px 0 10px 0;
+  .nav-previous {
+    a {
+      .btn-zan-line-pp;
+      padding:  10px;
+    }
+  }
+  .nav-next {
+    a {
+      .btn-zan-line-pp;
+      padding:  10px;
+    }
+  }
+}
+
+.page-numbers {
+  .btn-zan-line-pp;
+  margin-left: 10px;
+  padding: 5px 10px;
+  display: inline-block;
+  *display: inline;  
+  *zoom:1;
+  .zan-border-radius;
+  &.current {
+    color: white;
+    background-color: @zan-primary;
+    cursor: not-allowed;
+  }
+  &.dots {
+    border: none;
+    &:hover {
+      color: @zan-primary;
+      background-color: transparent;
+    }
+  }
+}
+
+#reply-title {
+  .comments-header;
+  a:hover {
+    color: white;
+  }
+}
+
+#commentform {
+  .input-group {
+    margin-bottom: 20px;
+    .input-group-addon {
+      background-color: @zan-primary;
+      color: white;
+      border: 2px solid @zan-primary;
+      .zan-border-radius;
+      i {
+        width: 15px;
+      }
+    }
+  }
+  input {
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid @zan-primary;
+  }
+  textarea {
+    margin: 0;
+    padding: 10px 15px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid @zan-gray;
+    &:focus {
+      border: 2px solid @zan-primary;
+    }
+  }
+  input:focus, textarea:focus {
+    outline: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  #submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    .btn-zan-solid-pi;
+  }
+}
+
+a[title*="幻灯片"] {
+  display: none !important;
+}
+
+.post-th {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  .zan-thumb {
+    margin-bottom: 10px;
+  }
+  .title {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .fa {
+    color: #16a085;
+  }
+  .info {
+    color: @zan-gray;
+    a {
+      color: @zan-gray;
+      &:hover {
+        color: @zan-primary;
+      }
+    }
+  }
+}
+
+/* =========================== 主体样式结尾 =========================== */
+
+
+/* =========================== 7.页脚样式 =========================== */
+
+#zan-footer {
+  margin-top: 40px;
+  a {
+    color: white;
+    &:hover {
+      color: @zan-primary;
+    }
+  }
+}
+
+.zan-link,
+.zan-copyright {
+  color: white;
+  margin: 0 auto;
+  background-color: @zan-inverse;
+  padding: 30px 0 30px 0;
+  position: relative;
+}
+
+.zan-link {
+  padding: 10px 0 10px 0;
+  a {
+    color: @zan-gray;
+  }
+  .footer-column {
+    padding: 20px;
+    .header {
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+  .tag {
+    a {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: 1px solid white;
+      color: white !important;
+      padding: 3px 5px;
+      font-size: 14px !important;
+      &:hover {
+        background: white;
+        color: @zan-inverse !important;
+      }
+    }
+  }
+  .friend-link li {
+    float: left;
+    width: 50%;
+    padding: 10px 0;
+  }
+}
+
+.zan-copyright {
+  text-align: center;
+  a {
+    color: @zan-gray;
+  }
+  @media (min-width: @screen-sm-min) {
+    &:before {
+      right: 0;
+      background-image: -webkit-linear-gradient(top left, white 50%, @zan-inverse + #333 50%);
+      background-image: linear-gradient(315deg, white 50%, @zan-inverse + #333 50%);
+      bottom: 0;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      content: '';
+      pointer-events: none;
+    }
+    &:after {
+      opacity: 0.8;
+      right: 100px;
+      background-image: -webkit-linear-gradient(top left, transparent 50%, @zan-inverse - #333 50%);
+      background-image: linear-gradient(315deg, @zan-inverse - #333 50%, transparent 50%);
+      bottom: 0;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      content: '';
+      pointer-events: none;
+    }
+  }
+}
+#zan-gotop {
+  display: none;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  top: auto;
+  cursor: pointer;
+  z-index: 9999;
+  text-align: center;
+  .zan-transition;
+  .gotop {
+    position: relative;
+    width: 36px;
+    height: 50px;
+    line-height: 50px;
+    background-color: @zan-inverse;
+    margin-bottom: 5px;
+    &:hover {
+      opacity: 0.8;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      pointer-events: none;
+    }
+    &::before {
+      border-right: 10px solid @zan-inverse;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      left: -10px;
+    }
+    &::after {
+      border-left: 10px solid @zan-inverse;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      right: -10px;
+    }
+    .fa {
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
+}
+
+/* =========================== 页脚样式结尾 =========================== */
+
+
+/* =========================== 8.single页样式 =========================== */
+.zan-share {
+  margin: 20px auto;
+}
+
+.bd_weixin_popup {
+  padding: 0px !important;
+}
+
+#related-title {
+  .comments-header;
+  line-height: 1.1;
+}
+
+#post-related {
+  .post-related-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    a {
+      color: @zan-inverse;
+      &:hover {
+        color: @zan-primary;
+      }
+    }
+  }
+  .post-related-content {
+    max-height: 130px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 22px;
+    color: @zan-gray;
+  }
+  .read-more {
+    margin: 0;
+  }
+}
+
+#commentform {
+  .input-group input {
+    margin-right: 20px;
+  }
+  label.error {
+    color: white;
+    background-color: @zan-danger;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .copyright.well {
+    font-size: 12px;
+  }
+}
+/* =========================== single页样式结尾 =========================== */
+
+
+/* =========================== 9.主题发布页面样式 =========================== */
+
+.theme-release {
+  background-color: @zan-inverse;
+  #zan-bodyer {
+    background-color: @zan-danger;
+  }
+}
+
+.theme-cover {
+  color: white;
+  padding: 30px 0 80px 0;
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .release-right {
+    @media (min-width: @screen-lg-min) {
+      padding-top: 150px;
+    }
+    .feature-icons i {
+      font-size: 30px;
+      margin-right: 20px;
+    }
+    @media (max-width: @screen-xs-max) {
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}
+
+#zan-apple {
+  position: relative;
+  height: 600px;
+  #zan-mac {
+    position: absolute;
+    left: 30%;
+    top: 0%;
+    opacity: 0;
+    -webkit-transition: all .8s ease-in-out;
+       -moz-transition: all .8s ease-in-out;
+         -o-transition: all .8s ease-in-out;
+            transition: all .8s ease-in-out;
+    &.animation {
+      position: absolute;
+      left: 30%;
+      top: 10%;
+      opacity: 1;
+      -webkit-transition: all .8s ease-in-out;
+         -moz-transition: all .8s ease-in-out;
+           -o-transition: all .8s ease-in-out;
+              transition: all .8s ease-in-out;
+    }
+  }
+  #zan-pad {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    opacity: 0;
+    -webkit-transition: all 1.2s ease-in-out .5s;
+       -moz-transition: all 1.2s ease-in-out .5s;
+         -o-transition: all 1.2s ease-in-out .5s;
+            transition: all 1.2s ease-in-out .5s;
+    &.animation {
+      position: absolute;
+      left: 15%;
+      top: 30%;
+      opacity: 1;
+      -webkit-transition: all 1.2s ease-in-out .5s;
+         -moz-transition: all 1.2s ease-in-out .5s;
+           -o-transition: all 1.2s ease-in-out .5s;
+              transition: all 1.2s ease-in-out .5s;
+    }
+  }
+  #zan-mini {
+    position: absolute;
+    left: 10%;
+    top: 48%;
+    opacity: 0;
+    -webkit-transition: all 1.2s ease-in-out .3s;
+       -moz-transition: all 1.2s ease-in-out .3s;
+         -o-transition: all 1.2s ease-in-out .3s;
+            transition: all 1.2s ease-in-out .3s;
+    &.animation {
+      position: absolute;
+      left: 40%;
+      top: 48%;
+      opacity: 1;
+      -webkit-transition: all 1.2s ease-in-out .3s;
+         -moz-transition: all 1.2s ease-in-out .3s;
+           -o-transition: all 1.2s ease-in-out .3s;
+              transition: all 1.2s ease-in-out .3s;
+    }
+  }
+  #zan-5c {
+    position: absolute;
+    left: 100%;
+    top: 62%;
+    opacity: 0;
+    -webkit-transition: all .8s ease-in-out 1s;
+       -moz-transition: all .8s ease-in-out 1s;
+         -o-transition: all .8s ease-in-out 1s;
+            transition: all .8s ease-in-out 1s;
+    &.animation {
+      position: absolute;
+      left: 88%;
+      top: 62%;
+      opacity: 1;
+      -webkit-transition: all .8s ease-in-out 1s;
+         -moz-transition: all .8s ease-in-out 1s;
+           -o-transition: all .8s ease-in-out 1s;
+              transition: all .8s ease-in-out 1s;
+    }
+  }
+  #zan-5s {
+    position: absolute;
+    left: 110%;
+    top: 64%;
+    opacity: 0;
+    -webkit-transition: all .8s ease-in-out 1s;
+       -moz-transition: all .8s ease-in-out 1s;
+         -o-transition: all .8s ease-in-out 1s;
+            transition: all .8s ease-in-out 1s;
+    &.animation {
+      position: absolute;
+      left: 100%;
+      top: 64%;
+      opacity: 1;
+      -webkit-transition: all .8s ease-in-out 1s;
+         -moz-transition: all .8s ease-in-out 1s;
+           -o-transition: all .8s ease-in-out 1s;
+              transition: all .8s ease-in-out 1s;
+    }
+  }
+}
+
+.theme-feature {
+  height: auto;
+  color: white;
+  background-color: @zan-inverse;
+  .row {
+    .feature-cell {
+      @media (min-width: @screen-lg-min) {
+        margin: 40px 20px;
+        padding: 30px;
+      }
+      @media (max-width: @screen-md-max) {
+        margin: 20px 0px;
+        padding: 10px;
+      }
+      border: 2px solid white;
+      .zan-transition;
+      &:hover {
+        color: @zan-inverse;
+        background-color: white;
+        .zan-transition;
+      }
+      @media (max-width: @screen-xs-max) {
+        h4 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  i {
+    @media (min-width: @screen-lg-min) {
+      font-size: 100px;
+    }
+    @media (max-width: @screen-md-max) { 
+      font-size: 80px;
+    }
+    @media (max-width: @screen-xs-max) { 
+      font-size: 50px;
+    }
+    @media (min-width: @screen-sm-min) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* =========================== 主题发布页面样式结尾 =========================== */
+
+/* =========================== 10.404页面样式结尾 =========================== */
+
+body.error-body {
+  background-color: @zan-primary;
+}
+
+#error-page {
+  margin: auto;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  display: table;
+  height: auto;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 300px;
+  @media (max-width: @screen-xs-max) { 
+    font-size: 180px;
+  }
+  font-weight: normal;
+}
+
+#home-link {
+  margin: auto;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+}
+/* =========================== 404页面样式结尾 =========================== */

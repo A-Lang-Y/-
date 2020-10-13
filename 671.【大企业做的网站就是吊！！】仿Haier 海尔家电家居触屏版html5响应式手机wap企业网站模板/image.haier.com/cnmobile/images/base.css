@@ -1,0 +1,68 @@
+body { background:#fff; -webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
+/*css resert*/
+html, body, div, p, span, label, img, a, ol, ul, dl, dt, dd, li, table, tr, td, th, tbody, thead, tfoot, form, fieldset, legent, h1, h2, h3, h4, h5, h6, strong, b, em, blockquote, cite, pre, code, hr, br, input, button, textarea,article, aside, details, figcaption, figure, footer, header, group, menu, nav, section { padding:0px; margin:0px; }
+
+/*禁止iphone字体放大 */
+html { -webkit-text-size-adjust: none; }
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+button, input, select, textarea { font: 100% serif; }
+img, input, select { vertical-align: middle; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:1em; }
+ol, ul { list-style-type:none; }
+table { border-collapse:collapse; border-spacing:0; }
+th,caption { text-align:left; }
+a img { border:0 none; cursor:pointer; } 
+fieldset,img { border:0 none; }
+a, input { outline:0 none; }
+abbr, acronym { border:0; }
+button { outline:0 none; cursor:pointer; }
+button::-moz-focus-inner { border:0; }
+input::-moz-focus-inner { border:0; }
+:focus { outline:0 none; }
+caption, cite, code, em, th, var,i { font-weight:normal; font-style:normal; }
+a:link, a:visited { text-decoration:none; }
+textarea { overflow: auto; vertical-align: top; }
+/******常用****/
+.clearfix:before,.clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; }
+.clear { clear:both; height:0; width:0; display:block; visibility:hidden; overflow:hidden; }
+.clearit { clear:both; zoom:1; }
+.hidden { display:none; }
+.vhidden { visibility:hidden; }
+.hide-txt { overflow: hidden; text-indent: 100%; white-space: nowrap; }
+.left { float:left; display:inline; }
+.right { float:right; display:inline; }
+.fnone { float:none; }
+.txtleft{ text-align:left; }
+.txtright{ text-align:right; }
+.txtcenter{ text-align:center; }
+.middle { vertical-align:middle; }
+.noborder{ border:0 none !important; }
+.nobg{ background:none !important; }
+.sub{ vertical-align:sub; }
+.sup{ vertical-align:sup; }
+.cursor { cursor:pointer; }
+.zoom { zoom:1; }
+.vtop { vertical-align:top; }
+/******常用颜色*****/
+.red { color:#f00; }
+.orange { color:#ffa500; }
+.yellow { color:#ff0; }
+.green { color:#080; }
+.blue { color:#00f; }
+.dark-gray { color:#333; }
+.gray { color:#A0A0A0; }
+.light-gray { color:#999; }
+.an-ccc { color:#ccc; }
+.color{ color:#005aab;}
+.login-woring .color{ color:#E72F6D;}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation:landscape){
+    * {
+      margin: 0;
+      padding: 0;
+    }
+}

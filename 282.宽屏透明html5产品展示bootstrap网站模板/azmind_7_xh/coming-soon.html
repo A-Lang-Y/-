@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Produkta - Responsive Product Showcase</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/social-icons.css">
+        <link rel="stylesheet" href="assets/css/coming-soon-style.css">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <div class="container">
+            <div class="header row">
+                <div class="logo span4">
+                    <h2><a href="">Produkta</a></h2>
+                </div>
+                <div class="tel-skype span8">
+                    <p><i class="icon-phone-sign"></i> Phone: 0039 123 45 679 <span class="pipe">|</span> <i class="icon-user"></i> Skype: hello@domain.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coming Soon -->
+        <div class="product-showcase">
+            <div class="product-showcase-pattern">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12 product-background">
+                            <div class="row">
+                                <div class="span6">
+                                    <h1>We are <strong>coming soon</strong></h1>
+                                    <div class="product-description">
+                                        <div class="timer">
+                                            <span class="days"></span> days /
+                                            <span class="hours"></span> hours /
+                                            <span class="minutes"></span> minutes /
+                                            <span class="seconds"></span> seconds
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="product-description product-description-right">
+                                        <p>We are working very hard on the new version of our site. It will bring a lot of new features. Enter your email in the form below and we’ll notify you as soon as we’re ready:</p>
+                                        <form action="assets/subscribe.php" method="post" class="subscribe">
+                                            <input type="text" name="email" class="email" placeholder="Enter your email">
+                                            <button type="submit">Subscribe!</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="container">
+
+            <div class="row">
+                <div class="span12">
+                    <!-- about us -->
+                    <div class="about-us_2">
+                        <h3>About Us</h3>
+                        <h5>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div> <!-- end row -->
+
+            <div class="row">
+                <!-- as seen on -->
+                <div class="span12 using-this">
+                    <h3>As Seen On</h3>
+                    <div class="using-this-container">
+                        <a class="using-this-google" href="#"></a>
+                        <a class="using-this-pinterest" href="#"></a>
+                        <a class="using-this-youtube" href="#"></a>
+                        <a class="using-this-google" href="#"></a>
+                        <a class="using-this-pinterest" href="#"></a>
+                    </div>
+                </div>
+            </div> <!-- end row -->
+
+        </div> <!-- end container -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="span4 from-twitter">
+                        <h3>From Twitter</h3>
+                        <div class="show-tweet"></div>
+                    </div>
+                    <div class="span4 flickr-photos">
+                        <h3>Flickr Photos</h3>
+                        <ul class="flickr-feed"></ul>
+                    </div>
+                    <div class="span4 contact-us">
+                        <h3>Contact Us</h3>
+                        <form action="assets/contact.php" method="post">
+                            <input type="text" name="name" class="name" placeholder="Name">
+                            <input type="text" name="email" class="email" placeholder="Email">
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div> <!-- end row -->
+                <div class="row">
+                    <div class="span12">
+                        <div class="social-links">
+                            <a class="facebook" href="#"></a>
+                            <a class="twitter" href="#"></a>
+                            <a class="dribbble" href="#"></a>
+                            <a class="pinterest" href="#"></a>
+                            <a class="googleplus" href="#"></a>
+                            <a class="skype" href="#"></a>
+                            <a class="youtube" href="#"></a>
+                            <a class="vimeo" href="#"></a>
+                            <a class="forrst" href="#"></a>
+                            <a class="email" href="#"></a>
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+                <div class="row">
+                    <div class="span12 copyright">
+                        <p>Copyright &copy; 2013 - Produkta - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </footer>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.8.2.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/jquery.tweet.js"></script>
+        <script src="assets/js/jflickrfeed.js"></script>
+        <script src="assets/js/jquery.countdown.js"></script>
+        <script src="assets/js/coming-soon-scripts.js"></script>
+
+    </body>
+
+</html>
+

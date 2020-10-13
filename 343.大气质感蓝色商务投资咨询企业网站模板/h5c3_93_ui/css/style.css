@@ -1,0 +1,145 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+/* Left & Right alignment */
+.left {float:left}
+.right {float:right}
+.wrapper {width:100%;overflow:hidden}
+.center {text-align:center}
+body {background:#001527;border:0;font:14px Arial, Helvetica, sans-serif;color:#363636;line-height:20px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);behavior:url(js/PIE.htc);position:relative}
+.main {margin:0 auto;width:1000px;position:relative}
+.body1 {background:url(../images/bg_top_repeat.gif) top repeat-x #001527}
+.body2 {background:url(../images/bg_top1.jpg) top center no-repeat}
+.body3 {background:url(../images/bg_top2_repeat.jpg) top repeat-x}
+.body4 {background:url(../images/bg_top2.jpg) top center no-repeat;height:379px}
+.body5 {background:url(../images/bg_top3_repeat.jpg) top center repeat-x}
+.body6 {background:url(../images/bg_top3.jpg) top center no-repeat;padding:28px 28px}
+.body7 {background:#eeeeee}
+.body8 {background:url(../images/bg_bot_repeat.jpg) top repeat-x}
+.body9 {background:url(../images/bg_bot.jpg) top center no-repeat;height:230px}
+/* main layout */
+a {color:#006abb;text-decoration:underline;outline:none}
+a:hover {text-decoration:none}
+h1 {float:left;padding:21px 0 0 24px}
+h2 {font-size:30px;color:#182125;line-height:1.2em;padding:26px 0 14px 0;letter-spacing:-1px}
+h2 span {color:#006abb}
+h3 {font-size:20px;color:#fff;line-height:1.2em;padding:24px 0 40px 0}
+p {padding-bottom:20px}
+/* header */
+header{}
+#logo {display:block;background:url(../images/logo.gif) no-repeat;width:153px;height:60px;text-indent:-9999px}
+header .right{padding-right:59px;width:500px}
+#top_nav {padding:25px 0 0px 0;float:right;width:500px}
+#top_nav li {float:right;padding:0 7px}
+#top_nav li a {font-size:10px;color:#fff;text-transform:uppercase;text-decoration:none}
+#top_nav li a:hover {text-decoration:underline}
+#search {background:url(../images/search.jpg) no-repeat;width:191px;height:26px;float:right;margin-top:3px}
+#search .submit {float:right;background:none;height:26px;width:28px;cursor:pointer}
+#search .input {float:right;width:153px;height:16px;padding:5px 0 5px 10px;font:14px Arial, Helvetica, sans-serif;color:#000;background:none}
+#menu {background:url(../images/menu_border.gif) top left no-repeat;margin-top:30px}
+#menu ul {background:url(../images/menu_border.gif) top right no-repeat;width:100%;overflow:hidden}
+#menu li {float:left;padding-left:2px}
+#menu li a {display:block;height:66px;width:198px;font-size:24px;padding-top:90px;text-align:center;text-decoration:none;text-transform:uppercase}
+#menu li a:hover, #menu #menu_active a{}
+.nav1 {background:url(../images/menu1.gif) center 35px no-repeat}
+.nav2 {background:url(../images/menu2.gif) center 35px no-repeat}
+.nav3 {background:url(../images/menu3.gif) center 35px no-repeat}
+.nav4 {background:url(../images/menu4.gif) center 35px no-repeat}
+.nav5 {background:url(../images/menu5.gif) center 35px no-repeat}
+.nav1:hover, .nav1#active {background:url(../images/menu1_active.gif) center 31px no-repeat #001527}
+.nav2:hover, .nav2#active {background:url(../images/menu2_active.gif) center 31px no-repeat #001527}
+.nav3:hover, .nav3#active {background:url(../images/menu3_active.gif) center 31px no-repeat #001527}
+.nav4:hover, .nav4#active {background:url(../images/menu4_active.gif) center 31px no-repeat #001527}
+.nav5:hover, .nav5#active {background:url(../images/menu5_active.gif) center 31px no-repeat #001527}
+.slogan {background:url(../images/text.gif) center 108px no-repeat;height:141px;overflow:hidden;position:relative;padding-top:108px}
+.slogan a {margin-top:64px}
+/* The Nivo Slider styles */
+#slider {height:141px;position:absolute !important;top:0;width:981px;left:82px;top:108px}
+.nivoSlider {position:absolute}
+.nivoSlider img {top:0px;left:0px}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {position:absolute;top:0px;left:0px;width:100%;height:100%;border:0;padding:0;margin:0;z-index:60;display:none}
+/* The slices in the Slider */
+.nivo-slice {display:block;position:absolute;z-index:50;height:100%}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {position:absolute;margin-top:63px;z-index:99;cursor:pointer;text-indent:-9999px;width:21px;height:33px}
+.nivo-prevNav {left:-22px; display:block;background:url(../images/marker_left.jpg) no-repeat}
+.nivo-nextNav {right:123px;background:url(../images/marker_right.jpg) no-repeat}
+.nivo-prevNav:hover {background:url(../images/marker_left_active.jpg) no-repeat}
+.nivo-nextNav:hover {background:url(../images/marker_right_active.jpg) no-repeat}
+/* content */
+#content {width:100%;overflow:hidden;padding:33px 0 48px 53px}
+.body6 figure {padding-left:58px}
+#page2 .body6 figure {padding-left:53px}
+#page2 #content, #page3 #content, #page4 #content, #page5 #content {padding-top:0}
+#page3 #content {padding-bottom:37px}
+#page2 .col2 figure {margin-right:10px}
+#page4 .body6 {padding-bottom:25px}
+#page4 .marg_bot1 {margin-bottom:14px}
+#page4 #content {padding-bottom:44px}
+.body6 h2 {padding:0 0 14px 0;margin-top:-1px;letter-spacing:-1px;float:left;width:820px}
+.pad_left1 {padding-left:33px}
+.pad1 {padding:0 5px}
+.pad_bot1 {padding-bottom:10px}
+.pad_bot2 {padding-bottom:15px}
+.marg_bot1 {margin-bottom:20px}
+.box1 {background:url(../images/box_repeat.gif) center repeat-y} 
+.box1_bot {background:url(../images/box_bot.gif) center bottom no-repeat}
+.box1_top {background:url(../images/box_top.jpg) center top no-repeat;width:100%}
+.box1 .pad {padding:0 26px;padding-bottom:23px}
+.box1 h2 {font-size:24px;line-height:1.2em;color:#fff;padding:10px 0 22px 0}
+.box1 h2.center {font-size:30px;line-height:1.2em;padding:4px 0 26px 0;letter-spacing:-1px}
+.box1 .button {background:url(../images/button2_bg.gif) top repeat-x}
+.box1 .button span {background:url(../images/button2_left.gif) top left no-repeat}
+.box1 .button span span {background:url(../images/button2_right.gif) top right no-repeat}
+.box2 {background:url(../images/box2_repeat.gif) left repeat-y;margin-bottom:11px} 
+.box2_top {background:url(../images/box2_top.gif) left top no-repeat}
+.box2_bot {background:url(../images/box2_bot.gif) left bottom no-repeat;width:100%}
+.box2 .pad {padding:15px 25px 13px}
+.box2 figure {margin-right:10px}
+.box2 a {display:block;margin-bottom:5px;text-decoration:none;margin-top:-2px}
+.box2 a:hover {text-decoration:underline}
+.box2 .cols {width:490px}
+.button {background:url(../images/button1_bg.gif) top repeat-x;display:inline-block;font-size:20px;color:#363636;line-height:34px;text-decoration:none}
+.button span {display:block;background:url(../images/button1_left.gif) top left no-repeat}
+.button span span {padding:0 40px;background:url(../images/button1_right.gif) top right no-repeat;height:39px}
+.button:hover {color:#006abb} 
+.font1 {font-size:12px;display:block;padding-bottom:5px;margin-top:-2px}
+.line1 {background:url(../images/line_ver1.gif) 285px 0 repeat-y}
+.list1 li {line-height:30px}
+.list1 li a {padding-left:25px;background:url(../images/marker_1.gif) 0 8px no-repeat;display:inline-block}
+.list2 {margin-top:-8px;padding-bottom:24px}
+.list2 li {line-height:37px;background:url(../images/line_hor1.gif) bottom repeat-x}
+.list2 .bg_none {background:none}
+.list2 li a {font-size:18px;color:#363636;text-decoration:none}
+.list2 li a:hover {color:#006abb}
+.list2 li img {margin-right:10px}
+.list3 li {line-height:25px}
+.list3 li a {text-decoration:none;padding-left:14px;background:url(../images/marker_2.gif) 0 5px no-repeat}
+.list3 li a:hover {text-decoration:underline}
+/* footer */
+footer {padding:0 0 0 60px;color:#fff}
+footer a {color:#a2b8c8}
+footer p {padding-bottom:15px}
+.col_1 {width:190px;float:left}
+.col_2 {width:413px;float:left}
+.col_3 {width:230px;float:left;padding-left:8px}
+#footer_logo {display:block;margin:15px 0 36px 64px;background:url(../images/footer_logo.gif) no-repeat;width:98px;height:39px;text-indent:-9999px}
+/* forms */
+#ContactForm {margin-top:-4px;line-height:26px}
+#ContactForm strong {float:left;width:70px;font-weight:normal}
+#ContactForm .wrapper {min-height:30px}
+#ContactForm .bg {background:url(../images/input2.gif) no-repeat;float:left}
+#ContactForm .textarea_box {min-height:260px}
+#ContactForm .textarea_box .bg {background:url(../images/textarea.gif) no-repeat;float:left}
+#ContactForm a span span {padding:0}
+#ContactForm a {margin-right:20px;float:right;width:110px;text-align:center}
+#ContactForm .input {width:277px;height:17px;background:none;padding:6px 10px;color:#000;font:14px Arial, Helvetica, sans-serif}
+#ContactForm textarea {overflow:auto;width:464px;height:228px;background:none;padding:6px 10px;color:#000;font:14px Arial, Helvetica, sans-serif;margin:0}
+#sign_up {width:100%;height:29px;overflow:hidden;padding-top:7px}
+#sign_up .input {float:left;background:url(../images/input.gif) no-repeat;width:120px;height:17px;padding:6px 10px;font:14px Arial, Helvetica, sans-serif;color:#000;margin-right:7px}
+#sign_up a {font-size:16px;float:left;background:url(../images/sign_up.gif) no-repeat;width:77px;text-align:center;line-height:24px;height:29px;color:#363636;text-decoration:none}
+#sign_up a:hover {color:#006abb}
+#sign_up{}

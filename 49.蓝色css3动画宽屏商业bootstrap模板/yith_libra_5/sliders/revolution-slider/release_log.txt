@@ -1,0 +1,329 @@
+version 2.3.3
+
+- bug fix: craete a table if not created on every call, and not on activate only.
+- feature: added "update slider" button to update the slider from zip file.
+
+version 2.3.2
+
+- feature: added error message on backend that show problems in jquery ui
+
+version 2.3.1
+- bug fix: fixed new media dialog open chooser
+
+version 2.3
+- feature: added new media uploader of wp 3.5
+- feature: added first slide transition that can be various from the other transitions.
+- feature: added startWithSlide option
+- feature: added slide background color or transparent slide options
+- change:  changed option name in navigation type (verticalcentered to solo).
+- feature: improved navigation and arrows align and offset options, added saparate options for each elemtn.
+- feature: added slide title for better and logical viewing in the list.
+- feature: added publish / unpublish slide feature
+- feature: added "update image source" feature of the image layer.
+- feature: added "preview slide" button from slides list
+- bug fix: fade Animation in IE9 had a small rotation. Issue is fixed
+- bug fix: AutoPlay Videos in 2nd Loop did not started automatically. Issue is fixed
+
+
+version 2.2.4
+- Bug Fixed: IE9 Odd Rotation effect at animating the slides. Issue is resolved in this version
+- Bug Fixed: IE8 Caption does not disappear at fadeout changed. IE8 Filter added again, some cases it can add an odd halo effect at animationg the png images.
+
+version 2.2.3
+
+- bug fix: fixed charset collate in old wp.
+- CSS Edit: visiblility:hidden for rev_slider_wrapper ul container, to hide elements at loading.
+
+version 2.2.2
+
+- feature: Event like onbeforeswap, onafterswap and onloaded can be used now.
+
+version 2.2.1
+
+-bug fix: added database table collation on create table.
+-bug fix: FF 18 and YT Player issues has been solved. (Black Screen and Not Clickable button)
+
+version 2.2
+- Supporting jQuery 1.9.x now
+
+version 2.1.8
+- bug fix: fade effect in IE8 was not animated since ie8 needs static position instead of relative or absolute by fading
+- feature: added new api features like revlastslide, revcurrentslide
+
+
+version 2.1.7
+- bug fix: Loading of Content was visible during the Loading sequenze
+- feature: added link position: front or back
+- bug fix: the google font is loading from the backend if selected
+- bug fix: fixed some multisite bugs, made it more compatability for the multisite.
+- change: removed the php_resize feature
+- change: made 100% compatible with wp multisite
+
+version 2.1.6
+
+- updated the slider for multisite systems. Each blog can create exclusive sliders only.
+- Bug Fixed: Link to _blank page crashed the Slider.
+- PreLoading Images are not visible any more.
+
+version 2.1.5
+
+- bug fix: fixed some bug with caption hidden under width option
+
+version 2.1.4
+
+- feature: added full width centering for slide image
+- bug fix: fixed some full width output bug
+- protection: added css protection against ul margin
+- protection: improved slider not found by alias error message.
+- feature: added put slider on certain pages functionality
+- feature: added "pages" field to the slider widget
+
+version 2.1.3
+
+- bug fix: fixed some visual button css bug.
+
+version 2.1.2
+
+- bug fix: fixed the bug with jquery ui autocomplete
+
+version 2.1.1
+
+- bug fix: fixed new bugs with wordpress 3.5 compatability
+- changed Style in Editor
+
+version 2.1
+
+- change: changed backend jquery ui version to set the slider work with wordpress 3.5.
+- feature: added slider hide under some width option
+- feature: added selected captions / all caption hide under some width
+- added new option for linktoslide per Main Slide also.  data-link need to be set to "slide" and data-linktoslide should be set to the Order Nr. of Slide you want to link
+- bug fix: fixed some preview slide issue with slashes
+- bug fix: made a switch between old and new jquery ui libraries. The new will be loaded for wp version 3.5+
+
+version 2.0.6
+
+- bug fix: changes way that layers has been saved. added json stringify.
+- addition: added "alt" text to all the images in the output, so the slider could be validated.
+
+version 2.0.5
+
+- Bug Fix: Box Slide Failure
+- Big Fix: Caption Out Failure
+
+
+version 2.0.3
+
+- feature: added show slider option for user roles (can be set in inc_php/revslider_globals.php)
+- feature: added rel=0 to youtube video output.
+- protection: added css protection against image margins
+- change: return back the captions.css file. It was copied from captions-original.css before.
+
+version 2.0.2
+
+- bug fix: changed the .caption to .tp-caption in slider output.
+
+version 2.0.1
+
+- improvement: made captions.css copied on the fly from caption-original.css to avoid styles loss on update.
+
+version 2.0 reloaded
+
+- feature: added codemirror editor
+- feature: added "link to slide" option
+- protection: changed .caption to .tp-caption styles
+- feature: added show / hide slide options for better slide layers editing
+- feature: added "caption end" features
+- feature: added show / hide layer and global show / hide button
+- feature: added "timeline" that show the layer lifetime visually
+- feature: added slide preview
+- feature: added slider preview from the sliders list and slider view
+- feature: added caption link to slide functionality
+- feature: added video autoplay option for video captions
+- protection: added protection agains output filters, 2 types of it by setting choice.
+- change: removed the depth direct editing. The drag & drop is enought
+- change: when duplicate layer, the layernow added to end of the sortbox list and not beneath the parent layer.
+- feature: added version text to the backend and front end.
+
+
+version 1.5.7
+
+- protection: added protection aguenst wpautop filter (html p and br eclosure)
+- protection: add video layer iframe protection against global css settings.
+- bug fix: fixed not working api issue. Made the revapi variable global.
+
+version 1.5.6
+
+- bug fix: changed the is_home() to is_front_page() function when choose the slider to be on home page only.
+- protection: added validations for empty or not numeric slider width and slider height
+- protection: added client side protection against double jquery include
+- protection: added list-style-type:none in css
+
+version 1.5.5
+
+-feature: added function - put on homepage only in widget area and php putRevSlider function
+-feature: added transformZ(0) for Android and Google Chrome to use GPU for Animations.
+
+version 1.5.4
+
+- feature: added function - put js to body - protection against jquery.js after js includes.
+
+version 1.5.3
+
+- change: added some js protections.
+- added some php protections
+
+version 1.5.2
+
+- change: made the slider not found error more clear.
+
+version 1.5.1
+
+- Workaround: Isotope CSS3 Transition Conflict solved via an add on in plugin.js
+- bug fix: fixed back end caption z-index show
+- feature: set accordion in slider settings.
+- feature: added slider setting: "arrows always on"
+- feature: added slider setting:  "timer bar position"
+- bug fix: if Container has no height, a start height will be defined vias jQuery to resolve the "slider not visible" issue
+- bug fix: IE9 / IE8 FullScreen Link did not worked well. Issue is solved in this update.
+
+version 1.5
+
+----- Front End + Back End
+- feature: new animation library (transition.js) has been added
+- feature: new transitions added - premium 3D transitions and Custom Transitions.
+- feature: shuffle mode  shuffle:"on/off" to randomize the list elements at start
+- feature: API with function like next, prev, maxslide, pause,resume, show, event handling (event name : revolution.slide.changed  data.slideIndex = new slide index)
+- feature: added slide transition rotation to slide options.
+- feature: added "randomrotate" caption transition
+- feature: added slide link target - new or same window
+- feature: added 2 more responsive layers (5,6)
+- feature: Full Width video support for youtube and vimeo
+
+- bug fix: ul/li Lists can be added now in Captions
+- bug fix: jQuery 1.72 and jQuery 1.8 Compatibility mode is stable now
+- bug fix: IE8 Halo Errors has been repaired. (some animation with opacity has only two phase animation now, and some CPU Heavy animation is automatically replaced with simple animations instead in IE8)
+- bug fix: if YouTube Player inserted in slide 1 and loadig time takes longer.
+- bug fix: transition fade speed settings
+- bug fix: fixed ie8 responsive layout
+
+----Back End Only
+- feature: The layers are selected after add
+- feature: Added export / import slider functionality
+
+- bug fix: When add text layer after image layer selected the class was empty.
+- bug fix: When click "update video" button on vimeo video, the video could not be found
+- bug fix: Video dialog was not searching on values with "space" on the begin or end, done trim.
+- bug fix: When inserting button, the html layer style didn't updated right
+- bug fix: Fixed some php notices on debug mode on.
+
+
+version 1.4.1
+
+- fixed some small bug with "stop slider" functionality
+
+version 1.4
+
+- feature: added "duplicate slider" functionality
+- feature: added "stop slider" functionality
+- bug fix: fixed duplicate layer js bugs from the previous update
+- Feature changed : slidehorizontal and slidevertical will always slide the items left/right or up/down depending on the Navigation direction has been pressed. (basic direction is always to the left and to the top)
+
+version 1.3.6
+
+- feature: added "by depth" and "by time" layer sorting options
+- feature: Done duplicate slide
+- feature: Done duplicate layer
+- change: removed unnessesary option: "full width centering". This options is now set by the slider type
+- bug fix: the fullwidth option is not grayed any more
+- bug fix: fix the backend sort layers bug (after deleting a layer)
+
+version 1.3.5
+-bug fix: jQuery Length error by removing slots from screen has been repaired.
+
+version 1.3.4
+-bug fix: With only One Slide the slider breaks. Bug solved.  With only one Slide no Bullets and no Navigation Arrows are visible !!
+-bug fix: Change time sortbox disabled clickable event.
+
+version 1.3.3
+
+-feature: added links support to image layer
+
+version 1.3.2
+-bug fix: Fade transition keeps some trash in the memory
+-bug fix: YouTube and Vimeo APIS only loads on Request
+
+version 1.3.1
+-bug fix: fixed the indexOf js bug
+
+version 1.3
+
+-feature: Added transition duration option to slide options
+-feature: Added background image option to slider options
+-feature: Vimeo and Youtube API added. Slider Countdown is stopped during the Playback.
+-bug fix: Improved js and css including, put it on another hook function.
+-bug fix: Some transition could not be skipped as first Slide. Bug is fixed.
+
+version 1.2.2
+
+-bug fix: in multisite tried to create "cache folder" on not existing upload path.
+
+version 1.2.1
+
+-bug fix: fixed the image layer url
+
+version 1.2
+
+- feature: added transitions - random / slidehorizontal / slidevertical
+- bug fix: fixed url fetching in js from image import dialog
+- bug fix: fixed css styles reload in backend
+
+version 1.1.5
+
+- feature: shortcodes works within html captions
+- bug fix: fixed all the image url's without php resizing. Now any image url's can be used, not only from the "wp-content" path.
+
+version 1.1.4
+- fix for Bootstraps : In case Bootstrap Theme is used, a img full-width:none !important overwrite bootstrap responsivity.
+
+version 1.1.3
+- fix wordpress content path init. Take from wp core instead hard coded wp-content
+
+version 1.1.2
+- workaoudn: JS Plugin resize the height of the Holder Container in case no default height has been set
+- feature: Random Funktion has been added vor Slide Transitions
+- bug fix: jQuery 1.8 Library works now fine
+
+version 1.1.1
+
+- bug fix: added buffering to shortcode output, for avoid double slider output.
+
+version 1.1
+
+-feature: added "insert button" dialog
+-fixed some bugs in ie8
+
+version 1.0.5
+
+-bug fix: fixed responsitive slider type, added initial width and height.
+
+version 1.0.4
+
+- feature: added option to turn on / off jquery noconflict mode
+
+version 1.0.3 - released 06/08/12
+
+- bug fix: add "default value" in insert slide mysql statement. Sometimes it caused error.
+
+version 1.0.2
+
+- bug fix: css Conflicht Fix, removed css Extension
+- bug fix: fullwidth option was missing in the output, added this option.
+
+version 1.0.1
+
+- bug fix: added update sortbox time on blur and not only on enter
+
+version 1.0 - 31.8.2012
+
+	first release
+

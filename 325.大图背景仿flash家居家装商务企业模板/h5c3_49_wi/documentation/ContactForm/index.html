@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Form Manual</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/idea.css" type="text/css" media="all">
+  <script type="text/javascript" src="js/jquery-1.7.min.js" ></script>
+  <script type="text/javascript" src="js/forms.js"></script>
+  <script src="js/highlight.js"></script>
+  <script src="js/html5.js"></script>
+  <script src="js/html-xml.js"></script>
+  <script src="js/css.js"></script>
+  <script src="js/javascript.js"></script>
+  
+  <script>
+    hljs.tabReplace = '    ';
+    hljs.initHighlightingOnLoad();
+  </script>
+  <!--[if lt IE 7]>
+  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="screen">
+    <script type="text/javascript" src="js/ie_png.js"></script>
+    <script type="text/javascript">
+        ie_png.fix('.png');
+    </script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div id="main">
+  	<div class="inside">
+    	<!-- header -->
+      <header id="header">
+        <div class="inside">
+          <h1>Contact Form manual</h1>
+        </div>
+      </header>
+      <section id="content">
+        <article>
+			&nbsp; &nbsp; <strong>Contact Form</strong> gives visitors the opportunity to send messages to the site-owner. The contact data (Name, Email, Text message) is submitted into the corresponding fields. It can be very beneficial if the visitor does not have an Email Client installed or uses someone else's computer (e.g. in the internet club). For this reason we have developed the universal contact form that sends messages to the email specified by the site owner, has the expandable number of fields and transmissible data verification feature. 			
+			<!-- Getting started begin -->
+        <article class="pad">
+          <h2>Contact Form Sample</h2>
+          <div class="inner">
+		  	<div class="list-pad">
+				<form id="form1">
+				  <div class="success"> Contact form submitted!<br>
+					<strong>We will be in touch soon.</strong> </div>
+				  <fieldset>
+					<label class="name">
+					  <input type="text" value="Enter Name:">
+					  <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label><br>
+					<label class="email">
+					  <input type="email" value="Enter Email:">
+					  <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label><br>
+					<label class="state notRequired">
+					  <input type="text" value="Enter Your State:">
+					  <span class="error">*This is not a valid state name.</span> <span class="empty">*This field is required.</span> </label><br>
+					<label class="phone">
+					  <input type="tel" value="Enter Phone:">
+					  <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label><br>
+					<label class="fax">
+					  <input type="tel" value="Enter Fax:">
+					  <span class="error">*This is not a valid fax number.</span> <span class="empty">*This field is required.</span> </label><br>
+					<label class="message">
+					  <textarea>Enter Message:</textarea>
+					  <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label><br>
+					<br class="clear">
+					<div class="btns"><a href="#" class="button" data-type="reset">Clear</a><a href="#" class="button" data-type="submit">Submit</a></div>
+				  </fieldset>
+				</form>
+			</div>	
+          </div>
+        </article>
+        <!-- Getting started end -->
+          <h2 class="pad">Description</h2>
+          <div class="inner">
+           The HTML structure inside the form is flexible, the only condition is that all the fields (input, textarea HTML elements) should be placed inside the <strong>label</strong> tags that have class corresponding to their type.<br>
+			<p class="pad">There are following classes/types by default:</p>
+			<div class="list-pad pad">
+				<ul>
+					<li><strong>name</strong> &ndash; the User's Name. Validation: digits are disallowed, not less than 2 symbols;</li>
+					<li><strong>email</strong> &ndash; the User's Email;</li> 
+					<li><strong>state</strong> &ndash; Country (Area). Validation: digits are disallowed, not less than 2 symbols;</li>
+					<li><strong>phone</strong> &ndash; Phone. Validation: digits only, not less than 5 symbols. Additional acceptable not alphabetical symbols: "space", "+" and "-";</li>
+					<li><strong>fax</strong> &ndash; Fax. Validation: digits only, not less than 5 symbols. Additional acceptable not alphabetical symbols: "space", "+" and "-";</li>
+					<li><strong>message</strong> &ndash; Message. Validation: any symbols, not less than 20 symbols.</li>
+					<li><strong>notRequired</strong> &ndash; This class is used as a pointer for the  optional fields while filling the forms out.</li>
+				</ul>
+				<strong>The Code:</strong>
+				<div class="code">
+					<pre><code>
+&lt;label class="name"&gt;<br>
+&nbsp; &lt;input type="text" value="Enter Name:"&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="email"&gt;<br>
+&nbsp;  &lt;input type="email" value="Enter Email:"&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="state notRequired"&gt;<br>
+&nbsp;  &lt;input type="text" value="Enter Your State:"&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="phone"&gt;<br>
+&nbsp;  &lt;input type="tel" value="Enter Phone:"&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="fax"&gt;<br>
+&nbsp;  &lt;input type="tel" value="Enter Fax:"&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="message"&gt;<br>
+&nbsp;  &lt;textarea&gt;Enter Message:&lt;/textarea&gt;<br>
+&lt;/label&gt;<br>
+					</code></pre>
+				</div>
+			</div>
+			<p class="pad">Also <strong>label</strong> tag mentioned above can contain nested <em><strong>span</strong></em> elements with classes <strong>error</strong> and <strong>empty</strong>, 
+			which include the error message in case the data in the field is specified incorrectly or the field is just empty.</p>
+			<div class="list-pad">
+				<strong>The Code:</strong>
+				<div class="code">
+					<pre><code>
+&lt;label class="name"&gt;<br>
+&nbsp;  &lt;input type="text" value="Enter Name:"&gt;<br>
+&nbsp;  &lt;span class="error"&gt;*This is not a valid name.&lt;/span&gt; &lt;span class="empty"&gt;*This field is required.&lt;/span&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="email"&gt;<br>
+&nbsp;  &lt;input type="email" value="Enter Email:"&gt;<br>
+&nbsp;  &lt;span class="error"&gt;*This is not a valid email address.&lt;/span&gt; &lt;span class="empty"&gt;*This field is required.&lt;/span&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="state notRequired"&gt;<br>
+&nbsp;  &lt;input type="text" value="Enter Your State:"&gt;<br>
+&nbsp;  &lt;span class="error"&gt;*This is not a valid state name.&lt;/span&gt; &lt;span class="empty"&gt;*This field is required.&lt;/span&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="phone"&gt;<br>
+&nbsp;  &lt;input type="tel" value="Enter Phone:"&gt;<br>
+&nbsp;  &lt;span class="error"&gt;*This is not a valid phone number.&lt;/span&gt; &lt;span class="empty"&gt;*This field is required.&lt;/span&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="fax"&gt;<br>
+&nbsp;  &lt;input type="tel" value="Enter Fax:"&gt;<br>
+&nbsp;  &lt;span class="error"&gt;*This is not a valid fax number.&lt;/span&gt; &lt;span class="empty"&gt;*This field is required.&lt;/span&gt;<br>
+&lt;/label&gt;<br>
+&lt;label class="message"&gt;<br>
+&nbsp;  &lt;textarea&gt;Enter Message:&lt;/textarea&gt;<br>
+&nbsp;  &lt;span class="error">*The message is too short.&lt;/span&gt; &lt;span class="empty"&gt;*This field is required.&lt;/span&gt;<br>
+&lt;/label&gt;<br>
+					</code></pre>
+				</div>
+			</div>
+			<p class="pad">There is also <strong>div</strong> container with the class <strong>success</strong> inside the form, which is displayed after the message has been sent.</p>
+			<div class="list-pad">
+				<strong>The Code:</strong>
+					<div class="code">
+						<pre><code>
+&lt;div class="success"&gt; Contact form submitted!<br>
+&lt;strong&gt;We will be in touch soon.&lt;/strong&gt; &lt;/div&gt;
+						</code></pre>
+					</div>
+			  </div>
+			</div>
+		<h2 class="pad1">Script Initialization</h2>
+			<div class="inner">
+			  <p class="pad">To activate the contact form you need to include contact from script in the <strong>&lt;head&gt;</strong> section of HTML file and copy <strong>"bin"</strong> folder to your website root folder. The <strong>"bin"</strong> folder should contain 2 files: <strong>MailHandler.ashx</strong> and <strong>MailHandler.php</strong></p>
+			  <div class="code">
+			 	<pre><code>&lt;script type="text/javascript" src="js/jquery-1.7.min.js"&gt;&lt;/script&gt;<br>
+&lt;script type="text/javascript" src="js/forms.js"&gt;&lt;/script&gt;</code></pre>
+				</div>
+				<p class="pad">After this you should initialize your contact form on the <i><b>$(window).load() :</b></i> event</p>
+				<div class="code">
+					<pre><code>
+&lt;script type="text/javascript"&gt;<br>
+&nbsp;  $(window).load(function(){<br>
+&nbsp;	&nbsp;  $('#form1').forms({<br>
+&nbsp;	&nbsp;  &nbsp; ownerEmail:'#'<br>
+&nbsp;	&nbsp;    })<br>
+&nbsp;  })<br>
+&lt;/script&gt;
+					</code></pre>
+				</div>
+				<p class="pad">Use the following parameters for initialization:</p>
+				<div class="list-pad">
+					<ul>
+						<li><strong>ownerEmail</strong> &ndash; the Email address the data will be sent to;
+						<li><strong>successShow</strong> &ndash; the period of time in milliseconds, during which the Send Message will be shown and after which the fields will be emptied, by default it is 4000 - 4 sec.</li>
+					</ul>
+				</div>								
+			</div>
+        </article>
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript">
+	$(window).load(function(){
+		$('#form1').forms({
+			ownerEmail:'#'
+		})
+	})
+</script>
+</body>
+</html>

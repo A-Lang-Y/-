@@ -1,0 +1,73 @@
+/*
+Free Html5 Responsive Templates
+Author: Kimmy
+Author URI: http://www.cssmoban.com/
+*/
+html {
+   -webkit-text-size-adjust: none;
+}
+.video embed,
+.video object,
+.video iframe {
+   width: 100%;
+   height: auto;
+}
+img{
+	max-width:100%;
+	height: auto;
+   	width: auto\9; /* ie8 */
+}
+
+.nav-responsive{display:none;}
+.nav-responsive{position: relative;margin: 0px;background:#333333;}
+.nav-responsive div{overflow: hidden;position: relative;font: 18px/37px 'PT Sans Narrow';color: #fff;text-align:center;text-transform:uppercase;font-weight:bold;}
+.nav-responsive select{position: absolute;top: 0px;left: 0px;width: 100%;height: 100%; opacity: 0;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);	cursor: pointer;}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.slider-full{
+		display: none;
+	}
+	.main{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.slider-full{
+		display: none;
+	}
+	.main{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		padding: 0;
+		background:url(../images/slide-1.jpg) no-repeat center;
+	}
+	.social-list li {
+		text-align:left;	
+	}
+	.banner-box{
+		padding: 10px;
+	}
+	.banner-box-img{
+		position: relative;
+	}
+	nav{
+		display: none;
+	}
+	.nav-responsive{
+		display: block;
+	}
+	#contact-form input, #contact-form textarea {
+		width: 250px;
+	}
+}
+@media only screen and (max-width: 479px) {
+	#content article dl{
+		display: inline;
+	}
+}

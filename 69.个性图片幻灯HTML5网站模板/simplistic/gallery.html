@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Simplistic | Gallery</title>
+<meta charset="iso-8859-1">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<script src="scripts/jquery-1.8.2.min.js"></script>
+<script src="scripts/jquery-defaultvalue.js"></script>
+<!--[if lt IE 9]><script src="scripts/html5shiv.min.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <hgroup>
+      <h1><a href="#">S<span>implistic</span></a></h1>
+      <h2>Free HTML5 Website Template</h2>
+    </hgroup>
+    <nav>
+      <ul>
+        <li class="first"><a href="index.html">Homepage</a></li>
+        <li><a href="style-demo.html">Style Demo</a></li>
+        <li><a href="full-width.html">Full Width</a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#">Link Text</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- content body -->
+    <p><strong>GRAB A GALLERY PAGE TEMPLATE FROM OUR <a href="#">FREE PAGE TEMPLATES</a> SECTION</strong></p>
+    <!-- / content body -->
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <div id="footer" class="clear">
+    <!-- Section One -->
+    <section class="one_quarter first">
+      <h2 class="title">About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</p>
+      <p>Tel: xxxxx xxxxxxxxxx<br>
+        Fax: xxxxx xxxxxxxxxx<br>
+        Email: <a href="#">contact@mydomain.com</a></p>
+    </section>
+    <!-- Section Two -->
+    <section class="one_quarter">
+      <h2 class="title">Quick Links</h2>
+      <nav>
+        <ul>
+          <li class="first"><a href="#">Lorem ipsum dolor sit</a></li>
+          <li><a href="#">Amet consectetur</a></li>
+          <li><a href="#">Praesent vel sem id</a></li>
+          <li><a href="#">Curabitur hendrerit est</a></li>
+          <li><a href="#">Aliquam eget erat nec sapien</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Section Three -->
+    <section class="one_quarter">
+      <h2 class="title">Latest Blog Posts</h2>
+      <article>
+        <header>
+          <h2><a href="#">Blog Post Title</a></h2>
+          <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
+        </header>
+        <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
+        <p><a href="#">Read More &raquo;</a></p>
+      </article>
+    </section>
+    <!-- Section Four -->
+    <section class="one_quarter">
+      <h2 class="title">Newsletter</h2>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter Sign-up:</legend>
+          <label for="nl_name">Name:</label>
+          <input type="text" name="nl_name" id="nl_name" value="">
+          <label for="nl_email">Email:</label>
+          <input type="text" name="nl_email" id="nl_email" value="">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+    <!-- / Section -->
+  </div>
+</div>
+<!-- Copyright -->
+<div class="wrapper row4">
+  <footer id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2012 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template from <a href="http://www.cssmoban.com/" title="????">????</a></p>
+  </footer>
+</div>
+<script>
+$(document).ready(function () {
+    $("#nl_name, #nl_email").defaultvalue("Name", "Email");
+});
+</script>
+</body>
+</html>

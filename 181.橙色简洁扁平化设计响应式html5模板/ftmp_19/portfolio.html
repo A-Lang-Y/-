@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width" />
+<title>I Folio A Responsive HTML5 Template</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+<link rel="stylesheet" type="text/css" href="css/jqueryslidemenu.css" />
+<link rel="stylesheet" type="text/css" href="css/quicksand.css" />
+<link rel="stylesheet" type="text/css" href="css/widget.css" />
+<link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+<link rel="stylesheet" type="text/css" href="css/hoverdir.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+<script type="text/javascript" src="js/jqueryslidemenu.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/portfolio_sortable.js"></script>
+<script type="text/javascript" src="js/quicksand.js"></script>
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+//Image Hover
+jQuery(document).ready(function(){
+jQuery(function() {
+	jQuery('#list > li').hoverdir();
+});
+});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<body>
+
+
+<!-- Header Start -->
+<section id="header_wrap">
+<nav id="myslidemenu" class="jqueryslidemenu clearfix">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="active" href="portfolio.html">Portfolio</a>
+        <ul>
+            <li><a href="portfolio_3col.html">Portfolio 3</a></li>
+            <li><a href="portfolio_2col.html">Portfolio 2</a></li>
+            <li><a href="portfolio_sidebar.html">Portfolio Sidebar</a></li>
+        </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="typography.html">Typography</a>
+        <ul>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="columns.html">Columns</a></li>
+            <li><a href="pricing_table.html">Pricing Table</a></li>
+        </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+</section>
+<!-- Header End -->
+
+<!-- Logo Start -->
+<figure><a href="index.html"><img src="images/logo.png" alt="img" /></a></figure> 
+<!-- Logo End -->
+
+<div id="triangle-up"></div>
+
+<!-- Content Start -->
+<section id="content_wrap" class="portfolio">
+<article>
+    <div class="sub_header">
+        <h2>Portfolio 4 Column</h2>
+        <form class="searchform" method="get" role="search" />
+            <input class="s" type="text" onblur="if(this.value=='') this.value='Site Search'" onfocus="if(this.value =='Site Search' ) this.value=''" value="Site Search" />
+            <input class="searchsubmit" type="submit" value="" />
+            <a onclick="document.getElementById('search-form').submit()"></a>
+        </form>
+    </div>
+	
+    <!-- Portfolio Start -->
+    <ul class="splitter" id="filter">
+        <li>
+            <ul>
+                <li class="segment-1 selected-1"><a href="#" data-value="all">All</a></li>
+                <li class="segment-0"><a href="#" data-value="buisness">Buisness</a></li>
+                <li class="segment-2"><a href="#" data-value="logo">Logos</a></li>
+                <li class="segment-3"><a href="#" data-value="photgraphy">Photgraphy</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div id="portfolio_4col" class="image_grid">
+    <ul id="list" class="da-thumbs">
+        <li data-id="id-1" class="logo">
+            <img src="images/portfolio_img_1.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_1.html">
+                <h3>Designed Card</h3>
+                <p>In hac habitasse platea dictumst. Aliquam in est leo. Aliquam ut urna pulvinar 
+                ipsum ultricies fringilla et sed magna at eros leo.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-2" class="buisness">
+            <img src="images/portfolio_img_2.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_2.html">
+                <h3>Buck Bunny Image</h3>
+                <p>Aliquam hac habitasse platea dictumst. Aliquam in est leo. Aliquam ut urna et sed at grav hac.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-3" class="photgraphy">
+            <img src="images/portfolio_img_3.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_3.html">
+                <h3>Painted Design</h3>
+                <p>Tincidunt hac habitasse platea dictumst. Aliquam in est leo
+                ipsum ultricies fringilla et sed magna aliquam in.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-4" class="logo">
+            <img src="images/portfolio_img_4.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_4.html">
+                <h3>Big Logo</h3>
+                <p>Faucibus hac habitasse platea dictumst. Aliquam in est leo et 
+                sed magna. Duis faucibus lorem at in est cursus.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-5" class="buisness">
+            <img src="images/portfolio_img_5.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_5.html">
+                <h3>3D Cartoon</h3>
+                <p>Pulvinar hac habitasse platea dictumst ipsum ultricies fringilla et sed magna.
+                 Duis faucibus lorem a aliquam in est magna.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-6" class="photgraphy">
+            <img src="images/portfolio_img_6.jpg" alt="img" />
+            <div>
+            <a href="portfolio_single_page_4.html">
+                <h3>Company Identity</h3>
+                <p>Sodales hac habitasse platea dictumst fringilla et sed magna. Duis faucibus lorem at sed.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-7" class="logo">
+            <img src="images/portfolio_img_7.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_3.html">
+                <h3>Graphic Effect</h3>
+                <p>Habitasse hac habitasse platea dictumst ipsum ultricies fringilla et sed magna.
+                 Duis faucibus lorem dictumst in esto.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-8" class="buisness">
+            <img src="images/portfolio_img_8.jpg" alt="img" />
+            <div>
+            <a href="portfolio_single_page_2.html">
+                <h3>Tennis Ball</h3>
+                <p>Dictumst hac habitasse platea dictumst ipsum ultricies fringilla et sed magna.
+                 Duis faucibus lorem at hac habitasse est vel.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-9" class="photgraphy">
+            <img src="images/portfolio_img_9.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_1.html">
+                <h3>Illustrated Design</h3>
+                <p>Fermentum hac habitasse platea dictumst ipsum 
+                 Duis faucibus lorem at abitasse platea eros.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-10" class="logo">
+            <img src="images/portfolio_img_10.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_5.html">
+                <h3>Art Design</h3>
+                <p>Magna hac habitasse platea dictumst ipsum ultricies fringilla 
+                et sed magna. Duis faucibus lorem sdt urna.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-11" class="buisness">
+            <img src="images/portfolio_img_11.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_4.html">
+                <h3>Cartoon Show</h3>
+                <p>Vivamus hac habitasse platea dictumst est leo pulvinar 
+                ipsum ultricies fringilla et sed magna. Duis faucibus lorem cursus sed.</p>
+                </a>
+            </div>
+        </li>
+        <li data-id="id-12" class="photgraphy">
+            <img src="images/portfolio_img_12.jpg" alt="img" />
+            <div>
+            	<a href="portfolio_single_page_3.html">
+                <h3>Photoshop Pattern Text</h3>
+                <p>Rhoncus hac habitasse platea dictums 
+                ultricies fringilla et sed magna. Duis faucibus lorem at eros nisl.</p>
+                </a>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <!-- Portfolio End -->
+</article>
+</section>
+<!-- Content End -->
+
+<div id="triangle-down">&nbsp;</div>
+
+<!-- Footer Start -->
+<section id="footer_wrap">
+<footer>
+    <div class="one_fourth">
+    <div class="widget_container">
+        <h3>About <span>Theme</span></h3>
+        <p>Etiam rutrum, massa ac viverra malesuada, nisl velit vestibulum leo, non laoreet est leo ut velit.
+        Vivamus at ligula est. Phasellus venenatis mollis ligula non rhoncus. Pellentesque malesuada.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend libero eu ligula consectetur
+        lacinia. Aliquam non pellentesque turpis. Duis placerat felis sit amet dui gravida vulputate tristique
+        nibh rhoncus. Morbi hendrerit cursus nisl quis auctor.</p>
+    </div>
+    </div>
+    <div class="one_fourth">
+    <div class="widget_container">
+        <h3>Popular <span>Post Widget</span></h3>
+        <ul>
+            <li>
+                <img src="images/popular_post_img_1.jpg" alt="img" class="thumb_img" />
+                <div class="description">
+                    <strong>Tristique ipsum</strong>
+                    <p>In hac habitasse pla...</p>
+                    <span class="comment">5 Comments</span>
+                </div>
+            </li>
+            <li>
+                <img src="images/popular_post_img_2.jpg" alt="img" class="thumb_img" />
+                <div class="description">
+                    <strong>Gravida vulputate</strong>
+                    <p>Duis placerat felis...</p>
+                    <span class="comment">10 Comments</span>
+                </div>
+            </li>
+            <li>
+                <img src="images/popular_post_img_3.jpg" alt="img" class="thumb_img" />
+                <div class="description">
+                    <strong>Morbi hendrerit</strong>
+                    <p>Aliquam non pellent...</p>
+                    <span class="comment">7 Comments</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="one_fourth">
+    <div class="widget_container">
+        <h3>Recent <span>Tweets</span></h3>
+        <ul>
+        <li>
+            <img src="images/twitter_icon.png" alt="img" class="thumb_img" />
+            <div class="description">
+                <p>Phasellus: venenatis mollis ligula non rhoncus malesuada.
+                @ about <span>4 days ago</span></p>
+            </div>
+        </li>
+        <li>
+            <img src="images/twitter_icon.png" alt="img" class="thumb_img" />
+            <div class="description">
+                <p>Duis: placerat felis sit amet dui gravida gristiqu rhoncus.
+                @ about <span>12 days ago</span></p>
+            </div>
+        </li>
+        <li>
+            <img src="images/twitter_icon.png" alt="img" class="thumb_img" />
+            <div class="description">
+                <p>Gravida: Tell me and I forget. Show me and I remember
+                @ about <span>20 days ago</span></p>
+            </div>
+        </li>
+        </ul>
+    </div>
+    </div>
+    <div class="one_fourth_last">
+    <div class="widget_container flick_widget">
+        <h3>Flickr <span>Widget</span></h3>
+        <img src="images/flickr_img_1.jpg" alt="img" />
+        <img src="images/flickr_img_2.jpg" alt="img" />
+        <img src="images/flickr_img_3.jpg" alt="img" />
+        <img src="images/flickr_img_4.jpg" alt="img" />
+        <img src="images/flickr_img_5.jpg" alt="img" />
+        <img src="images/flickr_img_6.jpg" alt="img" />
+        <img src="images/flickr_img_7.jpg" alt="img" />
+        <img src="images/flickr_img_8.jpg" alt="img" />
+        <img src="images/flickr_img_9.jpg" alt="img" />
+    </div>
+    </div>
+
+    <div class="bottom_sec">
+        <span>Copyright &copy; Kayapati 2012 . Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a></span>
+        <ul>
+            <li><img src="images/social_icon_1.png" alt="img" /></li>
+            <li><img src="images/social_icon_2.png" alt="img" /></li>
+            <li><img src="images/social_icon_3.png" alt="img" /></li>
+            <li><img src="images/social_icon_4.png" alt="img" /></li>
+            <li><img src="images/social_icon_5.png" alt="img" /></li>
+        </ul>
+    </div>
+
+</footer>
+</section>
+<!-- Footer End -->
+</body>
+</html>

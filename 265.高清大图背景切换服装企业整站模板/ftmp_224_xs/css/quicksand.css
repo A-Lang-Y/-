@@ -1,0 +1,65 @@
+/*All Resolutions
+=================*/
+
+.image-grid { overflow:hidden; height:auto!important; width:960px!important}
+.image-grid li { background:none; overflow:hidden; display:inline-block; margin:0 0 20px 0; }
+
+.filter_img { position:relative;}
+.filter_img img { display:block; width:100%; height:auto}
+
+.columns1 li, .columns2 li { height:280px}
+.columns3 li { height:183px}
+.columns4 li { height:134px}
+.columns4 .h140 { height:140px}
+.columns4 .h160 { height:160px}
+.columns4 .h240 { height:240px}
+.columns4 .h280 { height:280px}
+.columns4 .h360 { height:360px}
+.masonry li { height:auto!important; margin-bottom:20px!important}
+.masonry { height:700px!important}
+/*.columns4 li { display:block!important; overflow:hidden!important}*/
+
+.filter_navigation { overflow:hidden}
+.filter_block { /*padding:0!important; margin:0 0 20px 0px!important*/}
+/*----------------------------------------------------------
+Tablet Portrait size to standard 960 (768x1024) 
+-----------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+/*.image-grid { overflow:hidden; height:700px; width:768px!important}*/
+.image-grid { overflow:hidden; height:auto!important; width:768px!important}
+.masonry { height:565px!important}
+.columns1 li { margin-bottom:20px;}
+.columns1 li, .columns2 li { height:222px}
+.columns3 li { height:144px}
+.columns4 li { height:105px}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	/*Empty*/
+}
+
+/*------------------------------------------------
+Mobile Landscape Size to Tablet Portrait (480x320)
+--------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.image-grid { overflow:hidden; height:auto!important; width:420px!important}
+	.columns1 li { margin:0 0 20px 0; height:auto!important}
+	.columns1 li .filter_img { padding:0!important; margin-bottom:15px}
+	.columns1 li .filter_img img { width:100%!important; height:auto}
+	.columns3 li, .columns4 li { margin-bottom:30px; height:256px!important}
+	.masonry { height:auto; overflow:visible}
+}
+
+/*-----------------------------------------------------
+Mobile Portrait Size to Mobile Landscape Size (320x480) 
+-------------------------------------------------------*/
+@media only screen and (max-width: 479px) {
+	.image-grid { overflow:hidden; height:auto!important; width:300px!important}
+	.columns1 li { margin:0 0 20px 0; height:auto!important}
+	.columns1 li .filter_img { padding:0!important; margin-bottom:15px}
+	.columns1 li .filter_img img { width:100%!important; height:auto}
+	.columns2 li { padding:0!important; margin-bottom:20px!important; height:183px!important}
+	.columns3 li, .columns4 li { margin-bottom:30px; height:183px!important}
+	.masonry { height:auto; overflow:visible}
+}

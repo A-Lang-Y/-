@@ -1,0 +1,145 @@
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.wrapper {width:100%; overflow:hidden;}
+.relative{ position:relative;}
+
+/* Global properties ======================================================== */
+
+body{ background:#cb610c; border:0; font:13px Arial, Helvetica, sans-serif; color:#323232; line-height:25px; min-width:940px; overflow:hidden}
+
+.css3{border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 0 0 4px rgba(0, 0, 0, .4); -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .4); -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .4); position: relative;}
+
+.page_spinner{ position:absolute;background: url(../images/bg.jpg) 0 0 repeat #cb610c; z-index:99; width:100%; height:100%; top:0; left:0}
+.page_spinner div{ position:absolute;background: url(../images/ajax-loader.gif) 50% 50% no-repeat;width:100%; height:100%; top:0; left:0}
+
+
+/* Global Structure ============================================================= */
+
+.main {	margin: 0 auto;	width: 940px; }
+
+#bgStretch {overflow:hidden;z-index:-1; position:fixed}
+.spinner {width:100%;height:100%;position: fixed;z-index:0;left:0;top:0;background: url(../images/ajax-loader.gif) center center no-repeat;}
+.ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-300% 0 0 0;overflow:hidden;padding:0}
+
+body, html{ height:100%;}
+.over{ position:relative; width:100%; overflow:hidden;min-height:100%; height:auto !important; background:url(../images/bg_top.png) 0 0 repeat-x}
+
+.bg1{ position:absolute; bottom:0; left:0; width:100%; background:url(../images/bg_footer.png) 0 0 repeat-x; height:60px;}
+
+#bgStretch {overflow:hidden;z-index:-1; position:fixed}
+.spinner {width:100%;height:100%;position: fixed;z-index:0;left:0;top:0;background: url(../images/ajax-loader.gif) center center no-repeat;}
+
+/* ============================= main layout ====================== */
+
+a{ color:#ad2f00; text-decoration: none; outline:none}
+a:hover{}
+h1{  float:left}
+h2{ font:30px 'Asap', sans-serif; color:#ad2f00; line-height:1.2em; padding:2px 0 14px 0; letter-spacing:-2px;}
+p{ padding-bottom:25px;}
+strong{ color:#ad2f00}
+
+/* ============================= header ====================== */
+header{ height:220px;}
+
+#logo{ display:block; text-indent:-9999px; background:url(../images/logo.jpg) 0 0 no-repeat; width:220px; height:220px;}
+
+.menu { float:right; padding-top:36px}
+#menu > li { float:left; margin-left:30px; position:relative;}
+#menu > li > a{ display:block; font:17px 'Asap', sans-serif; color:#fff; text-shadow:1px 1px rgba(0,0,0,.5)}
+#menu > li > a:hover, #menu > .active > a{ }
+
+.submenu_1{ position:absolute; top:30px; left:-30px; width:110px; background:url(../images/bg_footer.png) repeat; padding:10px 0;}
+.submenu_1 li{ position:relative;}
+.submenu_1 span{ position: absolute; width:100%; height:100%; top:0; left:0; background:#fff}
+.submenu_1 a{ display:block; font:14px 'Asap', sans-serif;  line-height:30px; color:#ad2f00; position:relative; text-align:center}
+
+/* ============================= content ====================== */
+
+#content{ margin-top:30px; padding-bottom:90px; position:relative}
+#content > ul > li{ position:relative; background:url(../images/bg_content.png) repeat; width:100%; overflow:hidden}
+
+.pad{ padding:60px; overflow:hidden}
+.pad_left1{ padding-left:60px}
+.pad_bot1{ padding-bottom:15px;}
+.marg_right1{ margin-right:20px}
+
+figure{ padding-top:3px;}
+#page_Services figure{ padding-top:0}
+
+.link1{ position:relative; display:inline-block}
+.link1 span{ position:absolute; bottom:4px; left:0; height:1px; width:0;}
+
+.close{ position:absolute; background:url(../images/close.gif) 0 0 no-repeat; width:13px; height:13px; top:20px; right:20px;}
+.close span{ width:100%; height:100%; background:url(../images/close_active.gif) 0 0 no-repeat; display:block}
+
+#icons{ padding-top:8px;}
+#icons li{ float:left; margin-right:10px}
+#icons .first{ font-size:14px; margin-right:18px}
+#icons a{ position:relative; display:block}
+#icons .img_act{ position:absolute; top:0; left:0}
+
+.scroll{height:290px; width:340px; overflow:hidden;}
+.track{ width:20px; height:299px; padding:0 0; top:38px !important; left:360px !important; background: url(../images/scroll_track.png) 0 0 no-repeat}
+.shuttle{ width:20px; height:76px; background: url(../images/scroll_drag.png) 0 0 no-repeat; margin-left:0px;}
+._up-butt, ._down-butt{ height:0px !important;}
+
+.list1{}
+.list1 li{ padding-left:15px; background:url(../images/marker_1.gif) 0 10px no-repeat; overflow:hidden}
+.list1 a{ position:relative}
+.list1 span{ position:absolute; bottom:0; left:0; width:0; height:1px; background:#ad2f00}
+
+.gallery_big_img{ position:relative; width:100%; height:355px; margin-top:10px}
+.gallery_big_img img{ position:absolute; top:0; left:0}
+
+#caption{ position:relative; height:213px; width:100%; overflow:hidden;}
+#caption  li{ position:absolute; top:0; left:0}
+
+#gallery1{ width:380px !important;}
+#gallery1 li{ float:left; margin-right:10px}
+#gallery1 img{ width:120px; height:100px;}
+
+.prev, .next{ position:absolute; top:42px; width:4px; height:6px; padding:5px; background:url(../images/marker_left.gif) 5px 5px no-repeat; left:-19px;}
+.next{ left:auto; right:-19px; background:url(../images/marker_right.gif) 5px 5px no-repeat}
+.prev span, .next span{ display:block; width:100%; height:100%; background:url(../images/marker_left.gif) 0 bottom no-repeat}
+.next span{ background:url(../images/marker_right.gif) 0 bottom no-repeat}
+
+.google_map{width:380px; height:206px; padding-top:0; position:relative; background:#fff; margin-top:3px; margin-bottom:22px;}
+
+/* ============================= footer ====================== */
+
+footer { color:#4d4d4d; text-align:center; padding-top:16px; position:relative}
+footer a{ text-decoration:underline}
+footer a:hover{}
+
+#bg_pagination{ position:absolute; right:60px; top:20px;}
+#bg_pagination li{ float:left; margin-left:5px; background:url(../images/buttons.png) 0 0 no-repeat; position:relative}
+#bg_pagination span{ position:absolute; top:0; left:0; width:100%; height:100%; background:url(../images/buttons_active.gif) 0 0 no-repeat}
+#bg_pagination a{ position:relative; display:block; width:20px; height:20px; line-height:20px; text-align:center; text-decoration:none}
+
+/* ============================= forms ============================= */
+
+#ContactForm{ position:relative; padding-bottom:20px}
+#ContactForm .col1{ width:76px;}
+#ContactForm .wrapper{ overflow:inherit; min-height:25px;}
+#ContactForm .success{ display:none; position:absolute; bottom:0; line-height:20px}
+#ContactForm label{ position:relative;min-height:22px; display: inline-block;}
+#ContactForm .message{ height:206px;}
+#ContactForm .error, #ContactForm .empty{ font-size:10px; color:#ad2f00; line-height:14px; display:none; width:100%}
+#ContactForm a{ margin-left:23px; float:right;}
+#ContactForm .input { margin:0;width:282px; height:16px; background: url(../images/spacer.gif) repeat; padding:2px 10px;color:#323232; font:13px Arial, Helvetica, sans-serif;}
+#ContactForm textarea { overflow: auto; margin:0;resize:none;width:282px; height:197px; background: url(../images/spacer.gif) repeat; padding:2px 10px;color:#323232; font:13px Arial, Helvetica, sans-serif;}
+
+
+#ContactForm  .bg{ background:#fff; border:1px solid #e5e5e5; position:relative;border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius:4px; display:inline-block; line-height:20px;}
+
+
+/* -------------------------- columns --------------------------*/
+
+.col1, .col2, .col3, .cols { float:left;}
+
+.col1{ width:380px;}
+.col2{ width:280px;}
+#page_Contacts .col2{ width:70px; }

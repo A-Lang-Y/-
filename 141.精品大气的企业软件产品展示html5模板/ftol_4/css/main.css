@@ -1,0 +1,247 @@
+/*******************************************************************************************************************
+*  Author: Tomas Lach (www.tomaslach.cz)                                                                           
+*  Date: 25.08.2012                                                                                                
+*******************************************************************************************************************/
+
+/*******************************************************************************************************************
+*  IMPORT OTHER STYLES                                                                                             
+*******************************************************************************************************************/
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Viga&subset=latin,latin-ext);
+
+/*******************************************************************************************************************
+*  BASE                                                                                                            
+*******************************************************************************************************************/
+html {background: #1b1b1d}
+body {color: #5e5e5e;font: normal 13px "Helvetice Neue", Arial, Tahoma, Verdana;}
+p {line-height: 1.5em;margin-bottom: 15px}
+p strong {color: #5e5e5e;}
+address {font-style: normal;padding-bottom: 15px;}
+
+/*******************************************************************************************************************
+*  LINKS                                                                                                           
+*******************************************************************************************************************/
+a, a:link, a:focus {color: #000;outline: 0;}
+a:hover {color: #5e5e5e;text-decoration: underline}
+
+/*******************************************************************************************************************
+*  H1 - H4                                                                                                         
+*******************************************************************************************************************/
+h1, h2, h3, h4 {line-height: 1.2em;margin-bottom: 15px;font-weight: normal;}
+h1 {font-size: 3.6em;color: #fff;font-family: 'Viga',"Helvetice Neue", Arial, Tahoma, Verdana;font-weight: normal; text-transform: uppercase;} 
+h1 strong {font-weight: bold;}
+h2 {font-size: 2.0em;color: #afafaf;margin-bottom: 0px;padding: 0 0 40px;background: url('../img/separator.png') bottom center no-repeat; text-align: center;}
+h3 {font-size: 1.6em;color: #000;margin-bottom: 10px;}
+h4 {font-size: 1.1em;color: #000;margin-bottom: 10px;}
+
+/*******************************************************************************************************************
+*  HEADER                                                                                                          
+*******************************************************************************************************************/
+header {height: 80px;line-height: 80px;background: #fff url('../img/top-shadow.png') bottom repeat-x;position: relative;z-index: 100;} 
+header a#logo {font-size: 24px;font-family: 'Viga',"Helvetice Neue", Arial, Tahoma, Verdana;display: block;position: absolute;top: 0;left: 20px;color: #931f1f;text-transform: uppercase;text-decoration: none;}
+header a#logo:hover {text-decoration: none;color: #cb3f3f}
+header #nav {position: absolute;top: 0;right: 0}
+header #nav > strong {display: none;}
+header #nav > ul > li {float: left;position: relative;}
+header #nav > ul > li > ul {background: #f5f5f5;display: none;min-width: 100%;position: absolute;top: 62px;line-height: normal;white-space: nowrap;}
+header #nav > ul > li > ul > li {margin-bottom: 1px;}
+header #nav > ul > li > ul > li > a {text-decoration: none;padding: 10px 20px;display: block;background: #fff;}
+header #nav > ul > li > ul > li > a:hover {background: #eee;text-decoration: none;}
+header #nav > ul > li:first-child {background: none;}
+header #nav > ul > li > a {float: left;color: #a2a2a2;display: block;height: 80px;text-decoration: none;font-weight: bold;padding: 0 20px;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
+header #nav > ul > li.active > a {color: #b02f2f;cursor: pointer;text-decoration: none;} 
+header #nav > ul > li > a:hover {color: #b02f2f;text-decoration: none;}
+
+#intro {background: url('../img/intro-bg-repeat.png') repeat-x;position: relative;z-index: 90;}
+#intro .inner {background: url('../img/intro-bg.png') no-repeat 50% 0;}
+#intro p {color: #f8dbdb;margin-bottom: 20px; font-size: 18px; text-transform: uppercase}
+#intro .content {padding: 55px 60% 60px 0;background: url('../img/intro-00.png') top left no-repeat; height: 265px; max-height: 265px; overflow: hidden;}
+
+#info {background: #f3e2e2 url('../img/intro-shadow.png') top center no-repeat; position: relative; top: -9px; margin-bottom: -9px; padding: 40px 0}
+#info ul {padding: 0; margin: 0;}
+#info ul li.col {float: left; width: 25%; padding-left: 5%; padding-right: 3%;}
+#info ul li.col h2 {font-family: 'Viga',"Helvetice Neue", Arial, Tahoma, Verdana;margin-bottom: 15px; padding: 0; background: none; text-align: left; font-size: 20px; color: #b02f2f;}
+#info ul li.col p {margin-bottom: 0}
+#info ul li.col-love {background: url('../img/ico/ico-heart.png') top left no-repeat}
+#info ul li.col-integ {background: url('../img/ico/ico-tweet.png') top left no-repeat}
+#info ul li.col-respons {background: url('../img/ico/ico-phone.png') top left no-repeat}
+
+/*******************************************************************************************************************
+*  CONTENT                                                                                                         
+*******************************************************************************************************************/
+#content {background:#fff;padding: 40px 0 50px}
+.block {margin-bottom: 40px;}
+.col {width: 45%;}
+.col.little {width: 20%}
+.col.big {width: 75%; padding: 0 !important}
+.col.floatLeft {padding: 0 5% 0 0}
+.col.floatRight {padding: 0 0 0 5%}
+.chart .pipe {background: #eee; -webkit-box-shadow: inset 3px 3px 3px 0px rgba(200, 200, 200, 1); box-shadow: inset 3px 3px 3px 0px rgba(200, 200, 200, 1); }
+.chart .pipe {width: 100%; height: 7px; border-radius: 3px; margin-bottom: 15px;}
+.chart p {margin: 0 0 5px}
+.chart .pipe > div {height: 5px; border: 1px solid #b34545; background: url('../img/chart.png') top left repeat-x; border-radius: 3px;}
+.col img {margin: 5px;}
+
+.logos {display: table}
+.logos li {display: table-cell; vertical-align: middle; padding: 10px; text-align: center;}
+
+/*******************************************************************************************************************
+*  TWITTER                                                                                                          
+*******************************************************************************************************************/
+#twitter {background: #f0f0f0;border-top: 1px solid #e5e5e5;}
+#twitter .wrap {padding-top: 20px;padding-bottom: 5px;position: relative;}
+#twitter p {padding-left: 80px;}
+#twitter .icon {display: block;position: absolute;top: -10px;left: 20px;width: 56px;height: 61px;background: url('../img/ico/ico-tweeter.png') no-repeat;}
+#twitter small {color: #a6a6a6; font-size: 11px}
+
+/*******************************************************************************************************************
+*  FOOTER                                                                                                          
+*******************************************************************************************************************/
+footer {color: #808080;padding: 30px 0;background: #1a1a1a;font-size: 0.85em;color: #777777;}
+footer p {line-height: 1.9em;}
+footer h3 {color: #808080;}
+footer a, footer a:link, footer a:focus {color: #999999;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
+footer a:hover {color: #fff;}
+footer .cols > li.first {float: left; width: 30%; padding-right: 3%}
+footer .cols > li.last {float: left; width: 30%; padding-left: 3%}
+footer .cols > li.middle {float: left; width: 33%;}
+footer .text {border: 0; margin-bottom: 5px; border-bottom: 1px solid #2b2b2e; background: #000; border-radius: 5px; color: #ddd; font-size: 14px; padding: 13px 10px; width: 190px; display: inline-block;}
+footer .button {
+	background: -moz-linear-gradient(
+		top,
+		#df4040 0%,
+		#c92727);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#df4040),
+		to(#c92727));
+	background: -o-linear-gradient(top, #df4040, #c92727);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#df4040', endColorstr='#c92727', GradientType=0);
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: none;
+	padding: 12px 10px;
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+footer .button:hover {
+	background: -moz-linear-gradient(
+		top,
+		#c92727 0%,
+		#df4040);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#c92727),
+		to(#df4040));
+	background: -o-linear-gradient(top, #c92727, #df4040);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c92727', endColorstr='#df4040', GradientType=0);
+}
+footer .socials a {float: left; padding: 3px 0 3px 30px; position: relative; margin-right: 15px; margin-bottom: 5px}
+footer .socials a i {display: block; height: 25px; width: 25px; position: absolute; top: 3px; left: 0; background: url('../img/ico/ico-social.png')}
+	footer .socials a.fol-twit i {background-position: 0 0}
+	footer .socials a.fol-face i {background-position: 0 26px}
+	footer .socials a.fol-gplus i {background-position: 0 52px}
+	footer .socials a.fol-link i {background-position: 0 78px}
+	footer .socials a.fol-tube i {background-position: 0 104px}
+	footer .socials a.fol-rss i {background-position: 0 130px}
+footer #copy {padding: 20px 0}
+/*******************************************************************************************************************
+*  OTHER STYLES                                                                                                    
+*******************************************************************************************************************/
+.wrap {margin: 0 auto;position: relative;max-width: 940px;padding: 0 20px;}
+
+
+.button, .button:link, .button:focus {
+	cursor: pointer;
+	border: 0;
+	position: relative;
+	margin-top: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;	
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#373737 0%,
+		#111111);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#373737),
+		to(#111111));
+	background: -o-linear-gradient(top, #373737, #111111);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#373737', endColorstr='#111111', GradientType=0);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.button:hover {
+	text-decoration: none;
+	background: -moz-linear-gradient(
+		top,
+		#111111 0%,
+		#373737);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#111111),
+		to(#373737));
+	background: -o-linear-gradient(top, #111111, #373737);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#373737', GradientType=0);
+	color: #fff; 
+}
+
+/*******************************************************************************************************************
+*  Responsive design                                                                                                    
+*******************************************************************************************************************/
+@media (max-width: 980px) {
+    .wrap {max-width: 96%;margin: 0; padding: 0 2%}
+    #intro .content {background: none; padding-right: 0}
+    .logos {display: inline-block; text-align: center; width: 100%} 
+    .logos li {display: inline-block;}
+    footer { text-align: center;}
+    footer .cols > li {float: none !important; width: 100% !important; padding: 0 0 15px !important;}
+    footer .socials a {float: none; display: inline-block;}
+    .col.big {text-align: center;}
+}
+
+@media (max-width: 750px) { 
+	header {height: auto; min-height: 80px;}
+	#info ul li.col {float: none; width: 100%; padding-left: 0%; background: none !important; margin-bottom: 20px; text-align: center;}
+	#info ul li.col h2 {text-align: center;}
+	#intro .content {text-align: center;}
+	#twitter p {text-align: center;}
+}
+@media (max-width: 620px) { 
+	header a#logo {left: 20px;}
+    header #nav {right: 20px;}
+    header #nav > strong {display: block;float: right;cursor: pointer;}
+    header #nav > strong:hover {color: #333;}
+    header #nav > ul {display: none;position: absolute;left: auto;right: 0;top: 80%;line-height: normal;white-space: nowrap;}
+    header #nav > ul > li, header #nav > ul > li > ul > li {float: none;margin-bottom: 1px;position: relative;background: none !important;}
+	header #nav > ul > li > ul {margin-top: 1px;background: none;position: relative !important;display: block !important;top: 0 !important;width: 100% !important;}
+	header #nav > ul > li > a, header #nav > ul > li.parent > a {background: rgba(0,0,0, 0.8);color: #c3c3c3;text-decoration: none;padding: 10px 20px !important;height: auto;float: none !important;width: 100%;display: block;-webkit-transition:all 0s ease-in-out;-moz-transition:all 0s ease-in-out;-o-transition:all 0s ease-in-out;-ms-transition:all 0s ease-in-out;transition:all 0s ease-in-out;}
+	header #nav > ul > li a:hover {background: #000 !important;color: #fff;text-decoration: none;}
+	header #nav > ul > li > ul > li > a {background: rgba(0,0,0,0.8) !important; color: #fff}
+	#intro {background: #ac4242}
+	#intro > .inner {background: none}
+	#intro .content {height: auto; max-height: none;}
+	.col, .col.little, .col.big {float: none; width: 100%; padding: 0 0 15px; text-align: center;}
+	footer .button {clear: both; margin: 0; text-align: center; width: 30%}
+	footer .text {clear: both; width: 65%; margin: 0 2% 5px 0; padding: 12px 0}
+}
+
+
+
+
+
+
+
+/* iPhone4 */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+    html {width: 100%}
+}
+
+
+

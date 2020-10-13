@@ -1,0 +1,470 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+
+@import "palette.less";
+
+
+
+/* Default General  ----------------------------------------------------*/ 
+
+.wrapper{
+	width: 940px;
+}
+
+/* Defaul tNav   ----------------------------------------------------*/ 
+
+#comboNav{ display: none; }
+#nav{ display: block; }
+
+	
+	
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	/* TABLET GENERAL  ----------------------------------------------------*/ 
+	
+	
+	.wrapper{ width: 712px; }
+	
+
+	/* TABLET NAV  ----------------------------------------------------*/ 
+	
+	#nav{ display: block; }
+	#comboNav{ display: none; }
+	#nav{
+		
+		li{
+			word-spacing: -.1em;
+			font-size: 16px;
+		}
+	}
+	
+	/* TABLE ISOTOPE ----------------------------------------------------*/ 
+
+
+	.feature{
+		width: 732px; /* 712 + 20 gap */
+		li{
+			width: 223px;
+			.thumb{
+				width: 203px;
+				.date{
+					left: 101px - 30;
+				}
+			}
+		}
+	}
+	
+	/* TABLET BLOG ------------------------------------------------------------*/
+
+	#posts-list{
+		width: 420px;
+		
+		article{
+			padding: 15px;
+						
+			.tape{
+				left: 210px - 60;
+			}
+			
+			.excerpt{
+				.post-heading{
+					max-width: 330px;
+				}
+			}
+		}
+	}
+	
+	/* TABLET PORTFOLIO ----------------------------------------------------*/ 
+
+	.portfolio-content{
+		.project-content{
+			float: left;
+			width: 430px;
+		}
+		
+		.project-info{
+			width: 160px;
+		}
+	}
+
+	/* TABLET RELATED PROJECTS ------------------------------------------------------------*/
+
+	.related-projects{
+		.related-list{
+			li{
+				width: 224px;
+				text-align: center;
+				margin-right: 20px;
+				
+				.thumb{
+					background: @fgColor;
+					padding: 10px;
+					display: block;
+					line-height: 0em;
+					margin-bottom: 10px;.shadow();
+				}
+				
+				&:last-child{
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+	
+	/* TABLET WIDGETS  ----------------------------------------------------*/ 
+
+	.widget-cols{
+		>li{
+			width: 163px;
+			float: left;
+			margin-right: 20px;
+		}
+	}
+
+	
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+	.wrapper{ width: 252px;  }
+	
+	
+	h1{ font-size: 36px; }
+	h2{ font-size: 30px; }
+	h3{ font-size: 24px; }
+	h4{ font-size: 18px; }
+	h5{ font-size: 14px; }
+	h6{ font-size: 14px; }
+	
+	/* MOBILE NAV  ----------------------------------------------------*/ 
+	
+	#nav{ display: none; }
+	#comboNav{ display: block; }
+	
+	/* MOBILE Logo ----------------------------------------------------*/ 
+	
+	#logo{
+		width: 256px;
+		img{
+			width: 100%;
+		}
+	}
+	
+	/* MOBILE SLIDER ----------------------------------------------------*/ 
+	
+	body .theme-default .nivo-directionNav a{
+		display: none;
+	}
+	
+	/* MOBILE HEALINE ----------------------------------------------------*/ 
+
+	.headline{
+		font-family: mensch;
+		font-size: 24px;
+		line-height: 1.3em;
+	}
+	
+	/* MOBILE ISOTOPE ----------------------------------------------------*/ 
+
+	
+	#filter-buttons{
+		font-size: 12px;
+		background: @fgColor;
+		height: auto;
+	}
+	
+	.feature{
+		width: 252px;
+		margin-left: 0px;
+		li{
+			width: 252px;
+			margin-left: 0px;
+			.thumb{
+				width: 232px;
+				.date{
+					left: 116px - 30;
+				}
+			}
+		}
+	}
+	
+	/* MOBILE COLUMNS ----------------------------------------------------*/ 
+	
+	.one-half,
+	.one-third,
+	.one-fourth{
+		width: auto;
+		margin-right: 0px;
+	}
+	
+	/* MOBILE BLOG ------------------------------------------------------------*/
+
+	#posts-list{
+		width: 252px;
+		
+		article{
+			padding: 15px;
+						
+			.tape{
+				left: 126px - 60;
+			}
+			
+			.feature-image{
+				.entry-date{
+					bottom: -66px;
+					right: auto;
+					left: 126px - 25 - 20;
+				}
+			}
+			
+			.excerpt{
+				margin-top: 90px;
+				.post-heading{
+					max-width: auto;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	
+	#main .page-navigation{
+		text-indent: -9000px;
+		div{
+			width: 25px;
+		}
+	}
+	
+	/* MOBILE SIDEBAR ----------------------------------------------------*/ 
+
+	#sidebar{
+		width: 260px; 
+	}
+
+
+	/* MOBILE PORTFOLIO ----------------------------------------------------*/ 
+
+	.portfolio-content{
+		.project-content{
+			float: left;
+			width: 192px;
+		}
+		
+		.project-info{
+			width: 160px;
+		}
+	}
+
+	/* MOBILE RELATED PROJECTS ------------------------------------------------------------*/
+
+	.related-projects{
+		.related-list{
+			li{
+				width: 252px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	
+	/* MOBILE WIDGETS  ----------------------------------------------------*/ 
+
+	.widget-cols{
+		>li{
+			width: 252px;
+			float: left;
+			margin-right: 20px;
+			border-bottom: 1px solid @fgColor;
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+	
+	/* MOBILE Social ----------------------------------------------------*/ 
+	
+	footer{
+		#social-bar{
+			margin: 20px 0px 30px 0px;
+			background: none;
+			height: 46px;
+			li{
+				margin-bottom: 5px;
+			}
+			.left-corner,
+			.right-corner{
+				display: none;
+			}
+		}
+		
+		
+	}
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	@widemobile-w: 436px;
+	
+	.wrapper{ width: @widemobile-w;  }
+	
+	
+	/* WIDE MOBILE Logo ----------------------------------------------------*/ 
+	
+	#logo{
+		width: 436px;
+		img{
+			width: 100%;
+		}
+	}
+	
+	/* WIDE MOBILE NAV  ----------------------------------------------------*/ 
+	
+	#nav{ display: none; }
+	#comboNav{ display: block; }
+	
+	/* WIDE MOBILE HEALINE ----------------------------------------------------*/ 
+
+	.headline{
+		font-family: mensch;
+		font-size: 36px;
+		line-height: 1.3em;
+	}
+	
+	/* WIDE MOBILE ISOTOPE ----------------------------------------------------*/ 
+
+	.feature{
+		width: 436px;
+		margin-left: 0px;
+		li{
+			width: 436px;
+			margin-left: 0px;
+			.thumb{
+				width: 416px;
+				.date{
+					left: 208px - 30;
+				}
+			}
+		}
+	}
+	
+	/* WIDE MOBILE BLOG ------------------------------------------------------------*/
+
+	#posts-list{
+		width: 436px;
+		
+		article{
+			padding: 15px;
+						
+			.tape{
+				left: 216px - 60;
+			}
+			
+			.feature-image{
+				.entry-date{
+					bottom: -66px;
+					right: auto;
+					left: 216px - 25 - 20;
+				}
+			}
+			
+			.excerpt{
+				margin-top: 90px;
+				.post-heading{
+					max-width: auto;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	
+	
+	/* WIDE MOBILE SIDEBAR ----------------------------------------------------*/ 
+
+	#sidebar{
+		width: 436px; 
+	}
+
+	/* WIDE MOBILE PORTFOLIO ----------------------------------------------------*/ 
+
+	.portfolio-content{
+		.project-content{
+			float: left;
+			width: 376px;
+		}
+		
+		.project-info{
+			width: 346px;
+		}
+	}
+
+	/* WIDE MOBILE RELATED PROJECTS ------------------------------------------------------------*/
+
+	.related-projects{
+		.related-list{
+			li{
+				width: 436px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	
+	/* WIDE MOBILE WIDGETS  ----------------------------------------------------*/ 
+
+	.widget-cols{
+		>li{
+			width: 436px;
+		}
+	}
+}
+
+
+
+
+
+
+

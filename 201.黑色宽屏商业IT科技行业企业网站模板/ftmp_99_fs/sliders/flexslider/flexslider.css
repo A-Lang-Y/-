@@ -1,0 +1,603 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+
+	.flexslider .slides img {
+		display: block;
+		width: 100%; 
+	}
+	
+	.flexslider .slides > li {
+		display: none;
+	}
+
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+
+.flexslider {
+	position: relative;
+	margin: 0;
+	background: #fff;
+    zoom: 1;
+}
+
+.flexslider iframe {display: block;}
+
+	.flex-viewport {
+		position: relative;
+		overflow: hidden;
+		-webkit-transition: all 1s ease;
+		   -moz-transition: all 1s ease;
+		    -ms-transition: all 1s ease;
+			 -o-transition: all 1s ease;
+				transition: all 1s ease;
+	}
+
+	.loading .flex-viewport {max-height: 300px;}
+	.flexslider .slides {zoom: 1;}
+
+/* Direction Nav
+*********************************/
+
+	.flex-direction-nav a {
+		position: absolute;
+		display: block;
+		top: 50%;
+		margin-top: -10px;
+		width: 20px;
+		height: 20px;
+		background-color: #D9D9D9;
+		background-image: url(images/prev-next.png);
+		background-repeat: no-repeat;
+		-webkit-border-radius: 50%;
+		   -moz-border-radius: 50%;
+				border-radius: 50%;
+		cursor: pointer;
+		text-indent: -9999px;
+	}
+	
+	.flex-direction-nav .flex-prev {left: 12px;}
+	.flex-direction-nav .flex-next {
+		right: 12px;
+		background-position: right top; 
+	}
+	
+	.flex-direction-nav a:hover {background-color: #464646;}
+
+	.flex-direction-nav .flex-disabled {
+		cursor: default;
+		opacity: .5;
+		background-color: #D9D9D9 !important;
+	}
+
+/* Slider
+*********************************/
+
+#slider .flex-viewport li {position: relative;}
+
+	#slider .flex-viewport img {display: block;}
+
+#slider hgroup {
+	position: absolute;
+	top: 30%;
+	display: block;
+	opacity: 0;
+	-webkit-animation: all .25s linear .25s;
+	   -moz-animation: all .25s linear .25s;
+		-ms-animation: all .25s linear .25s;
+		 -o-animation: all .25s linear .25s;
+			animation: all .25s linear .25s;
+	/*width: 100%;*/
+}
+
+#slider .flex-active-slide hgroup {opacity: 1;}
+
+	#slider hgroup h2 {
+		position: relative;
+		margin-bottom: 10px;
+		color: #404040;
+		font-size: 39px;
+		line-height: 1;
+	}
+
+	#slider hgroup h1 {
+		position: relative;
+		font-size: 48px;
+		text-transform: uppercase;
+		line-height: 1;
+	}
+	
+	/*	Caption 1, Caption 3 */
+	
+	#slider .caption-1,
+	#slider .caption-3 {
+		left: 0;
+	}
+	
+	#slider .flex-active-slide .caption-1 h2,
+	#slider .flex-active-slide .caption-3 h2 {
+		left: 30%;
+		-webkit-animation: caption-1-h2 1s linear;
+		   -moz-animation: caption-1-h2 1s linear;
+			-ms-animation: caption-1-h2 1s linear;
+			 -o-animation: caption-1-h2 1s linear;
+				animation: caption-1-h2 1s linear;
+		
+	}
+	
+	#slider .flex-active-slide .caption-1 h1,
+	#slider .flex-active-slide .caption-3 h1 {
+		left: 35%;
+		-webkit-animation: caption-1-h1 1s linear;
+		   -moz-animation: caption-1-h1 1s linear;
+			-ms-animation: caption-1-h1 1s linear;
+			 -o-animation: caption-1-h1 1s linear;
+				animation: caption-1-h1 1s linear;
+	}
+	
+	@-webkit-keyframes caption-1-h2 {
+		0% {
+			left: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 30%;
+			opacity: 1;
+		}
+	}
+	
+	@-moz-keyframes caption-1-h2 {
+		0% {
+			left: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 30%;
+			opacity: 1;
+		}
+	}
+	
+	@-ms-keyframes caption-1-h2 {
+		0% {
+			left: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 30%;
+			opacity: 1;
+		}
+	}
+	
+	@-o-keyframes caption-1-h2 {
+		0% {
+			left: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 30%;
+			opacity: 1;
+		}
+	}
+	
+	@keyframes caption-1-h2 {
+		0% {
+			left: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 30%;
+			opacity: 1;
+		}
+	}
+	
+	@-webkit-keyframes caption-1-h1 {
+		0% {
+			left: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 35%;
+			opacity: 1;
+		}
+	}
+	
+	@-moz-keyframes caption-1-h1 {
+		0% {
+			left: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 35%;
+			opacity: 1;
+		}
+	}
+	
+	@-ms-keyframes caption-1-h1 {
+		0% {
+			left: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 35%;
+			opacity: 1;
+		}
+	}
+	
+	@-o-keyframes caption-1-h1 {
+		0% {
+			left: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 35%;
+			opacity: 1;
+		}
+	}
+	
+	@keyframes caption-1-h1 {
+		0% {
+			left: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			left: 35%;
+			opacity: 1;
+		}
+	}
+	
+	/*	Caption 2 */
+	
+	#slider .caption-2 {right: 0;}
+	
+	#slider .flex-active-slide .caption-2 h2 {
+		-webkit-animation: caption-2-h2 1s linear;
+		   -moz-animation: caption-2-h2 1s linear;
+			-ms-animation: caption-2-h2 1s linear;
+			 -o-animation: caption-2-h2 1s linear;
+				animation: caption-2-h2 1s linear;
+		right: 45%;
+	}
+	
+	#slider .flex-active-slide .caption-2 h1 {
+		-webkit-animation: caption-2-h1 1s linear;
+		   -moz-animation: caption-2-h1 1s linear;
+			-ms-animation: caption-2-h1 1s linear;
+			 -o-animation: caption-2-h1 1s linear;
+				animation: caption-2-h1 1s linear;
+		right: 40%;
+	}
+	
+	@-webkit-keyframes caption-2-h2 {
+		0% {
+			right: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 45%;
+			opacity: 1;
+		}
+	}
+	
+	@-moz-keyframes caption-2-h2 {
+		0% {
+			right: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 45%;
+			opacity: 1;
+		}
+	}
+	
+	@-ms-keyframes caption-2-h2 {
+		0% {
+			right: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 45%;
+			opacity: 1;
+		}
+	}
+	
+	@-o-keyframes caption-2-h2 {
+		0% {
+			right: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 45%;
+			opacity: 1;
+		}
+	}
+	
+	@keyframes caption-2-h2 {
+		0% {
+			right: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 45%;
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes caption-2-h1 {
+		0% {
+			right: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 40%;
+			opacity: 1;
+		}
+	}
+
+	@-moz-keyframes caption-2-h1 {
+		0% {
+			right: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 40%;
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes caption-2-h1 {
+		0% {
+			right: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 40%;
+			opacity: 1;
+		}
+	}
+
+	@-o-keyframes caption-2-h1 {
+		0% {
+			right: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 40%;
+			opacity: 1;
+		}
+	}
+
+	@keyframes caption-2-h1 {
+		0% {
+			right: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 40%;
+			opacity: 1;
+		}
+	}
+	
+	/*	Caption 4 */
+	
+	#slider .caption-4 {right: 0;}
+	
+	#slider .flex-active-slide .caption-4 h2 {
+		-webkit-animation: caption-4-h2 1s linear;
+		   -moz-animation: caption-4-h2 1s linear;
+			-ms-animation: caption-4-h2 1s linear;
+			 -o-animation: caption-4-h2 1s linear;
+				animation: caption-4-h2 1s linear;
+		right: 45%;
+	}
+	
+	#slider .flex-active-slide .caption-4 h1 {
+		-webkit-animation: caption-4-h1 1s linear;
+		   -moz-animation: caption-4-h1 1s linear;
+			-ms-animation: caption-4-h1 1s linear;
+			 -o-animation: caption-4-h1 1s linear;
+				animation: caption-4-h1 1s linear;
+		right: 10%;
+	}
+	
+	@-moz-keyframes caption-4-h2 {
+		0% {
+			right: -100%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 45%;
+			opacity: 1;
+		}
+	}
+
+	@-moz-keyframes caption-4-h1 {
+		0% {
+			right: 90%;
+			opacity: 0;
+		}
+		20% {
+			opacity: 0;
+		}
+		100% {
+			right: 10%;
+			opacity: 1;
+		}
+	}
+	
+/* Carousel
+*********************************/
+
+#carousel {
+	position: absolute;
+	bottom: 10%;
+	padding: 0 40px;
+}
+
+#carousel .flex-viewport .slides {min-width: 1600%;}
+
+	#carousel .slides li {
+		display: inline-block;
+		margin: 0 40px 0 0;
+		padding: 20px 0;
+		border-bottom: 1px solid #fff;
+		-webkit-border-radius: 3px;
+		   -moz-border-radius: 3px;
+				border-radius: 3px;
+		background-color: rgba(255,255,255,.8);
+		text-align: center;
+	}
+	
+	.ie8 #carousel .slides li {background-color: #fff;}
+	
+	#carousel .slides li {
+		float: left;
+		display: block;
+		width: 245px;
+	}
+	
+	#carousel .slides .flex-active-slide {background-color: #474747;}
+	
+		#carousel .slides li > a {cursor: pointer;}
+	
+			#carousel .slides h6,
+			#carousel .slides h5 {margin: 0;}
+			
+			#carousel .slides h6 {color: #4c4c4c;}
+			#carousel .slides h5 {text-transform: uppercase; letter-spacing: -1px;}
+			
+			#carousel .slides .flex-active-slide h6 {color: #fafafa;}
+			
+			
+/* Smaller than standard 1140 (devices and browsers) */
+@media only screen and (max-width: 890px) {
+
+	#slider  hgroup {top: 25%;}
+
+		#slider  h2 {font-size: 34px;}
+
+		#slider h1 {font-size: 43px;}
+	
+}
+
+/* Tablet Portrait size to standard 1140 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 889px) {
+	
+	#slider hgroup {top: 20%;}
+
+		#slider h2 {font-size: 30px;}
+
+		#slider h1 {font-size: 40px;}	
+
+}
+			
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	
+	#slider hgroup {display: none;}
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+	#carousel {display: none;}
+
+}
+
+			

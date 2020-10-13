@@ -1,0 +1,173 @@
+<!doctype html>
+<!--
+Design by Free Responsive Templates
+http://www.free-responsive-templates.com
+Released for free under a Creative Commons Attribution 3.0 Unported License (CC BY 3.0)
+Coder: lsa, free.responsive.templates@gmail.com
+Created: 12 September 2012 
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Responsive Template #25 - Lime for juicing-模板之家cssMoban.com</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis|Syncopate' rel='stylesheet' type='text/css'>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+	 // DOM ready
+	 $(function() {
+	   
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Select a page"
+      }).appendTo("nav select");
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+	   // To make dropdown actually work
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 
+	 });
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+    	<h1><a href="">Lime for juicing</a></h1>
+        <span>The mojito was born in Havana, Cuba</span>
+        <div class="clearfloat"></div>
+        <nav>
+            <ul>
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="clearfloat"></div>
+    </header>
+    <section>
+        <div class="bodyContent">
+            <img src="images/pic1.jpg" alt="pic1">
+            <h2>Brown sugar crystals</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <p>
+                 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            </p>
+            <p class="button">
+                <a href="">More</a>
+            </p>
+        </div>
+        <div class="sidebar">
+            <h2>Lime Services</h2>
+            <ul>
+                <li><a href="">Lorem Ipsum is simply dummy text</a></li>
+                <li><a href="">Of the printing and typesetting</a></li>
+                <li><a href="">Industry Lorem Ipsum has been</a></li>
+                <li><a href="">The industry's standard</a></li>
+                <li><a href="">Dummy text ever since</a></li>
+                <li><a href="">The 1500s, when an unknown</a></li>
+                <li><a href="">Printer took a galley of type</a></li>
+                <li><a href="">And scrambled it to make a type</a></li>
+                <li><a href="">Specimen book survived</a></li>
+                <li><a href="">Not only five centuries but also</a></li>
+                <li><a href="">The leap into electronic</a></li>
+                <li><a href="">Typesetting, remaining</a></li>
+                <li><a href="">Essentially unchanged</a></li>
+                <li><a href="">It was popularised in the 1960s</a></li>
+                <li><a href="">With the release of Letraset sheets</a></li>
+            </ul>
+        </div>
+        <div class="news">
+            <div class="newsBody">
+            	<div class="thumb"><img src="images/news1.jpg" alt="news pic1"></div>
+                <div class="newsTitle">Lorem Ipsum is</div>
+                <div class="newsDate">September 12, 2012</div>
+                <div class="clearfloat"></div>
+                <p>
+                	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+                </p>
+                    <p class="button">
+                    <a href="">More</a>
+                </p>
+            </div>
+            <div class="newsBody">
+            	<div class="thumb"><img src="images/news2.jpg" alt="news pic2"></div>
+                <div class="newsTitle">Lorem Ipsum is</div>
+                <div class="newsDate">September 9, 2012</div>
+                <div class="clearfloat"></div>
+                <p>
+                	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+                </p>
+                    <p class="button">
+                    <a href="">More</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="clearfloat"></div>
+    <section>
+    	<div class="about1">
+        	<hr>
+            <div class="aboutBody">
+            	<div class="thumbAbout"><img src="images/pic2.jpg" alt="pic2"></div>
+                <div class="aboutCon">
+                    <h2>Sugar Cane</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                        <p class="button">
+                        <a href="">More</a>
+                    </p>
+                    <div class="clearfloat"></div>
+                </div>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+        <div class="about2">
+        	<hr>
+            <div class="aboutBody">
+            	<div class="thumbAbout"><img src="images/pic3.jpg" alt="pic3"></div>
+                <div class="aboutCon">
+                    <h2>Cocktail</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                        <p class="button">
+                        <a href="">More</a>
+                    </p>
+                    <div class="clearfloat"></div>
+                </div>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+    </section>
+    <div class="clearfloat"></div>
+    <footer>
+    	<hr> 
+        <p>
+            Copyright &copy; <a href="#">Your Site Name</a> | Collect Form <a href="http://www.cssmoban.com/" title="网页模板">网页模板</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>

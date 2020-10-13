@@ -1,0 +1,54 @@
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*//* Tweet widget CSS */
+.tweet,
+.query {
+  color: #fff;
+  line-height: 1.5em;
+}
+.tweet a,
+.query a {
+  color: #fdd600;
+}
+.tweet a:hover,
+.query a:hover {
+  text-decoration: underline;
+}
+.tweet .tweet_list,
+.query .tweet_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+.tweet .awesome,
+.query .awesome,
+.tweet .epic,
+.query .epic {
+  text-transform: uppercase;
+}
+.tweet .tweet_list li,
+.query .tweet_list li {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1em ;
+  background-repeat: no-repeat;
+  background-position: 6px 19px;
+  padding: 20px 30px;
+}
+.tweet .tweet_list li .tweet_time,
+.query .tweet_list li .tweet_time {
+  display: block;
+  font-size: 12px;
+}
+.tweet .tweet_list li .tweet_time a,
+.query .tweet_list li .tweet_time a {
+  color: #444444;
+}
+.tweet .tweet_list .tweet_avatar,
+.query .tweet_list .tweet_avatar {
+  padding-right: .5em;
+  float: left;
+}
+.tweet .tweet_list img,
+.query .tweet_list img {
+  vertical-align: middle;
+}

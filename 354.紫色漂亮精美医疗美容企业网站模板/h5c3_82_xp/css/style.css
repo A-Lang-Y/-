@@ -1,0 +1,143 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+/* Global properties ======================================================== */
+html {width:100%}
+body {font-family:Arial, Helvetica, sans-serif;font-size:100%;color:#404040;min-width:960px;background:#f2f2f2}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.bg {width:100%;background:url(../images/bg-top.jpg) center 0 no-repeat}
+.main {width:960px;padding:0;margin:0 auto;font-size:0.8125em;line-height:1.692em}
+a {color:#6e3bb9;outline:none}
+a:hover {text-decoration:none}
+.col-1, .col-2 {float:left}
+.wrapper {width:100%;overflow:hidden}
+.extra-wrap {overflow:hidden}
+p {margin-bottom:18px}
+.p0 {margin-bottom:0px}
+.p1 {margin-bottom:5px}
+.p2 {margin-bottom:15px}
+.p3 {margin-bottom:30px}
+.p4 {margin-bottom:40px}
+.p5 {margin-bottom:50px}
+.reg {text-transform:uppercase}
+.fleft {float:left}
+.fright {float:right}
+.alignright {text-align:right}
+.aligncenter {text-align:center}
+.title {margin-bottom:18px}
+.it {font-style:italic}
+.letter {letter-spacing:-1px}
+.color-1 {color:#fff}
+.color-2 {color:#000}
+.color-3 {color:#404040 !important}
+/*********************************boxes**********************************/
+.margin-bot {margin-bottom:35px}
+.spacing {margin-right:35px}
+.indent {padding:0 0 0px 30px}
+.indent-r {padding-right:40px}
+.indent2 {padding:48px 0 0 30px}
+.indent-bot {margin-bottom:20px}
+.indent-bot2 {margin-bottom:30px}
+.indent-bot3 {margin-bottom:45px}
+.img-indent-bot {margin-bottom:25px}
+.img-indent {float:left;margin:0 20px 0px 0}
+.img-indent2 {float:left;margin:0 13px 0px 0}
+.img-indent-r {float:right;margin:0 0px 0px 40px}
+.inner-top {margin-top:-8px}
+.prev-indent-bot {margin-bottom:10px}
+.buttons a:hover {cursor:pointer}
+.menu li a, .list-1 li a, .link, .button, .button2, .logo {text-decoration:none}
+/*********************************header*************************************/
+header {width:100%;background:#fff;margin-bottom:-90px;min-height:283px}
+h1 {padding:18px 0 0 32px;position:relative;float:left}
+.logo {display:block;width:230px;height:66px;text-indent:-5000px;background:url(../images/logo.png) 0 0 no-repeat}
+	.logo strong {color:#6e3bb9;font-style:italic;}
+.slogon {display:block;font-size:17px;line-height:1.2em;color:#727272;font-weight:normal}
+.row-top {width:100%;min-height:105px;background:url(../images/row-top.gif) center top repeat-x #fff;border-bottom:5px solid #f2f2f2}
+.row-bot {width:100%;background:url(../images/row-bot-bg.jpg) center top repeat-x}
+	#page1 .row-bot {min-height:523px}
+.row-bot-shadow {width:100%;background:url(../images/row-bot-shadow.jpg) center top no-repeat}
+#search-form {padding:40px 32px 0 0}
+#search-form fieldset {position:relative;width:100%;display:block;overflow:hidden}
+#search-form .search-field {width:165px;background:url(../images/search-input-tail.gif) 0 0 repeat-x;border-top:1px solid #d2d2d2;border-left:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;border-radius:6px 0 0 6px;-moz-border-radius:6px 0 0 6px;-webkit-border-radius:6px 0 0 6px}
+#search-form input {color:#727272;width:131px;font-size:15px;padding:5px 10px 5px 18px;font-family:Arial, Helvetica, sans-serif;background:none;border:none;margin:0;outline:none}
+#search-form .search-button {display:block;width:29px;height:29px;text-indent:-5000px;background:url(../images/search-button-tail.gif) 0 0 repeat-x #000;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;position:absolute;right:0;top:0}
+	#search-form .search-button span {display:block;background:url(../images/search-marker.png) 9px 11px no-repeat;}
+#search-form .search-button:hover {background:#000}
+/***** slider *****/
+.slider-wrapper {padding:10px 0 0 10px;width:930px;height:520px;background:url(../images/slider-bg.jpg) 0 0 no-repeat;position:relative;overflow:hidden}
+.slider {width:920px;height:430px;position:relative}
+.items {display:none}
+.pagination {position:absolute;left:430px;top:446px;z-index:99}
+.pagination li {float:left;margin-right:3px}
+	.pagination li a {display:block;width:18px;height:18px;text-indent:-5000px;background:url(../images/slider-pagination.png) right top no-repeat;}
+	.pagination li.current a, .pagination li a:hover {background-position:left top}
+	.pagination li.current a {cursor:default}
+/***** menu *****/
+.menu {padding:0;width:100%;height:83px}
+.menu li {float:left;position:relative;margin-right:2px}
+		.menu li.last {margin:0}
+	.menu li a {display:block;position:relative;font-size:17px;line-height:1.23em;padding:15px 0 17px 0;color:#fff;text-align:center;text-transform:uppercase;letter-spacing:-1px;width:155px;background:url(../images/menu-li-bg.png) left top repeat-x;border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0 0 5px 5px;}
+	.menu li strong {display:none;width:100%;height:5px;background:url(../images/menu-border-top.gif) center top repeat-x;position:absolute;left:0;top:-5px;z-index:99;}
+.menu li.active a, .menu li a:hover {background-position:left bottom}
+.menu li.active a, .menu li a:hover {color:#6e3bb9;padding:15px 0 27px 0}
+.menu li.active strong, .menu li:hover strong {display:block}
+/*********************************content*************************************/
+#content {width:100%;padding:39px 0 58px 0;background:url(../images/content-tail.gif) center top repeat-x #fff}
+	#page1 #content {padding:90px 0 60px 0}
+.spacer-1 {width:100%;background:url(../images/pic-2.gif) 345px 0 repeat-y}
+.spacer-2 {width:100%;background:url(../images/pic-2.gif) right 0 repeat-y}
+.spacer-3 {width:100%;background:url(../images/pic-2.gif) 0 0 repeat-y}
+.spacer-4 {width:100%;background:url(../images/pic-2.gif) 666px 0 repeat-y}
+.spacer-5 {width:100%;background:url(../images/pic-2.gif) 586px 0 repeat-y}
+h2 {font-size:23px;line-height:1.217em;margin:0 0 16px 0;color:#404040;font-weight:normal;font-style:italic;letter-spacing:-1px}
+h3 {font-size:20px;line-height:1.2em;margin:0 0 20px 0;color:#6e3bb9;font-weight:normal;font-style:italic;letter-spacing:-1px}
+h6 {color:#000;margin-bottom:10px}
+.title-1 {display:block;font-size:30px;line-height:1.2em;color:#6e3bb9;font-style:italic;font-weight:normal;letter-spacing:-2px}
+.title-2 {display:block;font-size:19px;line-height:1.21em;color:#404040;font-style:italic;font-weight:normal;letter-spacing:-1px}
+.border-bot {width:100%;padding-bottom:38px;background:url(../images/pic-2.gif) 0 bottom repeat-x}
+.border-bot2 {width:100%;padding-bottom:35px;background:url(../images/pic-2.gif) 0 bottom repeat-x}
+.box {width:100%;min-height:295px;background:url(../images/bg-box.png) 0 0 repeat}
+.button {display:inline-block;font-size:24px;line-height:1.208em;padding:7px 20px 9px;color:#fff;background:url(../images/button-tail.gif) left top repeat-x #010101;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;font-style:italic;letter-spacing:-1px}
+	.button:hover {background:#010101}
+.button2 {display:inline-block;font-size:18px;line-height:1.22em;padding:0px 26px 3px;color:#fff;background:url(../images/button2-tail.gif) left top repeat-x #010101;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;font-style:italic;letter-spacing:-1px}
+	.button2:hover {background:#010101}
+.list-1 li {padding:0 0 23px 25px;background:url(../images/marker-2.gif) 0 5px no-repeat}
+.list-1 li.last {padding:0 0 0 25px}
+	.list-1 li span {display:block}
+	.list-1 li a {font-weight:bold;display:inline-block;margin-bottom:3px}
+		.list-1 li a:hover {text-decoration:underline}
+.list-2 li {padding:0 0 19px 25px;background:url(../images/marker-2.gif) 0 5px no-repeat}
+.list-2 li.last {padding:0 0 0 25px}
+	.list-2 li a {display:inline-block}
+		.list-2 li a:hover {text-decoration:none}
+.link:hover {text-decoration:underline}
+.link-1 {display:inline-block;width:7px;height:7px;text-indent:-5000px;background:url(../images/marker.gif) right 0px no-repeat;cursor:pointer;margin-top:7px}
+.link-2 {display:inline-block;padding-left:28px;background:url(../images/marker-3.gif) 0 4px no-repeat}
+.link-2:hover {text-decoration:none}
+.tdate-1 {display:block;color:#000;font-weight:bold}
+.text-1 {font-size:14px}
+.text-2 {font-size:14px;line-height:1.285em}
+dl dt {font-weight:bold;color:#6e3bb9}
+dl span {float:left;width:78px}
+dl.news dt {font-weight:normal}
+/***** Contact form *****/
+#contact-form {display:block}
+#contact-form label {display:block;height:33px;overflow:hidden}
+#contact-form input {float:left;width:427px;font-size:13px;line-height:1.23em;color:#404040;padding:3px 10px;margin:0;font-family:Arial, Helvetica, sans-serif;border:1px solid #e5e5e5;background:none}
+#contact-form textarea {float:left;height:208px;overflow:auto;width:427px;font-size:13px;line-height:1.23em;color:#404040;padding:3px 10px;margin:0;font-family:Arial, Helvetica, sans-serif;border:1px solid #e5e5e5;background:none}
+.text-form {float:left;display:block;font-size:13px;line-height:1.23em;width:82px;color:#404040;font-weight:bold;font-family:Arial, Helvetica, sans-serif;padding-top:3px}
+.buttons {padding:20px 7px 0 0;text-align:right}
+.buttons a {margin-left:10px}
+/****************************footer************************/
+footer {width:100%;padding:32px 0 30px}
+.footer-text {display:block;line-height:26px}
+	.footer-text span {display:block}
+.support-phone {display:block;font-size:45px;line-height:1.2em;color:#404040;letter-spacing:-1px;margin-top:-3px}
+	.support-phone strong {display:inline-block;font-size:27px;line-height:1.22em;color:#6e3bb9;padding-top:18px;}
+.list-services {padding:6px 0 0 0}
+	.list-services li {float:left;padding:0 14px 0 0;}
+		.list-services li a {	display:block;	width:40px;	height:40px;	background:url(../images/social-icon.png) 0 0 no-repeat;}
+		.list-services li a.l-2 {background-position:-54px 0}
+		.list-services li a.l-3 {background-position:-108px 0}
+		.list-services li a.l-4 {background-position:-162px 0}

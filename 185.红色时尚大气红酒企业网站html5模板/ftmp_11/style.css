@@ -1,0 +1,228 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gill Sans'), local('GillSans-Regular'), url('fonts/GILB___.TTF') format('ttf');
+}
+body { background: url('./images/bg.jpg') 50% 100% no-repeat; font-size: 12px; line-height: 18px; font-family: 'PT Sans', sans-serif; color: #57585A; overflow-x: hidden; }
+
+a { color: #403f3d; text-decoration: none; }
+a:hover { color: #403f3d; text-decoration: none; }
+
+
+#full { min-height: 925px; position: relative; }
+  #page { width: 936px; margin: 0px auto; position: relative; z-index: 1; }
+    
+  #page-header { padding-top: 30px; margin-bottom: 30px; }
+    #logo { width: 194px; height: 71px; display: block; background: url('./images/logo.png') 50% 50% no-repeat; }
+    #whine-stain { width: 359px; height: 270px; background: url('./images/whine-stain.png') 50% 50% no-repeat; position: absolute; top: 0px; right: -300px; z-index: 15; }
+    
+    #menu { }
+      #menu ul { list-style: none; height: 63px; }
+      #menu ul li { float: left; margin-left: 20px; }
+      #menu ul li:nth-child(1) { margin-left: 0px; }
+      #menu ul li a { display: block; width: 207px; height: 43px; background-color: #e7e4db; position: relative; padding: 11px 0px 9px 12px; }
+      #menu ul li a span { display: block; }
+      #menu ul li a .title { font-family: 'Gill Sans', arial; font-size: 16px; line-height: 18px; color: #403f3d; text-transform: uppercase; font-weight: bold; }
+      #menu ul li a .desc { color: #5e5d5b; }
+      #menu ul li a .line { background-color: #c41919; width: 140px; height: 5px; position: absolute; bottom: 0px; left: 12px; }
+      #menu ul li a .triangle { background: url('./images/menu-triangle.png') 0% 0% no-repeat; width: 10px; height: 6px; position: absolute; bottom: -6px; left: 30px; display: none; }
+      #menu ul li a.current .triangle { display: block; }
+      #menu ul li:nth-child(2) a { background-color: #f8f4f1; }
+      #menu ul li:nth-child(3) a { background-color: #dbdcd2; }
+      #menu ul li:nth-child(4) a { background-color: #e5e0d1; }
+        #menu ul li a:hover { text-decoration: none; background-color: #fff; }
+        #menu ul li a:hover .line { left: 0px; width: 219px; }
+  
+  #content { z-index: 16; position: relative; }      
+  article.block { position: relative; }
+    article h3 { font-family: 'Gill Sans', arial; font-size: 32px; line-height: 42px; color: #403f3d; text-transform: uppercase; padding-bottom: 12px; }
+    article h3 span { color: #9c1b2a; }
+    article div.line { background: url('./images/line.png') 0% 100% repeat-x; margin: 0px 3px 12px 3px; height: 2px; }
+    article div.text { font-style: italic; color: #464646; font-size: 13px; line-height: 24px; }
+    article a.more { display: block; background: url('./images/button.png') 50% 50% no-repeat; width: 80px; height: 16px; color: #f8f4f1; font-size: 12px; line-height: 16px; padding: 6px 0px 10px 23px; margin-top: 15px; }
+    
+  section.news-block { width: 458px; position: absolute; top: 15px; right: 0px; }
+    section.news-block article { position: absolute; top: 30px; left: 0px; opacity: 0; }
+    section.news-block article.active { opacity: 1; }
+    section.news-block article .news-img { width: 458px; height: 397px; position: relative; }
+      section.news-block article .news-img img { width: 458px; height: 397px; }
+      section.news-block article .news-img .news-triangle  { background: url('./images/news-triangle.png') 0% 0% no-repeat; width: 21px; height: 10px; position: absolute; bottom: 0px; left: 50px; }
+    section.news-block article .news-bg { width: 418px; height: 200px; position: relative; background: url('./images/news-bg.jpg') 0% 0% no-repeat; padding: 20px; }
+      section.news-block article .news-bg h2 { padding-right: 100px; font-family: 'Gill Sans', arial; font-size: 24px; line-height: 26px; color: #e6d297; text-transform: uppercase; text-shadow: 1px 1px 1px #8c0512; padding-bottom: 30px; }
+      section.news-block article .news-bg .news-text { font-family: 'PT Sans', sans-serif; font-style: italic; font-size: 12px; line-height: 18px; color: #fff; }
+    #news-counter { overflow: hidden; position: absolute; top: 450px; right: 50px; }
+      #news-counter div { width: 13px; height: 13px; background: url('./images/news-circle.png') 0% 0% no-repeat; margin: 5px; float: left; cursor: pointer; }
+      #news-counter div:hover, #news-counter div.active { background: url('./images/news-circle-active.png') 0% 0% no-repeat; }
+    .inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+  .__front-tpl { height: 690px; }
+  .__front-tpl .bottle-1 { position: absolute; width: 490px; height: 452px; top: -15px; left: -165px; background: url('./images/bottle-1.png') 50% 50% no-repeat; }
+  .__front-tpl .block-1 { width: 287px; height: 350px; padding: 95px 0px 0px 170px; }
+  .__front-tpl .block-2 { width: 287px; padding: 50px 0px 0px 170px; height: 180px; }
+    .__front-tpl .block-2 h3 { color: #931726; font-size: 22px; line-height: 32px; text-transform: none; }
+    .__front-tpl .block-2 span { color: #403f3d; font-size: 16px; line-height: 32px; }
+    .__front-tpl .block-2 div.text { font-style: normal; color: #3c3c3c; font-size: 12px; line-height: 24px; font-family: 'Gill Sans', arial; }
+    .__front-tpl .block-2 .portrait { position: absolute; width: 145px; height: 181px; background: url('./images/portrait.png') 50% 50% no-repeat; left: 0px; top: 25px; }
+  
+  .tradition-tpl { height: 690px; }
+  .tradition-tpl .bottle-1 { position: absolute; width: 285px; height: 512px; top: 100px; left: -180px; background: url('./images/bottle-2.png') 50% 50% no-repeat; }
+  .tradition-tpl .block-1 { width: 348px; height: 562px; padding: 40px 55px 30px 55px; background-color: #fff; position: relative; top: 50px; }
+    .tradition-tpl .block-1 hr { background: url('./images/hr.png') 50% 50% no-repeat; height: 21px !important; border: none; padding: 30px 0px; }
+    .tradition-tpl .block-1 h1 { font-family: 'Gill Sans', arial; font-size: 18px; line-height: 26px; color: #c41919; text-transform: uppercase; padding-bottom: 25px; }
+    .tradition-tpl .block-1 div.text { font-family: 'PT Sans', sans-serif; font-size: 13px; line-height: 22px; color: #5e5e5e; font-style: italic; }
+    .tradition-tpl .block-1 .triangle { position: absolute; right: -10px; top: 50px; background: url('./images/white-triangle.png') 0% 0% no-repeat; width: 11px; height: 20px; z-index: 2; }
+  .tradition-tpl section { width: 478px; position: absolute; top: 50px; right: 0px; height: 621px; }
+    .tradition-tpl #iota-labels { text-align: right; height: 16px; font-size: 12px; line-height: 16px; padding: 7px 15px; color: #60605f; font-family: 'PT Sans', sans-serif; }
+      .tradition-tpl #iota-labels label { cursor: pointer; }
+      .tradition-tpl #iota-labels span:last-child { display: none; }
+      .tradition-tpl #iota-labels label.active { color: #c41919; }
+    .tradition-tpl section article { height: 591px; position: absolute; top: 41px; left: 0px; opacity: 0; }
+    .tradition-tpl section article.active { opacity: 1; }
+    .tradition-tpl section article .left { float: left; width: 239px; height: 591px; }
+    .tradition-tpl section article .right { float: right; width: 199px; height: 531px; background: url('./images/right-bg.jpg') 0% 0% no-repeat; padding: 30px 20px; position: relative; }
+      .tradition-tpl section article .right label { display: none; }
+      .tradition-tpl section article .right h2 { font-family: 'Gill Sans', arial; font-size: 18px; font-style: normal; line-height: 26px; color: #e6d297; text-transform: uppercase; text-shadow: 1px 1px 1px #8c0512; background: url('./images/line-red.png') 0% 100% repeat-x; padding-bottom: 15px; margin-bottom: 12px; }
+      .tradition-tpl section article .right .text { font-family: 'PT Sans', sans-serif; font-style: italic; font-size: 12px; line-height: 18px; color: #fff; position: absolute; padding: 30px 20px; bottom: 0px; left: 0px; }
+  
+  .production-tpl { }
+  .production-tpl section { position: relative; }
+  .production-tpl .production-bg { width: 980px; position: relative; background: url('./images/production-bg.png') 0% 0% no-repeat; margin-top: 51px; height: 395px; }
+    .production-tpl section article { height: 237px; position: absolute; top: 0px; left: 0px; opacity: 0; }
+    .production-tpl section article.active { opacity: 1; }
+    .production-tpl section article .right { float: right; width: 470px; height: 237px; }
+    .production-tpl section article .left { float: left; width: 466px; height: 237px; background: url('./images/production-red.jpg') 0% 0% no-repeat; position: relative; }
+      .production-tpl section article .left td { padding: 10px; }
+      .production-tpl section article .left .label { display: none; }
+      .production-tpl section article .left h2 { font-family: 'PT Sans', arial; font-style: normal; font-size: 14px; line-height: 26px; color: #fff; text-transform: uppercase; text-shadow: 1px 1px 1px #8c0512; background: url('./images/line-red.png') 0% 100% repeat-x; padding: 10px 15px 15px 0px; margin: 0px 0px 0px 12px; }
+      .production-tpl section article .left h2 span { color: #e6d297; }
+      .production-tpl section article .left .text { font-family: 'PT Sans', sans-serif; font-style: italic; font-size: 12px; line-height: 18px; color: #fff; padding: 10px 20px 10px 30px; background: url('./images/production-li.png') 30px 30px no-repeat; }
+  .production-tpl #iota-labels { width: 980px; height: 395px; position: relative; }
+    .production-tpl #iota-labels label { position: absolute; cursor: pointer; padding-left: 65px; font-family: 'PT Sans', sans-serif; font-style: italic; font-size: 12px; line-height: 18px; color: #302f28; width: 150px; }
+    .production-tpl #iota-labels label h3 { font-family: 'Gill Sans', arial; font-size: 17px; font-weight: normal; font-style: normal; line-height: 26px; color: #c41919; text-transform: uppercase; }
+    .production-tpl #iota-labels label .lbl { position: absolute; left: 0px; top: 0px; background: url('./images/production-iota.png') 0% 0% no-repeat; width: 56px; height: 63px; font-family: 'PT Sans', sans-serif; font-size: 32px; font-style: normal; line-height: 39px; color: #fff; font-weight: bold; text-align: center; padding-top: 6px; padding-left: 3px; }
+    .production-tpl #iota-labels label.active .lbl, .production-tpl #iota-labels label.hover .lbl { background: url('./images/production-iota-active.png') 0% 0% no-repeat; }
+    .production-tpl #iota-labels .label-0 { top: 230px; left: 10px; }
+    .production-tpl #iota-labels .label-1 { top: 10px; left: 255px; }
+    .production-tpl #iota-labels .label-2 { top: 220px; left: 430px; }
+    .production-tpl #iota-labels .label-3 { top: 70px; left: 740px; }
+  
+  .contact-tpl { }
+    .contact-tpl article.contact-bg { height: 392px; margin-top: 50px; }
+    .contact-tpl article.contact-bg .left { float: left; }
+    .contact-tpl article.contact-bg .right { float: right; position: relative; width: 189px; height: 332px; background: url('./images/contact-bg.jpg') 0% 0% repeat; position: relative; padding: 50px 15px 10px 15px; font-family: 'PT Sans', sans-serif; font-style: italic; font-size: 12px; line-height: 18px; color: #fff; }
+      .contact-tpl article.contact-bg .right .triangle { width: 8px; height: 16px; background: url('./images/contact-triangle.png') 0% 0% repeat; position: absolute; top: 50px; left: -8px; }
+      .contact-tpl article.contact-bg .right h1 { font-family: 'Gill Sans', arial; font-style: normal; font-size: 20px; line-height: 26px; color: #e6d297; text-transform: uppercase; text-shadow: 1px 1px 1px #8c0512; background: url('./images/line-red.png') 0% 100% repeat-x; margin: 0px 0px 12px 0px; padding: 0px 0px 12px 0px; }
+      .contact-tpl article.contact-bg .right .bottle { position: absolute; top: 190px; left: 190px; background: url('./images/glass.png') 0% 0px no-repeat; width: 158px; height: 386px; }
+  .contact-tpl section { position: relative; }
+    .contact-tpl section article { height: 237px; position: absolute; top: 0px; left: 0px; opacity: 0; width: 100%; font-family: 'PT Sans', sans-serif; font-style: italic; font-size: 12px; line-height: 18px; color: #545454; }
+      .contact-tpl section article label { display: none; }
+      .contact-tpl section article a, .contact-tpl section article a:hover { color: #c41919; }
+    .contact-tpl section article.active { opacity: 1; }
+    .contact-tpl section article table { width: 100%; }
+    .contact-tpl section article h2 { font-family: 'Gill Sans', arial; font-size: 17px; font-weight: normal; font-style: normal; line-height: 26px; color: #c41919; text-transform: uppercase; background: url('./images/line.png') 0% 100% repeat-x; padding: 0px 0px 15px 5px; margin: 30px 10px 20px 0px; }
+  .contact-tpl #iota-labels { width: 980px; height: 370px; position: absolute; top: 25px; right: 15px; z-index: 100; background: url('./images/contact-select.png') 0% 0% no-repeat; width: 207px; height: 23px; font-family: 'Gill Sans', arial; font-style: normal; font-size: 12px; line-height: 15px; cursor: pointer; }
+    .contact-tpl #iota-labels h3 { background: url('./images/contact-select.png') 0% 0% no-repeat; width: 187px; height: 15px; padding: 4px 10px; font-weight: normal; }
+    .contact-tpl #iota-labels ul { list-style: none; position: absolute; border: 1px solid #ccc5bb; width: 205px; border-radius: 6px; background-color: #eee9dd; cursor: pointer; overflow: hidden; z-index: 100; display: none; }
+    .contact-tpl #iota-labels ul li { padding: 4px 10px; }
+    .contact-tpl #iota-labels ul li:hover { background-color: #fef9ed; }
+    
+  .wines-tpl { position: relative; }
+    #wines-list { position: absolute; top: 0px; left: 0px; }
+    #wines-list ul { list-style: none; overflow: hidden; }
+    #wines-list ul li { display: block; float: left; width: 219px; height: 280px; background-color: #fff; position: relative; margin: 40px 0px 0px 20px; font-family: 'PT Sans', sans-serif; font-size: 12px; line-height: 18px; color: #3c3c3c; }
+    #wines-list ul li:nth-child(1), #wines-list ul li:nth-child(5) { margin-left: 0px; }
+      #wines-list ul li .img { width: 61px; height: 195px; background-position: 50% 50%; background-repeat: no-repeat; position: absolute; left: 5px; top: 20px; }
+      #wines-list ul li#wines-1 .img { background-image: url('./images/shop-1.png'); }
+      #wines-list ul li#wines-2 .img { background-image: url('./images/shop-2.png'); }
+      #wines-list ul li#wines-3 .img { background-image: url('./images/shop-3.png'); }
+      #wines-list ul li#wines-4 .img { background-image: url('./images/shop-4.png'); }
+      #wines-list ul li#wines-5 .img { background-image: url('./images/shop-5.png'); }
+      #wines-list ul li#wines-6 .img { background-image: url('./images/shop-6.png'); }
+      #wines-list ul li#wines-7 .img { background-image: url('./images/shop-7.png'); }
+      #wines-list ul li#wines-8 .img { background-image: url('./images/shop-8.png'); }
+    #wines-list ul li h2 { font-family: 'Gill Sans', arial; font-size: 15px; font-weight: normal; font-style: normal; line-height: 20px; color: #fff; text-transform: uppercase; background-color: #3e3d35; padding: 15px 0px 10px 70px; margin-bottom: 20px; }
+    #wines-list ul li div.lbl { padding: 3px 10px 0px 70px; }
+    #wines-list ul li div.line { background: url('./images/line.png') 0% 100% repeat-x; margin: 12px 10px 10px 70px; height: 2px; }
+    #wines-list ul li div.short-desc { padding: 5px 5px 10px 70px; }
+    #wines-list ul li div.lbl label { font-weight: bold; padding-right: 3px; }
+    #wines-list ul li div.price { width: 86px; height: 18px; background: url('./images/shop-price.png') 0% 0% no-repeat; cursor: pointer; font-family: 'PT Sans', sans-serif; font-size: 14px; line-height: 18px; color: #f8f4f1; font-weight: bold; text-align: center; padding: 6px 0px; position: absolute; right: 10px; bottom: 40px; }
+    #wines-list ul li div.footer { height: 18px; background: url('./images/shop-footer.png') 0% 0% repeat-x; padding: 7px 0px 6px 0px; position: absolute; left: 0px; bottom: 0px; width: 219px; text-align: right; }
+    #wines-list ul li div.footer a { background: url('./images/shop-arrow.png') 0% 50% no-repeat; padding: 0px 20px; }
+    
+    #wines-info { position: absolute; top: 0px; left: 0px; background: url('./images/shop-glass.png') 0% 180px no-repeat; width: 100%; height: 675px; display: none; }
+    .wines-tpl .white-wine { background: url('./images/shop-glass-white.png') 0% 180px no-repeat !important; }
+    .wines-tpl .white-champagne { background: url('./images/shop-glass-champagne.png') 0% 180px no-repeat !important; }
+      #wines-info .bottl1e { position: absolute; top: -10px; left: 55px; width: 202px; height: 651px; background: url('images/shop-bottle.png') 0% 0% no-repeat; }
+      #wines-info .wines { width: 458px; height: 492px; margin-left: 239px; padding-top: 50px; }
+      #wines-info .wines .wine-info { width: 388px; height: 412px; position: absolute; top: 50px; left: 239px; background-color: #fff; padding: 40px 30px 40px 40px; opacity: 0; }
+      #wines-info .wines .active { opacity: 1; }
+      #wines-info .wines .wine-info .bottle-x { position: absolute; top: -60px; left: -170px; width: 202px; height: 651px; background: url('images/shop-bottle.png') 0% 0% no-repeat; }
+        #wines-info .wines #wine-info-1 .bottle-x { background: url('./images/shop-bottle-1.png') 0% 0% no-repeat; }
+        #wines-info .wines #wine-info-2 .bottle-x { background: url('./images/shop-bottle-2.png') 0% 0% no-repeat; }
+        #wines-info .wines #wine-info-3 .bottle-x { background: url('./images/shop-bottle-3.png') 0% 0% no-repeat; }
+        #wines-info .wines #wine-info-4 .bottle-x { background: url('./images/shop-bottle-4.png') 0% 0% no-repeat; }
+        #wines-info .wines #wine-info-5 .bottle-x { background: url('./images/shop-bottle-5.png') 0% 0% no-repeat; }
+        #wines-info .wines #wine-info-6 .bottle-x { background: url('./images/shop-bottle-6.png') 0% 0% no-repeat; }
+        #wines-info .wines #wine-info-7 .bottle-x { background: url('./images/shop-bottle-7.png') 0% 0% no-repeat; }
+        #wines-info .wines #wine-info-8 .bottle-x { background: url('./images/shop-bottle-8.png') 0% 0% no-repeat; }
+      #wines-info .wines .wine-info h2 { font-family: 'Gill Sans', arial; font-size: 26px; line-height: 26px; color: #c41919; text-transform: uppercase; font-weight: normal; margin-bottom: 7px; }
+      #wines-info .wines .wine-info h4 { font-family: 'Gill Sans', arial; font-size: 11px; line-height: 15px; color: #707070; text-transform: uppercase; font-weight: normal; padding-bottom: 20px; background: url('./images/line.png') 0% 100% repeat-x; margin-bottom: 15px; }
+      #wines-info .wines .wine-info .price { background: url('./images/shop-price-circle.png') 0% 0% no-repeat; width: 112px; height: 82px; position: absolute; top: 90px; right: 30px; text-align: center; font: bold 24px/30px arial; color: #fff; padding-top: 30px; }
+      #wines-info .wines .wine-info .price span { font-size: 14px; }
+      #wines-info .wines .wine-info div.lbl { line-height: 22px; font-size: 13px; }
+      #wines-info .wines .wine-info div.desc { margin-top: 20px; line-height: 20px; font-size: 13px; }
+      #wines-info .wines .wine-info div.lbl label { font-weight: bold; padding-right: 5px; }
+      
+      #wines-info .list { width: 239px; height: 492px; background: url('./images/shop-bg.jpg') 0% 0% no-repeat; position: absolute; top: 50px; right: 0px; }
+      #wines-info .list ul { list-style: none; display: none; }
+      #wines-info .list h2 { font-family: 'Gill Sans', arial; font-size: 17px; line-height: 26px; color: #e6d297; text-transform: uppercase; text-shadow: 1px 1px 1px #8c0512; font-weight: normal; padding: 72px 0px 10px 0px; margin: 0px 20px; background: url('./images/line-red.png') 0% 100% repeat-x; }
+      #wines-info .list h3 { font-family: 'Gill Sans', arial; font-size: 16px; line-height: 26px; color: #f8f4f1; font-weight: normal; padding: 4px 20px; cursor: pointer;
+        background-image: url('./images/shop-submenu-closed.png'), url('./images/shop-submenu.jpg');
+        background-position: 210px 50%, 0% 0%;
+        background-repeat: no-repeat, repeat-x;      
+      }
+      #wines-info .list h3.ul-active {
+        background-image: url('./images/shop-submenu-opened.png'), url('./images/shop-submenu.jpg');
+        background-position: 210px 50%, 0% 0%;
+        background-repeat: no-repeat, repeat-x;      
+      }
+      #wines-info .list ul li { font-family: 'PT Sans', sans-serif; font-style: italic; font-size: 12px; line-height: 20px; color: #fff; padding: 0px 10px; background: url('./images/shop-arrow2.png') 0% 50% no-repeat; margin-left: 20px; cursor: pointer; }
+      #wines-info .list ul li:hover, #wines-info .list ul li.active { text-decoration: underline; }
+      #wines-info .order { background: url('./images/shop-order.png') 0% 0% no-repeat; width: 103px; height: 34px; position: absolute; bottom: 70px; left: 300px; cursor: pointer; }
+      #wines-info .controls { overflow: hidden; width: 150px; height: 20px; position: absolute; bottom: 82px; right: 30px; }
+      #wines-info .controls div { float: left; margin: 0px 5px; font-family: 'PT Sans', sans-serif; font-style: italic; font-size: 12px; line-height: 20px; color: #6c685e; cursor: pointer; }
+                                                                                                             
+  #footer { position: absolute; bottom: 0px; width: 100%; }
+    #footer .white-footer { background: url('./images/white-footer.png') 0% 0% repeat-x; height: 244px; }
+    #footer .dark-footer { background-color: #302f28; font: 11px/15px Tahoma; color: #b2ae90; padding: 15px;}
+      #footer .dark-footer .wrap { width: 936px; margin: 0px auto; overflow: hidden; }
+      #footer .dark-footer .left { float: left; }
+      #footer .dark-footer .left a { color: #B2AE90; }
+      #footer .dark-footer .right { float: right; }
+      
+  
+.transition-05 { 
+  -webkit-transition:all 0.5s ease-in-out;
+  -moz-transition:all 0.5s ease-in-out;
+  -o-transition:all 0.5s ease-in-out;
+  -ms-transition:all 0.5s ease-in-out;  
+  transition:all 0.5s ease-in-out;
+}
+.transition-1 { 
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  -ms-transition:all 1.0s ease-in-out;  
+  transition:all 1.0s ease-in-out;
+}
